@@ -1,0 +1,10 @@
+<VirtualHost *:80>
+  Servername  dev.gardensofstone.org.au
+  DocumentRoot  /srv/dev/gardensofstone.org.au/web
+    ErrorLog  /var/log/httpd/dev/gardensofstone.org.au/error_log
+    CustomLog /var/log/httpd/dev/gardensofstone.org.au/access_log combined
+  <Directory /srv/dev/gardensofstone.org.au/web>
+    AllowOverride All
+    Options Indexes Includes FollowSymlinks
+  </Directory>
+</VirtualHost>

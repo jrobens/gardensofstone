@@ -1,0 +1,41 @@
+site=gosproject
+sitename=gos Project
+uri=gardensofstone.org.au
+log=gardensofstone.org.au
+
+dbhost=localhost
+dbuser=$(cms_dbuser)
+dbname=$(cms_dbname)
+dbpass=$(cms_dbpass)
+
+cms_dbuser=gos_cms
+cms_dbname=gos_cms
+cms_dbpass=gos_cms
+
+crm_dbuser=gos_crm
+crm_dbname=gos_crm
+crm_dbpass=gos_crm
+
+web=ruby
+uat=ruby
+qat=ruby
+
+p=standard
+b=1.1.x
+g=ild/gardensofstone
+th=bootstrap
+l=mrn:mrn
+h=ruby
+t=dev
+
+susr=mrn
+spwd=mrn
+sprint=MRN
+
+usrname=gardensofstone
+usrmail=info@gardensofstone.org.au
+
+# VocACbA9
+# ~/.vim/etc/tpl/siterc.tpl
+
+
