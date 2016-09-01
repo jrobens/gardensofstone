@@ -1,0 +1,20 @@
+Notes
+.idea
+.siterc
+ini
+ref
+tmp
+
+src/sql
+src/dev
+
+sec/files
+web/files
+web/sites/*/settings.php
+web/sites/*/civicrm.settings.php
+web/sites/*/files
+web/sites/*/private
+
+.DS_Store
+# ~/.vim/etc/tpl/gitignore.tpl
+
