@@ -414,7 +414,7 @@ body .container-fluid {
   background-color: #804000;
 }
 
-#footer {
+#footer, #footer a {
   color: white;
 }
 
