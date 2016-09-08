@@ -2,6 +2,31 @@
   <div id="toTop"><span class="glyphicon glyphicon-chevron-up"></span></div>
 <?php endif; ?>
 
+<div id="intro">
+  <div id="video-container">
+    <!-- could put a video in here
+    <video id="video-bg" preload="auto" muted loop autoplay>
+      <source src="/files/video/front.mp4" type="video/mp4"/>
+    </video>
+    -->
+  </div>
+  <div class="container-fluid video-overlay">
+    <div class="row">
+      <div class="col-lg-12">
+        <span class="videologo"><img src="/sites/all/themes/flyingblind/images/footerlogo.png" class="img-responsive"></span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <span class="videoheading">
+          <h1><b>"Flying Blind"</b><br/>Consumers in a Digital Health Era</h1>
+          <h2>A report of the Australian Health Data Landscape</h2>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+
 <?php if ($page['pre_header_first'] || $page['pre_header_second'] || $page['pre_header_third']) : ?>
   <!-- #pre-header -->
   <div id="pre-header" class="clearfix">
