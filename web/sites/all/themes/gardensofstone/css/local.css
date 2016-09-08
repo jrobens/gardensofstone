@@ -362,7 +362,7 @@ body .container-fluid {
   }
 
   .video-overlay {
-    top: 0px;
+    top: 0;
   }
 
   .video-overlay .videologo img {
@@ -374,3 +374,58 @@ body .container-fluid {
 .video-overlay .videoheading.active {
   opacity: 1;
 }
+
+
+.front-heading {
+  font-size: 1.3em;
+  color: #5b6f27;
+}
+
+/** for convenience */
+
+
+
+.green1 {
+  color: #293120;
+}
+
+.green2 {
+  color: #3d472d;
+}
+
+.green3 {
+  color: #505946;
+}
+
+.green4 {
+  color: #5b6f27;
+}
+
+.green5 {
+  color: #618b41;
+}
+
+.green6 {
+  color: #738638;
+}
+
+.green7 {
+  color: #7c8f40;
+}
+
+.green8 {
+  color: #899d47;
+}
+
+.green9 {
+  color: #bcc995;
+}
+
+.green10 {
+  color: #ced8af;
+}
+
+.blue1 {
+  #9aaedb;
+}
+
