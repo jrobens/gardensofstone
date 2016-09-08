@@ -19,7 +19,6 @@
       foreach ($variables['elements']['#swiper_content'] as $content):
       ?>
       <div class="swiper-slide-nid-<?php print $node_id;?> swiper-slide">
-        <?php print $content; ?>
       </div>
       <?php endforeach; ?>
       <!--End Slides-->
