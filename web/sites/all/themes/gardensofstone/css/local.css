@@ -176,3 +176,201 @@ body .container-fluid {
   background-image: url("/sites/all/themes/gardensofstone/images/gardens_of_stone_hayes.jpg");
 }
 */
+
+
+.video-overlay {
+  position: absolute;
+  width: 100%;
+  transform: translateX(0px);
+  -webkit-transform: translateX(0px);
+  -webkit-transition: all 350ms linear;
+  -ms-transition: all 350ms linear;
+  transition: all 350ms linear;
+  z-index: 2;
+}
+
+.logged-in .video-overlay .videoheading {
+  position: relative;
+  top: 150px;
+}
+
+.video-overlay .videoheading {
+  width: 100%;
+  color: #fff;
+  opacity: 1;
+  text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.6);
+  transform: translateY(0px);
+  -webkit-transform: translateY(0px);
+  -webkit-transition: all 900ms ease-in-out;
+  -ms-transition: all 900ms ease-in-out;
+  transition: all 900ms ease-in-out;
+  text-align: center;
+}
+
+.videologo {
+  display: block;
+  width: 100%;
+}
+
+.video-overlay .videoheading h1 {
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
+}
+
+.video-overlay .videoheading h1 b {
+  line-height: 150%;
+}
+
+.video-overlay .videoheading h2 {
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  color: #ff9912;
+}
+
+.video-overlay .videoheading h3 {
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  color: #fff;
+}
+
+@media only screen and (min-width: 320px) {
+  .video-overlay .videoheading {
+    position: relative;
+    top: 0;
+    font-size: 0.8em;
+  }
+
+  .video-overlay .videoheading h2 {
+    font-size: 1em;
+    padding: 0;
+    margin: 0;
+  }
+
+  .video-overlay .videoheading h3 {
+    font-size: 1em;
+    padding: 0;
+    margin: 0;
+  }
+
+  .video-overlay {
+    top: 0;
+  }
+
+  .video-overlay .videologo img {
+    float: none;
+    margin: 10px auto 0 auto;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .video-overlay .videoheading {
+    position: relative;
+    top: 0;
+    font-size: 0.8em;
+  }
+
+  .video-overlay .videoheading h2 {
+    font-size: 1em;
+    padding: 0;
+    margin: 0;
+  }
+
+  .video-overlay .videoheading h3 {
+    font-size: 1em;
+    padding: 0;
+    margin: 0;
+  }
+
+  .video-overlay {
+    top: 0;
+  }
+
+  .video-overlay .videologo img {
+    float: none;
+    margin: 10px auto 0 auto;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .video-overlay .videoheading {
+    position: relative;
+    top: 50px;
+    font-size: 1.3em;
+  }
+
+  .video-overlay .videoheading h2 {
+    font-size: 1em;
+    padding: 0;
+    margin: 0;
+  }
+
+  .video-overlay .videoheading h3 {
+    font-size: 1em;
+    padding: 0;
+    margin: 0;
+  }
+
+  .video-overlay {
+    top: 0;
+  }
+
+  .video-overlay .videologo img {
+    float: right;
+    margin: 10px 20px 0 0;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .video-overlay .videoheading {
+    position: relative;
+    top: 50px;
+    font-size: 1.3em;
+  }
+
+  .video-overlay .videoheading h2 {
+    font-size: 1.2em;
+    padding: 0;
+    margin: 0;
+  }
+
+  .video-overlay .videoheading h3 {
+    font-size: 1.2em;
+    padding: 0;
+    margin: 0;
+  }
+
+  .video-overlay {
+    top: 0;
+  }
+
+  .video-overlay .videologo img {
+    float: right;
+    margin: 10px 20px 0 0;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .video-overlay .videoheading {
+    position: relative;
+    top: 80px;
+    font-size: 1.6em;
+  }
+
+  .video-overlay .videoheading h2 {
+    font-size: 1.2em;
+  }
+
+  .video-overlay .videoheading h3 {
+    font-size: 1.2em;
+  }
+
+  .video-overlay {
+    top: 0px;
+  }
+
+  .video-overlay .videologo img {
+    float: right;
+    margin: 10px 20px 0 0;
+  }
+}
+
+.video-overlay .videoheading.active {
+  opacity: 1;
+}
