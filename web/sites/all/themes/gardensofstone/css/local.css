@@ -48,6 +48,15 @@ display: none; }
 #header-top .block, #main-navigation .block, #banner .block { padding: 0; }
 
 /* Slider */
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+
 .swiper-wrapper:nth-child(1) {
   background-image: url("/sites/all/themes/gardensofstone/images/gardens_of_stone_hayes.jpg");
 }
