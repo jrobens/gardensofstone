@@ -147,7 +147,7 @@
 .main-swiper-wrapper {
 }
 
-.swiper-container, .swiper-wrapper {
+.swiper-container, .swiper-wrapper, .swiper-slide {
   height: 900px !important;
 }
 
