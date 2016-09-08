@@ -377,8 +377,12 @@ body .container-fluid {
 
 
 .front-heading {
-  font-size: 1.3em;
+  font-size: 4em;
   color: #5b6f27;
+  line-height: 1.2em;
+  float: right;
+  max-width 50%;
+  font-weight: 600;
 }
 
 /** for convenience */
