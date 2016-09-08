@@ -13,13 +13,15 @@
   <div class="container-fluid video-overlay">
     <div class="row">
       <div class="col-lg-12">
+        <!--
         <span class="videologo"><img src="/sites/all/themes/flyingblind/images/footerlogo.png" class="img-responsive"></span>
+      -->
       </div>
     </div>
     <div class="row">
       <div class="col-lg-12">
         <span class="videoheading">
-          <h1><b>"Flying Blind"</b><br/>Consumers in a Digital Health Era</h1>
+          <h1><b>The Gardens of Stone</b><br/>Natural Paradise Near Sydney</h1>
           <h2>A report of the Australian Health Data Landscape</h2>
         </span>
       </div>
