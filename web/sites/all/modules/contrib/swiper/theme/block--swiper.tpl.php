@@ -10,17 +10,19 @@
  * file with the same name in the folder of your current theme.
  */
 ?>
-<div class="swiper-container">
-  <div class="swiper-wrapper">
-    <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1000/1000/nightlife/1)"></div>
-    <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1000/1000/nightlife/2)"></div>
-    <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1000/1000/nightlife/3)"></div>
-    <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1000/1000/nightlife/4)"></div>
-    <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1000/1000/nightlife/5)"></div>
+<?php $node_id = $variables['elements']['#node']->nid;?>
+<div class="main-swiper-wrapper">
+  <div class="swiper-container-nid-<?php print $node_id;?> swiper-container">
+    <div class="swiper-wrapper">
+      <!--Slides-->
+      <?php
+      foreach ($variables['elements']['#swiper_content'] as $content):
+      ?>
+      <div class="swiper-slide-nid-<?php print $node_id;?> swiper-slide">
+      </div>
+      <?php endforeach; ?>
+      <!--End Slides-->
+    </div>
   </div>
-  <!-- Add Pagination -->
-  <div class="swiper-pagination swiper-pagination-white"></div>
-  <!-- Add Arrows -->
-  <div class="swiper-button-next swiper-button-white"></div>
-  <div class="swiper-button-prev swiper-button-white"></div>
+  <div class="pagination-nid-<?php print $node_id;?> pagination"></div>
 </div>

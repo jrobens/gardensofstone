@@ -49,10 +49,10 @@ display: none; }
 
 /* Slider */
 .main-swiper-wrapper {
-  height: 900px;
 }
 
 .swiper-container {
+  height: 900px !important;
 }
 .swiper-slide {
   background-position: center;
