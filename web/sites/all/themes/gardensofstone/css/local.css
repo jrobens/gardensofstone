@@ -144,7 +144,7 @@
 }
 
 /* Not generated */
-#content-wrapper {
+#content-wrapper, .node.node-teaser, .page-node- #content-wrapper, .page-contact #content-wrapper {
   border: none;
 }
 
@@ -389,6 +389,14 @@ body .container-fluid {
 .gos-alliance img {
   float: left;
 }
+
+.gos-alliance h2 {
+  font-size: 4em;
+  color: #804000;
+  font-family: 'Roboto', 'serif';
+  font-weight: 100;
+}
+
 /* font your face providing the font */
 .front-heading {
   font-size: 4em;
