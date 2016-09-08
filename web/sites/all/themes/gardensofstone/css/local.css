@@ -391,6 +391,9 @@ body .container-fluid {
 }
 
 .gos-alliance h2 {
+  margin-left: auto;
+  margin-right: auto;
+  width:80%;
   font-size: 4em;
   color: #804000;
   font-family: 'Roboto', 'serif';
