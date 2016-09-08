@@ -143,6 +143,11 @@
   padding: 0;
 }
 
+/* Not generated */
+#content-wrapper {
+  border: none;
+}
+
 /* Slider */
 #hero-slider {
   background: url("/sites/all/themes/gardensofstone/images/gardens_of_stone_hayes.jpg") center;
@@ -375,14 +380,34 @@ body .container-fluid {
   opacity: 1;
 }
 
+.gos-alliance {
+  margin-left: auto;
+  margin-right: auto;
+  width:50%;
+}
 
+.gos-alliance img {
+  float: left;
+}
+/* font your face providing the font */
 .front-heading {
   font-size: 4em;
   color: #5b6f27;
   line-height: 1.2em;
   float: right;
-  max-width 50%;
+  max-width: 50%;
   font-weight: 600;
+}
+
+#footer {
+  background-color: #804000;
+}
+
+#subfooter {
+  background-color: #5b6f27;
+  color: #c0c0c0;
+  color: rgba(255,255,255,0.65);
+  font-size: 0.857em;
 }
 
 /** for convenience */
@@ -430,6 +455,85 @@ body .container-fluid {
 }
 
 .blue1 {
-  #9aaedb;
+  color: #9aaedb;
 }
 
+.ochre {
+  color: #cc7722;
+}
+
+.brown1 {
+  color:#A65403;
+}
+
+.brown2 {
+ color: #A65403;
+}
+
+.brown3 {
+  color: #804000;
+}
+
+.brown4 {
+  color: #592D00;
+}
+
+.brown5 {
+  color: #F29F4D;
+}
+
+.brown6 {
+  color:#FFBB77;
+}
+
+.brown7 {
+  color: #FFCE9D;
+}
+
+/*
+Triadic Colors
+#CC7722
+#22CC77
+#03A654
+#4DF29F
+#7722CC
+#5403A6
+#9F4DF2
+Analagous Colors
+#CC7722
+#CC9322
+#CCB022
+#CCCC22
+#CC5B22
+#CC3E22
+#CC2222
+Complementary Colors
+#CC7722
+#2277CC
+#0354A6
+#004080
+#4D9FF2
+#77BBFF
+#9DCEFF
+Monochromatic Colors
+#CC7722
+#A65403
+#804000
+#592D00
+#F29F4D
+#FFBB77
+#FFCE9D
+RGB Chart
+
+
+RGB Chart
+
+*/
+
+
+
+/*
+ border-color: #EED300;
+    color: #745500;
+    width: 650px;
+*/
