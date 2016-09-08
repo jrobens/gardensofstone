@@ -19,7 +19,7 @@
 
 #pre-header-inside { display: none; position: relative; z-index: 13; padding: 40px 0 0 0; }
 
-#header-top { background-color: #fcfcfc; border-bottom: 1px dashed #eaeaea; position: relative; z-index: 12; min-height: 50px; } 
+#header-top { background-color: #fcfcfc; border-bottom: 1px dashed #eaeaea; position: relative; z-index: 12; min-height: 50px; }
 
 #header { background-color: #fcfcfc; border-bottom: 1px solid #eaeaea; position: relative; z-index: 5; padding: 10px 0; text-align: center; min-height: 130px; }
 
@@ -28,7 +28,7 @@
 
 #banner-inside { padding-top: 60px; margin-bottom: 40px; }
 
-#slideshow { padding: 10px; background-color: #fcfcfc; border: 1px solid #eaeaea; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; 
+#slideshow { padding: 10px; background-color: #fcfcfc; border: 1px solid #eaeaea; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px;
 display: none; }
 
 #top-content { background-color: #ffffff; padding: 40px 0 20px 0; }
@@ -46,3 +46,11 @@ display: none; }
 .block { padding: 0 0 30px 0; clear: both; }
 
 #header-top .block, #main-navigation .block, #banner .block { padding: 0; }
+
+/* Slider */
+.swiper-wrapper:nth-child(1) {
+  background-image: url("/sites/all/themes/gardensofstone/images/gardens_of_stone_hayes.jpg");
+}
+.swiper-wrapper:nth-child(2) {
+  background-image: url("/sites/all/themes/gardensofstone/images/gardens_of_stone_hayes.jpg");
+}
