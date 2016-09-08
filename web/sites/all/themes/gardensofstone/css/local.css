@@ -414,11 +414,19 @@ body .container-fluid {
   background-color: #804000;
 }
 
+#footer {
+  color: white;
+}
+
 #subfooter {
   background-color: #5b6f27;
   color: #c0c0c0;
   color: rgba(255,255,255,0.65);
   font-size: 0.857em;
+}
+
+#subfooter a {
+  color: white;
 }
 
 /** for convenience */
