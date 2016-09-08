@@ -57,9 +57,11 @@ display: none; }
   background-size: cover;
 }
 
+/*
 .swiper-wrapper:nth-child(1) {
   background-image: url("/sites/all/themes/gardensofstone/images/gardens_of_stone_hayes.jpg");
 }
 .swiper-wrapper:nth-child(2) {
   background-image: url("/sites/all/themes/gardensofstone/images/gardens_of_stone_hayes.jpg");
 }
+*/
