@@ -175,7 +175,7 @@
     <?php if ($page['highlighted']):?>
     <!-- #top-content -->
     <div id="top-content" class="clearfix">
-        <div class="container">
+        <div class="container-fluid">
 
             <!-- #top-content-inside -->
             <div id="top-content-inside" class="clearfix">
