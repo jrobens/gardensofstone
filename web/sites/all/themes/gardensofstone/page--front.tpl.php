@@ -21,8 +21,8 @@
     <div class="row">
       <div class="col-lg-12">
         <span class="videoheading">
-          <h1><b>The Gardens of Stone</b><br/>Natural Paradise Near Sydney</h1>
-          <h2>A report of the Australian Health Data Landscape</h2>
+          <h1><b>The Gardens of Stone</b><br/></h1>
+          <h2>A Natural Paradise Near Sydney</h2>
         </span>
       </div>
     </div>
@@ -127,7 +127,7 @@
     <div id="header-inside" class="clearfix">
       <div class="row">
         <div class="col-md-12">
-
+            <?php /*
           <?php if ($logo): ?>
             <div id="logo">
               <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home">
@@ -147,6 +147,7 @@
               <?php print $site_slogan; ?>
             </div>
           <?php endif; ?>
+ */ ?>
 
           <?php if ($page['header']) : ?>
             <?php print render($page['header']); ?>
