@@ -22,7 +22,7 @@
       <div class="col-lg-12">
         <span class="videoheading">
           <h1><b>The Gardens of Stone</b><br/></h1>
-          <h2>A Natural Paradise Near Sydney</h2>
+          <h2>A natural paradise near Sydney</h2>
         </span>
       </div>
     </div>
@@ -164,6 +164,7 @@
 <!-- EOF: #header -->
 
 <!-- #main-navigation -->
+<header id="navbar" role="banner" class="sticky ">
 <div id="main-navigation" class="clearfix">
   <div class="container">
 
@@ -195,6 +196,7 @@
 
   </div>
 </div>
+</header>
 <!-- EOF: #main-navigation -->
 
 <?php if ($page['banner']) : ?>
