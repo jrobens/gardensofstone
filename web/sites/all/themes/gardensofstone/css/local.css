@@ -77,6 +77,10 @@
   min-height: 130px;
 }
 
+.front #header {
+  min-height:0;
+}
+
 #main-navigation {
   background-color: #fcfcfc;
   position: relative;
