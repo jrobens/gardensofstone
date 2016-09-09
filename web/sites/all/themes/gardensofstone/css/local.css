@@ -393,12 +393,16 @@ body .container-fluid {
 #top-content h2, #main h2, #main-content h1, .gos-alliance h2 {
   margin-left: auto;
   margin-right: auto;
-  width:80%;
   font-size: 4em;
   color: #804000;
   font-family: 'Roboto', 'serif';
   font-weight: 400;
 }
+
+#main h2, #main-content h1, .gos-alliance h2 {
+  width:80%;
+}
+
 
 .content .field-name-body h2 a:before {
   font-family: "Glyphicons Halflings";
