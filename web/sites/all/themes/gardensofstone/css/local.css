@@ -400,6 +400,13 @@ body .container-fluid {
   font-weight: 400;
 }
 
+.content .field-name-body h2:before {
+  font-family: "Glyphicons Halflings";
+  font-size: 0.7em;
+  content: "\e086\00a0";
+  color: #738638;
+}
+
 /* font your face providing the font */
 .front-heading {
   font-size: 4em;
