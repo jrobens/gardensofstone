@@ -433,7 +433,7 @@ body .container-fluid {
 }
 
 .campaign-updates.well {
-  background-color: transparent;
+  background-color: transparent !important;
   border: none;
   min-height: 500px;
 }
