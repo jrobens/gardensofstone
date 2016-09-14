@@ -433,7 +433,7 @@ body .container-fluid {
 }
 
 .campaign-updates.well {
-  background-color: transparent !important;
+  background-color: transparent;
   border: none;
   min-height: 500px;
 }
@@ -441,13 +441,13 @@ body .container-fluid {
 
 .campaign-updates::after, .gos-protector::after {
     content: "";
-    opacity: 0.3;
+    opacity: 0.8;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
     position: absolute;
-    z-index: -1;
+   /*  z-index: -1;  */
     background-repeat: no-repeat;
     background-position: 50% 0;
     -ms-background-size: cover;
