@@ -441,6 +441,20 @@ body .container-fluid {
   border:0;
 }
 
+/* Create a white strip  opacity being inherited.
+
+:before, :after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: white;
+    position: absolute;
+    width: 50%;
+    height: 100px;
+    opacity: 0.9;
+}
+*/
+
 /*
 .campaign-updates, .gos-protector::after {
     content: "";
