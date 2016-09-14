@@ -424,11 +424,11 @@ body .container-fluid {
   font-weight: 400;
 }
 
-.campaign-updates::after {
+.campaign-updates {
   background: url("https://www.colongwilderness.org.au/files/styles/photocomp_large/public/webform/2015/lost_city._photo_henry_gold.jpg?itok=fo--Ewxa") transparent;
 }
 
-.gos-protector::after {
+.gos-protector {
   background: url("https://www.colongwilderness.org.au/files/styles/photocomp_large/public/webform/2015/lost_city._photo_henry_gold.jpg?itok=fo--Ewxa") transparent;
 }
 
