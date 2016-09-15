@@ -83,17 +83,11 @@ function CheckAuthentication() {
 }
 
 CheckAuthentication();
-
+$config['LicenseName'] = trim($_SESSION['ckeditor']['license_name']);
+$config['LicenseKey'] = trim(substr($_SESSION['ckeditor']['license_key'],15));
 if (isset($_SESSION['ckeditor']['UserFilesPath'], $_SESSION['ckeditor']['UserFilesAbsolutePath'])) {
   $baseUrl = $_SESSION['ckeditor']['UserFilesPath'];
-  // To deal with multiple application servers it's better to let CKFinder guess the server path based on the URL,
-  // because the server side path changes on each request (#2127467).
-  if (isset($_SERVER['PANTHEON_ENVIRONMENT'])) {
-    $baseDir = resolveUrl($baseUrl);
-  }
-  else {
-    $baseDir = $_SESSION['ckeditor']['UserFilesAbsolutePath'];
-  }
+  $baseDir = $_SESSION['ckeditor']['UserFilesAbsolutePath'];
 }
 else {
   // Nothing in session? Shouldn't happen... anyway let's try to upload it in the (almost) right place
