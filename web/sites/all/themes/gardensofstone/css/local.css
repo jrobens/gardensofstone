@@ -153,17 +153,17 @@
 }
 
 /* Slider */
-#hero-slider {
+.main-swiper-wrapper {
   background: url("/sites/all/themes/gardensofstone/images/gardens_of_stone_hayes.png") center;
   background-size: cover;
   color: black;
+  height: 960px !important;
 }
 
 .main-swiper-wrapper {
 }
 
 .swiper-container, .swiper-wrapper, .swiper-slide {
-  height: 900px !important;
 }
 
 .swiper-slide {

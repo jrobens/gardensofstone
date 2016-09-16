@@ -12,6 +12,7 @@
 ?>
 <?php $node_id = $variables['elements']['#node']->nid;?>
 <div class="main-swiper-wrapper">
+  <?php /*
   <div class="swiper-container-nid-<?php print $node_id;?> swiper-container">
     <div class="swiper-wrapper">
       <!--Slides-->
@@ -24,6 +25,7 @@
       <?php endforeach; ?>
       <!--End Slides-->
     </div>
+  */ ?>
   </div>
   <div class="pagination-nid-<?php print $node_id;?> pagination"></div>
 </div>
