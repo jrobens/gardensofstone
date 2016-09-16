@@ -453,7 +453,7 @@ body .container-fluid {
   #block-block-2 .content p {
     color: white;
     margin-top: -400px;
-    min-height: 800px;
+    min-height: 400px;
   }
 }
 
