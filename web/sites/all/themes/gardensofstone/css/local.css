@@ -78,7 +78,7 @@
 }
 
 .front #header {
-  min-height:0;
+  min-height: 0;
 }
 
 #main-navigation {
@@ -185,7 +185,6 @@ body .container-fluid {
   background-image: url("/sites/all/themes/gardensofstone/images/gardens_of_stone_hayes.jpg");
 }
 */
-
 
 .video-overlay {
   position: absolute;
@@ -384,10 +383,22 @@ body .container-fluid {
   opacity: 1;
 }
 
+#main-navigation .main-menu li:first-child {
+  background: url(/sites/all/themes/gardensofstone/images/gos2_logo_small.jpg) no-repeat;
+  min-width: 236px;
+  min-height: 104px;
+}
+
+.main-menu li:first-child a {
+  line-height: 0;
+  font-size: 0;
+  color: transparent;
+}
+
 .gos-alliance .content {
   margin-left: auto;
   margin-right: auto;
-  width:50%;
+  width: 50%;
 }
 
 .gos-alliance img {
@@ -404,9 +415,8 @@ body .container-fluid {
 }
 
 #main h2, #main-content h1, .gos-alliance h2 {
-  width:80%;
+  width: 80%;
 }
-
 
 .content .field-name-body h2 a:before {
   font-family: "Glyphicons Halflings";
@@ -440,18 +450,17 @@ body .container-fluid {
 }
 
 .campaign-updates.well > div, .gos-protector.well > div {
-  padding:2%;
+  padding: 2%;
   min-height: 600px;
 }
 
 .campaign-updates.well, .gos-protector.well {
-  border:0;
+  border: 0;
 }
+
 .campaign-updates.well a, .gos-protector.well a {
   color: white;
 }
-
-
 
 /* Create a white strip  opacity being inherited.
 
@@ -498,7 +507,7 @@ body .container-fluid {
 #subfooter {
   background-color: #5b6f27;
   color: #c0c0c0;
-  color: rgba(255,255,255,0.65);
+  color: rgba(255, 255, 255, 0.65);
   font-size: 0.857em;
 }
 
@@ -507,8 +516,6 @@ body .container-fluid {
 }
 
 /** for convenience */
-
-
 
 .green1 {
   color: #293120;
@@ -559,11 +566,11 @@ body .container-fluid {
 }
 
 .brown1 {
-  color:#A65403;
+  color: #A65403;
 }
 
 .brown2 {
- color: #A65403;
+  color: #A65403;
 }
 
 .brown3 {
@@ -579,7 +586,7 @@ body .container-fluid {
 }
 
 .brown6 {
-  color:#FFBB77;
+  color: #FFBB77;
 }
 
 .brown7 {
@@ -625,8 +632,6 @@ RGB Chart
 RGB Chart
 
 */
-
-
 
 /*
  border-color: #EED300;
