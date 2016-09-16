@@ -431,7 +431,7 @@ body .container-fluid {
 
 /* font your face providing the font */
 .front-heading {
-  font-size: 4em;
+  font-size: 2em;
   color: #5b6f27;
   line-height: 1.2em;
   float: right;
@@ -440,15 +440,19 @@ body .container-fluid {
 
 #block-block-2 .content p {
   color: white;
-  margin-top: -300px;
+  margin-top: -200px;
   margin-right: 20px;
   min-height: 300px;
 }
 
 @media only screen and (min-width: 768px) {
+  front-heading {
+    font-size: 4em;
+  }
+
   #block-block-2 .content p {
     color: white;
-    margin-top: -800px;
+    margin-top: -400px;
     min-height: 800px;
   }
 }
