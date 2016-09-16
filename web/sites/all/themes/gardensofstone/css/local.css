@@ -432,11 +432,13 @@ body .container-fluid {
 }
 
 .campaign-updates > div {
-  background: url("https://www.colongwilderness.org.au/files/styles/photocomp_large/public/webform/2015/lost_city._photo_henry_gold.jpg?itok=fo--Ewxa") transparent;
+  color: white;
+  background: url("/sites/all/themes/gardensofstone/images/Landscape_of_ancient_ruins_watermarked_Photo_Henry_Gold.jpg") transparent;
 }
 
 .gos-protector > div {
-  background: url("https://www.colongwilderness.org.au/files/styles/photocomp_large/public/webform/2015/lost_city._photo_henry_gold.jpg?itok=fo--Ewxa") transparent;
+  color: white;
+  background: url("/sites/all/themes/gardensofstone/images/Blue_Mountains_ash_Eucalyptus_oreades_watermarked_Photo_Henry_Gold.jpg") transparent;
 }
 
 .campaign-updates.well > div, .gos-protector.well > div {
