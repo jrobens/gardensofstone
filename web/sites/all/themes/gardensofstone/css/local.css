@@ -432,12 +432,10 @@ body .container-fluid {
 }
 
 .campaign-updates > div {
-  color: white;
   background: url("/sites/all/themes/gardensofstone/images/Landscape_of_ancient_ruins_watermarked_Photo_Henry_Gold.jpg") transparent;
 }
 
 .gos-protector > div {
-  color: white;
   background: url("/sites/all/themes/gardensofstone/images/Blue_Mountains_ash_Eucalyptus_oreades_watermarked_Photo_Henry_Gold.jpg") transparent;
 }
 
@@ -449,6 +447,11 @@ body .container-fluid {
 .campaign-updates.well, .gos-protector.well {
   border:0;
 }
+.campaign-updates.well a, .gos-protector.well a {
+  color: white;
+}
+
+
 
 /* Create a white strip  opacity being inherited.
 
