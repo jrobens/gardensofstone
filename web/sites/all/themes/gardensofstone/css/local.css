@@ -441,7 +441,7 @@ body .container-fluid {
 
 .campaign-updates.well > div, .gos-protector.well > div {
   padding:2%;
-  min-height: 500px;
+  min-height: 600px;
 }
 
 .campaign-updates.well, .gos-protector.well {
