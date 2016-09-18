@@ -530,6 +530,10 @@ body .container-fluid {
   background-color: #804000;
 }
 
+body .content .fa-facebook {
+  color: #3b5998;
+}
+
 #footer, #footer a {
   color: white;
 }
