@@ -446,17 +446,18 @@ body .container-fluid {
 }
 
 .gos-video-wrapper {
-	position: relative;
-	padding-bottom: 56.25%; /* 16:9 */
-	padding-top: 25px;
-	height: 0;
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
 }
+
 .gos-video-wrapper iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 @media only screen and (min-width: 768px) {
@@ -468,6 +469,11 @@ body .container-fluid {
     color: white;
     margin-top: -400px;
     min-height: 400px;
+  }
+
+  .gos-video-wrapper {
+    margin-left: 25px;
+    margin-right: 25px;
   }
 }
 
@@ -530,8 +536,9 @@ body .container-fluid {
   background-color: #804000;
 }
 
-body .content .fa-facebook {
-  color: #3b5998;
+#footer #block-block-10:after {
+  background: url(/sites/all/modules/contrib/responsive_share_buttons/images/buttons/facebook.jpg) no-repeat right;
+  background-color: transparent;
 }
 
 #footer, #footer a {
