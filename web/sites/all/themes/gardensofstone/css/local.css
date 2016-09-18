@@ -536,9 +536,18 @@ body .container-fluid {
   background-color: #804000;
 }
 
-#footer #block-block-10:after {
-  background: url(/sites/all/modules/contrib/responsive_share_buttons/images/buttons/facebook.jpg) no-repeat right;
-  background-color: transparent;
+#footer #block-block-10 a:after {
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  content: "\f09a";
+  width: 25px;
+  height: 25px;
+  margin-left:10px;
+  padding:3px;
+  background-color: #3b5998;
+  border-radius: 3px;
 }
 
 #footer, #footer a {
