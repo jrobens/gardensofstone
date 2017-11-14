@@ -5,31 +5,26 @@
   text-align: center;
   float: left;
 }
-
 #logo img {
   display: inherit;
 }
-
 #logo img:hover {
   opacity: 0.8;
   filter: alpha(opacity=80);
 }
-
 #site-name a {
   font-size: 38px;
   font-weight: 700;
   line-height: 1em;
   margin: 0 0 10px;
-  color: #444444;
+  color: #444;
   display: block;
 }
-
 #site-name a:hover {
   text-decoration: none;
   opacity: 0.8;
   filter: alpha(opacity=80);
 }
-
 #site-slogan {
   color: #999;
   font-size: 13px;
@@ -37,7 +32,6 @@
   line-height: 150%;
   margin: 10px 0 10px 0;
 }
-
 /*Layout*/
 #pre-header {
   top: 0;
@@ -47,18 +41,15 @@
   position: absolute;
   background-color: #333;
 }
-
 .logged-in #pre-header {
   padding-top: 64px;
 }
-
 #pre-header-inside {
   display: none;
   position: relative;
   z-index: 13;
   padding: 40px 0 0 0;
 }
-
 #header-top {
   background-color: #fcfcfc;
   border-bottom: 1px dashed #eaeaea;
@@ -66,7 +57,6 @@
   z-index: 12;
   min-height: 50px;
 }
-
 #header {
   background-color: #fcfcfc;
   border-bottom: 1px solid #eaeaea;
@@ -76,11 +66,9 @@
   text-align: center;
   min-height: 130px;
 }
-
 .front #header {
   min-height: 0;
 }
-
 #main-navigation {
   background-color: #fcfcfc;
   position: relative;
@@ -89,12 +77,10 @@
   -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.075), 0 10px 0 rgba(0, 0, 0, 0.01);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.075), 0 10px 0 rgba(0, 0, 0, 0.01);
 }
-
 #banner-inside {
   padding-top: 60px;
   margin-bottom: 40px;
 }
-
 #slideshow {
   padding: 10px;
   background-color: #fcfcfc;
@@ -104,24 +90,19 @@
   border-radius: 6px;
   display: none;
 }
-
 #top-content {
-  background-color: #ffffff;
+  background-color: #fff;
   padding: 40px 0 20px 0;
 }
-
 #main-content {
   padding: 60px 0 30px 0;
 }
-
 #main {
   padding: 0 0 20px;
 }
-
 #bottom-content {
   padding: 40px 0 20px 0;
 }
-
 #footer {
   background-color: #fcfcfc;
   border-top: 1px solid #eaeaea;
@@ -129,7 +110,6 @@
   margin-bottom: 1px;
   padding: 60px 0 30px;
 }
-
 #subfooter {
   background-color: #fcfcfc;
   border-top: 1px solid #eaeaea;
@@ -137,21 +117,17 @@
   text-align: center;
   margin-bottom: 20px;
 }
-
 .block {
   padding: 0 0 30px 0;
   clear: both;
 }
-
 #header-top .block, #main-navigation .block, #banner .block {
   padding: 0;
 }
-
 /* Not generated */
 #content-wrapper, .node.node-teaser, .page-node- #content-wrapper, .page-contact #content-wrapper {
   border: none;
 }
-
 /* Slider */
 .main-swiper-wrapper {
   background: url("/sites/all/themes/gardensofstone/images/gardens_of_stone_hayes.png") center;
@@ -159,24 +135,19 @@
   color: black;
   height: 960px !important;
 }
-
 .main-swiper-wrapper {
 }
-
 .swiper-container, .swiper-wrapper, .swiper-slide {
 }
-
 .swiper-slide {
   /*
   background-position: center;
   background-size: cover;
   */
 }
-
 body .container-fluid {
   padding: 0;
 }
-
 /*
 .swiper-wrapper:nth-child(1) {
   background-image: url("/sites/all/themes/gardensofstone/images/gardens_of_stone_hayes.jpg");
@@ -196,12 +167,10 @@ body .container-fluid {
   transition: all 350ms linear;
   z-index: 2;
 }
-
 .logged-in .video-overlay .videoheading {
   position: relative;
   top: 150px;
 }
-
 .video-overlay .videoheading {
   width: 100%;
   color: #fff;
@@ -214,201 +183,164 @@ body .container-fluid {
   transition: all 900ms ease-in-out;
   text-align: center;
 }
-
 .videologo {
   display: block;
   width: 100%;
 }
-
 .video-overlay .videoheading h1 {
   font-family: 'Raleway', Arial, Helvetica, sans-serif;
 }
-
 .video-overlay .videoheading h1 b {
   line-height: 150%;
 }
-
 .video-overlay .videoheading h2 {
   font-family: 'Raleway', Arial, Helvetica, sans-serif;
   color: #ff9912;
 }
-
 .video-overlay .videoheading h3 {
   font-family: 'Raleway', Arial, Helvetica, sans-serif;
   color: #fff;
 }
-
 @media only screen and (min-width: 320px) {
   .video-overlay .videoheading {
     position: relative;
     top: 0;
     font-size: 0.8em;
   }
-
   .video-overlay .videoheading h2 {
     font-size: 1em;
     padding: 0;
     margin: 0;
   }
-
   .video-overlay .videoheading h3 {
     font-size: 1em;
     padding: 0;
     margin: 0;
   }
-
   .video-overlay {
     top: 0;
   }
-
   .video-overlay .videologo img {
     float: none;
     margin: 10px auto 0 auto;
   }
 }
-
 @media only screen and (min-width: 480px) {
   .video-overlay .videoheading {
     position: relative;
     top: 0;
     font-size: 0.8em;
   }
-
   .video-overlay .videoheading h2 {
     font-size: 1em;
     padding: 0;
     margin: 0;
   }
-
   .video-overlay .videoheading h3 {
     font-size: 1em;
     padding: 0;
     margin: 0;
   }
-
   .video-overlay {
     top: 0;
   }
-
   .video-overlay .videologo img {
     float: none;
     margin: 10px auto 0 auto;
   }
 }
-
 @media only screen and (min-width: 768px) {
   .video-overlay .videoheading {
     position: relative;
     top: 50px;
     font-size: 1.3em;
   }
-
   .video-overlay .videoheading h2 {
     font-size: 1em;
     padding: 0;
     margin: 0;
   }
-
   .video-overlay .videoheading h3 {
     font-size: 1em;
     padding: 0;
     margin: 0;
   }
-
   .video-overlay {
     top: 0;
   }
-
   .video-overlay .videologo img {
     float: right;
     margin: 10px 20px 0 0;
   }
 }
-
 @media only screen and (min-width: 992px) {
   .video-overlay .videoheading {
     position: relative;
     top: 50px;
     font-size: 1.3em;
   }
-
   .video-overlay .videoheading h2 {
     font-size: 1.2em;
     padding: 0;
     margin: 0;
   }
-
   .video-overlay .videoheading h3 {
     font-size: 1.2em;
     padding: 0;
     margin: 0;
   }
-
   .video-overlay {
     top: 0;
   }
-
   .video-overlay .videologo img {
     float: right;
     margin: 10px 20px 0 0;
   }
 }
-
 @media only screen and (min-width: 1200px) {
   .video-overlay .videoheading {
     position: relative;
     top: 80px;
     font-size: 1.6em;
   }
-
   .video-overlay .videoheading h2 {
     font-size: 1.2em;
   }
-
   .video-overlay .videoheading h3 {
     font-size: 1.2em;
   }
-
   .video-overlay {
     top: 0;
   }
-
   .video-overlay .videologo img {
     float: right;
     margin: 10px 20px 0 0;
   }
 }
-
 .video-overlay .videoheading.active {
   opacity: 1;
 }
-
 #main-navigation .main-menu li:first-child {
   background: url(/sites/all/themes/gardensofstone/images/gos2_logo_small.jpg) no-repeat;
   min-width: 236px;
   min-height: 104px;
 }
-
 .main-menu li {
   line-height: 104px
 }
-
 .main-menu li:first-child a {
   line-height: 0;
   font-size: 0;
   color: transparent;
 }
-
 .gos-alliance .content {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
 }
-
 .gos-alliance img {
   float: left;
 }
-
 #top-content h2, #main h2, #main-content h1, .gos-alliance h2 {
   margin-left: auto;
   margin-right: auto;
@@ -417,22 +349,18 @@ body .container-fluid {
   font-family: 'Roboto', 'serif';
   font-weight: 400;
 }
-
-#top-content .block.front-heading > h2 {
-  font-size:1em;
+#top-content .front-heading > h2 {
+  font-size: 1em;
 }
-
 #main h2, #main-content h1, .gos-alliance h2 {
   width: 80%;
 }
-
 .content .field-name-body h2 a:before {
   font-family: "Glyphicons Halflings";
   font-size: 0.7em;
   content: "\e086\00a0";
   color: #738638;
 }
-
 /* font your face providing the font */
 .front-heading {
   font-size: 2em;
@@ -441,21 +369,18 @@ body .container-fluid {
   float: right;
   font-weight: 400;
 }
-
 #block-block-2 .content p {
   color: white;
   margin-top: -200px;
   margin-right: 20px;
   min-height: 200px;
 }
-
 .gos-video-wrapper {
   position: relative;
   padding-bottom: 56.25%; /* 16:9 */
   padding-top: 25px;
   height: 0;
 }
-
 .gos-video-wrapper iframe {
   position: absolute;
   top: 0;
@@ -463,45 +388,36 @@ body .container-fluid {
   width: 100%;
   height: 100%;
 }
-
 @media only screen and (min-width: 768px) {
   .front-heading {
     font-size: 4em;
   }
-
   #block-block-2 .content p {
     color: white;
     margin-top: -400px;
     min-height: 400px;
   }
-
   .gos-video-wrapper {
     margin-left: 25px;
     margin-right: 25px;
   }
 }
-
 .campaign-updates > div {
   background: url("/sites/all/themes/gardensofstone/images/Landscape_of_ancient_ruins_watermarked_Photo_Henry_Gold.jpg") transparent;
 }
-
 .gos-protector > div {
   background: url("/sites/all/themes/gardensofstone/images/Blue_Mountains_ash_Eucalyptus_oreades_watermarked_Photo_Henry_Gold.jpg") transparent;
 }
-
 .campaign-updates.well > div, .gos-protector.well > div {
   padding: 2%;
   min-height: 600px;
 }
-
 .campaign-updates.well, .gos-protector.well {
   border: 0;
 }
-
 .campaign-updates.well a, .gos-protector.well a {
   color: white;
 }
-
 /* Create a white strip  opacity being inherited.
 
 :before, :after {
@@ -539,7 +455,6 @@ body .container-fluid {
 #footer {
   background-color: #804000;
 }
-
 #footer #block-block-11 a:after, #footer #block-block-10 a:after {
   font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
@@ -547,117 +462,91 @@ body .container-fluid {
   -webkit-font-smoothing: antialiased;
   width: 25px;
   height: 25px;
-  margin-left:10px;
-  padding:3px;
-
+  margin-left: 10px;
+  padding: 3px;
 }
-
 #footer #block-block-10 a:after {
   content: "\f09a";
-/*  background-color: #3b5998;    */
+  /*  background-color: #3b5998;    */
   background-color: transparent;
   border: 1px solid white;
   border-radius: 3px;
-  font-size:12px;
+  font-size: 12px;
 }
-
 #footer #block-block-11 a:after {
   content: "\f08e";
 }
-
 #footer, #footer a {
   color: white;
 }
-
 #subfooter {
   background-color: #5b6f27;
   color: #c0c0c0;
   color: rgba(255, 255, 255, 0.65);
   font-size: 0.857em;
 }
-
 #subfooter a {
   color: white;
 }
-
 /** for convenience */
 
 .green1 {
   color: #293120;
 }
-
 .green2 {
   color: #3d472d;
 }
-
 .green3 {
   color: #505946;
 }
-
 .green4 {
   color: #5b6f27;
 }
-
 .green5 {
   color: #618b41;
 }
-
 .green6 {
   color: #738638;
 }
-
 .green7 {
   color: #7c8f40;
 }
-
 .green8 {
   color: #899d47;
 }
-
 .green9 {
   color: #bcc995;
 }
-
 .green10 {
   color: #ced8af;
 }
-
 .blue1 {
   color: #9aaedb;
 }
-
 .ochre {
-  color: #cc7722;
+  color: #c72;
 }
-
 .brown1 {
-  color: #A65403;
+  color: #a65403;
 }
-
 .brown2 {
-  color: #A65403;
+  color: #a65403;
 }
-
 .brown3 {
   color: #804000;
 }
-
 .brown4 {
-  color: #592D00;
+  color: #592d00;
 }
-
 .brown5 {
-  color: #F29F4D;
+  color: #f29f4d;
 }
-
 .brown6 {
-  color: #FFBB77;
+  color: #fb7;
 }
-
 .brown7 {
-  color: #FFCE9D;
+  color: #ffce9d;
 }
-
 /*
 Triadic Colors
 #CC7722
