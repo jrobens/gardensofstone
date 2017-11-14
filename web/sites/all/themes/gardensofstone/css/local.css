@@ -418,7 +418,7 @@ body .container-fluid {
   font-weight: 400;
 }
 
-.block.front-heading h2 {
+#main-content .block.front-heading > h2 {
   font-size:1em;
 }
 
