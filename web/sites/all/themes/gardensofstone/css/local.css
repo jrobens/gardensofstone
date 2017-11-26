@@ -488,6 +488,10 @@ body .container-fluid {
 #subfooter a {
   color: white;
 }
+/* media browser */
+.page-media-browser #share-wrapper {
+  display: none;
+}
 /** for convenience */
 
 .green1 {
