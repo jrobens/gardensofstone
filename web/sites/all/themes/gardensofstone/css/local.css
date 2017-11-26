@@ -492,6 +492,17 @@ body .container-fluid {
 .page-media-browser #share-wrapper {
   display: none;
 }
+/** Custom page styles */
+/* blog */
+.view-blog-updates.view-display-id-block .node-readmore {
+  color: #fff;
+  background-color: #428bca;
+  border-color: #357ebd;
+  padding: 0.5em;
+}
+.view-blog-updates.view-display-id-block .node-readmore a {
+  color: white;
+}
 /** for convenience */
 
 .green1 {
