@@ -326,7 +326,9 @@ body .container-fluid {
   min-height: 104px;
 }
 .main-menu li {
-  line-height: 104px
+  line-height: 104px;
+  min-width:8%;
+  display: inline-block;
 }
 .main-menu li:first-child a {
   line-height: 0;
