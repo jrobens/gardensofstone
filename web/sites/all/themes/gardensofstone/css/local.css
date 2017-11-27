@@ -327,7 +327,7 @@ body .container-fluid {
 }
 .main-menu li {
   line-height: 104px;
-  min-width:8%;
+  min-width: 8%;
   display: inline-block;
 }
 .main-menu li:first-child a {
@@ -497,10 +497,18 @@ body .container-fluid {
 /** Custom page styles */
 /* blog */
 .node-blog .header h2 {
-  padding:1em;
-}
-.field-bame-body {
   padding: 1em;
+}
+.field-name-body {
+  padding: 1em;
+}
+.node-blog .paragraphs-items .field-name-field-text {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 4em;
+  color: #804000;
+  font-family: 'Roboto', 'serif';
+  font-weight: 400;
 }
 .view-blog-updates.view-display-id-block .node-readmore {
   color: #fff;
