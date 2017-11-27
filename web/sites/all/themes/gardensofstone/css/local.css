@@ -505,10 +505,11 @@ body .container-fluid {
 .node-blog .paragraphs-items .field-name-field-text {
   margin-left: auto;
   margin-right: auto;
-  font-size: 4em;
+  font-size: 3em;
   color: #804000;
   font-family: 'Roboto', 'serif';
   font-weight: 400;
+  line-height: 1.3 em;
 }
 .view-blog-updates.view-display-id-block .node-readmore {
   color: #fff;
