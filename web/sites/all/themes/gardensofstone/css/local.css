@@ -496,6 +496,12 @@ body .container-fluid {
 }
 /** Custom page styles */
 /* blog */
+.node-blog .header h2 {
+  padding:1em;
+}
+.field-bame-body {
+  padding: 1em;
+}
 .view-blog-updates.view-display-id-block .node-readmore {
   color: #fff;
   background-color: #428bca;
