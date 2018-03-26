@@ -1,0 +1,1 @@
+ssh sys@topaz mysqldump -hlocalhost -ugos_cms -psWStjaF0 gos_cms | gzip > src/sql/gos_cms.sql.gz
