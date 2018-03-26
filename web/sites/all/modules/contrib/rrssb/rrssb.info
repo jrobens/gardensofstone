@@ -7,9 +7,9 @@ configure = admin/config/content/rrssb
 dependencies[] = libraries
 files[] = includes/rrssb.drush.inc
 
-; Information added by Drupal.org packaging script on 2017-03-24
-version = "7.x-2.0"
+; Information added by Drupal.org packaging script on 2017-10-28
+version = "7.x-2.3"
 core = "7.x"
 project = "rrssb"
-datestamp = "1490389088"
+datestamp = "1509223987"
 
