@@ -1,3 +1,23 @@
+body::after {
+  content: "";
+  background: url("../images/gardens_of_stone_hayes_mobile.png")  no-repeat center top fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+body.page-node-1::after {
+  background: url(../images/gardens_of_stone_hayes.png) no-repeat center top fixed;
+  background-size: 100%;
+}
+
 /* Custom CSS overrides */
 /* Logo - Site name*/
 #logo {
@@ -49,6 +69,9 @@
   position: relative;
   z-index: 13;
   padding: 40px 0 0 0;
+}
+#hero-slider {
+  margin-top:36em;
 }
 #header-top {
   background-color: #fcfcfc;
@@ -130,19 +153,7 @@
 }
 /* Slider */
 
-.main-swiper-wrapper {
-  background: url("../images/gardens_of_stone_hayes_mobile.png") center;
-  background-size: cover;
-  color: black;
-  height: 960px !important;
-}
-@media only screen and (min-width: 768px) {
-  .main-swiper-wrapper {
-    background: url("../images/gardens_of_stone_hayes.png") center;
-  }
-}
-.main-swiper-wrapper {
-}
+
 .swiper-container, .swiper-wrapper, .swiper-slide {
 }
 .swiper-slide {
@@ -459,6 +470,21 @@ body .container-fluid {
     background-size: cover;
 }
 */
+
+
+/* Paragraphs */
+.field-name-field-image-para-image {
+  position: relative;
+}
+
+.image-caption {
+  position: absolute;
+  background: #f58752;
+  width: 80%;
+  font-size: 3em;
+  bottom: 0.5em;
+  padding: 0.2em;
+}
 
 #footer {
   background-color: #804000;
