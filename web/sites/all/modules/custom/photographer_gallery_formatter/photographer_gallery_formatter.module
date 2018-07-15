@@ -1,0 +1,393 @@
+<?php
+
+/**
+ * Uses image-field-caption module to specify the caption. The image title and
+ * caption are printed out below the image.
+ *
+ * @file
+ * Add an URL formatter for image field
+ *
+ * jrobens@interlated.com.au
+ * 201710
+ */
+
+/**
+ * Define constants for determine which type of URL should be used.
+ */
+define('photographer_gallery_formatter_URI_PATH', '3');
+define('photographer_gallery_formatter_RELATIVE_PATH', '2');
+define('photographer_gallery_formatter_ABSOLUTE_PATH', '1');
+define('photographer_gallery_formatter_FULL_URL', '0');
+
+
+/**
+ * Build grid Gallery and add necessary scripts and styles.
+ */
+function photographer_gallery_formatter_init()
+{
+  $options = [];
+  $options['row_class'] = "";
+  $options['default_row_class'] = 0;
+  $options['row_class_special'] = 0;
+  $options['uses_fields'] = FALSE;
+  $options['columns'] = "4";
+  $options['alignment'] = "horizontal";
+  $options['fill_single_line'] = 1;
+  $options['summary'] = "";
+  $options['caption'] = "";
+  $options['image_field'] = "field_image_poty";
+  $options['image_title'] = "default";
+  $options['controls'] = 1;
+  $options['borderless'] = 0;
+  $options['image_style'] = "photographer_gallery_watermarked";
+
+  /*
+
+  drupal_add_css(libraries_get_path('blueimpGallery') . '/css/blueimp-gallery.css');
+  drupal_add_css(libraries_get_path('blueimpGallery') . '/css/blueimp-gallery-indicator.css');
+  drupal_add_css(libraries_get_path('blueimpGallery') . '/css/blueimp-gallery-video.css');
+
+  drupal_add_js(libraries_get_path('blueimpGallery') . '/js/blueimp-gallery.min.js');
+  drupal_add_js(libraries_get_path('blueimpGallery') . '/js/blueimp-gallery-fullscreen.js');
+  drupal_add_js(libraries_get_path('blueimpGallery') . '/js/blueimp-gallery-indicator.js');
+  drupal_add_js(libraries_get_path('blueimpGallery') . '/js/blueimp-gallery-video.js');
+  drupal_add_js(libraries_get_path('blueimpGallery') . '/js/blueimp-gallery-youtube.js');
+  drupal_add_js(libraries_get_path('blueimpGallery') . '/js/blueimp-helper.js');
+  */
+  /*
+ <script src="js/blueimp-helper.js"></script>
+<script src="js/blueimp-gallery.js"></script>
+<script src="js/blueimp-gallery-fullscreen.js"></script>
+<script src="js/blueimp-gallery-indicator.js"></script>
+<script src="js/blueimp-gallery-video.js"></script>
+<script src="js/blueimp-gallery-vimeo.js"></script>
+<script src="js/blueimp-gallery-youtube.js"></script>
+<script src="js/vendor/jquery.js"></script>
+<script src="js/jquery.blueimp-gallery.js"></script>
+<script src="js/demo/demo.js"></script>
+  */
+
+  drupal_add_js(['bootstrapGallery' => $options], ['type' => 'setting']);
+}
+
+
+/**
+ * Implements hook_theme().
+ */
+function photographer_gallery_formatter_theme()
+{
+  return [
+    'photographer_gallery_formatter' => [
+      'variables' => [
+        'item' => NULL,
+        'path' => NULL,
+        'image_style' => NULL,
+        'classes' => NULL,
+        'url_type' => NULL,
+      ],
+    ],
+  ];
+}
+
+/**
+ * Implements hook_field_formatter_info().
+ */
+function photographer_gallery_formatter_field_formatter_info()
+{
+  $formatters = [
+    'image_caption' => [
+      'label' => t('Image Slideshow Caption URL'),
+      'field types' => ['image', 'imagefield_crop'],
+      'settings' => [
+        'url_type' => '',
+        'image_style' => '',
+        'classes' => '',
+        'image_link' => '',
+      ],
+    ],
+  ];
+
+  return $formatters;
+}
+
+/**
+ * Implements hook_field_formatter_settings_form().
+ */
+function photographer_gallery_formatter_field_formatter_settings_form($field, $instance, $view_mode, $form, &$form_state)
+{
+  $display = $instance['display'][$view_mode];
+  $settings = $display['settings'];
+
+  $element['url_type'] = [
+    '#title' => t('URL type'),
+    '#type' => 'radios',
+    '#options' => [
+      photographer_gallery_formatter_URI_PATH => t('URI path'),
+      photographer_gallery_formatter_RELATIVE_PATH => t('Relative file path'),
+      photographer_gallery_formatter_ABSOLUTE_PATH => t('Absolute file path (recommended)'),
+      photographer_gallery_formatter_FULL_URL => t('Full URL'),
+    ],
+    '#default_value' => $settings['url_type'],
+  ];
+  $element['url_type'][photographer_gallery_formatter_URI_PATH]['#description'] = t("Uses the URI path, like: 'public://image.png'");
+  $element['url_type'][photographer_gallery_formatter_RELATIVE_PATH]['#description'] = t("No base URL or leading slash, like: 'sites/default/files/image.png'");
+  $element['url_type'][photographer_gallery_formatter_ABSOLUTE_PATH]['#description'] = t("With leading slash, no base URL, like: '/sites/default/files/image.png'");
+  $element['url_type'][photographer_gallery_formatter_FULL_URL]['#description'] = t("Like: 'http://example.com/sites/default/files/image.png'");
+
+  $image_styles = image_style_options(FALSE);
+  $element['image_style'] = [
+    '#title' => t('Image style'),
+    '#type' => 'select',
+    '#default_value' => $settings['image_style'],
+    '#empty_option' => t('None (original image)'),
+    '#options' => $image_styles,
+  ];
+
+  $element['classes'] = [
+    '#title' => t('Classes'),
+    '#type' => 'text',
+    '#default_value' => '',
+  ];
+
+
+  $link_types = [
+    'content' => t('Content'),
+    'file' => t('File'),
+  ];
+  $element['image_link'] = [
+    '#title' => t('Link image url to'),
+    '#type' => 'select',
+    '#default_value' => $settings['image_link'],
+    '#empty_option' => t('Nothing'),
+    '#options' => $link_types,
+  ];
+
+  return $element;
+}
+
+/**
+ * Implements hook_field_formatter_settings_summary().
+ */
+function photographer_gallery_formatter_field_formatter_settings_summary($field, $instance, $view_mode)
+{
+  $display = $instance['display'][$view_mode];
+  $settings = $display['settings'];
+
+  $summary = [];
+
+  switch ($settings['url_type']) {
+    case photographer_gallery_formatter_URI_PATH:
+      $summary[] = t('Use uri path');
+      break;
+
+    case photographer_gallery_formatter_RELATIVE_PATH:
+      $summary[] = t('Use relative path');
+      break;
+
+    case photographer_gallery_formatter_ABSOLUTE_PATH:
+      $summary[] = t('Use absolute path');
+      break;
+
+    case photographer_gallery_formatter_FULL_URL:
+      $summary[] = t('Use full URL');
+      break;
+  }
+
+  $image_styles = image_style_options(FALSE);
+  // Unset possible 'No defined styles' option.
+  unset($image_styles['']);
+  // Styles could be lost because of enabled/disabled modules that defines
+  // their styles in code.
+  if (isset($image_styles[$settings['image_style']])) {
+    $summary[] = t('URL for image style: @style', ['@style' => $image_styles[$settings['image_style']]]);
+  } else {
+    $summary[] = t('Original image URL');
+  }
+
+  $link_types = [
+    'content' => t('Linked to content'),
+    'file' => t('Linked to file'),
+  ];
+  // Display this setting only if image is linked.
+  if (isset($link_types[$settings['image_link']])) {
+    $summary[] = $link_types[$settings['image_link']];
+  }
+
+  return implode('<br />', $summary);
+}
+
+/**
+ * Implements hook_field_formatter_view().
+ */
+function photographer_gallery_formatter_field_formatter_view($entity_type, $entity, $field, $instance, $langcode, $items, $display)
+{
+  $element = [];
+
+  switch ($display['type']) {
+    case 'image_caption':
+      // Check if the formatter involves a link.
+      if ($display['settings']['image_link'] == 'content') {
+        $uri = entity_uri($entity_type, $entity);
+      } elseif ($display['settings']['image_link'] == 'file') {
+        $link_file = TRUE;
+      }
+
+      foreach ($items as $delta => $item) {
+        if (isset($link_file)) {
+          $uri = [
+            'path' => file_create_url($item['uri']),
+            'options' => [],
+          ];
+        }
+        $element[$delta] = [
+          '#theme' => 'photographer_gallery_formatter',
+          '#item' => $item,
+          '#image_style' => $display['settings']['image_style'],
+          '#classes' => $display['settings']['classes'],
+          '#path' => isset($uri) ? $uri : '',
+          '#url_type' => $display['settings']['url_type'],
+        ];
+      }
+
+      break;
+
+  }
+
+  return $element;
+}
+
+/**
+ * Returns HTML for an image url field formatter.
+ *
+ * @param array $variables
+ *   An associative array containing:
+ *   - item: An array of image data.
+ *   - image_style: An optional image style.
+ *   - path: An array containing the link 'path' and link 'options'.
+ *
+ * @ingroup themeable
+ */
+function theme_photographer_gallery_formatter($variables)
+{
+  $item = $variables['item'];
+
+  $image = [
+    'path' => $item['uri'],
+    'alt' => $item['alt'],
+  ];
+  // Do not output an empty 'title' attribute.
+  if (drupal_strlen($item['title']) > 0) {
+    $image['title'] = $item['title'];
+  }
+
+  $caption = '<div class="image-caption">' . pg_print($image, 'title')  . '</div>';
+
+  // Has both a caption and a title for ESA.
+  // Depends on the image_field_caption module
+  // Could do 'if module_exists + call image_field_caption theme function but would render the image again.
+  if (array_key_exists('image_field_caption', $item)) {
+    $image_field_caption_markup = check_markup($variables['item']['image_field_caption']['value'], $variables['item']['image_field_caption']['format']);
+    $caption .= '<div class="image-field-caption">' . $image_field_caption_markup . '</div>';
+  }
+
+  // Return the URI path.
+  if ($variables['url_type'] == 3) {
+    $output = $item['uri'];
+    $output .= $caption;
+    return $output;
+  }
+  $uri = file_create_url($item['uri']);
+  if ($variables['image_style']) {
+    $image['style_name'] = $variables['image_style'];
+    $uri = image_style_url($image['style_name'], $item['uri']);
+  }
+
+  $classes_attr = '';
+  if ($variables['classes']) {
+    $classes_attr = ' class="' . $variables['classes'] . '" ';
+  }
+
+  $data_description = '';
+  if (!empty($image_field_caption_markup)) {
+    $data_description = htmlspecialchars($image_field_caption_markup, ENT_QUOTES);
+  }
+  $output = '<a href="' . $uri . '" title="' . pg_print($image, 'title') . '" data-description="' . $data_description . '" data-gallery="">';
+  $output .= '<img src="' . photographer_gallery_formatter_convert_full_url($uri, $variables['url_type']) . '" alt="' . $item['alt'] . '" ' . 'title="' . pg_print($image, 'title') . '" ' . $classes_attr . ' class="img-responsive"/> ';
+  $output .= $caption;
+  $output .= '</a>';
+  return $output;
+
+  /*
+  if ($variables['path']) {
+    $path = $variables['path']['path'];
+    $path = photographer_gallery_formatter_convert_full_url($path, $variables['url_type']);
+    $options = $variables['path']['options'];
+    // When displaying an image inside a link, the html option must be TRUE.
+    $options['html'] = TRUE;
+    $output = l($output, $path, $options);
+    $output .= $caption;
+  }
+
+  return $output;
+  */
+}
+
+function pg_print($array, $index)
+{
+  if (array_key_exists($index, $array)) {
+    return $array[$index];
+  }
+  return "";
+}
+
+/**
+ * Converts a full URL to the choosen format.
+ *
+ * @param string $url
+ *   The full URL to convet.
+ * @param constant $format
+ *   photographer_gallery_formatter_RELATIVE_PATH for relative path,
+ *   photographer_gallery_formatter_ABSOLUTE_PATH for absolute path,
+ *   photographer_gallery_formatter_FULL_URL for full URL.
+ *
+ * @return string
+ *   The converted URL.
+ */
+function photographer_gallery_formatter_convert_full_url($url, $format = photographer_gallery_formatter_FULL_URL)
+{
+  switch ($format) {
+    case photographer_gallery_formatter_RELATIVE_PATH:
+      $url = _photographer_gallery_formatter_get_relative_file_url($url);
+      break;
+
+    case photographer_gallery_formatter_ABSOLUTE_PATH:
+      $url = _photographer_gallery_formatter_get_absolute_file_url($url);
+      break;
+  }
+
+  return $url;
+}
+
+/**
+ * Returns an absolute url.
+ */
+function _photographer_gallery_formatter_get_absolute_file_url($url)
+{
+  global $base_url;
+  if (strpos($url, $base_url) === 0) {
+    $url = base_path() . ltrim(str_replace($GLOBALS['base_url'], '', $url), '/');
+  }
+  return $url;
+}
+
+/**
+ * Returns a relative url.
+ */
+function _photographer_gallery_formatter_get_relative_file_url($url)
+{
+  $url = _photographer_gallery_formatter_get_absolute_file_url($url);
+  if ($url[0] == '/') {
+    $url = substr($url, 1);
+  }
+  return $url;
+}
