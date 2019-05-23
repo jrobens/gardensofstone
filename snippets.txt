@@ -1,0 +1,9 @@
+<div class="row">
+<div class="col-xs-12 col-md-6 campaign-updates">
+<a href="https://www.colongwilderness.org.au/form/protect-gardens-stone">Campaign Updates</a>
+</div>
+<div class="col-xs-12 col-md-6 gos-protector">
+<a href="https://www.colongwilderness.org.au/you-can-help-save-gardens-stone">Become a Gardens of Stone Protector</a>
+</div>
+</div>
+
