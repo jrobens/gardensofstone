@@ -17,5 +17,21 @@ web/sites/*/files
 web/sites/*/private
 
 .DS_Store
-# ~/.vim/etc/tpl/gitignore.tpl
+src/Times
+.DS_Store
+install.php
+INSTALL.sqlite.txt
+INSTALL.pgsql.txt
+INSTALL.mysql.txt
+UPGRADE.txt
+INSTALL.txt
+MAINTAINERS.txt
+CHANGELOG.txt
+COPYRIGHT.txt
+load_drupal.sh
+README.txt
+LICENSE.txt
+test.html
 
+/src/
+/doc/
