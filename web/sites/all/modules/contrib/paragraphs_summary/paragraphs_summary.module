@@ -1,0 +1,172 @@
+<?php
+
+/**
+ * Implements hook_field_formatter_info().
+ */
+function paragraphs_summary_field_formatter_info() {
+  return array(
+    'paragraphs_summary' => array(
+      'label' => t('Paragraphs items summary'),
+      'field types' => array('paragraphs'),
+      'settings' =>  array(
+        'allowed_bundles' => array(),
+        'view_mode' => 'full',
+        'limit' => 1,
+      ),
+    ),    
+  );
+}
+
+/**
+ * Implements hook_field_formatter_settings_form().
+ */
+function paragraphs_summary_field_formatter_settings_form($field, $instance, $view_mode, $form, &$form_state) {
+  $display = $instance['display'][$view_mode];
+  $settings = $display['settings'];
+  $elements = array();
+
+  if ($display['type'] == 'paragraphs_summary') {
+
+    // Allowed bundles
+    $options = array();
+    $bundles = paragraphs_bundle_load();
+    foreach ($bundles as $bundle) {
+      $options[$bundle->bundle] = $bundle->name;
+    }
+
+    $elements['allowed_bundles'] = array(
+      '#type' => 'checkboxes',
+      '#title' => t("Allowed bundles"),
+      '#options' => $options,
+      '#default_value' => $settings['allowed_bundles'],
+      '#description' => t('Select allowed bundles'),
+    );
+
+    // View mode
+    $entity_type = entity_get_info('paragraphs_item');
+    $options = array();
+    foreach ($entity_type['view modes'] as $mode => $info) {
+      $options[$mode] = $info['label'];
+    }
+
+    $elements['view_mode'] = array(
+      '#type' => 'select',
+      '#title' => t('View mode'),
+      '#options' => $options,
+      '#default_value' => $settings['view_mode'],
+      '#description' => t('Select the view mode'),
+    );
+
+    // Limit
+    $elements['limit'] = array(
+      '#type' => 'textfield',
+      '#title' => t("Limit"),
+      '#size' => 2,
+      '#element_validate' => array('element_validate_integer'),
+      '#default_value' => $settings['limit'],
+      '#description' => t('Limit the number of paragraphs items to be returned. 0 to set no limit.'),
+    );
+  }
+
+  return $elements;
+}
+
+/**
+ * Implements hook_field_formatter_settings_summary().
+ */
+function paragraphs_summary_field_formatter_settings_summary($field, $instance, $view_mode) {
+  $display = $instance['display'][$view_mode];
+  $settings = $display['settings'];
+  $output = array();
+
+  if ($display['type'] == 'paragraphs_summary') {
+
+    // Allowed bundles
+    $settings_allowed_bundles = array_filter($settings['allowed_bundles']);
+    if (empty($settings_allowed_bundles)) {
+        $allowed_bundles = t("All");
+    }
+    else {
+      $bundles = paragraphs_bundle_load();
+      foreach ($settings_allowed_bundles as $bundle) {
+        $allowed_bundles[] = $bundles[$bundle]->name;
+      }
+      $allowed_bundles = implode(', ', $allowed_bundles);
+    }
+    $output[] = t("Allowed bundles : !allowed_bundles", array('!allowed_bundles' => $allowed_bundles));
+
+    // View mode
+    $entity_type = entity_get_info('paragraphs_item');
+    if (!empty($entity_type['view modes'][$settings['view_mode']]['label'])) {
+      $output[] =  t('View mode: @mode', array('@mode' => $entity_type['view modes'][$settings['view_mode']]['label']));
+    }
+
+    // Limit
+    $limit = (!empty($settings['limit'])) ? $settings['limit'] : t("Unlimited");
+    $output[] = t("Limit: @limit", array('@limit' => $limit));
+  }
+
+  return implode('<br>', $output);
+}
+
+/**
+ * Implements hook_field_formatter_view().
+ */
+function paragraphs_summary_field_formatter_view($entity_type, $entity, $field, $instance, $langcode, $items, $display) {
+  $element = array();
+  $settings = $display['settings'];
+
+  switch ($display['type']) {
+    case 'paragraphs_summary':
+
+      // Prevent displaying useless markup if we don't have any values.
+      if (empty($items)) {
+        return $element;
+      }
+
+      // Get view mode from entity.
+      $display_view_mode = empty($display['settings']['view_mode']) ? 'full' : $display['settings']['view_mode'];
+      // Get view mode from field instance (if configured).
+      $view_mode = empty($instance['display'][$display_view_mode]['settings']['view_mode']) ? $display_view_mode : $instance['display'][$display_view_mode]['settings']['view_mode'];
+      $element['#theme_wrappers'] = array('paragraphs_items');
+      $element['#attributes']['class'][] = drupal_html_class('paragraphs-items');
+      $element['#attributes']['class'][] = drupal_html_class('paragraphs-items-view-mode-' . $view_mode);
+      $element['#attributes']['class'][] = drupal_html_class('paragraphs-items-field-' . $instance['field_name']);
+      $element['#view_mode'] = $view_mode;
+
+      // Get allowed bundle
+      $settings_allowed_bundles = array_filter($settings['allowed_bundles']);
+      if (empty($settings_allowed_bundles)) {
+        $bundles = paragraphs_bundle_load();
+        $allowed_bundles = array_keys($bundles);
+      }
+      else {
+        $allowed_bundles = array_values($settings_allowed_bundles);
+      }
+
+      // Limit
+      $limit = (!empty($display['settings']['limit'])) ? $display['settings']['limit'] : FALSE;
+      $count = 0;
+
+      foreach ($items as $delta => $item) {
+        if ($paragraph = paragraphs_field_get_entity($item)) {
+          if (entity_access('view', 'paragraphs_item', $paragraph)) {
+            if (!in_array($paragraph->bundle, $allowed_bundles)) {
+              continue;
+            }
+
+            $element[$delta]['entity'] = $paragraph->view($view_mode);
+            $count++;
+
+            // Handle limit
+            if ($limit && $count >= $limit) {
+              break;
+            }
+          }
+        }
+      }
+
+      break;
+  }
+  return $element;
+}
