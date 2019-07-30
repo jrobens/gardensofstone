@@ -1,6 +1,8 @@
+body { color: #444; font-family: 'Open Sans', sans-serif; font-size: 16px; line-height: 160%; }
+
 body::after {
   content: "";
-  background: url("../images/gardens_of_stone_hayes_mobile.png")  no-repeat center top fixed;
+  background: url("../images/gardens_of_stone_hayes_mobile.png") no-repeat center top fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -71,7 +73,7 @@ body.page-node-1::after {
   padding: 40px 0 0 0;
 }
 #hero-slider {
-  margin-top:36em;
+  margin-top: 36em;
 }
 #header-top {
   background-color: #fcfcfc;
@@ -224,19 +226,23 @@ body .container-fluid {
     top: 0;
     font-size: 0.8em;
   }
+
   .video-overlay .videoheading h2 {
     font-size: 1em;
     padding: 0;
     margin: 0;
   }
+
   .video-overlay .videoheading h3 {
     font-size: 1em;
     padding: 0;
     margin: 0;
   }
+
   .video-overlay {
     top: 0;
   }
+
   .video-overlay .videologo img {
     float: none;
     margin: 10px auto 0 auto;
@@ -248,19 +254,23 @@ body .container-fluid {
     top: 0;
     font-size: 0.8em;
   }
+
   .video-overlay .videoheading h2 {
     font-size: 1em;
     padding: 0;
     margin: 0;
   }
+
   .video-overlay .videoheading h3 {
     font-size: 1em;
     padding: 0;
     margin: 0;
   }
+
   .video-overlay {
     top: 0;
   }
+
   .video-overlay .videologo img {
     float: none;
     margin: 10px auto 0 auto;
@@ -272,19 +282,23 @@ body .container-fluid {
     top: 50px;
     font-size: 1.3em;
   }
+
   .video-overlay .videoheading h2 {
     font-size: 1em;
     padding: 0;
     margin: 0;
   }
+
   .video-overlay .videoheading h3 {
     font-size: 1em;
     padding: 0;
     margin: 0;
   }
+
   .video-overlay {
     top: 0;
   }
+
   .video-overlay .videologo img {
     float: right;
     margin: 10px 20px 0 0;
@@ -296,19 +310,23 @@ body .container-fluid {
     top: 50px;
     font-size: 1.3em;
   }
+
   .video-overlay .videoheading h2 {
     font-size: 1.2em;
     padding: 0;
     margin: 0;
   }
+
   .video-overlay .videoheading h3 {
     font-size: 1.2em;
     padding: 0;
     margin: 0;
   }
+
   .video-overlay {
     top: 0;
   }
+
   .video-overlay .videologo img {
     float: right;
     margin: 10px 20px 0 0;
@@ -320,15 +338,19 @@ body .container-fluid {
     top: 80px;
     font-size: 1.6em;
   }
+
   .video-overlay .videoheading h2 {
     font-size: 1.2em;
   }
+
   .video-overlay .videoheading h3 {
     font-size: 1.2em;
   }
+
   .video-overlay {
     top: 0;
   }
+
   .video-overlay .videologo img {
     float: right;
     margin: 10px 20px 0 0;
@@ -411,11 +433,13 @@ body .container-fluid {
   .front-heading {
     font-size: 4em;
   }
+
   #block-block-2 .content p {
     color: white;
     margin-top: -400px;
     min-height: 400px;
   }
+
   .gos-video-wrapper {
     margin-left: 25px;
     margin-right: 25px;
