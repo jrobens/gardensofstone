@@ -1,6 +1,4 @@
-body { color: #444; font-family: 'Open Sans', sans-serif; font-size: 16px; line-height: 160%; }
-
-body::after {
+body { color: #444; font-family: 'Open Sans', sans-serif; font-size: 16px; line-height: 160%; }  body::after {
   content: "";
   background: url("../images/gardens_of_stone_hayes_mobile.png") no-repeat center top fixed;
   -webkit-background-size: cover;
