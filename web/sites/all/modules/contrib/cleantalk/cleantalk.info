@@ -1,0 +1,9 @@
+name = Antispam by CleanTalk
+description = Antispam service from <a target="_blank" href="http://cleantalk.org">CleanTalk</a> to protect your site
+configure = admin/config/cleantalk
+core = 7.x
+; Information added by Drupal.org packaging script on 2019-07-23
+version = "7.x-4.4"
+core = "7.x"
+project = "cleantalk"
+datestamp = "1563867788"
