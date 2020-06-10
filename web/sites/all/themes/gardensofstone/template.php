@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 /**
  * Page alter.
@@ -41,39 +41,39 @@ function gardensofstone_preprocess_html(&$variables) {
 	 * Add IE8 Support
 	 */
 	drupal_add_css(path_to_theme() . '/css/ie8.css', array('group' => CSS_THEME, 'browsers' => array('IE' => '(lt IE 9)', '!IE' => FALSE), 'preprocess' => FALSE));
-    
+
 	/**
 	* Bootstrap CDN
 	*/
-    
+
     if (theme_get_setting('bootstrap_css_cdn', 'gardensofstone')) {
         $cdn = '//maxcdn.bootstrapcdn.com/bootstrap/' . theme_get_setting('bootstrap_css_cdn', 'gardensofstone')  . '/css/bootstrap.min.css';
         drupal_add_css($cdn, array('type' => 'external'));
     }
-    
+
     if (theme_get_setting('bootstrap_js_cdn', 'gardensofstone')) {
         $cdn = '//maxcdn.bootstrapcdn.com/bootstrap/' . theme_get_setting('bootstrap_js_cdn', 'gardensofstone')  . '/js/bootstrap.min.js';
         drupal_add_js($cdn, array('type' => 'external'));
     }
-	
+
 	/**
 	* Add Javascript for enable/disable scrollTop action
 	*/
 	if (theme_get_setting('scrolltop_display', 'gardensofstone')) {
 
-		drupal_add_js('jQuery(document).ready(function($) { 
+		drupal_add_js('jQuery(document).ready(function($) {
 		$(window).scroll(function() {
 			if($(this).scrollTop() != 0) {
-				$("#toTop").fadeIn();	
+				$("#toTop").fadeIn();
 			} else {
 				$("#toTop").fadeOut();
 			}
 		});
-		
+
 		$("#toTop").click(function() {
 			$("body,html").animate({scrollTop:0},800);
-		});	
-		
+		});
+
 		});',
 		array('type' => 'inline', 'scope' => 'header'));
 	}
@@ -90,6 +90,8 @@ function gardensofstone_process_html(&$vars) {
 	}
 }
 
+
+
 /**
  * Preprocess variables for page template.
  */
@@ -98,28 +100,28 @@ function gardensofstone_preprocess_page(&$vars) {
 	/**
 	 * insert variables into page template.
 	 */
-	if($vars['page']['sidebar_first'] && $vars['page']['sidebar_second']) { 
+	if($vars['page']['sidebar_first'] && $vars['page']['sidebar_second']) {
 		$vars['sidebar_grid_class'] = 'col-md-3';
 		$vars['main_grid_class'] = 'col-md-6';
 	} elseif ($vars['page']['sidebar_first'] || $vars['page']['sidebar_second']) {
 		$vars['sidebar_grid_class'] = 'col-md-4';
-		$vars['main_grid_class'] = 'col-md-8';		
+		$vars['main_grid_class'] = 'col-md-8';
 	} else {
-		$vars['main_grid_class'] = 'col-md-12';			
+		$vars['main_grid_class'] = 'col-md-12';
 	}
 
-	if($vars['page']['header_top_left'] && $vars['page']['header_top_right']) { 
+	if($vars['page']['header_top_left'] && $vars['page']['header_top_right']) {
 		$vars['header_top_left_grid_class'] = 'col-md-8';
 		$vars['header_top_right_grid_class'] = 'col-md-4';
 	} elseif ($vars['page']['header_top_right'] || $vars['page']['header_top_left']) {
 		$vars['header_top_left_grid_class'] = 'col-md-12';
-		$vars['header_top_right_grid_class'] = 'col-md-12';		
+		$vars['header_top_right_grid_class'] = 'col-md-12';
 	}
 
 	/**
 	 * Add Javascript
 	 */
-	if($vars['page']['pre_header_first'] || $vars['page']['pre_header_second'] || $vars['page']['pre_header_third']) { 
+	if($vars['page']['pre_header_first'] || $vars['page']['pre_header_second'] || $vars['page']['pre_header_third']) {
 	drupal_add_js('
 	function hidePreHeader(){
 	jQuery(".toggle-control").html("<a href=\"javascript:showPreHeader()\"><span class=\"glyphicon glyphicon-plus\"></span></a>");
@@ -145,7 +147,12 @@ function gardensofstone_process_page(&$variables) {
     _color_page_alter($variables);
   }
 }
-
+function gardensofstone_preprocess_node(&$vars) {
+  if (variable_get('node_submitted_' . $vars['node']->type, TRUE)) {
+    $date = format_date($vars['node']->created, 'medium');
+    $vars['submitted'] = t('Submitted by !username on !datetime', array('!username' => $vars['name'], '!datetime' => $date));
+  }
+}
 /**
  * Preprocess variables for block.tpl.php
  */
