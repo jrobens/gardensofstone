@@ -147,6 +147,8 @@ function gardensofstone_process_page(&$variables) {
     _color_page_alter($variables);
   }
 }
+
+// TODO - doesn't work.
 function gardensofstone_preprocess_node(&$vars) {
   if (variable_get('node_submitted_' . $vars['node']->type, TRUE)) {
     $date = format_date($vars['node']->created, 'medium');
