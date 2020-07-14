@@ -1,3 +1,12 @@
+
+# Domain with 
+
+crazydomains.com.au
+
+# DNS with
+
+zonomi.com
+
 # Release Notes for gardensofstone.org.au
 Repo:
 - git clone -b 1.1.x git@svn:ild/gardensofstone.git /srv/dev/gardensofstone.org.au
