@@ -372,10 +372,9 @@ body .container-fluid {
   font-size: 0;
   color: transparent;
 }
-.gos-alliance .content {
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+.gos-alliance .content p {
+  display: flex;
+  justify-content: space-between;
 }
 .gos-alliance img {
   float: left;
