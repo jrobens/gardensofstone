@@ -19,7 +19,6 @@ web/sites/*/private
 
 .DS_Store
 src/Times
-.DS_Store
 install.php
 INSTALL.sqlite.txt
 INSTALL.pgsql.txt
