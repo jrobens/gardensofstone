@@ -1,3 +1,4 @@
+*:JR:2021-01-22:GOS:0.2:update drupal 7.78
 *:JR:2020-12-02:GOS:0.2:update drupal 7.75
 *:JR:2020-11-19:GOS:0.2:update drupal 7.74
 *:JR:2020-10-05:GOS:0.2:NCCNSW logo
