@@ -1,3 +1,5 @@
+*:JR:2021-05-07:GOS:0.2:redirect
+*:JR:2021-05-05:GOS:0.2:change headings
 *:JR:2021-01-22:GOS:0.2:update drupal 7.80
 *:JR:2021-01-15:GOS:0.5:update broken Colong links
 *:JR:2021-01-22:GOS:0.2:update drupal 7.78
