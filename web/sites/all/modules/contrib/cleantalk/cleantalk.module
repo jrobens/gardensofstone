@@ -2,7 +2,7 @@
 require_once(dirname(__FILE__) . '/src/CleantalkSFW.php');
 require_once(dirname(__FILE__) . '/src/CleantalkFuncs.php');
 
-define("CLEANTALK_USER_AGENT", 'drupal-46');
+define("CLEANTALK_USER_AGENT", 'drupal-50');
 define("APBCT_REMOTE_CALL_SLEEP", 10);
 
 // Sessions
@@ -306,7 +306,7 @@ function cleantalk_init()
 
   CleantalkFuncs::_cleantalk_apbct_cookies_set();
 
-  drupal_add_js(drupal_get_path('module', 'cleantalk') . '/src/js/apbct-public.js');
+  drupal_add_js(drupal_get_path('module', 'cleantalk') . '/src/js/apbct-public.js', 'file');
 
   drupal_add_js('ctSetCookie("ct_check_js", "' . CleantalkFuncs::_cleantalk_get_checkjs_value() . '", "0");',
     array(

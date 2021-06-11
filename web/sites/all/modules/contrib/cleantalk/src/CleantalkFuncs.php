@@ -474,11 +474,11 @@ class CleantalkFuncs
 
     if ($roles) {
 
-      $set_check = false;
+      $set_check = true;
 
       foreach ($roles as $role_id) {
         if (self::_cleantalk_user_has_role_id($role_id)) {
-          $set_check = true;
+          $set_check = false;
         }
       }
 
@@ -598,6 +598,9 @@ class CleantalkFuncs
     $ct_request->x_forwarded_for = CleantalkHelper::ip_get(array('x_forwarded_for'), false);
     $ct_request->x_real_ip = CleantalkHelper::ip_get(array('x_real_ip'), false);
     $ct_request->submit_time = self::_cleantalk_get_submit_time();
+    if ($spam_check['type'] == 'custom_contact_form' && isset($_SERVER['HTTP_REFERER']) && htmlspecialchars($_SERVER['HTTP_REFERER']) === 'https://www.google.com/') {
+      $spam_check['type'] = 'site_search_drupal7';
+    }
 
     switch ($spam_check['type']) {
       case 'comment':
@@ -811,7 +814,7 @@ class CleantalkFuncs
   public static function cleantalk_get_user_roles_default() {
     $roles = self::cleantalk_get_user_roles();
     foreach( $roles as $role_id => $role_name ) {
-      if(strpos('administrator', $role_name) !== false) {
+      if(strpos('administrator', $role_name) === false) {
         unset( $roles[$role_id] );
       }
     }
