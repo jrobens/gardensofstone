@@ -1,3 +1,5 @@
+*:JR:2021-12-10:GOS:0.2:updates
+*:JR:2021-10-18:GOS:0.2:updates
 *:JR:2021-07-23:GOS:0.2:drupal 7.82
 *:JR:2021-06-25:GOS:0.2:drupal 7.81
 *:JR:2021-05-07:GOS:0.2:redirect
