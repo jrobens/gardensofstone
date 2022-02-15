@@ -1,3 +1,4 @@
+*:JR:2022-02-15:GOS:0.2:drupal 7.87
 *:JR:2021-12-17:GOS:0.2:drupal 7.84
 *:JR:2021-12-10:GOS:0.2:updates
 *:JR:2021-10-18:GOS:0.2:updates
