@@ -1,18 +1,21 @@
-*:JR:2022-02-15:GOS:0.2:drupal 7.87
-*:JR:2021-12-17:GOS:0.2:drupal 7.84
-*:JR:2021-12-10:GOS:0.2:updates
-*:JR:2021-10-18:GOS:0.2:updates
-*:JR:2021-07-23:GOS:0.2:drupal 7.82
-*:JR:2021-06-25:GOS:0.2:drupal 7.81
-*:JR:2021-05-07:GOS:0.2:redirect
-*:JR:2021-05-05:GOS:0.2:change headings
-*:JR:2021-01-22:GOS:0.2:update drupal 7.80
-*:JR:2021-01-15:GOS:0.5:update broken Colong links
-*:JR:2021-01-22:GOS:0.2:update drupal 7.78
-*:JR:2020-12-02:GOS:0.2:update drupal 7.75
-*:JR:2020-11-19:GOS:0.2:update drupal 7.74
-*:JR:2020-10-05:GOS:0.2:NCCNSW logo
-*:JR:2020-10-05:GOS:0.2:booking data
-*:JR:2020-09-18:GOS:0.2: drupal 7.73
-*:JR:2020-09-07:GOS:0.2: panels updates. Forms for GOS spring tour
-*:JR:2020-06-12:GOS:0.2: core/module security updates
+*:JR:2022-05-09:BCS:0.2: sys+ update module. drupal/animate_css1.0.0
+*:JR:2022-04-29:CBI:0.2: sys+ update drupal. drupal/animate_css1.0.0
+*:JR:2022-02-09:BCS:0.2: sys+ update drupal. cweagans/composer-patches1.7.1
+*:JR:2021-12-30:BCS:0.2: sys+ update drupal. drupal/animate_css1.0.0
+*:JR:2021-12-10:BCS:0.2: sys+ update drupal. drupal/animate_css1.0.0
+*:JR:2021-11-08:BCS:2.0: sys+ edit banner
+*:JR:2021-11-07:BCS:1.0: sys+ edit banner
+*:JR:2021-11-07:BCS:0.2: sys+ update drupal. drupal/animate_css1.0.0
+*:JR:2021-11-06:BCS:0.2: sys+ edit banner
+*:JR:2021-10-12:BCS:0.2: sys+ update drupal. composer/installersv1.11.0
+*:JR:2021-08-26:BCS:0.2: sys+ update drupal. drupal/admin_toolbar2.4.0
+05/08/2021      -8.34   GOOGLE*GSUITE DESTINAT SYDNEY AU Card xx8672 Value Date: 02/08/2021
+*:JR:2021-08-23:BCS:0.2: sys+ update drupal. drupal/animate_css1.0.0
+*:JR:2021-08-10:BCS:2.0: sys+ follow us with context bug
+*:JR:2021-08-09:BCS:0.5: sys+ webisie strategy with @sarah
+*:JR:2021-08-03:BCS:0.2: sys+ update drupal. drupal/animate_css1.0.0
+*:JR:2021-07-05:BCS:1.0: sys+ update drupal. drupal/animate_css1.0.0. Gmail
+*:JR:2021-06-30:BCS:0.2: sys+ update drupal. cweagans/composer-patches1.7.0
+*:JR:2021-05-27:JOB:0.2: sys+ update drupal. drupal/animate_css1.0.0
+*:JR:2021-05-24:BCS:0.2: sys+ update drupal.
+*:JR:2021-05-14:BCS:0.2: Update drupal. Ctools security patch

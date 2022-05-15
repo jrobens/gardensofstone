@@ -1,9 +1,0 @@
-name = Photographer Gallery formatter
-description = "Add a formatter that opens an image in a gallery"
-core = 7.x
-package = "Interlated"
-dependencies[] = field
-dependencies[] = image
-
-
-

@@ -1,38 +1,62 @@
 Notes
 .idea
 .invrc
-.siterc
 .quorc
+.siterc
+.gradle
+arc
 ini
 ref
 tmp
 
 src/sql
 src/dev
+src/pix
 
 sec/files
 web/files
+
 web/sites/*/settings.php
 web/sites/*/civicrm.settings.php
 web/sites/*/files
 web/sites/*/private
 
-.DS_Store
-src/Times
-install.php
-INSTALL.sqlite.txt
-INSTALL.pgsql.txt
-INSTALL.mysql.txt
-UPGRADE.txt
-INSTALL.txt
-MAINTAINERS.txt
-CHANGELOG.txt
-COPYRIGHT.txt
-load_drupal.sh
-README.txt
-LICENSE.txt
-test.html
+vendor/
 
-/src/
-/doc/
-*.iml
+web/core
+
+web/themes/contrib
+web/modules/contrib
+web/sites/simpletest
+
+web/example.gitignore
+web/*/README.txt
+web/README.txt
+web/INSTALL.txt
+
+src/Times
+arc/Times
+.DS_Store
+
+work.md.old
+
+/web/sites/default/services.yml
+/etc/load_drupal.sh
+
+/.editorconfig
+/.gitattributes
+/web/.eslintrc.json
+/web/sites/default/default.settings.php
+/web/update.php
+/web/sites/default/default.services.yml
+/web/sites/development.services.yml
+/web/.csslintrc
+/resources
+
+/web/themes/custom/destinationpagoda/logo copy.kra
+/web/themes/custom/destinationpagoda/logo copy.png
+/web/themes/custom/destinationpagoda/logo copy.xcf
+/web/themes/custom/destinationpagoda/logo copy 2.png
+/web/themes/custom/destinationpagoda/destination-pagoda-logo-white.png
+/web/themes/custom/destinationpagoda/destination-pagoda-logo-white.xcf
+/src/config-destinationpagoda-test_8888-2021-11-08-00-29/

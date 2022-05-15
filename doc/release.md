@@ -1,130 +1,140 @@
 
-## Update
-
-Update information last refreshed: Mon, 10/18/2021 - 10:06
- Name                        Installed Version  Proposed version  Message          
- Date (date)                 7.x-2.11           7.x-2.12          Update available 
- File Entity (file_entity)   7.x-2.30           7.x-2.32          Update available 
- Nagios Monitoring (nagios)  7.x-1.7            7.x-1.9           Update available 
- Views (views)               7.x-3.24           7.x-3.25          Update available 
+# Gardens of stone 2
 
 
-# Domain with 
-
-crazydomains.com.au
-
-# DNS with
-
-zonomi.com
 
 
-# Release Notes for gardensofstone.org.au
-Repo:
-- git clone -b 1.1.x git@svn:ild/gardensofstone.git /srv/dev/gardensofstone.org.au
-- git clone -b 1.1.x git@svn:src/sql/ild/gardensofstone.git /srv/dev/gardensofstone.org.au/src/sql
+Website details for an new gardensofstone.org.au site
 
-# Release 1.1.x
-- MC: setup for git push deployment method
+GoS Alliance Decisions [and proposed improvements in brackets]:
 
-# Release 1.0.x
-- MC: initial install
+Upshot – create new website, and not publish it till sorted.
 
-# GIT Setup
-- assumes your install is at /srv/dev/gardensofstone.org.au and remote is at /srv/web/gardensofstone.org.au
-- git clone git@svn:ild/gardensofstone.git /srv/dev/gardensofstone.org.au
-- git checkout 1.1.x
-- add to .git/config
-  [remote "uat"]
-    url = git@ruby:uat/ild/gardensofstone
-    push = 1.1.x
-  [remote "web"]
-    url = git@ruby:web/ild/gardensofstone
-    push = 1.1.x
-- UAT: deploy changes do 'git push && git push uat'
-- WEB: deploy changes do 'git push && git push web'
-- nb: git hook on dev is 'GIT_WORK_TREE=/srv/web/gardensofstone.org.au git checkout -f 1.1.x'
+1/- [Proposed The software running the DP website be applied to gardensofstone.org.au to take advantage of its capabilities being much more modern software.]
 
-# Local Drupal Setup
-# httpd: check sudo and confirm you are at /srv/dev/gardensofstone.org.au
-sudo pwd
-  cp src/cfg/gardensofstone.org.au /etc/httpd/conf/srv/dev/
-  sudo mkdir /var/log/httpd/dev.gardensofstone.org.au && htrestart
-- add to /etc/hosts: 127.0.0.1 dev.gardensofstone.org.au
-- confirm at: http://dev.gardensofstone.org.au/status.php
-# drupal: confirm you are at /srv/dev/gardensofstone.org.au
-  mysql -u root -pmysqlroot -D mysql -e "create database gos_cms DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;"
-  mysql -u root -pmysqlroot -D mysql -e "grant all privileges on gos_cms.* to 'gos_cms'@'localhost' identified by 'gos_cms'"
-  gunzip < src/sql/gos_cms.sql.gz | mysql -ugos_cms -pgos_cms -D gos_cms
-  cp src/cfg/settings.php web/sites/default/settings.php
-- to sync files: drush rsync @web:%files @dev:%files
+2/- [Proposed DP website will be ‘unpublished’ and repurposed as the new Gardens of Stone website. – see below]
 
-# Local CiviCRM Setup
-# civicrm: confirm you are at /srv/dev/gardensofstone.org.au
-  mysql -u root -pmysqlroot -D mysql -e "create database gos_crm DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;"
-  mysql -u root -pmysqlroot -D mysql -e "grant all privileges on gos_crm.* to 'gos_crm'@'localhost' identified by 'gos_crm'"
-  gunzip < src/sql/gos_crm.sql.gz | mysql -ugos_crm -pgos_crm -D gos_crm
-  cp src/cfg/civicrm.settings.php web/sites/default/civicrm.settings.php
-- confirm at: http://dev.gardensofstone.org.au/civicrm for logged in user
-- CiviCRM needs a directory for templates etc
-  mkdir -p web/files/civicrm/assets
+3/- [Proposed website development will be based on rough draft of the design and final design and draft content is to be discussed and agreed with John and GoSA, through me.]
 
--- END --
+4/- [Proposed existing DP and GoS content relevant to the rough content design by Madi Macleanto be accessed and edited to suit new website.]
 
-# REF
-# /srv/env/adm/src/tpl/release.tpl.md
-# hosts
-122.100.15.225 svn
-223.252.24.147 ruby
-114.111.128.95 topaz
+5/- GoSA Agreed that the DP website and emails is no longer needed now that the GOS SCA has been created, so monthly payments for emails should cease.
+
+6/- GoSA Agreed to repurpose the existing Gardens of Stone website (connected to Colong) as a Gardens of Stone SCA website [Proposed add also Mugii Murrumban SCA and GoSNP].  It will host info on progress towards creation of the new reserve; opportunities for public to comment on NPWS plan for the reserve; bushwalking in GOS info and Visitors Map; conservation values of GOS; Destination Pagoda vision; protect GOS (for threats particularly mining and off road vehicles)  [see TABS below]
+
+7/- GoSA Agreed new website would continue to be managed via John Robens.
+
+8/- GoSA Agreed Protect Gardens of Stone facebook continue to be managed by Yuri:  Agreed it continues as a communications channel for GOS, no need to change the name.
+
+9/- GoSA Agreed Keep promoting visiting include link to where you can buy our GOS Visitors Map – EXTERNAL link BMCS
+
+10/- GoSA Agreed advise people through website and social media that the state conservation area is currently in transition to a conservation reserve and not ready to be visited as basic infrastructure needs to be established.
+
+11/ GoSA Agreed to meanwhile to promote GoSSCA, the website will include the gallery from the Gardens in Focus Photographic exhibition [as well as links to videos on youtube].
+
+12/- GoSA Agreed GOS and DP existing websites content is to be archived.
 
 
-Dear Carmen and Julie,
 
-1/- No you have it covered, but the last point is the most important point of all, for with volunteers everything is possible (as Clover proved yesterday)
+Purpose of this website and its audience -
+a/- to communicate our ‘nature-based’ management vision (i.e. DP vision) for the new reserve [proposed GoS region/ not just new reserve] so it isn’t lost in the detail of reserve creation and various GoSA’s various objections to aspects of visitor use and coal mining etc;
+b/- to inform supporters of what is happening in that context within the people in nature concept that drives DP;
+c/- organise submissions to reserve planning processes and mining proposals consistent with our vision.
 
-Important wording changes:
+Landing page:
 
-Asks are:
-Make a donation (tax-deductible)
-Buy something at the auction
-Go on a walk in the Gardens of Stone and see the beauty of the place for yourself (buy the visitors map and speak with Yuri and sign up for a walk with him)
-Talk, tweet and facebook about it and raise awareness
-Become a Gardens of Stone protector by making a submission through the Gardens of Stone website
-Join the activists working group for the Gardens of Stone
-Explanations (should you need one)
+•             short description of GOS region
 
-Everything goes via the Gardens of Stone website (not Colong website). This website will be a single point of contact and a single page that diverts GoS supporters, like a traffic light, to the most current actions that groups in the Gardens of Stone Alliance are doing...!
+•             the announcement that now NPWS reserve.
 
-The page has the basics who what where stuff of GoS campaign and the video, if Josh finishes it in time for John to get it on the site.
+•             Summary statement of our visitor use vision for GoSSCA
 
-2/- So make a submission on the Gardens of Stone website, it actually diverts to the Colong website
-The point should be worded "Become a Gardens of Stone Protector" - (they still go to the Colong website but nobody needs to have this explained to them, its too complicated) and the submission form is currently a default call for the reservation of the Gardens of Stone and the webform will also ask them to become a Gardens of Stone protector...
+[example text, not for publication – ‘GARDENS OF STONE STATE CONSERVATION AREA of 33,000 hectares was created in December 2021.
 
-3/ And there will be a Gardens of Stone Brochure will reinforce this above advice.
+The next step will be the formal planning of the reserve including park infrastructure, trails and uses including a Plan of Management for the new reserve.  National Parks and Wildlife Service will put plans on public exhibition for comment.’]
 
-It will all make sense when in action:
+[Using DP layout and software as a starting point….
+
+“CLONE DP SITE AND PUT INTO DRAFT MODE”]
+
+TABS along the RIBBON on top of page [reuse DP ribbon]
+
+TAB 1. ‘New Values; new Plans’
+
+Brief intro statement - Values of GOS
+
+Links to docs:
+
+•             Park Proposal
+
+•             National Heritage List report
+
+•             Destination Pagoda Visitors plan
+
+•             DP Economic study
+
+Short history of campaign
+
+short history of the campaign/timeline
 
 
-The 'ask list' on the brochure in press is...
 
-JOIN THE CAMPAIGN NOW!
-■■ Become a member of one of the conservation
-groups within the Gardens of Stone Alliance.
-■■ Write to the NSW Minister for the Environment
-calling for the immediate reservation of the area.
-■■ Write to your local newspaper, or call your local
-radio station, or use social media to voice your
-concerns about the area.
-■■ Visit the area with friends and see for yourself
-the wonderful pagoda country of the Gardens of
-Stone.
-■■ Discuss the proposal in a meeting with your
-local member of parliament.
-■■ Become a Gardens of Stone protector, go to
-www.gardensofstone.org.au
-■■ Purchase the Gardens Stone Visitors Map, go to
-www.gardensofstone.org.au
-■■ Tax-deductible donations can also be made via
-www.gardensofstone.org.au
+TAB 2. ‘Visit Gardens of Stone’
+[MORE OR LESS A HOLDING SUBPAGE FOR MOMENT]
 
-Bye,
+[ INTENTION IS TO keep promoting visiting by providing a link to where you can buy our GOS Visitors Map – EXTERNAL link BMCS and making reference to scheduled walks – links to NPA and BMCS walks pages and caution about not just going there ]
+
+You can also walk in the area by joining a local bushwalking club.
+
+State that , “the state conservation area is currently in transition to a conservation reserve.  Basic infrastructure needs to be established.”
+
+MEANWHILE you can still enjoy this spectacular area through the photos from the Gardens in Focus Photographic exhibition: Next TAB
+
+TAB 3. ‘Photo Gallery’
+[Gallery module required.]
+
+Photo Exhibition of the Gardens of Stone
+
+
+
+TAB 4. ‘News’
+
+Pithy statements about progress of reserve and threats (cross links to TABS 4 and 5)
+
+Website will keep uptodate with this NPWS processes and coal mining threats.
+
+More or less social media post equivalents.
+
+
+
+TAB 5. ‘Make a submission’
+
+[A webform engine module is required.]
+
+Action: write to … Links to NPWS when a document affecting the Gardens of Stone ‘region’ is on display.
+
+                Write to … Links to DPIE Centennial Coal documents on display. Encourage submissions to stop the damage through this website. This website also will be keep uptodate for these processes.
+
+Campaigns for our people in nature vision against threats to GoS region cast in context of the climate change emergency.
+
+Example: A campaign for detailed decommissioning plans for each coal mine, NOW.
+
+Dirt sheet summary on each mine:
+
+Angus Place (incl AP west and extn east)
+
+Springvale
+
+Airly
+
+Clarence
+
+Campaign to stop vehicle use - off roads – photos/ gallery?
+
+
+
+TAB 6. About
+
+Alliance supporters – parred back to eNGOs and close group aligned with our purpose.
+
+Blurb recycled from GoS and DP sites.
