@@ -2,8 +2,16 @@
 # Gardens of stone 2
 
 
+1. dns
+2. web-server
+3. gitosis checkout
+4. drupal settings
+5. copy database
+
+/opt/eff.org/certbot/venv/bin/certbot certonly --webroot -w /srv/uat/gardensofstone.org.au//web -d uat.gardensofstone.org.au
 
 
+## Content
 Website details for an new gardensofstone.org.au site
 
 GoS Alliance Decisions [and proposed improvements in brackets]:
