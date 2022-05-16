@@ -1,11 +1,11 @@
-name: Destination Pagoda
+name: Gardens of Stone
 description: >-
   Enables the use of Bulma:
   a free, open source CSS framework based on Flexbox.
 package: 'Interlated'
 type: theme
 base theme: drulma
-core_version_requirement: ^8.8 || ^9
+core_version_requirement: ^8.8 || ^9 || ^10
 
 libraries:
   - gardensofstone/global
