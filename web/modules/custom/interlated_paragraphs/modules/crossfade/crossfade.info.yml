@@ -1,0 +1,5 @@
+name: Crossfade rendering
+type: module
+description: Display corssfade
+core_version_requirement: ^8 || ^9 || ^10
+package: Interlated

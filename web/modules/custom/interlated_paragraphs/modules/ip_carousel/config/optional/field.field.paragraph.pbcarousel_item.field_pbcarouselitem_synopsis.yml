@@ -1,0 +1,21 @@
+uuid: 10732a0b-3c4a-4bdd-a627-fc0f0a1ceb69
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pbcarouselitem_synopsis
+    - paragraphs.paragraphs_type.pbcarousel_item
+  module:
+    - text
+id: paragraph.pbcarousel_item.field_pbcarouselitem_synopsis
+field_name: field_pbcarouselitem_synopsis
+entity_type: paragraph
+bundle: pbcarousel_item
+label: Synopsis
+description: 'Please enter the synopsis. Limited to 1 paragraph of text.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,17 @@
+uuid: e2f7754c-4ae3-40f2-b19e-c881cf65d865
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: team_185x205
+label: 'Team 185x205'
+effects:
+  b81290f3-d480-4848-a93b-a6a6522aabf6:
+    uuid: b81290f3-d480-4848-a93b-a6a6522aabf6
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 185
+      height: 205
+      crop_type: focal_point

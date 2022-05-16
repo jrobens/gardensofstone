@@ -1,0 +1,33 @@
+uuid: cde36a52-bc14-4c51-8fad-5ccf5e349e1a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.image_square.field_pbimagesquare_caption
+    - field.field.paragraph.image_square.field_pbimagesquare_image
+    - paragraphs.paragraphs_type.image_square
+  module:
+    - text
+id: paragraph.image_square.default
+targetEntityType: paragraph
+bundle: image_square
+mode: default
+content:
+  field_pbimagesquare_caption:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_pbimagesquare_image:
+    type: entity_reference_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: square
+      link: false
+    third_party_settings: {  }
+    region: content
+hidden:
+  search_api_excerpt: true

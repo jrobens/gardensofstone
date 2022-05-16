@@ -1,0 +1,30 @@
+uuid: f3bcf536-c865-4b9f-85bf-7ae3ce6eb218
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.carousel_item.field_carousel_item
+    - node.type.carousel_item
+  module:
+    - entity_reference_revisions
+    - user
+id: node.carousel_item.default
+targetEntityType: node
+bundle: carousel_item
+mode: default
+content:
+  field_carousel_item:
+    type: entity_reference_revisions_entity_view
+    weight: 101
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

@@ -1,0 +1,19 @@
+uuid: 92ec5ea9-d99d-4369-b4b5-d00cc692b222
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pbsmalltile_heading
+    - paragraphs.paragraphs_type.small_tile
+id: paragraph.small_tile.field_pbsmalltile_heading
+field_name: field_pbsmalltile_heading
+entity_type: paragraph
+bundle: small_tile
+label: Heading
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

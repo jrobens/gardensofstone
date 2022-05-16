@@ -1,0 +1,23 @@
+uuid: aa983767-02c3-4e02-bf56-87f57e0e4dad
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pbtext_link
+    - paragraphs.paragraphs_type.pbtext_text
+  module:
+    - link
+id: paragraph.pbtext_text.field_pbtext_link
+field_name: field_pbtext_link
+entity_type: paragraph
+bundle: pbtext_text
+label: Link
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

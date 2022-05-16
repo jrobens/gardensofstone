@@ -1,0 +1,23 @@
+uuid: ff2bf8cb-937b-479d-bfea-66beee3bdaf0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pbcarousel_link
+    - paragraphs.paragraphs_type.pbcarousel_item
+  module:
+    - link
+id: paragraph.pbcarousel_item.field_pbcarousel_link
+field_name: field_pbcarousel_link
+entity_type: paragraph
+bundle: pbcarousel_item
+label: Link
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

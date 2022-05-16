@@ -1,0 +1,21 @@
+uuid: 086d60e3-8606-4b79-9f4e-632a12a58e36
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pbcarouselitem_title
+    - paragraphs.paragraphs_type.pbcarousel_item
+  module:
+    - text
+id: paragraph.pbcarousel_item.field_pbcarouselitem_title
+field_name: field_pbcarouselitem_title
+entity_type: paragraph
+bundle: pbcarousel_item
+label: Title
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

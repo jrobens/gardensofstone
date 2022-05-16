@@ -1,0 +1,20 @@
+uuid: 21fe4fcb-3ec2-4e3e-96b0-86672344339b
+langcode: en
+status: true
+dependencies:
+  module:
+    - classy_paragraphs
+    - paragraphs
+id: paragraph.field_pbrow_style
+field_name: field_pbrow_style
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: classy_paragraphs_style
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

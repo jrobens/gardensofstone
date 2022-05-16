@@ -1,0 +1,15 @@
+uuid: b33e3d4d-d1e4-475b-a575-b7702bdbb884
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.row.field_pbrow_style
+    - paragraphs.paragraphs_type.row
+id: paragraph.row.default
+targetEntityType: paragraph
+bundle: row
+mode: default
+content: {  }
+hidden:
+  field_pbrow_style: true
+  search_api_excerpt: true

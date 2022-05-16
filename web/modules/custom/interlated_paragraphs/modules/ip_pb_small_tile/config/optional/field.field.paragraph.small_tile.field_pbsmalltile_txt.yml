@@ -1,0 +1,21 @@
+uuid: ef57224e-2d6c-41b2-9394-da1f7e1d5646
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pbsmalltile_txt
+    - paragraphs.paragraphs_type.small_tile
+  module:
+    - text
+id: paragraph.small_tile.field_pbsmalltile_txt
+field_name: field_pbsmalltile_txt
+entity_type: paragraph
+bundle: small_tile
+label: 'Leading txt'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

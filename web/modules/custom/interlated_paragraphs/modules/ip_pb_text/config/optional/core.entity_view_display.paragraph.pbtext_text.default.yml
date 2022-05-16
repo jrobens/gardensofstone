@@ -1,0 +1,38 @@
+uuid: 22dbce7e-33bd-427e-9659-5e32f6ca5eb6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.pbtext_text.field_pbtext_link
+    - field.field.paragraph.pbtext_text.field_pbtext_style
+    - field.field.paragraph.pbtext_text.field_pbtext_text
+    - paragraphs.paragraphs_type.pbtext_text
+  module:
+    - link
+    - text
+id: paragraph.pbtext_text.default
+targetEntityType: paragraph
+bundle: pbtext_text
+mode: default
+content:
+  field_pbtext_link:
+    weight: 1
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_pbtext_text:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden:
+  field_pbtext_style: true

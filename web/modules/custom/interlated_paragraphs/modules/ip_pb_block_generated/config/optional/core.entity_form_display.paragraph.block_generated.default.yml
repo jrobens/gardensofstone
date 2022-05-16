@@ -1,0 +1,26 @@
+uuid: bae7fba8-a626-45e7-a895-14d056c0f804
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.block_generated.field_pbblockgenerated_block
+    - paragraphs.paragraphs_type.block_generated
+  module:
+    - block_field
+id: paragraph.block_generated.default
+targetEntityType: paragraph
+bundle: block_generated
+mode: default
+content:
+  field_pbblockgenerated_block:
+    weight: 0
+    settings:
+      plugin_id: ''
+      settings: {  }
+      configuration_form: full
+    third_party_settings: {  }
+    type: block_field_default
+    region: content
+hidden:
+  created: true
+  status: true

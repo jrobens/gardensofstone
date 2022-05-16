@@ -1,0 +1,20 @@
+uuid: 8ffe9577-afd2-4f58-8e87-78939c3e3f46
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_pbsmalltile_txt
+field_name: field_pbsmalltile_txt
+entity_type: paragraph
+type: text
+settings:
+  max_length: 1023
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,7 @@
+uuid: 74c52966-e057-47b3-8ca4-0be51ba5ca9f
+langcode: en
+status: true
+dependencies: {  }
+id: row_corporate_video
+label: 'Row corporate video'
+classes: row-corporate-video

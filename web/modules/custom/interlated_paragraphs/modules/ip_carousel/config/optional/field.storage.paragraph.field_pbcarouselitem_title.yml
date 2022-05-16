@@ -1,0 +1,20 @@
+uuid: efcde92d-e6de-4273-b76d-cd2404e326aa
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_pbcarouselitem_title
+field_name: field_pbcarouselitem_title
+entity_type: paragraph
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

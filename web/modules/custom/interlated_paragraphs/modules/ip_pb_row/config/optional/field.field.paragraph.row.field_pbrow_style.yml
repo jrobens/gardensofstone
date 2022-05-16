@@ -1,0 +1,21 @@
+uuid: 4bdb8764-60ba-4d39-93a2-b5fb90039865
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pbrow_style
+    - paragraphs.paragraphs_type.row
+id: paragraph.row.field_pbrow_style
+field_name: field_pbrow_style
+entity_type: paragraph
+bundle: row
+label: Style
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:classy_paragraphs_style'
+  handler_settings: {  }
+field_type: entity_reference

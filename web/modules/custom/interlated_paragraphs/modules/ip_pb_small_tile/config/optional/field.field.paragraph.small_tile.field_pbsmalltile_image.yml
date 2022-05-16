@@ -1,0 +1,28 @@
+uuid: ba144961-edfe-4437-92a6-ba741a3d3ef2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pbsmalltile_image
+    - media.type.image
+    - paragraphs.paragraphs_type.small_tile
+id: paragraph.small_tile.field_pbsmalltile_image
+field_name: field_pbsmalltile_image
+entity_type: paragraph
+bundle: small_tile
+label: Image
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

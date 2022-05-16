@@ -1,0 +1,52 @@
+uuid: 2bd00ff6-0a63-4ae8-9a15-d66d88b7cb09
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.home_page_banner.field_index_view_reference_lower
+    - field.field.paragraph.home_page_banner.field_pbhpbanner_index_reference
+    - field.field.paragraph.home_page_banner.field_pbhpbanner_text_overlay
+    - field.field.paragraph.home_page_banner.field_pbhpbanner_video
+    - paragraphs.paragraphs_type.home_page_banner
+  module:
+    - text
+    - viewsreference
+id: paragraph.home_page_banner.default
+targetEntityType: paragraph
+bundle: home_page_banner
+mode: default
+content:
+  field_index_view_reference_lower:
+    weight: 3
+    label: hidden
+    settings:
+      plugin_types:
+        - block
+    third_party_settings: {  }
+    type: viewsreference_formatter
+    region: content
+  field_pbhpbanner_index_reference:
+    weight: 2
+    label: hidden
+    settings:
+      plugin_types:
+        - block
+    third_party_settings: {  }
+    type: viewsreference_formatter
+    region: content
+  field_pbhpbanner_text_overlay:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_pbhpbanner_video:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden:
+  search_api_excerpt: true

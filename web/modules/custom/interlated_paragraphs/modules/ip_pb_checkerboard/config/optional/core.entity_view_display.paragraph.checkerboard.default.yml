@@ -1,0 +1,44 @@
+uuid: d4a77db8-f73a-4604-9d39-a350dfe4c01d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.checkerboard.field_pbcheckerboard_icon
+    - field.field.paragraph.checkerboard.field_pbcheckerboard_style
+    - field.field.paragraph.checkerboard.field_pbcheckerboard_text
+    - field.field.paragraph.checkerboard.field_pbcheckerboard_title
+    - paragraphs.paragraphs_type.checkerboard
+  module:
+    - text
+id: paragraph.checkerboard.default
+targetEntityType: paragraph
+bundle: checkerboard
+mode: default
+content:
+  field_pbcheckerboard_icon:
+    type: entity_reference_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_pbcheckerboard_text:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_pbcheckerboard_title:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  field_pbcheckerboard_style: true
+  search_api_excerpt: true

@@ -1,0 +1,65 @@
+/**
+ * @file
+ * The scss file for Bootstrap Paragraphs Callout module.
+ *
+ * Can be quickly compiled to CSS at https://www.sassmeister.com/.
+ */
+.paragraph--type--small-tile
+  padding: 2vw 3vw 2vw 3vw
+  margin: 0
+  display: grid
+  grid-template-columns: 40% 60%
+  grid-column-gap: 1rem
+  grid-row-gap: 1rem
+  grid-auto-rows: min-content
+  background-color: white
+  position: relative
+  overflow: hidden
+  border-top: 0.2rem solid #1e4d4b08
+/* border-bottom: 0.2rem solid #00808029*/
+
+
+.paragraph--type--small-tile .field--name-field-pbsmalltile-heading a,
+.paragraph--type--small-tile .field--name-field-pbsmalltile-heading a:visited
+  font-family: "Paytone One", sans-serif
+  font-size: var(--font-size-heading)
+  color: var(--color-primary-0)
+  height: 100%
+  text-transform: uppercase
+  font-weight: 800
+
+
+.paragraph--type--small-tile .field--name-field-pbsmalltile-image
+  grid-column-start: 2
+  grid-row-start: 1
+  grid-row-end: span 3
+  align-items: self-end
+
+.layout--threecol-section .paragraph--type--small-tile .field--name-field-pbsmalltile-image img
+  height: 10rem
+  width: auto
+
+.paragraph--type--small-tile .field--name-field-pbsmalltile-heading
+  color: var(--color-primary-0)
+  font-weight: bold
+  font-size: 2rem
+
+.paragraph--type--small-tile .field--name-field-pbsmalltile-image .field__item
+  text-align: right
+
+.paragraph--type--small-tile .field--name-field-pbsmalltile-txt
+  padding: 0 2rem
+  margin: 0
+  font-weight: 500
+
+
+.paragraph--type--small-tile .field--name-field-pbsmalltile-image ~ .field--name-field-pbsmalltile-txt
+  padding: 0
+  margin: 0
+
+.paragraph--type--small-tile .field--name-field-pbsmalltile-link a
+  color: white
+  background: var(--color-primary-0)
+  padding: 1rem 0.5rem
+  border-radius: 1rem
+  min-width: 15rem

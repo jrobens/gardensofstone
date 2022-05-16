@@ -1,0 +1,11 @@
+name: Interlated Paragraphs Small Tile
+type: module
+description: A reusable Small Tile Paragraph bundle.
+core_version_requirement: ^8 || ^9 || ^10
+package: Paragraphs
+dependencies:
+  - paragraphs:paragraphs
+  - drupal:media
+  - linked_field:linked_field
+  - interlated_paragraphs:interlated_paragraphs
+

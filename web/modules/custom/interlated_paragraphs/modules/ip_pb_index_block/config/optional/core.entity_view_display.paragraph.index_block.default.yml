@@ -1,0 +1,25 @@
+uuid: 3d11848f-de43-41dc-b83a-d50f88805d51
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.index_block.field_pbindex_block
+    - paragraphs.paragraphs_type.index_block
+  module:
+    - viewsreference
+id: paragraph.index_block.default
+targetEntityType: paragraph
+bundle: index_block
+mode: default
+content:
+  field_pbindex_block:
+    weight: 0
+    label: hidden
+    settings:
+      plugin_types:
+        - block
+    third_party_settings: {  }
+    type: viewsreference_formatter
+    region: content
+hidden:
+  search_api_excerpt: true

@@ -1,0 +1,4 @@
+ip_pb_small_tile:
+  css:
+    component:
+      styles/ip_pb_small_tile.css: { preprocess: false, minified: false }

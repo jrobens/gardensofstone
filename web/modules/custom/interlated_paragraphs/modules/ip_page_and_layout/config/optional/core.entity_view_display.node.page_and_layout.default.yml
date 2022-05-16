@@ -1,0 +1,30 @@
+uuid: 733efd5d-6049-49e9-801b-e5d7f6dfa523
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.page_and_layout.field_pl_component
+    - node.type.page_and_layout
+  module:
+    - layout_paragraphs
+    - user
+id: node.page_and_layout.default
+targetEntityType: node
+bundle: page_and_layout
+mode: default
+content:
+  field_pl_component:
+    weight: 101
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

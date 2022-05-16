@@ -1,0 +1,25 @@
+uuid: b10e8371-1ff8-4749-a133-e542ecc515e8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pl_component
+    - node.type.page_and_layout
+  module:
+    - entity_reference_revisions
+id: node.page_and_layout.field_pl_component
+field_name: field_pl_component
+entity_type: node
+bundle: page_and_layout
+label: field_pl_component
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles: null
+field_type: entity_reference_revisions

@@ -1,0 +1,4 @@
+ip_pb_index_block:
+  css:
+    component:
+      styles/ip_pb_index_block.css: { preprocess: false, minified: false }

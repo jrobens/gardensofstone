@@ -1,0 +1,21 @@
+uuid: 82ea439d-0e66-4796-a22a-27533a5c7d46
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pbtext_text
+    - paragraphs.paragraphs_type.pbtext_text
+  module:
+    - text
+id: paragraph.pbtext_text.field_pbtext_text
+field_name: field_pbtext_text
+entity_type: paragraph
+bundle: pbtext_text
+label: Text
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

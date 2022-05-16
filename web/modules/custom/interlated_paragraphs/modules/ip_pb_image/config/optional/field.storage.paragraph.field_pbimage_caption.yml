@@ -1,0 +1,20 @@
+uuid: dd9d7f56-b655-4893-8b66-bb3cd61a8a35
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_pbimage_caption
+field_name: field_pbimage_caption
+entity_type: paragraph
+type: text
+settings:
+  max_length: 1023
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

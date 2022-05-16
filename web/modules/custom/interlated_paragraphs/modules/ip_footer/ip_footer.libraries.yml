@@ -1,0 +1,4 @@
+ip_footer:
+  css:
+    component:
+      styles/ip_footer.css: { preprocess: false, minified: true }

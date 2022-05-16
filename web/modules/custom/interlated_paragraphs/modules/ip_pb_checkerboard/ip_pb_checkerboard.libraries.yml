@@ -1,0 +1,4 @@
+ip_pb_checkerboard:
+  css:
+    component:
+      styles/ip_pb_checkerboard.css: { preprocess: false, minified: false }

@@ -1,0 +1,26 @@
+<?php
+
+namespace Drupal\facebook_block\Plugin\Block;
+
+use Drupal\Core\Block\BlockBase;
+
+/**
+ * Provides a 'Example: uppercase this please' block.
+ *
+ * @Block(
+ *   id = "example_uppercase",
+ *   admin_label = @Translation("Example: uppercase this please")
+ * )
+ */
+class FacebookCodeBlock extends BlockBase {
+
+  /**
+   * {@inheritdoc}
+   */
+  public function build() {
+    return [
+      '#markup' => $this->t("This block's title is changed to uppercase. Any block title which contains 'uppercase' will also be changed to uppercase."),
+    ];
+  }
+
+}

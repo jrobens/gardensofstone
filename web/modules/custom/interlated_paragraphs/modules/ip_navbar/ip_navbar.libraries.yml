@@ -1,0 +1,4 @@
+ip_navbar:
+  css:
+    component:
+      styles/ip_navbar.css: { preprocess: false, minified: true }

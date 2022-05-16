@@ -1,0 +1,18 @@
+/* Error: Expected hex digit.
+ *    ,
+ * 40 | $complement-4: #08350
+ *    |                      ^
+ *    '
+ *   ../../../styles/variables.sass 40:22  @use
+ *   ip_footer.sass 7:1                    root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Expected hex digit.\a    \2577 \a 40 \2502  $complement-4: #08350\a    \2502                       ^\a    \2575 \a   ../../../styles/variables.sass 40:22  @use\a   ip_footer.sass 7:1                    root stylesheet";
+}

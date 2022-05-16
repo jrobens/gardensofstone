@@ -1,0 +1,10 @@
+name: Interlated Paragraphs Index block
+type: module
+description: Add an index (views) to the page
+core_version_requirement: ^8 || ^9 || ^10
+package: Paragraphs
+dependencies:
+  - paragraphs:paragraphs
+  - drupal:media
+  - interlated_paragraphs:interlated_paragraphs
+

@@ -1,0 +1,10 @@
+uuid: 354e141e-0b36-4e07-a41c-ac7d2adc8a97
+langcode: en
+status: true
+dependencies: {  }
+id: map
+label: Map
+icon_uuid: null
+icon_default: null
+description: 'A map block'
+behavior_plugins: {  }

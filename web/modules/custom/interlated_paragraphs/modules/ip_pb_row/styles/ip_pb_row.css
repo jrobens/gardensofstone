@@ -1,0 +1,15 @@
+/**
+ * * @file
+ * * The scss file for Bootstrap Paragraphs Callout module.
+ * *
+ * * Can be quickly compiled to CSS at https://www.sassmeister.com/.
+ * */
+ *
+ * // Colors. */
+.paragraph--type--pb-row > .paragraph__column {
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+}
+
+/*# sourceMappingURL=ip_pb_row.css.map */

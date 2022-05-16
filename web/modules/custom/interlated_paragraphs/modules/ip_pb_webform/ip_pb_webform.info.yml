@@ -1,0 +1,12 @@
+name: Interlated Paragraphs Webform
+type: module
+description: Reference a webform
+core_version_requirement: ^8 || ^9 || ^10
+package: Paragraphs
+dependencies:
+  - paragraphs:paragraphs
+  - drupal:media
+  - interlated_paragraphs:interlated_paragraphs
+  - webform:webform
+  - webform:webform-ui
+

@@ -1,0 +1,4 @@
+ip_events:
+  css:
+    component:
+      styles/ip_events.css: { minified: true }

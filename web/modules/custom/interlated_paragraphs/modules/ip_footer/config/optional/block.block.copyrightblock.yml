@@ -1,0 +1,25 @@
+uuid: 6b989d32-9b2f-496e-867c-62baa0512bb5
+langcode: en
+status: true
+dependencies:
+  module:
+    - copyright_block
+  theme:
+    - bradfieldcandobetter
+id: copyrightblock
+theme: bradfieldcandobetter
+region: subfooter
+weight: 0
+provider: null
+plugin: copyright_block
+settings:
+  id: copyright_block
+  label: 'Copyright block'
+  provider: copyright_block
+  label_display: '0'
+  start_year: '2021'
+  separator: '-'
+  text:
+    value: "<p>Copyright&nbsp;[current-date:custom:Y]</p>\r\n"
+    format: basic_html
+visibility: {  }

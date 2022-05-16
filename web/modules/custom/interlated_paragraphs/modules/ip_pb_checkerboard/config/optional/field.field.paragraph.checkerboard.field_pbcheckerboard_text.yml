@@ -1,0 +1,21 @@
+uuid: bcb9b04a-43a7-4489-9f85-889ae2365621
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pbcheckerboard_text
+    - paragraphs.paragraphs_type.checkerboard
+  module:
+    - text
+id: paragraph.checkerboard.field_pbcheckerboard_text
+field_name: field_pbcheckerboard_text
+entity_type: paragraph
+bundle: checkerboard
+label: Text
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

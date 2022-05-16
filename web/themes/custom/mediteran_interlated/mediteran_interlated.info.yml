@@ -1,0 +1,22 @@
+name: mediteran-interlated
+type: theme
+description: 'Customisations to Mediteran'
+package: Interlated
+core_version_requirement: ^8.8 || ^9
+dependencies:
+  - mediteran:mediteran
+libraries:
+  - mediteran_interlated/global-styling
+
+base theme: mediteran
+
+regions:
+  header: 'Header'
+  pre_content: 'Pre-content'
+  breadcrumb: Breadcrumb
+  highlighted: Highlighted
+  help: Help
+  content: Content
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+  sidebar_first: 'First sidebar'

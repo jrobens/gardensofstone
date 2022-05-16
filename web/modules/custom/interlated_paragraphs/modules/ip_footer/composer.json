@@ -1,0 +1,16 @@
+{
+  "name": "drupal/interlated_pb_banner",
+  "description": "A reusable Callout Paragraph bundle.",
+  "type": "drupal-module",
+  "homepage": "https://drupal.org/project/interlated_paragraphs",
+  "require": {
+    "drupal/core": "*",
+    "drupal:interlated_paragraphs": "*"
+  },
+  "support": {
+    "issues": "https://drupal.org/project/issues/interlated_paragraphs",
+    "source": "https://git.drupalcode.org/project/interlated_paragraphs"
+  },
+  "license": "GPL-2.0-or-later",
+  "minimum-stability": "dev"
+}

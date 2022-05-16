@@ -1,0 +1,52 @@
+uuid: c190ecd2-4dde-410e-b7e0-8c359c15f979
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pc_banner
+    - node.type.contact_us_and_layout
+    - paragraphs.paragraphs_type.banner
+  module:
+    - entity_reference_revisions
+id: node.contact_us_and_layout.field_pc_banner
+field_name: field_pc_banner
+entity_type: node
+bundle: contact_us_and_layout
+label: Banner
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      banner: banner
+    target_bundles_drag_drop:
+      banner:
+        enabled: true
+        weight: 9
+      block:
+        weight: 10
+        enabled: false
+      checkerboard:
+        weight: 11
+        enabled: false
+      heading:
+        weight: 12
+        enabled: false
+      home_page_banner:
+        weight: 13
+        enabled: false
+      image:
+        weight: 14
+        enabled: false
+      pbtext_text:
+        weight: 15
+        enabled: false
+      row:
+        weight: 16
+        enabled: false
+field_type: entity_reference_revisions

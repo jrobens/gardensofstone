@@ -1,0 +1,4 @@
+ip_pb_row:
+  css:
+    component:
+      styles/ip_pb_row.min.css: { preprocess: false, minified: true }

@@ -1,0 +1,17 @@
+uuid: 2526ca9b-7630-4b7a-9247-3e008e8726d0
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: tile_960_x_
+label: 'Tile 960 x 720'
+effects:
+  66a619f0-d6d5-41dc-a156-06f409968966:
+    uuid: 66a619f0-d6d5-41dc-a156-06f409968966
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 960
+      height: 720
+      crop_type: focal_point

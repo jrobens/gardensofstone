@@ -1,0 +1,4 @@
+ip_pb_banner:
+  css:
+    component:
+      styles/ip_pb_banner.min.css: { preprocess: false, minified: true }

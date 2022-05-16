@@ -1,0 +1,25 @@
+uuid: bafbdf5c-dde4-4c4d-8b4c-d305c2e81965
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:a2a6a79a-68d5-4b97-945c-760741e8b88c'
+  module:
+    - block_content
+  theme:
+    - bradfieldcandobetter
+id: address
+theme: bradfieldcandobetter
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:a2a6a79a-68d5-4b97-945c-760741e8b88c'
+settings:
+  id: 'block_content:a2a6a79a-68d5-4b97-945c-760741e8b88c'
+  label: Address
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

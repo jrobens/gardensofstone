@@ -1,0 +1,4 @@
+ip_page_and_layout:
+  css:
+    component:
+      styles/ip_page_and_layout.css: { preprocess: false, minified: true }

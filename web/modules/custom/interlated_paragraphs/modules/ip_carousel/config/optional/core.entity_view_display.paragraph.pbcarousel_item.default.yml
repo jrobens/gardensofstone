@@ -1,0 +1,54 @@
+uuid: 56fc3e73-3f7d-41ec-9186-b951b1c37797
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.pbcarousel_item.field_pbcarousel_link
+    - field.field.paragraph.pbcarousel_item.field_pbcarouselitem_image
+    - field.field.paragraph.pbcarousel_item.field_pbcarouselitem_synopsis
+    - field.field.paragraph.pbcarousel_item.field_pbcarouselitem_title
+    - paragraphs.paragraphs_type.pbcarousel_item
+  module:
+    - link
+    - text
+id: paragraph.pbcarousel_item.default
+targetEntityType: paragraph
+bundle: pbcarousel_item
+mode: default
+content:
+  field_pbcarousel_link:
+    weight: 3
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_pbcarouselitem_image:
+    type: entity_reference_entity_view
+    weight: 0
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_pbcarouselitem_synopsis:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_pbcarouselitem_title:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

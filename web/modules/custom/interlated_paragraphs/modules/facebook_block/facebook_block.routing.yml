@@ -1,0 +1,7 @@
+block_example.description:
+  path: '/facebook/facebook-block'
+  defaults:
+    _controller: '\Drupal\block_example\Controller\BlockExampleController::description'
+    _title: 'FacebookBlock'
+  requirements:
+    _permission: 'access content'

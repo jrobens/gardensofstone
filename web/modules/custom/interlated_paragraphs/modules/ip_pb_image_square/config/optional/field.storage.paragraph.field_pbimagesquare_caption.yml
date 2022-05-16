@@ -1,0 +1,20 @@
+uuid: 99e99221-eb52-418b-a6ba-191dcd77da19
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_pbimagesquare_caption
+field_name: field_pbimagesquare_caption
+entity_type: paragraph
+type: text
+settings:
+  max_length: 1023
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

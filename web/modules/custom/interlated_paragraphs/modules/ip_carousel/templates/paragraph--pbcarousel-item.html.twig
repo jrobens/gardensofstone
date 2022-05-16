@@ -1,0 +1,26 @@
+{% set classes = [
+  'card',
+  'paragraph',
+  'paragraph--type--' ~ paragraph.bundle|clean_class,
+  view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+  not paragraph.isPublished() ? 'paragraph--unpublished'
+] %}
+{% block paragraph %}
+  <div class="{{ attributes.addClass(classes) }}">
+    {% block content %}
+      <div class="card-image">
+        <figure class="image is-16by9">
+          {{ content.field_pbcarouselitem_image }}
+        </figure>
+      </div>
+      <div class="card-content">
+        <div class="item__title">
+          Mon titre 6
+        </div>
+        <div class="item__description">
+          Ici une petite description pour tester le slider
+        </div>
+      </div>
+    {% endblock content %}
+  </div>
+{% endblock paragraph %}

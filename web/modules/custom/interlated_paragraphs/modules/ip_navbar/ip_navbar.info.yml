@@ -1,0 +1,8 @@
+name: Interlated Navbar
+type: module
+description: A base for navbar
+core_version_requirement: ^8 || ^9 || ^10
+package: Interlated
+dependencies:
+  - drulma_companion:drulma_companion
+  - block_class:block_class

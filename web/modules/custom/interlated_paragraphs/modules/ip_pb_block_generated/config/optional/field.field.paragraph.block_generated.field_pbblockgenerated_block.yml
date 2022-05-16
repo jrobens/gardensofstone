@@ -1,0 +1,27 @@
+uuid: a0e2c372-7fd7-4296-b496-8554191cb416
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pbblockgenerated_block
+    - paragraphs.paragraphs_type.block_generated
+  module:
+    - block_field
+id: paragraph.block_generated.field_pbblockgenerated_block
+field_name: field_pbblockgenerated_block
+entity_type: paragraph
+bundle: block_generated
+label: Block
+description: "Insert a website component. See the index block paragraph for blocks that contain indexes of things. \r\n\r\nNot all the blocks on the website are shown here. Please request additional blocks."
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  selection: blocks
+  selection_settings:
+    plugin_ids:
+      'block_content:ca82edc7-4de3-42e6-ab97-ee35ecb357f3': 'block_content:ca82edc7-4de3-42e6-ab97-ee35ecb357f3'
+      'facet_block:year': 'facet_block:year'
+      'mailchimp_signup_subscribe_block:announcements': 'mailchimp_signup_subscribe_block:announcements'
+field_type: block_field

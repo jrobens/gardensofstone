@@ -1,0 +1,8 @@
+ip_carousel:
+  css:
+    component:
+      styles/bulma-carousel.min.css: { minified: true }
+      styles/ip_carousel.css: { minified: false }
+  js:
+    js/bulma-carousel.min.js: {minified: true}
+    js/carousel.js: { }

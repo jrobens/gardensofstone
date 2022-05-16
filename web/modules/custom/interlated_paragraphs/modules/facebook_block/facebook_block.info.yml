@@ -1,0 +1,9 @@
+name: Facebook Block
+type: module
+description: Hard coded Facebook block
+package: Interlated
+core_version_requirement: ^8 || ^9 | ^10
+dependencies:
+  - drupal:block
+  - drupal:node
+

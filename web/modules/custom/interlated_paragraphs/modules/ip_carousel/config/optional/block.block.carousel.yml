@@ -1,0 +1,29 @@
+uuid: 769904d6-e385-418b-be25-494330b786b2
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:node_block:7c46f06d-6764-4d0e-a6a7-bae6e46aa9d2'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - ssec
+third_party_settings:
+  block_class:
+    classes: carousel
+id: carousel
+theme: ssec
+region: header
+weight: 0
+provider: null
+plugin: 'block_content:7c46f06d-6764-4d0e-a6a7-bae6e46aa9d2'
+settings:
+  id: 'block_content:7c46f06d-6764-4d0e-a6a7-bae6e46aa9d2'
+  label: Carousel
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

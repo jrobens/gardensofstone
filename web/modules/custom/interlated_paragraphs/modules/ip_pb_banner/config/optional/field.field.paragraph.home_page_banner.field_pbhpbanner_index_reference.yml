@@ -1,0 +1,46 @@
+uuid: bbcf9405-69d8-4406-ae85-8fae3f3508c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pbhpbanner_index_reference
+    - paragraphs.paragraphs_type.home_page_banner
+  module:
+    - viewsreference
+id: paragraph.home_page_banner.field_pbhpbanner_index_reference
+field_name: field_pbhpbanner_index_reference
+entity_type: paragraph
+bundle: home_page_banner
+label: 'Index (view) reference'
+description: 'Include an index, e.g list of announcements'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:view'
+  handler_settings:
+    target_bundles: null
+    auto_create: 0
+  plugin_types:
+    block: block
+    default: 0
+    page: 0
+    feed: 0
+  preselect_views:
+    block_content: 0
+    comment: 0
+    comments_recent: 0
+    content: 0
+    content_recent: 0
+    files: 0
+    frontpage: 0
+    media: 0
+    media_library: 0
+    taxonomy_term: 0
+    team: 0
+    user_admin_people: 0
+    watchdog: 0
+    who_s_new: 0
+    who_s_online: 0
+field_type: viewsreference

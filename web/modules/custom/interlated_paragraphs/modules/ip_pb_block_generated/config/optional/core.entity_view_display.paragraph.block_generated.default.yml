@@ -1,0 +1,23 @@
+uuid: f9ab4f53-0a7c-4fe0-8dcd-0dbeaba36c31
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.block_generated.field_pbblockgenerated_block
+    - paragraphs.paragraphs_type.block_generated
+  module:
+    - block_field
+id: paragraph.block_generated.default
+targetEntityType: paragraph
+bundle: block_generated
+mode: default
+content:
+  field_pbblockgenerated_block:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: block_field
+    region: content
+hidden:
+  search_api_excerpt: true

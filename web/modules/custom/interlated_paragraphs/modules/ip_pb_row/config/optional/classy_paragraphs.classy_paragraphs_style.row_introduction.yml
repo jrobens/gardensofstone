@@ -1,0 +1,7 @@
+uuid: c841f199-4015-458e-a087-b5c286695559
+langcode: en
+status: true
+dependencies: {  }
+id: row_introduction
+label: 'Row introduction'
+classes: paragraph-row-introduction

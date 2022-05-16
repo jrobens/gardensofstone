@@ -1,0 +1,21 @@
+uuid: 312c406e-a1ea-4d2c-a488-9c319908d7c5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.row.field_pbrow_style
+    - paragraphs.paragraphs_type.row
+id: paragraph.row.default
+targetEntityType: paragraph
+bundle: row
+mode: default
+content:
+  field_pbrow_style:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,23 @@
+uuid: c688c8b0-502f-4135-96b1-fc18b5f441df
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pbtext_style
+    - paragraphs.paragraphs_type.pbtext_text
+id: paragraph.pbtext_text.field_pbtext_style
+field_name: field_pbtext_style
+entity_type: paragraph
+bundle: pbtext_text
+label: Style
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:classy_paragraphs_style'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: entity_reference

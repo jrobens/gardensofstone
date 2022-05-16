@@ -1,0 +1,10 @@
+name: Interlated Paragraphs Image
+type: module
+description: A reusable Image Paragraph bundle.
+core_version_requirement: ^8 || ^9 || ^10
+package: Paragraphs
+dependencies:
+  - paragraphs:paragraphs
+  - drupal:media
+  - interlated_paragraphs:interlated_paragraphs
+

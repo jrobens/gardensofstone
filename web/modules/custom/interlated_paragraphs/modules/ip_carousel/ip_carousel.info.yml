@@ -1,0 +1,10 @@
+name: Interlated Carousel
+type: module
+description: A base for carousel
+core_version_requirement: ^8 || ^9 || ^10
+package: Interlated
+dependencies:
+  - twig_tweak:twig_tweak
+  - core/jquery
+  - core/drupal
+

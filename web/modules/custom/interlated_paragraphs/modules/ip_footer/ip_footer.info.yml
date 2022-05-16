@@ -1,0 +1,6 @@
+name: Interlated Footer
+type: module
+description: A base for footers
+core_version_requirement: ^8 || ^9 || ^10
+package: Interlated
+

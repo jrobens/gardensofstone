@@ -1,0 +1,11 @@
+name: Interlated Paragraphs Checkerboard
+type: module
+description: A reusable Checkerboard Paragraph bundle.
+core_version_requirement: ^8 || ^9 || ^10
+package: Paragraphs
+dependencies:
+  - paragraphs:paragraphs
+  - drupal:media
+  - entity_class_formatter:entity_class_formatter
+  - interlated_paragraphs:interlated_paragraphs
+

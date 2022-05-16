@@ -1,0 +1,36 @@
+uuid: 9e4c0b5c-bc1d-4b06-a6d1-9f63662004c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.follow-us
+  module:
+    - context
+    - system
+  theme:
+    - gold50
+id: followus
+theme: gold50
+region: footer
+weight: -9
+provider: null
+plugin: 'system_menu_block:follow-us'
+settings:
+  id: 'system_menu_block:follow-us'
+  label: 'Follow us'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  view_inclusion:
+    id: view_inclusion
+    negate: null
+    view_inclusion: {  }
+    context_mapping: {  }
+  request_path_exclusion:
+    id: request_path_exclusion
+    pages: ''
+    negate: null
+    context_mapping: {  }

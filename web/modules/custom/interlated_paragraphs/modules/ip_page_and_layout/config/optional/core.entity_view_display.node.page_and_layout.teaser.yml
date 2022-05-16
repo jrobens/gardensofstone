@@ -1,0 +1,22 @@
+uuid: df7344fd-8f27-49dd-be1b-fcd116c00568
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.page_and_layout.field_pl_component
+    - node.type.page_and_layout
+  module:
+    - user
+id: node.page_and_layout.teaser
+targetEntityType: node
+bundle: page_and_layout
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_pl_component: true

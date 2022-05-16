@@ -1,0 +1,23 @@
+uuid: b09e5a1f-1015-4397-845e-35ff22652c29
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.heading.field_pbheading_heading
+    - paragraphs.paragraphs_type.heading
+id: paragraph.heading.default
+targetEntityType: paragraph
+bundle: heading
+mode: default
+content:
+  field_pbheading_heading:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

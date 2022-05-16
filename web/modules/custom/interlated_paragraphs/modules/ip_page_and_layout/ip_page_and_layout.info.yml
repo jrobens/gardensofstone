@@ -1,0 +1,10 @@
+name: Interlated Page and Layout
+type: module
+description: A page structure
+core_version_requirement: ^8 || ^9 || ^10
+package: Paragraphs
+dependencies:
+  - paragraphs:paragraphs
+  - layout_paragraphs:layout_paragraphs
+  - interlated_paragraphs:interlated_paragraphs
+

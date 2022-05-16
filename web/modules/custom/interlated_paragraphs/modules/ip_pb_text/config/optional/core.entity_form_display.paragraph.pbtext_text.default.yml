@@ -1,0 +1,42 @@
+uuid: 1ea979c0-4f3d-48f7-bb90-4c014a13b7e9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.pbtext_text.field_pbtext_link
+    - field.field.paragraph.pbtext_text.field_pbtext_style
+    - field.field.paragraph.pbtext_text.field_pbtext_text
+    - paragraphs.paragraphs_type.pbtext_text
+  module:
+    - link
+    - text
+id: paragraph.pbtext_text.default
+targetEntityType: paragraph
+bundle: pbtext_text
+mode: default
+content:
+  field_pbtext_link:
+    weight: 1
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_pbtext_style:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_pbtext_text:
+    weight: 0
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+hidden:
+  created: true
+  status: true

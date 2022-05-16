@@ -1,0 +1,28 @@
+uuid: 68a1d3b5-6a17-4744-b6e0-319bd076c8a4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pbcarouselitem_image
+    - media.type.image
+    - paragraphs.paragraphs_type.pbcarousel_item
+id: paragraph.pbcarousel_item.field_pbcarouselitem_image
+field_name: field_pbcarouselitem_image
+entity_type: paragraph
+bundle: pbcarousel_item
+label: Image
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

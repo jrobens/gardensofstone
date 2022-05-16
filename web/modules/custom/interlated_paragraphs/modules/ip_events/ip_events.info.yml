@@ -1,0 +1,12 @@
+name: Interlated Events
+type: module
+description: A base for events
+core_version_requirement: ^8 || ^9 || ^10
+package: Interlated
+dependencies:
+  - drupal:views
+  - geofield:geofield
+  - drupal:media
+  - leaflet:leaflet
+  - address:address
+

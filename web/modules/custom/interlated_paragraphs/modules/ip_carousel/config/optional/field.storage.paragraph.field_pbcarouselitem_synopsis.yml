@@ -1,0 +1,19 @@
+uuid: 0589118a-99b1-4425-a043-4f39640bd693
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_pbcarouselitem_synopsis
+field_name: field_pbcarouselitem_synopsis
+entity_type: paragraph
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

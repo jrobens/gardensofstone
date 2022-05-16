@@ -1,0 +1,10 @@
+name: Interlated Paragraphs Row
+type: module
+description: A reusable Row Paragraph bundle. The base paragraph for layout_paragraphs.
+core_version_requirement: ^8 || ^9 || ^10
+package: Paragraphs
+dependencies:
+  - paragraphs:paragraphs
+  - drupal:media
+  - interlated_paragraphs:interlated_paragraphs
+
