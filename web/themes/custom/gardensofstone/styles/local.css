@@ -134,11 +134,11 @@ body.path--destination-pagoda.node-type--page-and-layout > div > header.hero.is-
 }
 
 /* Cross fade banner */
-#block-destinationpagoda-branding {
+#block-gardensofstone-branding {
   padding-top: 3.5rem;
 }
 
-body.toolbar-tray-open #block-destinationpagoda-branding {
+body.toolbar-tray-open #block-gardensofstone-branding {
   padding-top: 2.5rem;
 }
 
@@ -300,7 +300,7 @@ body.user-logged-in .navbar {
 }
 
 body.path-- .region-primary-menu + .hero.is-primary,
-body.path--destination-pagoda .region-primary-menu + .hero.is-primary {
+body.path--gardensofstone .region-primary-menu + .hero.is-primary {
   background-color: transparent;
   z-index: 29;
   height: auto;
@@ -325,7 +325,7 @@ main > section > .container {
 }
 
 /* Page title */
-#block-destinationpagoda-page-title {
+#block-gardensofstone-page-title {
   max-width: 66vw;
 }
 
@@ -631,7 +631,7 @@ section.section.hero.is-primary a:visited {
   padding: 1rem 0.5rem;
 }
 
-/* Destinationpagoda Front page tiles */
+/* gardensofstone Front page tiles */
 /* Image ratios https://bulma.io/documentation/elements/image/ */
 .home-page-muddle.tile.is-ancestor .tile.image-bg .is-child {
   padding: 0;
@@ -794,7 +794,7 @@ footer.footer #block-mainnavigation-3.tabs ul a {
 }
 
 /* contact link */
-nav#block-destinationpagoda-footer {
+nav#block-gardensofstone-footer {
   place-self: self-end;
   width: 16rem;
 }
@@ -834,11 +834,11 @@ footer.footer #block-copyrightblock {
 }
 
 /* Login/account menu */
-footer.footer #block-destinationpagoda-account-menu ul.menu-list {
+footer.footer #block-gardensofstone-account-menu ul.menu-list {
   display: flex;
 }
 
-footer.footer #block-destinationpagoda-account-menu a {
+footer.footer #block-gardensofstone-account-menu a {
   font-size: 0.8rem;
 }
 
