@@ -1,5 +1,5 @@
 /* Editing facilities */
-.footer .block-local-tasks-block  {
+.footer .block-local-tasks-block {
   position: fixed;
   bottom: 2rem;
   right: 0;
@@ -7,31 +7,19 @@
   margin-bottom: 0.5em;
   font-size: 0.8rem;
 }
-
-#block-tabs ul {
+.footer .block-local-tasks-block ul {
   display: flex;
 }
-#block-tabs li {
+.footer .block-local-tasks-block li {
   padding: 0.1rem 0.5rem;
   margin-right: 0.2rem;
   background-color: rgba(200, 200, 200, 0.5);
-  -webkit-border-radius: 5px 5px 0 0;-moz-border-radius: 5px 5px 0 0;border-radius: 5px 5px 0 0;
+  -webkit-border-radius: 5px 5px 0 0;
+  -moz-border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0;
 }
-#block-tabs li a,
-#block-tabs li a:visited {
+.footer .block-local-tasks-block li a, .footer .block-local-tasks-block li a:visited {
   color: #333;
-}
-
-
-/*.quickedit-toolbar-label {
-  position: absolute;
-  left: 30px;
-  font-size: 0.8rem;
-  max-width: 20rem;
-}*/
-
-.control.has-icons-left .icon.is-left {
- /* left: -1rem;*/
 }
 
 #admin-toolbar-search-tab input:focus + .icon.is-left {
@@ -63,3 +51,5 @@ body .layout-container video {
   top: -2rem;
   right: 0;
 }
+
+/*# sourceMappingURL=editing.css.map */
