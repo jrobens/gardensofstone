@@ -7,6 +7,7 @@
 3. gitosis checkout
 4. drupal settings
 5. copy database
+   composer require 'drupal/markdown:^3.0@RC'
 
 /opt/eff.org/certbot/venv/bin/certbot certonly --webroot -w /srv/uat/gardensofstone.org.au//web -d uat.gardensofstone.org.au
 
