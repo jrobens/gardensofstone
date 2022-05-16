@@ -55,6 +55,7 @@
         "drupal/paragraph_blocks": "^3.0",
         "drupal/paragraphs": "^1.12",
         "drupal/pathauto": "^1.8",
+        "drupal/photos": "^6.0",
         "drupal/shield": "^1.4",
         "drupal/simple_recaptcha": "^1.0@beta",
         "drupal/term_condition": "^2.0",
