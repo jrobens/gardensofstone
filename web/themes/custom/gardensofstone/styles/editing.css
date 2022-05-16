@@ -1,5 +1,5 @@
 /* Editing facilities */
-#block-tabs {
+.footer .block-local-tasks-block  {
   position: fixed;
   bottom: 2rem;
   right: 0;

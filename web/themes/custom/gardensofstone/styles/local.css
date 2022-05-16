@@ -13,9 +13,6 @@ footer.footer .menu-list a.is-active, footer.footer .menu-list a.is-active {
   line-height: 0.9;
 }
 
-/* cross-fade */
- * :root
- *  font-size: calc(0.5vw + 1vh + 0.5vmin) */
 @media (min-width: 768px) {
   :root {
     font-size: 1.5rem;
