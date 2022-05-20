@@ -126,9 +126,9 @@ main {
 body.path--.node-type--page-and-layout > div > header.hero.is-primary,
 body.path--destination-pagoda.node-type--page-and-layout > div > header.hero.is-primary {
   background-color: transparent;
-  height: 33vw;
+  height: 18vw;
   padding: 3rem 1.5rem;
-  background-image: url(../logo.jpg);
+  background-image: url(../logo.png);
   background-repeat: no-repeat;
   background-position-x: right;
   background-position-y: center;
