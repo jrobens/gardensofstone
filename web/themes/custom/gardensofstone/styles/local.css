@@ -399,7 +399,6 @@ body.path-- .column {
   position: relative;
   background: white;
   padding-top: 0;
-  top: 13rem;
 }
 
 article.content.landing::after {
@@ -687,8 +686,6 @@ section.section.hero.is-primary a:visited {
   grid-template-columns: repeat(3, 33%);
 }
 
-/*    grid-column: span 2*/
-/*    grid-column: span 2*/
 .picture-grid ul li:nth-child(3) {
   grid-row: span 2;
 }
@@ -703,6 +700,7 @@ body.not-front header.hero.is-primary {
   background-position-x: right;
   background-position-y: center;
   background-size: contain;
+  margin-bottom: 10rem;
 }
 
 body.node-type--landing header.hero.is-primary {
