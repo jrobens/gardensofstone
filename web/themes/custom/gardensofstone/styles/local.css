@@ -3,6 +3,11 @@
   --color-highlight-1: #009485;
 }
 
+.navbar.is-black {
+  background-color: #a2671c;
+  color: #fff;
+}
+
 footer.footer .menu-list a.is-active, footer.footer .menu-list a.is-active {
   color: #c6fff7;
 }
