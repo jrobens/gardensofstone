@@ -699,8 +699,8 @@ body.not-front header.hero.is-primary {
   background-repeat: no-repeat;
   background-position-x: right;
   background-position-y: center;
-  background-size: contain;
-  margin-bottom: 10rem;
+  background-size: 10rem;
+  margin-bottom: 1rem;
 }
 
 body.node-type--landing header.hero.is-primary {
