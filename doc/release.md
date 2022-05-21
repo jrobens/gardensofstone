@@ -16,10 +16,13 @@ Put into skel
 
     composer require league/commonmark ^1.0
 
-### Requiremrents
+### Requirements
 
 
 > drush ckeditor_media_embed:install
+x > drush webform:libraries:composer > webform-libraries.composer.json
+> composer require wikimedia/composer-merge-plugin
+> Edit 'extra' in composer.json
 
 ### No more classy paragraphs
 
