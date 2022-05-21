@@ -1,0 +1,18 @@
+/* When contextual link are inside Bulma tabs they are forcibly displayed.
+ * Hide them again. */
+.tabs .contextual-links {
+  display: none;
+}
+.quickedit-toolbar-content .icon {
+  align-items: unset;
+  display: unset;
+  justify-content: unset;
+  height: unset;
+  width: unset;
+}
+#admin-toolbar-search-tab .control {
+  margin-top: 0;
+}
+.contextual-region .contextual .contextual-links a {
+  color: #333;
+}

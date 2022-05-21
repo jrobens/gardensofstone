@@ -12,6 +12,19 @@
 /opt/eff.org/certbot/venv/bin/certbot certonly --webroot -w /srv/uat/gardensofstone.org.au//web -d uat.gardensofstone.org.au
 
 
+Put into skel
+
+    composer require league/commonmark ^1.0
+
+### Requiremrents
+
+
+> drush ckeditor_media_embed:install
+
+### No more classy paragraphs
+
+Undefined index: field_pbtext_style in Drupal\layout_builder\Plugin\Derivative\FieldBlockDeriver->getDerivativeDefinitions()
+
 ## Content
 Website details for an new gardensofstone.org.au site
 

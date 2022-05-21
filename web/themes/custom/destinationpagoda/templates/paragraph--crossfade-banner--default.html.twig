@@ -1,0 +1,54 @@
+{# name John #}
+{%
+  set classes = [
+  'paragraph',
+  'paragraph--type--' ~ paragraph.bundle|clean_class,
+  view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+  not paragraph.isPublished() ? 'paragraph--unpublished'
+]
+%}
+
+<div id="CrossFade">
+  {% block content %}
+    {{ content['field_pbcrossfade_image']['#value']| raw}}
+    {{ content['field_pbcrossfade_intro'] }}
+  {% endblock %}
+</div>
+
+
+{#
+
+{ block paragraph %}
+<div{{ attributes.addClass(classes) }}>
+  {% block content %}
+    {{ content }}
+  {% endblock %}
+</div>
+{% endblock paragraph %}
+
+{% for item in content.field_pbcrossfade_image %}
+{%  set myImage = item %}
+<img src="{{ dump(item)  }}"/>
+<div{{ item.attributes }}>{{ item.content }}</div>
+{% endfor %}
+
+file_url(paragraph.field_pbcrossfade_image[0].entity.field_media_image.entity.fileuri)
+
+<p>“Lithgow a hub for visitors to the Blue Mountains region, bringing more people to the area that stay for
+longer periods of time.”</p>
+
+/*
+{{ dump(items) }}
+
+{{ content }}
+
+<img alt="img" src="/themes/custom/destinationpagoda/images/town-street-signs.JPG"><img
+alt="Newnes Hotel" src="/files/2021-03/crossfadebanner_Newnes%20Hotel%20190.jpeg">
+<img alt="img"  src="/files/2021-02/main-street-crop.jpg">
+<div class="intro">
+<h1>A stunning tourism hub</h1>
+{{ breakpoint }}
+
+{{ title }}
+*/
+#}
