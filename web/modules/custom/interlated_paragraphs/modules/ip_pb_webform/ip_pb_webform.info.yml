@@ -8,5 +8,4 @@ dependencies:
   - drupal:media
   - interlated_paragraphs:interlated_paragraphs
   - webform:webform
-  - webform:webform-ui
 
