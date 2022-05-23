@@ -25,7 +25,7 @@ function ip_pb_image_theme($existing, $type, $theme, $path) {
  */
 function ip_pb_image_help($route_name, RouteMatchInterface $route_match) {
   switch ($route_name) {
-    case 'help.page.interlated_pb_banner':
+    case 'help.page.interlated_pb_image':
       $text = file_get_contents(dirname(__FILE__) . "/README.md");
       if (!\Drupal::moduleHandler()->moduleExists('markdown')) {
         return '<pre>' . $text . '</pre>';
@@ -40,4 +40,8 @@ function ip_pb_image_help($route_name, RouteMatchInterface $route_match) {
       }
   }
   return NULL;
+}
+
+function ip_pb_image_page_attachments(array &$page) {
+  $page['#attached']['library'][] = 'ip_pb_image/ip_pb_image';
 }

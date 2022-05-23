@@ -1,4 +1,4 @@
-ip_pb_row:
+ip_pb_image:
   css:
     component:
-      styles/ip_pbiamge.min.css: { preprocess: false, minified: true }
+      styles/ip_pb_image.css: { preprocess: false, minified: false }
