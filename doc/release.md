@@ -10,6 +10,11 @@
 > xx composer require civicrm/civicrm-asset-plugin:'~1.1'
 > composer require civicrm/civicrm-{core,packages,drupal-8}:'^5'
 
+
+See https://github.com/civicrm/composer-compile-plugin/blob/master/doc/site-build.md for composer compile setup
+* Add whitelist to extras section
+* Change post-receive hook in git
+
 ##
 
 Steps in setting up a generic new site. Looking for manual steps and why there are multiple

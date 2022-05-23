@@ -162,6 +162,10 @@
             "include": [
                 "web/modules/contrib/webform/composer.libraries.json"
             ]
-        }
+        },
+        "compile-whitelist": [
+            "civicrm/composer-compile-lib",
+            "civicrm/civicrm-core ",
+        ]
     }
 }
