@@ -1,6 +1,18 @@
 
+
+
 # Gardens of stone 2
 
+
+##
+
+> composer config extra.enable-patching true
+> xx composer require civicrm/civicrm-asset-plugin:'~1.1'
+> composer require civicrm/civicrm-{core,packages,drupal-8}:'^5'
+
+##
+
+Steps in setting up a generic new site. Looking for manual steps and why there are multiple
 
 1. dns
 2. web-server

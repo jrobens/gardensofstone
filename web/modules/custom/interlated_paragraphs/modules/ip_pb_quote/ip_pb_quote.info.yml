@@ -1,0 +1,8 @@
+name: Interlated Paragraphs Quote
+type: module
+description: A reusable Quote Paragraph bundle.
+core_version_requirement: ^8 || ^9 | ^10
+package: Paragraphs
+dependencies:
+  - paragraphs:paragraphs
+  - interlated_paragraphs:interlated_paragraphs

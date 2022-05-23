@@ -1,0 +1,27 @@
+uuid: b9452179-c251-4eff-bf2d-4b5cec968110
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_pbtext_style
+field_name: field_pbtext_style
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: quote
+      label: Quote
+    -
+      value: teal
+      label: Teal
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

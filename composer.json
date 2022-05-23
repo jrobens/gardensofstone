@@ -15,6 +15,10 @@
         }
     ],
     "require": {
+        "civicrm/civicrm-asset-plugin": "~1.1",
+        "civicrm/civicrm-core": "^5",
+        "civicrm/civicrm-drupal-8": "^5",
+        "civicrm/civicrm-packages": "^5",
         "composer/installers": "^1.2",
         "cweagans/composer-patches": "^1.7",
         "drupal/admin_toolbar": "^2.4",
@@ -86,11 +90,14 @@
             "drupal/core-composer-scaffold": true,
             "drupal/core-project-message": true,
             "dealerdirect/phpcodesniffer-composer-installer": true,
-            "wikimedia/composer-merge-plugin": true
+            "wikimedia/composer-merge-plugin": true,
+            "civicrm/civicrm-asset-plugin": true,
+            "civicrm/composer-downloads-plugin": true,
+            "civicrm/composer-compile-plugin": true
         }
     },
     "extra": {
-        "enable-patching": true,
+        "enable-patching": "true",
         "patches": {
             "drupal/google_analytics": {
                 "Google analytics 4": "patches/3178179-google-analytics-4.patch.txt"

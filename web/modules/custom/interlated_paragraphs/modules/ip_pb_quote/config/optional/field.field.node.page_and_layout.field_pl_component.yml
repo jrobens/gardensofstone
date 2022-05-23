@@ -1,0 +1,58 @@
+uuid: b10e8371-1ff8-4749-a133-e542ecc515e8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pl_component
+    - node.type.page_and_layout
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: Rr2QWqGtyRt3Shg3k9YSs2yNCqYzbvxu4Lz2aKZieAg
+id: node.page_and_layout.field_pl_component
+field_name: field_pl_component
+entity_type: node
+bundle: page_and_layout
+label: Component
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles: null
+    negate: 0
+    target_bundles_drag_drop:
+      checkerboard:
+        weight: 11
+        enabled: false
+      heading:
+        weight: 12
+        enabled: false
+      image:
+        weight: 13
+        enabled: false
+      image_square:
+        weight: 14
+        enabled: false
+      index_block:
+        weight: 15
+        enabled: false
+      pbtext_text:
+        weight: 16
+        enabled: false
+      quote:
+        weight: 17
+        enabled: false
+      row:
+        weight: 18
+        enabled: false
+      small_tile:
+        weight: 19
+        enabled: false
+      webform:
+        weight: 20
+        enabled: false
+field_type: entity_reference_revisions
