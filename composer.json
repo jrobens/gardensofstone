@@ -165,7 +165,7 @@
         },
         "compile-whitelist": [
             "civicrm/composer-compile-lib",
-            "civicrm/civicrm-core ",
+            "civicrm/civicrm-core "
         ]
     }
 }
