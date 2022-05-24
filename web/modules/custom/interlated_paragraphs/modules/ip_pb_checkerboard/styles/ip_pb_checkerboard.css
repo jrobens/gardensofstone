@@ -1,18 +1,93 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 3 | @use '../../../web/libraries/bulma-src/sass/utilities/initial-variables.sass' as *
- *   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
- *   '
- *   ../../../../../../sites/default/_variables.sass 3:1  @use
- *   ip_pb_checkerboard.sass 11:1                         root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 3 \2502  @use '../../../web/libraries/bulma-src/sass/utilities/initial-variables.sass' as *\a   \2502  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   ../../../../../../sites/default/_variables.sass 3:1  @use\a   ip_pb_checkerboard.sass 11:1                         root stylesheet";
+:root {
+  --color-highlight-1: #009485;
 }
+
+/**
+ * * @file
+ * * The style file
+ * *
+ * * Can be quickly compiled to CSS at https://www.sassmeister.com/.
+ *
+ * background: linear-gradient(to right, rgb(17 40 83 / 9%), rgb(0 32 92 / 52%), rgb(17 40 83 / 9%)), url(../images/flower.jpg) bottom right
+ * background-repeat: no-repeat
+ * background-size: contain
+ * */
+.paragraph--type--checkerboard {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  position: relative;
+}
+.paragraph--type--checkerboard .field--name-field-pbcheckerboard-title {
+  flex: 0 0 30%;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+  background: #a2671c;
+  border-radius: 0.7rem;
+  padding: 1rem 2rem;
+  color: #ffffff;
+  display: inline-block;
+  font: 'normal bold 26px/1 "Open Sans", sans-serif';
+  text-align: center;
+}
+.paragraph--type--checkerboard .field--name-field-pbcheckerboard-text {
+  padding-right: 1rem;
+}
+.paragraph--type--checkerboard .field--name-field-pbcheckerboard-text ul {
+  list-style: disc outside;
+  margin-left: 1rem;
+  margin-top: 0;
+}
+
+.paragraph--type--checkerboard.image-background {
+  font-family: "Paytone One", sans-serif;
+  font-size: var(--font-size-heading);
+  color: var(--color-primary-0);
+  height: 100%;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.paragraph--type--checkerboard::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  pointer-events: none;
+  margin-right: 0;
+  opacity: 0.3;
+}
+
+.field--name-field-pl-component > .field__item:nth-child(2n) .paragraph--type--checkerboard::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  pointer-events: none;
+  margin-right: 0;
+}
+
+.paragraph--type--checkerboard.fuchsia {
+  font-size: var(--font-size-heading);
+  color: var(--color-hilight-1);
+  font-weight: bold;
+  height: 100%;
+}
+
+.paragraph--type--checkerboard.teal {
+  font-family: "Paytone One", sans-serif;
+  font-size: var(--font-size-heading);
+  color: var(--color-primary-0);
+  height: 100%;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+/*# sourceMappingURL=ip_pb_checkerboard.css.map */
