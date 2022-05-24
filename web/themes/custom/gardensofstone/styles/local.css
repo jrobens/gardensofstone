@@ -321,7 +321,7 @@ section.hero.is-primary.block-views-blockevents-block-2 .views-field-title a:vis
   font-size: 2rem;
   line-height: 3;
 }
-.view-events.view-display-id-page_2 .views-row .views-field-body {
+.view-events.view-display-id-page_2 .views-row .views-row .views-field-body {
   flex: 1 1 30%;
   align-self: center;
   padding: 1rem;
