@@ -20,7 +20,6 @@
   position: relative;
 }
 .paragraph--type--checkerboard .field_pbcheckerboard_title {
-  flex: 0 0 30%;
   -ms-hyphens: auto;
   -moz-hyphens: auto;
   -webkit-hyphens: auto;
@@ -31,6 +30,7 @@
   color: #ffffff;
   display: inline-block;
   font: 'normal bold 26px/1 "Open Sans", sans-serif';
+  font-weight: bold;
   text-align: center;
 }
 .paragraph--type--checkerboard .field_pbcheckerboard_title a, .paragraph--type--checkerboard .field_pbcheckerboard_title a:visited {
