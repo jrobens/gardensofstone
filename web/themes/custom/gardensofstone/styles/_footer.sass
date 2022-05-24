@@ -1,9 +1,82 @@
 @use '../../../../sites/default/variables' as *
 
-footer.footer .menu-list a.is-active, footer.footer .menu-list a.is-active
-  color: #c6fff7
-
 .region-footer .menu-list
   display: flex
   flex-wrap: wrap
   line-height: 0.9
+
+footer.footer
+  background-color: rgb(27, 27, 27)
+  color: white
+  font-size: 0.8rem
+  margin-top: 2rem
+
+  .region-footer
+    display: grid
+    grid-template-columns: 2fr 1fr
+
+  a, a:visited
+    color: white
+
+  a:hover, a:active
+    color: #60614b
+
+  .container .columns
+    display: flex
+    justify-content: space-between
+    align-items: baseline
+
+  .menu-list a.is-active, footer.footer .menu-list a.is-active
+    color: #c6fff7
+
+  #block-tools
+    display: flex
+    font-size: 0.9rem
+    color: rgba(255, 255, 255, 0.8)
+
+  #block-mainnavigation-3.tabs
+    grid-row: span 2
+
+  #block-mainnavigation-3.tabs ul
+    flex-direction: column
+    align-items: flex-start
+    border-bottom: 0
+
+    a
+      font-size: 0.9rem
+      padding: 0.5em 0
+
+  nav#block-gardensofstone-footer
+    place-self: self-end
+    width: 16rem
+
+  div.search-block-form
+    place-self: self-end
+
+  form#search-block-form .control,
+  form#search-block-form .button
+    font-size: 0.8rem
+
+  form#search-block-form .input
+    height: 2rem
+    margin-top: 0.2rem
+
+  form#search-block-form .button.is-link
+    background-color: rgb(27, 27, 27)
+    border: 1px solid white
+    margin-bottom: 0
+
+  form#search-block-form
+    display: flex
+
+  form#search-block-form .field
+    margin-right: 0.7rem
+
+  #block-copyrightblock
+    font-size: 0.8rem
+
+  #block-gardensofstone-account-menu ul.menu-list
+    display: flex
+
+  #block-gardensofstone-account-menu a
+    font-size: 0.8rem

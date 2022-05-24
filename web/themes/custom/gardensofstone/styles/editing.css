@@ -69,4 +69,16 @@ body .layout-container video {
   overflow-wrap: anywhere;
 }
 
+.views-element-container header a, .views-element-container .view-header a {
+  background-color: white;
+  border: 1px solid #999999;
+  color: #363636;
+  cursor: pointer;
+  justify-content: center;
+  padding: 0 1em;
+  text-align: center;
+  white-space: nowrap;
+  margin-bottom: 0.3rem;
+}
+
 /*# sourceMappingURL=editing.css.map */
