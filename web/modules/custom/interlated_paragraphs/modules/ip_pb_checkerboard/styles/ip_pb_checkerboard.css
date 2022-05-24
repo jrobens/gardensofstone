@@ -19,7 +19,7 @@
   flex-direction: column;
   position: relative;
 }
-.paragraph--type--checkerboard .field--name-field-pbcheckerboard-title {
+.paragraph--type--checkerboard .field_pbcheckerboard_title {
   flex: 0 0 30%;
   -ms-hyphens: auto;
   -moz-hyphens: auto;
