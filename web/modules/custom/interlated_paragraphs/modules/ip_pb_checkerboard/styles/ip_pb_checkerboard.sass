@@ -10,6 +10,8 @@
  */
 @use '../../../../../../sites/default/variables' as *
 
+$button-font: 'normal bold 26px/1 "Open Sans", sans-serif'
+
 .paragraph--type--checkerboard
   display: flex
   align-items: center
@@ -23,6 +25,13 @@
     -moz-hyphens: auto
     -webkit-hyphens: auto
     hyphens: auto
+    background: $element-colour
+    border-radius: 0.7rem
+    padding: 1rem 2rem
+    color: #ffffff
+    display: inline-block
+    font: $button-font
+    text-align: center
 
   .field--name-field-pbcheckerboard-text
     padding-right: 1rem
@@ -31,6 +40,7 @@
     list-style: disc outside
     margin-left: 1rem
     margin-top: 0
+
 
 .paragraph--type--checkerboard.image-background
   font-family: "Paytone One", sans-serif
