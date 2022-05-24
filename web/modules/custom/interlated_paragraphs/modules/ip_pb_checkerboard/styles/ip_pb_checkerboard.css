@@ -44,6 +44,12 @@
   margin-left: 1rem;
   margin-top: 0;
 }
+.paragraph--type--checkerboard .field_caption {
+  font-size: 0.9rem;
+}
+.paragraph--type--checkerboard .field_caption a, .paragraph--type--checkerboard .field_caption a:visited {
+  color: #333;
+}
 
 .paragraph--type--checkerboard.image-background {
   font-family: "Paytone One", sans-serif;
