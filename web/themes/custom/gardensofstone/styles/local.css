@@ -480,6 +480,7 @@ h1, h2, h3, h4 {
 main {
   scroll-snap-type: y mandatory;
   background: white;
+  clip-path: inset(-14rem 0 0 0);
 }
 
 .layout > div > * {
@@ -487,7 +488,9 @@ main {
 }
 
 .node-type--page-and-layout main > section {
+  background: rgba(255, 255, 255, 0.2);
   padding: 0;
+  margin-top: 5rem;
 }
 
 /* TODO out of date code */
