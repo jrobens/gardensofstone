@@ -12,5 +12,8 @@
   padding: 0 2.5rem;
   color: #009485;
 }
+.paragraph--type--quote a, .paragraph--type--quote a:visited {
+  color: #009485;
+}
 
 /*# sourceMappingURL=ip_pb_quote.css.map */
