@@ -1,8 +1,11 @@
 /**
  * * @file
- * * The scss file for Bootstrap Paragraphs Callout module.
+ * * The style file
  * *
  * * Can be quickly compiled to CSS at https://www.sassmeister.com/.
  * */
+#block-gardensofstone-followus .tabs a {
+  border-bottom: none;
+}
 
 /*# sourceMappingURL=ip_connect.css.map */
