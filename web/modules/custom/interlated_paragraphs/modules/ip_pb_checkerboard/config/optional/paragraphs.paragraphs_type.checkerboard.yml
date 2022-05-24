@@ -4,6 +4,8 @@ status: true
 dependencies:
   content:
     - 'file:file:7f5659d6-3deb-4321-8cc0-0f01c66f1234'
+_core:
+  default_config_hash: c5vRfW9OWmo9SoUVLSm1OplKhPJ-f1fbQrKBrFXs39w
 id: checkerboard
 label: 'Checkerboard tile'
 icon_uuid: 7f5659d6-3deb-4321-8cc0-0f01c66f1234

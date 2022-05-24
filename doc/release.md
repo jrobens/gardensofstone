@@ -11,9 +11,12 @@
 > composer require civicrm/civicrm-{core,packages,drupal-8}:'^5'
 
 
+
 See https://github.com/civicrm/composer-compile-plugin/blob/master/doc/site-build.md for composer compile setup
 * Add whitelist to extras section
 * Change post-receive hook in git
+
+cv core:insn_AU"--cms-base-url='https://uat.gardensofstone.org.au' --db="mysql://gos_crm_uat:***@localhost:3306/gos_crm_uat" --lang="en
 
 ##
 
