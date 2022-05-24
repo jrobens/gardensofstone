@@ -1,5 +1,5 @@
 :root {
-  --color-highlight-1: #009485;
+  --color-highlight-1: #a6638f;
 }
 
 /**
@@ -26,9 +26,10 @@
   hyphens: auto;
   background: #a2671c;
   border-radius: 0.7rem;
-  padding: 1rem 2rem;
+  padding: 1rem 1.5rem;
   color: #ffffff;
   display: inline-block;
+  font-size: 1.2rem;
   font: 'normal bold 26px/1 "Open Sans", sans-serif';
   font-weight: bold;
   text-align: center;

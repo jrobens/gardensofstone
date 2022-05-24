@@ -1,5 +1,5 @@
 :root {
-  --color-highlight-1: #009485;
+  --color-highlight-1: #a6638f;
 }
 
 .paragraph--type--quote {
@@ -10,10 +10,10 @@
   font-size: 2rem;
   font-weight: bold;
   padding: 0 2.5rem;
-  color: #009485;
+  color: #a6638f;
 }
 .paragraph--type--quote a, .paragraph--type--quote a:visited {
-  color: #009485;
+  color: #a6638f;
 }
 
 /*# sourceMappingURL=ip_pb_quote.css.map */
