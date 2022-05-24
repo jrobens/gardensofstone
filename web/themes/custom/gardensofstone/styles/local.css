@@ -236,26 +236,21 @@ section.hero.is-primary.block-views-blockevents-block-2 .views-field-title a:vis
 }
 
 @media (min-width: 720px) {
-  #block-views-block-visit-gardens-of-stone-terms-block-1 .view-content,
-#block-views-block-visit-gardens-of-stone-terms-block-2 .view-content {
+  .view-id-visit_gardens_of_stone_terms .view-content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
-}
-#block-views-block-visit-gardens-of-stone-terms-block-1 .view-content .views-row:nth-child(3n+1),
-#block-views-block-visit-gardens-of-stone-terms-block-2 .view-content .views-row:nth-child(3n+1) {
-  grid-column-end: span 2;
-}
-
-.view-id-visit_gardens_of_stone_terms > .view-content > .views-row {
-  position: relative;
-}
-
-.view-id-visit_gardens_of_stone_terms .views-field.views-field-description__value a,
+  .view-id-visit_gardens_of_stone_terms .view-content .views-row:nth-child(3n+1), .view-id-visit_gardens_of_stone_terms .view-content .views-row:nth-child(3n+1) {
+    grid-column-end: span 2;
+  }
+  .view-id-visit_gardens_of_stone_terms .view-content > .views-row {
+    position: relative;
+  }
+  .view-id-visit_gardens_of_stone_terms .views-field.views-field-description__value a,
 .view-id-visit_gardens_of_stone_terms .views-field.views-field-description__value a:visited {
-  color: #333;
+    color: #333;
+  }
 }
-
 @media (min-width: 720px) {
   .view-id-visit_gardens_of_stone_terms .views-field.views-field-name {
     margin: 0;
@@ -280,8 +275,8 @@ section.hero.is-primary.block-views-blockevents-block-2 .views-field-title a:vis
     left: 5%;
   }
 }
-.view-visit-gardens-of-stone-terms.view-id-visit_gardens_of_stone_terms .views-field.views-field-name a,
-.view-visit-gardens-of-stone-terms.view-id-visit_gardens_of_stone_terms .views-field.views-field-name a:visited {
+.view-id-visit_gardens_of_stone_terms .views-field.views-field-name a,
+.view-id-visit_gardens_of_stone_terms .views-field.views-field-name a:visited {
   text-transform: uppercase;
   font-size: 2rem;
   font-weight: bold;
@@ -289,16 +284,16 @@ section.hero.is-primary.block-views-blockevents-block-2 .views-field-title a:vis
   color: var(--lighter-1);
 }
 
-.view-visit-gardens-of-stone-terms.view-id-visit_gardens_of_stone_terms .views-field.views-field-field-visit-image .field_media_image.container > div {
+.view-id-visit_gardens_of_stone_terms .views-field.views-field-field-visit-image .field_media_image.container > div {
   padding: 0;
   display: flex;
 }
 
-.view-visit-gardens-of-stone-terms.view-id-visit_gardens_of_stone_terms .views-field.views-field-field-visit-image .field_media_image img {
+.view-id-visit_gardens_of_stone_terms .views-field.views-field-field-visit-image .field_media_image img {
   opacity: 1;
 }
 
-.view-visit-gardens-of-stone-terms.view-id-visit_gardens_of_stone_terms .views-field.views-field-field-visit-image .field_media_image img:hover {
+.view-id-visit_gardens_of_stone_terms .views-field.views-field-field-visit-image .field_media_image img:hover {
   opacity: 0;
   transition: opacity 0.55s ease-in-out;
   -moz-transition: opacity 0.55s ease-in-out;
