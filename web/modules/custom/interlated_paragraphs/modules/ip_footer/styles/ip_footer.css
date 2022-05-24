@@ -1,12 +1,14 @@
-/* Main Secondary color (1) */
-/* Main Secondary color (2) */
-/* Main Complement  */
-/* Lighter */
+:root {
+  --color-highlight-1: #009485;
+}
+
 /**
  * * @file
- * * The scss file for Bootstrap Paragraphs Callout module.
- * *
  * * Can be quickly compiled to CSS at https://www.sassmeister.com/.
+ *
+ * background: linear-gradient(to right, rgb(17 40 83 / 9%), rgb(0 32 92 / 52%), rgb(17 40 83 / 9%)), url(../images/text-bradfield.svg) bottom right
+ * background-repeat: no-repeat
+ * background-size: contain
  * */
 .paragraph--type--checkerboard {
   display: flex;
@@ -25,9 +27,6 @@
   right: 0;
   pointer-events: none;
   margin-right: 0;
-  background: linear-gradient(to right, rgba(17, 40, 83, 0.09), rgba(0, 32, 92, 0.52), rgba(17, 40, 83, 0.09)), url(../images/text-bradfield.svg) bottom right;
-  background-repeat: no-repeat;
-  background-size: contain;
   opacity: 0.3;
 }
 
@@ -40,9 +39,6 @@
   right: 0;
   pointer-events: none;
   margin-right: 0;
-  background: linear-gradient(to right, rgba(17, 40, 83, 0.09), rgba(0, 32, 92, 0.52), rgba(17, 40, 83, 0.09)), url("../images/text-platform.svg") center center;
-  background-repeat: no-repeat;
-  background-size: contain;
   opacity: 0.15;
 }
 

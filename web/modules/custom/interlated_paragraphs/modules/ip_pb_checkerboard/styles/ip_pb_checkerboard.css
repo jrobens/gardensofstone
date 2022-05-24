@@ -1,8 +1,16 @@
+:root {
+  --color-highlight-1: #009485;
+}
+
 /**
  * * @file
- * * The scss file for Bootstrap Paragraphs Callout module.
+ * * The style file
  * *
  * * Can be quickly compiled to CSS at https://www.sassmeister.com/.
+ *
+ * background: linear-gradient(to right, rgb(17 40 83 / 9%), rgb(0 32 92 / 52%), rgb(17 40 83 / 9%)), url(../images/flower.jpg) bottom right
+ * background-repeat: no-repeat
+ * background-size: contain
  * */
 .paragraph--type--checkerboard {
   display: flex;
@@ -10,6 +18,30 @@
   justify-content: flex-start;
   padding: 3vw;
   position: relative;
+}
+.paragraph--type--checkerboard .field--name-field-pbcheckerboard-title {
+  flex: 0 0 30%;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+.paragraph--type--checkerboard .field--name-field-pbcheckerboard-text {
+  padding-right: 1rem;
+}
+.paragraph--type--checkerboard .field--name-field-pbcheckerboard-text ul {
+  list-style: disc outside;
+  margin-left: 1rem;
+  margin-top: 0;
+}
+
+.paragraph--type--checkerboard.image-background {
+  font-family: "Paytone One", sans-serif;
+  font-size: var(--font-size-heading);
+  color: var(--color-primary-0);
+  height: 100%;
+  text-transform: uppercase;
+  font-weight: 800;
 }
 
 .paragraph--type--checkerboard::before {
@@ -21,9 +53,6 @@
   right: 0;
   pointer-events: none;
   margin-right: 0;
-  background: linear-gradient(to right, rgba(17, 40, 83, 0.09), rgba(0, 32, 92, 0.52), rgba(17, 40, 83, 0.09)), url(../images/flower.jpg) bottom right;
-  background-repeat: no-repeat;
-  background-size: contain;
   opacity: 0.3;
 }
 
@@ -36,10 +65,6 @@
   right: 0;
   pointer-events: none;
   margin-right: 0;
-  background: linear-gradient(to right, rgba(17, 40, 83, 0.09), rgba(0, 32, 92, 0.52), rgba(17, 40, 83, 0.09));
-  background-repeat: no-repeat;
-  background-size: contain;
-  opacity: 0.15;
 }
 
 .paragraph--type--checkerboard.fuchsia {
@@ -56,33 +81,6 @@
   height: 100%;
   text-transform: uppercase;
   font-weight: 800;
-}
-
-.paragraph--type--checkerboard.image-background {
-  font-family: "Paytone One", sans-serif;
-  font-size: var(--font-size-heading);
-  color: var(--color-primary-0);
-  height: 100%;
-  text-transform: uppercase;
-  font-weight: 800;
-}
-
-.field--name-field-pbcheckerboard-title {
-  flex: 0 0 30%;
-  -ms-hyphens: auto;
-  -moz-hyphens: auto;
-  -webkit-hyphens: auto;
-  hyphens: auto;
-}
-
-.field--name-field-pbcheckerboard-text {
-  padding-right: 1rem;
-}
-
-.field--name-field-pbcheckerboard-text ul {
-  list-style: disc outside;
-  margin-left: 1rem;
-  margin-top: 0;
 }
 
 /*# sourceMappingURL=ip_pb_checkerboard.css.map */

@@ -5,9 +5,9 @@ dependencies:
   config:
     - field.field.paragraph.checkerboard.field_pbcheckerboard_icon
     - field.field.paragraph.checkerboard.field_pbcheckerboard_link
+    - field.field.paragraph.checkerboard.field_pbcheckerboard_style
     - field.field.paragraph.checkerboard.field_pbcheckerboard_text
     - field.field.paragraph.checkerboard.field_pbcheckerboard_title
-    - field.field.paragraph.checkerboard.field_pbcherkboard_style
     - paragraphs.paragraphs_type.checkerboard
   module:
     - link
@@ -20,6 +20,14 @@ targetEntityType: paragraph
 bundle: checkerboard
 mode: default
 content:
+  admin_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   field_pbcheckerboard_icon:
     type: media_library_widget
     weight: 1
@@ -29,11 +37,17 @@ content:
     third_party_settings: {  }
   field_pbcheckerboard_link:
     type: link_default
-    weight: 5
+    weight: 4
     region: content
     settings:
       placeholder_url: ''
       placeholder_title: ''
+    third_party_settings: {  }
+  field_pbcheckerboard_style:
+    type: options_buttons
+    weight: 5
+    region: content
+    settings: {  }
     third_party_settings: {  }
   field_pbcheckerboard_text:
     type: text_textarea
@@ -50,12 +64,6 @@ content:
     settings:
       size: 60
       placeholder: ''
-    third_party_settings: {  }
-  field_pbcherkboard_style:
-    type: options_select
-    weight: 4
-    region: content
-    settings: {  }
     third_party_settings: {  }
 hidden:
   created: true
