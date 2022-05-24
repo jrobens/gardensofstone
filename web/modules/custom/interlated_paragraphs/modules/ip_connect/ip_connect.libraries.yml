@@ -1,4 +1,4 @@
 ip_connect:
   css:
     component:
-      styles/ip_connect.css: { preprocess: false, minified: true }
+      styles/ip_connect.css: { preprocess: false, minified: false }
