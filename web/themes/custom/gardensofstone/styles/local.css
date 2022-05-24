@@ -491,8 +491,7 @@ main {
 }
 
 /* TODO out of date code */
-body.path--.node-type--page-and-layout > div > header.hero.is-primary,
-body.path--destination-pagoda.node-type--page-and-layout > div > header.hero.is-primary {
+body.path--.node-type--page-and-layout > div > header.hero.is-primary {
   background-color: transparent;
   height: 22vw;
   padding: 3rem 1.5rem;
