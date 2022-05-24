@@ -48,6 +48,8 @@
 .paragraph--type--checkerboard .field_caption {
   padding: 0 1rem;
   font-size: 0.9rem;
+  line-height: 0.95;
+  margin-bottom: 1rem;
 }
 .paragraph--type--checkerboard .field_caption a, .paragraph--type--checkerboard .field_caption a:visited {
   color: #333;
