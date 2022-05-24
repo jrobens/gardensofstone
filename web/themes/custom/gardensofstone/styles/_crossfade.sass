@@ -1,0 +1,95 @@
+
+.paragraph--type--crossfade-banner, #CrossFade
+  z-index: -10
+  background: #000
+  display: flex
+  align-items: flex-end
+  justify-content: flex-end
+  width: 100vw
+  height: 100vw
+  object-fit: cover
+  overflow: hidden
+  position: fixed
+  top: 3rem
+  left: 0
+
+@media (min-width: 768px)
+  .paragraph--type--crossfade-banner, #CrossFade
+    width: 100vw
+    height: 33vw
+
+
+.paragraph--type--crossfade-banner img, #CrossFade img
+  position: absolute
+  /*  top: 30%
+    left: 0*/
+  min-width: 100%
+  min-height: 100%
+  height: auto
+  background: #000
+  -webkit-backface-visibility: hidden
+  backface-visibility: hidden
+  opacity: 0
+  transform: scale(1.4) rotate(3deg)
+  -webkit-animation: CrossFade 32s infinite
+  animation: CrossFade 32s infinite
+
+
+body.toolbar-tray-open .paragraph--type--crossfade-banner,
+body.toolbar-tray-open #CrossFade
+  top: 5em
+
+
+.paragraph--type--crossfade-banner .field_pbcrossfade_image > div:nth-child(3) img,
+#CrossFade img:nth-child(3)
+  -webkit-animation-delay: 6s
+  animation-delay: 6s
+
+.paragraph--type--crossfade-banner .field_pbcrossfade_image > div:nth-child(2) img,
+#CrossFade img:nth-child(2)
+  -webkit-animation-delay: 12s
+  animation-delay: 12s
+  align-self: center
+
+.paragraph--type--crossfade-banner .field_pbcrossfade_image > div:nth-child(1) img,
+#CrossFade img:nth-child(1)
+  -webkit-animation-delay: 18s
+  animation-delay: 18s
+
+.paragraph--type--crossfade-banner .field_pbcrossfade_intro,
+#CrossFade .intro
+  display: none
+
+@media screen and (min-width: 768px)
+  .paragraph--type--crossfade-banner .field_pbcrossfade_intro,
+  #CrossFade .intro
+    display: block
+    position: absolute
+    bottom: 10rem
+    right: 0
+    max-width: 30rem
+    margin: 2em
+    padding: 0.2em 1.2em
+    cursor: pointer
+    color: #fff
+    width: 50%
+    background-image: linear-gradient(to top, rgba(0, 32, 32, 0.1), #7777775c 86%, #3333335c 75%)
+    border-radius: 0.5rem
+
+
+@media (min-height: 1300px)
+  .paragraph--type--crossfade-banner .field_pbcrossfade_intro, #CrossFade .intro
+    position: relative
+    bottom: 5rem
+    right: 0
+
+
+.paragraph--type--crossfade-banner .field_pbcrossfade_intro h1, #CrossFade .intro h1
+  margin-bottom: 0.5em
+  line-height: 1
+  font-weight: 100
+  color: white
+
+.paragraph--type--crossfade-banner .field_pbcrossfade_intro p, #CrossFade .intro p
+  font-size: 1.5rem
+
