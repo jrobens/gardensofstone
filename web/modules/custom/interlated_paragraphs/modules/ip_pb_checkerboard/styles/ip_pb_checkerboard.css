@@ -33,6 +33,9 @@
   font: 'normal bold 26px/1 "Open Sans", sans-serif';
   text-align: center;
 }
+.paragraph--type--checkerboard .field_pbcheckerboard_title a, .paragraph--type--checkerboard .field_pbcheckerboard_title a:visited {
+  color: white;
+}
 .paragraph--type--checkerboard .field--name-field-pbcheckerboard-text {
   padding-right: 1rem;
 }
