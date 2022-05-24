@@ -216,17 +216,18 @@ body.toolbar-tray-open #CrossFade {
 
 .view-events.view-display-id-block_2 .views-field-body {
   color: #1b1b1b;
-  font-size: var(--font-text-spotlight);
-  font-weight: bold;
+  line-height: 1.5;
+  font-size: 0.9rem;
 }
 
-.view-events.view-display-id-block_2 .view-content .views-field-field-events-image,
+@media (min-width: 720px) {
+  .view-events.view-display-id-block_2 .view-content .views-field-field-events-image,
 .block-views-blockevents-block-2 .view-content .views-field-field-events-image {
-  grid-column-start: 2;
-  grid-row-start: 1;
-  grid-row-end: span 2;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: span 2;
+  }
 }
-
 .view-events.view-display-id-block_2 .view-content .views-field-field-events-image .container {
   padding: 0;
 }

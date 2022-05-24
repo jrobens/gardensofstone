@@ -28,6 +28,7 @@
         "drupal/ckeditor_media_embed": "^1.11",
         "drupal/classy_paragraphs": "^1.0@beta",
         "drupal/coffee_mediteran": "^2.0",
+        "drupal/collapsiblock": "^3.0",
         "drupal/console": "^1.9",
         "drupal/context": "^4.1",
         "drupal/copyright_block": "^1.0@RC",
