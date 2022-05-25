@@ -1,11 +1,17 @@
 @use '../../../../sites/default/variables' as *
 .webform-submission-add-form
+  .progress-marker::before
+    width: 2rem
+    height: 2rem
+    padding-top: 0.3rem
+
+
   legend
     font-weight: bold
     font-size: 2rem
     color: $primary
 
-  .form-requred + .control::after
+  .form-required + .control::after
     content: '*'
     font-size: 1.2rem
     font-weight: bold
