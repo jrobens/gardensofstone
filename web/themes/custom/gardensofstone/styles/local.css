@@ -398,18 +398,19 @@ section.hero.is-primary.block-views-blockevents-block-2 .views-field-title a:vis
   font-size: 2rem;
   color: #a6638f;
 }
-.webform-submission-add-form .control {
-  position: relative;
-}
 .webform-submission-add-form .control .required {
   position: relative;
 }
 .webform-submission-add-form .control .required::after {
   content: "*";
+  font-size: 1.5rem;
   color: #e32700;
   position: absolute;
-  left: -0.5rem;
+  left: 0;
   top: 0;
+  height: 2rem;
+  width: 2rem;
+  transform: translate(0, -1rem);
 }
 
 .region-footer .menu-list {
