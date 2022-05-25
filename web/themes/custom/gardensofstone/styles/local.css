@@ -398,19 +398,17 @@ section.hero.is-primary.block-views-blockevents-block-2 .views-field-title a:vis
   font-size: 2rem;
   color: #a6638f;
 }
-.webform-submission-add-form .control .required {
-  position: relative;
-}
-.webform-submission-add-form .control .required::after {
+.webform-submission-add-form .form-requred + .control::after {
   content: "*";
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
   color: #e32700;
   position: absolute;
   left: 0;
   top: 0;
   height: 2rem;
   width: 2rem;
-  transform: translate(0, -1rem);
+  transform: translate(-1rem, 0.5rem);
 }
 .webform-submission-add-form .button.is-link {
   background-color: #a2671c;
