@@ -1,5 +1,15 @@
-//     '//fonts.googleapis.com/css?family=Titillium+Web': { type: external, minified: true }
-.webform-submission-add-form .required::after
-  content: '*'
-  color: #e32700
-  margin-left: 4px
+@use '../../../../sites/default/variables' as *
+.webform-submission-add-form
+  legend
+    color: $primary
+
+  .control
+    position: relative
+
+    .required::after
+      content: '*'
+      color: #e32700
+      position: absolute
+      left: -0.5rem
+      top: 0
+

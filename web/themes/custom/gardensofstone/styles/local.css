@@ -393,10 +393,18 @@ section.hero.is-primary.block-views-blockevents-block-2 .views-field-title a:vis
   display: none;
 }
 
-.webform-submission-add-form .required::after {
+.webform-submission-add-form legend {
+  color: #a6638f;
+}
+.webform-submission-add-form .control {
+  position: relative;
+}
+.webform-submission-add-form .control .required::after {
   content: "*";
   color: #e32700;
-  margin-left: 4px;
+  position: absolute;
+  left: -0.5rem;
+  top: 0;
 }
 
 .region-footer .menu-list {
