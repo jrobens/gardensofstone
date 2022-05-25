@@ -1,10 +1,16 @@
 @use '../../../../sites/default/variables' as *
 .webform-submission-add-form
   legend
+    font-weight: bold
+    font-size: 2rem
     color: $primary
 
   .control
     position: relative
+
+    .required
+      position: relative
+
 
     .required::after
       content: '*'

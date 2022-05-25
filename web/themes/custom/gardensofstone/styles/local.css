@@ -394,9 +394,14 @@ section.hero.is-primary.block-views-blockevents-block-2 .views-field-title a:vis
 }
 
 .webform-submission-add-form legend {
+  font-weight: bold;
+  font-size: 2rem;
   color: #a6638f;
 }
 .webform-submission-add-form .control {
+  position: relative;
+}
+.webform-submission-add-form .control .required {
   position: relative;
 }
 .webform-submission-add-form .control .required::after {
