@@ -412,6 +412,10 @@ section.hero.is-primary.block-views-blockevents-block-2 .views-field-title a:vis
   width: 2rem;
   transform: translate(0, -1rem);
 }
+.webform-submission-add-form .button.is-link {
+  background-color: #a2671c;
+  color: white;
+}
 
 .region-footer .menu-list {
   display: flex;
