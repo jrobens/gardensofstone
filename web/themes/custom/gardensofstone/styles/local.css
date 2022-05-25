@@ -393,6 +393,12 @@ section.hero.is-primary.block-views-blockevents-block-2 .views-field-title a:vis
   display: none;
 }
 
+.webform-submission-add-form .required::after {
+  content: "*";
+  color: #e32700;
+  margin-left: 4px;
+}
+
 .region-footer .menu-list {
   display: flex;
   flex-wrap: wrap;
