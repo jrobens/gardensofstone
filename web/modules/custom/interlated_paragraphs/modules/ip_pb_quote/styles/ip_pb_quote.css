@@ -5,12 +5,15 @@
 .paragraph--type--quote {
   display: flex;
   align-items: center;
+  text-align: center;
   height: 100%;
   font-family: "Mukta Malar", sans-serif;
   font-size: 2rem;
   font-weight: bold;
   padding: 0 2.5rem;
   color: #a6638f;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .paragraph--type--quote a, .paragraph--type--quote a:visited {
   color: #a6638f;
