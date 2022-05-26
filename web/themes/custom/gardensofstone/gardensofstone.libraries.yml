@@ -4,9 +4,9 @@ global:
       styles/local.css: {attributes: { type: "text/css" }}
       styles/editing.css: {attributes: { type: "text/css" }}
       styles/contextual.module.css: {attributes: {type: "text/css"}}
-      'https://fonts.googleapis.com/css2?family=Hind+Guntur:wght@300;500;700&display=swap" rel="stylesheet': { type: external, minified: true }
+      '//fonts.googleapis.com/css2?family=Hind+Guntur:wght@300;500;700&display=swap" rel="stylesheet': { type: external, minified: true }
       '//fonts.googleapis.com/css?family=Titillium+Web': { type: external, minified: true }
-      '//fonts.googleapis.com/css?family=Lato': { type: external, minified: true }
+      '//fonts:googleapis:com/css2?family=Mukta+Malar:wght@500&display=swap': { type: external, minified: true}
       '//fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;500;600;700;800&display=swap': {type: external, minified: true}
   js:
     js/local.js: {}
