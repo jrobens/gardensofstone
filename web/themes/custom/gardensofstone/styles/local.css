@@ -620,6 +620,13 @@ main > section > .container {
   padding: 1rem;
 }
 
+.social-sharing-buttons {
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+  z-index: 10;
+}
+
 /* TODO out of date code */
 body.path--.node-type--page-and-layout > div > header.hero.is-primary {
   background-color: transparent;
