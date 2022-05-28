@@ -42,7 +42,8 @@ Put into skel
 > drush ckeditor_media_embed:install
 x > drush webform:libraries:composer > webform-libraries.composer.json
 > composer require wikimedia/composer-merge-plugin
-> Edit 'extra' in composer.json
+> Edit 'extra' in composer.json to reference the webform resources
+> Composer install will derive the dependencies
 
 ### No more classy paragraphs
 
