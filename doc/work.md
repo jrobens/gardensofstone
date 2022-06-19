@@ -1,3 +1,4 @@
+*:JR:2022-06-19:CBI:0.2: sys+ update module. civicrm/civicrm-asset-pluginv1.1.1
 *:JR:2022-05-16:CBI:0.2: sys+ update module. 
 *:JR:2022-05-09:BCS:0.2: sys+ update module. drupal/animate_css1.0.0
 *:JR:2022-04-29:CBI:0.2: sys+ update drupal. drupal/animate_css1.0.0

@@ -1,7 +1,32 @@
 
 
 
+
 # Gardens of stone 2
+
+
+## 19-June-2022
+
+updates are:
+    civicrm/civicrm-asset-plugin  v1.1.1 ! v1.1.2 Publish assets from private CiviCRM folders to a public folder
+    civicrm/civicrm-core          5.49.2 ! 5.50.3 Open source constituent relationship management for non-profits, NGOs and advocacy organizations.
+    civicrm/civicrm-drupal-8      5.49.2 ! 5.50.3 Open source constituent relationship management for non-profits, NGOs and advocacy organizations.
+    civicrm/civicrm-packages      5.49.2 ! 5.50.3 Legacy third party dependencies for CiviCRM
+    drupal/block_title_link       1.1.4  ! 1.1.5  Adding link to title of blocks.
+    drupal/core-composer-scaffold 9.3.13 ! 9.4.0  A flexible Composer project scaffold builder.
+    drupal/core-dev               9.3.13 ! 9.4.0  require-dev dependencies from drupal/drupal; use in addition to drupal/core-recommended to run tests from drupal/core.
+    drupal/core-project-message   9.3.13 ! 9.4.0  Adds a message after Composer installation.
+    drupal/core-recommended       9.3.13 ! 9.4.0  Locked core dependencies; require this project INSTEAD OF drupal/core.
+    drupal/core_event_dispatcher  3.1.0  ! 3.2.0  Registers event dispatchers for several core hooks
+    drupal/leaflet                2.2.1  ! 2.2.2  Integration with the Leaflet map scripting library.
+    drupal/menu_item_extras       2.16.0 ! 2.17.0 Provide an additional custom fields which can be used on Menu link
+    drupal/paragraph_blocks       3.0.0  ! 3.0.1  Drupal Paragraph Blocks module
+
+
+
+## 2022-06-03
+
+/opt/eff.org/certbot/venv/bin/certbot certonly --webroot -w /srv/web/gardensofstone.org.au/web -d gardensofstone.org.au -d www.gardensofstone.org.au -d destinationpagoda.com -d www.destinationpagoda.com -d destinationpagoda.com.au -d www.destinationpagoda.com.au --no-bootstrap
 
 
 ##

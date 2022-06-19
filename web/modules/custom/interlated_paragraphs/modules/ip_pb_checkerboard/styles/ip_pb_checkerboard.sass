@@ -8,7 +8,7 @@
   background-repeat: no-repeat
   background-size: contain
  */
-@use '../../../../../../sites/default/variables' as *
+@use '../../../../../../sites/variables' as *
 
 $button-font: 'normal bold 26px/1 "Open Sans", sans-serif'
 
@@ -98,4 +98,30 @@ $button-font: 'normal bold 26px/1 "Open Sans", sans-serif'
   height: 100%
   text-transform: uppercase
   font-weight: 800
+
+
+.paragraph--type--checkerboard.image-background
+  font-family: "Paytone One", sans-serif
+  font-size: var(--font-size-heading)
+  color: var(--color-primary-0)
+  height: 100%
+  text-transform: uppercase
+  font-weight: 800
+
+
+.field--name-field-pbcheckerboard-title
+  flex: 0 0 30%
+  -ms-hyphens: auto
+  -moz-hyphens: auto
+  -webkit-hyphens: auto
+  hyphens: auto
+
+.field--name-field-pbcheckerboard-text
+  padding-right: 1rem
+
+
+.field--name-field-pbcheckerboard-text ul
+  list-style: disc outside
+  margin-left: 1rem
+  margin-top: 0
 
