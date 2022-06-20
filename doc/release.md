@@ -4,6 +4,12 @@
 
 # Gardens of stone 2
 
+## 20-June-2022
+
+- Upgrading drupal/webform_civicrm (6.2.0 => 6.2.1)
+- Upgrading phpunit/phpunit (9.5.20 => 9.5.21)
+
+
 
 ## 19-June-2022
 
