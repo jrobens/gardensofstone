@@ -4,6 +4,19 @@
 
 # Gardens of stone 2
 
+## 27-June-2022
+
+     drupal/core-composer-scaffold 9.4.0 ! 9.4.1 A flexible Composer project scaffold builder.
+    drupal/core-dev               9.4.0 ! 9.4.1 require-dev dependencies from drupal/drupal; use in addition to drupal/core-recommended to run tests from drupal/core.
+    drupal/core-project-message   9.4.0 ! 9.4.1 Adds a message after Composer installation.
+    drupal/core-recommended       9.4.0 ! 9.4.1 Core and its dependencies with known-compatible minor versions. Require this project INSTEAD OF drupal/core.
+    drupal/leaflet                2.2.2 ! 2.2.3 Integration with the Leaflet map scripting library.
+
+
+* fix sender address in the mailiing
+* remove spam contact submissions
+* Add a subscribe form
+
 ## 20-June-2022
 
 - Upgrading drupal/webform_civicrm (6.2.0 => 6.2.1)
