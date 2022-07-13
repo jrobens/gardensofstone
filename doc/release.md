@@ -4,6 +4,26 @@
 
 # Gardens of stone 2
 
+## 2022-07-13
+
+    civicrm/civicrm-core          5.50.3 ! 5.51.1 Open source constituent relationship management for non-profits, NGOs and advocacy organizations.
+    civicrm/civicrm-drupal-8      5.50.3 ! 5.51.1 Open source constituent relationship management for non-profits, NGOs and advocacy organizations.
+    civicrm/civicrm-packages      5.50.3 ! 5.51.1 Legacy third party dependencies for CiviCRM
+    drupal/core-composer-scaffold 9.4.1  ! 9.4.2  A flexible Composer project scaffold builder.
+    drupal/core-dev               9.4.1  ! 9.4.2  require-dev dependencies from drupal/drupal; use in addition to drupal/core-recommended to run tests from drupal/core.
+    drupal/core-project-message   9.4.1  ! 9.4.2  Adds a message after Composer installation.
+    drupal/core-recommended       9.4.1  ! 9.4.2  Core and its dependencies with known-compatible minor versions. Require this project INSTEAD OF drupal/core.
+    drupal/metatag                1.19.0 ! 1.20.0 Manage meta tags for all entities.
+
+Non-direct drupal updates are:
+
+    drupal/block_class                       1.3.0    ~ 2.0.0   Allows assigning classes to Blocks.
+    drupal/copyright_footer                  1.9.0    ~ 2.0.1   Provides a block for Copyright indication.
+    drupal/ctools                            3.7.0    ~ 4.0.0   Provides a number of utility and helper APIs for Drupal developers and site builders.
+    drupal/google_analytics                  3.1.0    ~ 4.0.0   Allows your site to be tracked by Google Analytics by adding a Javascript tracking code to every page.
+    updating drupal/block_class
+
+
 ## 27-June-2022
 
      drupal/core-composer-scaffold 9.4.0 ! 9.4.1 A flexible Composer project scaffold builder.

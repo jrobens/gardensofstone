@@ -1,3 +1,4 @@
+*:JR:2022-07-13:CBI:0.2: sys+ update module. civicrm/civicrm-core5.50.3
 *:JR:2022-06-27:CBI:0.2: sys+ update module. drupal/core-composer-scaffold9.4.0
 *:JR:2022-06-20:CBI:0.2: sys+ update module. drupal/webform_civicrm6.2.0
 *:JR:2022-06-19:CBI:0.2: sys+ update module. civicrm/civicrm-asset-pluginv1.1.1
