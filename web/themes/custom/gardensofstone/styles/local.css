@@ -9,6 +9,7 @@
 }
 .navbar.is-black a, .navbar.is-black a:visited {
   color: white;
+  line-height: 4;
 }
 .navbar.is-black a.navbar-item:hover {
   background-color: #ac6101;
