@@ -437,6 +437,9 @@ footer.footer .region-footer {
   display: grid;
   grid-template-columns: 2fr 1fr;
 }
+footer.footer h2 {
+  color: white;
+}
 footer.footer a, footer.footer a:visited {
   color: white;
 }
