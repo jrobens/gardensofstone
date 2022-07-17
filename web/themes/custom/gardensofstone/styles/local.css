@@ -1,6 +1,6 @@
 @charset "UTF-8";
 :root {
-  --color-highlight-1: #a6638f;
+  --color-highlight-1: #a2046b;
 }
 
 .navbar.is-black {
@@ -402,7 +402,7 @@ section.hero.is-primary.block-views-blockevents-block-2 .views-field-title a:vis
 .webform-submission-add-form legend {
   font-weight: bold;
   font-size: 2rem;
-  color: #a6638f;
+  color: #a2046b;
 }
 .webform-submission-add-form .form-required + .control::after {
   content: "*";

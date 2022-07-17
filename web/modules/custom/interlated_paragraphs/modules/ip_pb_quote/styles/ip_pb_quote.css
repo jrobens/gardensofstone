@@ -1,5 +1,5 @@
 :root {
-  --color-highlight-1: #a6638f;
+  --color-highlight-1: #a2046b;
 }
 
 .paragraph--type--quote {
@@ -11,12 +11,12 @@
   font-size: 2rem;
   font-weight: bold;
   padding: 0 2.5rem;
-  color: #a6638f;
+  color: #a2046b;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 .paragraph--type--quote a, .paragraph--type--quote a:visited {
-  color: #a6638f;
+  color: #a2046b;
   font-family: "Mukta Malar", sans-serif;
 }
 
