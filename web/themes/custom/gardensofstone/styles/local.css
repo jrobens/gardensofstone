@@ -506,6 +506,9 @@ footer.footer #block-gardensofstone-account-menu ul.menu-list {
 footer.footer #block-gardensofstone-account-menu a {
   font-size: 0.8rem;
 }
+footer.footer .tabs ul {
+  border-bottom: none;
+}
 
 @media (min-width: 768px) {
   :root {
