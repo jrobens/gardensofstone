@@ -7,6 +7,9 @@
   background-color: #a2671c;
   color: #fff;
 }
+.navbar.is-black a, .navbar.is-black a:visited {
+  color: white;
+}
 
 .navbar-item img {
   max-height: 2.75rem;
