@@ -10,6 +10,12 @@
 .navbar.is-black a, .navbar.is-black a:visited {
   color: white;
 }
+.navbar.is-black a.navbar-item:hover {
+  background-color: #ac6101;
+}
+.navbar.is-black .navbar-dropdown a, .navbar.is-black .navbar-dropdown a:visited {
+  color: #a2671c;
+}
 
 .navbar-item img {
   max-height: 2.75rem;
