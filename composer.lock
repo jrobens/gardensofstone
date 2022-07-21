@@ -3936,16 +3936,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "9.4.2",
+            "version": "9.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "5a4d6acc99e279f70a914804ff3dd08111707de1"
+                "reference": "7b1a403c093c7abc89ef3df1a6b05bdb19b3ffad"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/5a4d6acc99e279f70a914804ff3dd08111707de1",
-                "reference": "5a4d6acc99e279f70a914804ff3dd08111707de1",
+                "url": "https://api.github.com/repos/drupal/core/zipball/7b1a403c093c7abc89ef3df1a6b05bdb19b3ffad",
+                "reference": "7b1a403c093c7abc89ef3df1a6b05bdb19b3ffad",
                 "shasum": ""
             },
             "require": {
@@ -4188,13 +4188,13 @@
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
             "support": {
-                "source": "https://github.com/drupal/core/tree/9.4.2"
+                "source": "https://github.com/drupal/core/tree/9.4.3"
             },
-            "time": "2022-07-07T01:18:39+00:00"
+            "time": "2022-07-20T15:11:38+00:00"
         },
         {
             "name": "drupal/core-composer-scaffold",
-            "version": "9.4.2",
+            "version": "9.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-composer-scaffold.git",
@@ -4238,13 +4238,13 @@
                 "drupal"
             ],
             "support": {
-                "source": "https://github.com/drupal/core-composer-scaffold/tree/9.4.2"
+                "source": "https://github.com/drupal/core-composer-scaffold/tree/9.4.3"
             },
             "time": "2022-06-19T16:14:23+00:00"
         },
         {
             "name": "drupal/core-project-message",
-            "version": "9.4.2",
+            "version": "9.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-project-message.git",
@@ -4279,22 +4279,22 @@
                 "drupal"
             ],
             "support": {
-                "source": "https://github.com/drupal/core-project-message/tree/9.4.2"
+                "source": "https://github.com/drupal/core-project-message/tree/9.4.3"
             },
             "time": "2022-02-24T17:40:53+00:00"
         },
         {
             "name": "drupal/core-recommended",
-            "version": "9.4.2",
+            "version": "9.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-recommended.git",
-                "reference": "c10da85434356b27e2bf0516a7b6f8103b473038"
+                "reference": "ff8662af0a5963a88ea856e9786e17a51f8e640c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core-recommended/zipball/c10da85434356b27e2bf0516a7b6f8103b473038",
-                "reference": "c10da85434356b27e2bf0516a7b6f8103b473038",
+                "url": "https://api.github.com/repos/drupal/core-recommended/zipball/ff8662af0a5963a88ea856e9786e17a51f8e640c",
+                "reference": "ff8662af0a5963a88ea856e9786e17a51f8e640c",
                 "shasum": ""
             },
             "require": {
@@ -4303,7 +4303,7 @@
                 "doctrine/annotations": "~1.13.2",
                 "doctrine/lexer": "~1.2.3",
                 "doctrine/reflection": "~1.2.3",
-                "drupal/core": "9.4.2",
+                "drupal/core": "9.4.3",
                 "egulias/email-validator": "~3.2",
                 "guzzlehttp/guzzle": "~6.5.8",
                 "guzzlehttp/promises": "~1.5.1",
@@ -4365,9 +4365,9 @@
             ],
             "description": "Core and its dependencies with known-compatible minor versions. Require this project INSTEAD OF drupal/core.",
             "support": {
-                "source": "https://github.com/drupal/core-recommended/tree/9.4.2"
+                "source": "https://github.com/drupal/core-recommended/tree/9.4.3"
             },
-            "time": "2022-07-07T01:18:39+00:00"
+            "time": "2022-07-20T15:11:38+00:00"
         },
         {
             "name": "drupal/core_event_dispatcher",
@@ -5096,27 +5096,27 @@
         },
         {
             "name": "drupal/geofield",
-            "version": "1.40.0",
+            "version": "1.41.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/geofield.git",
-                "reference": "8.x-1.40"
+                "reference": "8.x-1.41"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/geofield-8.x-1.40.zip",
-                "reference": "8.x-1.40",
-                "shasum": "7ab34cd7bda6c4bb9a9ab621d807264242b2a418"
+                "url": "https://ftp.drupal.org/files/projects/geofield-8.x-1.41.zip",
+                "reference": "8.x-1.41",
+                "shasum": "dba35ddfa782cdd59ed07a1b105ee8d104fe59b2"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9 || ^10",
-                "phayes/geophp": "^1.2"
+                "itamair/geophp": "^1.3"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.40",
-                    "datestamp": "1655934637",
+                    "version": "8.x-1.41",
+                    "datestamp": "1657834871",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5125,23 +5125,23 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0-or-later"
+                "GPL-2.0+"
             ],
             "authors": [
                 {
+                    "name": "Italo Mairo",
+                    "homepage": "https://www.drupal.org/u/itamair",
+                    "role": "Drupal 8+ Maintainer"
+                },
+                {
                     "name": "Brandon Morrison",
                     "homepage": "https://www.drupal.org/u/brandonian",
-                    "role": "Maintainer"
+                    "role": "Drupal 7 Maintainer"
                 },
                 {
                     "name": "Pablo López",
                     "homepage": "https://www.drupal.org/u/plopesc",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "Italo Mairo",
-                    "homepage": "https://www.drupal.org/u/itamair",
-                    "role": "Maintainer"
+                    "role": "Drupal 7 Maintainer"
                 },
                 {
                     "name": "phayes",
@@ -5918,17 +5918,17 @@
         },
         {
             "name": "drupal/metatag",
-            "version": "1.20.0",
+            "version": "1.21.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/metatag.git",
-                "reference": "8.x-1.20"
+                "reference": "8.x-1.21"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/metatag-8.x-1.20.zip",
-                "reference": "8.x-1.20",
-                "shasum": "f9b0019bad629a734da588f64839abdcb076f3d8"
+                "url": "https://ftp.drupal.org/files/projects/metatag-8.x-1.21.zip",
+                "reference": "8.x-1.21",
+                "shasum": "677ff7384b557390d4d1a36f335452e8172f741d"
             },
             "require": {
                 "drupal/core": "^9",
@@ -5947,8 +5947,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.20",
-                    "datestamp": "1657649277",
+                    "version": "8.x-1.21",
+                    "datestamp": "1657971667",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -6982,23 +6982,24 @@
         },
         {
             "name": "drupal/xmlsitemap",
-            "version": "1.2.0",
+            "version": "1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/xmlsitemap.git",
-                "reference": "8.x-1.2"
+                "reference": "8.x-1.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/xmlsitemap-8.x-1.2.zip",
-                "reference": "8.x-1.2",
-                "shasum": "528736c96ee5f19abbf798d1f8aefb211bf11b5d"
+                "url": "https://ftp.drupal.org/files/projects/xmlsitemap-8.x-1.3.zip",
+                "reference": "8.x-1.3",
+                "shasum": "a2a20c5aab5682cc369d095cd2e21d67fc46df9b"
             },
             "require": {
-                "drupal/core": "^8.8 || ^9",
+                "drupal/core": "^9",
                 "ext-xmlwriter": "*"
             },
             "require-dev": {
+                "drupal/config_readonly": "^1.0",
                 "drupal/metatag": "^1.0",
                 "drupal/robotstxt": "^1.0"
             },
@@ -7008,8 +7009,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.2",
-                    "datestamp": "1638486168",
+                    "version": "8.x-1.3",
+                    "datestamp": "1658327425",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -7027,20 +7028,16 @@
             ],
             "authors": [
                 {
-                    "name": "Dave Reid",
-                    "homepage": "https://www.drupal.org/user/53892"
-                },
-                {
-                    "name": "RenatoG",
-                    "homepage": "https://www.drupal.org/user/3326031"
-                },
-                {
                     "name": "amateescu",
                     "homepage": "https://www.drupal.org/user/729614"
                 },
                 {
                     "name": "andrei.dincu",
                     "homepage": "https://www.drupal.org/user/2628879"
+                },
+                {
+                    "name": "Dave Reid",
+                    "homepage": "https://www.drupal.org/user/53892"
                 },
                 {
                     "name": "juampynr",
@@ -7055,6 +7052,10 @@
                     "homepage": "https://www.drupal.org/user/2375692"
                 },
                 {
+                    "name": "RenatoG",
+                    "homepage": "https://www.drupal.org/user/3326031"
+                },
+                {
                     "name": "tadityar",
                     "homepage": "https://www.drupal.org/user/3094465"
                 },
@@ -7063,7 +7064,7 @@
                     "homepage": "https://www.drupal.org/user/1835276"
                 }
             ],
-            "description": "Creates XML sitemaps for the site",
+            "description": "Creates XML Sitemaps for the site",
             "homepage": "https://www.drupal.org/project/xmlsitemap",
             "support": {
                 "source": "https://git.drupalcode.org/project/xmlsitemap",
@@ -7913,6 +7914,52 @@
             "time": "2022-06-20T21:43:03+00:00"
         },
         {
+            "name": "itamair/geophp",
+            "version": "1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/itamair/geoPHP.git",
+                "reference": "d7bccf9902a62430ceb2ac0771bb1e9d1deac4e9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/itamair/geoPHP/zipball/d7bccf9902a62430ceb2ac0771bb1e9d1deac4e9",
+                "reference": "d7bccf9902a62430ceb2ac0771bb1e9d1deac4e9",
+                "shasum": ""
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.1.* || 9.5.*"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "geoPHP.inc"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Italo Mairo",
+                    "homepage": "https://www.linkedin.com/in/italomairo/",
+                    "role": "Maintanier of this Library Repo"
+                },
+                {
+                    "name": "Patrick Hayes",
+                    "homepage": "https://www.linkedin.com/in/patrickdhayes/",
+                    "role": "Maintanier of original Repositary/Library (https://github.com/phayes/geoPHP)"
+                }
+            ],
+            "description": "GeoPHP is a open-source native PHP library for doing geometry operations. It is written entirely in PHP and can therefore run on shared hosts. It can read and write a wide variety of formats: WKT (including EWKT), WKB (including EWKB), GeoJSON, KML, GPX, GeoRSS). It works with all Simple-Feature geometries (Point, LineString, Polygon, GeometryCollection etc.) and can be used to get centroids, bounding-boxes, area, and a wide variety of other useful information.",
+            "homepage": "https://github.com/itamair/geoPHP",
+            "support": {
+                "source": "https://github.com/itamair/geoPHP/tree/1.3"
+            },
+            "time": "2022-07-04T23:09:18+00:00"
+        },
+        {
             "name": "jquery/chosen",
             "version": "1.8.7",
             "dist": {
@@ -8296,16 +8343,16 @@
         },
         {
             "name": "laminas/laminas-servicemanager",
-            "version": "3.11.2",
+            "version": "3.15.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-servicemanager.git",
-                "reference": "8a1f4d53ec93b2e18174f6f186922ef44d11a75a"
+                "reference": "216f972b179191b14c33a79337947b63bf7808ff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-servicemanager/zipball/8a1f4d53ec93b2e18174f6f186922ef44d11a75a",
-                "reference": "8a1f4d53ec93b2e18174f6f186922ef44d11a75a",
+                "url": "https://api.github.com/repos/laminas/laminas-servicemanager/zipball/216f972b179191b14c33a79337947b63bf7808ff",
+                "reference": "216f972b179191b14c33a79337947b63bf7808ff",
                 "shasum": ""
             },
             "require": {
@@ -8335,7 +8382,7 @@
                 "phpbench/phpbench": "^1.1",
                 "phpspec/prophecy-phpunit": "^2.0",
                 "phpunit/phpunit": "^9.5.5",
-                "psalm/plugin-phpunit": "^0.16.1",
+                "psalm/plugin-phpunit": "^0.17.0",
                 "vimeo/psalm": "^4.8"
             },
             "suggest": {
@@ -8383,7 +8430,7 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2022-04-07T17:21:25+00:00"
+            "time": "2022-07-20T09:48:45+00:00"
         },
         {
             "name": "laminas/laminas-stdlib",
@@ -10241,46 +10288,6 @@
                 "source": "https://github.com/pear/Validate_Finance_CreditCard"
             },
             "time": "2021-05-19T22:03:15+00:00"
-        },
-        {
-            "name": "phayes/geophp",
-            "version": "1.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/phayes/geoPHP.git",
-                "reference": "015404e85b602e0df1f91441f8db0f9e98f7e567"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/phayes/geoPHP/zipball/015404e85b602e0df1f91441f8db0f9e98f7e567",
-                "reference": "015404e85b602e0df1f91441f8db0f9e98f7e567",
-                "shasum": ""
-            },
-            "require-dev": {
-                "phpunit/phpunit": "4.1.*"
-            },
-            "type": "library",
-            "autoload": {
-                "classmap": [
-                    "geoPHP.inc"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2 or New-BSD"
-            ],
-            "authors": [
-                {
-                    "name": "Patrick Hayes"
-                }
-            ],
-            "description": "GeoPHP is a open-source native PHP library for doing geometry operations. It is written entirely in PHP and can therefore run on shared hosts. It can read and write a wide variety of formats: WKT (including EWKT), WKB (including EWKB), GeoJSON, KML, GPX, GeoRSS). It works with all Simple-Feature geometries (Point, LineString, Polygon, GeometryCollection etc.) and can be used to get centroids, bounding-boxes, area, and a wide variety of other useful information.",
-            "homepage": "https://github.com/phayes/geoPHP",
-            "support": {
-                "issues": "https://github.com/phayes/geoPHP/issues",
-                "source": "https://github.com/phayes/geoPHP/tree/master"
-            },
-            "time": "2014-12-02T06:11:22+00:00"
         },
         {
             "name": "phenx/php-font-lib",
@@ -15509,16 +15516,16 @@
         },
         {
             "name": "composer/ca-bundle",
-            "version": "1.3.2",
+            "version": "1.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/ca-bundle.git",
-                "reference": "fd5dd441932a7e10ca6e5b490e272d34c8430640"
+                "reference": "30897edbfb15e784fe55587b4f73ceefd3c4d98c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/fd5dd441932a7e10ca6e5b490e272d34c8430640",
-                "reference": "fd5dd441932a7e10ca6e5b490e272d34c8430640",
+                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/30897edbfb15e784fe55587b4f73ceefd3c4d98c",
+                "reference": "30897edbfb15e784fe55587b4f73ceefd3c4d98c",
                 "shasum": ""
             },
             "require": {
@@ -15565,7 +15572,7 @@
             "support": {
                 "irc": "irc://irc.freenode.org/composer",
                 "issues": "https://github.com/composer/ca-bundle/issues",
-                "source": "https://github.com/composer/ca-bundle/tree/1.3.2"
+                "source": "https://github.com/composer/ca-bundle/tree/1.3.3"
             },
             "funding": [
                 {
@@ -15581,20 +15588,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-05-24T11:56:16+00:00"
+            "time": "2022-07-20T07:14:26+00:00"
         },
         {
             "name": "composer/composer",
-            "version": "2.2.16",
+            "version": "2.2.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/composer.git",
-                "reference": "8c0ee53ff67399b0eec4eee2c5dc5189ec6938a6"
+                "reference": "a8ab5070fb99396e4710baee286478ad697724c2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/composer/zipball/8c0ee53ff67399b0eec4eee2c5dc5189ec6938a6",
-                "reference": "8c0ee53ff67399b0eec4eee2c5dc5189ec6938a6",
+                "url": "https://api.github.com/repos/composer/composer/zipball/a8ab5070fb99396e4710baee286478ad697724c2",
+                "reference": "a8ab5070fb99396e4710baee286478ad697724c2",
                 "shasum": ""
             },
             "require": {
@@ -15664,7 +15671,7 @@
             "support": {
                 "irc": "ircs://irc.libera.chat:6697/composer",
                 "issues": "https://github.com/composer/composer/issues",
-                "source": "https://github.com/composer/composer/tree/2.2.16"
+                "source": "https://github.com/composer/composer/tree/2.2.17"
             },
             "funding": [
                 {
@@ -15680,7 +15687,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-07-05T14:50:29+00:00"
+            "time": "2022-07-13T13:27:38+00:00"
         },
         {
             "name": "composer/metadata-minifier",
@@ -16160,7 +16167,7 @@
         },
         {
             "name": "drupal/core-dev",
-            "version": "9.4.2",
+            "version": "9.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-dev.git",
@@ -16204,7 +16211,7 @@
             ],
             "description": "require-dev dependencies from drupal/drupal; use in addition to drupal/core-recommended to run tests from drupal/core.",
             "support": {
-                "source": "https://github.com/drupal/core-dev/tree/9.4.2"
+                "source": "https://github.com/drupal/core-dev/tree/9.4.3"
             },
             "time": "2022-04-14T00:37:13+00:00"
         },
@@ -18545,27 +18552,27 @@
         },
         {
             "name": "sirbrillig/phpcs-variable-analysis",
-            "version": "v2.11.3",
+            "version": "v2.11.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sirbrillig/phpcs-variable-analysis.git",
-                "reference": "c921498b474212fe4552928bbeb68d70250ce5e8"
+                "reference": "e9c99cda31b21ccb4da4c2124b57c8355ddce48e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sirbrillig/phpcs-variable-analysis/zipball/c921498b474212fe4552928bbeb68d70250ce5e8",
-                "reference": "c921498b474212fe4552928bbeb68d70250ce5e8",
+                "url": "https://api.github.com/repos/sirbrillig/phpcs-variable-analysis/zipball/e9c99cda31b21ccb4da4c2124b57c8355ddce48e",
+                "reference": "e9c99cda31b21ccb4da4c2124b57c8355ddce48e",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.4.0",
-                "squizlabs/php_codesniffer": "^3.5"
+                "squizlabs/php_codesniffer": "^3.5.6"
             },
             "require-dev": {
                 "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
-                "limedeck/phpunit-detailed-printer": "^3.1 || ^4.0 || ^5.0",
-                "phpstan/phpstan": "^0.11.8",
-                "phpunit/phpunit": "^5.0 || ^6.5 || ^7.0 || ^8.0",
+                "phpcsstandards/phpcsdevcs": "^1.1",
+                "phpstan/phpstan": "^1.7",
+                "phpunit/phpunit": "^4.8.36 || ^5.7.21 || ^6.5 || ^7.0 || ^8.0 || ^9.0",
                 "sirbrillig/phpcs-import-detection": "^1.1"
             },
             "type": "phpcodesniffer-standard",
@@ -18594,7 +18601,7 @@
                 "source": "https://github.com/sirbrillig/phpcs-variable-analysis",
                 "wiki": "https://github.com/sirbrillig/phpcs-variable-analysis/wiki"
             },
-            "time": "2022-02-21T17:01:13+00:00"
+            "time": "2022-06-13T13:49:41+00:00"
         },
         {
             "name": "slevomat/coding-standard",

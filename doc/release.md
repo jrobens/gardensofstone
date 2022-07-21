@@ -4,6 +4,16 @@
 
 # Gardens of stone 2
 
+## 2022-07-22 updates
+
+      drupal/core-composer-scaffold 9.4.2  ! 9.4.3  A flexible Composer project scaffold builder.
+    drupal/core-dev               9.4.2  ! 9.4.3  require-dev dependencies from drupal/drupal; use in addition to drupal/core-recommended to run tests from drupal/core.
+    drupal/core-project-message   9.4.2  ! 9.4.3  Adds a message after Composer installation.
+    drupal/core-recommended       9.4.2  ! 9.4.3  Core and its dependencies with known-compatible minor versions. Require this project INSTEAD OF drupal/core.
+    drupal/metatag                1.20.0 ! 1.21.0 Manage meta tags for all entities.
+    drupal/xmlsitemap             1.2.0  ! 1.3.0  Creates XML sitemaps for the site
+
+
 ## 2022-07-13
 
     civicrm/civicrm-core          5.50.3 ! 5.51.1 Open source constituent relationship management for non-profits, NGOs and advocacy organizations.
