@@ -140,6 +140,7 @@
   padding-top: 56.25%;
 }
 
+.field_pbimagesquare_image iframe.media-oembed-content,
 .field--name-field-pbimagesquare-image iframe.media-oembed-content {
   position: absolute;
   top: 0;

@@ -4,6 +4,61 @@
 
 # Gardens of stone 2
 
+## 2022-07-23
+
+Lock timeout
+`
+Jul 23 17:02:36  [error] $Fatal Error Details = Array
+(
+[callback] => Array
+(
+[0] => CRM_Core_Error
+[1] => exceptionHandler
+)
+
+    [code] => -30
+    [message] => DB Error: database lock timeout
+    [mode] => 16
+    [debug_info] => DELETE FROM civicrm_cache WHERE expired_date < '2022-07-23 17:00:03' [nativecode=1205 ** Lock wait timeout exceeded; try restarting transaction]
+    [type] => DB_Error
+    [user_info] => DELETE FROM civicrm_cache WHERE expired_date < '2022-07-23 17:00:03' [nativecode=1205 ** Lock wait timeout exceeded; try restarting transaction]
+    [to_string] => [db_error: message="DB Error: database lock timeout" code=-30 mode=callback callback=CRM_Core_Error::exceptionHandler prefix="" info="DELETE FROM civicrm_cache WHERE expired_date < '2022-07-23 17:00:03' [nativecode=1205 ** Lock wait timeout exceeded; try restarting transaction]"]
+)`
+
+Processes
+
+`
+|    0.000 |
+| 11255771 | gos_crm | localhost | gos_crm | Query   | 4780 | Sending data                    | SELECT      civicrm_mailing_event_delivered.id as id,
+civicrm_contact.display_name as display_name,
+civicrm_contact.id as contact_id,
+civicrm_email.email as email,
+civicrm_mailing_event_delivered.time_stamp as date
+FROM        civicrm_contact
+INNER JOIN  civicrm_mailing_event_queue
+ON  civicrm_mailing_event_queue.contact_id = civicrm_contact.id
+INNER JOIN  civicrm_email
+ON  civicrm_mailing_event_queue.email_id = civicrm_email.id
+INNER JOIN  civicrm_mailing_event_delivered
+ON  civicrm_mailing_event_delivered.event_queue_id = civicrm_mailing_event_queue.id
+LEFT JOIN   civicrm_mailing_event_bounce
+ON  civicrm_mailing_event_bounce.event_queue_id = civicrm_mailing_event_queue.id
+INNER JOIN  civicrm_mailing_job
+ON  civicrm_mailing_event_queue.job_id = civicrm_mailing_job.id
+AND civicrm_mailing_job.is_test = 1
+INNER JOIN  civicrm_mailing
+ON  civicrm_mailing_job.mailing_id = civicrm_mailing.id
+WHERE       civicrm_mailing_event_bounce.id IS null
+AND     civicrm_mailing.id = 9 AND civicrm_mailing_job.id = 75 ORDER BY sort_name ASC, civicrm_mailing_event_delivered.time_stamp DESC |    0.000 |
+| 11260500 | gos_crm | localhost | gos_crm | Query   |   88 | Waiting for table metadata lock | SELECT path, data, UNIX_TIMESTAMP(expired_date) as expires FROM civicrm_cache WHERE group_name = "metadata_5_51_1" AND path = "implied_permissions"                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |    0.000 |
+| 11260507 | gos_cms | localhost | gos_cms | Sleep   |  242 |                                 | NULL                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |    0.000 |
+| 11260574 | gos_cms | localhost | gos_cms | Sleep   |  107 |                                 | NULL                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |    0.000 |
+| 11260575 | gos_crm | localhost | gos_crm | Query   |  107 | Waiting for table metadata lock | TRUNCATE TABLE civicrm_cache                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |    0.000 |
+| 11260623 | gos_cms | localhost | gos_cms | Sleep   |   14 |                                 | NULL                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |    0.000 |
+| 11260624 | gos_crm | localhost | gos_crm | Query   |   14 | Waiting for table metadata lock | SELECT path, data, UNIX_TIMESTAMP(expired_date) AS expires FROM civicrm_cache WHERE group_name = "affbe72ca4dedcb8cfff949a09bf611c"                                                                                                                                                                                                                    `
+
+
+
 ## 2022-07-22 updates
 
       drupal/core-composer-scaffold 9.4.2  ! 9.4.3  A flexible Composer project scaffold builder.
