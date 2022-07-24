@@ -6,15 +6,15 @@
  */
 
  // Colors.
-$primary:       #007bff
-$secondary:     #6c757d
-$success:       #28a745
-$info:          #17a2b8
-$warning:       #ffc107
-$danger:        #dc3545
-$light:         #f8f9fa
-$dark:          #343a40
-$white:         #ffffff
+$primary: #007bff
+$secondary: #6c757d
+$success: #28a745
+$info: #17a2b8
+$warning: #ffc107
+$danger: #dc3545
+$light: #f8f9fa
+$dark: #343a40
+$white: #ffffff
 
 //  --font-size-caption: min(max(1rem, 1.84vw), 1.5rem)
 
@@ -25,22 +25,20 @@ $white:         #ffffff
   position: relative
   max-width: 100%
 
+  .field:not(:last-child)
+    margin-bottom: 0
 
-.paragraph--type--image-square  .field:not(:last-child)
-  margin-bottom: 0
+  img
+    object-fit: cover
+    width: 100%
 
-.paragraph--type--image-square img
-  object-fit: cover
-  width: 100%
+  .field--name-field-pbimagesquare-image
+    position: relative
 
-.node-type--page-and-layout article .paragraph--type--image-square .field--name-field-pbimagesquare-image
-  position: relative
-
-.node-type--page-and-layout article .paragraph--type--image-square .field--name-field-media-image .field__item,
-.node-type--page-and-layout article .paragraph--type--image .field--name-field-media-image .field__item
-  display: flex
-  height: 37.8vw
-
+  .field--name-field-media-image .field__item,
+  .field--name-field-media-image .field__item
+    display: flex
+    height: 37.8vw
 
 .paragraph--type--image-square .field--name-field-pbimagesquare-caption,
 .paragraph--type--image .field--name-field-pbimage-caption
@@ -104,7 +102,6 @@ $white:         #ffffff
   display: flex
   height: 37.8vw
 
-
 .paragraph--type--image-square .field--name-field-pbimagesquare-caption,
 .paragraph--type--image .field--name-field-pbimage-caption
   padding: 1rem
@@ -132,6 +129,7 @@ $white:         #ffffff
   color: var(--berry)
 
 /* Video in the media slot */
+.field_pbimagesquare_image,
 .field--name-field-media-oembed-video
   position: relative
   width: 100%
