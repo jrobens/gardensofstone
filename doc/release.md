@@ -1,8 +1,20 @@
 
-
-
-
 # Gardens of stone 2
+
+## 2022-08-02
+
+    drupal/core-composer-scaffold 9.4.3 ! 9.4.4 A flexible Composer project scaffold builder.
+    drupal/core-dev               9.4.3 ! 9.4.4 require-dev dependencies from drupal/drupal; use in addition to drupal/core-recommended to run tests from drupal/core.
+    drupal/core-project-message   9.4.3 ! 9.4.4 Adds a message after Composer installation.
+    drupal/core-recommended       9.4.3 ! 9.4.4 Core and its dependencies with known-compatible minor versions. Require this project INSTEAD OF drupal/core.
+    drupal/leaflet                2.2.3 ! 2.2.5 Integration with the Leaflet map scripting library.
+
+    drupal/better_social_sharing_buttons     3.2.0    ~ 4.0.0   Better Social Sharing Buttons
+    drupal/block_class                       1.3.0    ~ 2.0.0   Allows assigning classes to Blocks.
+    drupal/copyright_footer                  1.9.0    ~ 2.0.1   Provides a block for Copyright indication.
+    drupal/ctools                            3.8.0    ~ 4.0.1   Provides a number of utility and helper APIs for Drupal developers and site builders.
+    drupal/google_analytics                  3.1.0    ~ 4.0.0   Allows your site to be tracked by Google Analytics by adding a Javascript tracking code to every page.
+
 
 ## 2022-07-23
 
