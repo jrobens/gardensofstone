@@ -1,6 +1,25 @@
 
 # Gardens of stone 2
 
+## 2022-08-06
+
+- Upgrading drupal/core (9.4.4 => 9.4.5)
+- Upgrading drupal/core-composer-scaffold (9.4.4 => 9.4.5)
+- Upgrading drupal/core-dev (9.4.4 => 9.4.5)
+- Upgrading drupal/core-project-message (9.4.4 => 9.4.5)
+- Upgrading drupal/core-recommended (9.4.4 => 9.4.5)
+- Upgrading civicrm/civicrm-drupal-8 (5.51.1 => 5.52.0)
+- Upgrading drupal/pathauto (1.10.0 => 1.11.0)
+- Upgrading drupal/token (1.10.0 => 1
+- drupal/better_social_sharing_buttons     3.2.0    ~ 4.0.0   Better Social Sharing Buttons
+
+- drupal/block_class                       1.3.0    ~ 2.0.0   Allows assigning classes to Blocks.
+- drupal/copyright_footer                  1.9.0    ~ 2.0.1   Provides a block for Copyright indication.
+- drupal/ctools                            3.10.0   ~ 4.0.1   Provides a number of utility and helper APIs for Drupal developers and site builders.
+- drupal/google_analytics                  3.1.0    ~ 4.0.0   Allows your site to be tracked by Google Analytics by adding a Javascript tracking code to every page.
+- updating drupal/better_social_sharing_buttons
+
+
 ## 2022-08-02
 
     drupal/core-composer-scaffold 9.4.3 ! 9.4.4 A flexible Composer project scaffold builder.
