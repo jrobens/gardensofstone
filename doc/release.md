@@ -1,6 +1,29 @@
 
 # Gardens of stone 2
 
+## 2022-09-16
+
+Gallery not appearing. Also can't edit.
+
+˘ Drupal\Component\Plugin\Exception\ContextException: The context is not a valid context. in Drupal\Core\Executable\ExecutablePluginBase->getContextDefinition() (line 184 of /srv/web/gardensofstone.org.au/web/core/lib/Drupal/Core/Plugin/ContextAwarePluginTrait.php).
+
+    updates are:
+
+    civicrm/civicrm-core          5.52.0      ! 5.53.0    Open source constituent relationship management for non-profits, NGOs and advocacy organizations.
+    civicrm/civicrm-drupal-8      5.52.0      ! 5.53.0    Open source constituent relationship management for non-profits, NGOs and advocacy organizations.
+    civicrm/civicrm-packages      5.52.0      ! 5.53.0    Legacy third party dependencies for CiviCRM
+    drupal/animated_scroll_to_top 2.0.0       ! 2.1.0     Provides Animated scroll to top.
+    drupal/core_event_dispatcher  3.2.0       ! 3.3.1     Registers event dispatchers for several core hooks
+    drupal/ds                     3.13.0      ! 3.15.0    Extend the display options for every entity type.
+    drupal/layout_paragraphs      2.0.0-beta9 ! 2.0.1     Layout Paragraphs
+    drupal/lp_fontawesome         5.15001.0   ! 5.15004.0 Defines fontawesome as library to be used with libraries provider
+    drupal/masquerade             2.0.0-beta4 ! 2.0.0-rc1 Allows privileged users to masquerade as another user.
+    drupal/paragraphs             1.14.0      ! 1.15.0    Enables the creation of Paragraphs entities.
+    drupal/shield                 1.6.0       ! 1.7.0     Creates a general shield for the site.
+    drupal/upgrade_status         3.14.0      ! 3.17.0    Review Drupal major upgrade readiness of the environment and components of the site.
+    Gathering patches for root package.
+
+
 ## 2022-08-06
 
 - Upgrading drupal/core (9.4.4 => 9.4.5)

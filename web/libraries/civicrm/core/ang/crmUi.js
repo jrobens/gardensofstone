@@ -67,7 +67,7 @@
     // Simple wrapper around $.crmDatepicker.
     // example with no time input: <input crm-ui-datepicker="{time: false}" ng-model="myobj.datefield"/>
     // example with custom date format: <input crm-ui-datepicker="{date: 'm/d/y'}" ng-model="myobj.datefield"/>
-    .directive('crmUiDatepicker', function () {
+    .directive('crmUiDatepicker', function ($timeout) {
       return {
         restrict: 'AE',
         require: 'ngModel',
@@ -82,14 +82,17 @@
           element
             .crmDatepicker(scope.crmUiDatepicker)
             .on('change', function() {
-              var requiredLength = 19;
-              if (scope.crmUiDatepicker && scope.crmUiDatepicker.time === false) {
-                requiredLength = 10;
-              }
-              if (scope.crmUiDatepicker && scope.crmUiDatepicker.date === false) {
-                requiredLength = 8;
-              }
-              ngModel.$setValidity('incompleteDateTime', !($(this).val().length && $(this).val().length !== requiredLength));
+              // Because change gets triggered from the $render function we could be either inside or outside the $digest cycle
+              $timeout(function() {
+                var requiredLength = 19;
+                if (scope.crmUiDatepicker && scope.crmUiDatepicker.time === false) {
+                  requiredLength = 10;
+                }
+                if (scope.crmUiDatepicker && scope.crmUiDatepicker.date === false) {
+                  requiredLength = 8;
+                }
+                ngModel.$setValidity('incompleteDateTime', !(element.val().length && element.val().length !== requiredLength));
+              });
             });
         }
       };
@@ -597,7 +600,7 @@
           // In cases where UI initiates update, there may be an extra
           // call to refreshUI, but it doesn't create a cycle.
 
-          if (ngModel) {
+          if (ngModel && !attrs.ngOptions) {
             ngModel.$render = function () {
               $timeout(function () {
                 // ex: msg_template_id adds new item then selects it; use $timeout to ensure that
@@ -628,9 +631,16 @@
             }
           }
 
-          // If using ngOptions, wait for them to load
+          // If using ngOptions, the above methods do not work because option values get rewritten.
+          // Skip init and do something simpler.
           if (attrs.ngOptions) {
-            $timeout(init);
+            $timeout(function() {
+              element.crmSelect2(scope.crmUiSelect || {});
+              // Ensure widget is updated when model changes
+              ngModel.$render = function () {
+                element.val(ngModel.$viewValue || '').change();
+              };
+            });
           } else {
             init();
           }
@@ -759,7 +769,7 @@
         restrict: 'EA',
         scope: {
           crmUiTabSet: '@',
-          tabSetOptions: '@'
+          tabSetOptions: '<'
         },
         templateUrl: '~/crmUi/tabset.html',
         transclude: true,
@@ -952,12 +962,15 @@
             // handled in crmUiTab ctrl
             return;
           }
-          if (attrs.crmIcon.substring(0,3) == 'fa-') {
-            $(element).prepend('<i class="crm-i ' + attrs.crmIcon + '" aria-hidden="true"></i> ');
+          if (attrs.crmIcon) {
+            if (attrs.crmIcon.substring(0,3) == 'fa-') {
+              $(element).prepend('<i class="crm-i ' + attrs.crmIcon + '" aria-hidden="true"></i> ');
+            }
+            else {
+              $(element).prepend('<span class="icon ui-icon-' + attrs.crmIcon + '"></span> ');
+            }
           }
-          else {
-            $(element).prepend('<span class="icon ui-icon-' + attrs.crmIcon + '"></span> ');
-          }
+
           // Add crm-* class to non-bootstrap buttons
           if ($(element).is('button:not(.btn)')) {
             $(element).addClass('crm-button');
