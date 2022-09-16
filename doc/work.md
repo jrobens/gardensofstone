@@ -1,3 +1,4 @@
+*:JR:2022-09-17:CBI:0.2: sys+ update module. 
 *:JR:2022-09-16:CBI:0.2: sys+ update module. civicrm/civicrm-core5.52.0
 *:JR:2022-08-06:CBI:0.2: sys+ update module. civicrm/civicrm-core5.51.1
 *:JR:2022-08-02:CBI:0.2: sys+ update module. drupal/core-composer-scaffold9.4.3

@@ -2,6 +2,7 @@
 # Gardens of stone 2
 
 ## 2022-09-16
+Problem was no 'view photos' permission.
 
 Gallery not appearing. Also can't edit.
 
