@@ -1,6 +1,26 @@
 
 # Gardens of stone 2
 
+## 2022-12-01
+
+    civicrm/civicrm-core                 5.53.0 ! 5.55.2 Open source constituent relationship management for non-profits, NGOs and advocacy organizations.
+    civicrm/civicrm-drupal-8             5.53.0 ! 5.55.2 Open source constituent relationship management for non-profits, NGOs and advocacy organizations.
+    civicrm/civicrm-packages             5.53.0 ! 5.55.2 Legacy third party dependencies for CiviCRM
+    drupal/console                       1.9.8  ! 1.9.10 The Drupal CLI. A tool to generate boilerplate code, interact with and debug Drupal.
+    drupal/core-composer-scaffold        9.4.5  ! 9.4.8  A flexible Composer project scaffold builder.
+    drupal/core-dev                      9.4.5  ! 9.4.8  require-dev dependencies from drupal/drupal; use in addition to drupal/core-recommended to run tests from drupal/core.
+    drupal/core-project-message          9.4.5  ! 9.4.8  Adds a message after Composer installation.
+    drupal/core-recommended              9.4.5  ! 9.4.8  Core and its dependencies with known-compatible minor versions. Require this project INSTEAD OF drupal/core.
+    drupal/fontawesome_iconpicker_widget 2.23.0 ! 2.24.0 Provides an iconpicker widget for Font Awesome
+    drupal/leaflet                       2.2.5  ! 2.2.12 Integration with the Leaflet map scripting library.
+    drupal/leaflet_more_maps             2.1.2  ! 2.1.3  Adds a swag of map styles to Leaflet, e.g Thunderforest, Esri, Stamen, Google.
+    drupal/mediteran                     1.27.0 ! 1.29.0 Mediteran is a clean and simple administration theme designed by <a href="https://drupalation.com" target="_blank">Drupalation</a> and supported by <a href="https://ramsalt.com" target="_blank">Ramsalt</a>.
+    drupal/metatag                       1.21.0 ! 1.22.0 Manage meta tags for all entities.
+    drupal/paragraph_blocks              3.0.1  ! 3.1.3  Drupal Paragraph Blocks module
+    drupal/upgrade_status                3.17.0 ! 3.18.0 Review Drupal major upgrade readiness of the environment and components of the site.
+    drupal/xmlsitemap                    1.3.0  ! 1.4.0  Creates XML Sitemaps for the site
+
+
 ## 2022-09-16
 Problem was no 'view photos' permission.
 
