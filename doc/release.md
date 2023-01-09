@@ -1,6 +1,23 @@
 
 # Gardens of stone 2
 
+## 2023-01-10
+
+    civicrm/civicrm-core          5.55.2 ! 5.57.0 Open source constituent relationship management for non-profits, NGOs and advocacy organizations.
+    civicrm/civicrm-drupal-8      5.55.2 ! 5.57.0 Open source constituent relationship management for non-profits, NGOs and advocacy organizations.
+    civicrm/civicrm-packages      5.55.2 ! 5.57.0 Legacy third party dependencies for CiviCRM
+    cweagans/composer-patches     1.7.2  ! 1.7.3  Provides a way to patch Composer packages.
+    drupal/core-composer-scaffold 9.4.8  ! 9.5.1  A flexible Composer project scaffold builder.
+    drupal/core-dev               9.4.8  ! 9.5.1  require-dev dependencies from drupal/drupal; use in addition to drupal/core-recommended to run tests from drupal/core.
+    drupal/core-project-message   9.4.8  ! 9.5.1  Adds a message after Composer installation.
+    drupal/core-recommended       9.4.8  ! 9.5.1  Core and its dependencies with known-compatible minor versions. Require this project INSTEAD OF drupal/core.
+    drupal/layout_paragraphs      2.0.1  ! 2.0.2  Layout Paragraphs
+    drupal/menu_item_extras       2.17.0 ! 2.19.0 Provide an additional custom fields which can be used on Menu link
+    drupal/menu_link_attributes   1.2.0  ! 1.3.0  Allows you to add attributes to menu links.
+    drupal/module_filter          3.2.0  ! 3.4.0  Filter the modules list.
+    drupal/nagios                 1.15.0 ! 1.17.0 Exposes a page that Nagios or Icinga can monitor
+
+
 ## 2022-12-01
 
     civicrm/civicrm-core                 5.53.0 ! 5.55.2 Open source constituent relationship management for non-profits, NGOs and advocacy organizations.
