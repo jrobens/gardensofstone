@@ -1,6 +1,21 @@
 
 # Gardens of stone 2
 
+## 20223-01-30
+
+Added honeypot
+
+    civicrm/civicrm-core          5.57.0 ! 5.57.2 Open source constituent relationship management for non-profits, NGOs and advocacy organizations.
+    civicrm/civicrm-drupal-8      5.57.0 ! 5.57.2 Open source constituent relationship management for non-profits, NGOs and advocacy organizations.
+    civicrm/civicrm-packages      5.57.0 ! 5.57.2 Legacy third party dependencies for CiviCRM
+    drupal/core-composer-scaffold 9.5.1  ! 9.5.2  A flexible Composer project scaffold builder.
+    drupal/core-dev               9.5.1  ! 9.5.2  require-dev dependencies from drupal/drupal; use in addition to drupal/core-recommended to run tests from drupal/core.
+    drupal/core-project-message   9.5.1  ! 9.5.2  Adds a message after Composer installation.
+    drupal/core-recommended       9.5.1  ! 9.5.2  Core and its dependencies with known-compatible minor versions. Require this project INSTEAD OF drupal/core.
+    drupal/webform                6.1.3  ! 6.1.4  Enables the creation of webforms and questionnaires.
+    drupal/webform_civicrm        6.2.1  ! 6.2.2  CiviCRM and Webform integration
+
+
 ## 2023-01-10
 
     civicrm/civicrm-core          5.55.2 ! 5.57.0 Open source constituent relationship management for non-profits, NGOs and advocacy organizations.
