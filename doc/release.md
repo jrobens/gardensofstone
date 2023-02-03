@@ -1,7 +1,33 @@
 
 # Gardens of stone 2
 
-## 20223-01-30
+## 2023-02-03
+
+drupal/admin_toolbar drupal/better_social_sharing_buttons drupal/block_class drupal/copyright_footer drupal/drulma drupal/entity_class_formatter drupal/fontawesome_menu_icons drupal/google_analytics drupal/leaflet drupal/module_filter drupal/leaflet_more_maps
+
+
+    civicrm/civicrm-core          5.57.2      ! 5.58.0         Open source constituent relationship management for non-profits, NGOs and advocacy organizations.
+    civicrm/civicrm-drupal-8      5.57.2      ! 5.58.0         Open source constituent relationship management for non-profits, NGOs and advocacy organizations.
+    civicrm/civicrm-packages      5.57.2      ! 5.58.0         Legacy third party dependencies for CiviCRM
+    ckeditor/autogrow             4.17.1      ! 4.18.0
+    ckeditor/codemirror           v1.17.12    ! v1.18.3
+    ckeditor/fakeobjects          4.17.1      ! 4.18.0
+    ckeditor/image                4.17.1      ! 4.18.0
+    ckeditor/link                 4.17.1      ! 4.18.0
+    codemirror/codemirror         5.61.1      ! 5.65.3
+    drupal/core-composer-scaffold 9.5.2       ! 9.5.3          A flexible Composer project scaffold builder.
+    drupal/core-dev               9.5.2       ! 9.5.3          require-dev dependencies from drupal/drupal; use in addition to drupal/core-recommended to run tests from drupal/core.
+    drupal/core-project-message   9.5.2       ! 9.5.3          Adds a message after Composer installation.
+    drupal/core-recommended       9.5.2       ! 9.5.3          Core and its dependencies with known-compatible minor versions. Require this project INSTEAD OF drupal/core.
+    drupal/simple_recaptcha       1.0.0-beta6 ! 1.0.0-beta7    Provides simple integration with Google reCaptcha, keeping forms and webforms secure.
+    drupal/webform_civicrm        6.2.2       ! 6.2.3          CiviCRM and Webform integration
+    jquery/inputmask              5.0.6       ! 5.0.7
+    jquery/intl-tel-input         16.1.0      = [none matched]
+    jquery/rateit                 1.1.3       ! 1.1.5
+    jquery/timepicker             1.13.18     ! 1.14.0
+    tippyjs/6.x                   6.2.6       ! 6.3.7
+
+## 2023-01-30
 
 Added honeypot
 
