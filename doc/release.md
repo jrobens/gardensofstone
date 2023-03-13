@@ -1,6 +1,35 @@
 
 # Gardens of stone 2
 
+## 2023-03-14
+
+    civicrm/civicrm-asset-plugin         v1.1.2      ! v1.1.3      Publish assets from private CiviCRM folders...
+    civicrm/civicrm-core                 5.58.1      ! 5.59.2      Open source constituent relationship manage...
+    civicrm/civicrm-drupal-8             5.58.1      ! 5.59.2      Open source constituent relationship manage...
+    civicrm/civicrm-packages             5.58.1      ! 5.59.2      Legacy third party dependencies for CiviCRM
+    drupal/better_social_sharing_buttons 4.0.2       ! 4.0.3       Provides a settings page, a field, a paragr...
+    drupal/core-composer-scaffold        9.5.3       ! 9.5.4       A flexible Composer project scaffold builder.
+    drupal/core-dev                      9.5.3       ! 9.5.4       require-dev dependencies from drupal/drupal...
+    drupal/core-project-message          9.5.3       ! 9.5.4       Adds a message after Composer installation.
+    drupal/core-recommended              9.5.3       ! 9.5.4       Core and its dependencies with known-compat...
+    drupal/core_event_dispatcher         3.3.1       ! 3.3.2       Registers event dispatchers for several cor...
+    drupal/fontawesome_iconpicker_widget 2.24.0      ! 2.25.0      Provides an iconpicker widget for Font Awesome
+    drupal/leaflet                       10.0.8      ! 10.0.9      Integration with the Leaflet map scripting ...
+    drupal/linked_field                  1.4.0       ! 1.5.0       Adds the functionality to link fields to a ...
+    drupal/simple_recaptcha              1.0.0-beta7 ! 1.0.0-beta8 Provides simple integration with Google reC...
+
+
+## 2023-02-21
+
+    updates are:
+    civicrm/civicrm-core                 5.58.0          ! 5.58.1          Open source constituent relationship management for non-profits, NGOs and advocacy organizations.
+    civicrm/civicrm-drupal-8             5.58.0          ! 5.58.1          Open source constituent relationship management for non-profits, NGOs and advocacy organizations.
+    civicrm/civicrm-packages             5.58.0          ! 5.58.1          Legacy third party dependencies for CiviCRM
+    drupal/animate_on_scroll             dev-1.x fcdc9e3 ! dev-1.x 759ec9a
+    drupal/better_social_sharing_buttons 4.0.1           ! 4.0.2           Provides a settings page, a field, a paragraph, and a block for social sharing buttons
+    drupal/linked_field                  1.3.0           ! 1.4.0           Adds the functionality to link fields to a specific destination.
+
+
 ## 2023-02-03
 
 drupal/admin_toolbar drupal/better_social_sharing_buttons drupal/block_class drupal/copyright_footer drupal/drulma drupal/entity_class_formatter drupal/fontawesome_menu_icons drupal/google_analytics drupal/leaflet drupal/module_filter drupal/leaflet_more_maps
