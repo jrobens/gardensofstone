@@ -1,6 +1,8 @@
 
 # Gardens of stone 2
 
+## Error messages - php 7.4
+
 The site is running 5.58.0. Additional patches are available:
 
 5.58.1 (security) (2023-02-15): Fix security issues CIVI-SA-2023-04, -05, and -06 as well as other recent issues.
