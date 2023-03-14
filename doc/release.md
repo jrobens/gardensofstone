@@ -1,6 +1,17 @@
 
 # Gardens of stone 2
 
+The site is running 5.58.0. Additional patches are available:
+
+5.58.1 (security) (2023-02-15): Fix security issues CIVI-SA-2023-04, -05, and -06 as well as other recent issues.
+Extension Update Available
+Hide
+Mosaico: Version 2.9.1645644008 is installed. Upgrade to version 2.11.
+MySQL Timezone Problem
+Hide
+The MySQL database does not fully support timezones. Please ask the database administrator to load timezone data.
+CiviCRM Upgrade Available
+
 ## 2023-03-14
 
     civicrm/civicrm-asset-plugin         v1.1.2      ! v1.1.3      Publish assets from private CiviCRM folders...
