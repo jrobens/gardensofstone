@@ -1,6 +1,43 @@
 
 # Gardens of stone 2
 
+User warning: The following theme is missing from the file system: bulma in Drupal\Core\Extension\ExtensionPathResolver->getPathname() (line 63 of
+/srv/web/gardensofstone.org.au/web/core/l
+311370   14/Mar 08:56   page not found   Warning    /nagios
+
+## Updates 2023-04-06
+
+updates are:
+
+    civicrm/civicrm-core     5.59.3 ! 5.59.4 Open source constituent relationship management for non-profits, NGOs and advocacy organizations.
+    civicrm/civicrm-drupal-8 5.59.3 ! 5.59.4 Open source constituent relationship management for non-profits, NGOs and advocacy organizations.
+    civicrm/civicrm-packages 5.59.3 ! 5.59.4 Legacy third party dependencies for CiviCRM
+    drupal/console           1.9.9  ! 1.9.10 The Drupal CLI. A tool to generate boilerplate code, interact with and debug Drupal.
+
+## Check civi queries 2023-04-05
+
+No problem identified.
+
+Search engine does not seem to work.
+
+Could not find Keith Muir or John Robens
+
+## Updates 2023-03-27
+
+    civicrm/civicrm-core             5.59.2 ! 5.59.3  Open source constituent relationship management for non-profits, NGOs and advocacy organizations.
+    civicrm/civicrm-drupal-8         5.59.2 ! 5.59.3  Open source constituent relationship management for non-profits, NGOs and advocacy organizations.
+    civicrm/civicrm-packages         5.59.2 ! 5.59.3  Legacy third party dependencies for CiviCRM
+    drupal/console                   1.9.9  ! 1.9.10  The Drupal CLI. A tool to generate boilerplate code, interact with and debug Drupal.
+    drupal/core-composer-scaffold    9.5.4  ! 9.5.7   A flexible Composer project scaffold builder.
+    drupal/core-dev                  9.5.4  ! 9.5.7   require-dev dependencies from drupal/drupal; use in addition to drupal/core-recommended to run tests from drupal/core.
+    drupal/core-project-message      9.5.4  ! 9.5.7   Adds a message after Composer installation.
+    drupal/core-recommended          9.5.4  ! 9.5.7   Core and its dependencies with known-compatible minor versions. Require this project INSTEAD OF drupal/core.
+    drupal/expand_collapse_formatter 2.0.1  ! 2.0.2   A formatter to expand and collapse text area fields.
+    drupal/leaflet                   10.0.9 ! 10.0.11 Integration with the Leaflet map scripting library.
+    drupal/photos                    6.0.2  ! 6.0.3   Picture management module. Photo albums.
+    drupal/upgrade_status            3.18.0 ! 3.19.0  Review Drupal major upgrade readiness of the environment and components of the site.
+
+
 ## Error messages - php 7.4
 
 The site is running 5.58.0. Additional patches are available:

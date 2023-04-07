@@ -1,3 +1,5 @@
+*:JR:2023-04-05:CBI:0.2: sys+ update module. civicrm/civicrm-core5.59.3
+*:JR:2023-03-27:CBI:0.2: sys+ update module. civicrm/civicrm-core5.59.2
 *:JR:2023-03-14:CBI:0.2: sys+ update module. civicrm/civicrm-asset-pluginv1.1.2
 *:JR:2023-02-21:CBI:0.2: sys+ update module. civicrm/civicrm-core5.58.0
 *:JR:2023-02-03:CBI:0.2: sys+ update module. civicrm/civicrm-core5.57.2
