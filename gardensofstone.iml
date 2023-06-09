@@ -24,7 +24,6 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/egulias/email-validator" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/itamair/geophp" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/laminas/laminas-stdlib" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/laminas/laminas-diactoros" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/laminas/laminas-servicemanager" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/laminas/laminas-escaper" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/civicrm/composer-compile-lib" />
@@ -163,7 +162,6 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/seld/jsonlint" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/twig/twig" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/brick/money" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/cache/integration-tests" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/behat/mink-selenium2-driver" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/brick/math" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/pear/validate_finance_creditcard" />
@@ -213,12 +211,12 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/drupal/console-extend-plugin" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/marcj/topsort" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/nikic/php-parser" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/cache/tag-interop" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/drush/drush" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/react/promise" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/stack/builder" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/phenx/php-svg-lib" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/phenx/php-font-lib" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/longwave/laminas-diactoros" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
   </component>

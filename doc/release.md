@@ -14,6 +14,8 @@ updates are:
     civicrm/civicrm-packages 5.59.3 ! 5.59.4 Legacy third party dependencies for CiviCRM
     drupal/console           1.9.9  ! 1.9.10 The Drupal CLI. A tool to generate boilerplate code, interact with and debug Drupal.
 
+Also updated the text editor ckeditor 5
+
 ## Check civi queries 2023-04-05
 
 No problem identified.
@@ -21,6 +23,31 @@ No problem identified.
 Search engine does not seem to work.
 
 Could not find Keith Muir or John Robens
+
+## Updates 2023-06-09
+
+    civicrm/civicrm-core                 5.59.4    ! 5.62.0    Open source constituent relationship management for non-profits, NGOs and advocacy organizations.
+    civicrm/civicrm-drupal-8             5.59.4    ! 5.62.0    Open source constituent relationship management for non-profits, NGOs and advocacy organizations.
+    civicrm/civicrm-packages             5.59.4    ! 5.62.0    Legacy third party dependencies for CiviCRM
+    drupal/admin_toolbar                 3.3.0     ! 3.4.1     Provides a drop-down menu interface to the core Drupal Toolbar.
+    drupal/better_social_sharing_buttons 4.0.3     ! 4.0.4     Provides a settings page, a field, a paragraph, and a block for social sharing buttons
+    drupal/classy_paragraphs             1.0.0-rc1 ! 1.0.0-rc2 Allows an editor to apply a class to paragraphs.
+    drupal/console                       1.9.9     ! 1.9.10    The Drupal CLI. A tool to generate boilerplate code, interact with and debug Drupal.
+    drupal/copyright_block               1.0.0-rc4 ! 1.0.0     Creates a dynamic customisable copyright message block.
+    drupal/core-composer-scaffold        9.5.7     ! 9.5.9     A flexible Composer project scaffold builder.
+    drupal/core-dev                      9.5.7     ! 9.5.9     require-dev dependencies from drupal/drupal; use in addition to drupal/core-recommended to run tests from drupal/core.
+    drupal/core-project-message          9.5.7     ! 9.5.9     Adds a message after Composer installation.
+    drupal/core-recommended              9.5.7     ! 9.5.9     Core and its dependencies with known-compatible minor versions. Require this project INSTEAD OF drupal/core.
+    drupal/core_event_dispatcher         3.3.2     ! 3.3.3     Registers event dispatchers for several core hooks
+    drupal/layout_paragraphs             2.0.2     ! 2.0.3     Layout Paragraphs
+    drupal/leaflet                       10.0.11   ! 10.0.14   Integration with the Leaflet map scripting library.
+    drupal/metatag                       1.22.0    ! 1.25.0    Manage meta tags for all entities.
+    drupal/paragraph_blocks              3.1.3     ! 3.1.6     Drupal Paragraph Blocks module
+    drupal/term_condition                2.0.1     ! 2.0.2     Provides a Condition plugin which checks to see if a node references a particular taxonomy term.
+    drupal/views_add_button              2.0.2     ! 2.0.7     Views Add Button
+    drupal/webform_civicrm               6.2.3     ! 6.2.4     CiviCRM and Webform integration
+    wikimedia/composer-merge-plugin      v2.0.1    ! v2.1.0    Composer plugin to merge multiple composer.json files
+
 
 ## Updates 2023-03-27
 
