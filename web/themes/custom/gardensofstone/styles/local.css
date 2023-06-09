@@ -647,7 +647,6 @@ main > section > .container {
   z-index: 10;
 }
 
-/* TODO out of date code */
 body.path--.node-type--page-and-layout > div > header.hero.is-primary {
   background-color: transparent;
   height: 22vw;
