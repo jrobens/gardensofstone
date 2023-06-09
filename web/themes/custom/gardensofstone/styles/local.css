@@ -4,8 +4,11 @@
 }
 
 .navbar.is-black {
-  background-color: #a2671c;
+  background-color: rgb(162, 103, 28);
   color: #fff;
+}
+.navbar.is-black .navigation__link-description {
+  display: none;
 }
 .navbar.is-black a, .navbar.is-black a:visited {
   color: white;
@@ -13,6 +16,7 @@
 }
 .navbar.is-black a.navbar-item:hover {
   background-color: #ac6101;
+  color: white;
 }
 .navbar.is-black .navbar-dropdown a, .navbar.is-black .navbar-dropdown a:visited {
   color: #a2671c;
@@ -90,7 +94,7 @@ body.toolbar-tray-open #CrossFade {
 
 @media screen and (min-width: 768px) {
   .paragraph--type--crossfade-banner .field_pbcrossfade_intro,
-#CrossFade .intro {
+  #CrossFade .intro {
     display: block;
     position: absolute;
     bottom: 10rem;
@@ -101,7 +105,7 @@ body.toolbar-tray-open #CrossFade {
     cursor: pointer;
     color: #fff;
     width: 50%;
-    background-image: linear-gradient(to top, rgba(0, 32, 32, 0.1), #7777775c 86%, #3333335c 75%);
+    background-image: linear-gradient(to top, rgba(0, 32, 32, 0.1), rgba(119, 119, 119, 0.3607843137) 86%, rgba(51, 51, 51, 0.3607843137) 75%);
     border-radius: 0.5rem;
   }
 }
@@ -137,7 +141,7 @@ body.toolbar-tray-open #CrossFade {
   pointer-events: none;
   content: "";
   border: 3px solid rgba(153, 52, 48, 0.2);
-  background-image: radial-gradient(#993430 20%, transparent 20%);
+  background-image: radial-gradient(rgb(153, 52, 48) 20%, transparent 20%);
   background-position: 0 0, 10px 10px;
   background-size: 5px 5px;
   opacity: 0.2;
@@ -201,7 +205,7 @@ body.toolbar-tray-open #CrossFade {
   width: 100%;
   height: 100%;
   border: 3px solid rgba(154, 205, 50, 0.3);
-  background-image: radial-gradient(yellowgreen 20%, transparent 30%);
+  background-image: radial-gradient(rgb(154, 205, 50) 20%, transparent 30%);
   background-position: 0 0, 10px 10px;
   background-size: 5px 5px;
   opacity: 0.2;
@@ -222,14 +226,14 @@ body.toolbar-tray-open #CrossFade {
 }
 
 .view-events.view-display-id-block_2 .views-field-body {
-  color: #1b1b1b;
+  color: rgb(27, 27, 27);
   line-height: 1.5;
   font-size: 0.9rem;
 }
 
 @media (min-width: 720px) {
   .view-events.view-display-id-block_2 .view-content .views-field-field-events-image,
-.block-views-blockevents-block-2 .view-content .views-field-field-events-image {
+  .block-views-blockevents-block-2 .view-content .views-field-field-events-image {
     grid-column-start: 2;
     grid-row-start: 1;
     grid-row-end: span 2;
@@ -272,8 +276,8 @@ section.hero.is-primary.block-views-blockevents-block-2 .views-field-title a:vis
 .view-events.view-display-id-page_2 .views-row {
   position: relative;
   border-radius: 1rem;
-  color: #ab496c;
-  color: #1b1b1b;
+  color: rgb(171, 73, 108);
+  color: rgb(27, 27, 27);
   margin-top: 3rem;
 }
 
@@ -286,7 +290,7 @@ section.hero.is-primary.block-views-blockevents-block-2 .views-field-title a:vis
   width: 100%;
   height: 100%;
   border: 3px solid rgba(154, 205, 50, 0.3);
-  background-image: radial-gradient(yellowgreen 20%, transparent 30%);
+  background-image: radial-gradient(rgb(154, 205, 50) 20%, transparent 30%);
   background-position: 0 0, 10px 10px;
   background-size: 5px 5px;
   opacity: 0.2;
@@ -346,7 +350,7 @@ section.hero.is-primary.block-views-blockevents-block-2 .views-field-title a:vis
     position: relative;
   }
   .view-id-visit_gardens_of_stone_terms .views-field.views-field-description__value a,
-.view-id-visit_gardens_of_stone_terms .views-field.views-field-description__value a:visited {
+  .view-id-visit_gardens_of_stone_terms .views-field.views-field-description__value a:visited {
     color: #333;
   }
 }
@@ -366,7 +370,7 @@ section.hero.is-primary.block-views-blockevents-block-2 .views-field-title a:vis
     transform: translate(0, -60%);
   }
   .view-id-visit_gardens_of_stone_terms .views-row:nth-child(3n+2) .views-field-description__value,
-.view-id-visit_gardens_of_stone_terms .views-row:nth-child(+3) .views-field-description__value {
+  .view-id-visit_gardens_of_stone_terms .views-row:nth-child(+3) .views-field-description__value {
     margin: 0;
     position: absolute;
     height: 1%;
@@ -438,7 +442,7 @@ section.hero.is-primary.block-views-blockevents-block-2 .views-field-title a:vis
 }
 
 footer.footer {
-  background-color: #1b1b1b;
+  background-color: rgb(27, 27, 27);
   color: white;
   font-size: 0.8rem;
   margin-top: 2rem;
@@ -497,7 +501,7 @@ footer.footer form#search-block-form .input {
   margin-top: 0.2rem;
 }
 footer.footer form#search-block-form .button.is-link {
-  background-color: #1b1b1b;
+  background-color: rgb(27, 27, 27);
   border: 1px solid white;
   margin-bottom: 0;
 }
@@ -527,45 +531,45 @@ footer.footer .tabs ul {
   }
 }
 .green {
-  color: #8a996b;
+  color: rgb(138, 153, 107);
 }
 
 .black {
-  color: #1b1b1b;
+  color: rgb(27, 27, 27);
 }
 
 .orange {
-  color: #ab496c;
+  color: rgb(171, 73, 108);
 }
 
 /* where did this come from? */
 .brown {
-  color: #a9644a;
+  color: rgb(169, 100, 74);
 }
 
 .brown-light {
-  color: #df8a20;
+  color: rgb(223, 138, 32);
 }
 
 .brown-yellow {
-  color: #fed57c;
+  color: rgb(254, 213, 124);
 }
 
 .light-yellow {
-  color: #ffeecb;
+  color: rgb(255, 238, 203);
 }
 
 .lighter-yellow {
-  color: #fff7e7;
+  color: rgb(255, 247, 231);
 }
 
 .red,
 .class-red {
-  background: #9e0323;
+  background: rgb(158, 3, 35);
 }
 
 .grey {
-  background: #95969a;
+  background: rgb(149, 150, 154);
 }
 
 .green-grey {
@@ -594,7 +598,7 @@ footer.footer .tabs ul {
 
 body {
   font: 100 100%/1.5 "Hind Guntur", sans-serif;
-  color: #1b1b1b;
+  color: rgb(27, 27, 27);
 }
 
 body a, body a:visited {
@@ -742,11 +746,11 @@ body.path-- section.section .block-page-title-block {
   padding: 2rem;
   margin-bottom: 0;
   color: white;
-  background-color: #a2671c;
+  background-color: rgb(162, 103, 28);
 }
 
 section.section .block-page-title-block {
-  background: #a2671c;
+  background: rgb(162, 103, 28);
 }
 
 body.path-- section.section .block-page-title-block {
@@ -1093,7 +1097,7 @@ section.section.hero.is-primary a:visited {
 
 /* Sub pages */
 body.not-front header.hero.is-primary {
-  background-color: #1b1b1b;
+  background-color: rgb(27, 27, 27);
   margin-top: 1.7rem;
   padding: 3rem 1.5rem;
   background-image: url(../logo-white.png);
