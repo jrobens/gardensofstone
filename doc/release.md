@@ -5,6 +5,12 @@ User warning: The following theme is missing from the file system: bulma in Drup
 /srv/web/gardensofstone.org.au/web/core/l
 311370   14/Mar 08:56   page not found   Warning    /nagios
 
+## Theme 2023-06-09
+
+Updated civicrm
+
+Theme menu. Banner bar.
+
 ## Updates 2023-04-06
 
 updates are:
