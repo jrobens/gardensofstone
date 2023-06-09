@@ -1101,8 +1101,8 @@ body.not-front header.hero.is-primary {
   padding: 3rem 1.5rem;
   background-image: url(../logo-white.png);
   background-repeat: no-repeat;
-  background-position-x: right;
-  background-position-y: center;
+  background-position-x: 95%;
+  background-position-y: 80%;
   background-size: 10rem;
   margin-bottom: 1rem;
 }
