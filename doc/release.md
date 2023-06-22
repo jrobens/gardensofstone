@@ -5,6 +5,10 @@ User warning: The following theme is missing from the file system: bulma in Drup
 /srv/web/gardensofstone.org.au/web/core/l
 311370   14/Mar 08:56   page not found   Warning    /nagios
 
+## Domain update 2023-06-23
+
+I got into voiden and updated by to my current debit card, all good.
+
 ## Theme 2023-06-09
 
 Updated civicrm
