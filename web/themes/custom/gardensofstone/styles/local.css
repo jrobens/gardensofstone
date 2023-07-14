@@ -407,18 +407,18 @@ section.hero.is-primary.block-views-blockevents-block-2 .views-field-title a:vis
   display: none;
 }
 
-.webform-submission-add-form .progress-marker::before {
+.webform-submission-add-form .progress-marker::before, .webform-submission-form .progress-marker::before {
   width: 2rem;
   height: 2rem;
   padding-top: 0.3rem;
   bottom: 0.3rem;
 }
-.webform-submission-add-form legend {
+.webform-submission-add-form legend, .webform-submission-form legend {
   font-weight: bold;
   font-size: 2rem;
   color: #a2046b;
 }
-.webform-submission-add-form .form-required + .control::after {
+.webform-submission-add-form .form-required + .control::after, .webform-submission-form .form-required + .control::after {
   content: "*";
   font-size: 1.2rem;
   font-weight: bold;
@@ -430,20 +430,20 @@ section.hero.is-primary.block-views-blockevents-block-2 .views-field-title a:vis
   width: 2rem;
   transform: translate(-1rem, 0.5rem);
 }
-.webform-submission-add-form .button.is-link {
+.webform-submission-add-form .button.is-link, .webform-submission-form .button.is-link {
   background-color: #a2671c;
   color: white;
 }
-.webform-submission-add-form .webform-progress ul li {
+.webform-submission-add-form .webform-progress ul li, .webform-submission-form .webform-progress ul li {
   list-style-type: none;
 }
-.webform-submission-add-form ol {
+.webform-submission-add-form ol, .webform-submission-form ol {
   margin-left: 1rem;
 }
-.webform-submission-add-form ul {
+.webform-submission-add-form ul, .webform-submission-form ul {
   margin-left: 1rem;
 }
-.webform-submission-add-form ul li {
+.webform-submission-add-form ul li, .webform-submission-form ul li {
   list-style-type: disc;
 }
 
