@@ -434,6 +434,12 @@ section.hero.is-primary.block-views-blockevents-block-2 .views-field-title a:vis
   background-color: #a2671c;
   color: white;
 }
+.webform-submission-add-form ul {
+  margin-left: 1rem;
+}
+.webform-submission-add-form ul li {
+  list-style-type: disc;
+}
 
 .region-footer .menu-list {
   display: flex;

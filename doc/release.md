@@ -1,13 +1,37 @@
 
 # Gardens of stone 2
 
+Billing. Billed $600 GST inc for the website build.
+Bill $29/month for hosting.
+
 User warning: The following theme is missing from the file system: bulma in Drupal\Core\Extension\ExtensionPathResolver->getPathname() (line 63 of
 /srv/web/gardensofstone.org.au/web/core/l
 311370   14/Mar 08:56   page not found   Warning    /nagios
 
+## Webform 2023-07-14
+
+I am trying to build a webform for submissions to a foreshadowed exhibition of a proposal for Angus Place West that can be quickly tweaked when the proposal goes on exhibition.
+
+
+
+This is as far as I have got. You will see I’ve used text from a guide letter on APW, provided me by Environmental Justice Australia. https://www.gardensofstone.org.au/admin/structure/webform/manage/augus_place_west_eis_submission_
+
+
+
+There’s a webpage with this text at https://www.gardensofstone.org.au/placeholder-submission-guide-object-angus-place-west-coal-mine-extension (which is another option for collecting submissions).
+
+
+
+I am trying to use the model adopted for another coal mine called Chain Valley Bay. The file also provided me by Environmental Justice Australia gives the idea of how it should go. It is complicated. The Department of Planning wants to stop public submissions as far as I am concerned, it’s an awful process. Anyway, can you take what I’ve done and build it something like how EJA have done for Chain Valley Bay mine? You will find there are screen shots of the pages done (but not on drupal) at the end of the word file.
+
+
+
+Thank you, you will save me days of trial and error learning if you do.
+
 ## Domain update 2023-06-23
 
 I got into voiden and updated by to my current debit card, all good.
+www.vodien.com
 
 ## Theme 2023-06-09
 
