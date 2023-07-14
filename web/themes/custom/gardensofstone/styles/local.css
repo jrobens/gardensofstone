@@ -437,10 +437,13 @@ section.hero.is-primary.block-views-blockevents-block-2 .views-field-title a:vis
 .webform-submission-add-form .webform-progress ul li {
   list-style-type: none;
 }
-.webform-submission-add-form ul, .webform-submission-add-form ol {
+.webform-submission-add-form ol {
   margin-left: 1rem;
 }
-.webform-submission-add-form ul li, .webform-submission-add-form ol li {
+.webform-submission-add-form ul {
+  margin-left: 1rem;
+}
+.webform-submission-add-form ul li {
   list-style-type: disc;
 }
 
