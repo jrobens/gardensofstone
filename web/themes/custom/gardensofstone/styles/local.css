@@ -434,7 +434,7 @@ section.hero.is-primary.block-views-blockevents-block-2 .views-field-title a:vis
   background-color: #a2671c;
   color: white;
 }
-.webform-submission-add-form .webform-progress-tracker ul li {
+.webform-submission-add-form .webform-progress-tracker ul {
   list-style-type: none;
 }
 .webform-submission-add-form ul {
