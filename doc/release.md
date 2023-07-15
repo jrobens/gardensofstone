@@ -8,6 +8,29 @@ User warning: The following theme is missing from the file system: bulma in Drup
 /srv/web/gardensofstone.org.au/web/core/l
 311370   14/Mar 08:56   page not found   Warning    /nagios
 
+## Updates 2023-07-15
+
+Drulma update wanted
+
+    civicrm/civicrm-core                 5.62.0  ! 5.63.1  Open source constituent relationship management for non-profits, NGOs and advocacy organizations.
+    civicrm/civicrm-drupal-8             5.62.0  ! 5.63.1  Open source constituent relationship management for non-profits, NGOs and advocacy organizations.
+    civicrm/civicrm-packages             5.62.0  ! 5.63.1  Legacy third party dependencies for CiviCRM
+    drupal/better_social_sharing_buttons 4.0.4   ! 4.0.5   Provides a settings page, a field, a paragraph, and a block for social sharing buttons
+    drupal/console                       1.9.9   ! 1.9.10  The Drupal CLI. A tool to generate boilerplate code, interact with and debug Drupal.
+    drupal/core-composer-scaffold        9.5.9   ! 9.5.10  A flexible Composer project scaffold builder.
+    drupal/core-dev                      9.5.9   ! 9.5.10  require-dev dependencies from drupal/drupal; use in addition to drupal/core-recommended to run tests from drupal/core.
+    drupal/core-project-message          9.5.9   ! 9.5.10  Adds a message after Composer installation.
+    drupal/core-recommended              9.5.9   ! 9.5.10  Core and its dependencies with known-compatible minor versions. Require this project INSTEAD OF drupal/core.
+    drupal/fontawesome_iconpicker_widget 2.25.0  ! 2.26.0  Provides an iconpicker widget for Font Awesome
+    drupal/leaflet                       10.0.14 ! 10.0.16 Integration with the Leaflet map scripting library.
+    drupal/metatag                       1.25.0  ! 1.26.0  Manage meta tags for all entities.
+    drupal/paragraph_blocks              3.1.6   ! 3.1.8   Drupal Paragraph Blocks module
+    drupal/photos                        6.0.3   ! 6.0.4   Picture management module. Photo albums.
+    drupal/term_condition                2.0.2   ! 2.0.3   Provides a Condition plugin which checks to see if a node references a particular taxonomy term.
+    drupal/webform                       6.1.4   ! 6.1.5   Enables the creation of webforms and questionnaires.
+
+
+
 ## Webform 2023-07-14
 
 I am trying to build a webform for submissions to a foreshadowed exhibition of a proposal for Angus Place West that can be quickly tweaked when the proposal goes on exhibition.

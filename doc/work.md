@@ -1,3 +1,4 @@
+*:JR:2023-07-15:CBI:0.2: sys+ update module. civicrm/civicrm-core5.62.0
 *:JR:2023-06-09:CBI:0.2: sys+ update module. civicrm/civicrm-core5.59.4
 *:JR:2023-04-05:CBI:0.2: sys+ update module. civicrm/civicrm-core5.59.3
 *:JR:2023-03-27:CBI:0.2: sys+ update module. civicrm/civicrm-core5.59.2
