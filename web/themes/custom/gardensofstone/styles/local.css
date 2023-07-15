@@ -433,6 +433,9 @@ section.hero.is-primary.block-views-blockevents-block-2 .views-field-title a:vis
 .webform-submission-add-form .webform-options-display-buttons .form-item, .webform-submission-form .webform-options-display-buttons .form-item {
   margin: 0.3rem 0;
 }
+.webform-submission-add-form p, .webform-submission-form p {
+  margin-bottom: 0.3rem;
+}
 .webform-submission-add-form .button.is-link, .webform-submission-form .button.is-link {
   background-color: #a2671c;
   color: white;
