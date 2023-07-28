@@ -2,21 +2,24 @@
 
 Date and Time masks.
 
-# Aliases
+## Aliases
 
-- datetime
+- ### datetime
 
-# Options
+## Options
 
-## inputFormat
+### inputFormat
+
 Format used to input the date
 
-ex:   
+ex:
+
 - dd/mm/yyyy  
 - mm/dd/yyyy  
 - dd.mm.yyyy HH:MM:ss  
 
 ### Supported symbols
+
 - d  
 Day of the month as digits; no leading zero for single-digit days.
 - dd  
@@ -42,13 +45,13 @@ Hours; no leading zero for single-digit hours (12-hour clock).
 - hh  
 Hours; leading zero for single-digit hours (12-hour clock).
 - hx  
-Hours; no limit; x = number of digits ~ use as h2, h3, ...   
+Hours; no limit; x = number of digits ~ use as h2, h3, ...
 -H  
 Hours; no leading zero for single-digit hours (24-hour clock).
 - HH  
 Hours; leading zero for single-digit hours (24-hour clock).
 - Hx  
-Hours; no limit; x = number of digits ~ use as H2, H3, ...   
+Hours; no limit; x = number of digits ~ use as H2, H3, ...
 - M  
 Minutes; no leading zero for single-digit minutes. Uppercase M unlike CF timeFormat's m to avoid conflict with months.
 - MM  
@@ -77,25 +80,32 @@ GMT/UTC timezone offset, e.g. -0500 or +0230.
 The date's ordinal suffix (st, nd, rd, or th). Works well with d.
 
 ### Optional parts
+
 To mark a part of the inputFormat as optional, use the [] as you would for other masks.
 
 Ex.
 inputFormat: "dd/mm/yyyy [HH]"
 
+### displayFormat
 
-## displayFormat
 Visual format when the input looses focus
-## outputFormat
+
+### outputFormat
+
 Unmasking format
-## min
+
+### min
+
 Minimum value.  
 This needs to be in the same format as the inputformat.  
 
-## max
-Maximum value.   
+### max
+
+Maximum value.
 This needs to be in the same format as the inputformat.
 
-## prefillYear
+### prefillYear
+
 Enable/disable prefilling of the year.  
 Default: true
 

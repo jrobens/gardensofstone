@@ -1190,10 +1190,10 @@
         },
         {
             "name": "ckeditor/autogrow",
-            "version": "4.18.0",
+            "version": "4.21.0",
             "dist": {
                 "type": "zip",
-                "url": "https://download.ckeditor.com/autogrow/releases/autogrow_4.18.0.zip"
+                "url": "https://download.ckeditor.com/autogrow/releases/autogrow_4.21.0.zip"
             },
             "type": "drupal-library",
             "extra": {
@@ -1205,10 +1205,10 @@
         },
         {
             "name": "ckeditor/codemirror",
-            "version": "v1.18.3",
+            "version": "v1.18.7",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/w8tcha/CKEditor-CodeMirror-Plugin/releases/download/v1.18.3/CKEditor-CodeMirror-Plugin.zip"
+                "url": "https://github.com/w8tcha/CKEditor-CodeMirror-Plugin/releases/download/v1.18.7/CKEditor-CodeMirror-Plugin.zip"
             },
             "type": "drupal-library",
             "extra": {
@@ -1220,10 +1220,10 @@
         },
         {
             "name": "ckeditor/fakeobjects",
-            "version": "4.18.0",
+            "version": "4.21.0",
             "dist": {
                 "type": "zip",
-                "url": "https://download.ckeditor.com/fakeobjects/releases/fakeobjects_4.18.0.zip"
+                "url": "https://download.ckeditor.com/fakeobjects/releases/fakeobjects_4.21.0.zip"
             },
             "type": "drupal-library",
             "extra": {
@@ -1235,10 +1235,10 @@
         },
         {
             "name": "ckeditor/image",
-            "version": "4.18.0",
+            "version": "4.21.0",
             "dist": {
                 "type": "zip",
-                "url": "https://download.ckeditor.com/image/releases/image_4.18.0.zip"
+                "url": "https://download.ckeditor.com/image/releases/image_4.21.0.zip"
             },
             "type": "drupal-library",
             "extra": {
@@ -1250,10 +1250,10 @@
         },
         {
             "name": "ckeditor/link",
-            "version": "4.18.0",
+            "version": "4.21.0",
             "dist": {
                 "type": "zip",
-                "url": "https://download.ckeditor.com/link/releases/link_4.18.0.zip"
+                "url": "https://download.ckeditor.com/link/releases/link_4.21.0.zip"
             },
             "type": "drupal-library",
             "extra": {
@@ -1265,10 +1265,10 @@
         },
         {
             "name": "codemirror/codemirror",
-            "version": "5.65.3",
+            "version": "5.65.12",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/components/codemirror/archive/refs/tags/5.65.3.zip"
+                "url": "https://github.com/components/codemirror/archive/refs/tags/5.65.12.zip"
             },
             "type": "drupal-library",
             "extra": {
@@ -2977,17 +2977,17 @@
         },
         {
             "name": "drupal/better_social_sharing_buttons",
-            "version": "4.0.5",
+            "version": "4.0.6",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/better_social_sharing_buttons.git",
-                "reference": "4.0.5"
+                "reference": "4.0.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/better_social_sharing_buttons-4.0.5.zip",
-                "reference": "4.0.5",
-                "shasum": "76f9a1187cd07a1dc3f81ab855acae007255f767"
+                "url": "https://ftp.drupal.org/files/projects/better_social_sharing_buttons-4.0.6.zip",
+                "reference": "4.0.6",
+                "shasum": "fc1f3c825fa574a2d263709113d95783f63d5e6a"
             },
             "require": {
                 "drupal/core": "^9.3 || ^10"
@@ -2995,8 +2995,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "4.0.5",
-                    "datestamp": "1688749447",
+                    "version": "4.0.6",
+                    "datestamp": "1689714767",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5813,17 +5813,17 @@
         },
         {
             "name": "drupal/leaflet",
-            "version": "10.0.16",
+            "version": "10.0.17",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/leaflet.git",
-                "reference": "10.0.16"
+                "reference": "10.0.17"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/leaflet-10.0.16.zip",
-                "reference": "10.0.16",
-                "shasum": "5b37163e3b1fde2e247bfa2c95e898f81888f903"
+                "url": "https://ftp.drupal.org/files/projects/leaflet-10.0.17.zip",
+                "reference": "10.0.17",
+                "shasum": "fda6332826c933d2d8f4c763a2ec0a6146733a82"
             },
             "require": {
                 "drupal/core": "^9 || ^10",
@@ -5832,8 +5832,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "10.0.16",
-                    "datestamp": "1688332238",
+                    "version": "10.0.17",
+                    "datestamp": "1689717156",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -7156,17 +7156,17 @@
         },
         {
             "name": "drupal/views_add_button",
-            "version": "2.0.7",
+            "version": "2.0.8",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/views_add_button.git",
-                "reference": "2.0.7"
+                "reference": "2.0.8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/views_add_button-2.0.7.zip",
-                "reference": "2.0.7",
-                "shasum": "24dbdaebe0fcd2ccdab5afb818ac109d60a2ec45"
+                "url": "https://ftp.drupal.org/files/projects/views_add_button-2.0.8.zip",
+                "reference": "2.0.8",
+                "shasum": "a8e755efb598742062d53c95489d9edd6aee7838"
             },
             "require": {
                 "drupal/core": "^8 || ^9 || ^10",
@@ -7175,8 +7175,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.0.7",
-                    "datestamp": "1685978349",
+                    "version": "2.0.8",
+                    "datestamp": "1689686062",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -8512,10 +8512,10 @@
         },
         {
             "name": "jquery/inputmask",
-            "version": "5.0.7",
+            "version": "5.0.8",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/RobinHerbots/jquery.inputmask/archive/refs/tags/5.0.7.zip"
+                "url": "https://github.com/RobinHerbots/jquery.inputmask/archive/refs/tags/5.0.8.zip"
             },
             "type": "drupal-library",
             "extra": {
@@ -8572,10 +8572,10 @@
         },
         {
             "name": "jquery/textcounter",
-            "version": "0.9.0",
+            "version": "0.9.1",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/ractoon/jQuery-Text-Counter/archive/refs/tags/0.9.0.zip"
+                "url": "https://github.com/ractoon/jQuery-Text-Counter/archive/refs/tags/0.9.1.zip"
             },
             "type": "drupal-library",
             "extra": {
@@ -17203,16 +17203,16 @@
         },
         {
             "name": "drupal/coder",
-            "version": "8.3.20",
+            "version": "8.3.21",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pfrenssen/coder.git",
-                "reference": "88055e40931a56074b6510a631d3403794c91625"
+                "reference": "a0b76c6c8ea277b07d58fa75dcacf102a203ad51"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pfrenssen/coder/zipball/88055e40931a56074b6510a631d3403794c91625",
-                "reference": "88055e40931a56074b6510a631d3403794c91625",
+                "url": "https://api.github.com/repos/pfrenssen/coder/zipball/a0b76c6c8ea277b07d58fa75dcacf102a203ad51",
+                "reference": "a0b76c6c8ea277b07d58fa75dcacf102a203ad51",
                 "shasum": ""
             },
             "require": {
@@ -17250,7 +17250,7 @@
                 "issues": "https://www.drupal.org/project/issues/coder",
                 "source": "https://www.drupal.org/project/coder"
             },
-            "time": "2023-06-15T07:16:09+00:00"
+            "time": "2023-07-17T15:36:49+00:00"
         },
         {
             "name": "drupal/core-dev",

@@ -1,9 +1,9 @@
 #  src/drupal-update.sh -y
 
 minor_updates=$1
-job='CBI'
+job='GOS'
 
-updates=$(composer outdated --minor-only --direct)
+updates=$(composer outdated --minor-only --direct | sed 's/^/    /')
 echo "updates are: \n ${updates}"
 
 if [[ $updates =~ 'drupal/core' ]]; then
@@ -12,12 +12,21 @@ fi
 
 today=$(date '+%Y-%m-%d')
 updates_clean=$(echo $updates | awk '{print $1 $2}' | sed 's/\n/ /g')
-work_log="*:JR:${today}:${job}:0.2: sys+ update module. ${updates_clean}\n"
+work_log="*:JR:${today}:${job}:0.2: sys+ update drupal. ${updates_clean}\n"
 sed -i.old "1s;^;${work_log};" doc/work.md
 
+## Update the release file
+ex doc/release.md <<eof
+1 insert
+## Updates ${today}
+
+${updates}
+.
+xit
+eof
 
 # composer outdated
-# composer update 'drupal/*'
+# Change to composer outdated 'drupal/*' ?
 if [[ $minor_updates == '-y' ]]; then
   module_updates=$(echo "$updates" | awk '{print $1}')
   echo "Non core drupal modules that need updating: ${module_updates}"
