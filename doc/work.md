@@ -1,3 +1,5 @@
+*:JR:2023-08-31:GOS:0.2: sys+ update drupal. civicrm/civicrm-core5.64.0
+*:JR:2023-08-10:GOS:0.2: sys+ update drupal. civicrm/civicrm-core5.63.1
 *:JR:2023-07-21:GOS:0.2: sys+ update drupal. ckeditor/autogrow4.18.0
 *:JR:2023-07-15:CBI:0.2: sys+ update module. civicrm/civicrm-core5.62.0
 *:JR:2023-06-09:CBI:0.2: sys+ update module. civicrm/civicrm-core5.59.4

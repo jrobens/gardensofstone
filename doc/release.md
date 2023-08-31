@@ -1,3 +1,31 @@
+## Updates 2023-08-31
+
+    civicrm/civicrm-core         5.64.0    ! 5.64.2    Open source constituent relationship management for non-profits, NGOs and advocacy organizations.
+    civicrm/civicrm-drupal-8     5.64.0    ! 5.64.2    Open source constituent relationship management for non-profits, NGOs and advocacy organizations.
+    civicrm/civicrm-packages     5.64.0    ! 5.64.2    Legacy third party dependencies for CiviCRM
+    drupal/console               1.9.9     ! 1.9.10    The Drupal CLI. A tool to generate boilerplate code, interact with and debug Drupal.
+    drupal/core_event_dispatcher 3.3.3     ! 3.3.4     Registers event dispatchers for several core hooks
+    drupal/leaflet               10.0.19   ! 10.1.0    Integration with the Leaflet map scripting library.
+    drupal/markdown              3.0.0-rc2 ! 3.0.0-rc3 Provides Markdown integration for Drupal and allows content to be formatted in a simple plain-text syntax that is transformed into valid HTML.
+    drupal/masquerade            2.0.0-rc3 ! 2.0.0-rc4 Allows privileged users to masquerade as another user.
+## Expand collapse
+
+expand_collapse_formatter
+
+## Updates 2023-08-10
+
+better_socia   update_layout_   post-update   Update default social sharing
+l_sharing_bu   builder_more_s                 buttons block for Layout ttons          ettings                        Builder sections.
+
+
+    civicrm/civicrm-core     5.63.1    ! 5.64.0    Open source constituent relationship management for non-profits, NGOs and advocacy organizations.
+    civicrm/civicrm-drupal-8 5.63.1    ! 5.64.0    Open source constituent relationship management for non-profits, NGOs and advocacy organizations.
+    civicrm/civicrm-packages 5.63.1    ! 5.64.0    Legacy third party dependencies for CiviCRM
+    drupal/console           1.9.9     ! 1.9.10    The Drupal CLI. A tool to generate boilerplate code, interact with and debug Drupal.
+    drupal/leaflet           10.0.17   ! 10.0.19   Integration with the Leaflet map scripting library.
+    drupal/masquerade        2.0.0-rc2 ! 2.0.0-rc3 Allows privileged users to masquerade as another user.
+    drupal/mediteran         1.29.0    ! 1.30.0    Mediteran is a clean and simple administration theme designed by <a href="https://drupalation.com" target="_blank">Drupalation</a> and supported by <a href="https://ramsalt.com" target="_blank">Ramsalt</a>.
+    drupal/xmlsitemap        1.4.0     ! 1.5.0     Creates XML Sitemaps for the site
 
 # Gardens of stone 2
 

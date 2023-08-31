@@ -39,6 +39,7 @@
         "drupal/core-recommended": "^9",
         "drupal/core_event_dispatcher": "^3.1",
         "drupal/countup": "^2.1",
+        "drupal/dropzonejs": "^2.8",
         "drupal/drulma": "^2.0",
         "drupal/drulma_companion": "^2.1",
         "drupal/ds": "^3.9",
@@ -56,6 +57,7 @@
         "drupal/lp_fontawesome": "^5.13001",
         "drupal/markdown": "^3.0@RC",
         "drupal/masquerade": "^2.0@RC",
+        "drupal/media_bulk_upload": "^3.0",
         "drupal/mediteran": "^1.16",
         "drupal/menu_item_extras": "^2.13",
         "drupal/menu_link_attributes": "^1.2",
@@ -76,6 +78,7 @@
         "drupal/webform_civicrm": "^6.2",
         "drupal/xmlsitemap": "^1.0",
         "drush/drush": "^10.4",
+        "enyo/dropzone": "^5.7",
         "league/commonmark": "^1.0",
         "wikimedia/composer-merge-plugin": "^2.0"
     },
@@ -163,7 +166,8 @@
         },
         "merge-plugin": {
             "include": [
-                "web/modules/contrib/webform/composer.libraries.json"
+                "web/modules/contrib/webform/composer.libraries.json",
+                "web/modules/contrib/dropzonejs/composer.libraries.json"
             ]
         },
         "compile-whitelist": [

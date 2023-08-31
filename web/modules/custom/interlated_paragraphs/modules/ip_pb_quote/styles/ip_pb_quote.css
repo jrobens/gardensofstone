@@ -23,6 +23,7 @@
 .paragraph--type--quote a, .paragraph--type--quote a:visited {
   color: #a2046b;
   font-family: "Mukta Malar", sans-serif;
+  text-shadow: 0 4px 9px rgba(162, 4, 107, 0.67);
 }
 
 /*# sourceMappingURL=ip_pb_quote.css.map */
