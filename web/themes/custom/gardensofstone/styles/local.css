@@ -430,30 +430,38 @@ section.hero.is-primary.block-views-blockevents-block-2 .views-field-title a:vis
   width: 2rem;
   transform: translate(-1rem, 0.5rem);
 }
-.webform-submission-add-form .webform-options-display-buttons .form-item, .webform-submission-form .webform-options-display-buttons .form-item {
+
+.panel-block:not(:last-child), .panel-tabs:not(:last-child) {
+  border-bottom: 0;
+  padding: 0.3rem 0.75rem;
+}
+.panel-block:not(:last-child) .js-form-type-checkbox, .panel-tabs:not(:last-child) .js-form-type-checkbox {
+  margin-top: 0;
+}
+.panel-block:not(:last-child) .webform-options-display-buttons .form-item, .panel-tabs:not(:last-child) .webform-options-display-buttons .form-item {
   margin: 0.3rem 0;
 }
-.webform-submission-add-form p, .webform-submission-form p {
+.panel-block:not(:last-child) p, .panel-tabs:not(:last-child) p {
   margin-bottom: 0.3rem;
 }
-.webform-submission-add-form .button.is-link, .webform-submission-form .button.is-link {
+.panel-block:not(:last-child) .button.is-link, .panel-tabs:not(:last-child) .button.is-link {
   background-color: #a2671c;
   color: white;
   margin: 0.3rem 0;
 }
-.webform-submission-add-form .webform-progress ul li, .webform-submission-form .webform-progress ul li {
+.panel-block:not(:last-child) .webform-progress ul li, .panel-tabs:not(:last-child) .webform-progress ul li {
   list-style-type: none;
 }
-.webform-submission-add-form ol, .webform-submission-form ol {
+.panel-block:not(:last-child) ol, .panel-tabs:not(:last-child) ol {
   margin-left: 1rem;
 }
-.webform-submission-add-form ul, .webform-submission-form ul {
+.panel-block:not(:last-child) ul, .panel-tabs:not(:last-child) ul {
   margin-left: 1rem;
 }
-.webform-submission-add-form ul li, .webform-submission-form ul li {
+.panel-block:not(:last-child) ul li, .panel-tabs:not(:last-child) ul li {
   list-style-type: disc;
 }
-.webform-submission-add-form .wizard-page-title, .webform-submission-form .wizard-page-title {
+.panel-block:not(:last-child) .wizard-page-title, .panel-tabs:not(:last-child) .wizard-page-title {
   font-size: 2rem;
   color: #a2046b;
   font-weight: bold;
