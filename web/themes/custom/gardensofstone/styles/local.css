@@ -446,30 +446,30 @@ section.hero.is-primary.block-views-blockevents-block-2 .views-field-title a:vis
   margin: 0.3rem 0;
 }
 
-.webform-options-display-buttons-wrapper .webform-options-display-buttons {
+.fieldset-wrapper .webform-options-display-buttons {
   margin: 1rem 0;
 }
-.webform-options-display-buttons-wrapper .webform-options-display-buttons p {
+.fieldset-wrapper .webform-options-display-buttons p {
   margin-bottom: 0.3rem;
 }
-.webform-options-display-buttons-wrapper .webform-options-display-buttons .button.is-link {
+.fieldset-wrapper .webform-options-display-buttons .button.is-link {
   background-color: #a2671c;
   color: white;
   margin: 0.3rem 0;
 }
-.webform-options-display-buttons-wrapper .webform-options-display-buttons .webform-progress ul li {
+.fieldset-wrapper .webform-options-display-buttons .webform-progress ul li {
   list-style-type: none;
 }
-.webform-options-display-buttons-wrapper .webform-options-display-buttons ol {
+.fieldset-wrapper .webform-options-display-buttons ol {
   margin-left: 1rem;
 }
-.webform-options-display-buttons-wrapper .webform-options-display-buttons ul {
+.fieldset-wrapper .webform-options-display-buttons ul {
   margin-left: 1rem;
 }
-.webform-options-display-buttons-wrapper .webform-options-display-buttons ul li {
+.fieldset-wrapper .webform-options-display-buttons ul li {
   list-style-type: disc;
 }
-.webform-options-display-buttons-wrapper .webform-options-display-buttons .wizard-page-title {
+.fieldset-wrapper .webform-options-display-buttons .wizard-page-title {
   font-size: 2rem;
   color: #a2046b;
   font-weight: bold;
