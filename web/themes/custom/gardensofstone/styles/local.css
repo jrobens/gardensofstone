@@ -445,38 +445,31 @@ section.hero.is-primary.block-views-blockevents-block-2 .views-field-title a:vis
 .panel-tabs:not(:last-child) .webform-options-display-buttons .form-item {
   margin: 0.3rem 0;
 }
-.panel-block:not(:last-child).form-wrapper .webform-options-display-buttons,
-.panel-tabs:not(:last-child) .webform-options-display-buttons {
+
+.webform-options-display-buttons-wrapper .webform-options-display-buttons {
   margin: 1rem 0;
 }
-.panel-block:not(:last-child).form-wrapper p,
-.panel-tabs:not(:last-child) p {
+.webform-options-display-buttons-wrapper .webform-options-display-buttons p {
   margin-bottom: 0.3rem;
 }
-.panel-block:not(:last-child).form-wrapper .button.is-link,
-.panel-tabs:not(:last-child) .button.is-link {
+.webform-options-display-buttons-wrapper .webform-options-display-buttons .button.is-link {
   background-color: #a2671c;
   color: white;
   margin: 0.3rem 0;
 }
-.panel-block:not(:last-child).form-wrapper .webform-progress ul li,
-.panel-tabs:not(:last-child) .webform-progress ul li {
+.webform-options-display-buttons-wrapper .webform-options-display-buttons .webform-progress ul li {
   list-style-type: none;
 }
-.panel-block:not(:last-child).form-wrapper ol,
-.panel-tabs:not(:last-child) ol {
+.webform-options-display-buttons-wrapper .webform-options-display-buttons ol {
   margin-left: 1rem;
 }
-.panel-block:not(:last-child).form-wrapper ul,
-.panel-tabs:not(:last-child) ul {
+.webform-options-display-buttons-wrapper .webform-options-display-buttons ul {
   margin-left: 1rem;
 }
-.panel-block:not(:last-child).form-wrapper ul li,
-.panel-tabs:not(:last-child) ul li {
+.webform-options-display-buttons-wrapper .webform-options-display-buttons ul li {
   list-style-type: disc;
 }
-.panel-block:not(:last-child).form-wrapper .wizard-page-title,
-.panel-tabs:not(:last-child) .wizard-page-title {
+.webform-options-display-buttons-wrapper .webform-options-display-buttons .wizard-page-title {
   font-size: 2rem;
   color: #a2046b;
   font-weight: bold;
