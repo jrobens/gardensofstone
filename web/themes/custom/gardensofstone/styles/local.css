@@ -430,27 +430,28 @@ section.hero.is-primary.block-views-blockevents-block-2 .views-field-title a:vis
   width: 2rem;
   transform: translate(-1rem, 0.5rem);
 }
-
-.panel-block:not(:last-child).form-wrapper,
-.panel-tabs:not(:last-child) {
+.webform-submission-add-form .form-item-markup ol, .webform-submission-form .form-item-markup ol {
+  margin: 0.3rem 1rem;
+}
+.webform-submission-add-form .panel-block:not(:last-child).form-wrapper,
+.webform-submission-add-form .panel-tabs:not(:last-child), .webform-submission-form .panel-block:not(:last-child).form-wrapper,
+.webform-submission-form .panel-tabs:not(:last-child) {
   border-bottom: 0;
   padding: 0 0.75rem;
   margin-top: 0;
 }
-.panel-block:not(:last-child).form-wrapper .js-form-type-checkbox,
-.panel-tabs:not(:last-child) .js-form-type-checkbox {
+.webform-submission-add-form .js-form-type-checkbox, .webform-submission-form .js-form-type-checkbox {
   margin-top: 0;
 }
-.panel-block:not(:last-child).form-wrapper .webform-options-display-buttons .form-item,
-.panel-tabs:not(:last-child) .webform-options-display-buttons .form-item {
+.webform-submission-add-form .webform-options-display-buttons .form-item, .webform-submission-form .webform-options-display-buttons .form-item {
   margin: 0.3rem 0;
+}
+.webform-submission-add-form p, .webform-submission-form p {
+  margin-bottom: 0.3rem;
 }
 
 .fieldset-wrapper .webform-options-display-buttons {
   margin: 1rem 0;
-}
-.fieldset-wrapper .webform-options-display-buttons p {
-  margin-bottom: 0.3rem;
 }
 .fieldset-wrapper .webform-options-display-buttons .button.is-link {
   background-color: #a2671c;
