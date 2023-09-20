@@ -1,0 +1,440 @@
+diff --git a/config/schema/video.schema.yml b/config/schema/video.schema.yml
+index 7f6fb21..3030603 100644
+--- a/config/schema/video.schema.yml
++++ b/config/schema/video.schema.yml
+@@ -71,6 +71,22 @@ field.formatter.settings.video_player:
+     preload:
+       type: string
+       label: 'Preload'
++    poster:
++      type: mapping
++      label: 'Poster'
++      mapping:
++        type:
++          type: string
++          label: 'Type'
++        image_field:
++          type: string
++          label: 'Image field'
++        image_style:
++          type: string
++          label: 'Image style'
++        image_url:
++          type: string
++          label: 'Image URL'
+       
+ field.formatter.settings.video_player_list:
+   type: mapping
+diff --git a/src/Plugin/Field/FieldFormatter/VideoPlayerFormatter.php b/src/Plugin/Field/FieldFormatter/VideoPlayerFormatter.php
+index 870fe1a..9f82b1a 100644
+--- a/src/Plugin/Field/FieldFormatter/VideoPlayerFormatter.php
++++ b/src/Plugin/Field/FieldFormatter/VideoPlayerFormatter.php
+@@ -2,15 +2,16 @@
+ 
+ namespace Drupal\video\Plugin\Field\FieldFormatter;
+ 
++use Drupal\Core\Entity\EntityFieldManagerInterface;
++use Drupal\Core\Entity\FieldableEntityInterface;
+ use Drupal\Core\Field\FieldItemListInterface;
+ use Drupal\Core\Field\FieldDefinitionInterface;
+-use Drupal\Core\Link;
+ use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
+ use Drupal\Core\Session\AccountInterface;
+ use Drupal\Core\Url;
++use Drupal\image\Entity\ImageStyle;
+ use Symfony\Component\DependencyInjection\ContainerInterface;
+ use Drupal\Core\Form\FormStateInterface;
+-use Drupal\Core\Cache\Cache;
+ 
+ /**
+  * Plugin implementation of the 'video_player' formatter.
+@@ -23,7 +24,6 @@ use Drupal\Core\Cache\Cache;
+  *   }
+  * )
+  */
+-
+ class VideoPlayerFormatter extends VideoPlayerFormatterBase implements ContainerFactoryPluginInterface {
+ 
+   /**
+@@ -33,6 +33,13 @@ class VideoPlayerFormatter extends VideoPlayerFormatterBase implements Container
+    */
+   protected $currentUser;
+ 
++  /**
++   * The entity field manager.
++   *
++   * @var \Drupal\Core\Entity\EntityFieldManagerInterface
++   */
++  protected $entityFieldManager;
++
+   /**
+    * Constructs an VideoPlayerFormatter object.
+    *
+@@ -52,10 +59,13 @@ class VideoPlayerFormatter extends VideoPlayerFormatterBase implements Container
+    *   Any third party settings settings.
+    * @param \Drupal\Core\Session\AccountInterface $current_user
+    *   The current user.
++   * @param \Drupal\Core\Entity\EntityFieldManagerInterface $entity_field_manager
++   *   The entity field manager.
+    */
+-  public function __construct($plugin_id, $plugin_definition, FieldDefinitionInterface $field_definition, array $settings, $label, $view_mode, array $third_party_settings, AccountInterface $current_user) {
++  public function __construct($plugin_id, $plugin_definition, FieldDefinitionInterface $field_definition, array $settings, $label, $view_mode, array $third_party_settings, AccountInterface $current_user, EntityFieldManagerInterface $entity_field_manager) {
+     parent::__construct($plugin_id, $plugin_definition, $field_definition, $settings, $label, $view_mode, $third_party_settings);
+     $this->currentUser = $current_user;
++    $this->entityFieldManager = $entity_field_manager;
+   }
+ 
+   /**
+@@ -70,7 +80,8 @@ class VideoPlayerFormatter extends VideoPlayerFormatterBase implements Container
+       $configuration['label'],
+       $configuration['view_mode'],
+       $configuration['third_party_settings'],
+-      $container->get('current_user')
++      $container->get('current_user'),
++      $container->get('entity_field.manager')
+     );
+   }
+ 
+@@ -79,14 +90,15 @@ class VideoPlayerFormatter extends VideoPlayerFormatterBase implements Container
+    */
+   public static function defaultSettings() {
+     return [
+-      'width' => '854',
+-      'height' => '480',
+-      'controls' => TRUE,
+-      'autoplay' => FALSE,
+-      'loop' => FALSE,
+-      'muted' => FALSE,
+-      'preload' => 'none'
+-    ] + parent::defaultSettings();
++        'width' => '854',
++        'height' => '480',
++        'controls' => TRUE,
++        'autoplay' => FALSE,
++        'loop' => FALSE,
++        'muted' => FALSE,
++        'preload' => 'none',
++        'poster' => [],
++      ] + parent::defaultSettings();
+   }
+ 
+   /**
+@@ -130,11 +142,73 @@ class VideoPlayerFormatter extends VideoPlayerFormatterBase implements Container
+       '#type' => 'select',
+       '#default_value' => $this->getSetting('preload'),
+       '#options' => [
+-        'none' =>'none',
++        'none' => 'none',
+         'metadata' => 'metadata',
+-        'auto' => 'auto'
++        'auto' => 'auto',
++      ],
++      '#description' => t('Hint to the browser about whether optimistic downloading of the video itself or its metadata is considered worthwhile.'),
++    ];
++    $poster_settings = $this->getSetting('poster');
++    $element['poster'] = [
++      '#type' => 'fieldset',
++      '#title' => $this->t('Poster image'),
++      '#tree' => TRUE,
++    ];
++    $element['poster']['type'] = [
++      '#title' => t('Type'),
++      '#type' => 'select',
++      '#default_value' => $poster_settings['type'] ?? '',
++      '#options' => [
++        '' => t('- None -'),
++        'image_field' => t('Image field'),
++        'image_url' => t('Custom URL (hardcoded)'),
++      ],
++      '#description' => t('Configure the HTML5 video poster attribute. Leave empty to ignore the poster attribute.'),
++    ];
++    $element['poster']['image_field'] = [
++      '#title' => t('Image field'),
++      '#type' => 'select',
++      '#default_value' => $poster_settings['image_field'] ?? '',
++      '#options' => $this->getPosterImageFieldOptions($form_state),
++      '#description' => t('Select an image field to use for the poster attribute.'),
++      '#states' => [
++        'visible' => [
++          ':input[name$="[settings][poster][type]"]' => [
++            'value' => 'image_field',
++          ],
++        ],
++      ],
++    ];
++    $element['poster']['image_style'] = [
++      '#title' => t('Image style'),
++      '#type' => 'select',
++      '#default_value' => $poster_settings['image_style'] ?? '',
++      '#options' => image_style_options(),
++      '#description' => t('Select an image style to use for the poster image.'),
++      '#states' => [
++        'visible' => [
++          ':input[name$="[settings][poster][type]"]' => [
++            'value' => 'image_field',
++          ],
++          ':input[name$="[settings][poster][image_field]"]' => [
++            '!value' => '',
++          ],
++        ],
++      ],
++    ];
++    $element['poster']['image_url'] = [
++      '#title' => t('Image URL (hardcoded)'),
++      '#type' => 'url',
++      '#default_value' => $poster_settings['image_url'] ?? '',
++      '#pattern' => '(http(s?):)([/|.|\w|\s|-])*\.(?:jpe?g|gif|png)((\?.*)$|)',
++      '#description' => t('Enter a URL to a static file. Please make sure the file exists.'),
++      '#states' => [
++        'visible' => [
++          ':input[name$="[settings][poster][type]"]' => [
++            'value' => 'image_url',
++          ],
++        ],
+       ],
+-      '#description' => t('Hint to the browser about whether optimistic downloading of the video itself or its metadata is considered worthwhile.')
+     ];
+     return $element;
+   }
+@@ -143,17 +217,20 @@ class VideoPlayerFormatter extends VideoPlayerFormatterBase implements Container
+    * {@inheritdoc}
+    */
+   public function settingsSummary() {
++    $poster_settings = $this->getSetting('poster');
+     $summary = [];
+     $summary[] = t('HTML5 Video (@widthx@height@controls@autoplay@loop@muted).', [
+       '@width' => $this->getSetting('width'),
+       '@height' => $this->getSetting('height'),
+-      '@controls' => $this->getSetting('controls') ? t(', controls') : '' ,
+-      '@autoplay' => $this->getSetting('autoplay') ? t(', autoplaying') : '' ,
++      '@controls' => $this->getSetting('controls') ? t(', controls') : '',
++      '@autoplay' => $this->getSetting('autoplay') ? t(', autoplaying') : '',
+       '@loop' => $this->getSetting('loop') ? t(', looping') : '' ,
+       '@muted' => $this->getSetting('muted') ? t(', muted') : '',
++      '@poster' => (isset($poster_settings['type']) && !empty($poster_settings['type']) ? t(', poster') : ''),
+     ]);
+     return $summary;
+   }
++
+   /**
+    * {@inheritdoc}
+    */
+@@ -170,10 +247,12 @@ class VideoPlayerFormatter extends VideoPlayerFormatterBase implements Container
+     foreach ($files as $delta => $file) {
+       $video_uri = $file->getFileUri();
+       $relative_url = file_url_transform_relative(file_create_url($video_uri));
++      $attributes = $this->getSettings();
++      $attributes['poster'] = $this->getPosterAttributeValue($items->getEntity(), $attributes['poster']);
+       $elements[$delta] = [
+         '#theme' => 'video_player_formatter',
+         '#items' => [Url::fromUserInput($relative_url)],
+-        '#player_attributes' => $this->getSettings(),
++        '#player_attributes' => $attributes,
+       ];
+     }
+     return $elements;
+@@ -183,17 +262,180 @@ class VideoPlayerFormatter extends VideoPlayerFormatterBase implements Container
+    * {@inheritdoc}
+    */
+   public static function isApplicable(FieldDefinitionInterface $field_definition) {
+-    if(empty($field_definition->getTargetBundle())){
++    if (empty($field_definition->getTargetBundle())) {
+       return TRUE;
+     }
+-    else{
++    else {
+       $entity_form_display = entity_get_form_display($field_definition->getTargetEntityTypeId(), $field_definition->getTargetBundle(), 'default');
+       $widget = $entity_form_display->getRenderer($field_definition->getName());
+       $widget_id = $widget->getBaseId();
+-      if($widget_id == 'video_upload'){
++      if ($widget_id == 'video_upload') {
+         return TRUE;
+       }
+     }
+     return FALSE;
+   }
++
++  /**
++   * Gets an array of fields as key/value pairs.
++   *
++   * Gets an array of fields that are suitable for use as poster image.
++   *
++   * @param \Drupal\Core\Form\FormStateInterface $form_state
++   *   The $form_state object.
++   * @param bool $include_empty
++   *   If TRUE a '- None -' option will be inserted in the options array.
++   *
++   * @return array
++   *   Array of fields. Both key and value are set to field name.
++   */
++  private function getPosterImageFieldOptions(FormStateInterface $form_state, $include_empty = TRUE) {
++    $options = [];
++
++    // Optional parameter.
++    if ($include_empty) {
++      $options = ['' => t('- None -')];
++    }
++
++    // Content entities.
++    if (isset($form_state->getStorage()['entity_form_initialized'])) {
++      // Get option list based on Entity type.
++      $options = $this->getPosterImageFieldOptionsEntity(FALSE);
++    }
++
++    // Views.
++    if (isset($form_state->getStorage()['view'])) {
++      // Get list of fields form current Views display.
++      $view = $form_state->getStorage()['view'];
++      $view_display = $view->getExecutable()->getDisplay();
++      $view_fields = $view_display->getHandlers('field');
++
++      // Get option list based on Vies fields.
++      $options = $this->getPosterImageFieldOptionsViews($view_fields, FALSE);
++    }
++
++    return $options;
++  }
++
++  /**
++   * Gets an array of ENTITY fields as key/value pairs.
++   *
++   * Gets an array of ENTITY fields that are suitable for use as poster image.
++   *
++   * @param bool $include_empty
++   *   If TRUE a '- None -' option will be inserted in the options array.
++   *
++   * @return array
++   *   Array of fields. Both key and value are set to field name.
++   */
++  protected function getPosterImageFieldOptionsEntity($include_empty = TRUE) {
++    $options = [];
++
++    // Optional parameter.
++    if ($include_empty) {
++      $options = ['' => t('- None -')];
++    }
++
++    // Get target entity type and bundle.
++    $type = $this->fieldDefinition->getTargetEntityTypeId();
++    $bundle = $this->fieldDefinition->getTargetBundle();
++
++    if (!empty($bundle)) {
++      // Get all fields of target entity type and bundle.
++      $fields = $this->entityFieldManager->getFieldDefinitions($type, $bundle);
++
++      foreach ($fields as $key => $value) {
++        if ($value->getType() === 'image') {
++          $options[$key] = $value->getLabel();
++        }
++      }
++    }
++
++    return $options;
++  }
++
++  /**
++   * Gets an array of VIEWS fields as key/value pairs.
++   *
++   * Gets an array of VIEWS fields that are suitable for use as poster image.
++   *
++   * @param array $view_fields
++   *   Array with (Views) fields to check.
++   * @param bool $include_empty
++   *   If TRUE a '- None -' option will be inserted in the options array.
++   *
++   * @return array
++   *   Array of fields. Both key and value are set to field name.
++   */
++  protected function getPosterImageFieldOptionsViews(array $view_fields, $include_empty = TRUE) {
++    $options = [];
++
++    // Optional parameter.
++    if ($include_empty) {
++      $options = ['' => t('- None -')];
++    }
++
++    // Get array with all image fields.
++    $fields_map = $this->entityFieldManager->getFieldMapByFieldType('image');
++
++    // Create array with fields.
++    // Map $view_fields against $fields_map.
++    foreach ($view_fields as $key => $value) {
++      $entity_type = $value->definition['entity_type'];
++      if ($fields_map[$entity_type] && isset($fields_map[$entity_type][$key])) {
++        $options[$key] = $value->configuration['title'];
++      }
++    }
++
++    return $options;
++  }
++
++  /**
++   * Gets an image url based on the Entity and settings.
++   *
++   * @param \Drupal\Core\Entity\FieldableEntityInterface $entity
++   *   The entity with the video and image fields.
++   * @param array $settings
++   *   Array with field formatter poster image settings.
++   *
++   * @return mixed|string
++   *   String with URL to poster image (or empty string).
++   *
++   * @throws \Drupal\Core\TypedData\Exception\MissingDataException
++   */
++  protected function getPosterAttributeValue(FieldableEntityInterface $entity, array $settings) {
++    $poster_url = '';
++
++    if (isset($settings['type']) && !empty($settings['type'])) {
++      // Image field.
++      if ($settings['type'] === 'image_field' && isset($settings['image_field']) && !empty($settings['image_field'])) {
++        // Get image field URL.
++        if ($entity->hasField($settings['image_field']) && !$entity->get($settings['image_field'])->isEmpty()) {
++          $poster_url = $entity->get($settings['image_field'])
++            ->first()
++            ->get('entity')
++            ->getTarget()
++            ->get('uri')
++            ->first()
++            ->getString();
++        }
++
++        // Get image field image style URL.
++        if (isset($settings['image_style']) && !empty($settings['image_style']) && !empty($poster_url)) {
++          $poster_url = ImageStyle::load($settings['image_style'])->buildUrl($poster_url);
++        }
++        else {
++          $poster_url = file_create_url($poster_url);
++        }
++      }
++
++      // Image URL (hardcoded).
++      if ($settings['type'] === 'image_url' && isset($settings['image_url']) && !empty($settings['image_url'])) {
++        $poster_url = Url::fromUri($settings['image_url'])->toString();
++      }
++    }
++
++    return $poster_url;
++  }
++
+ }
+diff --git a/templates/video-player-formatter.html.twig b/templates/video-player-formatter.html.twig
+index c7ddc73..48ee0ad 100644
+--- a/templates/video-player-formatter.html.twig
++++ b/templates/video-player-formatter.html.twig
+@@ -9,12 +9,13 @@
+  *   - width: The width of the video (if known).
+  *   - height: The height of the video (if known).
+  *   - autoplay: Autoplay on or off
++ *   - poster: URL to poster image (or empty).
+  *
+  * @ingroup themeable
+  */
+ #}
+-<video preload="{{ player_attributes.preload }}" {{ player_attributes.controls ? 'controls' : '' }} style="width:{{ player_attributes.width }}px;height:{{ player_attributes.height }}px;" {{ player_attributes.autoplay ? 'autoplay' : '' }} {{ player_attributes.loop ? 'loop' : '' }} {{ player_attributes.muted ? 'muted' : '' }}>
++<video preload="{{ player_attributes.preload }}" {{ player_attributes.controls ? 'controls' : '' }} style="width:{{ player_attributes.width }}px;height:{{ player_attributes.height }}px;" {{ player_attributes.autoplay ? 'autoplay' : '' }} {{ player_attributes.loop ? 'loop' : '' }} {{ player_attributes.muted ? 'muted' : '' }} {{ player_attributes.poster ? 'poster=' ~ player_attributes.poster }}>
+   {% for user in items %}
+     <source src="{{ user }}"/>
+   {% endfor %}
+-</video>
+\ No newline at end of file
++</video>

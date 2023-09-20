@@ -1,3 +1,13 @@
+## Updates 2023-09-20
+
+    civicrm/civicrm-core                 5.64.2    ! 5.65.1 Open source constituent relationship management for non-profits, NGOs and advocacy organizations.
+    civicrm/civicrm-drupal-8             5.64.2    ! 5.65.1 Open source constituent relationship management for non-profits, NGOs and advocacy organizations.
+    civicrm/civicrm-packages             5.64.2    ! 5.65.1 Legacy third party dependencies for CiviCRM
+    drupal/better_social_sharing_buttons 4.0.6     ! 4.0.7  Provides a settings page, a field, a paragraph, and a block for social sharing buttons
+    drupal/console                       1.9.9     ! 1.9.10 The Drupal CLI. A tool to generate boilerplate code, interact with and debug Drupal.
+    drupal/leaflet                       10.1.0    ! 10.2.0 Integration with the Leaflet map scripting library.
+    drupal/markdown                      3.0.0-rc3 ! 3.0.0  Provides Markdown integration for Drupal and allows content to be formatted in a simple plain-text syntax that is transformed into valid HTML.
+    drupal/paragraphs                    1.15.0    ! 1.16.0 Enables the creation of Paragraphs entities.
 ## Updates 2023-08-31
 
     civicrm/civicrm-core         5.64.0    ! 5.64.2    Open source constituent relationship management for non-profits, NGOs and advocacy organizations.
