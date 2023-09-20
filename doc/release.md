@@ -1,5 +1,11 @@
 ## Updates 2023-09-20
 
+    civicrm/civicrm-core     5.65.1 ! 5.65.2 Open source constituent relationship management for non-profits, NGOs and advocacy organizations.
+    civicrm/civicrm-drupal-8 5.65.1 ! 5.65.2 Open source constituent relationship management for non-profits, NGOs and advocacy organizations.
+    civicrm/civicrm-packages 5.65.1 ! 5.65.2 Legacy third party dependencies for CiviCRM
+    drupal/console           1.9.9  ! 1.9.10 The Drupal CLI. A tool to generate boilerplate code, interact with and debug Drupal.
+## Updates 2023-09-20
+
     civicrm/civicrm-core                 5.64.2    ! 5.65.1 Open source constituent relationship management for non-profits, NGOs and advocacy organizations.
     civicrm/civicrm-drupal-8             5.64.2    ! 5.65.1 Open source constituent relationship management for non-profits, NGOs and advocacy organizations.
     civicrm/civicrm-packages             5.64.2    ! 5.65.1 Legacy third party dependencies for CiviCRM

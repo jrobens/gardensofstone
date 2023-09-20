@@ -1,3 +1,4 @@
+*:JR:2023-09-20:GOS:0.2: sys+ update drupal. civicrm/civicrm-core5.65.1
 *:JR:2023-09-20:GOS:0.2: sys+ update drupal. civicrm/civicrm-core5.64.2
 *:JR:2023-08-31:GOS:0.2: sys+ update drupal. civicrm/civicrm-core5.64.0
 *:JR:2023-08-10:GOS:0.2: sys+ update drupal. civicrm/civicrm-core5.63.1
