@@ -1,3 +1,20 @@
+## Updates 2023-09-27
+
+    drupal/console  1.9.9 ! 1.9.10 The Drupal CLI. A tool to generate boilerplate code, interact with and debug Drupal.
+    drupal/honeypot 2.1.2 ! 2.1.3  Mitigates spam form submissions using the honeypot method.
+## Updates 2023-09-21
+
+    drupal/console 1.9.9 ! 1.9.10 The Drupal CLI. A tool to generate boilerplate code, interact with and debug Drupal.
+## Updates 2023-09-21
+
+    drupal/console                1.9.9  ! 1.9.10 The Drupal CLI. A tool to generate boilerplate code, interact with and debug Drupal.
+    drupal/core-composer-scaffold 9.5.10 ! 9.5.11 A flexible Composer project scaffold builder.
+    drupal/core-dev               9.5.10 ! 9.5.11 require-dev dependencies from drupal/drupal; use in addition to drupal/core-recommended to run tests from drupal/core.
+    drupal/core-project-message   9.5.10 ! 9.5.11 Adds a message after Composer installation.
+    drupal/core-recommended       9.5.10 ! 9.5.11 Core and its dependencies with known-compatible minor versions. Require this project INSTEAD OF drupal/core.
+## Updates 2023-09-20
+
+    drupal/console 1.9.9 ! 1.9.10 The Drupal CLI. A tool to generate boilerplate code, interact with and debug Drupal.
 ## Updates 2023-09-20
 
     civicrm/civicrm-core     5.65.1 ! 5.65.2 Open source constituent relationship management for non-profits, NGOs and advocacy organizations.
