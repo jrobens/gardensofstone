@@ -3,22 +3,26 @@
 .layout__region--second .paragraph--type--quote
   padding: 0 0 0 2.5rem
 
+.paragraph--type--quote
+  display: flex
+  text-align: center
+  align-items: center
+  height: 100%
+  font-family: $quote
+  font-size: 2rem
+  font-weight: bold
+  padding: 0 2.5rem
+  color: $primary
+
+  a, a:visited
+    color: $primary
+    font-family: $quote
+    text-shadow: 0 4px 9px rgb(162 4 107 / 67%)
+
 @media (min-width: 768px)
   .paragraph--type--quote
-    display: flex
-    text-align: center
-    align-items: center
-    height: 100%
     max-width: 40vw
-    font-family: $quote
-    font-size: 2rem
-    font-weight: bold
-    padding: 0 2.5rem
     color: $primary
     overflow: hidden
     text-overflow: ellipsis
 
-    a, a:visited
-      color: $primary
-      font-family: $quote
-      text-shadow: 0 4px 9px rgb(162 4 107 / 67%)

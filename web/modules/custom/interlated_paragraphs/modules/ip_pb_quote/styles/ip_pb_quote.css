@@ -6,25 +6,29 @@
   padding: 0 0 0 2.5rem;
 }
 
+.paragraph--type--quote {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  height: 100%;
+  font-family: "Mukta Malar", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 0 2.5rem;
+  color: #a2046b;
+}
+.paragraph--type--quote a, .paragraph--type--quote a:visited {
+  color: #a2046b;
+  font-family: "Mukta Malar", sans-serif;
+  text-shadow: 0 4px 9px rgba(162, 4, 107, 0.67);
+}
+
 @media (min-width: 768px) {
   .paragraph--type--quote {
-    display: flex;
-    text-align: center;
-    align-items: center;
-    height: 100%;
     max-width: 40vw;
-    font-family: "Mukta Malar", sans-serif;
-    font-size: 2rem;
-    font-weight: bold;
-    padding: 0 2.5rem;
     color: #a2046b;
     overflow: hidden;
     text-overflow: ellipsis;
-  }
-  .paragraph--type--quote a, .paragraph--type--quote a:visited {
-    color: #a2046b;
-    font-family: "Mukta Malar", sans-serif;
-    text-shadow: 0 4px 9px rgba(162, 4, 107, 0.67);
   }
 }
 
