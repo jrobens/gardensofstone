@@ -70,7 +70,6 @@
         "drupal/photos": "^6.0",
         "drupal/recaptcha_v3": "^2.0",
         "drupal/shield": "^1.4",
-        "drupal/simple_recaptcha": "^1.0@beta",
         "drupal/term_condition": "^2.0",
         "drupal/tfa": "^1.2",
         "drupal/upgrade_status": "^3.14",
