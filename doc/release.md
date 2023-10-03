@@ -1,3 +1,15 @@
+## Updates 2023-10-03
+
+    drupal/admin_toolbar 3.4.1 ! 3.4.2  Provides a drop-down menu interface to the core Drupal Toolbar.
+    drupal/console       1.9.9 ! 1.9.10 The Drupal CLI. A tool to generate boilerplate code, interact with and debug Drupal.
+    drupal/recaptcha_v3  2.0.1 ! 2.0.2  The reCaptcha V3 module provides integration with Google reCaptcha V3 and CAPTCHA module.
+## Captcha
+
+Removed simple google recaptcha and added recaptcha v3
+
+6LeXAqMgAAAAAFxHDerO-i-7H1XXemewgR79oRcX - site key
+6LeXAqMgAAAAALkIB4xAM_neM3JuipH653QSjY60 secret
+
 ## Updates 2023-09-27
 
     drupal/console  1.9.9 ! 1.9.10 The Drupal CLI. A tool to generate boilerplate code, interact with and debug Drupal.

@@ -470,7 +470,8 @@ section.hero.is-primary.block-views-blockevents-block-2 .views-field-title a:vis
 .fieldset-wrapper .webform-options-display-buttons ul li {
   list-style-type: disc;
 }
-.fieldset-wrapper .webform-options-display-buttons .wizard-page-title {
+
+.wizard-page-title {
   font-size: 2rem;
   color: #a2046b;
   font-weight: bold;
