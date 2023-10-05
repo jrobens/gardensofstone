@@ -1,0 +1,23 @@
+I have not made a reportable political donation:
+[webform_submission:values:radio_button_yes_no_political_donations]
+
+I would like my name withheld: [webform_submission:values:i_would_like_my_name_withheld]
+
+[webform_submission:values:first_name] [webform_submission:values:last_name]
+[webform_submission:values:email]
+[webform_submission:values:gos_dpom_address]
+
+I am objecting to the proposal:
+[webform_submission:values:i_am_objecting_to_the_proposal]
+
+[webform_submission:values:why_are_you_making_this_submission_]
+[webform_submission:values:submission_damage_to_ancient_rock_formations]
+[webform_submission:values:submission_first_nations_rock_art]
+[webform_submission:values:submission_destruction_unique_wetlands]
+[webform_submission:values:submission_contamination_drinking_water]
+[webform_submission:values:submission_long_term_impacts_economy]
+[webform_submission:values:submission_centennial_track_record]
+[webform_submission:values:submission_climate_pollution]
+[webform_submission:values:submission_other_topic]
+[webform_submission:values:signature]
+

@@ -433,8 +433,8 @@ section.hero.is-primary.block-views-blockevents-block-2 .views-field-title a:vis
 .webform-submission-add-form .form-item-markup ol, .webform-submission-form .form-item-markup ol {
   margin: 0.3rem 1rem;
 }
-.webform-submission-add-form .panel-block:not(:last-child).form-wrapper,
-.webform-submission-add-form .panel-tabs:not(:last-child), .webform-submission-form .panel-block:not(:last-child).form-wrapper,
+.webform-submission-add-form .panel-block.form-wrapper,
+.webform-submission-add-form .panel-tabs:not(:last-child), .webform-submission-form .panel-block.form-wrapper,
 .webform-submission-form .panel-tabs:not(:last-child) {
   border-bottom: 0;
   padding: 0 0.75rem;
