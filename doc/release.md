@@ -1,7 +1,7 @@
 
 ## Updtes 2023-10-05
 
-Upgraded mosaico
+Upgraded mosaico.
 
 ## Updates 2023-10-03
 
