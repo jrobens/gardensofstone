@@ -1,3 +1,20 @@
+## Updates 2023-10-05
+
+    civicrm/civicrm-core     5.65.2 ! 5.66.0 Open source constituent relationship management for non-profits, NGOs and advocacy organizations.
+    civicrm/civicrm-drupal-8 5.65.2 ! 5.66.0 Open source constituent relationship management for non-profits, NGOs and advocacy organizations.
+    civicrm/civicrm-packages 5.65.2 ! 5.66.0 Legacy third party dependencies for CiviCRM
+    drupal/console           1.9.9  ! 1.9.10 The Drupal CLI. A tool to generate boilerplate code, interact with and debug Drupal.
+    drupal/recaptcha_v3      2.0.1  ! 2.0.2  The reCaptcha V3 module provides integration with Google reCaptcha V3 and CAPTCHA module.
+
+drupal/console                           1.9.9    ! 1.9.10   The Drupal CLI. A tool to generate boilerplate code, interact with and debug Drupal.
+drupal/copyright_block                   1.0.0    ~ 2.0.0    Creates a dynamic customisable copyright message block.
+drupal/copyright_footer                  2.0.1    ~ 3.0.1    Provides a block for Copyright indication.
+drupal/focal_point                       1.5.0    ~ 2.0.2    Focal Point allows content creators to mark the most important part of an image for easier cropping.
+drupal/menu_item_extras                  2.19.0   ~ 3.0.2    Provide an additional custom fields which can be used on Menu link
+drupal/recaptcha_v3                      2.0.1    ! 2.0.2    The reCaptcha V3 module provides integration with Google reCaptcha V3 and CAPTCHA module.
+drupal/upgrade_status                    3.19.0   ~ 4.0.0    Review Drupal major upgrade readiness of the environment and components of the site.
+u
+
 ## Updtes 2023-10-05
 
 Upgraded mosaico.
