@@ -14,7 +14,17 @@ src/dev
 src/pix
 
 sec/files
-web/files
+web/files/20*
+web/files/civicrm/persist
+web/files/civicrm/upload
+web/files/civicrm/custom
+web/files/css
+web/files/installable_plugins
+web/files/oembed_thumbnails
+web/files/photos
+web/files/php
+web/files/styles
+web/files/xmlsitemap
 
 web/sites/*/settings.php
 web/sites/*/civicrm.settings.php
