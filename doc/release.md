@@ -1,4 +1,6 @@
 
+gitosis-run-hook update-mirrors
+
 ## Checking for d10
 
 Permissions of user role: "Manager":
