@@ -1,3 +1,5 @@
+*:JR:2023-10-20:GOS:0.2: sys+ update drupal. drupal/console1.9.9
+*:JR:2023-10-20:GOS:0.2: sys+ update drupal. 
 *:JR:2023-10-05:GOS:0.2: sys+ update drupal. civicrm/civicrm-core5.65.2
 *:JR:2023-10-03:GOS:0.2: sys+ update drupal. drupal/admin_toolbar3.4.1
 *:JR:2023-09-27:GOS:0.2: sys+ update drupal. drupal/console1.9.9

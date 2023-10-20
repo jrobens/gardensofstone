@@ -93,7 +93,7 @@
     "prefer-stable": true,
     "config": {
         "platform": {
-            "php": "7.4"
+            "php": "8.2"
         },
         "sort-packages": true,
         "allow-plugins": {
