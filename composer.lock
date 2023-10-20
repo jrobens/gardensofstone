@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bf04db5b6c8050b2bcf63a76f7ebb8ae",
+    "content-hash": "a0e645d17edc349babda3f73407ede0e",
     "packages": [
         {
             "name": "adrienrn/php-mimetyper",
@@ -3377,62 +3377,6 @@
             }
         },
         {
-            "name": "drupal/bulma",
-            "version": "1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/bulma.git",
-                "reference": "8.x-1.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/bulma-8.x-1.0.zip",
-                "reference": "8.x-1.0",
-                "shasum": "8f43e7be69671fe0defb944177bc2d597ee9a3d5"
-            },
-            "require": {
-                "drupal/core": "^9.2 || ^10"
-            },
-            "type": "drupal-theme",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-1.0",
-                    "datestamp": "1681853811",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "mlncn",
-                    "homepage": "https://www.drupal.org/user/64383"
-                },
-                {
-                    "name": "nedjo",
-                    "homepage": "https://www.drupal.org/user/4481"
-                },
-                {
-                    "name": "valic",
-                    "homepage": "https://www.drupal.org/user/980550"
-                }
-            ],
-            "description": "Built to use Bulma, a modern CSS framework based on Flexbox.",
-            "homepage": "http://drupal.org/project/bulma",
-            "keywords": [
-                "Drupal"
-            ],
-            "support": {
-                "source": "https://git.drupalcode.org/project/bulma",
-                "issues": "http://drupal.org/project/issues/bulma"
-            }
-        },
-        {
             "name": "drupal/captcha",
             "version": "2.0.5",
             "source": {
@@ -4294,26 +4238,26 @@
         },
         {
             "name": "drupal/copyright_block",
-            "version": "1.0.0",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/copyright_block.git",
-                "reference": "8.x-1.0"
+                "reference": "2.0.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/copyright_block-8.x-1.0.zip",
-                "reference": "8.x-1.0",
-                "shasum": "290b230a48fb057c8393b63b052cb6518071edea"
+                "url": "https://ftp.drupal.org/files/projects/copyright_block-2.0.0.zip",
+                "reference": "2.0.0",
+                "shasum": "5f82d66822cb7663f15c446c2debbf210c6dc36b"
             },
             "require": {
-                "drupal/core": "^8 || ^9 || ^10"
+                "drupal/core": "^9 || ^10"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.0",
-                    "datestamp": "1683061431",
+                    "version": "2.0.0",
+                    "datestamp": "1683061584",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -20973,7 +20917,6 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "drupal/classy_paragraphs": 10,
-        "drupal/copyright_block": 5,
         "drupal/layout_paragraphs": 10,
         "drupal/markdown": 5,
         "drupal/masquerade": 5
