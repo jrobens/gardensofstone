@@ -30,7 +30,6 @@ The following module(s) will be enabled: upgrade_status, update
     drupal/console 1.9.9  ! 1.9.10 The Drupal CLI. A tool to generate boilerplate code, interact with and debug Drupal.
     drush/drush    10.6.1 ! 10.6.2 Drush is a command line shell and scripting interface for Drupal, a veritable Swiss...
 ## Updates 2023-10-20
-
 Hooks manually put into gitolite and symlinked.
 
 ## Updates 2023-10-05
