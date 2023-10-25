@@ -32,7 +32,6 @@
         "drupal/coffee_mediteran": "^2.0",
         "drupal/console": "^1.9",
         "drupal/context": "^4.1",
-        "drupal/copyright_block": "^2.0",
         "drupal/copyright_footer": "^3.0",
         "drupal/core-composer-scaffold": "^9",
         "drupal/core-project-message": "^9",

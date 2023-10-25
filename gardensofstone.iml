@@ -29,8 +29,6 @@
       <sourceFolder url="file://$MODULE_DIR$/web/core/lib/Drupal/Component/Uuid/" isTestSource="false" packagePrefix="Drupal\Component\Uuid\" />
       <sourceFolder url="file://$MODULE_DIR$/web/core/lib/Drupal/Component/Version/" isTestSource="false" packagePrefix="Drupal\Component\Version\" />
       <sourceFolder url="file://$MODULE_DIR$/web/themes/contrib/drulma/./src" isTestSource="false" packagePrefix="Drulma\" />
-      <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/web/files/civicrm/ext/uk.co.vedaconsulting.mosaico/tests" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/phpunit/phpunit" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/phpunit/php-text-template" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/phpstan/phpdoc-parser" />
