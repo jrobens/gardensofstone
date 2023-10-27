@@ -76,6 +76,7 @@
         "drupal/viewsreference": "^1.7",
         "drupal/webform": "^6.0",
         "drupal/webform_civicrm": "^6.2",
+        "drupal/webform_resend_submissions": "^1.0",
         "drupal/xmlsitemap": "^1.0",
         "drush/drush": "^10.4",
         "enyo/dropzone": "^5.7",

@@ -1,3 +1,29 @@
+## Updates 2023-10-28
+
+    civicrm/civicrm-core     5.66.0 ! 5.66.1 Open source constituent relationship management for non-profits, NGOs and advocacy organizations.
+    civicrm/civicrm-drupal-8 5.66.0 ! 5.66.1 Open source constituent relationship management for non-profits, NGOs and advocacy organizations.
+    civicrm/civicrm-packages 5.66.0 ! 5.66.1 Legacy third party dependencies for CiviCRM
+    drupal/console           1.9.9  ! 1.9.10 The Drupal CLI. A tool to generate boilerplate code, interact with and debug Drupal.
+    drupal/leaflet           10.2.1 ! 10.2.3 Integration with the Leaflet map scripting library.
+    drupal/tfa               1.2.0  ! 1.3.0  Pluggable provider of two factor authentication for Drupal
+
+## 20231028 email sending from submission form disabled
+
+pf:resend-submissions 1 1728053584 email_confirmation_police NULL FALSE
+
+1698445054294
+## 20231027 mail
+
+Oct 27 00:40:38 ganon postfix/smtp[183752]: C538B6B82: to=<keith.muir6@bigpond.com>, relay=extmail.bigpond.com[203.42.22.10]:25, delay=372, delays=372/0.01/0.39/0, dsn=4.7.1, status=deferred (host extmail.bigpond.com[203.42.22.10] refused to talk to me: 550-5.7.1 Connection refused - IB119. 43.239.97.47 is blacklisted in Abusix 550-5.7.1 Mail Intelligence. See https://lookup.abusix.com/search?q=43.239.97.47 550 5.7.1 i{ef1fd412-c426-49a4-b178-4e1a8a4b234f})
+
+
+## 20231025
+
+Rebuild triggers
+Update mosaico
+
+sudo curl -LsS https://download.civicrm.org/cv/cv.phar -o /usr/local/bin/cv
+sudo chmod +x /usr/local/bin/cv
 
 gitosis-run-hook update-mirrors
 
