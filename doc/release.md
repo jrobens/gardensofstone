@@ -1,3 +1,16 @@
+
+
+remote: Verifying lock file contents can be installed on current platform.
+remote: - Required package "ckeditor/autogrow" is not present in the lock file.
+remote: - Required package "ckeditor/codemirror" is not present in the lock file.
+remote: - Required package "ckeditor/fakeobjects" is not present in the lock file.
+remote: - Required package "ckeditor/image" is not present in the lock file.
+remote: - Required package "ckeditor/link" is not present in the lock file.
+remote: - Required package "tippyjs/5.x" is not present in the lock file.
+remote: - Required package "tippyjs/6.x" is not present in the lock file.
+
+https://getcomposer.org/doc/articles/resolving-merge-conflicts.md
+
 ## Updates 2024-01-03
 
     civicrm/civicrm-core     5.67.0 ! 5.68.1 Open source constituent relationship management for non-profits, NGOs and advocacy organizations.
