@@ -3,6 +3,7 @@
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/web/core/lib/Drupal/Component/Annotation/" isTestSource="false" packagePrefix="Drupal\Component\Annotation\" />
       <sourceFolder url="file://$MODULE_DIR$/web/core/lib/Drupal/Component/Assertion/" isTestSource="false" packagePrefix="Drupal\Component\Assertion\" />
       <sourceFolder url="file://$MODULE_DIR$/web/core/lib/Drupal/Component/Bridge/" isTestSource="false" packagePrefix="Drupal\Component\Bridge\" />
@@ -28,6 +29,7 @@
       <sourceFolder url="file://$MODULE_DIR$/web/core/lib/Drupal/Component/Utility/" isTestSource="false" packagePrefix="Drupal\Component\Utility\" />
       <sourceFolder url="file://$MODULE_DIR$/web/core/lib/Drupal/Component/Uuid/" isTestSource="false" packagePrefix="Drupal\Component\Uuid\" />
       <sourceFolder url="file://$MODULE_DIR$/web/core/lib/Drupal/Component/Version/" isTestSource="false" packagePrefix="Drupal\Component\Version\" />
+      <sourceFolder url="file://$MODULE_DIR$/web/files/civicrm/ext/uk.co.vedaconsulting.mosaico/tests" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/web/themes/contrib/drulma/./src" isTestSource="false" packagePrefix="Drulma\" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/phpunit/phpunit" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/phpunit/php-text-template" />
@@ -128,7 +130,6 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/sebastian/complexity" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/sebastian/global-state" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/sebastian/object-enumerator" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/html2text/html2text" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/maennchen/zipstream-php" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/mikey179/vfsstream" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/slevomat/coding-standard" />
@@ -251,6 +252,7 @@
       <excludeFolder url="file://$MODULE_DIR$/web/files/civicrm/ext/uk.co.vedaconsulting.mosaico/vendor/civicrm/composer-downloads-plugin" />
       <excludeFolder url="file://$MODULE_DIR$/web/files/civicrm/ext/uk.co.vedaconsulting.mosaico/vendor/togos/gitignore" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/google/recaptcha" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/soundasleep/html2text" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
   </component>

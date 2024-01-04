@@ -1,3 +1,382 @@
+## Updates 2024-01-03
+
+    civicrm/civicrm-core     5.67.0 ! 5.68.1 Open source constituent relationship management for non-profits, NGOs and advocacy organizations.
+    civicrm/civicrm-drupal-8 5.67.0 ! 5.68.1 Open source constituent relationship management for non-profits, NGOs and advocacy organizations.
+    civicrm/civicrm-packages 5.67.0 ! 5.68.1 Legacy third party dependencies for CiviCRM
+    drupal/console           1.9.9  ! 1.9.10 The Drupal CLI. A tool to generate boilerplate code, interact with and debug Drupal.
+    drupal/ds                3.15.0 ! 3.16.0 Extend the display options for every entity type.
+    drupal/layout_paragraphs 2.0.3  ! 2.0.4  Layout Paragraphs
+    drupal/leaflet           10.2.3 ! 10.2.7 Integration with the Leaflet map scripting library.
+    drupal/nagios            1.17.0 ! 1.19.0 Exposes a page that Nagios or Icinga can monitor
+    drupal/tfa               1.3.0  ! 1.4.0  Pluggable provider of two factor authentication for Drupal
+    drupal/webform           6.2.0  ! 6.2.2  Enables the creation of webforms and questionnaires.
+    drupal/webform_civicrm   6.2.4  ! 6.2.5  CiviCRM and Webform integration
+## Updates 2023-11-15
+
+    civicrm/civicrm-asset-plugin v1.1.3 ! v1.1.4 Publish assets from private CiviCRM folders to a public folder
+    civicrm/civicrm-core         5.66.1 ! 5.67.0 Open source constituent relationship management for non-profits, NGOs and advocacy organizations.
+    civicrm/civicrm-drupal-8     5.66.1 ! 5.67.0 Open source constituent relationship management for non-profits, NGOs and advocacy organizations.
+    civicrm/civicrm-packages     5.66.1 ! 5.67.0 Legacy third party dependencies for CiviCRM
+    drupal/console               1.9.9  ! 1.9.10 The Drupal CLI. A tool to generate boilerplate code, interact with and debug Drupal.
+    drupal/mediteran             1.30.0 ! 1.32.0 Mediteran is a clean and simple administration theme designed by <a href="https://drupalation.com" target="_blank...
+    drupal/webform               6.1.7  ! 6.2.0  Enables the creation of webforms and questionnaires.
+
+---------- ----------------- --------------- ---------------------------------
+Module     Update ID         Type            Description
+ ---------- ----------------- --------------- ---------------------------------
+better_s   8004              hook_update_n   8004 - Converts settings to
+ocial_sh                                     schema conform format.
+aring_bu
+ttons
+better_s   8005              hook_update_n   8005 - Removes digg service
+ocial_sh                                     configuration.
+aring_bu
+ttons
+better_s   8006              hook_update_n   8006 - Replaces twitter service
+ocial_sh                                     with X.
+aring_bu
+ttons
+honeypot   8101              hook_update_n   8101 - Corrects a
+sometimes-missing 'hostname'
+column in the {honeypot_user}
+table.
+honeypot   8102              hook_update_n   8102 - Creates an 'id' column
+for the {honeypot_user} table
+to act as a primary key.
+paragrap   9302              hook_update_n   9302 - Restore admin titles
+h_blocks                                     that were present before
+revisions were introduced.
+photos_a   10601             hook_update_n   10601 - Add primary key to
+ccess                                        {photos_access_user}.
+term_con   9201              hook_update_n   9201 - Convert term id to term
+dition                                       uuid #3362744.
+webform_   8006              hook_update_n   8006 - Fix contact subtype case
+civicrm                                      in existing webforms.
+admin_to   helper_added_co   post-update     Update container for
+olbar_to   nfig_factory                      admin_toolbar_tools.helper
+ols                                          arguments.
+better_s   update_layout_b   post-update     Update default social sharing
+ocial_sh   uilder_more_set                   buttons block for Layout
+aring_bu   tings                             Builder sections.
+ttons
+metatag    remove_robots_n   post-update     Remove 'noydir', 'noodp' ROBOTS
+oydir_noodp                       options from meta tag entity
+fields.
+photos     new_photos_uplo   post-update     Rebuild photos upload container
+ad_container_pa                   to add new container parameter.
+rameter_file_re
+positor
+user       sort_permission   post-update     Ensure permissions stored in
+s_again                           role configuration are sorted
+using the schema.
+webform    ckeditor          post-update     Move from custom CKEditor to
+hidden 'webform_default' text
+format.
+webform    ckeditor01        post-update     Issue #3351348:
+'#multiple__no_items_message'
+added to every field.
+webform    confirmation_pa   post-update     #3335924: Allow the
+ge_noindex                        confirmation page to include
+robots noindex meta tag.
+webform    deprecate_jquer   post-update     #3254570: Move jQuery UI
+y_ui_datepicker                   datepicker support into
+dedicated deprecated module.
+webform    deprecate_locat   post-update     Issue #3247475: Location field
+ion_places                        Algolia Places sunsetting May
+31, 2022.
+webform    multiple_catego   post-update     Issue #3339769: Improve Webform
+ries                              categorization to support
+assigning multiple categories
+and default categories.
+ ---------- ----------------- --------------- ---------------------------------
+
+In ProcessBase.php line 171:
+
+Unable to decode output into JSON: Syntax error
+
+Deprecated: Using ${var} in strings is deprecated, use {$var} instead in /Users/jrobens/Sites/gardensofstone2/vendor/consolidation/config/src/Util/ArrayUtil.
+php on line 78
+
+Deprecated: Using ${var} in strings is deprecated, use {$var} instead in /Users/jrobens/Sites/gardensofstone2/vendor/consolidation/config/src/Util/ArrayUtil.
+php on line 78
+
+Deprecated: Using ${var} in strings is deprecated, use {$var} instead in /Users/jrobens/Sites/gardensofstone2/vendor/consolidation/config/src/Util/ArrayUtil.
+php on line 86
+
+Deprecated: Using ${var} in strings is deprecated, use {$var} instead in /Users/jrobens/Sites/gardensofstone2/vendor/consolidation/config/src/Util/ArrayUtil.
+php on line 86
+
+Deprecated: Creation of dynamic property Drush\Cache\JSONCache::$directory is deprecated in /Users/jrobens/Sites/gardensofstone2/vendor/drush/drush/src/Cache
+/FileCache.php on line 32
+{
+"0": {
+"better_social_sharing_buttons": {
+"8004": {
+"results": {
+"query": null,
+"success": true
+},
+"type": "update"
+},
+"8005": {
+"results": {
+"query": null,
+"success": true
+},
+"type": "update"
+},
+"8006": {
+"results": {
+"query": null,
+"success": true
+},
+"type": "update"
+},
+"update_layout_builder_more_settings": {
+"results": {
+"query": null,
+"success": true
+},
+"type": "post_update"
+}
+},
+"honeypot": {
+"8101": {
+"results": {
+"query": null,
+"success": true
+},
+"type": "update"
+},
+"8102": {
+"results": {
+"query": null,
+"success": true
+},
+"type": "update"
+}
+},
+"paragraph_blocks": {
+"9302": {
+"results": {
+"query": null,
+"success": true
+},
+"type": "update"
+}
+},
+"photos_access": {
+"10601": {
+"results": {
+"query": null,
+"success": true
+},
+"type": "update"
+}
+},
+"term_condition": {
+"9201": {
+"results": {
+"query": null,
+"success": true
+},
+"type": "update"
+}
+},
+"webform_civicrm": {
+"8006": {
+"results": {
+"query": null,
+"success": true
+},
+"type": "update"
+}
+},
+"admin_toolbar_tools": {
+"helper_added_config_factory": {
+"results": {
+"query": null,
+"success": true
+},
+"type": "post_update"
+}
+},
+"metatag": {
+"remove_robots_noydir_noodp": {
+"results": {
+"query": "There were no overridden Metatag records.",
+"success": true
+},
+"type": "post_update"
+}
+},
+"photos": {
+"new_photos_upload_container_parameter_file_repositor": {
+"results": {
+"query": null,
+"success": true
+},
+"type": "post_update"
+}
+},
+"user": {
+"sort_permissions_again": {
+"results": {
+"query": null,
+"success": true
+},
+"type": "post_update"
+}
+},
+"webform": {
+"ckeditor": {
+"results": {
+"query": null,
+"success": true
+},
+"type": "post_update"
+},
+"ckeditor01": {
+"results": {
+"query": null,
+"success": true
+},
+"type": "post_update"
+},
+"confirmation_page_noindex": {
+"results": {
+"query": null,
+"success": true
+},
+"type": "post_update"
+},
+"deprecate_jquery_ui_datepicker": {
+"results": {
+"query": null,
+"success": true
+},
+"type": "post_update"
+},
+"deprecate_location_places": {
+"results": {
+"query": null,
+"success": true
+},
+"type": "post_update"
+},
+"multiple_categories": {
+"results": {
+"query": null,
+"success": true
+},
+"type": "post_update"
+}
+}
+},
+"drush_batch_process_finished": true
+}
+
+
+Check manually
+Errors without Drupal source version numbers including parse errors and use of APIs from dependencies.
+File name	Line	Error
+web/PHPStan failed	0
+PHPStan command failed:
+/opt/homebrew/Cellar/php@8.1/8.1.23/bin/php /Users/jrobens/Sites/gardensofstone2/vendor/bin/phpstan analyse --memory-limit=1500M --error-format=json --configuration=/tmp/upgrade_status/deprecation_testing.neon /Users/jrobens/Sites/gardensofstone2/web/modules/custom/interlated_paragraphs
+
+Command output:
+Empty.
+
+Command error:
+PHP Fatal error: Cannot redeclare ip_carousel_theme() (previously declared in /Users/jrobens/Sites/gardensofstone2/web/modules/custom/interlated_paragraphs/modules/ip_carousel/ip_carousel.module:13) in /Users/jrobens/Sites/gardensofstone2/web/modules/custom/interlated_paragraphs/modules/ip_footer/ip_footer.module on line 16 Fatal error: Cannot redeclare ip_carousel_theme() (previously declared in /Users/jrobens/Sites/gardensofstone2/web/modules/custom/interlated_paragraphs/modules/ip_carousel/ip_carousel.module:13) in /Users/jrobens/Sites/gardensofstone2/web/modules/custom/interlated_paragraphs/modules/ip_footer/ip_footer.module on line 16
+
+web/modules/custom/interlated_paragraphs/modules/ip_pb_webform/ip_pb_webform.module	45	The 'ip_pb_webform/ip_pb_webform' library is not defined because the defining extension is not installed. Cannot decide if it is deprecated or not.
+web/modules/custom/interlated_paragraphs/modules/ip_footer/ip_footer.module	45	The 'ip_carousel/ip_carousel' library is not defined because the defining extension is not installed. Cannot decide if it is deprecated or not.
+web/modules/custom/interlated_paragraphs/modules/ip_navbar/ip_navbar.module	45	The 'ip_navbar/ip_navbar' library is not defined because the defining extension is not installed. Cannot decide if it is deprecated or not.
+web/modules/custom/interlated_paragraphs/modules/ip_pb_text/ip_pb_text.module	45	The 'ip_pb_text/ip_pb_text' library is not defined because the defining extension is not installed. Cannot decide if it is deprecated or not.
+web/modules/custom/interlated_paragraphs/modules/ip_pb_index_block/ip_pb_index_block.module	46	The 'ip_pb_index_block/ip_pb_index_block' library is not defined because the defining extension is not installed. Cannot decide if it is deprecated or not.
+web/modules/custom/interlated_paragraphs/modules/ip_carousel/ip_carousel.module	60	The 'ip_carousel/ip_carousel' library is not defined because the defining extension is not installed. Cannot decide if it is deprecated or not.
+web/modules/custom/interlated_paragraphs/modules/ip_pb_row/ip_pb_row.module	46	The 'ip_pb_row/ip_pb_row' library is not defined because the defining extension is not installed. Cannot decide if it is deprecated or not.
+web/modules/custom/interlated_paragraphs/modules/ip_pb_banner/ip_pb_banner.module	46	The 'ip_pb_banner/ip_pb_banner' library is not defined because the defining extension is not installed. Cannot decide if it is deprecated or not.
+web/modules/custom/interlated_paragraphs/modules/ip_pb_heading/ip_pb_heading.module	46	The 'ip_pb_heading/ip_pb_heading' library is not defined because the defining extension is not installed. Cannot decide if it is deprecated or not.
+web/modules/custom/interlated_paragraphs/modules/ip_pb_small_tile/ip_pb_small_tile.module	46	The 'ip_pb_small_tile/ip_pb_small_tile' library is not defined because the defining extension is not installed. Cannot decide if it is deprecated or not.
+web/modules/custom/interlated_paragraphs/modules/ip_events/ip_events.module	45	The 'ip_events/ip_events' library is not defined because the defining extension is not installed. Cannot decide if it is deprecated or not.
+## 2023-11-15 d10 upgrade review
+
+Invalid permissions will trigger runtime exceptions in Drupal 10. Permissions should be defined in a permissions.yml file or a permission callback.
+Permissions of user role: "Manager":
+edit layout paragraphs plugin config
+Permissions of user role: "Authenticated user":
+make online contributions
+Permissions of user role: "Anonymous user":
+make online contributions
+Deprecated or obsolete core extensions installed. These will be removed in the next major version.	Bartik (read more), Stable (read more)
+
+
+## 2023-11-01
+
+Check bounce mail handle
+
+ailure, Error message: Could not connect to MailStore for crm.gardensofstone.org.au@gardensofstone.org.auError message: An error occured while sending or receiving mail. Failed to conn (...)
+
+
+Trigger rebuild
+
+cv api4 System.flush triggers=1
+
+Civi Menu rebuild and Cache clear
+
+cv api4 System.flush
+
+## 2023-10-30 spam
+
+This is our main blocklist, internally the zones are called “black” and “black_css” - it contains IP addresses only.
+
+Possible reasons for listing in this blocklist in order of probability are:
+Spam received to our spam traps
+Heuristics determine that the traffic is spam
+Manual listings of hosts or networks that have persistent issues
+
+If you are unable to send emails, please seek help from the entity that provides your email (this might be your ISP, email or host provider). Should you feel confident enough to solve this issue on your own, we have provided you with further reading on the matter.
+
+COMPROMISED ACCOUNTS
+e.g. accounts that have been phished (e.g. the user provided their username/password to an attacker), the user had weak or re-used passwords or credentials were obtained via a compromised device.
+
+Remediation: use rate-limiting to help identify the compromised account(s) look for messages being sent with Reply-To: headers or messages containing blocklisted domains. You can also use an authentication blocklist to identify the compromised accounts by reporting log-in attempts from listed hosts where the IP accessing the account has been seen using other compromised accounts.
+
+IMPORTANT: Once the compromised account has been identified, the password should be changed immediately to something secure and any queued mail from the account should be removed (as there could be a considerable amount) prior to submitting a delist request to prevent the IP from being quickly relisted.
+
+Mitigation: User training; don't give out passwords or use the same password on multiple different sites - use a password manager instead. An authentication blocklist can prevent login or identify logins from compromised hosts that we've observed abusing other accounts in the same way.
+
+.4.1, status=deferred (delivery temporarily suspended: connect to gardensofstone.org.au[43.239.97.47]:25: Connection refused)
+Oct 30 03:24:23 ganon postfix/qmgr[185106]: 9C51AACB8: from=<>, size=25324, nrcpt=1 (queue active)
+Oct 30 03:24:23 ganon postfix/qmgr[185106]: 97273A213: from=<>, size=25293, nrcpt=1 (queue active)
+Oct 30 03:24:23 ganon postfix/error[340682]: 91F8EA750: to=<return+b.180.198772.75b41ac40e634217@gardensofstone.org.au>, relay=none, delay=244192, delays=244192/0/0/0, dsn=4.4.1, status=deferred (delivery temporarily suspended: connect to gardensofstone.org.au[43.239.97.47]:25: Connection refused)
+Oct 30 03:24:23 ganon postfix/qmgr[185106]: 96100AC29: from=<>, size=26068, nrcpt=1 (queue active)
+Oct 30 03:24:23 ganon postfix/error[340703]: 9C51AACB8: to=<return+b.180.198581.a837e7a13221ec92@gardensofstone.org.au>, relay=none, delay=244132, delays=244132/0/0/0, dsn=4.4.1, status=deferred (delivery temporarily suspended: connect to gardensofstone.org.au[43.239.97.47]:25: Connection refused)
+Oct 30 03:24:23 ganon postfix/qmgr[185106]: 9AC20A411: from=<>, size=25329, nrcpt=1 (queue active)
+Oct 30 03:24:23 ganon postfix/error[340693]: 97273A213: to=<return+b.180.198724.75f93fc87954fb83@gardensofstone.org.au>, relay=none, delay=244112, delays=244112/0/0/0, dsn=4.4.1, status=deferred (delivery temporarily suspended: connect to gardensofstone.org.au[43.239.97.47]:25: Connection refused)
+Oct 30 03:24:23 ganon postfix/error[340691]: 96100AC29: to=<return+b.180.198764.4fcb722015781559@gardensofstone.org.au>, relay=none, delay=244141, delays=244141/0/0/0, dsn=4.4.1, status=deferred (delivery temporarily suspended: connect to gardensofstone.org.au[43.239.97.47]:25: Connection refused)
+Oct 30 03:24:23 ganon postfix/qmgr[185106]: 95551AD91: from=<>, size=25887, nrcpt=1 (queue active)
+Oct 30 03:24:23 ganon postfix/error[340696]: 9AC20A411: to=<return+b.180.197983.de26d074743bdac1@gardensofstone.org.au>, relay=none, delay=248321, delays=248321/0/0/0, dsn=4.4.1, status=deferred (delivery temporarily suspended: connect to gardensofstone.org.au[43.239.97.47]:25: Connection refused)
+Oct 30 03:24:23 ganon postfix/qmgr[185106]: 992F4977E: from=<>, size=25916, nrcpt=1 (queue active)
+Oct 30 03:24:23 ganon postfix/qmgr[185106]: 90F0DAD64: from=<>, size=25900, nrcpt=1 (queue active)
+Oct 30 03:24:23 ganon postfix/qmgr[185106]: 96787AA13: from=<>, size=25892, nrcpt=1 (queue active)
+Oct 30 03:24:23 ganon postfix/error[340699]: 95551AD91: to=<return+b.180.198395.c7500086362aa7c4@gardensofstone.org.au>, relay=none, delay=244097, delays=244097/0/0/0, dsn=4.4.1, status=deferred (delivery temporarily suspended: connect to gardensofstone.org.au[43.239.97.47]:25: Connection refused)
+Oct 30 03:24:23 ganon postfix/qmgr[185106]: 96134AAE5: from=<>, size=25293, nrcpt=1 (queue active)
+Oct 30 03:24:23 ganon postfix/error[340687]: 992F4977E: to=<return+b.180.198755.6d4f3ea56eda78fd@gardensofstone.org.au>, relay=none, delay=244147, delays=244147/0/0/0, dsn=4.4.1, status=deferred (delivery temporarily suspended: connect to gardensofstone.org.au[43.239.97.47]:25: Connection refused)
+Oct 30 03:24:23 ganon postfix/error[340701]: 90F0DAD64: to=<return+b.180.198774.c815a50e48a91454@gardensofstone.org.au>, relay=none, delay=244107, delays=244107/0/0/0, dsn=4.4.1, status=deferred (delivery temporarily suspended: connect to gardensofstone.org.au[43.239.97.47]:25: Connection refused)
+Oct 30 03:24:23 ganon postfix/error[340685]: 96787AA13: to=<return+b.180.200119.524ae05a08106cbe@gardensofstone.org.au>, relay=none, delay=244163, delays=244163/0/0/0, dsn=4.4.1, status=deferred (delivery temporarily suspended: connect to gardensofstone.org.au[43.239.97.47]:25: Connection refused)
+Oct 30 03:24:23 ganon postfix/error[340695]: 96134AAE5: to=<return+b.180.198779.0f865270b6ddcfda@gardensofstone.org.au>, relay=none, delay=244154, delays=244154/0/0/0, dsn=4.4.1, status=deferred (delivery temporarily suspended: connect to gardensofstone.org.au[43.239.97.47]:25: Connection refused)
+Oct 30 03:24:23 ganon postfix/smtp[340677]: 341F8AB31: host extmail.bigpond.com[203.42.22.10] refused to talk to me: 550-5.7.1 Connection refused - IB119. 43.239.97.47 is blacklisted in Abusix 550-5.7.1 Mail Intelligence. See https://lookup.abusix.com/search?q=43.239.97.47 550 5.7.1 i{6b9ac109-6c3f-40e3-9cf1-b91866d33926}
+Oct 30 03:24:23 ganon postfix/smtp[340679]: 91DDFAB3C: host extmail.bigpond.com[203.42.40.138] refused to talk to me: 550-5.7.1 Connection refused - IB119. 43.239.97.47 is blacklisted in Abusix 550-5.7.1 Mail Intelligence. See https://lookup.abusix.com/search?q=43.239.97.47 550 5.7.1 i{cdce22f9-d097-4f18-927b-23eda3b1747c}
+Oct 30 03:24:23 ganon postfix/smtp[340677]: 341F8AB31: to=<eh.mistover@bigpond.com>, relay=extmail.bigpond.com[203.42.40.138]:25, delay=134829, delays=134829/0/0.14/0, dsn=4.7.1, status=deferred (host extmail.bigpond.com[203.42.40.138] refused to talk to me: 550-5.7.1 Connection refused - IB119. 43.239.97.47 is blacklisted in Abusix 550-5.7.1 Mail Intelligence. See https://lookup.abusix.com/search?q=43.239.97.47 550 5.7.1 i{03f531d5-accd-47ca-b873-46f2213a145d})
+Oct 30 03:24:23 ganon postfix/smtp[340679]: 91DDFAB3C: to=<keith.muir6@bigpond.com>, relay=extmail.bigpond.com[203.42.22.10]:25, delay=67680, delays=67680/0/0.14/0, dsn=4.7.1, status=deferred (host extmail.bigpond.com[203.42.22.10] refused to talk to me: 550-5.7.1 Connection refused - IB119. 43.239.97.47 is blacklisted in Abusix 550-5.7.1 Mail Intelligence. See https://lookup.abusix.com/search?q=43.239.97.47 550 5.7.1 i{ffaf804a-000e-447c-8362-d73086c683ed})
+Oct 30 03:24:53 ganon postfix/smtp[340676]: connect to zgl-eg.com[3.75.63.160]:25: Connection timed out
+
+Oct 30 22:34:25 ganon postfix/smtp[366653]: 9505C95E3: host gmail-smtp-in.l.google.com[142.250.4.27] said: 452-4.2.2 The email account that you tried to reach is over quota. Please direct 452-4.2.2 the recipient to 452 4.2.2  https://support.google.com/mail/?p=OverQuotaTemp u22-20020a63d356000000b005a073e0cc9asi70585pgi.803 - gsmtp (in reply to RCPT TO command)
+Oct 30 22:34:27 ganon postfix/smtp[366653]: 9505C95E3: to=<xander.keyn@gmail.com>, relay=alt1.gmail-smtp-in.l.google.com[173.194.202.27]:25, delay=320954, delays=320950/0/3.3/0.23, dsn=4.2.2, status=deferred (host alt1.gmail-smtp-in.l.google.com[173.194.202.27] said: 452-4.2.2 The email account that you tried to reach is over quota. Please direct 452-4.2.2 the recipient to 452 4.2.2  https://support.google.com/mail/?p=OverQuotaTemp w13-20020a170902e88d00b001c60e273252si54954plg.25 - gsmtp (in reply to RCPT TO command))
+
 ## Updates 2023-10-28
 
     civicrm/civicrm-core     5.66.0 ! 5.66.1 Open source constituent relationship management for non-profits, NGOs and advocacy organizations.
@@ -9,9 +388,352 @@
 
 ## 20231028 email sending from submission form disabled
 
-pf:resend-submissions 1 1728053584 email_confirmation_police NULL FALSE
+pf:resend-submissions 1 1728053584 branch_office_email NULL FALSE
+pf:resend-submissions 1698359335 1728053584 branch_office_email augus_place_west_modifications_e TRUE
+
+WF Resend submissions: Start checking submissions between: 1698359335 - 1728053584
+[notice] Augus Place West - Modifications – email action webform sent Minister Scully email email.
+WF Resend submissions: resend: 23524 for handler: branch_office_email
+[notice] Augus Place West - Modifications – email action webform sent Minister Scully email email.
+WF Resend submissions: resend: 23525 for handler: branch_office_email
+[notice] Augus Place West - Modifications – email action webform sent Minister Scully email email.
+WF Resend submissions: resend: 23526 for handler: branch_office_email
+[notice] Augus Place West - Modifications – email action webform sent Minister Scully email email.
+WF Resend submissions: resend: 23527 for handler: branch_office_email
+[notice] Augus Place West - Modifications – email action webform sent Minister Scully email email.
+WF Resend submissions: resend: 23528 for handler: branch_office_email
+[notice] Augus Place West - Modifications – email action webform sent Minister Scully email email.
+WF Resend submissions: resend: 23529 for handler: branch_office_email
+[notice] Augus Place West - Modifications – email action webform sent Minister Scully email email.
+WF Resend submissions: resend: 23530 for handler: branch_office_email
+[notice] Augus Place West - Modifications – email action webform sent Minister Scully email email.
+WF Resend submissions: resend: 23531 for handler: branch_office_email
+[notice] Augus Place West - Modifications – email action webform sent Minister Scully email email.
+WF Resend submissions: resend: 23532 for handler: branch_office_email
+[notice] Augus Place West - Modifications – email action webform sent Minister Scully email email.
+WF Resend submissions: resend: 23533 for handler: branch_office_email
+[notice] Augus Place West - Modifications – email action webform sent Minister Scully email email.
+WF Resend submissions: resend: 23534 for handler: branch_office_email
+[notice] Augus Place West - Modifications – email action webform sent Minister Scully email email.
+WF Resend submissions: resend: 23536 for handler: branch_office_email
+[notice] Augus Place West - Modifications – email action webform sent Minister Scully email email.
+WF Resend submissions: resend: 23537 for handler: branch_office_email
+[notice] Augus Place West - Modifications – email action webform sent Minister Scully email email.
+WF Resend submissions: resend: 23538 for handler: branch_office_email
+[notice] Augus Place West - Modifications – email action webform sent Minister Scully email email.
+WF Resend submissions: resend: 23539 for handler: branch_office_email
+[notice] Augus Place West - Modifications – email action webform sent Minister Scully email email.
+WF Resend submissions: resend: 23540 for handler: branch_office_email
+[notice] Augus Place West - Modifications – email action webform sent Minister Scully email email.
+WF Resend submissions: resend: 23541 for handler: branch_office_email
+[notice] Augus Place West - Modifications – email action webform sent Minister Scully email email.
+WF Resend submissions: resend: 23542 for handler: branch_office_email
+[notice] Augus Place West - Modifications – email action webform sent Minister Scully email email.
+WF Resend submissions: resend: 23543 for handler: branch_office_email
+[notice] Augus Place West - Modifications – email action webform sent Minister Scully email email.
+WF Resend submissions: resend: 23544 for handler: branch_office_email
+[notice] Augus Place West - Modifications – email action webform sent Minister Scully email email.
+WF Resend submissions: resend: 23545 for handler: branch_
 
 1698445054294
+gitPA8n@ganon:/srv/web/gardensofstone.org.au$ sh ./src/dr.sh pf:resend-submissions 1 1728053584 branch_office_email NULL FALSE
+WF Resend submissions: Start checking submissions between: 1 - 1728053584
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 261 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 262 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 263 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 264 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 265 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 266 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 267 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 268 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 269 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 270 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 271 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 272 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 288 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 289 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 291 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 292 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 296 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 307 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 308 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 310 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 313 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 318 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 327 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 357 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 379 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 396 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 397 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 411 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 485 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 509 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 511 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 512 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 513 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 518 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 627 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 682 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 711 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 712 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 716 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 748 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 790 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 820 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 839 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 842 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 843 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 857 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 872 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 878 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 883 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 884 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 885 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 901 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 902 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 903 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 904 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 905 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 906 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 907 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 908 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 909 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 910 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 911 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 913 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 914 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 915 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 916 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 917 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 918 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 919 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 920 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 921 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 922 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 923 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 924 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 925 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 926 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 927 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 928 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 929 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 930 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 931 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 932 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 934 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 935 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 936 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 937 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 938 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 939 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 942 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 943 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 944 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 945 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 946 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 949 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 959 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 962 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 963 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 966 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 967 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 970 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 971 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 972 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 973 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 975 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 977 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 978 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 981 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 984 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 985 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 987 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 988 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 989 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 991 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 993 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 994 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 995 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 996 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 997 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 998 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 999 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 1002 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 1003 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 1005 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 1006 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 1007 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 1008 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 1009 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 1013 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 1014 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 1016 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 1017 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 1018 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 1019 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 1023 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 1025 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 1027 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 1029 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 1030 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 1031 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 1032 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 1033 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 1034 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 1035 for handler: branch_office_email
+[notice] Gardens of Stone draft Plan of Management — will it be wonderland or a theme park? webform sent Branch office email - Masterplan email.
+WF Resend submissions: resend: 1036 for handler: branch_office_email
+[warning] file_put_contents(/srv/web/gardensofstone.org.au/web/../sec/files/civicrm/templates_c/CachedExtLoader.eaeec56f33f2ec89f7850d83998d5c67.php): Failed to open stream: Permission denied ClassLoader.php:86
+
+In Filesystem.php line 290:
+
+Cannot rename "/tmp/CachedCiviContainer.eaeec56f33f2ec89f7850d83998d5c67.phpR98KPn" to "/srv/web/gardensofstone.org.
+au/web/../sec/files/civicrm/templates_c/CachedCiviContainer.eaeec56f33f2ec89f7850d83998d5c67.php".
+
+
 ## 20231027 mail
 
 Oct 27 00:40:38 ganon postfix/smtp[183752]: C538B6B82: to=<keith.muir6@bigpond.com>, relay=extmail.bigpond.com[203.42.22.10]:25, delay=372, delays=372/0.01/0.39/0, dsn=4.7.1, status=deferred (host extmail.bigpond.com[203.42.22.10] refused to talk to me: 550-5.7.1 Connection refused - IB119. 43.239.97.47 is blacklisted in Abusix 550-5.7.1 Mail Intelligence. See https://lookup.abusix.com/search?q=43.239.97.47 550 5.7.1 i{ef1fd412-c426-49a4-b178-4e1a8a4b234f})

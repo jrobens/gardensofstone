@@ -2,7 +2,7 @@ name: mediteran-interlated
 type: theme
 description: 'Customisations to Mediteran'
 package: Interlated
-core_version_requirement: ^8.8 || ^9
+core_version_requirement: ^8.8 || ^9 || ^10
 dependencies:
   - mediteran:mediteran
 libraries:
