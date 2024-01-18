@@ -1,3 +1,46 @@
+## Updates 2024-01-18
+
+    civicrm/civicrm-core     5.69.1 ! 5.69.2  Open source constituent relationship management for non-profits, NGOs and advocacy organizations.
+    civicrm/civicrm-drupal-8 5.69.1 ! 5.69.2  Open source constituent relationship management for non-profits, NGOs and advocacy organizations.
+    civicrm/civicrm-packages 5.69.1 ! 5.69.2  Legacy third party dependencies for CiviCRM
+    drupal/console           1.9.9  ! 1.9.10  The Drupal CLI. A tool to generate boilerplate code, interact with and debug Drupal.
+    drupal/ds                3.16.0 ! 3.18.0  Extend the display options for every entity type.
+    drupal/leaflet           10.2.7 ! 10.2.10 Integration with the Leaflet map scripting library.
+    drupal/paragraphs        1.16.0 ! 1.17.0  Enables the creation of Paragraphs entities.
+
+
+module_filter module
+9401 - Add the filters_enabled.permission default configuration.
+9402 - Ensure that the 'path' configuration property is a boolean.
+9403 - Enable jQuery UI Autocomplete module.
+webform module
+Issue #3404493: webform_default permission.
+
+## Update to drupal 10
+
+
+
+## Updates 2024-01-12
+
+    civicrm/civicrm-core     5.68.1 ! 5.69.1 Open source constituent relationship management for non-profits, NGOs and advocacy organizations.
+    civicrm/civicrm-drupal-8 5.68.1 ! 5.69.1 Open source constituent relationship management for non-profits, NGOs and advocacy organizations.
+    civicrm/civicrm-packages 5.68.1 ! 5.69.1 Legacy third party dependencies for CiviCRM
+    drupal/console           1.9.9  ! 1.9.10 The Drupal CLI. A tool to generate boilerplate code, interact with and debug Drupal.
+    drupal/markdown          3.0.0  ! 3.0.1  Provides Markdown integration for Drupal and allows content to be formatted in a simple plain-text syntax that is transformed into valid HTML.
+    drupal/module_filter     4.0.1  ! 4.1.0  Filter the modules list.
+    drupal/photos            6.0.5  ! 6.0.6  Picture management module. Photo albums.
+
+module_filter module
+9401 - Add the filters_enabled.permission default configuration.
+9402 - Ensure that the 'path' configuration property is a boolean.
+9403 - Enable jQuery UI Autocomplete module.
+webform module
+Issue #3404493: webform_default permission.
+
+## Updates 2024-01-04
+
+    drupal/console 1.9.9  ! 1.9.10 The Drupal CLI. A tool to generate boilerplate code, interact with and debug Drupal.
+    drush/drush    10.6.1 ! 10.6.2 Drush is a command line shell and scripting interface for Drupal, a veritable Swiss Army knife designed to make life easier for those of us who spend some of our working hours hacking away at the command prompt.
 
 
 remote: Verifying lock file contents can be installed on current platform.

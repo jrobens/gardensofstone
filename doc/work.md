@@ -1,3 +1,6 @@
+*:JR:2024-01-18:GOS:0.2: sys+ update drupal. civicrm/civicrm-core5.69.1
+*:JR:2024-01-12:GOS:0.2: sys+ update drupal. civicrm/civicrm-core5.68.1
+*:JR:2024-01-04:GOS:0.2: sys+ update drupal. drupal/console1.9.9
 *:JR:2024-01-03:GOS:0.2: sys+ update drupal. civicrm/civicrm-core5.67.0
 *:JR:2023-11-15:GOS:0.2: sys+ update drupal. civicrm/civicrm-asset-pluginv1.1.3
 *:JR:2023-10-28:GOS:0.2: sys+ update drupal. civicrm/civicrm-core5.66.0
