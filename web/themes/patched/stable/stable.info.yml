@@ -1,0 +1,5 @@
+name: Mediteran
+type: theme
+base theme: false
+description: 'Mediteran is a clean and simple administration theme designed by <a href="https://drupalation.com" target="_blank">Drupalation</a> and supported by <a href="https://ramsalt.com" target="_blank">Ramsalt</a>.'
+core_version_requirement: ^9.2 ||^10 || ^11

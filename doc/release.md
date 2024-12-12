@@ -1,7 +1,28 @@
 ## Updates 2024-12-12
 
     choices/choices  9.0.1 = [none matched]
-    jquery/inputmask 5.0.8 ! 5.0.9         
+    jquery/inputmask 5.0.8 ! 5.0.9
+
+warning] Undefined array key "stable" ThemeHandler.php:74
+
+[notice] Module admin_toolbar_links_access_filter has an entry in the system.schema key/value storage, but is not installed. <a href="https://www.drupal.org/node/3137656">More information about this error</a>.
+
+`create table gos_cms.help_search_items
+(
+sid               int unsigned auto_increment comment 'Numeric index of this item in the search index'
+primary key,
+section_plugin_id varchar(255) charset ascii default '' not null comment 'The help section the item comes from',
+permission        varchar(255) charset ascii default '' not null comment 'The permission needed to view this item',
+topic_id          varchar(255) charset ascii default '' not null comment 'The topic ID of the item'
+)
+comment 'Stores information about indexed help search items' collate = utf8mb4_general_ci;
+
+create index section_plugin_id
+on gos_cms.help_search_items (section_plugin_id);
+
+create index topic_id
+on gos_cms.help_search_items (topic_id);
+```
 ## Updates 2024-12-12
 
     drupal/better_social_sharing_buttons dev-4.x 1993b32 ! dev-4.x 8bc051a Provides a settings page, a field, a paragraph, and a block for social sharing buttons
