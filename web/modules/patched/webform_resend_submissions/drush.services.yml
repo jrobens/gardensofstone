@@ -1,0 +1,7 @@
+services:
+  webform_resend_submissions.commands:
+    class: \Drupal\webform_resend_submissions\Commands\WebformResendSubmissionCommands
+    arguments: ['@database']
+    tags:
+      - { name: drush.command }
+

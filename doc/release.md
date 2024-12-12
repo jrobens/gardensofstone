@@ -1,3 +1,128 @@
+## Updates 2024-12-12
+
+    drupal/better_social_sharing_buttons dev-4.x 1993b32 ! dev-4.x 8bc051a Provides a settings page, a field, a paragraph, and a block for social sharing buttons
+    drupal/webform                       6.3.0-alpha2    ! 6.3.0-alpha3    Enables the creation of webforms and questionnaires.
+[error]  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'gos2_cms.help_search_items' doesn't exist: SELECT "hsi"."sid" AS "sid", "hsi"."topic_id" AS "topic_id", "hsi"."section_plugin_id" AS "section_plugin_id", "hsi"."permission" AS "permission"
+> FROM
+
+Schema information for module jquery_ui was missing from the database
+
+
+ ------------------- ------------ --------------- -----------------------------
+Module              Update ID    Type            Description
+ ------------------- ------------ --------------- -----------------------------
+admin_toolbar       8003         hook_update_n   8003 - Uninstall Admin
+Toolbar Links Access Filter
+for Drupal 10.3+. @see
+https://www.drupal.org/proj
+ect/admin_toolbar/issues/34
+63291
+block_class         20017        hook_update_n   20017 - Convert
+block_classes_stored from
+JSON to a sequence.
+block_class         20018        hook_update_n   20018 - Set
+'maxlength_attributes'
+config default value to
+'255', if it is empty.
+context             8004         hook_update_n   8004 - Remove unnecessary
+block dependencies.
+context_ui          8001         hook_update_n   8001 - Issue #3280556:
+Remove context menus links.
+ds                  8006         hook_update_n   8006 - Update config
+settings to set field bc
+layer to TRUE.
+ds                  8007         hook_update_n   8007 - Sets the 'Exclude
+layout builder blocks on
+block field form' to FALSE.
+ds                  8008         hook_update_n   8008 - Sets the 'Expert
+field template
+prefix/suffix textarea'
+setting to FALSE.
+ds                  8009         hook_update_n   8009 - Convert keys using
+hyphens to use underscores.
+ds                  8010         hook_update_n   8010 - Sets the 'Exclude DS
+layouts in Layout Builder'
+setting to FALSE.
+ds                  8011         hook_update_n   8011 - Sets the 'Use DS
+layout images' setting to
+TRUE.
+ds                  8012         hook_update_n   8012 - Sets the 'Global
+field template BC' setting
+to TRUE.
+ds                  8013         hook_update_n   8013 - Sets the 'Layout
+suggestion BC' setting to
+TRUE.
+layout_paragraphs   9002         hook_update_n   9002 - Remove old
+theme_display
+configuration.
+metatag             9401         hook_update_n   9401 - Sets tag_trim_end
+standard settings for
+existing installations.
+module_filter       9403         hook_update_n   9403 - Enable jQuery UI
+Autocomplete module.
+viewsreference      8103         hook_update_n   8103 - Migrate title and
+argument columns to the new
+data field.
+webform             8638         hook_update_n   8638 - Issue #3485556:
+Webform text format appears
+in the formats list.
+metatag             v2_01_chan   post-update     Convert all fields to use
+ge_fields_                   JSON storage.
+to_json
+metatag             v2_02_remo   post-update     Remove meta tags entity
+ve_entity_                   values that were removed in
+values                       v2.
+metatag             v2_03_remo   post-update     Remove meta tags from
+ve_config_                   default configurations that
+values                       were removed in v2.
+metatag             v2_04_unin   post-update     Uninstall submodule(s)
+stall_modu                   deprecated in v2:
+les                          GooglePlus.
+metatag             v2_05_twit   post-update     Replace deprecatedremoved
+ter_type_c                   Twitter Card "type" values.
+hanges
+system              convert_em   post-update     Updates system.date config
+pty_countr                   to NULL for empty country
+y_and_time                   and timezone defaults.
+zone_setti
+ngs_to_nul
+l
+system              sdc_uninst   post-update     Uninstall the sdc module if
+all                          installed.
+tfa                 add_redire   post-update     Redirect users to TFA setup
+ct_to_user                   page default to disabled.
+s_without_
+tfa
+views               views_data   post-update     Post update configured
+_argument_                   views for entity reference
+plugin_id                    argument plugin IDs.
+webform             authentica   post-update     Issue #3404493:
+ted_user_p                   webform_default permission.
+ermission
+webform             ckeditor     post-update     Move from custom CKEditor
+to hidden 'webform_default'
+text format.
+webform             ckeditor01   post-update     Issue #3351348:
+'#multiple__no_items_messag
+e' added to every field.
+webform             confirmati   post-update     #3335924: Allow the
+on_page_no                   confirmation page to
+index                        include robots noindex meta
+tag.
+webform             deprecate_   post-update     #3254570: Move jQuery UI
+jquery_ui_                   datepicker support into
+datepicker                   dedicated deprecated
+module.
+webform             deprecate_   post-update     Issue #3247475: Location
+location_p                   field Algolia Places
+laces                        sunsetting May 31, 2022.
+webform             multiple_c   post-update     Issue #3339769: Improve
+ategories                    Webform categorization to
+support assigning multiple
+categories and default
+categories.
+ ------------------- ------------ --------------- -----------------------------
+
 
 QLSTATE[42S02]: Base table or view not found: 1146 Table 'gos2_cms.help_search_items' doesn't exist: SELECT "hsi"."sid" AS "sid", "hsi"."topic_id" AS "topic_id", "hsi"."section_plugin_id" AS "section_plugin_id", "hsi"."permission" AS "permission"
 FROM

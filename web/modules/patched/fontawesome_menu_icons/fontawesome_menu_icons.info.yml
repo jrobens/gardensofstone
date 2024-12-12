@@ -1,0 +1,8 @@
+name: FontAwesome Menu Icons
+type: module
+description: FontAwesome Menu Icons.
+core_version_requirement: ^10 || ^11
+package: Menu
+dependencies:
+  - fontawesome:fontawesome
+  - drupal:menu_ui

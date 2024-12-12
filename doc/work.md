@@ -1,3 +1,4 @@
+*:JR:2024-12-12:GOS:0.2: sys+ update drupal. drupal/better_social_sharing_buttonsdev-4.x
 *:JR:2024-12-06:GOS:0.2: sys+ update drupal. civicrm/civicrm-core5.78.3
 *:JR:2024-10-26:GOS:0.2: sys+ update drupal. 
 *:JR:2024-10-23:GOS:0.2: sys+ update drupal. civicrm/civicrm-core5.77.0

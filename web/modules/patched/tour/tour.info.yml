@@ -1,0 +1,8 @@
+name: 'Views Add Button'
+description: 'Creates a configurable entity add button for Views areas and fields.'
+type: module
+core_version_requirement: ^8 || ^9 || ^10 || ^11
+package: 'Views'
+dependencies:
+  - drupal:views
+  - token:token

@@ -1,0 +1,6 @@
+name: 'Webform resend submissions'
+description: 'Resends webform submissions via DRUSH.'
+package: 'Webform'
+version: '1.0.0'
+type: module
+core_version_requirement: ^8 || ^9 || ^10 || ^11

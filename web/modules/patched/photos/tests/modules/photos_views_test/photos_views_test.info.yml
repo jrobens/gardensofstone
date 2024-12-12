@@ -1,0 +1,10 @@
+name: 'PhotosAccess views test config'
+description: 'Provides default views for tests.'
+type: module
+core_version_requirement: ^9.3 || ^10
+packages: Testing
+dependencies:
+  - drupal:image
+  - drupal:node
+  - drupal:photos
+  - drupal:views

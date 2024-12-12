@@ -1,0 +1,5 @@
+name: Animate on Scroll
+description: Provides integration with the AOS javascript library.
+package: Other
+type: module
+core_version_requirement: ^9 || ^10 || ^11

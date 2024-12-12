@@ -2793,26 +2793,29 @@
         },
         {
             "name": "drupal/better_social_sharing_buttons",
-            "version": "dev-4.x",
+            "version": "4.1.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/better_social_sharing_buttons.git",
-                "reference": "1993b3216eb1e0763ecdc77aadf280ccc745b7b4"
+                "reference": "4.1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/better_social_sharing_buttons-4.1.0.zip",
+                "reference": "4.1.0",
+                "shasum": "2c76a58208213ed0a259b334182ca4c5c0729058"
             },
             "require": {
                 "drupal/core": "^9.3 || ^10 || ^11"
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-4.x": "4.x-dev"
-                },
                 "drupal": {
-                    "version": "4.0.7+10-dev",
-                    "datestamp": "1724631093",
+                    "version": "4.1.0",
+                    "datestamp": "1733860882",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 }
             },
@@ -2824,6 +2827,10 @@
                 {
                     "name": "flyke",
                     "homepage": "https://www.drupal.org/user/2750085"
+                },
+                {
+                    "name": "mandclu",
+                    "homepage": "https://www.drupal.org/user/52136"
                 },
                 {
                     "name": "shelane",
@@ -6153,17 +6160,17 @@
         },
         {
             "name": "drupal/webform",
-            "version": "6.3.0-alpha2",
+            "version": "6.3.0-alpha3",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/webform.git",
-                "reference": "6.3.0-alpha2"
+                "reference": "6.3.0-alpha3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/webform-6.3.0-alpha2.zip",
-                "reference": "6.3.0-alpha2",
-                "shasum": "7f84cc2727cfc707bc743c45b5a650ad107de4cb"
+                "url": "https://ftp.drupal.org/files/projects/webform-6.3.0-alpha3.zip",
+                "reference": "6.3.0-alpha3",
+                "shasum": "845c9127b09c064c7bcf2423c4b42b3c12963d79"
             },
             "require": {
                 "drupal/core": "^10.3 || ^11.0"
@@ -6208,8 +6215,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "6.3.0-alpha2",
-                    "datestamp": "1732628316",
+                    "version": "6.3.0-alpha3",
+                    "datestamp": "1733851306",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
