@@ -1,0 +1,23 @@
+uuid: d5b10536-7c36-4eaf-bf3d-35131f7cd95a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pbhpbanner_text_overlay
+    - paragraphs.paragraphs_type.home_page_banner
+  module:
+    - text
+_core:
+  default_config_hash: 9d1rxzPQmCPXCReXWEUKhJvJ6n1KOGUvN0v5BZ9yxjg
+id: paragraph.home_page_banner.field_pbhpbanner_text_overlay
+field_name: field_pbhpbanner_text_overlay
+entity_type: paragraph
+bundle: home_page_banner
+label: 'Text overlay'
+description: 'Overlay text. e.g. skyscraper sidebar'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

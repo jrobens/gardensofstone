@@ -1,7 +1,7 @@
 name: Interlated Connect menu
 type: module
 description: A base for connect menu
-core_version_requirement: ^8 || ^9 || ^10
+core_version_requirement:  ^9 || ^10 || ^11
 package: Interlated
 dependencies:
   - fontawesome_menu_icons:fontawesome_menu_icons

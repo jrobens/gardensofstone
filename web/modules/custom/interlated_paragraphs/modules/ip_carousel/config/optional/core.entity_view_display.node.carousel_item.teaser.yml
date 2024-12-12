@@ -8,6 +8,8 @@ dependencies:
     - node.type.carousel_item
   module:
     - user
+_core:
+  default_config_hash: teaTa2xphXYGf2wsUHcc0Uz5kYRc8b64pcsYaE2PXOw
 id: node.carousel_item.teaser
 targetEntityType: node
 bundle: carousel_item

@@ -8,13 +8,6 @@
 use Drupal\Core\Routing\RouteMatchInterface;
 
 /**
- * Implements hook_theme().
- */
-function ip_page_and_layout_theme($existing, $type, $theme, $path) {
-
-}
-
-/**
  * Implements hook_help().
  *
  * @inheritdoc

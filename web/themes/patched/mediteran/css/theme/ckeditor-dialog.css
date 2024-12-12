@@ -1,0 +1,221 @@
+/**
+ * @file
+ * CKEditor-native dialogs theming.
+ */
+
+.cke_dialog_background_cover {
+  display: none;
+}
+.cke_dialog::before {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+  opacity: 0.7;
+  background: #000;
+}
+[dir="rtl"] .cke_reset_all * {
+  text-align: right;
+  direction: rtl;
+}
+
+body .cke_reset_all * {
+  font-family: Ubuntu, sans-serif;
+}
+.cke_reset_all .cke_dialog_body {
+  position: relative;
+  border: 0;
+  border-radius: 0;
+  background: none;
+}
+
+.cke_reset_all tbody tr:first-child {
+  border-top: none;
+}
+
+/* Dialog's header. */
+.cke_reset_all .cke_dialog_title {
+  padding: 15px 49px 15px 15px;
+  color: #fff;
+  border: 0;
+  background: #0678be;
+  font-family: Ubuntu, sans-serif;
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 30px;
+  -webkit-font-smoothing: antialiased;
+}
+[dir="rtl"] .cke_reset_all .cke_dialog_title {
+  padding: 15px 15px 15px 49px;
+}
+
+/* More specificity to prevent overriding in high density screens. */
+.cke_reset_all .cke_dialog .cke_dialog_close_button {
+  top: 16px;
+  right: 20px;
+  width: 16px;
+  height: 16px;
+  opacity: 1;
+  background: url(../../images/icons/ffffff/ex.svg) 0 0 no-repeat;
+}
+[dir="rtl"] .cke_reset_all .cke_dialog .cke_dialog_close_button {
+  right: auto;
+  left: 20px;
+}
+.cke_reset_all .cke_dialog .cke_label {
+  display: none;
+}
+
+/* Dialog's body. */
+.cke_reset_all .cke_dialog_contents {
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.cke_reset_all .cke_dialog_contents_body {
+  padding: 1em;
+}
+.cke_reset_all tr:hover,
+.cke_reset_all tr:focus {
+  background: none;
+}
+[dir="rtl"] .cke_reset_all .cke_dialog_ui_hbox_first,
+[dir="rtl"] .cke_reset_all .cke_dialog_ui_hbox_child {
+  padding-right: 0;
+  padding-left: 10px;
+}
+.cke_reset_all .cke_dialog_body label {
+  display: table;
+  margin: 0 0 0.1em;
+  padding: 0;
+}
+.cke_reset_all .cke_dialog_body .cke_dialog_ui_input_text,
+.cke_reset_all .cke_dialog_body .cke_dialog_ui_input_textarea,
+.cke_reset_all .cke_dialog_body div.cke_dialog_ui_input_select {
+  border: 0;
+}
+.cke_reset_all .cke_dialog_body textarea,
+.cke_reset_all .cke_dialog_body input[type="text"],
+.cke_reset_all select.cke_dialog_ui_input_select {
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 115px;
+  min-height: 40px;
+  padding: 10px 12px;
+  -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+  transition: border linear 0.2s, box-shadow linear 0.2s;
+  color: #333;
+  border: 1px solid #d1d1d1;
+  border-radius: 0;
+  background: #fcfcfa;
+  font-size: 14px;
+  line-height: 18px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.cke_reset_all select.cke_dialog_ui_input_select {
+  padding-right: 1.5em;
+  background: #fcfcfa url(../../images/icons/333333/caret-down.svg) no-repeat 99% 63%;
+}
+.cke_reset_all .cke_dialog_body textarea:focus,
+.cke_reset_all .cke_dialog_body input[type="text"]:focus,
+.cke_reset_all select.cke_dialog_ui_input_select:focus {
+  border-color: #40b6ff;
+  outline: transparent;
+  background-color: #fff;
+}
+
+/* Dialog's footer. */
+.cke_reset_all .cke_dialog .cke_dialog_footer {
+  margin: 0;
+  padding: 15px 20px;
+  text-align: left;
+  border: 0;
+  background: #f5f5f2;
+}
+
+.cke_reset_all .cke_dialog .cke_dialog_footer:focus {
+  outline: transparent;
+}
+[dir="rtl"] .cke_reset_all .cke_dialog .cke_dialog_footer {
+  text-align: right;
+}
+.cke_reset_all .cke_dialog .cke_resizer {
+  display: none;
+}
+.cke_reset_all .cke_dialog_footer_buttons {
+  margin: 0;
+}
+.cke_dialog_footer_buttons td {
+  float: right;
+}
+[dir="rtl"] .cke_dialog_footer_buttons td {
+  float: left;
+}
+.cke_reset_all a.cke_dialog_ui_button {
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  margin-right: 1em;
+  padding: 13px 24px;
+  cursor: pointer;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #333;
+  border: 1px solid #b8b8b8;
+  border-radius: 0;
+  background-color: #f5f5f5;
+  font-family: Ubuntu, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: normal;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -webkit-font-smoothing: antialiased;
+}
+[dir="rtl"] .cke_reset_all a.cke_dialog_ui_button {
+  margin-right: 0;
+  margin-left: 1em;
+}
+
+.cke_reset_all .cke_dialog_footer_buttons a.cke_dialog_ui_button:hover,
+.cke_reset_all .cke_dialog_footer_buttons a.cke_dialog_ui_button:focus {
+  padding: 13px 24px;
+  color: #0678be;
+  border: 1px solid #0678be;
+}
+.cke_reset_all .cke_dialog_footer_buttons a.cke_dialog_ui_button:focus {
+  z-index: 10;
+}
+
+.cke_reset_all .cke_dialog_footer_buttons a.cke_dialog_ui_button span {
+  padding: 0;
+}
+.cke_reset_all .cke_dialog_footer_buttons a.cke_dialog_ui_button:hover span,
+.cke_reset_all .cke_dialog_footer_buttons a.cke_dialog_ui_button:focus span,
+.cke_reset_all .cke_dialog_footer_buttons a.cke_dialog_ui_button:active span {
+  padding: 0;
+}
+.cke_reset_all .cke_dialog_footer_buttons a.cke_dialog_ui_button_ok {
+  color: #fff;
+  border: 1px solid #0678be;
+  background-color: #0678be;
+  -webkit-font-smoothing: antialiased;
+}
+.cke_reset_all .cke_dialog_footer_buttons a.cke_dialog_ui_button_ok:hover,
+.cke_reset_all .cke_dialog_footer_buttons a.cke_dialog_ui_button_ok:focus {
+  color: #fff;
+  border: 1px solid #0678be;
+  background-color: #0678be;
+}
+.cke_reset_all .cke_dialog_footer_buttons a.cke_dialog_ui_button_ok:focus {
+  border: 1px solid #0678be;
+}
+.cke_reset_all .cke_dialog_footer_buttons a.cke_dialog_ui_button_ok:active {
+  border-color: #0678be;
+}

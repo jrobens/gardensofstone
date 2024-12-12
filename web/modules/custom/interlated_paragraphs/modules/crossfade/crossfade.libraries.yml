@@ -1,0 +1,4 @@
+crossfade:
+  css:
+    component:
+      styles/crossfade.css: { minified: false }

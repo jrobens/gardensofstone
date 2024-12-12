@@ -1,11 +1,11 @@
+:root {
+  --color-highlight-1: #a2046b;
+}
+
 /**
  * * @file
- * * The scss file for Bootstrap Paragraphs Callout module.
  * *
- * * Can be quickly compiled to CSS at https://www.sassmeister.com/.
  * */
- *
- * // Colors. */
 .paragraph--type--bp-callout > .paragraph__column {
   padding-right: 0;
   padding-bottom: 0;
@@ -23,74 +23,74 @@
 }
 
 .callout-style--primary {
-  border: 2px solid #007bff;
+  border: 2px solid #a2046b;
 }
 .callout-style--primary .callout-header {
-  background: #007bff;
-  color: #ffffff;
+  background: #a2046b;
+  color: #fefefe;
 }
 
 .callout-style--secondary {
-  border: 2px solid #6c757d;
+  border: 2px solid #E1C158;
 }
 .callout-style--secondary .callout-header {
   background: transparent;
-  color: #ffffff;
+  color: #fefefe;
 }
 
 .callout-style--success {
-  border: 2px solid #28a745;
+  border: 2px solid #438029;
 }
 .callout-style--success .callout-header {
-  background: #28a745;
-  color: #ffffff;
+  background: #438029;
+  color: #fefefe;
 }
 
 .callout-style--danger {
-  border: 2px solid #dc3545;
+  border: 2px solid rgb(232, 105, 74);
 }
 .callout-style--danger .callout-header {
-  background: #dc3545;
-  color: #ffffff;
+  background: rgb(232, 105, 74);
+  color: #fefefe;
 }
 
 .callout-style--warning {
-  border: 2px solid #ffc107;
+  border: 2px solid rgb(232, 105, 74);
 }
 .callout-style--warning .callout-header {
-  background: #ffc107;
+  background: rgb(232, 105, 74);
 }
 
 .callout-style--info {
-  border: 2px solid #17a2b8;
+  border: 2px solid blue;
 }
 .callout-style--info .callout-header {
-  background: #17a2b8;
-  color: #ffffff;
+  background: blue;
+  color: #fefefe;
 }
 
 .callout-style--dark {
-  border: 2px solid #343a40;
+  border: 2px solid #333;
 }
 .callout-style--dark .callout-header {
-  background: #343a40;
-  color: #ffffff;
+  background: #333;
+  color: #fefefe;
 }
 
 .callout-style--light {
-  background: #f8f9fa;
-  border: 2px solid #f8f9fa;
+  background: #fefefe;
+  border: 2px solid #fefefe;
 }
 .callout-style--light .callout-header {
-  background: #f8f9fa;
+  background: #fefefe;
 }
 
 .callout-style--white {
-  background: #ffffff;
-  border: 2px solid #ffffff;
+  background: #fefefe;
+  border: 2px solid #fefefe;
 }
 .callout-style--white .callout-header {
-  background: #ffffff;
+  background: #fefefe;
 }
 
 /*# sourceMappingURL=ip_pb_block_generated.css.map */

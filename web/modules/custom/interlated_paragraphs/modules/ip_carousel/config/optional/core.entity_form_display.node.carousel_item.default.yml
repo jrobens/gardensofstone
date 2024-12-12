@@ -6,8 +6,17 @@ dependencies:
     - field.field.node.carousel_item.field_carousel_item
     - node.type.carousel_item
   module:
+    - field_layout
+    - layout_discovery
     - paragraphs
     - path
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+_core:
+  default_config_hash: PDQSfistyviuilG5EpxuOn33PtFmEGe6GWrZXyFrQ4I
 id: node.carousel_item.default
 targetEntityType: node
 bundle: carousel_item

@@ -1,0 +1,305 @@
+/**
+ * Generic elements.
+ */
+
+body {
+  color: #333;
+  background: #fff;
+  font: normal 14px/1.8 Ubuntu, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a,
+.link {
+  text-decoration: none;
+  color: #0678be;
+  font-weight: 400;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+  outline: transparent;
+}
+
+hr {
+  height: 1px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: #f5f5f5;
+}
+summary {
+  text-transform: uppercase;
+  color: #0071b8;
+  font-weight: 700;
+}
+.simpletest-results-form summary {
+  text-transform: none;
+}
+
+legend {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: #0678be;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+fieldset fieldset legend {
+  text-transform: none;
+  color: #333;
+}
+
+/**
+ * Reusable heading classes are included to help modules change the styling of
+ * headings on a page without affecting accessibility.
+ */
+h1,
+.heading-a {
+  margin: 0;
+  padding: 30px 0;
+  color: #333;
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+h2,
+.heading-b {
+  margin: 10px 0;
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 1.2;
+}
+h3,
+.heading-c {
+  margin: 10px 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+h4,
+.heading-d {
+  margin: 10px 0;
+  font-size: 16px;
+  font-weight: 700;
+}
+h5,
+.heading-e {
+  margin: 10px 0;
+  font-size: 14px;
+  font-weight: 700;
+}
+h6,
+.heading-f {
+  margin: 10px 0;
+  font-size: 14px;
+  font-weight: 700;
+}
+p {
+  margin: 10px 0;
+}
+strong {
+  font-weight: 700;
+}
+dl {
+  margin: 0 0 20px;
+}
+dl dd,
+dl dl {
+  margin-bottom: 10px;
+  margin-left: 20px; /* LTR */
+}
+[dir="rtl"] dl dd,
+[dir="rtl"] dl dl {
+  margin-right: 20px;
+}
+blockquote {
+  margin: 1em 40px;
+}
+address {
+  font-style: italic;
+}
+u,
+ins {
+  text-decoration: underline;
+}
+s,
+strike,
+del {
+  text-decoration: line-through;
+}
+big {
+  font-size: larger;
+}
+small {
+  font-size: 12px;
+}
+sub {
+  vertical-align: sub;
+  font-size: smaller;
+  line-height: normal;
+}
+sup {
+  vertical-align: super;
+  font-size: smaller;
+  line-height: normal;
+}
+nobr {
+  white-space: nowrap;
+}
+abbr,
+acronym {
+  border-bottom: dotted 1px;
+}
+ul {
+  margin: 0.25em 0 0.25em 1.5em; /* LTR */
+  list-style-type: disc;
+  list-style-image: none;
+}
+[dir="rtl"] ul {
+  margin-right: 1.5em;
+  margin-left: 0;
+}
+/* This is required to win over specificity of [dir="rtl"] ul */
+[dir="rtl"] .messages__list {
+  margin-right: 0;
+}
+ol {
+  margin: 0.25em 0 0.25em 2em; /* LTR */
+  padding: 0;
+  list-style-type: decimal;
+}
+[dir="rtl"] ol {
+  margin-right: 2em;
+  margin-left: 0;
+}
+/* stylelint-disable-next-line selector-type-no-unknown */
+quote,
+code {
+  margin: .5em 0;
+}
+pre {
+  margin: 0.5em 0;
+  white-space: pre-wrap;
+}
+details {
+  margin: 0 0 20px 0;
+  background: none;
+}
+
+details details,
+details details details {
+  padding: 0 20px;
+}
+
+details legend {
+  text-transform: none;
+  color: #333;
+}
+
+details summary {
+  display: list-item;
+  padding: 10px 0;
+}
+
+details summary:focus,
+details summary:hover {
+  cursor: pointer;
+}
+
+details summary:focus {
+  outline: transparent;
+}
+
+.details-wrapper {
+  padding: 5px 0;
+}
+
+details .details-descripion {
+  margin-bottom: 0;
+}
+
+details:last-of-type {
+  margin-bottom: 0;
+}
+
+input[type="search"] {
+  box-sizing: border-box;
+}
+
+/*
+*  Custom style for checkbox and radio button
+*/
+input[type=checkbox],
+input[type=radio] {
+  position: relative;
+  top: 3px;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: background 0.5s ease;
+  border: 1px solid #b5b5b5;
+  border-radius: 0;
+  background: #fff;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+input[type=radio] {
+  border-radius: 50%;
+}
+
+input[type=checkbox]:hover,
+input[type=checkbox]:focus,
+input[type=radio]:hover,
+input[type=radio]:focus {
+  cursor: pointer;
+  border-color: #0678be;
+  outline: transparent;
+}
+
+input[type=checkbox]:checked,
+input[type=checkbox]:disabled:checked,
+input[type=radio]:checked,
+input[type=radio]:disabled:checked {
+  background: #0678be;
+  box-shadow: inset 0 0 0 3px #fff;
+}
+
+input[type=checkbox]:disabled,
+input[type=radio]:disabled {
+  opacity: 0.5;
+  background: #e2e2e2;
+}
+
+input[type=checkbox]:disabled:hover {
+  cursor: default;
+  border-color: #b5b5b5;
+}
+
+input[type=checkbox]:disabled:hover,
+input[type=radio]:disabled:hover {
+  cursor: default;
+  border-color: #b5b5b5;
+}
+
+span.marker {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 0 7px;
+  white-space: nowrap;
+  text-transform: uppercase;
+  color: #7cbc48;
+  background: #f5f5f5;
+  font-size: 12px;
+  font-weight: 600;
+}

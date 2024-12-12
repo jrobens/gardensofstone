@@ -5,6 +5,8 @@ dependencies:
   module:
     - link
     - paragraphs
+_core:
+  default_config_hash: oaNaZtKDMP7NAIJcAs8BU65i_jvqVLp0GdXQ-9a-w-8
 id: paragraph.field_pbtext_link
 field_name: field_pbtext_link
 entity_type: paragraph

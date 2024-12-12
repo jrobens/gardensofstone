@@ -8,6 +8,8 @@ dependencies:
   module:
     - entity_reference_revisions
     - user
+_core:
+  default_config_hash: CO6CkLYbmOQUD517iW9g9ojSPIc-7XFLQgQLSFp-3b8
 id: node.carousel_item.default
 targetEntityType: node
 bundle: carousel_item

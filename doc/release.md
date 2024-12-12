@@ -1,3 +1,330 @@
+
+QLSTATE[42S02]: Base table or view not found: 1146 Table 'gos2_cms.help_search_items' doesn't exist: SELECT "hsi"."sid" AS "sid", "hsi"."topic_id" AS "topic_id", "hsi"."section_plugin_id" AS "section_plugin_id", "hsi"."permission" AS "permission"
+FROM
+
+Twig\Error\LoaderError: Template "@stable/block/block.html.twig" is not defined in "themes/custom/gardensofstone/templates/block/block.html.twig" at line 1. in Twig\Loader\ChainLoader->getCacheKey() (line 111 of
+/Users/jrobens/Sites/gardensofstone2/vendor/twig/twig/src/Loader/ChainLoader.php).
+
+Deleted the block.html.twig in the gardensofstone theme. Check for style changes.
+
+Drupal\Component\Plugin\Exception\PluginNotFoundException: The "term" plugin does not exist. Valid plugin IDs for Drupal\Core\Condition\ConditionManager are: user_status, http_status_code, context_all, request_domain, request_path_exclusion, context, view_inclusion,
+current_theme, response_status, request_path, user_role, webform, entity_bundle:block_content, entity_bundle:comment, entity_bundle:contact_message, entity_bundle:crop, entity_bundle:media, entity_bundle:menu_link_content, entity_bundle:node, entity_bundle:shortcut,
+entity_bundle:taxonomy_term, entity_bundle:webform_submission, entity_bundle:paragraph in Drupal\Core\Plugin\DefaultPluginManager->doGetDefinition() (line 53 of /Users/jrobens/Sites/gardensofstone2/web/core/lib/Drupal/Component/Plugin/Discovery/DiscoveryTrait.php).
+
+
+sh ./src/move_to_patching.sh term_condition
+
+***
+
+PHP Fatal error:  Uncaught TypeError: Drupal\Core\Extension\ThemeHandler::addTheme(): Argument #1 ($theme) must be of type Drupal\Core\Extension\Extension, null given, called in /Users/jrobens/Sites/gardensofstone2/web/core/lib/Drupal/Core/Extension/ThemeHandler.php on line 74 and defined in /Users/jrobens/Sites/gardensofstone2/web/core/lib/Drupal/Core/Extension/ThemeHandler.php:84
+
+
+> ./src/dr.sh thun stable
+>
+>
+> rror]   (Currently using Missing or invalid modules The following modules are marked as installed in the core.extension
+configuration, but they are missing:
+* aos
+* google_analytics
+* photos
+* photos_access
+* term_condition
+
+> sh ./src/move_to_patching.sh aos
+> sh ./src/move_to_patching.sh google_analytics
+> sh ./src/move_to_patching.sh photos
+>
+
+** Deleted most of markdown
+ce detected for service "route_enhancer.param_conversion", path: "router_listener -> router -> router.no_access_checks -> route_enhancer.param_conversion -> paramconverter_manager -> paramconverter.markdown -> plugin.manager.markdown.parser".
+
+
+TODO replace google_analytics with google_tag
+
+**
+
+[error]  Submitted the sitemap to https://www.google.com/ping?sitemap=http://default/sitemap.xml and received response 404.
+
+
+**
+
+PHP Deprecated:  Drupal\layout_paragraphs\Access\LayoutParagraphsBuilderAccess::access():
+
+- update layout paragraphs
+> composer require 'drupal/layout_paragraphs:^2.1'
+
+
+**
+
+hook_event_dispatcher
+
+> composer require 'drupal/hook_event_dispatcher:^4.2'
+
+Can't disable markdown. Can't reassign to the patched version. Can't
+
+Just try upgrading
+
+chmod 777 web/sites/default
+chmod 666 web/sites/default/*settings.php
+chmod 666 web/sites/default/*services.yml
+
+composer require 'drupal/core-recommended:^11' \
+'drupal/core-composer-scaffold:^11' \
+'drupal/core-project-message:^11' --no-update
+
+Could it have been?
+
+"platform": {
+"php": "8.2"
+},
+
+composer update --dry-run
+
+composer remove drupal/google_analytics --no-update
+composer remove drupal/photos --no-update
+composer remove drupal/term_condition --no-update
+composer remove drupal/webform_civicrm --no-update
+
+drupal/webform_resend_submissions (rate automated patch or not)
+
+> composer require 'drupal/module_filter:^5.0' --no-update
+
+drupal/fontawesome_menu_icons
+> composer require 'drupal/fontawesome_menu_icons:3.x-dev@dev' --no-update
+
+drupal/context 5.0.0-rc1 requires drupal/core ^9.3 || ^10
+
+sh ./src/move_to_patching.sh context y
+
+drupal/animated_scroll_to_top 2.0.0 requires drupal/core ^8 || ^9 -
+> sh ./src/move_to_patching.sh animated_scroll_to_top y
+
+
+ckeditor_media_embed
+> composer require 'drupal/ckeditor_media_embed:2.x-dev@dev' --no-update
+
+drupal/animate_on_scroll dev-1.x requires drupal/core ^8.8 || ^9 || ^10
+
+> composer require 'drupal/animate_on_scroll:3.0.x-dev@dev' --no-update
+
+> composer require 'drupal/xmlsitemap:^2.0@beta' --no-update
+
+> sh ./src/move_to_patching.sh views_add_button y
+
+> composer require 'drupal/paragraph_blocks:^4.1' --no-update
+> composer require 'drupal/metatag:^2.1' --no-update
+>
+> sh ./src/move_to_patching.sh media_bulk_upload y
+> composer require 'drupal/fontawesome_menu_icons:3.x-dev@dev' --no-update
+> composer remove drupal/fontawesome --no-update
+> sh ./src/move_to_patching.sh fontawesome y
+> composer remove drupal/fontawesome_iconpicker_widget --no-update
+> sh ./src/move_to_patching.sh fontawesome_menu_icons y
+
+
+PHP Fatal error:  Trait "Symfony\Component\DependencyInjection\ContainerAwareTrait" not found in /Users/jrobens/Sites/gardensofstone2/web/modules/patched/markdown/src/PluginManager/InstallablePluginManager.php on line 32
+
+
+##
+
+show tables like '%cache%';
+
+cache_access_policy
+cache_bootstrap
+cache_config
+cache_container
+cache_data
+cache_default
+cache_discovery
+cache_dynamic_page_cache
+cache_entity
+cache_markdown
+cache_menu
+cache_page
+cache_render
+cache_toolbar
+cachetags
+civicrm_acl_cache
+civicrm_acl_contact_cache
+civicrm_cache
+civicrm_group_contact_cache
+civicrm_prevnext_cache
+civicrm_relationship_cache
+
+
+truncate cache_bootstrap;
+truncate cache_container;
+truncate cache_data;
+truncate cache_default;
+truncate cache_discovery;
+truncate cache_dynamic_page_cache;
+truncate cache_entity;
+truncate cache_markdown;
+truncate cache_menu;
+truncate cache_page;
+truncate cache_render;
+truncate cache_toolbar;
+
+
+composer require 'drupal/webform:^6.3@alpha'
+
+
+
+AssertionError: Instead of using replacing Drush's logger, use $this->add() on DrushLoggerManager to add a custom logger. See https://github.com/drush-ops/drush/pull/5022 in /Users/jrobens/Sites/gardensofstone2/vendor/drush/drush/src/Commands/DrushCommands.php on line 76 #0 /Users/jrobens/Sites/gardensofstone2/vendor/drush/drush/src/Commands/DrushCommands.php(76): assert(false, 'Instead of usin...')
+#1 /Users/jrobens/Sites/gardensofstone2/vendor/drush/drush/src/Runtime/ServiceManager.php(480): Drush\Commands\DrushCommands->logger()
+#2 /Users/jrobens/Sites/gardensofstone2/vendor/drush/drush/src/Boot/DrupalBoot8.php(282): Drush\Runtime\ServiceManager->inflect(Object(League\Container\Container), Object(Drupal\markdown\Commands\MarkdownCommands))
+#3 /Users/jrobens/Sites/gardensofstone2/vendor/drush/drush/src/Boot/DrupalBoot8.php(218): Drush\Boot\DrupalBoot8->addDrupalModuleDrushCommands(Object(Drush\Boot\BootstrapManager))
+#4 /Users/jrobens/Sites/gardensofstone2/vendor/drush/drush/src/Boot/BootstrapManager.php(211): Drush\Boot\DrupalBoot8->bootstrapDrupalFull(Object(Drush\Boot\BootstrapManager), NULL)
+#5 /Users/jrobens/Sites/gardensofstone2/vendor/drush/drush/src/Boot/BootstrapManager.php(397): Drush\Boot\BootstrapManager->doBootstrap(5, 6, NULL)
+#6 /Users/jrobens/Sites/gardensofstone2/vendor/drush/drush/src/Application.php(219): Drush\Boot\BootstrapManager->bootstrapMax()
+#7 /Users/jrobens/Sites/gardensofstone2/vendor/drush/drush/src/Application.php(185): Drush\Application->bootstrapAndFind('pm:uninstall')
+#8 /Users/jrobens/Sites/gardensofstone2/vendor/symfony/console/Application.php(266): Drush\Application->find('pm:uninstall')
+#9 /Users/jrobens/Sites/gardensofstone2/vendor/symfony/console/Application.php(175): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 /Users/jrobens/Sites/gardensofstone2/vendor/drush/drush/src/Runtime/Runtime.php(110): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 /Users/jrobens/Sites/gardensofstone2/vendor/drush/drush/src/Runtime/Runtime.php(40): Drush\Runtime\Runtime->doRun(Array, Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 /Users/jrobens/Sites/gardensofstone2/vendor/drush/drush/drush.php(140): Drush\Runtime\Runtime->run(Array)
+#13 {main}
+AssertionError: Instead of using replacing Drush's logger, use $this->add() on DrushLoggerManager to add a custom logger. See https://github.com/drush-ops/drush/pull/5022 in assert() (line 76 of /Users/jrobens/Sites/gardensofstone2/vendor/drush/drush/src/Commands/DrushCommands.php).
+[warning] Drush command terminated abnormally.
+/Users/jrobens/Sites/gardensofstone2
+Deprecation Notice: Composer\Installers\Installer::__construct(): Implicitly marking parameter $filesystem as nullable is deprecated, the explicit nullable type must be used instead in /Users/jrobens/Sites/gardensofstone2/vendor/composer/installers/src/Composer/Installers/Installer.php:136
+Deprecation Notice: Composer\Installers\Installer::__construct(): Implicitly marking parameter $binaryInstaller as nullable is deprecated, the explicit nullable type must be used instead in /Users/jrobens/Sites/gardensofstone2/vendor/composer/installers/src/Composer/Installers/Installer.php:136
+Deprecation Notice: Composer\Installers\BaseInstaller::__construct(): Implicitly marking parameter $package as nullable is deprecated, the explicit nullable type must be used instead in /Users/jrobens/Sites/gardensofstone2/vendor/composer/installers/src/Composer/Installers/BaseInstaller.php:22
+Deprecation Notice: Composer\Installers\BaseInstaller::__construct(): Implicitly marking parameter $composer as nullable is deprecated, the explicit nullable type must be used instead in /Users/jrobens/Sites/gardensofstone2/vendor/composer/installers/src/Composer/Installers/BaseInstaller.php:22
+Deprecation Notice: Composer\Installers\BaseInstaller::__construct(): Implicitly marking parameter $io as nullable is deprecated, the explicit nullable type must be used instead in /Users/jrobens/Sites/gardensofstone2/vendor/composer/installers/src/Composer/Installers/BaseInstaller.php:22
+
+
+
+AssertionError: The file specified by the given app root, relative path and file name (/Users/jrobens/Sites/gardensofstone2/web/modules/contrib/markdown/markdown.info.yml) do not exist. in /Users/jrobens/Sites/gardensofstone2/web/core/lib/Drupal/Core/Extension/Extension.php on line 73 #0 /Users/jrobens/Sites/gardensofstone2/web/core/lib/Drupal/Core/Extension/Extension.php(73): assert(false, 'The file specif...')
+#1 /Users/jrobens/Sites/gardensofstone2/web/core/lib/Drupal/Core/Extension/ModuleHandler.php(114): Drupal\Core\Extension\Extension->__construct('/Users/jrobens/...', 'module', 'modules/contrib...', 'markdown.module')
+
+
+## Updates 2024-12-06
+
+    civicrm/civicrm-core          5.78.3  ! 5.80.0  Open source constituent relationship management for non-profits, NGOs and advocacy organizations.
+    civicrm/civicrm-drupal-8      5.78.3  ! 5.80.0  Open source constituent relationship management for non-profits, NGOs and advocacy organizations.
+    civicrm/civicrm-packages      5.78.3  ! 5.80.0  Legacy third party dependencies for CiviCRM
+    drupal/admin_toolbar          3.5.0   ! 3.5.1   Provides a drop-down menu interface to the core Drupal Toolbar.
+    drupal/core-composer-scaffold 10.3.6  ! 10.3.10 A flexible Composer project scaffold builder.
+    drupal/core-project-message   10.3.6  ! 10.3.10 Adds a message after Composer installation.
+    drupal/core-recommended       10.3.6  ! 10.3.10 Core and its dependencies with known-compatible minor versions. Require this project INSTEAD OF drupal/core.
+    drupal/drulma_companion       2.1.7   ! 2.1.9   Extends Drulma theme with module functionalities
+    drupal/focal_point            2.1.1   ! 2.1.2   Focal Point allows content creators to mark the most important part of an image for easier cropping.
+    drupal/layout_paragraphs      2.1.0   ! 2.1.1   Layout Paragraphs
+    drupal/leaflet                10.2.25 ! 10.2.29 Integration with the Leaflet map scripting library.
+    drupal/nagios                 1.20.0  ! 1.22.0  Exposes a page that Nagios or Icinga can monitor
+    drupal/webform                6.2.7   ! 6.2.8   Enables the creation of webforms and questionnaires.
+    drupal/webform_civicrm        6.2.5   ! 6.3.0   CiviCRM and Webform integration
+    drush/drush                   13.3.0  ! 13.3.3  Drush is a command line shell and scripting interface for Drupal, a veritable Swiss Army knife designed to make life easier for those of us who spend...
+## Updates 2024-10-26
+
+"Call to undefined function file_create_url()" at /Users/jrobens/Sites/gardensofstone2/web/modules/custom/interlated_paragraphs/modules/crossfade/crossfade.module line 46; PHP message: PHP Deprecated:  Constant E_STRICT is
+
+## Updates 2024-10-23
+
+    civicrm/civicrm-core          5.77.0 ! 5.78.3 Open source constituent relationship management for non-profits, NGOs and advocacy organizations.
+    civicrm/civicrm-drupal-8      5.77.0 ! 5.78.3 Open source constituent relationship management for non-profits, NGOs and advocacy organizations.
+    civicrm/civicrm-packages      5.77.0 ! 5.78.3 Legacy third party dependencies for CiviCRM
+    drupal/block_title_link       1.1.6  ! 1.1.7  Adding link to title of blocks.
+    drupal/core-composer-scaffold 10.3.4 ! 10.3.6 A flexible Composer project scaffold builder.
+    drupal/core-project-message   10.3.4 ! 10.3.6 Adds a message after Composer installation.
+    drupal/core-recommended       10.3.4 ! 10.3.6 Core and its dependencies with known-compatible minor versions. Require this project INSTEAD OF drupal/core.
+    drupal/ds                     3.23.0 ! 3.24.0 Extend the display options for every entity type.
+    drupal/entity_class_formatter 2.0.0  ! 2.0.1  Apply class on the entity if it's field is using this formatter.
+    drupal/hook_event_dispatcher  4.0.3  ! 4.2.0  Dispatches events for several drupal core hooks.
+    drupal/tfa                    1.7.0  ! 1.9.0  Pluggable provider of two factor authentication for Drupal
+    drush/drush                   13.1.1 ! 13.3.0 Drush is a command line shell and scripting interface for Drupal, a veritable Swiss Army knife designed to make life easier for those of us who spend some of our working hours hacking away at the command prompt.
+## Updates 2024-09-12
+
+    civicrm/civicrm-core          5.76.2      ! 5.77.0       Open source constituent relationship management for non-profits, NGOs and advocacy organizations.
+    civicrm/civicrm-drupal-8      5.76.2      ! 5.77.0       Open source constituent relationship management for non-profits, NGOs and advocacy organizations.
+    civicrm/civicrm-packages      5.76.2      ! 5.77.0       Legacy third party dependencies for CiviCRM
+    drupal/core-composer-scaffold 10.3.2      ! 10.3.4       A flexible Composer project scaffold builder.
+    drupal/core-project-message   10.3.2      ! 10.3.4       Adds a message after Composer installation.
+    drupal/core-recommended       10.3.2      ! 10.3.4       Core and its dependencies with known-compatible minor versions. Require this project INSTEAD OF drupal/core.
+    drupal/layout_paragraphs      2.0.8       ! 2.1.0        Layout Paragraphs
+    drupal/leaflet                10.2.24     ! 10.2.25      Integration with the Leaflet map scripting library.
+    drupal/menu_item_extras       3.0.2       ! 3.1.0        Provide an additional custom fields which can be used on Menu link
+    drupal/menu_link_attributes   1.3.0       ! 1.5.0        Allows you to add attributes to menu links.
+    drupal/viewsreference         2.0.0-beta9 ! 2.0.0-beta10 Views reference
+    drush/drush                   13.0.1      ! 13.1.1       Drush is a command line shell and scripting interface for Drupal, a veritable Swiss Army knife designed to make life easier for those of us who spend some of our working hours hacking aw...
+## Updates 2024-08-19
+
+    civicrm/civicrm-core             5.72.2           ! 5.76.2           Open source constituent relationship management for non-profits, NGOs and advocacy orga...
+    civicrm/civicrm-drupal-8         5.72.2           ! 5.76.2           Open source constituent relationship management for non-profits, NGOs and advocacy orga...
+    civicrm/civicrm-packages         5.72.2           ! 5.76.2           Legacy third party dependencies for CiviCRM
+    drupal/admin_toolbar             3.4.2            ! 3.5.0            Provides a drop-down menu interface to the core Drupal Toolbar.
+    drupal/block_class               2.0.11           ! 2.0.12           Allows assigning classes to Blocks.
+    drupal/classy_paragraphs         1.0.0-rc2        ! 1.0.0-rc3        Allows an editor to apply a class to paragraphs.
+    drupal/copyright_footer          3.0.1            ! 3.1.1            Provides a block for Copyright indication.
+    drupal/core-composer-scaffold    10.2.5           ! 10.3.2           A flexible Composer project scaffold builder.
+    drupal/core-project-message      10.2.5           ! 10.3.2           Adds a message after Composer installation.
+    drupal/core-recommended          10.2.5           ! 10.3.2           Core and its dependencies with known-compatible minor versions. Require this project IN...
+    drupal/dropzonejs                2.10.0           ! 2.11.0           Drupal integration for DropzoneJS - An open source library that provides drag’n’dro...
+    drupal/drulma                    2.0.0            ! 2.0.1            Enables the use of Bulma: a free, open source CSS framework based on Flexbox.
+    drupal/drulma_companion          2.1.6            ! 2.1.7            Extends Drulma theme with module functionalities
+    drupal/ds                        3.21.0           ! 3.23.0           Extend the display options for every entity type.
+    drupal/expand_collapse_formatter 2.0.2            ! 2.0.3            A formatter to expand and collapse text area fields.
+    drupal/focal_point               2.0.3            ! 2.1.1            Focal Point allows content creators to mark the most important part of an image for eas...
+    drupal/honeypot                  2.1.3            ! 2.2.0            Mitigates spam form submissions using the honeypot method.
+    drupal/hook_event_dispatcher     4.0.1            ! 4.0.3            Dispatches events for several drupal core hooks.
+    drupal/layout_paragraphs         2.0.4            ! 2.0.8            Layout Paragraphs
+    drupal/leaflet                   10.2.12          ! 10.2.24          Integration with the Leaflet map scripting library.
+    drupal/leaflet_more_maps         2.1.3            ! 2.2.2            Adds a swag of map styles to Leaflet, e.g Thunderforest, Esri, Stamen, Google.
+    drupal/lp_fontawesome            5.15004.0        ! 5.15005.0        Defines fontawesome as library to be used with libraries provider
+    drupal/masquerade                2.0.0-rc4        ! 2.0.0            Allows privileged users to masquerade as another user.
+    drupal/nagios                    1.19.0           ! 1.20.0           Exposes a page that Nagios or Icinga can monitor
+    drupal/paragraphs                1.17.0           ! 1.18.0           Enables the creation of Paragraphs entities.
+    drupal/pathauto                  1.12.0           ! 1.13.0           Provides a mechanism for modules to automatically generate aliases for the content they...
+    drupal/recaptcha_v3              2.0.2            ! 2.0.3            The reCaptcha V3 module provides integration with Google reCaptcha V3 and CAPTCHA module.
+    drupal/shield                    1.7.0            ! 1.8.0            Creates a general shield for the site.
+    drupal/viewsreference            2.0.0-beta7      ! 2.0.0-beta9      Views reference
+    drupal/webform                   6.2.2            ! 6.2.7            Enables the creation of webforms and questionnaires.
+    drush/drush                      13.x-dev 25e00e5 ! 13.x-dev a40daeb Drush is a command line shell and scripting interface for Drupal, a veritable Swiss Arm...
+
+## Updates 2024-04-27
+
+Error: Interface "Drush\Drupal\Commands\sql\SanitizePluginInterface" not found in /Users/jrobens/Sites/gardensofstone2/web/modules/contrib/webform/src/Commands/WebformSanitizeSubmissionsCommands.php on line 18 #0 /Users/jrobens/Sites/gardensofstone2/vendor/composer/ClassLoader.php(576): include()
+
+
+    civicrm/civicrm-core        5.72.0 ! 5.72.2 Open source constituent relationship management for non-profits, NGOs and advocacy organizations.
+    civicrm/civicrm-drupal-8    5.72.0 ! 5.72.2 Open source constituent relationship management for non-profits, NGOs and advocacy organizations.
+    civicrm/civicrm-packages    5.72.0 ! 5.72.2 Legacy third party dependencies for CiviCRM
+    drupal/ckeditor_media_embed 1.12.0 ! 1.13.0 Adds the Media Embed CKEditor plugins to Drupal.
+    drupal/console              1.9.9  ! 1.9.10 The Drupal CLI. A tool to generate boilerplate code, interact with and debug Drupal.
+    drupal/ds                   3.16.0 ! 3.21.0 Extend the display options for every entity type.
+    drupal/tfa                  1.6.0  ! 1.7.0  Pluggable provider of two factor authentication for Drupal
+    drupal/upgrade_status       4.1.0  ! 4.2.0  Review Drupal major upgrade readiness of the environment and components of the site.
+
+Drupal 10
+
+hook_events
+context
+composer require 'drupal/viewsreference:^2.0@beta'
+
+## Updates 2024-04-05
+
+    drupal/console 1.9.9  ! 1.9.10 The Drupal CLI. A tool to generate boilerplate code, interact with and debug Drupal.
+    drupal/ds      3.16.0 ! 3.20.0 Extend the display options for every entity type.
+## Updates 2024-04-05
+
+    civicrm/civicrm-core     5.69.2  ! 5.72.0  Open source constituent relationship management for non-profits, NGOs and advocacy organizations.
+    civicrm/civicrm-drupal-8 5.69.2  ! 5.72.0  Open source constituent relationship management for non-profits, NGOs and advocacy organizations.
+    civicrm/civicrm-packages 5.69.2  ! 5.72.0  Legacy third party dependencies for CiviCRM
+    drupal/block_title_link  1.1.5   ! 1.1.6   Adding link to title of blocks.
+    drupal/console           1.9.9   ! 1.9.10  The Drupal CLI. A tool to generate boilerplate code, interact with and debug Drupal.
+    drupal/dropzonejs        2.8.0   ! 2.10.0  Drupal integration for DropzoneJS - An open source library that provides drag’n’drop file uploads with image previews.
+    drupal/ds                3.16.0  ! 3.20.0  Extend the display options for every entity type.
+    drupal/focal_point       2.0.2   ! 2.0.3   Focal Point allows content creators to mark the most important part of an image for easier cropping.
+    drupal/leaflet           10.2.10 ! 10.2.12 Integration with the Leaflet map scripting library.
+    drupal/module_filter     4.1.0   ! 4.1.1   Filter the modules list.
+    drupal/photos            6.0.6   ! 6.0.7   Picture management module. Photo albums.
+    drupal/tfa               1.4.0   ! 1.6.0   Pluggable provider of two factor authentication for Drupal
+    drupal/upgrade_status    4.0.0   ! 4.1.0   Review Drupal major upgrade readiness of the environment and components of the site.
+## Updates 2024-01-22
+
+    drupal/console 1.9.9  ! 1.9.10 The Drupal CLI. A tool to generate boilerplate code, interact with and debug Drupal.
+    drupal/ds      3.16.0 ! 3.18.0 Extend the display options for every entity type.
 ## Updates 2024-01-18
 
     civicrm/civicrm-core     5.69.1 ! 5.69.2  Open source constituent relationship management for non-profits, NGOs and advocacy organizations.

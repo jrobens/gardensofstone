@@ -3,10 +3,12 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_pbtext_style
+    - field.storage.paragraph.field_pbtext_style2
     - paragraphs.paragraphs_type.pbtext_text
-id: paragraph.pbtext_text.field_pbtext_style
-field_name: field_pbtext_style
+  module:
+    - options
+id: paragraph.pbtext_text.field_pbtext_style2
+field_name: field_pbtext_style2
 entity_type: paragraph
 bundle: pbtext_text
 label: Style
@@ -15,9 +17,5 @@ required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
-settings:
-  handler: 'default:classy_paragraphs_style'
-  handler_settings:
-    target_bundles: null
-    auto_create: false
-field_type: entity_reference
+settings: {  }
+field_type: list_string

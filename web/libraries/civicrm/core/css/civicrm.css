@@ -270,7 +270,7 @@ input.crm-form-entityref {
   border-top: 1px solid #696969;
 }
 
-/* Size the verticle heights in crm-containers by class. */
+/* Size the vertical heights in crm-containers by class. */
 .crm-container .ht-one {
   height: 1em;
 }
@@ -1863,8 +1863,10 @@ input.crm-form-entityref {
 
 .crm-container .crm-submit-buttons,
 .crm-container .action-link {
-  height: 27px;
   margin: 4px 0 4px 2px;
+}
+.crm-container .action-link {
+  height: 27px;
 }
 
 .crm-container .register_link-top {
@@ -1902,9 +1904,7 @@ input.crm-form-entityref {
   text-decoration: none;
   cursor: pointer;
   border: 1px solid #3e3e3e;
-  display: block;
-  float: left;
-  overflow: hidden;
+  display: inline-block;
   line-height: 135%;
   border-radius: 3px;
 }
@@ -2106,7 +2106,7 @@ a.crm-i:hover {
   content: "\f059";
 }
 
-div.crm-accordion-header a.helpicon {
+details > summary a.helpicon {
   color: inherit;
 }
 div.crm-master-accordion-header a.helpicon {
@@ -2194,6 +2194,10 @@ div.crm-master-accordion-header a.helpicon {
 
 /* Specific types of headers */
 
+.crm-container details {
+  margin: 0.25rem 0;
+}
+
 .crm-container summary { /* default summary setting*/
   display: list-item;
   list-style: none;
@@ -2201,6 +2205,10 @@ div.crm-master-accordion-header a.helpicon {
   font-size: 1rem;
   padding: 0.5rem;
   font-weight: bold;
+}
+
+.crm-container table summary { /* Makes summary match the size of the rest of the table it's in */
+  font-size: inherit;
 }
 
 .crm-container summary::-webkit-details-marker { /* Safari fix to remove summary icon */
@@ -2261,7 +2269,10 @@ div.crm-master-accordion-header a.helpicon {
   background-color: transparent;
   font-weight: normal;
   color: #3e3e3e;
-  font-size: 1rem;
+}
+
+.crm-container .crm-accordion-wrapper .crm-master-accordion-header {
+  font-size: 16px;
 }
 
 .crm-container .crm-master-accordion-header.crm-accordion-header:hover,
@@ -2279,8 +2290,21 @@ div.crm-master-accordion-header a.helpicon {
   display: none;
 }
 
+/* Ex: Advanced Search (but not limited to) */
+.crm-container details.crm-accordion-settings summary {
+  text-align: right;
+}
+.crm-container details.crm-accordion-settings summary::before {
+  content: '\f013';
+}
+
 .crm-container details details {
   padding: 0 0.25rem; /* adds padding for nested accordions */
+}
+
+.crm-container details table.dataTable {
+  width: 100% !important; /* stops collapsed dataTables: dev/user-interface/-/issues/73 */
+  box-sizing: border-box;
 }
 
 /* Collapse icon */
@@ -2295,7 +2319,7 @@ div.crm-master-accordion-header a.helpicon {
 .crm-container details > summary:before {
   font-family: "FontAwesome";
   display: inline-block;
-  width: 1em;
+  padding-right: 0.5rem;
   content: "\f0da";
   font-size: 13px;
 }
@@ -2314,7 +2338,7 @@ div.crm-master-accordion-header a.helpicon {
 /* Accordion bodies */
 
 .crm-container .crm-accordion-wrapper .crm-accordion-body,
-.crm-container details.crm-accordion-bold .crm-accordion-body {
+.crm-container details.crm-accordion-bold > .crm-accordion-body {
   border-radius: 0 0 4px 4px;
   border: 1px solid #70716b;
   border-top: 0;
@@ -3251,7 +3275,7 @@ span.crm-select-item-color {
   width: 93%;
 }
 
-/* Checkbox gropus */
+/* Checkbox groups */
 .crm-container ul.crm-checkbox-list {
   list-style: none;
   margin: 0;
@@ -3308,6 +3332,31 @@ span.crm-select-item-color {
 }
 .crm-container ul.crm-checkbox-list.crm-sortable-list li input {
   left: 23px;
+}
+/* Checkbox/radio fields with n-per-line. See https://lab.civicrm.org/dev/core/-/issues/4985 */
+.crm-container .crm-multiple-checkbox-radio-options {
+  --gap: 1em;
+  --checkbox-width: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap);
+}
+/* Reset checkbox width when its rendered as text '(x)' in confirmation screens /dev/core/-/issues/5550 */
+.crm-container.crm-public .crm-profile-view .crm-option-label-pair {
+  --checkbox-width: auto;
+}
+/* Override more general styling */
+.crm-container .crm-multiple-checkbox-radio-options :where(input.crm-form-radio,
+input.crm-form-checkbox) + label {
+  margin-left: 0;
+}
+.crm-container .crm-multiple-checkbox-radio-options .crm-option-label-pair {
+  display: grid;
+  grid-template-columns: var(--checkbox-width) 1fr;
+  align-items: baseline;
+}
+.crm-container .crm-multiple-checkbox-radio-options.crm-options-per-line .crm-option-label-pair {
+  flex: 0 0 calc((100% - (var(--crm-opts-per-line) - 1) * var(--gap)) / var(--crm-opts-per-line));
 }
 
 /* classes related to batch entry operation */
@@ -3964,19 +4013,11 @@ span.crm-status-icon {
   margin-left: 30px;
 }
 
+
 /* Standalone-only styles. A minimal set to make it usable out-of-the-box. */
 html.crm-standalone body {
-  --sa-font-family: sans-serif;
-  --roundness: 3px;
-  --error-colour: #a00;
-  --warning-colour: #fbb862;
-  --success-colour: #86c66c;
-  --label-colour: #464354;
-  --background-colour: rgb(242,242,237);
-  --box-padding: 1.6rem;
-  --box-background: #fff;
   margin: 0;
   padding: 0;
-  font-family: var(--sa-font-family);
-  background-color: var(--background-colour);
+  font-family: var(--crm-font, sans-serif);
+  background-color: var(--crm-c-page-background, #f8f8f8);
 }

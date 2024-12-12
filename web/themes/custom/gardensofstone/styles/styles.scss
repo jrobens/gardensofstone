@@ -1,0 +1,355 @@
+@use '../../../../sites/variables' as *;
+@use 'navbar';
+@use 'crossfade';
+@use 'highlighted';
+@use 'view_events';
+@use 'views_image_layout';
+@use 'photos';
+@use 'webform';
+@use 'footer';
+
+@media (min-width: 768px) {
+  :root {
+    font-size: 1.5rem;
+    font-size: calc(0.7rem + 0.5vw);
+  }
+}
+
+@font-face {
+  font-family: "Lexend_Deca";
+  src: url("fonts/Lexend_Deca/LexendDeca-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "Electrolize";
+  src: url('fonts/Electrolize/Electrolize-Regular.ttf');
+}
+
+@font-face {
+  font-family: "Font Awesome 6 Free";
+  src: url("fontawesome-free-web/webfonts/fa-solid-900.woff2");
+}
+
+@font-face {
+  font-family: "Handlee";
+  src: url("fonts/Handlee/Handlee-Regular.ttf");
+}
+
+@font-face {
+  font-family: DMSans-Regular;
+  src: local(DMSans-Regular), url(fonts/DM_Sans/DMSans-VariableFont_opsz,wght.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: DMSans-Bold;
+  src: local(DMSans-Bold), url(fonts/DM_Sans/DMSans-VariableFont_opsz,wght.ttf) format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: DMSerifDisplay;
+  src: local(DMSerifDisplay-Regular), url(fonts/DM_Serif_Display/DMSerifDisplay-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+.green {
+  color: rgb(138, 153, 107);
+}
+
+.black {
+  color: rgb(27, 27, 27);
+}
+
+.orange {
+  color: rgb(171, 73, 108);
+}
+
+/* where did this come from? */
+.brown {
+  color: rgb(169, 100, 74);
+}
+
+.brown-light {
+  color: rgb(223, 138, 32);
+}
+
+.brown-yellow {
+  color: rgb(254, 213, 124);
+}
+
+.light-yellow {
+  color: rgb(255, 238, 203);
+}
+
+.lighter-yellow {
+  color: rgb(255, 247, 231);
+}
+
+.red,
+.class-red {
+  background: rgb(158, 3, 35);
+}
+
+.grey {
+  background: rgb(149, 150, 154);
+}
+
+.green-grey {
+  background-color: #60614b;
+}
+
+.dark-red {
+  background-color: #560012;
+}
+
+.darker-red {
+  background-color: #35000b;
+}
+
+.light-red {
+  background-color: #bf1338;
+}
+
+.blue {
+  background-color: #03249e;
+}
+
+.dark-green {
+  background-color: #005a3f;
+}
+
+body {
+  font: 100 100%/1.5 'Hind Guntur', sans-serif;
+  color: rgb(27, 27, 27);
+}
+
+body a,
+body a:visited {
+  color: $link;
+}
+
+html .is-family-primary {
+  font-family: 'Hind Guntur', sans-serif !important;
+}
+
+body a:active {
+  outline: white;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Lato', sans-serif;
+}
+
+main {
+  scroll-snap-type: y mandatory;
+  background: white;
+  // clip-path: inset(-14rem 0 0 0)
+}
+
+.layout > div > * {
+  scroll-snap-align: start;
+}
+
+.node-type--page-and-layout main > section {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 0;
+}
+
+body.path-- main > section {
+  background: rgba(255, 255, 255, 0.2);
+  margin-top: 5rem;
+}
+
+main > section > .container {
+  padding: 1rem;
+}
+
+.social-sharing-buttons {
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+  z-index: 10;
+}
+
+body.toolbar-tray-open #block-gardensofstone-branding {
+  padding-top: 2.5rem;
+}
+
+/* Cross fade banner */
+#block-gardensofstone-branding {
+  padding-top: 3.5rem;
+}
+
+/* for inspiration https://codepen.io/dimaZubkov/pen/rLxrXZ */
+
+.navbar.is-fixed-top {
+  z-index: 100;
+}
+
+body.toolbar-tray-open .navbar.is-fixed-top {
+  top: 79px;
+}
+
+.menu-list a.is-active {
+  color: white;
+  background-color: #ffbb63;
+  z-index: 12;
+  font-size: 0.8rem;
+}
+
+@-webkit-keyframes CrossFade {
+  25% {
+    opacity: 1;
+    transform: scale(1) rotate(0);
+  }
+
+  40% {
+    opacity: 0;
+  }
+}
+
+@keyframes CrossFade {
+  25% {
+    opacity: 1;
+    transform: scale(1) rotate(0);
+  }
+
+  40% {
+    opacity: 0;
+  }
+}
+
+body .navbar {
+  z-index: 10;
+}
+
+body.user-logged-in .navbar {
+  top: 0;
+}
+
+.is-black.navbar .navbar-start a {
+  font-size: 0.85rem;
+  outline: white;
+}
+
+body.path-- .region-primary-menu + .hero.is-primary,
+body.path--gardensofstone .region-primary-menu + .hero.is-primary {
+  background-color: transparent;
+  z-index: 29;
+  height: auto;
+}
+
+.hero-head .region-header {
+  flex: 0 0 50%;
+}
+
+.header.hero.is-primary .block-system-branding-block {
+  background: white;
+  padding: 3rem;
+}
+
+/* Page title */
+#block-gardensofstone-page-title {
+  max-width: 66vw;
+}
+
+body.path-- section.section .block-page-title-block {
+  margin-top: 21rem;
+  padding: 2rem;
+  margin-bottom: 0;
+  color: white;
+  background-color: rgb(162, 103, 28);
+}
+
+section.section .block-page-title-block {
+  background: rgb(162, 103, 28);
+}
+
+body.path-- section.section .block-page-title-block {
+  background: inherit;
+}
+
+section.section .block-page-title-block h1.title {
+  color: white;
+  margin-left: 1em
+}
+// Breadcrumb
+nav.breadcrumb a,
+nav.breadcrumb a:visited {
+  color: white;
+}
+
+.columns .column {
+  flex: 4 1 auto;
+}
+
+.columns .column.is-narrow {
+  flex: 1 1 10%;
+}
+
+body.path-- .section {
+  padding: 0;
+}
+
+body.path-- .columns {
+  margin: 0;
+}
+
+body.path-- .column {
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+  // Page body
+  .layout__region--content {
+    position: relative;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+  }
+
+  .layout__region--content > * {
+    scroll-snap-align: start;
+  }
+
+  .block-system-main-block > article {
+    position: relative;
+    background: white;
+    padding-top: 0;
+  }
+
+  article.content.landing::after {
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    top: 10rem;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    background: white;
+    z-index: -1;
+  }
+
+  article > div > .content {
+    padding: 2rem;
+    margin-bottom: 0;
+  }
+
+  article > div > .content > div {
+    margin-left: 2rem;
+  }
+
+  article > div > .content h2 {
+    /*  color: white*/
+    font-weight: normal;
+  }
+}

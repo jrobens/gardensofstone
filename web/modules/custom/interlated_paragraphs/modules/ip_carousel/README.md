@@ -2,57 +2,58 @@
 
 Implementation pattern
 
+- Paragraph type carousel
+- Paragraph type carousel item
+- Carousel has a reference field to add carousel items
+
+Alternatives rejected including using paragraph layout, node blocks.
+
+
+Remove this
+
 * content type carousel
 * Paragraph  carousel within
 * Node block and map block.
 
-Complies with the block mapping pattern although you could build with block reference fields.
 
-CONTENTS OF THIS FILE
----------------------
+Starter template for hero carousel
 
- * Introduction
- * Requirements
- * Installation
- * Configuration
- * Maintainers
+`<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Hello Bulma!</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css">
+	</head>
+	<body>
+		<!-- Start Hero Carousel -->
+		<section class="hero is-medium has-carousel">
+			<div id="carousel-demo" class="hero-carousel">
+				<div class="item-1">
+					<!-- Slide Content -->
+				</div>
+				<div class="item-2">
+					<!-- Slide Content -->
+				</div>
+				<div class="item-3">
+					<!-- Slide Content -->
+				</div>
+			</div>
+			<div class="hero-head"></div>
+			<div class="hero-body"></div>
+			<div class="hero-foot"></div>
+		</section>
+		<!-- End Hero Carousel -->
 
-
-INTRODUCTION
-------------
-
-https://bulma-carousel.onrender.com/
-
-Drupal 8 module that creates a Callout Paragraphs bundle.
-
-
-REQUIREMENTS
-------------
-
-  * [Paragraphs](https://www.drupal.org/project/paragraphs)
-  * [Bootstrap Paragraphs](https://www.drupal.org/project/interlated_paragraphs)
-
-
-INSTALLATION
-------------
-
-  * Install the module as you normally would.
-  * Verify installation by visiting /admin/structure/paragraphs_type and
-  verifying your new Paragraph bundle is in the list.
-
-
-CONFIGURATION
--------------
-
-  * Add or edit an Entity revisions, Paragraphs field.
-  * Check the box next to the Callout bundle to add this bundle and save.
-
-
-MAINTAINERS
------------
-
-Current maintainers:
-  * [thejimbirch](https://www.drupal.org/u/thejimbirch)
-
-This project has been sponsored by:
-  * [Kanopi Studios](https://www.kanopi.com)
+		<script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
+		<script>
+			bulmaCarousel.attach('#carousel-demo', {
+				slidesToScroll: 1,
+				slidesToShow: 4
+			});
+		</script>
+	</body>
+</html>
+`

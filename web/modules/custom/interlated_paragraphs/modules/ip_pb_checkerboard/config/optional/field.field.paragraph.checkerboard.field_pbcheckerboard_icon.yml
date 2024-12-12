@@ -7,7 +7,7 @@ dependencies:
     - media.type.image
     - paragraphs.paragraphs_type.checkerboard
 _core:
-  default_config_hash: LUqmhJh-tYmVmyxl8TeElHowUNRiCEkmYiB5jf8gcI4
+  default_config_hash: VPLh7DWerFi7U8-QGhYGejMVJkyZ3A0HjaPK4n0g2_s
 id: paragraph.checkerboard.field_pbcheckerboard_icon
 field_name: field_pbcheckerboard_icon
 entity_type: paragraph

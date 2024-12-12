@@ -1,0 +1,21 @@
+uuid: 68d75794-f3bd-4a22-a3b6-c00b208a55f8
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+_core:
+  default_config_hash: YvNpNGo7ZvLpCahog_caYPArf_J3ZOZF_-m4AW14kaQ
+id: paragraph.field_pbhpbanner_text_overlay
+field_name: field_pbhpbanner_text_overlay
+entity_type: paragraph
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,17 +1,42 @@
-uuid: 21fe4fcb-3ec2-4e3e-96b0-86672344339b
+uuid: 1c6df148-5845-457d-9d7e-d642b6971f0a
 langcode: en
 status: true
 dependencies:
   module:
-    - classy_paragraphs
+    - options
     - paragraphs
 id: paragraph.field_pbrow_style
 field_name: field_pbrow_style
 entity_type: paragraph
-type: entity_reference
+type: list_string
 settings:
-  target_type: classy_paragraphs_style
-module: core
+  allowed_values:
+    -
+      value: blue
+      label: Blue
+    -
+      value: blue-big
+      label: 'Blue Big'
+    -
+      value: orange
+      label: Orange
+    -
+      value: orange-big
+      label: 'Orange Big'
+    -
+      value: grey
+      label: Grey
+    -
+      value: grey-big
+      label: 'Grey Big'
+    -
+      value: white
+      label: White
+    -
+      value: white-big
+      label: 'White Big'
+  allowed_values_function: ''
+module: options
 locked: false
 cardinality: 1
 translatable: true

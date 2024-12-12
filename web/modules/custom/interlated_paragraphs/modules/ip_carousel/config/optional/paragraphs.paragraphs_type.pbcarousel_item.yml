@@ -2,6 +2,8 @@ uuid: 3a50c535-443c-4c3a-898c-45fa215ea786
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: fdIPVU1sC7w306vA7jzeIKE9NAwOcHe5eXJ2i8-WOeQ
 id: pbcarousel_item
 label: 'Carousel item'
 icon_uuid: null

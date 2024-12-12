@@ -1,3 +1,7 @@
+:root {
+  --color-highlight-1: #a2046b;
+}
+
 /**
  * * @file
  * *
@@ -21,15 +25,36 @@
 }
 .paragraph--type--image .field--name-field-pbimage-caption {
   padding: 1rem;
-  font-size: 1rem;
-  font-size: var(--font-size-caption);
+  font-size: 0.9rem;
   font-weight: bold;
   line-height: 1.5;
   color: white;
-  background: var(--navy-blue-60);
+  background: #E1C158;
   position: absolute;
   bottom: 0;
   width: 100%;
+}
+.paragraph--type--image .field--name-field-pbimage-caption {
+  pointer-events: none;
+  padding: 1rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  line-height: 1.5;
+  color: white;
+  background: #E1C158;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.paragraph--type--image .node-type--page-and-layout article .paragraph--type--image .field--name-field-media-image .field__item {
+  display: flex;
+}
+.paragraph--type--image .field--name-field-media-image .field__item {
+  display: flex;
+}
+.paragraph--type--image .paragraph--type--image .field--name-field-pbimage-caption a:hover,
+.paragraph--type--image .paragraph--type--image .field--name-field-pbimage-caption a:active {
+  color: var(--berry);
 }
 
 /*# sourceMappingURL=ip_pb_image.css.map */

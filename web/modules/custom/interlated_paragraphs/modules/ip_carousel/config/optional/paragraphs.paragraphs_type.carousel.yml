@@ -1,0 +1,10 @@
+uuid: 366e6065-e73d-410a-97cd-65e7e8b0b650
+langcode: en
+status: true
+dependencies: {  }
+id: carousel
+label: Carousel
+icon_uuid: null
+icon_default: null
+description: 'Create a carousel, then put carousel items in it.'
+behavior_plugins: {  }

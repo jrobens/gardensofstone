@@ -1,12 +1,10 @@
-uuid: bc33bb70-1427-4fd4-b27c-be2d85c6767d
+uuid: 78041aca-c418-4033-aec2-c01eb449766b
 langcode: en
 status: true
 dependencies:
   module:
     - paragraphs
     - text
-_core:
-  default_config_hash: JZ_wNMk4DU5ZSEHGK6l7Xjqly4aPT9zUoFThLLba84I
 id: paragraph.field_pbtext_text
 field_name: field_pbtext_text
 entity_type: paragraph

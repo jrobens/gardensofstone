@@ -1,0 +1,46 @@
+
+$primary: #a2046b;
+$secondary: #E1C158;
+
+$quote: 'Mukta Malar', sans-serif;
+$element-colour: #a2671c;
+$link: #a2671c;
+$link-inverse: white;
+
+$orange-message: rgb(232, 105, 74);
+$burgundy-message: rgb(119, 0, 67);
+$orange_50: rgb(232, 105, 74, 0.5);
+$dark: #333;
+
+$font-size-caption: 0.9rem;
+
+$light: #fefefe !default;
+$family-heading: 'DMSans-Bold', san-serif;
+
+$background: #438029;
+$navbar-active: $background;
+$success: #438029;
+$danger: rgb(232, 105, 74);
+$warning: rgb(232, 105, 74);
+$info: blue;
+$white: #fefefe;
+
+$blue: #3467a4;
+$panel-orange: #ffcc4e;
+$torquoise: #4eb4be;
+$dark-green: #29a457;
+$pale-green: #c9e9e6;
+$orange: #faa85f;
+$bright-green: #8dc63f;
+$muted-green: #8dc095;
+$grey: #9595a2;
+$baby-yellow: #d4cc41;
+$purple: #92270f;
+$red: #f15a22;
+$salmon: #f7acbc;
+$olive: #b8b98e;
+$mission-brown: #d0c78d;
+
+:root {
+  --color-highlight-1: #{$primary};
+}

@@ -3,7 +3,7 @@
  *
  * Can be quickly compiled to CSS at https://www.sassmeister.com/.
  */
-
+@use '../../../../../../sites/variables' as *
 
 .paragraph--type--image
   position: relative
@@ -23,14 +23,34 @@
 
   .field--name-field-pbimage-caption
     padding: 1rem
-    font-size: 1rem
-    font-size: var(--font-size-caption)
+    font-size: $font-size-caption
     font-weight: bold
     line-height: 1.5
     color: white
-    background: var(--navy-blue-60)
+    background: $secondary
     position: absolute
     bottom: 0
     width: 100%
 
+  .field--name-field-pbimage-caption
+    pointer-events: none
+    padding: 1rem
+    font-size: $font-size-caption
+    font-weight: bold
+    line-height: 1.5
+    color: white
+    background: $secondary
+    position: absolute
+    bottom: 0
+    width: 100%
+
+  .node-type--page-and-layout article .paragraph--type--image .field--name-field-media-image .field__item
+    display: flex
+
+  .field--name-field-media-image .field__item
+    display: flex
+
+  .paragraph--type--image .field--name-field-pbimage-caption a:hover,
+  .paragraph--type--image .field--name-field-pbimage-caption a:active
+    color: var(--berry)
 

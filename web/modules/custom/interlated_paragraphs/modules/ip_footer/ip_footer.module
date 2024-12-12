@@ -10,9 +10,9 @@ use Drupal\Core\Routing\RouteMatchInterface;
 /**
  * Implements hook_theme().
  */
-function ip_carousel_theme($existing, $type, $theme, $path) {
+function ip_footer_theme($existing, $type, $theme, $path) {
   return [
-    'paragraph__ip_carousel' => [
+    'paragraph__ip_footer' => [
       'base hook' => 'paragraph',
     ],
   ];
@@ -23,9 +23,9 @@ function ip_carousel_theme($existing, $type, $theme, $path) {
  *
  * @inheritdoc
  */
-function ip_carousel_help($route_name, RouteMatchInterface $route_match) {
+function ip_footer_help($route_name, RouteMatchInterface $route_match) {
   switch ($route_name) {
-    case 'help.page.ip_carousel':
+    case 'help.page.ip_footer':
       $text = file_get_contents(dirname(__FILE__) . "/README.md");
       if (!\Drupal::moduleHandler()->moduleExists('markdown')) {
         return '<pre>' . $text . '</pre>';
@@ -41,6 +41,6 @@ function ip_carousel_help($route_name, RouteMatchInterface $route_match) {
   }
   return NULL;
 }
-function ip_carousel_page_attachments(array &$page) {
-  $page['#attached']['library'][] = 'ip_carousel/ip_carousel';
+function ip_footer_page_attachments(array &$page) {
+  $page['#attached']['library'][] = 'ip_footer/ip_footer';
 }

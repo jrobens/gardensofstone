@@ -1,13 +1,8 @@
 name: Interlated Paragraphs Banner
 type: module
 description: A reusable Callout Paragraph bundle.
-core_version_requirement: ^8 || ^9 || ^10
+core_version_requirement: ^9 || ^10 || ^11
 package: Paragraphs
 dependencies:
   - paragraphs:paragraphs
   - interlated_paragraphs:interlated_paragraphs
-
-# Information added by Drupal.org packaging script on 2020-10-08
-version: '8.x-2.0-beta7'
-project: 'interlated_paragraphs'
-datestamp: 1602190349

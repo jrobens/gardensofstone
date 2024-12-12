@@ -1,3 +1,12 @@
+*:JR:2024-12-06:GOS:0.2: sys+ update drupal. civicrm/civicrm-core5.78.3
+*:JR:2024-10-26:GOS:0.2: sys+ update drupal. 
+*:JR:2024-10-23:GOS:0.2: sys+ update drupal. civicrm/civicrm-core5.77.0
+*:JR:2024-09-12:GOS:0.2: sys+ update drupal. civicrm/civicrm-core5.76.2
+*:JR:2024-08-19:GOS:0.2: sys+ update drupal. civicrm/civicrm-core5.72.2
+*:JR:2024-04-27:GOS:0.2: sys+ update drupal. civicrm/civicrm-core5.72.0
+*:JR:2024-04-05:GOS:0.2: sys+ update drupal. drupal/console1.9.9
+*:JR:2024-04-05:GOS:0.2: sys+ update drupal. civicrm/civicrm-core5.69.2
+*:JR:2024-01-22:GOS:0.2: sys+ update drupal. drupal/console1.9.9
 *:JR:2024-01-18:GOS:0.2: sys+ update drupal. civicrm/civicrm-core5.69.1
 *:JR:2024-01-12:GOS:0.2: sys+ update drupal. civicrm/civicrm-core5.68.1
 *:JR:2024-01-04:GOS:0.2: sys+ update drupal. drupal/console1.9.9

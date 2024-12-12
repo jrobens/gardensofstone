@@ -1,3 +1,8 @@
-
+.paragraph--type--banner {
+  position: relative;
+}
+.paragraph--type--banner .field--name-field-media-image .field__item {
+  display: flex;
+}
 
 /*# sourceMappingURL=ip_pb_banner.css.map */

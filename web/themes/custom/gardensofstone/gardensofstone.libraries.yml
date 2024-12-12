@@ -1,7 +1,7 @@
 global:
   css:
     theme:
-      styles/local.css: {attributes: { type: "text/css" }}
+      styles/styles.css: {attributes: { type: "text/css" }}
       styles/editing.css: {attributes: { type: "text/css" }}
       styles/contextual.module.css: {attributes: {type: "text/css"}}
       '//fonts.googleapis.com/css2?family=Hind+Guntur:wght@300;500;700&display=swap" rel="stylesheet': { type: external, minified: true }

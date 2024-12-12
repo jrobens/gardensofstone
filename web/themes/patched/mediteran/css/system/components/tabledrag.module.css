@@ -1,0 +1,81 @@
+/**
+ * @file
+ * Table drag behavior.
+ *
+ * @see tabledrag.js
+ */
+
+body.drag {
+  cursor: move;
+}
+tr.region-title {
+  color: #0678be;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+}
+tr.region-message {
+  color: #999;
+}
+tr.region-populated {
+  display: none;
+}
+tr.add-new .tabledrag-changed {
+  display: none;
+}
+.draggable a.tabledrag-handle {
+  float: left;
+  overflow: hidden;
+  height: 24px;
+  margin: 0 10px 0 0;
+  cursor: move;
+  text-decoration: none;
+}
+[dir="rtl"] .draggable a.tabledrag-handle {
+  float: right;
+  margin: 0 0 0 10px;
+}
+a.tabledrag-handle:hover {
+  text-decoration: none;
+}
+a.tabledrag-handle .handle {
+  width: 24px;
+  height: 24px;
+  margin: 0;
+  padding: 0;
+  background: url(../../../images/icons/787878/move.svg) no-repeat 4px 4px;
+}
+.tabledrag-toggle-weight-wrapper {
+  float: none;
+  text-align: right; /* LTR */
+  font-size: 14px;
+}
+div.fieldset-wrapper .tabledrag-toggle-weight-wrapper {
+  font-size: 12px;
+}
+
+@media only screen and (min-width: 1024px) {
+  div.fieldset-wrapper .tabledrag-toggle-weight-wrapper {
+    position: absolute;
+    top: 12px;
+    right: 0;
+  }
+}
+div.fieldset-wrapper .tabledrag-toggle-weight-wrapper .link {
+  font-weight: 400;
+}
+[dir="rtl"] .tabledrag-toggle-weight-wrapper {
+  text-align: left;
+}
+.indentation {
+  float: left; /* LTR */
+  width: 20px;
+  height: 1.7em;
+  margin: -0.4em 0.2em -0.4em -0.4em; /* LTR */
+  padding: 0.42em 0 0.42em 0.6em; /* LTR */
+}
+[dir="rtl"] .indentation {
+  float: right;
+  margin: -0.4em -0.4em -0.4em 0.2em;
+  padding: 0.42em 0.6em 0.42em 0;
+}

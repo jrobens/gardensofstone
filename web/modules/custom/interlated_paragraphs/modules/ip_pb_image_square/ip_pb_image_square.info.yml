@@ -1,7 +1,7 @@
 name: Interlated Paragraphs Image Square
 type: module
 description: A reusable Image Paragraph bundle.
-core_version_requirement: ^8 || ^9 || ^10
+core_version_requirement: ^9 || ^10 || ^11
 package: Interlated
 dependencies:
   - paragraphs:paragraphs

@@ -1,0 +1,30 @@
+/**
+ * @file
+ * Styling for contextual module icons.
+ */
+
+.toolbar-bar .toolbar-icon-edit::before {
+  background-size: 18px 18px;
+}
+
+.contextual .trigger,
+.contextual .trigger:hover,
+.contextual .trigger:focus {
+  width: 26px;
+  height: 26px;
+  background-image: url(../../images/icons/bebebe/pencil.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 16px 16px;
+  font-size: 0;
+}
+
+.toolbar-bar .toolbar-icon-edit:active::before,
+.toolbar-bar .toolbar-icon-edit.is-active::before,
+.toolbar-bar .toolbar-icon-edit::before {
+  background-image: url(../../images/icons/ffffff/pencil.svg);
+}
+
+.contextual .trigger:focus {
+  outline: transparent;
+}

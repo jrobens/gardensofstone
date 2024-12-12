@@ -4,6 +4,8 @@ status: true
 dependencies:
   content:
     - 'file:file:95c39b7b-58c5-42c5-a715-690977163665'
+_core:
+  default_config_hash: GVQGCrKVu0NpawroRGsFoY-HZS6cHlMQndutKBzn6WM
 id: pbtext_text
 label: Text
 icon_uuid: 95c39b7b-58c5-42c5-a715-690977163665

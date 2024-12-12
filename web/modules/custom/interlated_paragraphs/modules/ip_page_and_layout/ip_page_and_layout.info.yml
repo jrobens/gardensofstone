@@ -1,7 +1,7 @@
 name: Interlated Page and Layout
 type: module
 description: A page structure
-core_version_requirement: ^8 || ^9 || ^10
+core_version_requirement: ^9 || ^10 || ^11
 package: Paragraphs
 dependencies:
   - paragraphs:paragraphs

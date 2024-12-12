@@ -1,20 +1,9 @@
 /**
  * @file
- * The scss file for Bootstrap Paragraphs Callout module.
- *
- * Can be quickly compiled to CSS at https://www.sassmeister.com/.
  */
+@use '../../../../../../sites/variables' as *
 
- // Colors.
-$primary:       #007bff
-$secondary:     #6c757d
-$success:       #28a745
-$info:          #17a2b8
-$warning:       #ffc107
-$danger:        #dc3545
-$light:         #f8f9fa
-$dark:          #343a40
-$white:         #ffffff
+$white: #fefefe
 
 // Reset padding on the first column.
 .paragraph--type--bp-callout > .paragraph__column
@@ -22,18 +11,15 @@ $white:         #ffffff
   padding-bottom: 0
   padding-left: 0
 
-
 // Add padding to header and body.
 .callout-header,
 .callout-body
   padding: 1rem
 
-
 // Reset padding if background color is added to callout.
 .paragraph.paragraph--type--bp-callout.paragraph--color > .paragraph__column
   padding-top: 0
   padding-bottom: 0
-
 
 .callout-style--primary
   border: 2px solid $primary
@@ -42,8 +28,6 @@ $white:         #ffffff
     background: $primary
     color: $white
 
-
-
 .callout-style--secondary
   border: 2px solid $secondary
 
@@ -51,16 +35,12 @@ $white:         #ffffff
     background: transparent
     color: $white
 
-
-
 .callout-style--success
   border: 2px solid $success
 
   .callout-header
     background: $success
     color: $white
-
-
 
 .callout-style--danger
   border: 2px solid $danger

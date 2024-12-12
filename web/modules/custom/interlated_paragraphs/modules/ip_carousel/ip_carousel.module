@@ -10,25 +10,26 @@ use Drupal\Core\Routing\RouteMatchInterface;
 /**
  * Implements hook_theme().
  */
-function ip_carousel_theme($existing, $type, $theme, $path)
-{
-    // A content type
-    return [
-        'node__carousel_item' => [
-            'base hook' => 'node',
-        ],
-        'paragraph__pbcarousel_item' => [
-            'base hook' => 'paragraph',
-        ],
-    ];
+function ip_carousel_theme($existing, $type, $theme, $path) {
+  // A content type
+  return [
+    'node__carousel_item' => [
+      'base hook' => 'node',
+    ],
+    'paragraph__pbcarousel_item' => [
+      'base hook' => 'paragraph',
+    ],
+    'paragraph__carousel' => [
+      'base hook' => 'paragraph',
+    ],
+  ];
 }
 
 /**
  * Implements hook_theme_suggestions_HOOK().
  */
-function ip_carousel_theme_suggestions_paragraph(array $variables)
-{
-    return ['paragraph__ip_carousel'];
+function ip_carousel_theme_suggestions_paragraph(array $variables) {
+  return ['paragraph__ip_carousel'];
 }
 
 /**
@@ -36,26 +37,25 @@ function ip_carousel_theme_suggestions_paragraph(array $variables)
  *
  * @inheritdoc
  */
-function ip_carousel_help($route_name, RouteMatchInterface $route_match)
-{
-    switch ($route_name) {
-        case 'help.page.ip_carousel':
-            $text = file_get_contents(dirname(__FILE__) . "/README.md");
-            if (!\Drupal::moduleHandler()->moduleExists('markdown')) {
-                return '<pre>' . $text . '</pre>';
-            } else {
-                /** @var \Drupal\markdown\PluginManager\ParserManagerInterface $parser_manager */
-                $parser_manager = \Drupal::service('plugin.manager.markdown.parser');
-                $parser = $parser_manager->getDefaultParser([
-                    'render_strategy' => ['type' => 'none'],
-                ]);
-                return $parser->parse($text);
-            }
-    }
-    return NULL;
+function ip_carousel_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.page.ip_carousel':
+      $text = file_get_contents(dirname(__FILE__) . "/README.md");
+      if (!\Drupal::moduleHandler()->moduleExists('markdown')) {
+        return '<pre>' . $text . '</pre>';
+      }
+      else {
+        /** @var \Drupal\markdown\PluginManager\ParserManagerInterface $parser_manager */
+        $parser_manager = \Drupal::service('plugin.manager.markdown.parser');
+        $parser = $parser_manager->getDefaultParser([
+          'render_strategy' => ['type' => 'none'],
+        ]);
+        return $parser->parse($text);
+      }
+  }
+  return NULL;
 }
 
-function ip_carousel_page_attachments(array &$page)
-{
-    $page['#attached']['library'][] = 'ip_carousel/ip_carousel';
+function ip_carousel_page_attachments(array &$page) {
+  $page['#attached']['library'][] = 'ip_carousel/ip_carousel';
 }

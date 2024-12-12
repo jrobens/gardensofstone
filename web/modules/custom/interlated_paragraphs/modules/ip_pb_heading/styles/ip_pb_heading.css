@@ -1,8 +1,17 @@
+:root {
+  --color-highlight-1: #a2046b;
+}
+
 /**
  * * @file
  * * The scss file for Bootstrap Paragraphs Callout module.
  * *
  * * Can be quickly compiled to CSS at https://www.sassmeister.com/.
  * */
+.paragraph--type--heading .field--name-field-pbheading-heading {
+  font-weight: bold;
+  font-size: 2.5rem;
+  font-family: "DMSans-Bold", san-serif;
+}
 
 /*# sourceMappingURL=ip_pb_heading.css.map */

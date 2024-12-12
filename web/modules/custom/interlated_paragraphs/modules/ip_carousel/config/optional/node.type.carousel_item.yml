@@ -9,6 +9,8 @@ third_party_settings:
     available_menus:
       - main
     parent: 'main:'
+_core:
+  default_config_hash: JBZyiAwXKwWJG-Rs_GlNHHPGvguOzF69KrPqU54HZY8
 name: Carousel
 type: carousel_item
 description: 'Add a carousel item'

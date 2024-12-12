@@ -1,0 +1,23 @@
+uuid: 22d94bfb-c3b4-4c55-90e4-6b49b35596bf
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - views
+    - viewsreference
+_core:
+  default_config_hash: rNvTzfxi9Op1_sL2Zc7fkd2z8WCVmYxWt23FHCH3jdY
+id: paragraph.field_pbhpbanner_index_reference
+field_name: field_pbhpbanner_index_reference
+entity_type: paragraph
+type: viewsreference
+settings:
+  target_type: view
+module: viewsreference
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

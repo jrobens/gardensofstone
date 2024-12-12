@@ -1,0 +1,70 @@
+uuid: bfd2b9ad-157b-4a41-ad67-00f9461faaee
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pbcarousel_item
+    - paragraphs.paragraphs_type.carousel
+    - paragraphs.paragraphs_type.pbcarousel_item
+  module:
+    - entity_reference_revisions
+id: paragraph.carousel.field_pbcarousel_item
+field_name: field_pbcarousel_item
+entity_type: paragraph
+bundle: carousel
+label: 'Carousel Item'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      pbcarousel_item: pbcarousel_item
+    negate: 0
+    target_bundles_drag_drop:
+      banner:
+        weight: 15
+        enabled: false
+      block_generated:
+        weight: 16
+        enabled: false
+      carousel:
+        weight: 17
+        enabled: false
+      checkerboard:
+        weight: 18
+        enabled: false
+      crossfade_banner:
+        weight: 19
+        enabled: false
+      heading:
+        weight: 20
+        enabled: false
+      home_page_banner:
+        weight: 21
+        enabled: false
+      image:
+        weight: 22
+        enabled: false
+      image_square:
+        weight: 23
+        enabled: false
+      index_block:
+        weight: 24
+        enabled: false
+      pbcarousel_item:
+        weight: 25
+        enabled: true
+      pbtext_text:
+        weight: 26
+        enabled: false
+      quote:
+        weight: 27
+        enabled: false
+      row:
+        weight: 28
+        enabled: false
+field_type: entity_reference_revisions

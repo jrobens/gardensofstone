@@ -8,46 +8,61 @@ use Drupal\Core\Routing\RouteMatchInterface;
 function crossfade_help($route_name, RouteMatchInterface $route_match) {
   switch ($route_name) {
     case 'help.page.crossfade':
-        $text = file_get_contents(dirname(__FILE__) . "/README.md");
-        if (!\Drupal::moduleHandler()->moduleExists('markdown')) {
-            return '<pre>' . $text . '</pre>';
-        }
-        else {
-            /** @var \Drupal\markdown\PluginManager\ParserManagerInterface $parser_manager */
-            $parser_manager = \Drupal::service('plugin.manager.markdown.parser');
-            $parser = $parser_manager->getDefaultParser([
-                'render_strategy' => ['type' => 'none'],
-            ]);
-            return $parser->parse($text);
+      $text = file_get_contents(dirname(__FILE__) . "/README.md");
+      if (!\Drupal::moduleHandler()->moduleExists('markdown')) {
+        return '<pre>' . $text . '</pre>';
+      }
+      else {
+        /** @var \Drupal\markdown\PluginManager\ParserManagerInterface $parser_manager */
+        $parser_manager = \Drupal::service('plugin.manager.markdown.parser');
+        $parser = $parser_manager->getDefaultParser([
+          'render_strategy' => ['type' => 'none'],
+        ]);
+        return $parser->parse($text);
       }
   }
   return NULL;
 }
 
+function crossfade_page_attachments(array &$page) {
+  if (\Drupal::service('router.admin_context')->isAdminRoute()) {
+    return FALSE;
+  }
+  $page['#attached']['library'][] = 'crossfade/crossfade';
+  return TRUE;
+}
 
 /**
  * Implements hook_ENTITY_TYPE_view_alter() for node entities.
+ *
+ * https://drupal.stackexchange.com/questions/277654/how-do-i-programmatically-get-the-url-of-an-entity-referenced-media-image-field
  */
 function crossfade_paragraph_view_alter(array &$build, EntityInterface $node, EntityViewDisplayInterface $display) {
- if ($display->getTargetBundle() != 'crossfade_banner') {
-   return;
- }
+  if ($display->getTargetBundle() != 'crossfade_banner') {
+    return;
+  }
 
- $build['field_pbcrossfade_image']['#type'] = 'html_tag';
- $build['field_pbcrossfade_image']['#tag'] = 'div';
- $build['field_pbcrossfade_image']['#attributes']['id'] = 'CrossFade';
- $images_markup = '';
- // $build['field_pbcrossfade_image']['#items'] EntityReferenceFieldItemList
-  foreach($build['field_pbcrossfade_image']['#items']->referencedEntities() as $media) {
+  $build['crossfade_container']['#type'] = 'html_tag';
+  $build['crossfade_container']['#tag'] = 'div';
+  $build['crossfade_container']['#attributes']['id'] = 'CrossFade';
+  $images_markup = '';
+  if (empty($build['field_pbcrossfade_image']['#items']) || empty($build['field_pbcrossfade_image']['#items']->referencedEntities())) {
+    return;
+  }
+  foreach ($build['field_pbcrossfade_image']['#items']->referencedEntities() as $media) {
+    if (!is_null($media->field_media_image)) {
+/*      $media = Media::load($image_id);
+      $media_url = ImageStyle::load('TYPE_OF_CROP')->buildUrl($media->image->entity->getFileUri());
+      $variables['media_url'] =  $media_url;*/
+      $media_uri = $media->field_media_image->entity->getFileUri();
+      $media_url = \Drupal::service('file_url_generator')->generateAbsoluteString($media_uri);
+      $alt = $media->field_media_image->alt;
+      $images_markup .= '<img src="' . $media_url . '" alt="' . $alt . '"/>';
+    }
+  }
+  unset($build['field_pbcrossfade_image']);
 
- //for ($i = 0; $i < count($build['field_pbcrossfade_image']); $i++) {
-   // $media = $build['field_pbcrossfade_image'][$i]['#media'];
-   if (!is_null($media->field_media_image)) {
-     $image_url = file_create_url($media->field_media_image->entity->getFileUri());
-     $alt = $media->field_media_image->alt;
-     $images_markup .= '<img src="' . $image_url . '" alt="' . $alt . '"/>';
-   }
- }
-
- $build['field_pbcrossfade_image']['#value'] = $images_markup;
+  $build['crossfade_container']['#value'] = $images_markup;
 }
+
+

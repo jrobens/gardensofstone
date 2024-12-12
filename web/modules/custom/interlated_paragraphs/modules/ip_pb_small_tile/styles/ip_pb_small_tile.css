@@ -15,7 +15,7 @@
   background-color: white;
   position: relative;
   overflow: hidden;
-  border-top: 0.2rem solid #1e4d4b08;
+  border-top: 0.2rem solid rgba(30, 77, 75, 0.031372549);
 }
 
 /* border-bottom: 0.2rem solid #00808029*/

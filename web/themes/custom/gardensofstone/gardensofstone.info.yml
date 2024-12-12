@@ -5,7 +5,7 @@ description: >-
 package: 'Interlated'
 type: theme
 base theme: drulma
-core_version_requirement: ^8.8 || ^9 || ^10
+core_version_requirement:  ^10 || ^11
 
 libraries:
   - gardensofstone/global

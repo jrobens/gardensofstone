@@ -1,38 +1,43 @@
-uuid: 22dbce7e-33bd-427e-9659-5e32f6ca5eb6
+uuid: 593bf32a-a7e6-42d8-a5eb-f8fc5f76df3b
 langcode: en
 status: true
 dependencies:
   config:
     - field.field.paragraph.pbtext_text.field_pbtext_link
-    - field.field.paragraph.pbtext_text.field_pbtext_style
     - field.field.paragraph.pbtext_text.field_pbtext_text
     - paragraphs.paragraphs_type.pbtext_text
+    - field.field.paragraph.text.field_pbtext_style
   module:
+    - field_layout
+    - layout_discovery
     - link
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: paragraph.pbtext_text.default
 targetEntityType: paragraph
 bundle: pbtext_text
 mode: default
 content:
   field_pbtext_link:
-    weight: 1
-    label: hidden
-    settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: ''
-      target: ''
-    third_party_settings: {  }
-    type: link
-    region: content
-  field_pbtext_text:
+    type: link_default
     weight: 0
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
     region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_pbtext_text:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
 hidden:
-  field_pbtext_style: true
+  created: true
+  status: true

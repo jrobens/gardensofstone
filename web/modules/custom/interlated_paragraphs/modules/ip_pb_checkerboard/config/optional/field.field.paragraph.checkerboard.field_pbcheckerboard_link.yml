@@ -1,4 +1,4 @@
-uuid: 3e5b332f-9a7e-4947-b4ac-e5df62bef7af
+uuid: 414babd7-5654-4870-b49e-e4cacce7c839
 langcode: en
 status: true
 dependencies:
@@ -12,7 +12,7 @@ field_name: field_pbcheckerboard_link
 entity_type: paragraph
 bundle: checkerboard
 label: Link
-description: 'Link heading and image'
+description: ''
 required: false
 translatable: false
 default_value: {  }

@@ -8,7 +8,7 @@ dependencies:
   module:
     - text
 _core:
-  default_config_hash: NRxDgYvdg6rbqDe_2E2PhHOutcXpHgWOuv1tp-iJgoU
+  default_config_hash: 558ZtCr6nP2BCVQv2_6DNoPBY1E84apxU7_WVeEA9w8
 id: paragraph.checkerboard.field_pbcheckerboard_text
 field_name: field_pbcheckerboard_text
 entity_type: paragraph

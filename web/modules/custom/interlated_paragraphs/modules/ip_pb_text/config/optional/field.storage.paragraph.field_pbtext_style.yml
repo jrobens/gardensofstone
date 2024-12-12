@@ -1,17 +1,39 @@
-uuid: 1a2a459f-dd7a-42fc-a90d-4175a23920a5
+uuid: 30d6acb7-306d-44c1-959d-433332d1daeb
 langcode: en
 status: true
 dependencies:
   module:
-    - classy_paragraphs
+    - options
     - paragraphs
-id: paragraph.field_pbtext_style
-field_name: field_pbtext_style
+id: paragraph.field_pbtext_style2
+field_name: field_pbtext_style2
 entity_type: paragraph
-type: entity_reference
+type: list_string
 settings:
-  target_type: classy_paragraphs_style
-module: core
+  allowed_values:
+    -
+      value: big
+      label: Big
+    -
+      value: medium
+      label: Medium
+    -
+      value: small
+      label: Small
+    -
+      value: dark
+      label: Dark
+    -
+      value: light
+      label: Light
+    -
+      value: primary
+      label: Primary
+    -
+      value: secondary
+      label: Secondary
+  allowed_values_function: ''
+module: options
 locked: false
 cardinality: 1
 translatable: true

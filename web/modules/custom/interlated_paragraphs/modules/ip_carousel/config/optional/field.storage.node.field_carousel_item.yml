@@ -6,6 +6,8 @@ dependencies:
     - entity_reference_revisions
     - node
     - paragraphs
+_core:
+  default_config_hash: csXYz6tYK4tC1t6T_Y7-42r49rSRUH3aYGRF_SRy22o
 id: node.field_carousel_item
 field_name: field_carousel_item
 entity_type: node

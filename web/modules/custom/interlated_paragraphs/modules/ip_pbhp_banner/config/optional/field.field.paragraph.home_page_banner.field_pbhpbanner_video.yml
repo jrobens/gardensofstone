@@ -1,0 +1,26 @@
+uuid: 6e073c86-5a89-4ac3-89bb-983bce14d2e9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pbhpbanner_video
+    - paragraphs.paragraphs_type.home_page_banner
+  module:
+    - text
+_core:
+  default_config_hash: lBWqUJsLRRx35EwojtXaBrrqcCT3uOSIwlUYsjVlIn0
+id: paragraph.home_page_banner.field_pbhpbanner_video
+field_name: field_pbhpbanner_video
+entity_type: paragraph
+bundle: home_page_banner
+label: Video
+description: 'Upload the 2 videos and the poster image via the media module'
+required: false
+translatable: false
+default_value:
+  -
+    value: "<p class=\"video-background-v1\">\r\n<video autoplay=\"\" id=\"bgvid\" loop=\"\" muted=\"\" playsinline=\"\" poster=\"/themes/custom/gold50/video-background/gold50_drone_poster.jpg\" preload=\"auto\"><source src=\"/files/2021-02/DJI_0397.webm\" type=\"video/webm\" /> <source src=\"/files/2021-01/DJI_0397.mp4\" type=\"video/mp4\" /></video>\r\n</p>\r\n"
+    format: full_html
+default_value_callback: ''
+settings: {  }
+field_type: text_long

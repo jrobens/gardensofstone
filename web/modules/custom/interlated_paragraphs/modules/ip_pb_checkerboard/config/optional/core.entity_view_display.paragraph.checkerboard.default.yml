@@ -1,4 +1,4 @@
-uuid: d4a77db8-f73a-4604-9d39-a350dfe4c01d
+uuid: db80414e-58aa-43ed-b9af-88c36f64911f
 langcode: en
 status: true
 dependencies:
@@ -7,14 +7,10 @@ dependencies:
     - field.field.paragraph.checkerboard.field_pbcheckerboard_link
     - field.field.paragraph.checkerboard.field_pbcheckerboard_text
     - field.field.paragraph.checkerboard.field_pbcheckerboard_title
-    - field.field.paragraph.checkerboard.field_pbcherkboard_style
     - paragraphs.paragraphs_type.checkerboard
   module:
-    - entity_class_formatter
-    - link
+    - linked_field
     - text
-_core:
-  default_config_hash: Skovul2z8UfmjiCRYK3vWaWNjA9v5CY5fZ3y9tAVswU
 id: paragraph.checkerboard.default
 targetEntityType: paragraph
 bundle: checkerboard
@@ -26,48 +22,35 @@ content:
     settings:
       view_mode: default
       link: false
-    third_party_settings: {  }
+    third_party_settings:
+      linked_field:
+        linked: '1'
+        type: field
+        destination: field_pbcheckerboard_link
+        advanced: {  }
+        token: ''
     weight: 0
-    region: content
-  field_pbcheckerboard_link:
-    type: link
-    label: hidden
-    settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: ''
-      target: ''
-    third_party_settings: {  }
-    weight: 2
     region: content
   field_pbcheckerboard_text:
     type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 3
+    weight: 2
     region: content
   field_pbcheckerboard_title:
     type: string
     label: hidden
     settings:
       link_to_entity: false
-    third_party_settings: {  }
+    third_party_settings:
+      linked_field:
+        linked: '1'
+        type: field
+        destination: field_pbcheckerboard_link
+        advanced: {  }
+        token: ''
     weight: 1
     region: content
-  field_pbcherkboard_style:
-    type: entity_class_formatter
-    label: hidden
-    settings:
-      prefix: ''
-      suffix: ''
-      attr: ''
-    third_party_settings: {  }
-    weight: 4
-    region: content
 hidden:
-  entity_print_view_epub: true
-  entity_print_view_pdf: true
-  entity_print_view_word_docx: true
-  search_api_excerpt: true
+  field_pbcheckerboard_link: true
