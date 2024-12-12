@@ -1,5 +1,9 @@
 ## Updates 2024-12-12
 
+    choices/choices  9.0.1 = [none matched]
+    jquery/inputmask 5.0.8 ! 5.0.9         
+## Updates 2024-12-12
+
     drupal/better_social_sharing_buttons dev-4.x 1993b32 ! dev-4.x 8bc051a Provides a settings page, a field, a paragraph, and a block for social sharing buttons
     drupal/webform                       6.3.0-alpha2    ! 6.3.0-alpha3    Enables the creation of webforms and questionnaires.
 [error]  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'gos2_cms.help_search_items' doesn't exist: SELECT "hsi"."sid" AS "sid", "hsi"."topic_id" AS "topic_id", "hsi"."section_plugin_id" AS "section_plugin_id", "hsi"."permission" AS "permission"

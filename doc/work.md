@@ -1,3 +1,4 @@
+*:JR:2024-12-12:GOS:0.2: sys+ update drupal. choices/choices9.0.1
 *:JR:2024-12-12:GOS:0.2: sys+ update drupal. drupal/better_social_sharing_buttonsdev-4.x
 *:JR:2024-12-06:GOS:0.2: sys+ update drupal. civicrm/civicrm-core5.78.3
 *:JR:2024-10-26:GOS:0.2: sys+ update drupal. 
