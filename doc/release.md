@@ -1,4 +1,30 @@
-            "version": "9.5.11",
+## Drupal 11
+
+Module       Update ID       Type            Description
+ ------------ --------------- --------------- --------------------------------
+system       11001           hook_update_n   11001 - Update length of
+menu_tree fields url and
+route_param_key from 255 to
+2048.
+system       11100           hook_update_n   11100 - Invalidate container
+because the module handler has
+changed.
+system       11102           hook_update_n   11102 - Equivalent update to
+10400.
+block        make_weight_i   post-update     Ensures that all block weights
+nteger                          are integers.
+media        media_author_   post-update     Empty update function to clear
+views_filter_                   the Views data cache.
+update
+path_alias   update_path_a   post-update     Update the path_alias_revision
+lias_revision                   indices.
+_indexes
+search       block_with_em   post-update     Updates Search Blocks' without
+pty_page_id                     an explicit `page_id` from ''
+to NULL.
+
+## Drupal 10
+"version": "9.5.11",
 
 Module admin_toolbar_links_access_filter has an entry in the system.schema key/value storage, b
 
