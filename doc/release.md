@@ -1,3 +1,305 @@
+## database upgrade 20250108
+
+2025-01-08 17:06:11+1100  [info] Running task: Cleanup old files
+
+2025-01-08 17:06:12+1100  [info] Running task: Cleanup old upgrade snapshots
+
+2025-01-08 17:06:14+1100  [info] Running task: Checking extensions
+
+2025-01-08 17:06:15+1100  [info] Running task: Begin Upgrade to 5.67.alpha1
+
+2025-01-08 17:06:17+1100  [info] Running task: Upgrade DB to 5.67.alpha1
+
+2025-01-08 17:06:18+1100  [info] Running task: Upgrade DB to 5.67.alpha1: SQL
+
+2025-01-08 17:06:19+1100  [info] Running task: Make Note.privacy required
+
+2025-01-08 17:06:21+1100  [info] Running task: Make EntityFile.entity_table required
+
+2025-01-08 17:06:22+1100  [info] Running task: Add "civicrm_note" to "note_used_for" option group
+
+2025-01-08 17:06:24+1100  [info] Running task: Add cache_fill_took column to Group table
+
+2025-01-08 17:06:25+1100  [info] Running task: Update civicrm_mailing_event_queue to permit deleting records from civicrm_mailing_job
+
+2025-01-08 17:06:44+1100  [info] Running task: Update CiviMail menus labels
+
+2025-01-08 17:06:45+1100  [info] Running task: Backfill civicrm_mailing_event_queue (1 => 343862)
+
+2025-01-08 17:07:05+1100  [info] Running task: Finish Upgrade DB to 5.67.alpha1
+
+2025-01-08 17:07:07+1100  [info] Running task: Begin Upgrade to 5.67.beta2
+
+2025-01-08 17:07:09+1100  [info] Running task: Upgrade DB to 5.67.beta2
+
+2025-01-08 17:08:44+1100  [info] Running task: Make ActionSchedule.name required
+
+2025-01-08 17:08:45+1100  [info] Running task: Make Discount.entity_table required
+
+2025-01-08 17:08:46+1100  [info] Running task: Finish Upgrade DB to 5.67.beta2
+
+2025-01-08 17:08:48+1100  [info] Running task: Begin Upgrade to 5.68.alpha1
+
+2025-01-08 17:08:49+1100  [info] Running task: Upgrade DB to 5.68.alpha1
+
+2025-01-08 17:08:51+1100  [info] Running task: Add Tag.label field
+
+2025-01-08 17:08:52+1100  [info] Running task: Update Tag.name field
+
+2025-01-08 17:08:53+1100  [info] Running task: Update Tag.created_date field
+
+2025-01-08 17:08:55+1100  [info] Running task: Upgrade DB to 5.68.alpha1: SQL
+
+2025-01-08 17:08:56+1100  [info] Running task: Update civicrm_managed.entity_id
+
+2025-01-08 17:08:57+1100  [info] Running task: Update civicrm_managed.module
+
+2025-01-08 17:08:59+1100  [info] Running task: Update civicrm_managed.name
+
+2025-01-08 17:09:00+1100  [info] Running task: Update civicrm_managed.cleanup
+
+2025-01-08 17:09:02+1100  [info] Running task: Update civicrm_acl.is_active
+2025-01-08 17:09:03+1100  [info] Running task: Update civicrm_dashboard_contact.is_active
+
+2025-01-08 17:09:04+1100  [info] Running task: Finish Upgrade DB to 5.68.alpha1
+
+2025-01-08 17:09:06+1100  [info] Running task: Begin Upgrade to 5.69.alpha1
+
+2025-01-08 17:09:07+1100  [info] Running task: Upgrade DB to 5.69.alpha1
+
+2025-01-08 17:09:09+1100  [info] Running task: Upgrade DB to 5.69.alpha1: SQL
+
+2025-01-08 17:09:10+1100  [info] Running task: Add is_show_calendar_links column to Event table
+
+2025-01-08 17:09:11+1100  [info] Running task: fix crmDate for installs that existed pre-5.43 - start date
+
+2025-01-08 17:09:13+1100  [info] Running task: fix crmDate for installs that existed pre-5.43 - end date
+
+2025-01-08 17:09:14+1100  [info] Running task: Finish Upgrade DB to 5.69.alpha1
+
+2025-01-08 17:09:16+1100  [info] Running task: Begin Upgrade to 5.70.alpha1
+
+2025-01-08 17:09:17+1100  [info] Running task: Upgrade DB to 5.70.alpha1
+
+2025-01-08 17:09:18+1100  [info] Running task: Upgrade DB to 5.70.alpha1: SQL
+
+2025-01-08 17:09:20+1100  [info] Running task: Finish Upgrade DB to 5.70.alpha1
+
+2025-01-08 17:09:21+1100  [info] Running task: Begin Upgrade to 5.70.beta1
+
+2025-01-08 17:09:23+1100  [info] Running task: Upgrade DB to 5.70.beta1
+
+2025-01-08 17:09:24+1100  [info] Running task: Replace incorrect pay later token
+
+2025-01-08 17:09:25+1100  [info] Running task: Finish Upgrade DB to 5.70.beta1
+
+2025-01-08 17:09:27+1100  [info] Running task: Begin Upgrade to 5.71.alpha1
+
+2025-01-08 17:09:28+1100  [info] Running task: Upgrade DB to 5.71.alpha1
+
+2025-01-08 17:09:29+1100  [info] Running task: Upgrade DB to 5.71.alpha1: SQL
+
+2025-01-08 17:09:31+1100  [info] Running task: Add entity_delete column
+
+2025-01-08 17:09:32+1100  [info] Running task: Make civicrm_uf_group.name required
+
+2025-01-08 17:09:34+1100  [info] Running task: Make civicrm_uf_group.frontend_title required
+
+2025-01-08 17:09:35+1100  [info] Running task: Finish Upgrade DB to 5.71.alpha1
+
+2025-01-08 17:09:37+1100  [info] Running task: Begin Upgrade to 5.71.beta1
+
+2025-01-08 17:09:38+1100  [info] Running task: Upgrade DB to 5.71.beta1
+
+2025-01-08 17:09:39+1100  [info] Running task: Upgrade DB to 5.71.beta1: SQL
+
+2025-01-08 17:09:41+1100  [info] Running task: Make civicrm_event.selfcancelxfer_time
+
+2025-01-08 17:09:42+1100  [info] Running task: Finish Upgrade DB to 5.71.beta1
+
+2025-01-08 17:09:44+1100  [info] Running task: Begin Upgrade to 5.72.alpha1
+
+2025-01-08 17:09:45+1100  [info] Running task: Upgrade DB to 5.72.alpha1
+
+2025-01-08 17:09:46+1100  [info] Running task: Upgrade DB to 5.72.alpha1: SQL
+
+2025-01-08 17:09:48+1100  [info] Running task: Remove localized suffixes from civicrm_mailing_group.entity_table
+2025-01-08 17:09:49+1100  [info] Running task: Replace displayName smarty token in UFNotify subject
+
+2025-01-08 17:09:51+1100  [info] Running task: Replace displayName smarty token in UFNotify
+
+2025-01-08 17:09:52+1100  [info] Running task: Replace currentDate smarty token in UFNotify
+
+2025-01-08 17:09:54+1100  [info] Running task: Add last_run_end column to Job table
+
+2025-01-08 17:09:55+1100  [info] Running task: Finish Upgrade DB to 5.72.alpha1
+
+2025-01-08 17:09:56+1100  [info] Running task: Begin Upgrade to 5.73.alpha1
+
+2025-01-08 17:09:58+1100  [info] Running task: Upgrade DB to 5.73.alpha1
+
+2025-01-08 17:09:59+1100  [info] Running task: Upgrade DB to 5.73.alpha1: SQL
+
+2025-01-08 17:10:01+1100  [info] Running task: Finish Upgrade DB to 5.73.alpha1
+
+2025-01-08 17:10:02+1100  [info] Running task: Begin Upgrade to 5.74.alpha1
+
+2025-01-08 17:10:04+1100  [info] Running task: Upgrade DB to 5.74.alpha1
+
+2025-01-08 17:10:05+1100  [info] Running task: Upgrade DB to 5.74.alpha1: SQL
+
+2025-01-08 17:10:06+1100  [info] Running task: Finish Upgrade DB to 5.74.alpha1
+
+2025-01-08 17:10:08+1100  [info] Running task: Begin Upgrade to 5.74.beta1
+
+2025-01-08 17:10:09+1100  [info] Running task: Upgrade DB to 5.74.beta1
+
+2025-01-08 17:10:11+1100  [info] Running task: Upgrade DB to 5.74.beta1: SQL
+
+2025-01-08 17:10:12+1100  [info] Running task: Finish Upgrade DB to 5.74.beta1
+
+2025-01-08 17:10:13+1100  [info] Running task: Begin Upgrade to 5.75.alpha1
+
+2025-01-08 17:10:15+1100  [info] Running task: Upgrade DB to 5.75.alpha1
+
+2025-01-08 17:10:16+1100  [info] Running task: Upgrade DB to 5.75.alpha1: SQL
+
+2025-01-08 17:10:17+1100  [info] Running task: Replace mem_join_date smarty token in offline membership template
+
+2025-01-08 17:10:19+1100  [info] Running task: Replace mem_start_date smarty token in offline membership template
+
+2025-01-08 17:10:20+1100  [info] Running task: Replace mem_end_date smarty token in offline membership template
+
+2025-01-08 17:10:22+1100  [info] Running task: Replace membership_name smarty token in offline membership template
+
+2025-01-08 17:10:23+1100  [info] Running task: Replace mem_status smarty token in offline membership template
+
+2025-01-08 17:10:24+1100  [info] Running task: Replace contributionStatus smarty token in offline membership template
+
+2025-01-08 17:10:26+1100  [info] Running task: Replace contributionStatusID smarty token in offline membership template
+
+2025-01-08 17:10:27+1100  [info] Running task: Replace receive_date smarty token in offline membership template
+
+2025-01-08 17:10:28+1100  [info] Running task: Replace formValues.paidBy smarty token in offline membership template
+
+2025-01-08 17:10:30+1100  [info] Running task: Replace formValues.paidBy smarty token in offline membership template
+
+2025-01-08 17:10:31+1100  [info] Running task: Replace membership_name smarty token in online membership template
+
+2025-01-08 17:10:32+1100  [info] Running task: Replace mem_status smarty token in online membership template
+
+2025-01-08 17:10:34+1100  [info] Running task: Replace formValues.paidBy smarty token in online membership template
+
+2025-01-08 17:10:35+1100  [info] Running task: Replace receive_date smarty token in online membership template
+
+2025-01-08 17:10:36+1100  [info] Running task: Disable financial ACL extension if unused
+
+2025-01-08 17:10:38+1100  [info] Running task: Install tellafriend extension
+
+2025-01-08 17:10:39+1100  [info] Running task: Finish Upgrade DB to 5.75.alpha1
+
+2025-01-08 17:10:40+1100  [info] Running task: Begin Upgrade to 5.76.alpha1
+
+2025-01-08 17:10:42+1100  [info] Running task: Upgrade DB to 5.76.alpha1
+
+2025-01-08 17:10:43+1100  [info] Running task: Upgrade DB to 5.76.alpha1: SQL
+
+2025-01-08 17:10:45+1100  [info] Running task: Add start_date to civicrm_mailing table
+
+2025-01-08 17:10:46+1100  [info] Running task: Add end_date to civicrm_mailing table
+
+2025-01-08 17:10:47+1100  [info] Running task: Add status to civicrm_mailing table
+
+2025-01-08 17:10:49+1100  [info] Running task: Alter translation to make string non-required
+
+2025-01-08 17:10:50+1100  [info] Running task: Install SiteToken entity
+
+2025-01-08 17:10:52+1100  [info] Running task: Create index civicrm_site_token.UI_name_domain_id
+
+2025-01-08 17:10:53+1100  [info] Running task: Create "message header" token
+
+2025-01-08 17:10:54+1100  [info] Running task: Migrate event cart ID
+
+2025-01-08 17:10:56+1100  [info] Running task: Update civicrm_mailing to permit deleting records from civicrm_mailing_job
+
+2025-01-08 17:10:57+1100  [info] Running task: Backfill civicrm_mailing start_date, end_date, status (1 => 40)
+
+2025-01-08 17:10:59+1100  [info] Running task: Finish Upgrade DB to 5.76.alpha1
+
+2025-01-08 17:11:00+1100  [info] Running task: Begin Upgrade to 5.76.beta1
+
+2025-01-08 17:11:01+1100  [info] Running task: Upgrade DB to 5.76.beta1
+
+2025-01-08 17:11:03+1100  [info] Running task: Fix default for status in civicrm_mailing table
+
+2025-01-08 17:11:06+1100  [info] Running task: Finish Upgrade DB to 5.76.beta1
+
+2025-01-08 17:11:07+1100  [info] Running task: Begin Upgrade to 5.77.alpha1
+2025-01-08 17:11:15+1100  [info] Running task: Begin Upgrade to 5.78.alpha1
+
+2025-01-08 17:11:17+1100  [info] Running task: Upgrade DB to 5.78.alpha1
+
+2025-01-08 17:11:18+1100  [info] Running task: Upgrade DB to 5.78.alpha1: SQL
+
+2025-01-08 17:11:19+1100  [info] Running task: Finish Upgrade DB to 5.78.alpha1
+
+2025-01-08 17:11:21+1100  [info] Running task: Begin Upgrade to 5.78.beta1
+
+2025-01-08 17:11:22+1100  [info] Running task: Upgrade DB to 5.78.beta1
+
+2025-01-08 17:11:23+1100  [info] Running task: Upgrade DB to 5.78.beta1: SQL
+
+2025-01-08 17:11:25+1100  [info] Running task: Finish Upgrade DB to 5.78.beta1
+
+2025-01-08 17:11:27+1100  [info] Running task: Begin Upgrade to 5.79.alpha1
+
+2025-01-08 17:11:29+1100  [info] Running task: Upgrade DB to 5.79.alpha1
+
+
+5.79.alpha1.upgrade
+
+The site is running 5.80.0. Additional patches are available:
+
+5.80.1 (2024-12-12): Fix recent issues involving Thank-You Gifts, SMS, and upgrades.
+5.80.2 (security) (2025-01-08): Fix security issues in TCPDF/PHPSpreadsheet. Fix recent issues involving extension upgrades, scheduled jobs, and more.
+5.80.3 (2025-01-08): Fix recent issue involving a false status-alert.
+
+## Updates 2025-01-11
+
+    civicrm/civicrm-core          5.80.0       ! 5.81.0      Open source constituent relationship management for non-profits, NGOs and advocacy organizations.
+    civicrm/civicrm-drupal-8      5.80.0       ! 5.81.0      Open source constituent relationship management for non-profits, NGOs and advocacy organizations.
+    civicrm/civicrm-packages      5.80.0       ! 5.81.0      Legacy third party dependencies for CiviCRM
+    drupal/core                   11.0.9       ! 11.1.1      Drupal is an open source content management platform powering millions of websites and applications.
+    drupal/core-composer-scaffold 11.0.9       ! 11.1.1      A flexible Composer project scaffold builder.
+    drupal/core-project-message   11.0.9       ! 11.1.1      Adds a message after Composer installation.
+    drupal/core-recommended       11.0.9       ! 11.1.1      Core and its dependencies with known-compatible minor versions. Require this project INSTEAD OF drupal/core.
+    drupal/drulma_companion       2.1.9        ! 2.2.0       Extends Drulma theme with module functionalities
+    drupal/ds                     3.24.0       ! 3.25.0      Extend the display options for every entity type.
+    drupal/leaflet                10.2.29      ! 10.2.33     Integration with the Leaflet map scripting library.
+    drupal/webform                6.3.0-alpha3 ! 6.3.0-beta1 Enables the creation of webforms and questionnaires.
+
+Markdown plugins
+
+namespace Drupal\filter;
+use Drupal\Core\Plugin\DefaultPluginManager;
+
+Drupal\Component\Plugin
+
+** Theme updates
+
+Uncaught ReferenceError: Drupal is not defined
+at local.js?sodcsc:17:12Understand this errorAI
+animated_scroll_to_top.js?sodcsc:52 Uncaught ReferenceError: Drupal is not defined
+at animated_scroll_to_top.js?sodcsc:52:12
+
+drupal.js?v=11.0.9:64 Uncaught ReferenceError: once is not defined
+at Object.attach (animated_scroll_to_top.js?sodcsc:4:7)
+at drupal.js?v=11.0.9:166:24
+at Array.forEach (<anonymous>)
+at Object.attachBehaviors (drupal.js?v=11.0.9:162:34)
+at drupal.init.js?v=11.0.9:32:12
+at HTMLDocument.listener (drupal.init.js?v=11.0.9:20:7)
+
 ## Updates 2024-12-12
 
     choices/choices  9.0.1 = [none matched]
