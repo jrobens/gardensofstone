@@ -1,4 +1,238 @@
-## database upgrade 20250108
+            "version": "9.5.11",
+
+Module admin_toolbar_links_access_filter has an entry in the system.schema key/value storage, b
+
+
+
+Update aborted by: system_post_update_add_description_to_entity_view_mode
+
+sh ./src/dr.sh pm:uninstall tour
+
+[error]  The installed version of the /Honeypot/ module is too old to update. Update
+to an intermediate version first (last removed version: 8104, installed
+version: 8102).
+
+
+┌ Requirements check reports errors. Do you wish to continue? ─┐
+│ Yes                                                          │
+└──────────────────────────────────────────────────────────────┘
+
+ ------------------ ---------------- --------------- --------------------------
+Module             Update ID        Type            Description
+ ------------------ ---------------- --------------- --------------------------
+system             10100            hook_update_n   10100 - Remove the year
+2038 date limitation.
+system             10101            hook_update_n   10101 - Change the
+{batch} table [bid]
+field to serial.
+system             10201            hook_update_n   10201 - Clear left over
+entries in the revision
+data table.
+system             10400            hook_update_n   10400 - Equivalent
+update to 11102.
+block_content      10100            hook_update_n   10100 - Update entity
+definition to handle
+revision routes.
+block_content      10200            hook_update_n   10200 - Remove the
+unique values constraint
+from block content info
+fields.
+block_content      10300            hook_update_n   10300 - Apply index to
+reusable column.
+comment            10100            hook_update_n   10100 - Remove the year
+2038 date limitation.
+dblog              10100            hook_update_n   10100 - Remove the year
+2038 date limitation.
+dblog              10101            hook_update_n   10101 - Converts the
+'wid' of the 'watchdog'
+table to a big integer.
+help               10200            hook_update_n   10200 - Install search
+index table for help
+topics.
+history            10100            hook_update_n   10100 - Remove the year
+2038 date limitation.
+taxonomy           10100            hook_update_n   10100 - Update entity
+definition to handle
+revision routes.
+user               10000            hook_update_n   10000 - Remove
+non-existent permissions
+created by migrations.
+webform            8639             hook_update_n   8639 - Deprecate Webform
+Bootstrap 3.x support.
+big_pipe           html5_placehol   post-update     Clear the render cache.
+ders
+block_content      block_library_   post-update     Update block_content
+view_permissio                   'block library' view
+n                                permission.
+block_content      move_custom_bl   post-update     Moves the custom block
+ock_library                      library to Content.
+block_content      revision_type    post-update     Update configuration for
+revision type.
+block_content      sort_permissio   post-update     Update permissions for
+ns                               users with "administer
+blocks" permission.
+ckeditor5          code_block       post-update     Updates Text Editors
+using CKEditor 5 Code
+Block.
+ckeditor5          list_multibloc   post-update     Updates Text Editors
+k                                using CKEditor 5.
+ckeditor5          list_start_rev   post-update     Updates Text Editors
+ersed                            using CKEditor 5 to
+native List "start"
+functionality.
+ckeditor5          plugins_settin   post-update     Updates Text Editors
+gs_export_orde                   using CKEditor 5 to sort
+r                                plugin settings by
+plugin key.
+contact            set_empty_defa   post-update     Converts empty
+ult_form_to_nu                   `default_form` in
+ll                               settings to NULL.
+editor             image_lazy_loa   post-update     Enable
+d                                filter_image_lazy_load
+if editor_file_reference
+is enabled.
+editor             sanitize_image   post-update     Clean up image upload
+_upload_settin                   settings.
+gs
+file               add_default_fi   post-update     Add default filename
+lename_sanitiz                   sanitization
+ation_configur                   configuration.
+ation
+file               add_permission   post-update     Grant all non-anonymous
+s_to_roles                       roles the 'delete own
+files' permission.
+filter             consolidate_fi   post-update     Change filter_settings
+lter_config                      to type mapping.
+filter             sort_filters     post-update     Sorts filter format
+filter configuration.
+help               add_permission   post-update     Grant all admin roles
+s_to_roles                       the 'access help pages'
+permission.
+help               help_topics_se   post-update     Install or update config
+arch                             for help topics if the
+search module installed.
+help               help_topics_un   post-update     Uninstall the
+install                          help_topics module if
+installed.
+layout_builder     enable_expose_   post-update     Enable the expose all
+field_block_fe                   fields feature flag
+ature_flag                       module.
+layout_builder     timestamp_form   post-update     Update timestamp
+atter                            formatter settings for
+Layout Builder fields.
+media              oembed_loading   post-update     Add the oEmbed loading
+_attribute                       attribute setting to
+field formatter
+instances.
+media              remove_mapping   post-update     Make sure no Media types
+s_targeting_so                   are using the source
+urce_field                       field in the meta
+mappings.
+media              set_blank_ifra   post-update     Updates
+me_domain_to_n                   media.settings:iframe_do
+ull                              main config if it's
+still at the default.
+node               set_node_type_   post-update     Converts empty
+description_an                   `description` and `help`
+d_help_to_null                   in content types to
+NULL.
+path_alias         drop_path_alia   post-update     Remove the
+s_status_index                   path_alias__status
+index.
+responsive_image   image_loading_   post-update     Add the image loading
+attribute                        settings to responsive
+image field formatter
+instances.
+responsive_image   order_multipli   post-update     Re-order mappings by
+er_numerically                   breakpoint ID and
+descending numeric
+multiplier order.
+system             add_descriptio   post-update     Update description for
+n_to_entity_fo                   form modes.
+rm_mode
+system             add_descriptio   post-update     Update description for
+n_to_entity_vi                   view modes.
+ew_mode
+system             add_langcode_t   post-update     Adds a langcode to all
+o_all_translat                   simple config which
+able_config                      needs it.
+system             amend_config_s   post-update     Fix path in README.txt
+ync_readme_url                   in
+CONFIG_SYNC_DIRECTORY.
+system             enable_passwor   post-update     Enable the password
+d_compatibilit                   compatibility module.
+y
+system             linkset_settin   post-update     Add new menu linkset
+gs                               endpoint setting.
+system             mail_notificat   post-update     Adds default value for
+ion_setting                      the mail_notification
+config parameter.
+system             mailer_dsn_set   post-update     Add new default mail
+tings                            transport dsn.
+system             mailer_structu   post-update     Add new default mail
+red_dsn_settin                   transport dsn.
+gs
+system             move_developme   post-update     Move development
+nt_settings_to                   settings from state to
+_keyvalue                        raw key-value storage.
+system             remove_asset_e   post-update     Remove redundant asset
+ntries                           state and config.
+system             remove_asset_q   post-update     Remove redundant asset
+uery_string                      query string state.
+system             set_blank_log_   post-update     Updates
+url_to_null                      system.theme.global:logo
+.url config if it's
+still at the default.
+system             set_cron_loggi   post-update     Fix system.cron:logging
+ng_setting_to_                   values to boolean.
+boolean
+system             timestamp_form   post-update     Update timestamp
+atter                            formatter settings for
+entity view displays.
+taxonomy           set_new_revisi   post-update     Re-save Taxonomy
+on                               configurations with
+new_revision config.
+taxonomy           set_vocabulary   post-update     Converts empty
+_description_t                   `description` in
+o_null                           vocabularies to NULL.
+text               allowed_format   post-update     Add allowed_formats
+s                                setting to existing text
+fields.
+views              add_missing_la   post-update     Add labels to views
+bels                             which don't have one.
+views              boolean_custom   post-update     Update Views config
+_titles                          schema to make boolean
+custom titles
+translatable.
+views              fix_revision_i   post-update     Fix '-revision_id'
+d_part                           replacement token
+syntax.
+views              oembed_eager_l   post-update     Add eager load option to
+oad                              all oembed type field
+configurations.
+views              pager_heading    post-update     Adds a default pager
+heading.
+views              remove_default   post-update     Remove
+_argument_skip                   default_argument_skip_ur
+_url                             l setting.
+views              remove_skip_ca   post-update     Remove the skip_cache
+che_setting                      settings.
+views              rendered_entit   post-update     Removes entity display
+y_field_cache_                   cache metadata from
+metadata                         views with rendered
+entity fields.
+views              responsive_ima   post-update     Add lazy load options to
+ge_lazy_load                     all responsive image
+type field
+configurations.
+views              taxonomy_filte   post-update     Removes User context
+r_user_context                   from views with taxonomy
+filters.
+views              timestamp_form   post-update     Update timestamp
+atter                            formatter settings for
+views.
+
+## CiviCRM database upgrade 20250108
 
 2025-01-08 17:06:11+1100  [info] Running task: Cleanup old files
 
