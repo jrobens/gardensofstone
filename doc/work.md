@@ -1,3 +1,7 @@
+*:JR:2025-01-21:GOS:0.2: sys+ update drupal. 
+*:JR:2025-01-21:GOS:0.2: sys+ update drupal. 
+*:JR:2025-01-19:GOS:0.2: sys+ update drupal. drupal/ds3.25.0
+*:JR:2025-01-11:GOS:0.2: sys+ update drupal. 
 *:JR:2025-01-11:GOS:0.2: sys+ update drupal. civicrm/civicrm-core5.80.0
 *:JR:2024-12-12:GOS:0.2: sys+ update drupal. choices/choices9.0.1
 *:JR:2024-12-12:GOS:0.2: sys+ update drupal. drupal/better_social_sharing_buttonsdev-4.x

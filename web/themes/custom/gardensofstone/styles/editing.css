@@ -1,5 +1,5 @@
 /* Editing facilities */
-.footer .block-local-tasks-block {
+.footer #block-gardensofstone-tabs {
   position: fixed;
   bottom: 2rem;
   right: 0;
@@ -7,10 +7,10 @@
   margin-bottom: 0.5em;
   font-size: 0.8rem;
 }
-.footer .block-local-tasks-block > ul {
+.footer #block-gardensofstone-tabs > ul {
   display: flex;
 }
-.footer .block-local-tasks-block li {
+.footer #block-gardensofstone-tabs li {
   padding: 0.1rem 0.5rem;
   margin-right: 0.2rem;
   background-color: rgba(200, 200, 200, 0.5);
@@ -18,7 +18,7 @@
   -moz-border-radius: 5px 5px 0 0;
   border-radius: 5px 5px 0 0;
 }
-.footer .block-local-tasks-block li a, .footer .block-local-tasks-block li a:visited {
+.footer #block-gardensofstone-tabs li a, .footer #block-gardensofstone-tabs li a:visited {
   color: #333;
 }
 

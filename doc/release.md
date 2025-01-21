@@ -1,4 +1,65 @@
+## Updates 2025-01-21
+
+
+## Updates 2025-01-21
+composer require drupal/classy_paragraphs - version 2.0
+
+
+727825   19/Jan 20:54   php    Error      RuntimeException: Callable "Drupal\layout_paragraphs\Access\LayoutParagraphsBuilderAccess::access" requires a value for the "$paragraph_type" argument. in
+Drupal\Component\Utility\Argument
+
+727823   19/Jan 20:54   php    Error      RuntimeException: Callable "Drupal\layout_paragraphs\Access\LayoutParagraphsBuilderAccess::access" requires a value for the "$component_uuid" argument. in
+Drupal\Component\Utility\Argument
+
+LayoutParagraphsBuilderController.php 116
+
+> composer require 'drupal/layout_paragraphs:2.1.x-dev@dev'
+
+****
+
+[error]  ParseError: syntax error, unexpected identifier "composer", expecting "function" in {closure:Composer\Autoload\ClassLoader::initializeIncludeClosure():575}() (line 72 of /Users/jrobens/Sites/gardensofstone2/web/modules/patched/photos/src/Controller/PhotosImageViewController.php) #0 /Users/jrobens/Sites/gardensofstone2/vendor/composer/ClassLoader.php(427): {closure:Composer\Autoload\ClassLoader::initializeIncludeClosure():575}('/Users/jrobens/...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('Drupal\\photos\\C...')
+#2 /Users/jrobens/Sites/gardensofstone2/web/core/lib/Drupal/Core/Entity/EntityResolverManager.php(135): ReflectionMethod->__construct('\\Drupal\\photos\\...', 'view')
+#3 /Users/jrobens/Sites/gardensofstone2/web/core/lib/Drupal/Core/Entity/EntityResolverManager.php(221): Drupal\Core\Entity\EntityResolverManager->setParametersFromReflection(Array, Object(Symfony\Component\Routing\Route))
+#4 /Users/jrobens/Sites/gardensofstone2/web/core/lib/Drupal/Core/EventSubscriber/EntityRouteAlterSubscriber.php(48): Drupal\Core\Entity\EntityResolverManager->setRouteOptions(Object(Symfony\Component\Routing\Route))
+#5 /Users/jrobens/Sites/gardensofstone2/vendor/symfony/event-dispatcher/EventDispatcher.php(246): Drupal\Core\EventSubscriber\EntityRouteAlterSubscriber->onRoutingRouteAlterSetType(Object(Drupal\Core\Routing\RouteBuildEvent), 'routing.route_a...', Object(Symfony\Component\EventDispatcher\EventDispatcher))
+#6 /Users/jrobens/Sites/gardensofstone2/vendor/symfony/event-dispatcher/EventDispatcher.php(206): Symfony\Component\EventDispatcher\EventDispatcher::{closure:Symfony\Component\EventDispatcher\EventDispatcher::optimizeListeners():241}(Object(Drupal\Core\Routing\RouteBuildEvent), 'routing.route_a...', Object(Symfony\Component\EventDispatcher\EventDispatcher))
+#7 /Users/jrobens/Sites/gardensofstone2/vendor/symfony/event-dispatcher/EventDispatcher.php(56): Symfony\Component\EventDispatcher\EventDispatcher->callListeners(Array, 'routing.route_a...', Object(Drupal\Core\Routing\RouteBuildEvent))
+#8 /Users/jrobens/Sites/gardensofstone2/web/core/lib/Drupal/Core/Routing/RouteBuilder.php(189): Symfony\Component\EventDispatcher\EventDispatcher->dispatch(Object(Drupal\Core\Routing\RouteBuildEvent), 'routing.route_a...')
+#9 /Users/jrobens/Sites/gardensofstone2/web/core/lib/Drupal/Core/ProxyClass/Routing/RouteBuilder.php(83): Drupal\Core\Routing\RouteBuilder->rebuild()
+#10 /Users/jrobens/Sites/gardensofstone2/web/core/includes/common.inc(454): Drupal\Core\ProxyClass\Routing\RouteBuilder->rebuild()
+#11 /Users/jrobens/Sites/gardensofstone2/vendor/drush/drush/src/Commands/core/UpdateDBCommands.php(96): drupal_flush_all_caches()
+#12 [internal function]: Drush\Commands\core\UpdateDBCommands->updatedb(Array)
+#13 /Users/jrobens/Sites/gardensofstone2/vendor/consolidation/annotated-command/src/CommandProcessor.php(276): call_user_func_array(Array, Array)
+#14 /Users/jrobens/Sites/gardensofstone2/vendor/consolidation/annotated-command/src/CommandProcessor.php(212): Consolidation\AnnotatedCommand\CommandProcessor->runCommandCallback(Array, Object(Consolidation\AnnotatedCommand\CommandData))
+#15 /Users/jrobens/Sites/gardensofstone2/vendor/consolidation/annotated-command/src/CommandProcessor.php(175): Consolidation\AnnotatedCommand\CommandProcessor->validateRunAndAlter(Array, Array, Object(Consolidation\AnnotatedCommand\CommandData))
+#16 /Users/jrobens/Sites/gardensofstone2/vendor/consolidation/annotated-command/src/AnnotatedCommand.php(387): Consolidation\AnnotatedCommand\CommandProcessor->process(Object(Symfony\Component\Console\Output\ConsoleOutput), Array, Array, Object(Consolidation\AnnotatedCommand\CommandData))
+#17 /Users/jrobens/Sites/gardensofstone2/vendor/symfony/console/Command/Command.php(279): Consolidation\AnnotatedCommand\AnnotatedCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 /Users/jrobens/Sites/gardensofstone2/vendor/symfony/console/Application.php(1094): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 /Users/jrobens/Sites/gardensofstone2/vendor/symfony/console/Application.php(342): Symfony\Component\Console\Application->doRunCommand(Object(Consolidation\AnnotatedCommand\AnnotatedCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 /Users/jrobens/Sites/gardensofstone2/vendor/symfony/console/Application.php(193): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#21 /Users/jrobens/Sites/gardensofstone2/vendor/drush/drush/src/Runtime/Runtime.php(110): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#22 /Users/jrobens/Sites/gardensofstone2/vendor/drush/drush/src/Runtime/Runtime.php(40): Drush\Runtime\Runtime->doRun(Array, Object(Symfony\Component\Console\Output\ConsoleOutput))
+#23 /Users/jrobens/Sites/gardensofstone2/vendor/drush/drush/drush.php(140): Drush\Runtime\Runtime->run(Array)
+#24 {main}.
+
+
+## Updates 2025-01-19
+
+    drupal/ds      3.25.0  ! 3.28.0  Extend the display options for every entity type.
+    drupal/leaflet 10.2.33 ! 10.2.35 Integration with the Leaflet map scripting library.
+    drupal/nagios  1.22.0  ! 1.24.0  Exposes a page that Nagios or Icinga can monitor
+## Updates 2025-01-11
+
+Mosaico: Version 3.3.1697392242 is installed. Upgrade to version 3.6.
+
+
 ## Drupal 11
+
+Mosaico requires a graphics driver such as PHP-ImageMagick or PHP-GD. For more information, see Mosaico Settings.
+Error: Failed to locate Mosaico graphics driver. Either "mosaico_graphics" is invalid or the autodetection failed.
+
+[notice] Module admin_toolbar_links_access_filter has an entry in the system.schema key/value storage, but is not installed. <a href="https://www.drupal.org/node/3137656">More information about this error</a>.
 
 Module       Update ID       Type            Description
  ------------ --------------- --------------- --------------------------------

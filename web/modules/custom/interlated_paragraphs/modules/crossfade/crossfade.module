@@ -13,7 +13,6 @@ function crossfade_help($route_name, RouteMatchInterface $route_match) {
         return '<pre>' . $text . '</pre>';
       }
       else {
-        /** @var \Drupal\markdown\PluginManager\ParserManagerInterface $parser_manager */
         $parser_manager = \Drupal::service('plugin.manager.markdown.parser');
         $parser = $parser_manager->getDefaultParser([
           'render_strategy' => ['type' => 'none'],

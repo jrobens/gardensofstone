@@ -14,7 +14,7 @@
   40%
     opacity: 0
 
-.paragraph--type--crossfade-banner #CrossFade
+#CrossFade, #CrossFade2
   z-index: -10
   background: #000
   display: flex
@@ -58,13 +58,13 @@
     display: none
 
 @media (min-width: 768px)
-  .paragraph--type--crossfade-banner #CrossFade
+  #CrossFade
     width: 100vw
     height: 33vh
 
 // Is not rendered in the CrossFade block
 @media screen and (min-width: 768px)
-  .paragraph--type--crossfade-banner .field_pbcrossfade_intro
+  #CrossFade .field_pbcrossfade_intro
     display: block
     position: absolute
     bottom: 10rem
@@ -79,7 +79,7 @@
     border-radius: 0.5rem
 
 @media (min-height: 1300px)
-  .paragraph--type--crossfade-banner #CrossFade .field_pbcrossfade_intro
+  #CrossFade .field_pbcrossfade_intro
     position: relative
     bottom: 5rem
     right: 0

@@ -144,7 +144,7 @@ class MediaTypeManager implements MediaTypeManagerInterface {
   public function getTargetFieldMaxSize(MediaTypeInterface $mediaType) {
     $targetFieldSettings = $this->getTargetFieldSettings($mediaType);
 
-    return !empty($targetFieldSettings['max_filesize']) ? $targetFieldSettings['max_filesize'] : (string) DeprecationHelper::backwardsCompatibleCall(\Drupal::VERSION, '10.2.0', fn() => ByteSizeMarkup::create(Environment::getUploadMaxSize()), fn() => format_size(Environment::getUploadMaxSize()));
+    return !empty($targetFieldSettings['max_filesize']) ? $targetFieldSettings['max_filesize'] : ByteSizeMarkup::create(Environment::getUploadMaxSize());
   }
 
   /**
