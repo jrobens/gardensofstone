@@ -1,5 +1,5 @@
 .field_pl_component.container div:nth-child(2)
-  margin-top: 33vw
+  margin-top: 25vw
 
 .paragraph--type--crossfade-banner, #CrossFade
   z-index: 1
@@ -12,18 +12,16 @@
   object-fit: cover
   overflow: hidden
   position: fixed
-  top: 3rem
+  top: 0
   left: 0
 
 @media (min-width: 768px)
   .paragraph--type--crossfade-banner, #CrossFade
     width: 100vw
-    height: 33vw
+    height: 25vw
 
 .paragraph--type--crossfade-banner img, #CrossFade img
   position: absolute
-  /*  top: 30%
-    left: 0*/
   min-width: 100%
   min-height: 100%
   height: auto
@@ -34,7 +32,6 @@
   transform: scale(1.4) rotate(3deg)
   -webkit-animation: CrossFade 32s infinite
   animation: CrossFade 32s infinite
-
 
 body.toolbar-tray-open .paragraph--type--crossfade-banner,
 body.toolbar-tray-open #CrossFade

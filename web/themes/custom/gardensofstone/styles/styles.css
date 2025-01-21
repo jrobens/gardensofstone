@@ -27,7 +27,7 @@
 }
 
 .field_pl_component.container div:nth-child(2) {
-  margin-top: 18vw;
+  margin-top: 25vw;
 }
 
 .paragraph--type--crossfade-banner, #CrossFade {
@@ -48,7 +48,7 @@
 @media (min-width: 768px) {
   .paragraph--type--crossfade-banner, #CrossFade {
     width: 100vw;
-    height: 18vw;
+    height: 25vw;
   }
 }
 .paragraph--type--crossfade-banner img, #CrossFade img {
@@ -269,7 +269,6 @@ section.hero.is-primary.block-views-blockevents-block-2 .views-field-title a:vis
     flex-direction: row;
     flex-wrap: wrap;
   }
-
   .view-events.view-display-id-page_2 .view-content .views-row:nth-child(2) {
     display: flex;
     flex-direction: row-reverse;
@@ -346,15 +345,12 @@ section.hero.is-primary.block-views-blockevents-block-2 .views-field-title a:vis
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
-
   .view-id-visit_gardens_of_stone_terms .view-content .views-row:nth-child(3n+1), .view-id-visit_gardens_of_stone_terms .view-content .views-row:nth-child(3n+1) {
     grid-column-end: span 2;
   }
-
   .view-id-visit_gardens_of_stone_terms .view-content > .views-row {
     position: relative;
   }
-
   .view-id-visit_gardens_of_stone_terms .views-field.views-field-description__value a,
   .view-id-visit_gardens_of_stone_terms .views-field.views-field-description__value a:visited {
     color: #333;
@@ -368,7 +364,6 @@ section.hero.is-primary.block-views-blockevents-block-2 .views-field-title a:vis
     left: 10%;
     transform: translate(0, -30%);
   }
-
   .view-id-visit_gardens_of_stone_terms .views-field.views-field-description__value {
     margin: 0 2rem;
     position: absolute;
@@ -376,7 +371,6 @@ section.hero.is-primary.block-views-blockevents-block-2 .views-field-title a:vis
     left: 10%;
     transform: translate(0, -60%);
   }
-
   .view-id-visit_gardens_of_stone_terms .views-row:nth-child(3n+2) .views-field-description__value,
   .view-id-visit_gardens_of_stone_terms .views-row:nth-child(+3) .views-field-description__value {
     margin: 0;
@@ -867,17 +861,14 @@ body.path-- .column {
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
   }
-
   .layout__region--content > * {
     scroll-snap-align: start;
   }
-
   .block-system-main-block > article {
     position: relative;
     background: white;
     padding-top: 0;
   }
-
   article.content.landing::after {
     content: "";
     pointer-events: none;
@@ -889,16 +880,13 @@ body.path-- .column {
     background: white;
     z-index: -1;
   }
-
   article > div > .content {
     padding: 2rem;
     margin-bottom: 0;
   }
-
   article > div > .content > div {
     margin-left: 2rem;
   }
-
   article > div > .content h2 {
     /*  color: white*/
     font-weight: normal;
