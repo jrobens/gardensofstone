@@ -27,7 +27,7 @@
 }
 
 .field_pl_component.container div:nth-child(2) {
-  margin-top: 25vw;
+  margin-top: 12vw;
 }
 
 .paragraph--type--crossfade-banner, #CrossFade {
@@ -730,15 +730,6 @@ main > section > .container {
   position: absolute;
   right: 0;
   z-index: 10;
-}
-
-body.toolbar-tray-open #block-gardensofstone-branding {
-  padding-top: 2.5rem;
-}
-
-/* Cross fade banner */
-#block-gardensofstone-branding {
-  padding-top: 3.5rem;
 }
 
 /* for inspiration https://codepen.io/dimaZubkov/pen/rLxrXZ */
