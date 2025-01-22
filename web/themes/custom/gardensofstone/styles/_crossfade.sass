@@ -11,7 +11,7 @@
   height: 100vw
   object-fit: cover
   overflow: hidden
-  position: fixed
+  position: sticky
   top: 0
   left: 0
 
@@ -32,10 +32,6 @@
   transform: scale(1.4) rotate(3deg)
   -webkit-animation: CrossFade 32s infinite
   animation: CrossFade 32s infinite
-
-body.toolbar-tray-open .paragraph--type--crossfade-banner,
-body.toolbar-tray-open #CrossFade
-  top: 5em
 
 .paragraph--type--crossfade-banner .field_pbcrossfade_image > div:nth-child(3) img,
 #CrossFade img:nth-child(3)
@@ -73,13 +69,11 @@ body.toolbar-tray-open #CrossFade
     background-image: linear-gradient(to top, rgba(0, 32, 32, 0.1), #7777775c 86%, #3333335c 75%)
     border-radius: 0.5rem
 
-
 @media (min-height: 1300px)
   .paragraph--type--crossfade-banner .field_pbcrossfade_intro, #CrossFade .intro
     position: relative
     bottom: 5rem
     right: 0
-
 
 .paragraph--type--crossfade-banner .field_pbcrossfade_intro h1, #CrossFade .intro h1
   margin-bottom: 0.5em

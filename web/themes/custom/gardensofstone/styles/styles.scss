@@ -152,8 +152,12 @@ h4 {
 
 main {
   scroll-snap-type: y mandatory;
-  background: white;
+  background: transparent;
   // clip-path: inset(-14rem 0 0 0)
+
+  > section > .container {
+    padding: 1rem
+  }
 }
 
 .layout > div > * {
@@ -168,10 +172,6 @@ main {
 body.path-- main > section {
   background: rgba(255, 255, 255, 0.2);
   margin-top: 5rem;
-}
-
-main > section > .container {
-  padding: 1rem;
 }
 
 .social-sharing-buttons {

@@ -100,8 +100,8 @@
 }
 body.toolbar-tray-open .paragraph--type--crossfade-banner,
 body.toolbar-tray-open #CrossFade {
-  top: 5em;
-  position: fixed;
+  top: 0;
+  position: sticky;
 }
 
 /*# sourceMappingURL=crossfade.css.map */
