@@ -26,7 +26,7 @@
   height: 100vw;
   object-fit: cover;
   overflow: hidden;
-  position: fixed;
+  position: static;
   top: 0;
   left: 0;
 }
@@ -101,7 +101,7 @@
 body.toolbar-tray-open .paragraph--type--crossfade-banner,
 body.toolbar-tray-open #CrossFade {
   top: 5em;
-  position: fixed;
+  position: static;
 }
 
 /*# sourceMappingURL=crossfade.css.map */
