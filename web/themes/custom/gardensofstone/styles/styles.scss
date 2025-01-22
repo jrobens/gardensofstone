@@ -154,10 +154,6 @@ main {
   scroll-snap-type: y mandatory;
   background: transparent;
   // clip-path: inset(-14rem 0 0 0)
-
-  > section > .container {
-    padding: 1rem
-  }
 }
 
 .layout > div > * {

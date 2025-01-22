@@ -701,9 +701,6 @@ main {
   scroll-snap-type: y mandatory;
   background: transparent;
 }
-main > section > .container {
-  padding: 1rem;
-}
 
 .layout > div > * {
   scroll-snap-align: start;
