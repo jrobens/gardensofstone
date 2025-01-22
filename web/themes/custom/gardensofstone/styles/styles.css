@@ -40,7 +40,7 @@
   height: 100vw;
   object-fit: cover;
   overflow: hidden;
-  position: fixed;
+  position: static;
   top: 0;
   left: 0;
 }
@@ -795,7 +795,6 @@ body.path--gardensofstone .region-primary-menu + .hero.is-primary {
   padding: 3rem;
 }
 
-/* Page title */
 #block-gardensofstone-page-title {
   max-width: 66vw;
 }
