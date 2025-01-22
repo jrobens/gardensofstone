@@ -27,7 +27,7 @@
 }
 
 .field_pl_component.container div:nth-child(2) {
-  margin-top: 12vw;
+  margin-top: 3rem;
 }
 
 .paragraph--type--crossfade-banner, #CrossFade {
@@ -40,7 +40,7 @@
   height: 100vw;
   object-fit: cover;
   overflow: hidden;
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
 }
@@ -63,11 +63,6 @@
   transform: scale(1.4) rotate(3deg);
   -webkit-animation: CrossFade 32s infinite;
   animation: CrossFade 32s infinite;
-}
-
-body.toolbar-tray-open .paragraph--type--crossfade-banner,
-body.toolbar-tray-open #CrossFade {
-  top: 5em;
 }
 
 .paragraph--type--crossfade-banner .field_pbcrossfade_image > div:nth-child(3) img,
