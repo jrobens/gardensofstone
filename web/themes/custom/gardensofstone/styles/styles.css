@@ -40,7 +40,7 @@
   height: 100vw;
   object-fit: cover;
   overflow: hidden;
-  position: static;
+  position: fixed;
   top: 0;
   left: 0;
 }
