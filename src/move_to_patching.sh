@@ -5,9 +5,9 @@ cd /Users/jrobens/NetBeansProjects/patching || exit
 tar -cf - --exclude=$project/.git $project | (cd ~/Sites/gardensofstone2/web/modules/patched; tar -xf -)
 cd -
 
-if [ -z no_update ]; then
+if [ -z $no_update ]; then
   composer remove drupal/$project
-else 
+else
   composer remove drupal/$project --no-update
 fi
 

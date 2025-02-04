@@ -1,0 +1,122 @@
+/**
+ * * @file
+ * * The scss file for Bootstrap Paragraphs Callout module.
+ * *
+ * * Can be quickly compiled to CSS at https://www.sassmeister.com/.
+ * */
+ *
+ * // Colors. */
+/* Fit content doesn't work for video - field--name-field-media-oembed-video */
+/* Problem with calling things square, is that it doesn't stay square for long */
+.paragraph--type--image,
+.paragraph--type--image-square {
+  position: relative;
+  max-width: 100%;
+  /* Video in the media slot */
+}
+.paragraph--type--image .field:not(:last-child),
+.paragraph--type--image-square .field:not(:last-child) {
+  margin-bottom: 0;
+}
+.paragraph--type--image img,
+.paragraph--type--image-square img {
+  object-fit: cover;
+  width: 100%;
+}
+.paragraph--type--image .field--name-field-pbimagesquare-image,
+.paragraph--type--image-square .field--name-field-pbimagesquare-image {
+  position: relative;
+}
+.paragraph--type--image .field--name-field-media-image .field__item,
+.paragraph--type--image .field--name-field-media-image .field__item,
+.paragraph--type--image-square .field--name-field-media-image .field__item,
+.paragraph--type--image-square .field--name-field-media-image .field__item {
+  display: flex;
+  height: 37.8vw;
+}
+.paragraph--type--image .field--name-field-pbimagesquare-caption,
+.paragraph--type--image .field--name-field-pbimage-caption,
+.paragraph--type--image-square .field--name-field-pbimagesquare-caption,
+.paragraph--type--image-square .field--name-field-pbimage-caption {
+  pointer-events: none;
+  padding: 1rem;
+  font-size: 1rem;
+  font-size: var(--font-size-caption);
+  font-weight: bold;
+  line-height: 1.5;
+  color: white;
+  background: var(--navy-blue-60);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.paragraph--type--image .field--name-field-pbimagesquare-caption a,
+.paragraph--type--image .field--name-field-pbimagesquare-caption a:visited,
+.paragraph--type--image .field--name-field-pbimage-caption a,
+.paragraph--type--image .field--name-field-pbimage-caption a:visited,
+.paragraph--type--image-square .field--name-field-pbimagesquare-caption a,
+.paragraph--type--image-square .field--name-field-pbimagesquare-caption a:visited,
+.paragraph--type--image-square .field--name-field-pbimage-caption a,
+.paragraph--type--image-square .field--name-field-pbimage-caption a:visited {
+  color: white;
+  font-size: 1.1rem;
+  width: 100%;
+  display: block;
+}
+.paragraph--type--image .field--name-field-pbimagesquare-caption a:hover,
+.paragraph--type--image .field--name-field-pbimagesquare-caption a:hover,
+.paragraph--type--image .field--name-field-pbimagesquare-caption a:active,
+.paragraph--type--image .field--name-field-pbimagesquare-caption a:active,
+.paragraph--type--image .field--name-field-pbimage-caption a:hover,
+.paragraph--type--image .field--name-field-pbimage-caption a:hover,
+.paragraph--type--image .field--name-field-pbimage-caption a:active,
+.paragraph--type--image .field--name-field-pbimage-caption a:active,
+.paragraph--type--image-square .field--name-field-pbimagesquare-caption a:hover,
+.paragraph--type--image-square .field--name-field-pbimagesquare-caption a:hover,
+.paragraph--type--image-square .field--name-field-pbimagesquare-caption a:active,
+.paragraph--type--image-square .field--name-field-pbimagesquare-caption a:active,
+.paragraph--type--image-square .field--name-field-pbimage-caption a:hover,
+.paragraph--type--image-square .field--name-field-pbimage-caption a:hover,
+.paragraph--type--image-square .field--name-field-pbimage-caption a:active,
+.paragraph--type--image-square .field--name-field-pbimage-caption a:active {
+  color: var(--berry);
+}
+.paragraph--type--image .field_media_oembed_video.container,
+.paragraph--type--image-square .field_media_oembed_video.container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%;
+}
+.paragraph--type--image .field_media_oembed_video.container iframe.media-oembed-content,
+.paragraph--type--image-square .field_media_oembed_video.container iframe.media-oembed-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+/*# sourceMappingURL=ip_pb_image_square.css.map */
+
+/*
+     FILE ARCHIVED ON 13:05:06 Oct 14, 2024 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 10:10:49 Jan 11, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.748
+  exclusion.robots: 0.026
+  exclusion.robots.policy: 0.011
+  esindex: 0.013
+  cdx.remote: 16.695
+  LoadShardBlock: 147.156 (3)
+  PetaboxLoader3.datanode: 167.38 (5)
+  load_resource: 129.712 (2)
+  PetaboxLoader3.resolve: 44.626
+*/

@@ -1,0 +1,56 @@
+:root {
+  --color-highlight-1: #a2046b;
+}
+
+.layout__region--second .paragraph--type--quote {
+  padding: 0 0 0 2.5rem;
+}
+
+.paragraph--type--quote {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  height: 100%;
+  font-family: "Mukta Malar", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 0 2.5rem;
+  color: #a2046b;
+}
+.paragraph--type--quote a, .paragraph--type--quote a:visited {
+  color: #a2046b;
+  font-family: "Mukta Malar", sans-serif;
+  text-shadow: 0 4px 9px rgba(162, 4, 107, 0.67);
+}
+
+@media (min-width: 768px) {
+  .paragraph--type--quote {
+    max-width: 40vw;
+    color: #a2046b;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+/*# sourceMappingURL=ip_pb_quote.css.map */
+
+/*
+     FILE ARCHIVED ON 13:05:09 Oct 14, 2024 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 10:10:19 Jan 11, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 1.428
+  exclusion.robots: 0.045
+  exclusion.robots.policy: 0.018
+  esindex: 0.021
+  cdx.remote: 11.412
+  LoadShardBlock: 101.401 (3)
+  PetaboxLoader3.datanode: 105.059 (5)
+  PetaboxLoader3.resolve: 1150.091 (3)
+  load_resource: 1245.974 (2)
+*/

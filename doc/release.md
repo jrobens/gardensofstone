@@ -1,3 +1,77 @@
+## Updates 2025-02-05
+
+    civicrm/civicrm-core     5.81.0            ! 5.81.1            Open source constituent relationship management for non-profits, NGOs and advocacy organizations.
+    civicrm/civicrm-drupal-8 5.81.0            ! 5.81.1            Open source constituent relationship management for non-profits, NGOs and advocacy organizations.
+    civicrm/civicrm-packages 5.81.0            ! 5.81.1            Legacy third party dependencies for CiviCRM
+    drupal/layout_paragraphs dev-2.1.x 5973bfc ! dev-2.1.x c97badf Layout Paragraphs
+    drupal/leaflet           10.2.35           ! 10.2.36           Integration with the Leaflet map scripting library.
+    drupal/leaflet_more_maps 2.2.2             ! 2.2.3             Adds a swag of map styles to Leaflet, e.g Thunderforest, Esri, Stamen, Google.
+
+## Mail in spam
+
+Delivered-To: jrobens@interlated.com.au
+Received: by 2002:a05:6130:2a9:b0:856:ed2b:cc6f with SMTP id q41csp7097953uac;
+Mon, 20 Jan 2025 16:00:18 -0800 (PST)
+X-Google-Smtp-Source: AGHT+IGqKpfp30ery1XH+/QgqVwRAaIAt/h/WMmIRe/+1rZqTv+y8B9qjThlpSr3ZSKcqJRG5QXM
+X-Received: by 2002:a17:902:ecc5:b0:215:9d58:6f35 with SMTP id d9443c01a7336-21c351bd5c7mr267794535ad.1.1737417617335;
+Mon, 20 Jan 2025 16:00:17 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1737417617; cv=none;
+d=google.com; s=arc-20240605;
+b=Foi5qhKHDA5qzhfE94EnsNpOn5/Idbrv24uNEoHuSINUDptWeMbEl057ZGgPkLtIFe
+hlxxCiJ54D2nft31c+yVlE3Lc2o+8tmpOK6ZRuQx9VWhnW3eZg1+f4+w70R3+R/h/7lQ
+Y9n1iHmvQavXaNxAaGCCUDP2c5XJiysuxeGVUGq3TbRN7h3eY3HdSgwXXoy4Za5Zi7a8
+OaxrhNxts1ssZMmF41s+yyViooXE4I/YlWh1wqSuigFVE5Y/gGgfss1KHnhPIA2b8oaA
+y7PfYIC05lP+XryxmR5W3LGx+fpX0r8jsNBPVqZh2m0z9aB8C6efj196bCuyFLljrNYx
+S07A==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+h=message-id:date:from:job_id:precedence:list-unsubscribe
+:list-unsubscribe-post:mime-version:subject:to;
+bh=ZznCT2Noqp3zTf4v/YUTbyPRsrIv6mGzD/cjZgVrqy4=;
+fh=mDG0/3imwsPr2eZT1tUSnMkcZodkasiTQFTOkjeNk6E=;
+b=j6NnpR1i1hcFGK080zxo81NshIECFcsIMRvErmPlhoEy0PsaDfs6mQj6v798Kk5p9i
+BJqBxTeMABXNcGLNI/648vmZacNtIZPzmj8WCjQsY6uu0EWIGFjBDWMYRjfG6ToUTUkJ
+bpQJ2ZEcI3yrWBsF/31zpH2yVjdJV9ALKRxYRsxBtwCNU8JCRATC1w5Y2fH00XrzjkAG
+aXm6d5pZoMRckC1V3k9UbKQmiSpqzSksfrV+vkAMKNhR4qkn1mg2fHV6JfFviEuxQ9FK
+C0a8hjuftzgoHWxo7KefImN1q5r2dteRImTTb3JPn9xOA0h43NU8qbHGHHGmshInZgUb
+GXEg==;
+dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+spf=pass (google.com: domain of return+b.228.360919.vcntjvbgqiucwmfg@gardensofstone.org.au designates 43.239.97.47 as permitted sender) smtp.mailfrom=return+b.228.360919.vcntjvbgqiucwmfg@gardensofstone.org.au;
+dmarc=fail (p=NONE sp=NONE dis=NONE) header.from=colongwilderness.org.au
+Return-Path: <return+b.228.360919.vcntjvbgqiucwmfg@gardensofstone.org.au>
+Received: from ganon.interlated.com.au (ganon.interlated.com.au. [43.239.97.47])
+by mx.google.com with ESMTPS id 41be03b00d2f7-a9bdfb3ad9esi11701400a12.677.2025.01.20.16.00.16
+for <jrobens@interlated.com.au>
+(version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+Mon, 20 Jan 2025 16:00:17 -0800 (PST)
+Received-SPF: pass (google.com: domain of return+b.228.360919.vcntjvbgqiucwmfg@gardensofstone.org.au designates 43.239.97.47 as permitted sender) client-ip=43.239.97.47;
+Authentication-Results: mx.google.com;
+spf=pass (google.com: domain of return+b.228.360919.vcntjvbgqiucwmfg@gardensofstone.org.au designates 43.239.97.47 as permitted sender) smtp.mailfrom=return+b.228.360919.vcntjvbgqiucwmfg@gardensofstone.org.au;
+dmarc=fail (p=NONE sp=NONE dis=NONE) header.from=colongwilderness.org.au
+Received: by ganon.interlated.com.au (Postfix, from userid 33) id 8C5A5B175; Tue, 21 Jan 2025 00:00:14 +0000 (UTC)
+To: <jrobens@interlated.com.au>
+Subject: Gardens of Stone Conservation Area - update January 2025
+MIME-Version: 1.0
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+List-Unsubscribe: <mailto:return+u.228.360919.vcntjvbgqiucwmfg@gardensofstone.org.au>, <https://www.gardensofstone.org.au/civicrm/mailing/unsubscribe?reset=1&jid=228&qid=360919&h=vcntjvbgqiucwmfg>
+X-CiviMail-Mosaico: Yes
+Precedence: bulk
+job_id: 228
+From: Protect Gardens of Stone <keith@colongwilderness.org.au>
+X-CiviMail-Bounce: return+b.228.360919.vcntjvbgqiucwmfg@gardensofstone.org.au
+Content-Type: multipart/alternative; boundary="=_d43bef06f056ab54105c0806027bac87"
+Date: Tue, 21 Jan 2025 11:00:14 +1100
+Message-Id: <20250121000014.8C5A5B175@ganon.interlated.com.au>
+
+--=_d43bef06f056ab54105c0806027bac87
+Content-Transfer-Encoding: 8bit
+Content-Type: text/plain; charset=utf-8
+
+[Unsubscribe](https://www.gardensofstone.org.au/civicrm/mailing/unsubscribe?reset=1&jid=228&qid=360919&h=vcntjvbgqiucwmfg)
+
+[View in your browser](https://www.gardensofstone.org.au/civicrm/mailing/view?reset=1&id=48&cid=2&cs=c79e221877e69a3cc6761a02639b3fc7_1737417607_168)
+
+Dear
 
 ## Cross Fade
 
