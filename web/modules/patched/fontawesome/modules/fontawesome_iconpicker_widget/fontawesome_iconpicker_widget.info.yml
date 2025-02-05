@@ -1,7 +1,0 @@
-name: 'Font Awesome Iconpicker Widget'
-type: module
-description: 'Provides an iconpicker widget for Font Awesome'
-
-core_version_requirement: ^10.2 || ^11.0
-dependencies:
-  - fontawesome:fontawesome

@@ -1,5 +1,16 @@
 ## Updates 2025-02-05
 
+composer require 'drupal/fontawesome:^3.0'
+composer require 'drupal/fontawesome_menu_icons:^3.0'
+composer require 'drupal/google_tag:^2.0'
+
+Replaced by:
+Google Tag
+Google suggests users install the new 2.x version of Google Tag for future Google Analytics support.
+
+
+## Updates 2025-02-05
+
     civicrm/civicrm-core     5.81.0            ! 5.81.1            Open source constituent relationship management for non-profits, NGOs and advocacy organizations.
     civicrm/civicrm-drupal-8 5.81.0            ! 5.81.1            Open source constituent relationship management for non-profits, NGOs and advocacy organizations.
     civicrm/civicrm-packages 5.81.0            ! 5.81.1            Legacy third party dependencies for CiviCRM
