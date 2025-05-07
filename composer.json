@@ -63,7 +63,7 @@
         "drupal/shield": "^1.4",
         "drupal/tfa": "^1.2",
         "drupal/viewsreference": "^2.0@beta",
-        "drupal/webform": "^6.3@alpha",
+        "drupal/webform": "^6.3@beta",
         "drupal/xmlsitemap": "^2.0@beta",
         "drush/drush": "^13",
         "enyo/dropzone": "^5.7",

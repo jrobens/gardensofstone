@@ -3,7 +3,7 @@
 minor_updates=$1
 job='GOS'
 
-updates=$(composer outdated --minor-only --direct | sed 's/^/    /')
+updates=$(composer outdated --direct | sed 's/^/    /')
 echo "updates are: \n ${updates}"
 
 if [[ $updates =~ 'drupal/core' ]]; then
