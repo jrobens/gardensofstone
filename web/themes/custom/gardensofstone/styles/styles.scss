@@ -154,6 +154,14 @@ main {
   scroll-snap-type: y mandatory;
   background: transparent;
   // clip-path: inset(-14rem 0 0 0)
+
+  > section > .container:not(.is-max-desktop):not(.is-max-widescreen) {
+    max-width: 100%;
+
+    .field_pl_component {
+      max-width: 100%;
+    }
+  }
 }
 
 .layout > div > * {

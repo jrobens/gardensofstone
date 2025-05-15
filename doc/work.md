@@ -1,3 +1,4 @@
+*:JR:2025-05-15:GOS:0.2: sys+ update drupal. civicrm/civicrm-core5.82.1
 *:JR:2025-05-07:GOS:0.2: sys+ update drupal. civicrm/civicrm-core5.81.1
 *:JR:2025-05-07:GOS:0.2: sys+ update drupal. civicrm/civicrm-core5.81.1
 *:JR:2025-05-07:GOS:0.2: sys+ update drupal. civicrm/civicrm-core5.81.1

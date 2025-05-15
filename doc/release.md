@@ -1,4 +1,22 @@
+## Updates 2025-05-15
+
+    civicrm/civicrm-core          5.82.1 ~ 6.2.0  Open source constituent relationship manag...
+    civicrm/civicrm-drupal-8      5.82.1 ~ 6.2.0  Open source constituent relationship manag...
+    civicrm/civicrm-packages      5.82.1 ~ 6.2.0  Legacy third party dependencies for CiviCRM
+    composer/installers           1.12.0 ~ 2.3.0  A multi-framework Composer library installer
+    drupal/core-composer-scaffold 11.1.6 ! 11.1.7 A flexible Composer project scaffold builder.
+    drupal/core-project-message   11.1.6 ! 11.1.7 Adds a message after Composer installation.
+    drupal/core-recommended       11.1.6 ! 11.1.7 Core and its dependencies with known-compa...
+    league/commonmark             1.6.7  ~ 2.7.0  Highly-extensible PHP Markdown parser whic...
+
+
+
 ## Updates 2025-05-07
+
+system module
+Rebuild the container to fix HTML in RSS feeds.
+tfa module
+Empty update to rebuild core routes.
 
     civicrm/civicrm-core     5.81.1      ~ 6.1.2       Open source constituent relationship ...
     civicrm/civicrm-drupal-8 5.81.1      ~ 6.1.2       Open source constituent relationship ...

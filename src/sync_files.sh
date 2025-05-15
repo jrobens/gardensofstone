@@ -1,2 +1,2 @@
-(cd web/files && rsync -arvz -e ssh jrobens@topaz:/srv/uat/gardensofstone.org.au/web/files/ . )
+(cd web/files && rsync -arvz -e ssh ganon:/srv/web/gardensofstone.org.au/web/files/ . )
 

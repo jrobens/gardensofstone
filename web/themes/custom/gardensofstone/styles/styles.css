@@ -701,6 +701,12 @@ main {
   scroll-snap-type: y mandatory;
   background: transparent;
 }
+main > section > .container:not(.is-max-desktop):not(.is-max-widescreen) {
+  max-width: 100%;
+}
+main > section > .container:not(.is-max-desktop):not(.is-max-widescreen) .field_pl_component {
+  max-width: 100%;
+}
 
 .layout > div > * {
   scroll-snap-align: start;
