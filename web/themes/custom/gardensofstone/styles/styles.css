@@ -26,6 +26,10 @@
   max-height: 2.75rem;
 }
 
+body.toolbar-fixed .navbar.is-black {
+  padding-top: 3rem;
+}
+
 .field_pl_component.container div:nth-child(2) {
   margin-top: 3rem;
 }
@@ -333,6 +337,24 @@ section.hero.is-primary.block-views-blockevents-block-2 .views-field-title a:vis
   flex: 1 1 30%;
   align-self: center;
   padding: 1rem;
+}
+
+.field_pbimagesquare_caption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: #a2046b;
+  padding: 0.5rem 1rem;
+  color: white;
+}
+
+.field_pbcheckerboard_title {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: #a2046b;
+  padding: 0.5rem 1rem;
+  color: white;
 }
 
 @media (min-width: 720px) {
@@ -697,6 +719,10 @@ h4 {
   font-family: "Lato", sans-serif;
 }
 
+header {
+  padding-top: 3rem;
+}
+
 main {
   scroll-snap-type: y mandatory;
   background: transparent;
@@ -719,7 +745,7 @@ main > section > .container:not(.is-max-desktop):not(.is-max-widescreen) .field_
 
 body.path-- main > section {
   background: rgba(255, 255, 255, 0.2);
-  margin-top: 5rem;
+  margin-top: 2rem;
 }
 
 .social-sharing-buttons {

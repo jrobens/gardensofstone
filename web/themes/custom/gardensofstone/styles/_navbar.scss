@@ -1,0 +1,35 @@
+
+.navbar.is-black {
+  background-color: rgb(162, 103, 28);
+  color: #fff;
+
+  .navigation__link-description {
+    display: none;
+  }
+
+  a, a:visited {
+    color: white;
+    line-height: 4;
+  }
+
+  a.navbar-item:hover {
+    background-color: #ac6101;
+    color: white;
+  }
+
+  .navbar-dropdown {
+    a, a:visited { // Nested rule for links within .navbar-dropdown
+      color: #a2671c;
+    }
+  }
+}
+
+.navbar-item img {
+  max-height: 2.75rem;
+}
+
+
+body.toolbar-fixed .navbar.is-black {
+  padding-top: 3rem;
+}
+

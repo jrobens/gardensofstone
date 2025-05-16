@@ -1,0 +1,12 @@
+@use '../../../../sites/variables' as sv;
+
+
+.field_pbimagesquare_caption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: sv.$primary;
+  padding: 0.5rem 1rem;
+  color: white;
+}
+
