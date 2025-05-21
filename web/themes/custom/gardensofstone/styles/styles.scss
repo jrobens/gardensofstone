@@ -200,10 +200,13 @@ body.path--gardensofstone .region-primary-menu + .hero.is-primary {
   padding: 3rem;
 }
 
-#block-gardensofstone-page-title {
-  max-width: 66vw;
-}
+.region-title {
+  padding-top: 3rem;
 
+  #block-gardensofstone-page-title {
+    max-width: 66vw;
+  }
+}
 
 body.path-- section.section .block-page-title-block {
   margin-top: 21rem;
