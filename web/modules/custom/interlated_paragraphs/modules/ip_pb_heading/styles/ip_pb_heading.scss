@@ -1,0 +1,13 @@
+/**
+ * @file
+ * The scss file for Bootstrap Paragraphs Callout module.
+ *
+ * Can be quickly compiled to CSS at https://www.sassmeister.com/.
+ */
+@use '../../../../../../sites/variables' as sv;
+
+.paragraph--type--heading .field_pbheading_heading {
+  font-weight: bold;
+  font-size: 2.5rem;
+  font-family: sv.$family-heading;
+}
