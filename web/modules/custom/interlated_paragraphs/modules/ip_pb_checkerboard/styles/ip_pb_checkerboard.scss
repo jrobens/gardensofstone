@@ -5,7 +5,7 @@
  * Can be quickly compiled to CSS at https://www.sassmeister.com/.
  */
 
-@use '../../../../../../sites/variables' as *;
+@use '../../../../../../sites/variables' as sv;
 
 $button-font: 'normal bold 26px/1 "Open Sans", sans-serif';
 
@@ -15,7 +15,6 @@ $button-font: 'normal bold 26px/1 "Open Sans", sans-serif';
   justify-content: center;
   flex-direction: column;
   position: relative;
-  padding-bottom: 2rem;
 
   .field_pbcheckerboard_icon .field_media_image > div {
     display: flex;
@@ -24,16 +23,16 @@ $button-font: 'normal bold 26px/1 "Open Sans", sans-serif';
   .field--name-field-pbcheckerboard-title {
     width: 95%;
     min-height: 6rem;
-    font-family: $family-heading;
+    font-family: sv.$family-heading;
     -ms-hyphens: auto;
     -moz-hyphens: auto;
     -webkit-hyphens: auto;
     hyphens: auto;
     text-align: center;
-    background: $element-colour;
+    background: sv.$element-colour;
     border-radius: 0.7rem;
     padding: 1rem 1.5rem;
-    color: $primary;
+    color: sv.$primary;
     font-size: 1.2rem;
     font-weight: bold;
     display: flex;
@@ -42,7 +41,7 @@ $button-font: 'normal bold 26px/1 "Open Sans", sans-serif';
 
     a,
     a:visited {
-      color: $link-inverse;
+      color: sv.$link-inverse;
     }
   }
 
@@ -59,13 +58,12 @@ $button-font: 'normal bold 26px/1 "Open Sans", sans-serif';
 
   .field_caption {
     padding: 0 1rem;
-    font-size: 0.9rem;
-    line-height: 0.95;
-    margin-bottom: 1rem;
+    border-bottom: 1px solid sv.$link;
+    color: sv.$link;
 
     a,
     a:visited {
-      color: $dark;
+      color: sv.$link;
     }
   }
 

@@ -80,7 +80,6 @@
   justify-content: center;
   flex-direction: column;
   position: relative;
-  padding-bottom: 2rem;
 }
 .paragraph--type--checkerboard .field_pbcheckerboard_icon .field_media_image > div {
   display: flex;
@@ -119,13 +118,12 @@
 }
 .paragraph--type--checkerboard .field_caption {
   padding: 0 1rem;
-  font-size: 0.9rem;
-  line-height: 0.95;
-  margin-bottom: 1rem;
+  border-bottom: 1px solid #a2671c;
+  color: #a2671c;
 }
 .paragraph--type--checkerboard .field_caption a,
 .paragraph--type--checkerboard .field_caption a:visited {
-  color: #333;
+  color: #a2671c;
 }
 .paragraph--type--checkerboard.image-background {
   font-family: "Paytone One", sans-serif;
