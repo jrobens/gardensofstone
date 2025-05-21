@@ -1,0 +1,136 @@
+/**
+ * @file
+ * The style file
+ *
+ * Can be quickly compiled to CSS at https://www.sassmeister.com/.
+ */
+
+@use '../../../../../../sites/variables' as *;
+
+$button-font: 'normal bold 26px/1 "Open Sans", sans-serif';
+
+.paragraph--type--checkerboard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  padding-bottom: 2rem;
+
+  .field_pbcheckerboard_icon .field_media_image > div {
+    display: flex;
+  }
+
+  .field--name-field-pbcheckerboard-title {
+    width: 95%;
+    min-height: 6rem;
+    font-family: $family-heading;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+    text-align: center;
+    background: $element-colour;
+    border-radius: 0.7rem;
+    padding: 1rem 1.5rem;
+    color: $primary;
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a,
+    a:visited {
+      color: $link-inverse;
+    }
+  }
+
+  .field--name-field-pbcheckerboard-text {
+    width: 95%;
+    text-align: justify-all;
+
+    ul {
+      list-style: disc outside;
+      margin-left: 1rem;
+      margin-top: 0;
+    }
+  }
+
+  .field_caption {
+    padding: 0 1rem;
+    font-size: 0.9rem;
+    line-height: 0.95;
+    margin-bottom: 1rem;
+
+    a,
+    a:visited {
+      color: $dark;
+    }
+  }
+
+  &.image-background {
+    font-family: "Paytone One", sans-serif;
+    font-size: var(--font-size-heading);
+    color: var(--color-primary-0);
+    height: 100%;
+    text-transform: uppercase;
+    font-weight: 800;
+  }
+
+  &.fuchsia {
+    font-size: var(--font-size-heading);
+    color: var(--color-hilight-1);
+    font-weight: bold;
+    height: 100%;
+  }
+
+  &.teal {
+    font-size: var(--font-size-heading);
+    color: var(--color-primary-0);
+    height: 100%;
+    text-transform: uppercase;
+    font-weight: 800;
+  }
+
+  &::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    pointer-events: none;
+    margin-right: 0;
+    opacity: 0.3;
+  }
+}
+
+.field--name-field-pl-component > .field__item:nth-child(2n) .paragraph--type--checkerboard::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  pointer-events: none;
+  margin-right: 0;
+}
+
+.field--name-field-pbcheckerboard-title {
+  flex: 0 0 30%;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+.field--name-field-pbcheckerboard-text {
+  padding-right: 1rem;
+
+  ul {
+    list-style: disc outside;
+    margin-left: 1rem;
+    margin-top: 0;
+  }
+}

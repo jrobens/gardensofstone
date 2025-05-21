@@ -42,7 +42,6 @@ Ensures that the visually hidden option for field labels works correctly.
 @todo: Remove when https://www.drupal.org/node/2779919 is resolved.
 #}
 {% set attributes = attributes.addClass(field_name) %}
-{% set attributes = attributes.addClass('container') %}
 {%
   set title_classes = [
   'label',

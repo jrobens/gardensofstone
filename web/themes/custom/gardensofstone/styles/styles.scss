@@ -3,8 +3,10 @@
 @use 'crossfade';
 @use 'highlighted';
 @use 'view_events';
-@use 'pbimagesquare';
 @use 'pbcheckerboard';
+@use 'pbimage';
+@use 'pbimagesquare';
+@use 'pbquote';
 @use 'views_image_layout';
 @use 'photos';
 @use 'webform';
@@ -61,72 +63,6 @@
   font-stretch: normal;
 }
 
-.green {
-  color: rgb(138, 153, 107);
-}
-
-.black {
-  color: rgb(27, 27, 27);
-}
-
-.orange {
-  color: rgb(171, 73, 108);
-}
-
-/* where did this come from? */
-.brown {
-  color: rgb(169, 100, 74);
-}
-
-.brown-light {
-  color: rgb(223, 138, 32);
-}
-
-.brown-yellow {
-  color: rgb(254, 213, 124);
-}
-
-.light-yellow {
-  color: rgb(255, 238, 203);
-}
-
-.lighter-yellow {
-  color: rgb(255, 247, 231);
-}
-
-.red,
-.class-red {
-  background: rgb(158, 3, 35);
-}
-
-.grey {
-  background: rgb(149, 150, 154);
-}
-
-.green-grey {
-  background-color: #60614b;
-}
-
-.dark-red {
-  background-color: #560012;
-}
-
-.darker-red {
-  background-color: #35000b;
-}
-
-.light-red {
-  background-color: #bf1338;
-}
-
-.blue {
-  background-color: #03249e;
-}
-
-.dark-green {
-  background-color: #005a3f;
-}
-
 body {
   font: 100 100%/1.5 'Hind Guntur', sans-serif;
   color: rgb(27, 27, 27);
@@ -134,8 +70,13 @@ body {
 
 body a,
 body a:visited {
+  color: $link_inverse;
+}
+
+body .region-content a, body .region-content a:visited {
   color: $link;
 }
+
 
 html .is-family-primary {
   font-family: 'Hind Guntur', sans-serif !important;
@@ -250,7 +191,8 @@ body.path--gardensofstone .region-primary-menu + .hero.is-primary {
 }
 
 .hero-head .region-header {
-  flex: 0 0 50%;
+  padding-top: 6rem;
+  padding-bottom: 1rem;
 }
 
 .header.hero.is-primary .block-system-branding-block {

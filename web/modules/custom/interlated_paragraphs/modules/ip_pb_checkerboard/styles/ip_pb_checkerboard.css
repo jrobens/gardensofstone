@@ -1,17 +1,79 @@
+/**
+ * @file
+ * The style file
+ *
+ * Can be quickly compiled to CSS at https://www.sassmeister.com/.
+ */
 :root {
   --color-highlight-1: #a2046b;
 }
 
-/**
- * * @file
- * * The style file
- * *
- * * Can be quickly compiled to CSS at https://www.sassmeister.com/.
- *
- * background: linear-gradient(to right, rgb(17 40 83 / 9%), rgb(0 32 92 / 52%), rgb(17 40 83 / 9%)), url(../images/flower.jpg) bottom right
- * background-repeat: no-repeat
- * background-size: contain
- * */
+.green {
+  color: rgb(138, 153, 107);
+}
+
+.black {
+  color: rgb(27, 27, 27);
+}
+
+.orange {
+  color: rgb(171, 73, 108);
+}
+
+/* where did this come from? */
+.brown {
+  color: rgb(169, 100, 74);
+}
+
+.brown-light {
+  color: rgb(223, 138, 32);
+}
+
+.brown-yellow {
+  color: rgb(254, 213, 124);
+}
+
+.light-yellow {
+  color: rgb(255, 238, 203);
+}
+
+.lighter-yellow {
+  color: rgb(255, 247, 231);
+}
+
+.red,
+.class-red {
+  background: rgb(158, 3, 35);
+}
+
+.grey {
+  background: rgb(149, 150, 154);
+}
+
+.green-grey {
+  background-color: #60614b;
+}
+
+.dark-red {
+  background-color: #560012;
+}
+
+.darker-red {
+  background-color: #35000b;
+}
+
+.light-red {
+  background-color: #bf1338;
+}
+
+.blue {
+  background-color: #03249e;
+}
+
+.dark-green {
+  background-color: #005a3f;
+}
+
 .paragraph--type--checkerboard {
   display: flex;
   align-items: center;
@@ -19,6 +81,9 @@
   flex-direction: column;
   position: relative;
   padding-bottom: 2rem;
+}
+.paragraph--type--checkerboard .field_pbcheckerboard_icon .field_media_image > div {
+  display: flex;
 }
 .paragraph--type--checkerboard .field--name-field-pbcheckerboard-title {
   width: 95%;
@@ -39,7 +104,8 @@
   justify-content: center;
   align-items: center;
 }
-.paragraph--type--checkerboard .field--name-field-pbcheckerboard-title a, .paragraph--type--checkerboard .field--name-field-pbcheckerboard-title a:visited {
+.paragraph--type--checkerboard .field--name-field-pbcheckerboard-title a,
+.paragraph--type--checkerboard .field--name-field-pbcheckerboard-title a:visited {
   color: white;
 }
 .paragraph--type--checkerboard .field--name-field-pbcheckerboard-text {
@@ -57,10 +123,10 @@
   line-height: 0.95;
   margin-bottom: 1rem;
 }
-.paragraph--type--checkerboard .field_caption a, .paragraph--type--checkerboard .field_caption a:visited {
+.paragraph--type--checkerboard .field_caption a,
+.paragraph--type--checkerboard .field_caption a:visited {
   color: #333;
 }
-
 .paragraph--type--checkerboard.image-background {
   font-family: "Paytone One", sans-serif;
   font-size: var(--font-size-heading);
@@ -69,7 +135,19 @@
   text-transform: uppercase;
   font-weight: 800;
 }
-
+.paragraph--type--checkerboard.fuchsia {
+  font-size: var(--font-size-heading);
+  color: var(--color-hilight-1);
+  font-weight: bold;
+  height: 100%;
+}
+.paragraph--type--checkerboard.teal {
+  font-size: var(--font-size-heading);
+  color: var(--color-primary-0);
+  height: 100%;
+  text-transform: uppercase;
+  font-weight: 800;
+}
 .paragraph--type--checkerboard::before {
   content: "";
   height: 100%;
@@ -93,28 +171,6 @@
   margin-right: 0;
 }
 
-.paragraph--type--checkerboard.fuchsia {
-  font-size: var(--font-size-heading);
-  color: var(--color-hilight-1);
-  font-weight: bold;
-  height: 100%;
-}
-
-.paragraph--type--checkerboard.teal {
-  font-size: var(--font-size-heading);
-  color: var(--color-primary-0);
-  height: 100%;
-  text-transform: uppercase;
-  font-weight: 800;
-}
-
-.paragraph--type--checkerboard.image-background {
-  color: var(--color-primary-0);
-  height: 100%;
-  text-transform: uppercase;
-  font-weight: 800;
-}
-
 .field--name-field-pbcheckerboard-title {
   flex: 0 0 30%;
   -ms-hyphens: auto;
@@ -126,7 +182,6 @@
 .field--name-field-pbcheckerboard-text {
   padding-right: 1rem;
 }
-
 .field--name-field-pbcheckerboard-text ul {
   list-style: disc outside;
   margin-left: 1rem;

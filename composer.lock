@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "10f3051dbbce697531f0932f5068aab4",
+    "content-hash": "e76825775b033b947c62a904cdf00529",
     "packages": [
         {
             "name": "adrienrn/php-mimetyper",
@@ -5718,6 +5718,75 @@
                 "source": "https://git.drupal.org/project/masquerade.git",
                 "issues": "https://www.drupal.org/project/issues/masquerade",
                 "irc": "irc://irc.freenode.org/drupal-contribute"
+            }
+        },
+        {
+            "name": "drupal/media_bulk_upload",
+            "version": "3.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/media_bulk_upload.git",
+                "reference": "3.0.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/media_bulk_upload-3.0.3.zip",
+                "reference": "3.0.3",
+                "shasum": "f3d44697b5c8cefa4213f594b2e276313539a4b3"
+            },
+            "require": {
+                "drupal/core": "^10.3 || ^11",
+                "drupal/dropzonejs": "^2.0"
+            },
+            "require-dev": {
+                "drupal/dropzonejs": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "3.0.3",
+                    "datestamp": "1746160469",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "jefuri",
+                    "homepage": "https://www.drupal.org/user/2733365"
+                },
+                {
+                    "name": "kristen pol",
+                    "homepage": "https://www.drupal.org/user/8389"
+                },
+                {
+                    "name": "Mirnaxvb",
+                    "homepage": "https://www.drupal.org/user/3157031"
+                },
+                {
+                    "name": "mycw1991",
+                    "homepage": "https://www.drupal.org/user/3523472"
+                },
+                {
+                    "name": "nitebreed",
+                    "homepage": "https://www.drupal.org/user/419423"
+                },
+                {
+                    "name": "steven buteneers",
+                    "homepage": "https://www.drupal.org/user/3301055"
+                }
+            ],
+            "description": "Allows uploading files in bulk and converting them to media entities.",
+            "homepage": "https://www.drupal.org/project/media_bulk_upload",
+            "support": {
+                "source": "git://git.drupal.org/project/media_bulk_upload.git",
+                "issues": "https://www.drupal.org/project/issues/media_bulk_upload"
             }
         },
         {

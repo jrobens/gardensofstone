@@ -1,0 +1,21 @@
+@use '../../../../../../sites/variables' as sv;
+
+
+.paragraph--type--quote {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  min-height: 10vh;
+  font-family: sv.$quote;
+  font-size: 2rem;
+  padding: 0 2.5rem;
+  color: sv.$primary;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  a, a:visited {
+    color: sv.$primary;
+    font-family: sv.$quote;
+  }
+}

@@ -2,14 +2,80 @@
   --color-highlight-1: #a2046b;
 }
 
+.green {
+  color: rgb(138, 153, 107);
+}
+
+.black {
+  color: rgb(27, 27, 27);
+}
+
+.orange {
+  color: rgb(171, 73, 108);
+}
+
+/* where did this come from? */
+.brown {
+  color: rgb(169, 100, 74);
+}
+
+.brown-light {
+  color: rgb(223, 138, 32);
+}
+
+.brown-yellow {
+  color: rgb(254, 213, 124);
+}
+
+.light-yellow {
+  color: rgb(255, 238, 203);
+}
+
+.lighter-yellow {
+  color: rgb(255, 247, 231);
+}
+
+.red,
+.class-red {
+  background: rgb(158, 3, 35);
+}
+
+.grey {
+  background: rgb(149, 150, 154);
+}
+
+.green-grey {
+  background-color: #60614b;
+}
+
+.dark-red {
+  background-color: #560012;
+}
+
+.darker-red {
+  background-color: #35000b;
+}
+
+.light-red {
+  background-color: #bf1338;
+}
+
+.blue {
+  background-color: #03249e;
+}
+
+.dark-green {
+  background-color: #005a3f;
+}
+
 .paragraph--type--quote {
   display: flex;
   align-items: center;
   text-align: center;
   height: 100%;
+  min-height: 10vh;
   font-family: "Mukta Malar", sans-serif;
   font-size: 2rem;
-  font-weight: bold;
   padding: 0 2.5rem;
   color: #a2046b;
   overflow: hidden;

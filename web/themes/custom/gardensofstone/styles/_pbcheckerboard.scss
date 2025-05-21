@@ -5,8 +5,8 @@
   position: absolute;
   bottom: 0;
   width: 100%;
-  background: sv.$primary;
   padding: 0.5rem 1rem;
-  color: white;
+  color: sv.$link;
+  border-bottom: 1px solid sv.$link;
 }
 

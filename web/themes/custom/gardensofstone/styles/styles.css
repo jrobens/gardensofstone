@@ -3,6 +3,72 @@
   --color-highlight-1: #a2046b;
 }
 
+.green {
+  color: rgb(138, 153, 107);
+}
+
+.black {
+  color: rgb(27, 27, 27);
+}
+
+.orange {
+  color: rgb(171, 73, 108);
+}
+
+/* where did this come from? */
+.brown {
+  color: rgb(169, 100, 74);
+}
+
+.brown-light {
+  color: rgb(223, 138, 32);
+}
+
+.brown-yellow {
+  color: rgb(254, 213, 124);
+}
+
+.light-yellow {
+  color: rgb(255, 238, 203);
+}
+
+.lighter-yellow {
+  color: rgb(255, 247, 231);
+}
+
+.red,
+.class-red {
+  background: rgb(158, 3, 35);
+}
+
+.grey {
+  background: rgb(149, 150, 154);
+}
+
+.green-grey {
+  background-color: #60614b;
+}
+
+.dark-red {
+  background-color: #560012;
+}
+
+.darker-red {
+  background-color: #35000b;
+}
+
+.light-red {
+  background-color: #bf1338;
+}
+
+.blue {
+  background-color: #03249e;
+}
+
+.dark-green {
+  background-color: #005a3f;
+}
+
 .navbar.is-black {
   background-color: rgb(162, 103, 28);
   color: #fff;
@@ -28,10 +94,6 @@
 
 body.toolbar-fixed .navbar.is-black {
   padding-top: 3rem;
-}
-
-.field_pl_component.container div:nth-child(2) {
-  margin-top: 3rem;
 }
 
 .paragraph--type--crossfade-banner, #CrossFade {
@@ -339,6 +401,20 @@ section.hero.is-primary.block-views-blockevents-block-2 .views-field-title a:vis
   padding: 1rem;
 }
 
+.field_pbcheckerboard_title {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  color: #a2671c;
+  border-bottom: 1px solid #a2671c;
+}
+
+.paragraph--type--image .field_pbimage_image .field_media_image > div {
+  display: flex;
+  max-height: 33vh;
+}
+
 .field_pbimagesquare_caption {
   position: absolute;
   bottom: 0;
@@ -348,15 +424,111 @@ section.hero.is-primary.block-views-blockevents-block-2 .views-field-title a:vis
   color: white;
 }
 
-.field_pbcheckerboard_title {
+.paragraph--type--quote {
+  position: relative;
+  /*
+  background: #a3b8a1 ?*; /* distant eucalyptus */
+  /*
+  clip-path: polygon(
+                  0% 60%, 10% 58%, 20% 62%, 30% 59%, 40% 61%,
+                  50% 58%, 60% 60%, 70% 57%, 80% 59%, 90% 58%,
+                  100% 60%, 100% 100%, 0% 100%
+  );
+  */
+}
+.paragraph--type--quote::after {
+  content: "";
   position: absolute;
-  bottom: 0;
-  width: 100%;
-  background: #a2046b;
-  padding: 0.5rem 1rem;
-  color: white;
+  top: 0;
+  height: 100%;
+  pointer-events: none;
+  width: 200%;
+  left: 0;
+  animation: moveHills 60s linear infinite;
+  opacity: 0.4;
+  transform: scale(1.5);
+  background: #a3b8a1; /* distant eucalyptus */
+  clip-path: polygon(0% 80%, 10% 77%, 20% 83%, 30% 80%, 40% 82%, 50% 79%, 60% 81%, 70% 78%, 80% 80%, 100% 79%, 100% 100%, 0% 100%);
+  animation-duration: 120s;
+}
+.paragraph--type--quote::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  pointer-events: none;
+  width: 200%;
+  left: 0;
+  animation: moveHills 60s linear infinite;
+  background: #6c7e55; /* closer hill */
+  clip-path: polygon(0% 90%, 10% 87%, 20% 93%, 30% 90%, 40% 92%, 50% 89%, 60% 91%, 70% 88%, 80% 90%, 100% 89%, 100% 100%, 0% 100%);
+  z-index: 1;
+  opacity: 0.3;
 }
 
+@keyframes moveHills {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+/*
+
+.paragraph--type--quote:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 200%;
+  height: 140%;
+  background: #fefaf8;
+  border-radius: 100%;
+  animation: moveHill 30s linear infinite;
+}
+
+.paragraph--type--quote:after {
+  bottom: -20%;
+  background: #fdf7f4;
+  animation-delay: -4s;
+}
+
+.paragraph--type--quote:nth-child(3) {
+  bottom: -40%;
+  background: #fcf4f0;
+  animation-delay: -8s;
+}
+
+.hill:nth-child(4) {
+  bottom: -60%;
+  background: #fbf1ec;
+  animation-delay: -12s;
+}
+
+.hill:nth-child(5) {
+  bottom: -80%;
+  background: #faeee8;
+  animation-delay: -16s;
+}
+
+.hill:nth-child(6) {
+  bottom: -100%;
+  background: #f9ebe4;
+  animation-delay: -20s;
+}
+
+.hill:nth-child(7) {
+  bottom: -120%;
+  background: #f8e8e0;
+  animation-delay: -24s;
+}
+
+.hill:nth-child(8) {
+  bottom: -140%;
+  background: #f7e5dc;
+  animation-delay: -28s;
+}
+*/
 @media (min-width: 720px) {
   .view-id-visit_gardens_of_stone_terms .view-content {
     display: grid;
@@ -628,72 +800,6 @@ footer.footer .tabs ul {
   font-style: normal;
   font-stretch: normal;
 }
-.green {
-  color: rgb(138, 153, 107);
-}
-
-.black {
-  color: rgb(27, 27, 27);
-}
-
-.orange {
-  color: rgb(171, 73, 108);
-}
-
-/* where did this come from? */
-.brown {
-  color: rgb(169, 100, 74);
-}
-
-.brown-light {
-  color: rgb(223, 138, 32);
-}
-
-.brown-yellow {
-  color: rgb(254, 213, 124);
-}
-
-.light-yellow {
-  color: rgb(255, 238, 203);
-}
-
-.lighter-yellow {
-  color: rgb(255, 247, 231);
-}
-
-.red,
-.class-red {
-  background: rgb(158, 3, 35);
-}
-
-.grey {
-  background: rgb(149, 150, 154);
-}
-
-.green-grey {
-  background-color: #60614b;
-}
-
-.dark-red {
-  background-color: #560012;
-}
-
-.darker-red {
-  background-color: #35000b;
-}
-
-.light-red {
-  background-color: #bf1338;
-}
-
-.blue {
-  background-color: #03249e;
-}
-
-.dark-green {
-  background-color: #005a3f;
-}
-
 body {
   font: 100 100%/1.5 "Hind Guntur", sans-serif;
   color: rgb(27, 27, 27);
@@ -701,6 +807,10 @@ body {
 
 body a,
 body a:visited {
+  color: white;
+}
+
+body .region-content a, body .region-content a:visited {
   color: #a2671c;
 }
 
@@ -810,7 +920,8 @@ body.path--gardensofstone .region-primary-menu + .hero.is-primary {
 }
 
 .hero-head .region-header {
-  flex: 0 0 50%;
+  padding-top: 6rem;
+  padding-bottom: 1rem;
 }
 
 .header.hero.is-primary .block-system-branding-block {

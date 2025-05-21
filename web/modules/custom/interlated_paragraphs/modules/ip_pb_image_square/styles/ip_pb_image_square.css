@@ -20,6 +20,7 @@
 .paragraph--type--image-square img {
   object-fit: cover;
   width: 100%;
+  max-height: 33vh;
 }
 .paragraph--type--image .field--name-field-pbimagesquare-image,
 .paragraph--type--image-square .field--name-field-pbimagesquare-image {

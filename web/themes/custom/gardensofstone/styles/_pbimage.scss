@@ -1,0 +1,6 @@
+@use '../../../../sites/variables' as sv;
+
+.paragraph--type--image .field_pbimage_image .field_media_image > div {
+  display: flex;
+  max-height: 33vh;
+}
