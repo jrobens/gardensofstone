@@ -864,6 +864,11 @@ main > section > .container:not(.is-max-desktop):not(.is-max-widescreen) .field_
 
 body.path-- main > section {
   background: rgba(255, 255, 255, 0.2);
+  margin-top: 1rem;
+}
+
+body.path--.toolbar-horizontal main > section {
+  background: rgba(255, 255, 255, 0.2);
   margin-top: 2rem;
 }
 

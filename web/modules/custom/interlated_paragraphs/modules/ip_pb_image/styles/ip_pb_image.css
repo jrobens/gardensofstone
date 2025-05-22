@@ -1,12 +1,78 @@
+/**
+ * @file
+ *
+ * Can be quickly compiled to CSS at https://www.sassmeister.com/.
+ */
 :root {
   --color-highlight-1: #a2046b;
 }
 
-/**
- * * @file
- * *
- * * Can be quickly compiled to CSS at https://www.sassmeister.com/.
- * */
+.green {
+  color: rgb(138, 153, 107);
+}
+
+.black {
+  color: rgb(27, 27, 27);
+}
+
+.orange {
+  color: rgb(171, 73, 108);
+}
+
+/* where did this come from? */
+.brown {
+  color: rgb(169, 100, 74);
+}
+
+.brown-light {
+  color: rgb(223, 138, 32);
+}
+
+.brown-yellow {
+  color: rgb(254, 213, 124);
+}
+
+.light-yellow {
+  color: rgb(255, 238, 203);
+}
+
+.lighter-yellow {
+  color: rgb(255, 247, 231);
+}
+
+.red,
+.class-red {
+  background: rgb(158, 3, 35);
+}
+
+.grey {
+  background: rgb(149, 150, 154);
+}
+
+.green-grey {
+  background-color: #60614b;
+}
+
+.dark-red {
+  background-color: #560012;
+}
+
+.darker-red {
+  background-color: #35000b;
+}
+
+.light-red {
+  background-color: #bf1338;
+}
+
+.blue {
+  background-color: #03249e;
+}
+
+.dark-green {
+  background-color: #005a3f;
+}
+
 .paragraph--type--image {
   position: relative;
   width: 100%;
@@ -15,7 +81,7 @@
   height: 0;
   padding-top: 56.2%;
 }
-.paragraph--type--image .field_media_oembed_video iframe.media-oembed-content {
+.paragraph--type--image iframe.media-oembed-content {
   position: absolute;
   top: 0;
   left: 0;
@@ -29,32 +95,22 @@
   font-weight: bold;
   line-height: 1.5;
   color: white;
-  background: #E1C158;
+  background: #a2046b;
   position: absolute;
   bottom: 0;
   width: 100%;
 }
-.paragraph--type--image .field--name-field-pbimage-caption {
-  pointer-events: none;
-  padding: 1rem;
-  font-size: 0.9rem;
-  font-weight: bold;
-  line-height: 1.5;
+.paragraph--type--image .field--name-field-pbimage-caption a, .paragraph--type--image .field--name-field-pbimage-caption a:visited {
   color: white;
-  background: #E1C158;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+}
+.paragraph--type--image .field--name-field-pbimage-caption a:hover, .paragraph--type--image .field--name-field-pbimage-caption a:active {
+  color: var(--berry);
 }
 .paragraph--type--image .node-type--page-and-layout article .paragraph--type--image .field--name-field-media-image .field__item {
   display: flex;
 }
 .paragraph--type--image .field--name-field-media-image .field__item {
   display: flex;
-}
-.paragraph--type--image .paragraph--type--image .field--name-field-pbimage-caption a:hover,
-.paragraph--type--image .paragraph--type--image .field--name-field-pbimage-caption a:active {
-  color: var(--berry);
 }
 
 /*# sourceMappingURL=ip_pb_image.css.map */

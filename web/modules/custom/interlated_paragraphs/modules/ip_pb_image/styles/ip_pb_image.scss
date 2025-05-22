@@ -1,0 +1,56 @@
+/**
+ * @file
+ *
+ * Can be quickly compiled to CSS at https://www.sassmeister.com/.
+ */
+@use '../../../../../../sites/variables' as sv;
+
+.paragraph--type--image {
+  position: relative;
+  width: 100%;
+
+  .field_media_oembed_video {
+    height: 0;
+    padding-top: 56.2%;
+
+  }
+
+  iframe.media-oembed-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+  }
+
+  .field--name-field-pbimage-caption {
+    padding: 1rem;
+    font-size: sv.$font-size-caption;
+    font-weight: bold;
+    line-height: 1.5;
+    color: sv.$link-inverse;
+    background: sv.$primary;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    a, a:visited {
+      color: sv.$link-inverse;
+    }
+
+    a:hover, a:active {
+      color: var(--berry);
+    }
+  }
+
+  .node-type--page-and-layout article .paragraph--type--image .field--name-field-media-image .field__item {
+    display: flex;
+
+  }
+
+  .field--name-field-media-image .field__item {
+    display: flex;
+  }
+
+}
