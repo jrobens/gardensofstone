@@ -9,10 +9,16 @@
   position: relative;
   width: 100%;
 
+  .field_pbimage_image {
+    .field_media_image > div {
+      display: flex;
+      max-height: 33vh;
+    }
+  }
+
   .field_media_oembed_video {
     height: 0;
     padding-top: 56.2%;
-
   }
 
   iframe.media-oembed-content {
@@ -46,11 +52,9 @@
 
   .node-type--page-and-layout article .paragraph--type--image .field--name-field-media-image .field__item {
     display: flex;
-
   }
 
   .field--name-field-media-image .field__item {
     display: flex;
   }
-
 }
