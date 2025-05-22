@@ -10,4 +10,10 @@
   font-weight: bold;
   font-size: 2.5rem;
   font-family: sv.$family-heading;
+  color: sv.$link-inverse;
+  background: sv.$primary;
+
+  a, a:visited {
+    color: sv.$link-inverse;
+  }
 }

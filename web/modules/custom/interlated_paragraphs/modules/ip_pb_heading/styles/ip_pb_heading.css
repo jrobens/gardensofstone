@@ -78,6 +78,11 @@
   font-weight: bold;
   font-size: 2.5rem;
   font-family: "DMSans-Bold", san-serif;
+  color: white;
+  background: #a2046b;
+}
+.paragraph--type--heading .field_pbheading_heading a, .paragraph--type--heading .field_pbheading_heading a:visited {
+  color: white;
 }
 
 /*# sourceMappingURL=ip_pb_heading.css.map */

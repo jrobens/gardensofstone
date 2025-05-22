@@ -117,13 +117,16 @@
   margin-top: 0;
 }
 .paragraph--type--checkerboard .field_caption {
-  padding: 0 1rem;
-  border-bottom: 1px solid #a2671c;
-  color: #a2671c;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: #a2046b;
+  padding: 0.5rem 1rem;
+  color: white;
 }
 .paragraph--type--checkerboard .field_caption a,
 .paragraph--type--checkerboard .field_caption a:visited {
-  color: #a2671c;
+  color: white;
 }
 .paragraph--type--checkerboard.image-background {
   font-family: "Paytone One", sans-serif;

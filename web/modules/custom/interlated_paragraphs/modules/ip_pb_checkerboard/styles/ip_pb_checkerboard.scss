@@ -57,13 +57,17 @@ $button-font: 'normal bold 26px/1 "Open Sans", sans-serif';
   }
 
   .field_caption {
-    padding: 0 1rem;
-    border-bottom: 1px solid sv.$link;
-    color: sv.$link;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: sv.$primary;
+    padding: 0.5rem 1rem;
+    color: sv.$link-inverse;
+
 
     a,
     a:visited {
-      color: sv.$link;
+      color: sv.$link-inverse;
     }
   }
 
