@@ -80,8 +80,8 @@
 .paragraph--type--image-square .field--name-field-pbimage-caption a:active {
   color: var(--berry);
 }
-.paragraph--type--image .field_media_oembed_video.container iframe.media-oembed-content,
-.paragraph--type--image-square .field_media_oembed_video.container iframe.media-oembed-content {
+.paragraph--type--image .field_media_oembed_video iframe.media-oembed-content,
+.paragraph--type--image-square .field_media_oembed_video iframe.media-oembed-content {
   aspect-ratio: 16/9;
   width: 100%;
   height: 100%;

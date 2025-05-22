@@ -75,7 +75,7 @@ $white: #ffffff;
   }
 
   /* Video in the media slot */
-  .field_media_oembed_video.container {
+  .field_media_oembed_video {
     iframe.media-oembed-content {
       aspect-ratio: 16 / 9;
       width: 100%;
