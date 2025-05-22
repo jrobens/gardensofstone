@@ -75,6 +75,9 @@
 }
 
 .paragraph--type--heading .field_pbheading_heading {
+  padding: 3.7vw;
+  border-top: 1rem solid white;
+  border-bottom: 1rem solid white;
   font-weight: bold;
   font-size: 2.5rem;
   font-family: "DMSans-Bold", san-serif;
