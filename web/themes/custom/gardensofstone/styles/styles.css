@@ -401,7 +401,7 @@ section.hero.is-primary.block-views-blockevents-block-2 .views-field-title a:vis
   padding: 1rem;
 }
 
-.field_pbcheckerboard_title {
+.paragraph--type--checkerboard .field_pbcheckerboard_title {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -410,7 +410,7 @@ section.hero.is-primary.block-views-blockevents-block-2 .views-field-title a:vis
   border-bottom: 1px solid #a2671c;
   background: #a2046b;
 }
-.field_pbcheckerboard_title a, .field_pbcheckerboard_title a:visited {
+.paragraph--type--checkerboard .field_pbcheckerboard_title a, .paragraph--type--checkerboard .field_pbcheckerboard_title a:visited {
   color: white;
 }
 

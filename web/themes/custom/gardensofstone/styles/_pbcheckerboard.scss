@@ -1,17 +1,17 @@
 @use '../../../../sites/variables' as sv;
 
-
-.field_pbcheckerboard_title {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  padding: 0.5rem 1rem;
-  color: sv.$link-inverse;
-  border-bottom: 1px solid sv.$link;
-  background: sv.$primary;
-
-  a, a:visited {
+.paragraph--type--checkerboard {
+  .field_pbcheckerboard_title {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 0.5rem 1rem;
     color: sv.$link-inverse;
+    border-bottom: 1px solid sv.$link;
+    background: sv.$primary;
+
+    a, a:visited {
+      color: sv.$link-inverse;
+    }
   }
 }
-
