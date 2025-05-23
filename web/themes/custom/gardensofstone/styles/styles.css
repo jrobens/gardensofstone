@@ -406,8 +406,12 @@ section.hero.is-primary.block-views-blockevents-block-2 .views-field-title a:vis
   bottom: 0;
   width: 100%;
   padding: 0.5rem 1rem;
-  color: #a2671c;
+  color: white;
   border-bottom: 1px solid #a2671c;
+  background: #a2046b;
+}
+.field_pbcheckerboard_title a, .field_pbcheckerboard_title a:visited {
+  color: white;
 }
 
 .field_pbimagesquare_caption {
