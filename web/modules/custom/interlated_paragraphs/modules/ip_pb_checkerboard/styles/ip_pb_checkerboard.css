@@ -87,6 +87,9 @@
 .paragraph--type--checkerboard .field_pbcheckerboard_icon .field_media_image > div a {
   width: 100%;
 }
+.paragraph--type--checkerboard .field_pbcheckerboard_icon .field_media_image > div a img {
+  width: 100%;
+}
 .paragraph--type--checkerboard .field--name-field-pbcheckerboard-title {
   width: 95%;
   min-height: 6rem;
