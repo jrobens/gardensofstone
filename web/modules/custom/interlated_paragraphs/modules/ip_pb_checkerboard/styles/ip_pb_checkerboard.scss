@@ -11,7 +11,7 @@ $button-font: 'normal bold 26px/1 "Open Sans", sans-serif';
 
 .paragraph--type--checkerboard {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
   flex-direction: column;
   position: relative;

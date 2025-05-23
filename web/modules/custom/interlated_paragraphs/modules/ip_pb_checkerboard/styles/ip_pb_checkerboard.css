@@ -76,7 +76,7 @@
 
 .paragraph--type--checkerboard {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
   flex-direction: column;
   position: relative;
