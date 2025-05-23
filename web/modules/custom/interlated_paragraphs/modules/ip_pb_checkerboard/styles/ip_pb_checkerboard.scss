@@ -18,6 +18,10 @@ $button-font: 'normal bold 26px/1 "Open Sans", sans-serif';
 
   .field_pbcheckerboard_icon .field_media_image > div {
     display: flex;
+
+    a {
+      width: 100%;
+    }
   }
 
   .field--name-field-pbcheckerboard-title {
