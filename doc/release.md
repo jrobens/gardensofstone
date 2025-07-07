@@ -1,3 +1,88 @@
+## Updates 2025-07-07
+
+    civicrm/civicrm-core     5.82.1    ~ 6.4.0  Open source constituent relation...
+    civicrm/civicrm-drupal-8 5.82.1    ~ 6.4.0  Open source constituent relation...
+    civicrm/civicrm-packages 5.82.1    ~ 6.4.0  Legacy third party dependencies ...
+    composer/installers      1.12.0    ~ 2.3.0  A multi-framework Composer libra...
+    drupal/leaflet           10.3.4    ! 10.3.5 Integration with the Leaflet map...
+    drupal/lp_fontawesome    5.15005.0 ~ 6.7.20 Defines fontawesome as library t...
+    drupal/tfa               1.10.0    ! 1.11.0 Pluggable provider of two factor...
+    league/commonmark        1.6.7     ~ 2.7.0  Highly-extensible PHP Markdown p...
+
+drupal.js?v=11.1.7:64 Uncaught ReferenceError: once is not defined
+at Object.attach (animated_scroll_to_top.js?swn7nj:4:7)
+at drupal.js?v=11.1.7:166:24
+at Array.forEach (<anonymous>)
+at Drupal.attachBehaviors (drupal.js?v=11.1.7:162:34)
+at drupal.init.js?v=11.1.7:32:12
+at HTMLDocument.listener (drupal.init.js?v=11.1.7:20:7)
+
+ --------- --------------------- --------------- ------------------------------ 
+Module    Update ID             Type            Description
+ --------- --------------------- --------------- ------------------------------ 
+system    11200                 hook_update_n   11200 - Add a [time] column   
+to the {simpletest} table,    
+if existing.                  
+system    11201                 hook_update_n   11201 - Add the [alias]       
+field to the {router} table.  
+admin_t   8004                  hook_update_n   8004 - Move the               
+oolbar                                          'hoverintent_functionality'   
+configuration to              
+'admin_toolbar'.              
+admin_t   8005                  hook_update_n   8005 - Disable the            
+oolbar                                          'toggle_shortcut' feature by  
+default.                      
+admin_t   8001                  hook_update_n   8001 - Update settings:       
+oolbar_                                         'display_menu_item' and       
+search                                          'enable_keyboard_shortcut'.   
+module_   9404                  hook_update_n   9404 - Add new config key     
+filter                                          for descriptions_show.        
+block     set_menu_block_dept   post-update     Updates the `depth` setting   
+h_to_null_if_zero                     to NULL if it is 0 in any     
+menu blocks.                  
+file      add_playsinline       post-update     Adds a value for the          
+'playsinline' setting of the  
+'file_video' formatter.       
+system    convert_empty_descr   post-update     Updates entity_form_mode      
+iption_entity_form_                   descriptions from empty       
+modes_to_null                         string to null.               
+system    remove_path_key       post-update     Remove path key in            
+system.file.                  
+system    remove_rss_cdata_su   post-update     Rebuild the container to fix  
+bscriber                              HTML in RSS feeds.            
+tfa       route_rebuild         post-update     Empty update to rebuild core  
+routes.                       
+views     block_items_per_pag   post-update     Defaults `items_per_page` to  
+e                                     NULL in Views blocks.         
+views     table_css_class       post-update     Adds a default table CSS      
+class.                        
+views     update_remember_rol   post-update     Clean-up empty                
+e_empty                               remember_roles display        
+settings for views filters.
+ --------- --------------------- --------------- ------------------------------ 
+
+Module admin_toolbar_links_access_filter has an entry in the system.schema key/value storage, but is not installed. <a href="https://www.drupal.org/node/3137656">More information about this error</a>.
+
+
+
+## Updates 2025-07-01
+
+    civicrm/civicrm-core          5.82.1    ~ 6.3.1  Open source constituent rel...
+    civicrm/civicrm-drupal-8      5.82.1    ~ 6.3.1  Open source constituent rel...
+    civicrm/civicrm-packages      5.82.1    ~ 6.3.1  Legacy third party dependen...
+    composer/installers           1.12.0    ~ 2.3.0  A multi-framework Composer ...
+    drupal/admin_toolbar          3.6.0     ! 3.6.1  Provides a drop-down menu i...
+    drupal/core-composer-scaffold 11.1.7    ! 11.2.2 A flexible Composer project...
+    drupal/core-project-message   11.1.7    ! 11.2.2 Adds a message after Compos...
+    drupal/core-recommended       11.1.7    ! 11.2.2 Core and its dependencies w...
+    drupal/leaflet                10.2.46   ! 10.3.4 Integration with the Leafle...
+    drupal/linked_field           1.6.0-rc1 ! 1.7.0  Adds the functionality to l...
+    drupal/lp_fontawesome         5.15005.0 ~ 6.7.20 Defines fontawesome as libr...
+    drupal/media_bulk_upload      3.0.3     ! 3.0.4  Allows uploading files in b...
+    drupal/metatag                2.1.0     ! 2.1.1  Manage meta tags for all en...
+    drupal/module_filter          5.0.3     ! 5.0.4  Filter the modules list.
+    drupal/nagios                 1.24.0    ! 1.25.0 Exposes a page that Nagios ...
+    league/commonmark             1.6.7     ~ 2.7.0  Highly-extensible PHP Markd...
 ## Updates 2025-05-22
 
     civicrm/civicrm-core     5.82.1 ~ 6.2.0 Open source constituent relationship manage...
@@ -757,7 +842,7 @@ views.
 2025-01-08 17:11:22+1100  [info] Running task: Upgrade DB to 5.78.beta1
 
 2025-01-08 17:11:23+1100  [info] Running task: Upgrade DB to 5.78.beta1: SQL
-
+d
 2025-01-08 17:11:25+1100  [info] Running task: Finish Upgrade DB to 5.78.beta1
 
 2025-01-08 17:11:27+1100  [info] Running task: Begin Upgrade to 5.79.alpha1
