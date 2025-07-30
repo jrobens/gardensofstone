@@ -152,7 +152,6 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/christian-riesen/otp" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/paragonie/constant_time_encoding" />
       <excludeFolder url="file://$MODULE_DIR$/web/files/civicrm/ext/uk.co.vedaconsulting.mosaico/vendor/civicrm/composer-downloads-plugin" />
-      <excludeFolder url="file://$MODULE_DIR$/web/files/civicrm/ext/uk.co.vedaconsulting.mosaico/vendor/togos/gitignore" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/google/recaptcha" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/soundasleep/html2text" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/knplabs/knp-snappy" />
@@ -184,6 +183,7 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/fileeye/pel" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/polyfill-php84" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/dompdf/php-svg-lib" />
+      <excludeFolder url="file://$MODULE_DIR$/web/files/civicrm/ext/uk.co.vedaconsulting.mosaico/vendor/civicrm/gitignore" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
   </component>

@@ -1,3 +1,13 @@
+## Updates 2025-07-30
+
+    composer/installers     1.12.0      ~ 2.3.0       A multi-framework Composer library installer
+    drupal/admin_toolbar    3.6.1       ! 3.6.2       Provides a drop-down menu interface to the core Drupal Toolbar.
+    drupal/leaflet          10.3.5      ! 10.3.7      Integration with the Leaflet map scripting library.
+    drupal/paragraph_blocks 4.1.5       ! 4.1.6       Drupal Paragraph Blocks module
+    drupal/tfa              1.11.0      ! 1.12.0      Pluggable provider of two factor authentication for Drupal
+    drupal/webform          6.3.0-beta2 ! 6.3.0-beta4 Enables the creation of webforms and questionnaires.
+    drush/drush             13.6.0      ! 13.6.1      Drush is a command line shell and scripting interface for Dr...
+    league/commonmark       1.6.7       ~ 2.7.1       Highly-extensible PHP Markdown parser which fully supports t...
 ## Updates 2025-07-07
 
     civicrm/civicrm-core     5.82.1    ~ 6.4.0  Open source constituent relation...
@@ -63,6 +73,60 @@ settings for views filters.
 
 Module admin_toolbar_links_access_filter has an entry in the system.schema key/value storage, but is not installed. <a href="https://www.drupal.org/node/3137656">More information about this error</a>.
 
+system module
+11200 - Add a [time] column to the {simpletest} table, if existing.
+11201 - Add the [alias] field to the {router} table.
+Updates entity_form_mode descriptions from empty string to null.
+Remove path key in system.file.
+admin_toolbar module
+8004 - Move the 'hoverintent_functionality' configuration to 'admin_toolbar'.
+8005 - Disable the 'toggle_shortcut' feature by default.
+admin_toolbar_search module
+8001 - Update settings: 'display_menu_item' and 'enable_keyboard_shortcut'.
+module_filter module
+9404 - Add new config key for descriptions_show.
+block module
+Updates the `depth` setting to NULL if it is 0 in any menu blocks.
+file module
+Adds a value for the 'playsinline' setting of the 'file_video' formatter.
+views module
+Defaults `items_per_page` to NULL in Views blocks.
+Adds a default table CSS class.
+Clean-up empty remember_roles display settings for views filters.
+
+
+You are using tokens that have been removed or deprecated.
+
+Please review your membership_online_receipt message template and remove references to the token {$dataArray} as it has been replaced by {see default template for how to show this}
+Please review your membership_online_receipt message template and remove references to the token {$mem_start_date} as it has been replaced by {membership.start_date}
+Please review your membership_online_receipt message template and remove references to the token {$mem_end_date} as it has been replaced by {membership.end_date}
+Please review your membership_online_receipt message template and remove references to the token {$membership_name} as it has been replaced by {membership.membership_type_id:name}
+Please review your membership_online_receipt message template and remove references to the token {$receive_date} as it has been replaced by {contribution.receive_date}
+Please review your membership_online_receipt message template and remove references to the token {$currency} as it has been replaced by {contribution.currency}
+Please review your event_offline_receipt message template and remove references to the token {$dataArray} as it has been replaced by {see default template for how to show this}
+Please review your event_offline_receipt message template and remove references to the token {$paidBy} as it has been replaced by {contribution.payment_instrument_id:label}
+Please review your event_offline_receipt message template and remove references to the token {$totalTaxAmount} as it has been replaced by {contribution.tax_amount}
+Please review your event_offline_receipt message template and remove references to the token {$amount} as it has been replaced by {see default template for how to show this}
+Please review your event_offline_receipt message template and remove references to the token {$checkNumber} as it has been replaced by {contribution.check_number}
+Please review your event_offline_receipt message template and remove references to the token {$receive_date} as it has been replaced by {contribution.receive_date}
+Please review your event_offline_receipt message template and remove references to the token {$is_pay_later} as it has been replaced by {contribution.is_pay_later}
+Please review your event_offline_receipt message template and remove references to the token {$totalAmount} as it has been replaced by {contribution.total_amount}
+Please review your event_offline_receipt message template and remove references to the token {$location} as it has been replaced by {event.location}
+Please review your event_offline_receipt message template and remove references to the token {$isShowLocation} as it has been replaced by {event.is_show_location|boolean}
+Please review your event_offline_receipt message template and remove references to the token {$event.participant_role} as it has been replaced by {participant.role_id:label}
+Please review your event_offline_receipt message template and remove references to the token {$financialTypeName} as it has been replaced by {contribution.financial_type_id:label}
+Please review your event_offline_receipt message template and remove references to the token {$trxn_id} as it has been replaced by {contribution.trxn_id}
+Please review your event_online_receipt message template and remove references to the token {$individual} as it has been replaced by {see default template for how to show this}
+Please review your event_online_receipt message template and remove references to the token {$amount} as it has been replaced by {see default template for how to show this}
+Please review your event_online_receipt message template and remove references to the token {$location} as it has been replaced by {event.location}
+Please review your event_online_receipt message template and remove references to the token {$register_date} as it has been replaced by {participant.register_date}
+Please review your event_online_receipt message template and remove references to the token {$event.participant_role} as it has been replaced by {participant.role_id:label}
+Please review your event_online_receipt message template and remove references to the token {$paidBy} as it has been replaced by {contribution.payment_instrument_id:label}
+Please review your participant_transferred message template and remove references to the token {$participant.role} as it has been replaced by {participant.role_id:label}
+Please review your participant_expired message template and remove references to the token {$participant.role} as it has been replaced by {participant.role_id:label}
+Please review your participant_confirm message template and remove references to the token {$participant.role} as it has been replaced by {participant.role_id:label}
+Please review your payment_or_refund_notification message template and remove references to the token {$location} as it has been replaced by {event.location}
+Please review your payment_or_refund_notification message template and remove references to the token {$event.participant_role} as it has been replaced by {participant.role_id:label}
 
 
 ## Updates 2025-07-01
