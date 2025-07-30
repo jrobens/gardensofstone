@@ -149,6 +149,7 @@
         },
         "merge-plugin": {
             "include": [
+                "web/modules/contrib/webform/composer.libraries.json",
                 "web/modules/contrib/dropzonejs/composer.libraries.json",
                 "web/modules/patched/fontawesome/composer.libraries.json",
                 "web/modules/patched/fontawesome/composer.json"
