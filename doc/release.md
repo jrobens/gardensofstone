@@ -8,6 +8,12 @@
     drupal/webform          6.3.0-beta2 ! 6.3.0-beta4 Enables the creation of webforms and questionnaires.
     drush/drush             13.6.0      ! 13.6.1      Drush is a command line shell and scripting interface for Dr...
     league/commonmark       1.6.7       ~ 2.7.1       Highly-extensible PHP Markdown parser which fully supports t...
+
+[warning] require_once(Mail.php): Failed to open stream: No such file or directory Config.php:23
+PHP Fatal error:  Uncaught Error: Failed opening required 'Mail.php' (include_path='.:/srv/web/gardensofstone.org.au/vendor/civicrm/civicrm-core/:/srv/web/gardensofstone.org.au/vendor/civicrm/civicrm-packages:.:/srv/web/gardensofstone.org.au/vendor/civicrm/civicrm-core/:/srv/web/gardensofstone.org.au/vendor/civicrm/civicrm-core//packages:/srv/web/gardensofstone.org.au/vendor/pear/archive_tar:/srv/web/gardensofstone.org.au/vendor/pear/auth_sasl:/srv/web/gardensofstone.org.au/vendor/pear/console_getopt:/srv/web/gardensofstone.org.au/vendor/pear/db:/srv/web/gardensofstone.org.au/vendor/pear/mail:/srv/web/gardensofstone.org.au/vendor/pear/mail_mime:/srv/web/gardensofstone.org.au/vendor/pear/net_smtp:/srv/web/gardensofstone.org.au/vendor/pear/net_socket:/srv/web/gardensofstone.org.au/vendor/pear/pear-core-minimal/src:/srv/web/gardensofstone.org.au/vendor/pear/pear_exception:/srv/web/gardensofstone.org.au/vendor/pear/validate_finance_creditcard:/srv/web/gardensofstone.org.au/vendor/pear/log:.:/usr/share/php') in /srv/web/gardensofstone.org.au/vendor/civicrm/civicrm-core/CRM/Core/Config.php:23
+Stack trace:
+
+
 ## Updates 2025-07-07
 
     civicrm/civicrm-core     5.82.1    ~ 6.4.0  Open source constituent relation...
