@@ -1,3 +1,34 @@
+## Updates 2025-10-02
+
+    civicrm/civicrm-drupal-8      6.5.0       ! 6.6.3       Open source constituent relationship m...
+    civicrm/civicrm-packages      6.5.0       ! 6.6.3       Legacy third party dependencies for Ci...
+    composer/installers           1.12.0      ~ 2.3.0       A multi-framework Composer library ins...
+    drupal/core-composer-scaffold 11.2.3      ! 11.2.4      A flexible Composer project scaffold b...
+    drupal/core-project-message   11.2.3      ! 11.2.4      Adds a message after Composer installa...
+    drupal/core-recommended       11.2.3      ! 11.2.4      Core and its dependencies with known-c...
+    drupal/leaflet                10.3.8      ! 10.3.9      Integration with the Leaflet map scrip...
+    drupal/metatag                2.1.1       ! 2.2.0       Manage meta tags for all entities.
+    drupal/webform                6.3.0-beta4 ! 6.3.0-beta5 Enables the creation of webforms and q...
+    league/commonmark             1.6.7       ~ 2.7.1       Highly-extensible PHP Markdown parser ...
+
+https://easydmarc.com/blog/how-to-configure-dkim-opendkim-with-postfix/
+
+sudo opendkim-genkey -b 1024 -d yourdomain.com -D /etc/opendkim/keys/yourdomain.com -s yourselector -v
+
+## Updates 2025-09-01
+
+    civicrm/civicrm-drupal-8      6.4.0           ! 6.5.0
+    civicrm/civicrm-packages      6.4.0           ! 6.5.0
+    composer/installers           1.12.0          ~ 2.3.0
+    drupal/ckeditor_media_embed   dev-2.x c29f4c5 ! dev-2.x 1da4c84
+    drupal/core-composer-scaffold 11.2.2          ! 11.2.3
+    drupal/core-project-message   11.2.2          ! 11.2.3
+    drupal/core-recommended       11.2.2          ! 11.2.3
+    drupal/drulma                 2.0.1           ! 2.0.2
+    drupal/google_tag             2.0.8           ! 2.0.9
+    drupal/leaflet                10.3.7          ! 10.3.8
+    drush/drush                   13.6.1          ! 13.6.2
+    league/commonmark             1.6.7           ~ 2.7.1
 ## Updates 2025-07-30
 
     composer/installers     1.12.0      ~ 2.3.0       A multi-framework Composer library installer

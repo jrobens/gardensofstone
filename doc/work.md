@@ -1,3 +1,5 @@
+*:JR:2025-10-02:GOS:0.2: sys+ update drupal. civicrm/civicrm-drupal-86.5.0
+*:JR:2025-09-01:GOS:0.2: sys+ update drupal. civicrm/civicrm-drupal-86.4.0
 *:JR:2025-07-30:GOS:0.2: sys+ update drupal. composer/installers1.12.0
 *:JR:2025-07-07:GOS:0.2: sys+ update drupal. civicrm/civicrm-core5.82.1
 *:JR:2025-07-01:GOS:0.2: sys+ update drupal. civicrm/civicrm-core5.82.1
