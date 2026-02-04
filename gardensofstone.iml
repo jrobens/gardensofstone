@@ -183,6 +183,8 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/polyfill-php84" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/dompdf/php-svg-lib" />
       <excludeFolder url="file://$MODULE_DIR$/web/files/civicrm/ext/uk.co.vedaconsulting.mosaico/vendor/civicrm/gitignore" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/polyfill-php85" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/thecodingmachine/safe" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
   </component>

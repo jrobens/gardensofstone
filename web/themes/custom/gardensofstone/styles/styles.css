@@ -1023,5 +1023,40 @@ body.path-- .column {
     font-weight: normal;
   }
 }
+.node-type--page-and-layout h2,
+.campaign-title {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  line-height: 1.2;
+  border-left: 8px solid #b35a2d;
+  padding-left: 1.5rem;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #4a3c31;
+}
+.node-type--page-and-layout h2::after,
+.campaign-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #3d5a35;
+  margin-top: 0.5rem;
+}
+
+.action-callout {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  line-height: 1.2;
+  border-left: 8px solid #b35a2d;
+  padding-left: 1.5rem;
+  margin-bottom: 2rem;
+  color: #d32f2f;
+  border-left-color: #d32f2f;
+  font-size: 1.8rem;
+}
 
 /*# sourceMappingURL=styles.css.map */
