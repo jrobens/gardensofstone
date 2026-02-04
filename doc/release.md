@@ -11,7 +11,6 @@
     league/commonmark         1.6.7  ~ 2.8.0  Highly-extensible PHP Markdown parser which fully su...
 
 
-
  --------- -------------- --------------- ------------------------------------- 
 Module    Update ID      Type            Description
  --------- -------------- --------------- ------------------------------------- 
