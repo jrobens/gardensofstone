@@ -9,6 +9,110 @@
     drupal/media_bulk_upload  3.0.4  ! 3.0.5  Allows uploading files in bulk and converting them t...
     drush/drush               13.7.0 ! 13.7.1 Drush is a command line shell and scripting interfac...
     league/commonmark         1.6.7  ~ 2.8.0  Highly-extensible PHP Markdown parser which fully su...
+
+
+
+ --------- -------------- --------------- ------------------------------------- 
+Module    Update ID      Type            Description
+ --------- -------------- --------------- ------------------------------------- 
+system    11202          hook_update_n   11202 - Add an [exit_code] column    
+to the {simpletest} table, if        
+existing.                            
+system    11300          hook_update_n   11300 - Equivalent update to 10600.  
+admin_t   8002           hook_update_n   8002 - Module CSS and '.module'      
+oolbar_                                  files refactoring requires cache     
+search                                   rebuild.                             
+admin_t   8203           hook_update_n   8203 - Module CSS file refactoring   
+oolbar_                                  requires cache rebuild.              
+tools                                                                         
+block_c   20019          hook_update_n   20019 - Remove invalid block_class   
+lass                                     dependencies.                        
+ds        8014           hook_update_n   8014 - Sets the                      
+'array_merge_recursive_bc' setting   
+to TRUE.                             
+views     11201          hook_update_n   11201 - Removes the                  
+ui.show.advanced_column setting.     
+webform   8640           hook_update_n   8640 - Issue #3522507:               
+SchemaIncompleteException for        
+webform.settings:ui.description_hel  
+p_disabled.                          
+webform   8641           hook_update_n   8641 - Issue #3439662: Allow a       
+WebformEmailHandler to specify the   
+language of an email message.        
+webform   8642           hook_update_n   8642 - Issue #3449549: Webform       
+'remote_post' handler doesn't        
+exclude fields without access.       
+webform   8643           hook_update_n   8643 - Issue #3543014: Make          
+form_file_limit error message        
+configurable.                        
+webform   8644           hook_update_n   8644 - Reimport webform filter       
+format to ensure configuration is    
+correct.                             
+webform   8645           hook_update_n   8645 - Issue #3497954: Excessive     
+memory use when building dynamic     
+library definitions.                 
+webform   8646           hook_update_n   8646 - Issue #3315197: Add an index  
+on webform_submission_data name and  
+property.                            
+webform   8647           hook_update_n   8647 - Issue #3462738:               
+webform_submission and               
+webform_submission_data schema       
+don't match for sid.                 
+webform   8648           hook_update_n   8648 - Issue #3487530 : New          
+permission for filter and bulk       
+action on overview page.             
+webform   8649           hook_update_n   8649 - Issue #3484204: Adds new      
+index to the 'webform_id' and        
+'name' in the                        
+'webform_submission_data' table.     
+block_c   remove_block   post-update     Remove block_content_listing_empty   
+ontent    _content_lis                   from views.                          
+ting_empty                                                          
+block_c   remove_block   post-update     Remove deprecated status and info    
+ontent    _content_sta                   keys from block_content blocks.      
+tus_info_key                                                        
+s                                                                   
+ckedito   list_type      post-update     No-op update that didn't update      
+r5                                       quite enough the first time.         
+ckedito   list_type_ag   post-update     Updates Text Editors using CKEditor  
+r5        ain                            5 to native List "type"              
+functionality.                       
+ds        theme_regist   post-update     Rebuild the theme registry to pick   
+ry_clear                       up 'initial preprocess'.             
+node      add_rebuild_   post-update     Grants a new permission for          
+permission_t                   rebuilding node access permissions.  
+o_roles                                                             
+node      create_promo   post-update     Creates base field override config   
+te_base_fiel                   for the promote base field on node   
+d_overrides                    types.                               
+system    delete_rss_c   post-update     Delete obsolete system.rss           
+onfig                          configuration.                       
+views     add_date_def   post-update     Clear cache to add new date default  
+ault_argumen                   arguments.                           
+ts                                                                  
+views     format_plura   post-update     Updates the format plural option     
+l                              for those views using aggregation.
+ --------- -------------- --------------- ------------------------------------- 
+
+
+[error]  CiviCRM: System: Please specify a realistic site URL (Ex: drush -l  
+http://example.com:456 ...).
+
+[error]  CiviCRM: System: The template compile dir  
+"/srv/web/gardensofstone.org.au/web/../sec/files/civicrm/templates_c" cannot  
+be created. Ensure the parent folder is writable.
+
+[warning] Drupal requires databases that support JSON storage.
+(Currently using Database support for JSON Available
+)
+
+
+Error: Failed opening required 'DB.php' (include_path='.:/srv/web/gardensofstone.org.au/vendor/civicrm/civicrm-core/:/srv/web/gardensofstone.org.au/vendor/civicrm/civicrm-core//packages:.:/srv/web/gardensofstone.org.au/vendor/civicrm/civicrm-core:/srv/web/gardensofstone.org.au/vendor/civicrm/civicrm-packages:/srv/web/gardensofstone.org.au/vendor/pear/archive_tar:/srv/web/gardensofstone.org.au/vendor/pear/auth_sasl:/srv/web/gardensofstone.org.au/vendor/pear/console_getopt:/srv/web/gardensofstone.org.au/vendor/pear/db:/srv/web/gardensofstone.org.au/vendor/pear/log:/srv/web/gardensofstone.org.au/vendor/pear/mail:/srv/web/gardensofstone.org.au/vendor/pear/mail_mime:/srv/web/gardensofstone.org.au/vendor/pear/net_smtp:/srv/web/gardensofstone.org.au/vendor/pear/net_socket:/srv/web/gardensofstone.org.au/vendor/pear/pear-core-minimal/src:/srv/web/gardensofstone.org.au/vendor/pear/pear_exception:/srv/web/gardensofstone.org.au/vendor/pear/validate_finance_creditcard:.:/usr/share/php') in /srv/web/gardensofstone.org.au/vendor/civicrm/civicrm-packages/DB/DataObject.php on line 2555 #0 /srv/web/gardensofstone.org.au/vendor/civicrm/civicrm-core/CRM/Core/DAO.php(609): DB_DataObject->_connect()
+#1 /srv/web/gardensofstone.org.au/vendor/civicrm/civicrm-core/CRM/Core/DAO.php(152): CRM_Core_DAO->initialize()
+#2 /srv/web/gardensofstone.org.au/vendor/civicrm/civicrm-core/CRM/Core/DAO.php(1852): CRM_Core_DAO->__construct()
+#3 /srv/web/gardensofstone.org.au/vendor/civicrm/civicrm-core/CRM/Core/DAO.php(328): CRM_Core_DAO::executeQuery()
+#4 /srv/web/gardensofstone.org.au/vendor/civicrm/civicrm-core/Civi/Core/Container.php(700): CRM_Core_DAO::init()
+
 ## Updates 2026-01-16
 
     civicrm/civicrm-drupal-8      6.9.1       ! 6.10.0      Open source constituent relationship m...
