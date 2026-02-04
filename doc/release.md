@@ -29,6 +29,57 @@ sudo update-alternatives --set phar.phar /usr/bin/phar.phar8.4
 sudo update-alternatives --set phpize /usr/bin/phpize8.4
 sudo update-alternatives --set php-config /usr/bin/php-config8.4
 
+
+ ---------- ----------------- --------------- --------------------------------- 
+Module     Update ID         Type            Description
+ ---------- ----------------- --------------- --------------------------------- 
+system     11202             hook_update_n   11202 - Add an [exit_code]       
+column to the {simpletest}       
+table, if existing.              
+system     11300             hook_update_n   11300 - Equivalent update to     
+10600.                           
+admin_to   8002              hook_update_n   8002 - Module CSS and '.module'  
+olbar_se                                     files refactoring requires       
+arch                                         cache rebuild.                   
+admin_to   8203              hook_update_n   8203 - Module CSS file           
+olbar_to                                     refactoring requires cache       
+ols                                          rebuild.                         
+block_cl   20019             hook_update_n   20019 - Remove invalid           
+ass                                          block_class dependencies.        
+ds         8014              hook_update_n   8014 - Sets the                  
+'array_merge_recursive_bc'       
+setting to TRUE.                 
+views      11201             hook_update_n   11201 - Removes the              
+ui.show.advanced_column          
+setting.                         
+block_co   remove_block_co   post-update     Remove                           
+ntent      ntent_listing_e                   block_content_listing_empty      
+mpty                              from views.                      
+block_co   remove_block_co   post-update     Remove deprecated status and     
+ntent      ntent_status_in                   info keys from block_content     
+fo_keys                           blocks.                          
+ckeditor   list_type         post-update     No-op update that didn't update  
+5                                            quite enough the first time.     
+ckeditor   list_type_again   post-update     Updates Text Editors using       
+5                                            CKEditor 5 to native List        
+"type" functionality.            
+ds         theme_registry_   post-update     Rebuild the theme registry to    
+clear                             pick up 'initial preprocess'.    
+node       add_rebuild_per   post-update     Grants a new permission for      
+mission_to_role                   rebuilding node access           
+s                                 permissions.                     
+node       create_promote_   post-update     Creates base field override      
+base_field_over                   config for the promote base      
+rides                             field on node types.             
+system     delete_rss_conf   post-update     Delete obsolete system.rss       
+ig                                configuration.                   
+views      add_date_defaul   post-update     Clear cache to add new date      
+t_arguments                       default arguments.               
+views      format_plural     post-update     Updates the format plural        
+option for those views using     
+aggregation.
+
+
  --------- -------------- --------------- ------------------------------------- 
 Module    Update ID      Type            Description
  --------- -------------- --------------- ------------------------------------- 
@@ -198,7 +249,7 @@ systemctl enable mariadb
 
 https://easydmarc.com/blog/how-to-configure-dkim-opendkim-with-postfix/
 
-sudo opendkim-genkey -b 1024 -d yourdomain.com -D /etc/opendkim/keys/yourdomain.com -s yourselector -v
+opendkim-genkey -b 1024 -d crm.gardensofstone.org.au -D /etc/dkimkeys  -s crm.gardensofstone.org.au  -v
 
 
 Module admin_toolbar_links_access_filter has an entry in the system.schema key/value storage, but is not installed. More information about this error.

@@ -23,7 +23,37 @@
       <sourceFolder url="file://$MODULE_DIR$/web/core/lib/Drupal/Component/Version/" isTestSource="false" packagePrefix="Drupal\Component\Version\" />
       <sourceFolder url="file://$MODULE_DIR$/web/core/tests" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/web/core/tests" isTestSource="true" packagePrefix="Drupal" />
+      <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/web/core/recipes/administrator_role/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/web/core/recipes/article_comment/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/web/core/recipes/article_content_type/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/web/core/recipes/article_tags/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/web/core/recipes/audio_media_type/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/web/core/recipes/basic_block_type/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/web/core/recipes/basic_html_format_editor/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/web/core/recipes/basic_shortcuts/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/web/core/recipes/comment_base/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/web/core/recipes/content_editor_role/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/web/core/recipes/content_search/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/web/core/recipes/core_recommended_admin_theme/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/web/core/recipes/core_recommended_front_end_theme/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/web/core/recipes/core_recommended_maintenance/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/web/core/recipes/core_recommended_performance/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/web/core/recipes/document_media_type/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/web/core/recipes/editorial_workflow/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/web/core/recipes/feedback_contact_form/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/web/core/recipes/full_html_format_editor/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/web/core/recipes/image_media_type/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/web/core/recipes/local_video_media_type/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/web/core/recipes/page_content_type/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/web/core/recipes/remote_video_media_type/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/web/core/recipes/restricted_html_format/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/web/core/recipes/standard/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/web/core/recipes/standard_responsive_images/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/web/core/recipes/tags_taxonomy/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/web/core/recipes/user_picture/tests" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/web/files/civicrm/ext/uk.co.vedaconsulting.mosaico" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/web/files/civicrm/ext/uk.co.vedaconsulting.mosaico/tests" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/scssphp/scssphp" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/egulias/email-validator" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/itamair/geophp" />
@@ -185,6 +215,7 @@
       <excludeFolder url="file://$MODULE_DIR$/web/files/civicrm/ext/uk.co.vedaconsulting.mosaico/vendor/civicrm/gitignore" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/polyfill-php85" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/thecodingmachine/safe" />
+      <excludeFolder url="file://$MODULE_DIR$/web/files/civicrm/ext/uk.co.vedaconsulting.mosaico/vendor/cweagans/composer-patches" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
