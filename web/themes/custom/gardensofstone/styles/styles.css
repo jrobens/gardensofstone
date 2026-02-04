@@ -481,48 +481,80 @@ section.hero.is-primary.block-views-blockevents-block-2 .views-field-title a:vis
   text-decoration: none;
 }
 
-.paragraph--type--quote {
-  position: relative;
-  /*
-  background: #a3b8a1 ?*; /* distant eucalyptus */
-  /*
-  clip-path: polygon(
-                  0% 60%, 10% 58%, 20% 62%, 30% 59%, 40% 61%,
-                  50% 58%, 60% 60%, 70% 57%, 80% 59%, 90% 58%,
-                  100% 60%, 100% 100%, 0% 100%
-  );
-  */
-}
-.paragraph--type--quote::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  height: 100%;
-  pointer-events: none;
-  width: 200%;
-  left: 0;
-  animation: moveHills 60s linear infinite;
-  opacity: 0.4;
-  transform: scale(1.5);
-  background: #a3b8a1; /* distant eucalyptus */
-  clip-path: polygon(0% 80%, 10% 77%, 20% 83%, 30% 80%, 40% 82%, 50% 79%, 60% 81%, 70% 78%, 80% 80%, 100% 79%, 100% 100%, 0% 100%);
-  animation-duration: 120s;
-}
-.paragraph--type--quote::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  height: 100%;
-  pointer-events: none;
-  width: 200%;
-  left: 0;
-  animation: moveHills 60s linear infinite;
-  background: #6c7e55; /* closer hill */
-  clip-path: polygon(0% 90%, 10% 87%, 20% 93%, 30% 90%, 40% 92%, 50% 89%, 60% 91%, 70% 88%, 80% 90%, 100% 89%, 100% 100%, 0% 100%);
-  z-index: 1;
-  opacity: 0.3;
+/*
+$mobile-breakpoint: 767px;
+
+.campaign-grid {
+  display: flex;
+  flex-wrap: wrap; // Allows items to stack
+
+  .block {
+    width: 50%; // Desktop 2-column layout
+
+    // Default desktop order (1, 2, 3, 4)
+    &:nth-child(1) { order: 1; }
+    &:nth-child(2) { order: 2; }
+    &:nth-child(3) { order: 3; }
+    &:nth-child(4) { order: 4; }
+  }
+
+  // Mobile Reordering: 1 -> 2 -> 4 -> 3
+  @media (max-width: $mobile-breakpoint) {
+    flex-direction: column; // Force single column stack
+
+    .block {
+      width: 100%;
+
+      &:nth-child(3) { order: 4; } // Moves 3 to the bottom
+      &:nth-child(4) { order: 3; } // Moves 4 above 3
+    }
+  }
 }
 
+ */
+@media (min-width: 960px) {
+  .paragraph--type--quote {
+    position: relative;
+    /*
+    background: #a3b8a1 ?*; /* distant eucalyptus */
+    /*
+    clip-path: polygon(
+                    0% 60%, 10% 58%, 20% 62%, 30% 59%, 40% 61%,
+                    50% 58%, 60% 60%, 70% 57%, 80% 59%, 90% 58%,
+                    100% 60%, 100% 100%, 0% 100%
+    );
+    */
+  }
+  .paragraph--type--quote::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100%;
+    pointer-events: none;
+    width: 200%;
+    left: 0;
+    animation: moveHills 60s linear infinite;
+    opacity: 0.4;
+    transform: scale(1.5);
+    background: #a3b8a1; /* distant eucalyptus */
+    clip-path: polygon(0% 80%, 10% 77%, 20% 83%, 30% 80%, 40% 82%, 50% 79%, 60% 81%, 70% 78%, 80% 80%, 100% 79%, 100% 100%, 0% 100%);
+    animation-duration: 120s;
+  }
+  .paragraph--type--quote::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100%;
+    pointer-events: none;
+    width: 200%;
+    left: 0;
+    animation: moveHills 60s linear infinite;
+    background: #6c7e55; /* closer hill */
+    clip-path: polygon(0% 90%, 10% 87%, 20% 93%, 30% 90%, 40% 92%, 50% 89%, 60% 91%, 70% 88%, 80% 90%, 100% 89%, 100% 100%, 0% 100%);
+    z-index: 1;
+    opacity: 0.3;
+  }
+}
 @keyframes moveHills {
   0% {
     transform: translateX(0);
