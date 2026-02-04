@@ -11,6 +11,18 @@
     league/commonmark         1.6.7  ~ 2.8.0  Highly-extensible PHP Markdown parser which fully su...
 
 
+
+remote:   Problem 1        
+remote:     - symfony/css-selector is locked to version v8.0.0 and an update of this package was not requested.        
+remote:     - symfony/css-selector v8.0.0 requires php >=8.4 -> your php version (8.3.20) does not satisfy that requirement.
+
+apt install php8.4-{bz2,curl,mbstring,intl,imap,redis,snmp,xml,zip,mbstring,gd,mysql,bcmath}
+
+NOTICE: To enable PHP 8.4 FPM in Apache2 do:
+NOTICE: a2enmod proxy_fcgi setenvif
+NOTICE: a2enconf php8.4-fpm
+NOTICE: You are seeing this message because you have apache2 package installed.
+
  --------- -------------- --------------- ------------------------------------- 
 Module    Update ID      Type            Description
  --------- -------------- --------------- ------------------------------------- 
