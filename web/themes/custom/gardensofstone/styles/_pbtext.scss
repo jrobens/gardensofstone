@@ -36,6 +36,7 @@ $font-stack: "Helvetica Neue", Helvetica, Arial, sans-serif;
 
   @if $type == 'urgent' {
     color: $urgency-red;
+    border-left: none;
     padding-left: 0;
   }
 }
