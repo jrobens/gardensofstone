@@ -1,0 +1,81 @@
+@use '../../../../sites/variables' as sv;
+
+// Apply standards
+$ironstone-orange: #b35a2d; // Inspired by ironstone layers
+$sandstone-deep: #4a3c31; // For grounded, heavy contrast
+$forest-leaf: #3d5a35; // Representing eucalyptus forests
+$urgency-red: #d32f2f; // For "STOP" elements
+$primary-green: #2d5a27; // Typical conservation forest green
+$text-dark: #333333;
+$font-stack: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+// Mixin for the "Ironstone Guardian" Heading
+@mixin pagoda-heading($type: 'primary') {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  line-height: 1.2;
+  border-left: 8px solid $ironstone-orange;
+  padding-left: 1.5rem;
+  margin-bottom: 2rem;
+
+  @if $type == 'primary' {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: $sandstone-deep;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 4px;
+      background: $forest-leaf;
+      margin-top: 0.5rem;
+    }
+  }
+
+  @if $type == 'urgent' {
+    color: $urgency-red;
+    border-left-color: $urgency-red;
+  }
+}
+
+.node-type--page-and-layout .paragraph--type--text {
+  h2,
+  .campaign-title {
+    @include pagoda-heading('primary');
+  }
+
+  blockquote {
+    @include pagoda-heading('urgent');
+    font-size: 1.8rem;
+  }
+
+  h3 {
+    color: $primary-green;
+    font-size: 1.5rem;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+    border-bottom: 1px solid lighten($primary-green, 40%);
+    padding-bottom: 0.25em;
+  }
+
+  p {
+    margin-bottom: 1.2em;
+    font-size: 1rem;
+    text-align: justify;
+
+    // Links within paragraphs
+    a {
+      color: $primary-green;
+      text-decoration: underline;
+
+      &:hover {
+        color: darken($primary-green, 15%);
+        text-decoration: none;
+      }
+    }
+  }
+
+}

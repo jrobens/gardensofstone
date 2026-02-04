@@ -423,6 +423,63 @@ section.hero.is-primary.block-views-blockevents-block-2 .views-field-title a:vis
   color: white;
 }
 
+.node-type--page-and-layout .paragraph--type--text h2,
+.node-type--page-and-layout .paragraph--type--text .campaign-title {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  line-height: 1.2;
+  border-left: 8px solid #b35a2d;
+  padding-left: 1.5rem;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #4a3c31;
+}
+.node-type--page-and-layout .paragraph--type--text h2::after,
+.node-type--page-and-layout .paragraph--type--text .campaign-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #3d5a35;
+  margin-top: 0.5rem;
+}
+.node-type--page-and-layout .paragraph--type--text blockquote {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  line-height: 1.2;
+  border-left: 8px solid #b35a2d;
+  padding-left: 1.5rem;
+  margin-bottom: 2rem;
+  color: #d32f2f;
+  border-left-color: #d32f2f;
+  font-size: 1.8rem;
+}
+.node-type--page-and-layout .paragraph--type--text h3 {
+  color: #2d5a27;
+  font-size: 1.5rem;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+  border-bottom: 1px solid rgb(139.7441860465, 201.488372093, 131.511627907);
+  padding-bottom: 0.25em;
+}
+.node-type--page-and-layout .paragraph--type--text p {
+  margin-bottom: 1.2em;
+  font-size: 1rem;
+  text-align: justify;
+}
+.node-type--page-and-layout .paragraph--type--text p a {
+  color: #2d5a27;
+  text-decoration: underline;
+}
+.node-type--page-and-layout .paragraph--type--text p a:hover {
+  color: rgb(18.3139534884, 36.6279069767, 15.8720930233);
+  text-decoration: none;
+}
+
 .paragraph--type--quote {
   position: relative;
   /*
@@ -1022,41 +1079,6 @@ body.path-- .column {
     /*  color: white*/
     font-weight: normal;
   }
-}
-.node-type--page-and-layout h2,
-.campaign-title {
-  font-family: "Montserrat", sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  line-height: 1.2;
-  border-left: 8px solid #b35a2d;
-  padding-left: 1.5rem;
-  margin-bottom: 2rem;
-  font-size: 2.5rem;
-  font-weight: 900;
-  color: #4a3c31;
-}
-.node-type--page-and-layout h2::after,
-.campaign-title::after {
-  content: "";
-  display: block;
-  width: 60px;
-  height: 4px;
-  background: #3d5a35;
-  margin-top: 0.5rem;
-}
-
-.action-callout {
-  font-family: "Montserrat", sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  line-height: 1.2;
-  border-left: 8px solid #b35a2d;
-  padding-left: 1.5rem;
-  margin-bottom: 2rem;
-  color: #d32f2f;
-  border-left-color: #d32f2f;
-  font-size: 1.8rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
