@@ -23,6 +23,12 @@ NOTICE: a2enmod proxy_fcgi setenvif
 NOTICE: a2enconf php8.4-fpm
 NOTICE: You are seeing this message because you have apache2 package installed.
 
+sudo update-alternatives --set php /usr/bin/php8.4
+sudo update-alternatives --set phar /usr/bin/phar8.4
+sudo update-alternatives --set phar.phar /usr/bin/phar.phar8.4
+sudo update-alternatives --set phpize /usr/bin/phpize8.4
+sudo update-alternatives --set php-config /usr/bin/php-config8.4
+
  --------- -------------- --------------- ------------------------------------- 
 Module    Update ID      Type            Description
  --------- -------------- --------------- ------------------------------------- 
