@@ -9,10 +9,10 @@
     },
     templateUrl: '~/crmSearchDisplayTable/crmSearchDisplayTable.html',
     controller: function($scope, $element, $q, crmApi4, crmStatus, searchMeta, searchDisplayBaseTrait, searchDisplaySortableTrait, searchDisplayEditableTrait) {
-      var ts = $scope.ts = CRM.ts('org.civicrm.search_kit'),
+      const ts = $scope.ts = CRM.ts('org.civicrm.search_kit'),
         // Mix in traits to this controller
-        ctrl = angular.extend(this, _.cloneDeep(searchDisplayBaseTrait), _.cloneDeep(searchDisplaySortableTrait), _.cloneDeep(searchDisplayEditableTrait)),
-        afformLoad;
+        ctrl = angular.extend(this, _.cloneDeep(searchDisplayBaseTrait), _.cloneDeep(searchDisplaySortableTrait), _.cloneDeep(searchDisplayEditableTrait));
+      let afformLoad;
 
       $scope.crmUrl = CRM.url;
       this.searchDisplayPath = CRM.url('civicrm/search');
@@ -136,10 +136,10 @@
       });
 
       this.deleteOrRevert = function(row) {
-        var search = row.data,
+        const search = row.data,
           revert = !!search['base_module:label'];
         function getMessage() {
-          var title = revert ? ts('Revert this search to its packaged settings?') : ts('Permanently delete this saved search?'),
+          let title = revert ? ts('Revert this search to its packaged settings?') : ts('Permanently delete this saved search?'),
             msg = '<h4>' + _.escape(title) + '</h4>' +
             '<ul>';
           if (revert) {
@@ -153,7 +153,7 @@
             });
             if (row.afform_count) {
               _.each(ctrl.afforms[search.name], function(afform) {
-                msg += '<li><i class="crm-i fa-list-alt"></i> ' + _.escape(ts('Form "%1" will be affected because it contains an embedded display from this search.', {1: afform.title})) + '</li>';
+                msg += '<li><i class="crm-i fa-list-alt" role="img" aria-hidden="true"></i> ' + _.escape(ts('Form "%1" will be affected because it contains an embedded display from this search.', {1: afform.title})) + '</li>';
               });
             }
           } else {
@@ -163,21 +163,21 @@
               msg += '<li>' + _.escape(ts('Includes %1 displays which will also be deleted.', {1: search.display_label.length})) + '</li>';
             }
             _.each(search.groups, function (smartGroup) {
-              msg += '<li class="crm-error"><i class="crm-i fa-exclamation-triangle"></i> ' + _.escape(ts('Smart group "%1" will also be deleted.', {1: smartGroup})) + '</li>';
+              msg += '<li class="crm-error"><i class="crm-i fa-exclamation-triangle" role="img" aria-hidden="true"></i> ' + _.escape(ts('Smart group "%1" will also be deleted.', {1: smartGroup})) + '</li>';
             });
             _.each(search.schedule_title, (communication) => {
-              msg += '<li class="crm-error"><i class="crm-i fa-exclamation-triangle"></i> ' + _.escape(ts('Communication "%1" will also be deleted.', {1: communication})) + '</li>';
+              msg += '<li class="crm-error"><i class="crm-i fa-exclamation-triangle" role="img" aria-hidden="true"></i> ' + _.escape(ts('Communication "%1" will also be deleted.', {1: communication})) + '</li>';
             });
             if (row.afform_count) {
               _.each(ctrl.afforms[search.name], function (afform) {
-                msg += '<li class="crm-error"><i class="crm-i fa-exclamation-triangle"></i> ' + _.escape(ts('Form "%1" will also be deleted because it contains an embedded display from this search.', {1: afform.title})) + '</li>';
+                msg += '<li class="crm-error"><i class="crm-i fa-exclamation-triangle" role="img" aria-hidden="true"></i> ' + _.escape(ts('Form "%1" will also be deleted because it contains an embedded display from this search.', {1: afform.title})) + '</li>';
               });
             }
           }
           return msg + '</ul>';
         }
 
-        var dialog = CRM.confirm({
+        const dialog = CRM.confirm({
           title: revert ? ts('Revert %1', {1: search.label}) : ts('Delete %1', {1: search.label}),
           message: getMessage(),
         }).on('crmConfirm:yes', function() {
@@ -335,7 +335,7 @@
       // @return {Promise}
       this.loadAfforms = function() {
         if (!ctrl.afformEnabled && !afformLoad) {
-          var deferred = $q.defer();
+          const deferred = $q.defer();
           afformLoad = deferred.promise;
           deferred.resolve([]);
         }
@@ -350,7 +350,7 @@
           ctrl.afforms = {};
           _.each(afforms, function(afform) {
             _.each(_.uniq(afform.search_displays), function(searchNameDisplayName) {
-              var searchName = searchNameDisplayName.split('.')[0];
+              const searchName = searchNameDisplayName.split('.')[0];
               ctrl.afforms[searchName] = ctrl.afforms[searchName] || [];
               ctrl.afforms[searchName].push({
                 title: afform.title,
