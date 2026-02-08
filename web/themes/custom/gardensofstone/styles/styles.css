@@ -480,6 +480,34 @@ section.hero.is-primary.block-views-blockevents-block-2 .views-field-title a:vis
   color: rgb(18.3139534884, 36.6279069767, 15.8720930233);
   text-decoration: none;
 }
+.node-type--page-and-layout .paragraph--type--text ul {
+  margin: 1.5rem 0;
+  padding-left: 1.5rem;
+  list-style-position: outside;
+  list-style-type: disc;
+}
+.node-type--page-and-layout .paragraph--type--text ul li {
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
+}
+.node-type--page-and-layout .paragraph--type--text ul li p {
+  margin: 0;
+}
+.node-type--page-and-layout .paragraph--type--text ul li ul {
+  margin: 0.5rem 0 0 1rem;
+  list-style-type: circle;
+}
+.node-type--page-and-layout .paragraph--type--text ul li ul ul {
+  list-style-type: square;
+}
+@media (max-width: 768px) {
+  .node-type--page-and-layout .paragraph--type--text ul {
+    padding-left: 1.2rem;
+  }
+  .node-type--page-and-layout .paragraph--type--text ul li {
+    margin-bottom: 0.5rem;
+  }
+}
 
 /*
 $mobile-breakpoint: 767px;

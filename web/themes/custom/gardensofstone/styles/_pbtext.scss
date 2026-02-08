@@ -79,4 +79,40 @@ $font-stack: "Helvetica Neue", Helvetica, Arial, sans-serif;
     }
   }
 
+  ul {
+    margin: 1.5rem 0;
+    padding-left: 1.5rem;
+    list-style-position: outside;
+
+    li {
+      margin-bottom: 0.75rem;
+      line-height: 1.6;
+
+      p {
+        margin: 0;
+      }
+
+      ul {
+        margin: 0.5rem 0 0 1rem;
+        list-style-type: circle;
+
+        ul {
+          list-style-type: square;
+        }
+      }
+    }
+
+    list-style-type: disc;
+  }
+
+  @media (max-width: 768px) {
+    ul {
+      padding-left: 1.2rem;
+
+      li {
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+
 }
