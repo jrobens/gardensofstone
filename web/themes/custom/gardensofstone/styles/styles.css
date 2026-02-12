@@ -712,7 +712,13 @@ $mobile-breakpoint: 767px;
   -webkit-transition: opacity 0.55s ease-in-out;
 }
 
-body.node-type--page .field_media_image img {
+body.node-type--page .paragraph--type--image .field_pbimage_image .field_media_image > div {
+  display: flex;
+  max-height: 33vh;
+  justify-content: center;
+  align-items: center;
+}
+body.node-type--page .paragraph--type--image .field_pbimage_image .field_media_image > div .field_media_image img {
   max-width: 100%;
   height: auto;
   object-position: center;
