@@ -6,35 +6,27 @@
  */
 /* Fit content doesn't work for video - field--name-field-media-oembed-video */
 /* Problem with calling things square, is that it doesn't stay square for long */
-.paragraph--type--image,
 .paragraph--type--image-square {
   position: relative;
   max-width: 100%;
   /* Video in the media slot */
 }
-.paragraph--type--image .field:not(:last-child),
 .paragraph--type--image-square .field:not(:last-child) {
   margin-bottom: 0;
 }
-.paragraph--type--image img,
 .paragraph--type--image-square img {
   object-fit: cover;
   width: 100%;
   max-height: 33vh;
 }
-.paragraph--type--image .field--name-field-pbimagesquare-image,
 .paragraph--type--image-square .field--name-field-pbimagesquare-image {
   position: relative;
 }
-.paragraph--type--image .field--name-field-media-image .field__item,
-.paragraph--type--image .field--name-field-media-image .field__item,
 .paragraph--type--image-square .field--name-field-media-image .field__item,
 .paragraph--type--image-square .field--name-field-media-image .field__item {
   display: flex;
   height: 37.8vw;
 }
-.paragraph--type--image .field--name-field-pbimagesquare-caption,
-.paragraph--type--image .field--name-field-pbimage-caption,
 .paragraph--type--image-square .field--name-field-pbimagesquare-caption,
 .paragraph--type--image-square .field--name-field-pbimage-caption {
   pointer-events: none;
@@ -49,10 +41,6 @@
   bottom: 0;
   width: 100%;
 }
-.paragraph--type--image .field--name-field-pbimagesquare-caption a,
-.paragraph--type--image .field--name-field-pbimagesquare-caption a:visited,
-.paragraph--type--image .field--name-field-pbimage-caption a,
-.paragraph--type--image .field--name-field-pbimage-caption a:visited,
 .paragraph--type--image-square .field--name-field-pbimagesquare-caption a,
 .paragraph--type--image-square .field--name-field-pbimagesquare-caption a:visited,
 .paragraph--type--image-square .field--name-field-pbimage-caption a,
@@ -62,14 +50,6 @@
   width: 100%;
   display: block;
 }
-.paragraph--type--image .field--name-field-pbimagesquare-caption a:hover,
-.paragraph--type--image .field--name-field-pbimagesquare-caption a:hover,
-.paragraph--type--image .field--name-field-pbimagesquare-caption a:active,
-.paragraph--type--image .field--name-field-pbimagesquare-caption a:active,
-.paragraph--type--image .field--name-field-pbimage-caption a:hover,
-.paragraph--type--image .field--name-field-pbimage-caption a:hover,
-.paragraph--type--image .field--name-field-pbimage-caption a:active,
-.paragraph--type--image .field--name-field-pbimage-caption a:active,
 .paragraph--type--image-square .field--name-field-pbimagesquare-caption a:hover,
 .paragraph--type--image-square .field--name-field-pbimagesquare-caption a:hover,
 .paragraph--type--image-square .field--name-field-pbimagesquare-caption a:active,
@@ -80,7 +60,6 @@
 .paragraph--type--image-square .field--name-field-pbimage-caption a:active {
   color: var(--berry);
 }
-.paragraph--type--image .field_media_oembed_video iframe.media-oembed-content,
 .paragraph--type--image-square .field_media_oembed_video iframe.media-oembed-content {
   aspect-ratio: 16/9;
   width: 100%;
