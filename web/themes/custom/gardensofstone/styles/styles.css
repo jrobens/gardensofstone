@@ -713,7 +713,6 @@ $mobile-breakpoint: 767px;
 }
 
 body.node-type--page .field_media_image img {
-  width: 100%;
   max-width: 100%;
   height: auto;
   object-position: center;
