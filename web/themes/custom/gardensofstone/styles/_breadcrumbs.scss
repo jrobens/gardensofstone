@@ -1,5 +1,8 @@
 @use '../../../../sites/variables' as sv;
 
-nav.breadcrumb a, nav.breadcrumb a:visited {
-  color: sv.$link;
+.region-breadcrumb {
+  nav.breadcrumb a, nav.breadcrumb a:visited {
+    color: sv.$link;
+  }
+
 }
