@@ -728,18 +728,25 @@ body.node-type--page .paragraph--type--image .field_pbimage_image .field_media_i
   display: none;
 }
 
-.webform-submission-add-form .progress-marker::before, .webform-submission-form .progress-marker::before {
+.webform-submission-add-form .field--name-entity-body-class,
+.webform-submission-form .field--name-entity-body-class {
+  display: none;
+}
+.webform-submission-add-form .progress-marker::before,
+.webform-submission-form .progress-marker::before {
   width: 2rem;
   height: 2rem;
   padding-top: 0.3rem;
   bottom: 0.3rem;
 }
-.webform-submission-add-form legend, .webform-submission-form legend {
+.webform-submission-add-form legend,
+.webform-submission-form legend {
   font-weight: bold;
   font-size: 2rem;
   color: #a2046b;
 }
-.webform-submission-add-form .form-required + .control::after, .webform-submission-form .form-required + .control::after {
+.webform-submission-add-form .form-required + .control::after,
+.webform-submission-form .form-required + .control::after {
   content: "*";
   font-size: 1.2rem;
   font-weight: bold;
@@ -751,23 +758,28 @@ body.node-type--page .paragraph--type--image .field_pbimage_image .field_media_i
   width: 2rem;
   transform: translate(-1rem, 0.5rem);
 }
-.webform-submission-add-form .form-item-markup ol, .webform-submission-form .form-item-markup ol {
+.webform-submission-add-form .form-item-markup ol,
+.webform-submission-form .form-item-markup ol {
   margin: 0.3rem 1rem;
 }
 .webform-submission-add-form .panel-block.form-wrapper,
-.webform-submission-add-form .panel-tabs:not(:last-child), .webform-submission-form .panel-block.form-wrapper,
+.webform-submission-add-form .panel-tabs:not(:last-child),
+.webform-submission-form .panel-block.form-wrapper,
 .webform-submission-form .panel-tabs:not(:last-child) {
   border-bottom: 0;
   padding: 0 0.75rem;
   margin-top: 0;
 }
-.webform-submission-add-form .js-form-type-checkbox, .webform-submission-form .js-form-type-checkbox {
+.webform-submission-add-form .js-form-type-checkbox,
+.webform-submission-form .js-form-type-checkbox {
   margin-top: 0;
 }
-.webform-submission-add-form .webform-options-display-buttons .form-item, .webform-submission-form .webform-options-display-buttons .form-item {
+.webform-submission-add-form .webform-options-display-buttons .form-item,
+.webform-submission-form .webform-options-display-buttons .form-item {
   margin: 0.3rem 0;
 }
-.webform-submission-add-form p, .webform-submission-form p {
+.webform-submission-add-form p,
+.webform-submission-form p {
   margin-bottom: 0.3rem;
 }
 

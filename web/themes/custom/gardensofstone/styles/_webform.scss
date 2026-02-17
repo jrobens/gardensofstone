@@ -1,0 +1,90 @@
+@use '../../../../sites/variables' as sv;
+
+.webform-submission-add-form,
+.webform-submission-form {
+
+  .field--name-entity-body-class {
+    display: none;
+  }
+
+  .progress-marker::before {
+    width: 2rem;
+    height: 2rem;
+    padding-top: 0.3rem;
+    bottom: 0.3rem;
+  }
+
+  legend {
+    font-weight: bold;
+    font-size: 2rem;
+    color: sv.$primary;
+  }
+
+  .form-required + .control::after {
+    content: '*';
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #e32700;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 2rem;
+    width: 2rem;
+    transform: translate(-1rem, 0.5rem);
+  }
+
+  .form-item-markup ol {
+    margin: 0.3rem 1rem;
+  }
+
+  .panel-block.form-wrapper,
+  .panel-tabs:not(:last-child) {
+    border-bottom: 0;
+    padding: 0 0.75rem;
+    margin-top: 0;
+  }
+
+  .js-form-type-checkbox {
+    margin-top: 0;
+  }
+
+  .webform-options-display-buttons .form-item {
+    margin: 0.3rem 0;
+  }
+
+  p {
+    margin-bottom: 0.3rem;
+  }
+}
+
+.fieldset-wrapper .webform-options-display-buttons {
+  margin: 1rem 0;
+
+  .button.is-link {
+    background-color: sv.$element-colour;
+    color: white;
+    margin: 0.3rem 0;
+  }
+
+  .webform-progress ul li {
+    list-style-type: none;
+  }
+
+  ol {
+    margin-left: 1rem;
+  }
+
+  ul {
+    margin-left: 1rem;
+
+    li {
+      list-style-type: disc;
+    }
+  }
+}
+
+.wizard-page-title {
+  font-size: 2rem;
+  color: sv.$primary;
+  font-weight: bold;
+}
