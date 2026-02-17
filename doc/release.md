@@ -9,6 +9,23 @@
 
 keith.muir6@bigpond.com, brett.mitchell@intrepidtravel.com
 
+Created Coal Threats main menu
+
+Under Coal Threats main menu:
+Fixed webform glitch regarding post code https://www.gardensofstone.org.au/sign-updates-0 (not exactly sure whether this webforms builds straight into CRM, it has this capacity, but I like to do it manually in case it doesn’t work properly on auto and makes mess of the data).
+
+On pull down under Coal Threats created:
+Added Clarence Mod 11 submission guide page https://www.gardensofstone.org.au/oppose-clarence-coal-mine-extension-submissions-due-thursday-19-feb
+
+Then added following existing webpages on pulldown in following order under Coal Threats after Clarence Mod 11
+https://www.gardensofstone.org.au/briefing-problems-springvales-water-treatment-plant
+https://www.gardensofstone.org.au/node/38 explains Angus Place West with BN from NCC on link at top
+https://www.gardensofstone.org.au/update-coal-mine-proposals-may-2025 (can remove if you like, could be replace with another update when available).
+
+Home page
+Removed video at bottom of page
+Removed various old links to removed pages
+
 ## Updates 2026-02-08
 
     composer/installers       1.12.0 ~ 2.3.0 A multi-framework Composer library ...
