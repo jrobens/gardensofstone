@@ -103,7 +103,9 @@ main {
   scroll-snap-type: y mandatory;
   background: transparent;
   // clip-path: inset(-14rem 0 0 0)
+}
 
+body.full-width main {
   > section > .container:not(.is-max-desktop):not(.is-max-widescreen) {
     max-width: 100%;
 
