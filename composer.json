@@ -34,6 +34,7 @@
         "drupal/drulma": "^2.0",
         "drupal/drulma_companion": "^2.1",
         "drupal/ds": "^3.9",
+        "drupal/entity_body_class": "^2.0",
         "drupal/entity_class_formatter": "^2.0",
         "drupal/expand_collapse_formatter": "^2.0",
         "drupal/focal_point": "^2.0",

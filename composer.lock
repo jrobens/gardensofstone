@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1a8465b3d379f5fc5ffa362d227cb120",
+    "content-hash": "702f38501593786e5e8657df85b7d4f1",
     "packages": [
         {
             "name": "adrienrn/php-mimetyper",
@@ -3007,17 +3007,17 @@
         },
         {
             "name": "drupal/captcha",
-            "version": "2.0.9",
+            "version": "2.0.10",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/captcha.git",
-                "reference": "2.0.9"
+                "reference": "2.0.10"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/captcha-2.0.9.zip",
-                "reference": "2.0.9",
-                "shasum": "15b2ba18fab75ea88bfa8f75fb1be09f7cd52cbb"
+                "url": "https://ftp.drupal.org/files/projects/captcha-2.0.10.zip",
+                "reference": "2.0.10",
+                "shasum": "f1052ffe99ec2f8246f7da75e467b281fc2d804a"
             },
             "require": {
                 "drupal/core": "^9.5 || ^10 || ^11"
@@ -3025,8 +3025,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.0.9",
-                    "datestamp": "1753701287",
+                    "version": "2.0.10",
+                    "datestamp": "1770647534",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4004,17 +4004,17 @@
         },
         {
             "name": "drupal/ds",
-            "version": "3.36.0",
+            "version": "3.37.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/ds.git",
-                "reference": "8.x-3.36"
+                "reference": "8.x-3.37"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/ds-8.x-3.36.zip",
-                "reference": "8.x-3.36",
-                "shasum": "9a647acdf9ff09c1e08d55c3cb1083323a8be9f6"
+                "url": "https://ftp.drupal.org/files/projects/ds-8.x-3.37.zip",
+                "reference": "8.x-3.37",
+                "shasum": "52112770f7050252d8f7235aad30a902831d185f"
             },
             "require": {
                 "drupal/core": "^10.2 || ^11"
@@ -4026,8 +4026,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-3.36",
-                    "datestamp": "1770280838",
+                    "version": "8.x-3.37",
+                    "datestamp": "1771000261",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4140,6 +4140,55 @@
             "homepage": "https://www.drupal.org/project/encrypt",
             "support": {
                 "source": "https://git.drupalcode.org/project/encrypt"
+            }
+        },
+        {
+            "name": "drupal/entity_body_class",
+            "version": "2.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/entity_body_class.git",
+                "reference": "2.0.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/entity_body_class-2.0.3.zip",
+                "reference": "2.0.3",
+                "shasum": "210f635064049ae965da9d2ee6d49d121dcefc19"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9.0 || ^10.0 || ^11"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.3",
+                    "datestamp": "1741010528",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Viktor Holovachek (AstonVictor)",
+                    "homepage": "https://www.drupal.org/u/astonvictor",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Provides entity body class functionality.",
+            "homepage": "https://www.drupal.org/project/entity_body_class",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "https://git.drupalcode.org/project/entity_body_class",
+                "issues": "https://www.drupal.org/project/issues/entity_body_class"
             }
         },
         {
@@ -5534,26 +5583,26 @@
         },
         {
             "name": "drupal/masquerade",
-            "version": "2.0.0",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/masquerade.git",
-                "reference": "8.x-2.0"
+                "reference": "8.x-2.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/masquerade-8.x-2.0.zip",
-                "reference": "8.x-2.0",
-                "shasum": "3af711878f5f7a06a2c837440cb90fbcba8db0e1"
+                "url": "https://ftp.drupal.org/files/projects/masquerade-8.x-2.1.zip",
+                "reference": "8.x-2.1",
+                "shasum": "f76ef91aafa5f2db461a345c950179348493d1eb"
             },
             "require": {
-                "drupal/core": "^9.2 || ^10 || ^11.0"
+                "drupal/core": "^9.2 || ^10.2 || ^11.0"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.0",
-                    "datestamp": "1723165789",
+                    "version": "8.x-2.1",
+                    "datestamp": "1771255000",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5686,7 +5735,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/mediteran.git",
-                "reference": "f17416948312c96baf6a77dc8d1a88254cccd7d8"
+                "reference": "c908adc357d9caa04442684d90344a62e8aae123"
             },
             "require": {
                 "drupal/core": "^9.2 ||^10 || ^11"
@@ -5697,8 +5746,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.32+17-dev",
-                    "datestamp": "1738221915",
+                    "version": "8.x-1.32+18-dev",
+                    "datestamp": "1770540310",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
