@@ -1,3 +1,30 @@
+## Updates 2026-04-15
+
+    drupal/core-composer-scaffold (11.3.5 -> 11.3.6)
+drupal/core-project-message (11.3.5 -> 11.3.6)
+drupal/core-recommended (11.3.5 -> 11.3.6)
+drupal/layout_paragraphs (dev-2.1.x c97badf -> dev-2.1.x 8bf9a09)
+drupal/menu_link_attributes (1.6.0 -> 1.7.0)
+drupal/paragraph_blocks (4.2.1 -> 4.2.2)
+drupal/webform_xlsx_export (1.5.0 -> 1.6.0)
+    None
+## Updates 2026-03-18
+
+    drupal/ckeditor_media_embed (dev-2.x 2d8e2e3 -> dev-2.x 9be0f9d)
+drupal/paragraph_blocks (4.2.0 -> 4.2.1)
+drupal/webform_xlsx_export (1.5.0 -> 1.6.0)
+    paragraph_blocks_update_10401
+## Updates 2026-03-08
+
+    drupal/core-composer-scaffold (11.3.3 -> 11.3.5)
+drupal/core-project-message (11.3.3 -> 11.3.5)
+drupal/core-recommended (11.3.3 -> 11.3.5)
+drupal/webform (6.3.0-beta7 -> 6.3.0-beta8)
+    None
+## Updates 2026-02-26
+
+    drupal/leaflet (10.4.2 -> 10.4.4)
+    None
 ## Updates 2026-02-17
 
     composer/installers       1.12.0          ~ 2.3.0           A multi-framework Com...

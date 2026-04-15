@@ -2,54 +2,40 @@
 
 minor_updates=$1
 job='GOS'
-
-updates=$(composer outdated --direct | sed 's/^/    /')
-echo "updates are: \n ${updates}"
-
-if [[ $updates =~ 'drupal/core' ]]; then
-  composer update 'drupal/core-*' --with-all-dependencies
-fi
-
 today=$(date '+%Y-%m-%d')
-updates_clean=$(echo $updates | awk '{print $1 $2}' | sed 's/\n/ /g')
+
+UPDATES_REPORT=$(composer outdated --direct "drupal/*" --format=json | \
+  jq -r '.installed[] | "\(.name) (\(.version) -> \(.latest))"' 2>/dev/null)
+
+if [ -z "$UPDATES_REPORT" ]; then
+    echo "No Drupal updates available."
+    exit 0
+fi
+updates_clean=$(echo "$UPDATES_REPORT" | awk '{print $1}' | tr '\n' ' ')
 work_log="*:JR:${today}:${job}:0.2: sys+ update drupal. ${updates_clean}\n"
 sed -i.old "1s;^;${work_log};" doc/work.md
 
+
+
+echo -e "Proposed Updates:\n$UPDATES_REPORT"
+composer update "drupal/*" --with-all-dependencies
+
+PENDING_DB_UPDATES=$(vendor/bin/drush updatedb:status --format=list 2>/dev/null)
+
 ## Update the release file
-ex doc/release.md <<eof
+ex doc/RELEASE.md <<eof
 1 insert
 ## Updates ${today}
 
-${updates}
+    ${UPDATES_REPORT}
+    ${PENDING_DB_UPDATES:-None}
 .
 xit
 eof
 
-# composer outdated
-# Change to composer outdated 'drupal/*' ?
-if [[ $minor_updates == '-y' ]]; then
-  module_updates=$(echo "$updates" | awk '{print $1}')
-  echo "Non core drupal modules that need updating: ${module_updates}"
-  for module_update in ${module_updates}; do
-    echo "updating ${module_update}"
-    composer update "${module_update}" --with-dependencies
-  done
-fi
-
-# Modules that are not 'direct'
-non_direct_updates=$(composer outdated | grep "^drupal" | grep -v "core")
-echo "Non-direct drupal updates are: \n ${non_direct_updates}"
-if [[ $minor_updates == '-y' ]]; then
-	module_updates=$(echo "${non_direct_updates}" | awk '{print $1}')
-	for module_update in ${module_updates}; do
-		echo "updating ${module_update}"
-		composer update "${module_update}"
-	done
-fi
+vendor/bin/drush updb -y
+vendor/bin/drush cr
 
 ## More outdated items
-set -x
-all_updates=$(composer outdated)
-all_updates_clean=$(echo all_updates | awk '{print $1 $2}' | sed 's/\n/ /g')
-all_updates_clean_drupal=$(echo all_updates_clean | grep "^drupal")
-echo "More updates (run manually) ${all_updates_clean_drupal}"
+all_updates_clean_drupal=$(composer outdated --format=json | jq -r '.installed[] | select(.name | startswith("drupal/")) | .name' | tr '\n' ' ')
+echo "More updates (run manually): ${all_updates_clean_drupal}"
