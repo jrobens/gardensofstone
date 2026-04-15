@@ -1,8 +1,0 @@
-.photos-row::after {
-  display: block;
-  clear: both;
-  content: '';
-}
-.photos-col {
-  float: left;
-}
