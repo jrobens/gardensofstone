@@ -1,4 +1,9 @@
+
 ## Updates 2026-04-15
+
+Had to disable and renable pathauto
+
+Drupal\Component\Plugin\Exception\PluginNotFoundException: The "node_type" plugin does not exist.
 
     drupal/core-composer-scaffold (11.3.5 -> 11.3.6)
 drupal/core-project-message (11.3.5 -> 11.3.6)
