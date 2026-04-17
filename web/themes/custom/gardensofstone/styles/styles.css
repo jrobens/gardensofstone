@@ -92,10 +92,6 @@
   max-height: 2.75rem;
 }
 
-body.toolbar-fixed .navbar.is-black {
-  padding-top: 3rem;
-}
-
 .region-breadcrumb nav.breadcrumb a, .region-breadcrumb nav.breadcrumb a:visited {
   color: #a2671c;
 }
