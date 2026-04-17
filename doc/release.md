@@ -1,3 +1,19 @@
+## Updates 2026-04-17
+
+    drupal/core-composer-scaffold (11.3.6 -> 11.3.7)
+drupal/core-project-message (11.3.6 -> 11.3.7)
+drupal/core-recommended (11.3.6 -> 11.3.7)
+drupal/webform_xlsx_export (1.5.0 -> 1.6.0)
+    None
+
+
+
+## Updates 2026-04-17
+
+colorbox - could not install via composer
+
+> vendor/bin/drush en -y colorbox
+> vendor/bin/drush colorbox:plugin
 
 ## Updates 2026-04-15
 
