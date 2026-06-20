@@ -1,3 +1,44 @@
+## Updates 2026-06-20
+
+    drupal/webform_xlsx_export (1.5.0 -> 1.6.0)
+    None
+## Updates 2026-06-18
+
+    drupal/core-composer-scaffold (11.3.11 -> 11.3.12)
+drupal/core-project-message (11.3.11 -> 11.3.12)
+drupal/core-recommended (11.3.11 -> 11.3.12)
+drupal/module_filter (5.0.4 -> 5.0.5)
+drupal/webform_xlsx_export (1.5.0 -> 1.6.0)
+    None
+## Updates 2026-06-08
+
+    drupal/webform_xlsx_export (1.5.0 -> 1.6.0)
+    None
+## Updates 2026-06-07
+
+    drupal/core-composer-scaffold (11.3.8 -> 11.3.11)
+drupal/core-project-message (11.3.8 -> 11.3.11)
+drupal/core-recommended (11.3.8 -> 11.3.11)
+drupal/entity_clone (2.1.0-beta1 -> 2.2.0-beta1)
+drupal/leaflet (10.4.5 -> 10.4.9)
+drupal/masquerade (2.1.0 -> 2.2.0)
+drupal/menu_item_extras (3.1.0 -> 3.1.1)
+drupal/pathauto (1.14.0 -> 1.15.0)
+drupal/recaptcha_v3 (2.0.4 -> 2.0.5)
+drupal/webform (6.3.0-beta8 -> 6.3.0-rc1)
+drupal/webform_xlsx_export (1.5.0 -> 1.6.0)
+    pathauto-post-remove_uuid_config_key
+views-post-counter_field_not_sortable
+## Updates 2026-04-22
+
+    drupal/core-composer-scaffold (11.3.7 -> 11.3.8)
+drupal/core-project-message (11.3.7 -> 11.3.8)
+drupal/core-recommended (11.3.7 -> 11.3.8)
+drupal/leaflet (10.4.4 -> 10.4.5)
+drupal/nagios (1.25.0 -> 1.26.0)
+drupal/viewsreference (2.0.0-beta10 -> 2.0.0-beta12)
+drupal/webform_xlsx_export (1.5.0 -> 1.6.0)
+    None
 ## Updates 2026-04-17
 
     drupal/core-composer-scaffold (11.3.6 -> 11.3.7)
