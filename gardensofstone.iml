@@ -53,6 +53,7 @@
       <sourceFolder url="file://$MODULE_DIR$/web/core/recipes/tags_taxonomy/tests" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/web/core/recipes/user_picture/tests" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/web/files/civicrm/ext/uk.co.vedaconsulting.mosaico" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/web/files/civicrm/ext/.civicrm-staging/2025-07-07-i4kZeYr6f0JBlXHD/old/uk.co.vedaconsulting.mosaico/vendor/civicrm/composer-downloads-plugin/tests" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/web/files/civicrm/ext/uk.co.vedaconsulting.mosaico/tests" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/scssphp/scssphp" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/egulias/email-validator" />
@@ -216,6 +217,9 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/polyfill-php85" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/thecodingmachine/safe" />
       <excludeFolder url="file://$MODULE_DIR$/web/files/civicrm/ext/uk.co.vedaconsulting.mosaico/vendor/cweagans/composer-patches" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/civicrm/cli-tools" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/phlib/xss-sanitizer" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/phpseclib/phpseclib2_compat" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
   </component>

@@ -1,24 +1,26 @@
+#!/bin/bash
 #  src/drupal-update.sh -y
 
 minor_updates=$1
 job='GOS'
 today=$(date '+%Y-%m-%d')
 
-UPDATES_REPORT=$(composer outdated --direct "drupal/*" --format=json | \
-  jq -r '.installed[] | "\(.name) (\(.version) -> \(.latest))"' 2>/dev/null)
+# 1. Fetch direct outdated packages (including those restricted by constraints)
+UPDATES_REPORT=$(composer outdated --direct --with-dependencies --format=json 2>/dev/null | \
+  jq -r '.installed[] | select(.name | test("drupal/|civicrm/")) | "\(.name) (\(.version) -> \(.latest))"')
 
 if [ -z "$UPDATES_REPORT" ]; then
-    echo "No Drupal updates available."
+    echo "No Drupal or CiviCRM updates available."
     exit 0
 fi
+
 updates_clean=$(echo "$UPDATES_REPORT" | awk '{print $1}' | tr '\n' ' ')
-work_log="*:JR:${today}:${job}:0.2: sys+ update drupal. ${updates_clean}\n"
+work_log="*:JR:${today}:${job}:0.2: sys+ update drupal & civicrm. ${updates_clean}\n"
 sed -i.old "1s;^;${work_log};" doc/work.md
 
-
-
 echo -e "Proposed Updates:\n$UPDATES_REPORT"
-composer update "drupal/*" --with-all-dependencies
+# Update both Drupal packages and civicrm/core simultaneously
+composer update $updates_clean --with-all-dependencies
 
 PENDING_DB_UPDATES=$(vendor/bin/drush updatedb:status --format=list 2>/dev/null)
 
@@ -33,9 +35,15 @@ ex doc/RELEASE.md <<eof
 xit
 eof
 
+# Run Drupal database updates
 vendor/bin/drush updb -y
+
+# Run CiviCRM database updates
+vendor/bin/cv upgrade:db
+
+# Clear Drupal caches
 vendor/bin/drush cr
 
-## More outdated items
-all_updates_clean_drupal=$(composer outdated --format=json | jq -r '.installed[] | select(.name | startswith("drupal/")) | .name' | tr '\n' ' ')
-echo "More updates (run manually): ${all_updates_clean_drupal}"
+## More outdated items (looks for all drupal/ and civicrm/ packages)
+all_updates_clean=$(composer outdated --format=json 2>/dev/null | jq -r '.installed[] | select(.name | test("drupal/|civicrm/")) | .name' | tr '\n' ' ')
+echo "More updates (run manually): ${all_updates_clean}"

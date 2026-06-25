@@ -6999,6 +6999,10 @@
 	width: device-width;
 }
 
+#bootstrap-theme .visible-xs {
+	display: none !important;
+}
+
 #bootstrap-theme .visible-sm {
 	display: none !important;
 }

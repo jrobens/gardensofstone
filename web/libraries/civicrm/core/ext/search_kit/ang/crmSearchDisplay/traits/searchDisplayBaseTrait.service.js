@@ -30,12 +30,33 @@
         for (let p=0; p < placeholderCount; ++p) {
           this.placeholders.push({});
         }
-        // Break reference so original settings are preserved
-        this.columns = _.cloneDeep(this.settings.columns);
-        this.columns.forEach((col) => {
+
+        // Add keys used by crmSearchDisplayTable.toggleColumns
+        const setColumnDefaults = (col) => {
           col.enabled = true;
           col.fetched = true;
-        });
+        };
+
+        // This will ony be true if running the search outside of an Afform.
+        // Within an Afform, default columns will be set by AfformSearchMetadataInjector.
+        if (this.settings.columnMode === 'auto' && (!this.settings.columns || !this.settings.columns.length)) {
+          // start with no columns in case we run before
+          // we've fetched the right ones
+          this.columns = [];
+          crmApi4('SearchDisplay', 'getDefault', {
+            savedSearch: this.search,
+            select: ['settings'],
+          })
+          .then((result) => this.columns = result[0].settings.columns)
+          .then(() => this.columns.forEach(setColumnDefaults))
+          .catch((error) => CRM.alert(ts('Error loading search columns')));
+        }
+        else {
+          // Break reference so original settings are preserved
+          this.columns = _.cloneDeep(this.settings.columns);
+          this.columns.forEach(setColumnDefaults);
+        }
+
         ctrl.onInitialize.forEach(callback => callback.call(ctrl, $scope, $element));
 
         // _.debounce used here to trigger the initial search immediately but prevent subsequent launches within 300ms
@@ -126,6 +147,9 @@
             }
           });
         }
+
+        // Trigger an event when the searchDisplay has completely (re-)loaded
+        this.onPostRun.push(() => $element[0].dispatchEvent(new Event('load')));
 
         // Set up watches to refresh search results when needed.
         // Because `angular.$watch` runs immediately as well as on subsequent changes,
@@ -273,13 +297,17 @@
       },
 
       getFieldClass: function(colIndex, colData) {
-        return (colData.cssClass || '') + ' crm-search-col-type-' + this.settings.columns[colIndex].type + (this.settings.columns[colIndex].break ? '' : ' crm-inline-block');
+        return (colData.cssClass || '') + ' crm-search-col-type-' + this.columns[colIndex].type + (this.columns[colIndex].break ? '' : ' crm-inline-block');
       },
 
       getFieldTemplate: function(colIndex, colData) {
-        let colType = this.settings.columns[colIndex].type;
+        let colType = this.columns[colIndex].type;
         if (colType === 'include') {
-          return this.settings.columns[colIndex].path;
+          // Throw exception if path doesn't start with '~/'
+          if (/^~\/.+/.test(this.columns[colIndex].path) === false) {
+            throw 'Invalid path for include column: "' + this.columns[colIndex].path + '"';
+          }
+          return this.columns[colIndex].path;
         }
         if (colType === 'field') {
           if (colData.edit) {

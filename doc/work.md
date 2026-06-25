@@ -1,3 +1,8 @@
+*:JR:2026-06-25:GOS:0.2: sys+ update drupal  civicrm. civicrm/civicrm-asset-plugin civicrm/civicrm-drupal-8 civicrm/civicrm-packages drupal/webform_xlsx_export 
+*:JR:2026-06-25:GOS:0.2: sys+ update drupal  civicrm. civicrm/civicrm-asset-plugin civicrm/civicrm-drupal-8 civicrm/civicrm-packages drupal/webform_xlsx_export 
+*:JR:2026-06-25:GOS:0.2: sys+ update drupal  civicrm. drupal/webform_xlsx_export 
+*:JR:2026-06-25:GOS:0.2: sys+ update drupal  civicrm. drupal/webform_xlsx_export 
+*:JR:2026-06-25:GOS:0.2: sys+ update drupal. drupal/core-composer-scaffold drupal/core-project-message drupal/core-recommended drupal/nagios drupal/paragraphs drupal/webform drupal/webform_xlsx_export 
 *:JR:2026-06-20:GOS:0.2: sys+ update drupal. drupal/webform_xlsx_export 
 *:JR:2026-06-18:GOS:0.2: sys+ update drupal. drupal/core-composer-scaffold drupal/core-project-message drupal/core-recommended drupal/module_filter drupal/webform_xlsx_export 
 *:JR:2026-06-08:GOS:0.2: sys+ update drupal. drupal/webform_xlsx_export 

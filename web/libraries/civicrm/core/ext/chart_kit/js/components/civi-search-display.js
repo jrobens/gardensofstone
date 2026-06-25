@@ -92,12 +92,14 @@
       return this.getAttribute('total-count');
     }
 
-    // TODO: previously this triggered immediately and had
-    // a trailing debounce?
-    // {leading: true, trailing: false}
     getResultsPronto() {
-      clearTimeout(this.nextRun);
-      this.nextRun = setTimeout(() => this.runSearch(), 300);
+      if (this.justRun) {
+        // if just run, dont run again
+        return;
+      }
+      this.runSearch();
+      this.justRun = true;
+      setTimeout(() => this.justRun = false, 300);
     }
 
     getResultsSoon() {
@@ -181,6 +183,9 @@
           }
         });
       }
+
+      // Trigger an event when the searchDisplay has completely (re-)loaded
+      this.onPostRun.push(() => this.dispatchEvent(new Event('load')));
 
       // NOTE: @see searchDisplayBaseTrait setUpWatches
       // here we reimplement with events

@@ -1,3 +1,39 @@
+## Updates 2026-06-25
+
+    civicrm/civicrm-asset-plugin (v1.2.0 -> v1.2.1)
+civicrm/civicrm-drupal-8 (6.11.0 -> 6.15.5)
+civicrm/civicrm-packages (6.11.0 -> 6.15.5)
+drupal/webform_xlsx_export (1.5.0 -> 1.6.0)
+    None
+## Updates 2026-06-25
+
+    civicrm/civicrm-asset-plugin (v1.2.0 -> v1.2.1)
+civicrm/civicrm-drupal-8 (6.11.0 -> 6.15.5)
+civicrm/civicrm-packages (6.11.0 -> 6.15.5)
+drupal/webform_xlsx_export (1.5.0 -> 1.6.0)
+    None
+## Updates 2026-06-25
+
+    drupal/webform_xlsx_export (1.5.0 -> 1.6.0)
+    None
+## Updates 2026-06-25
+
+    drupal/webform_xlsx_export (1.5.0 -> 1.6.0)
+    None
+
+Put CV into the location distro.
+>  composer require civicrm/cli-tools
+
+## Updates 2026-06-25
+
+    drupal/core-composer-scaffold (11.3.12 -> 11.3.13)
+drupal/core-project-message (11.3.12 -> 11.3.13)
+drupal/core-recommended (11.3.12 -> 11.3.13)
+drupal/nagios (1.26.0 -> 1.27.0)
+drupal/paragraphs (1.20.0 -> 1.21.0)
+drupal/webform (6.3.0-rc1 -> 6.3.0-rc2)
+drupal/webform_xlsx_export (1.5.0 -> 1.6.0)
+    None
 ## Updates 2026-06-20
 
     drupal/webform_xlsx_export (1.5.0 -> 1.6.0)
