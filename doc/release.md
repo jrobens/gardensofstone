@@ -1,3 +1,64 @@
+
+You are using tokens that have been removed or deprecated.
+
+Please review your contribution_online_receipt message template and remove references to the token {$totalTaxAmount} as it has been replaced by {contribution.tax_amount}
+Please review your contribution_online_receipt message template and remove references to the token {$billingName} as it has been replaced by {contribution.address_id.name}
+Please review your contribution_online_receipt message template and remove references to the token {$selectPremium} as it has been replaced by {contribution_product.id|boolean}
+Please review your contribution_online_receipt message template and remove references to the token {$address} as it has been replaced by {contribution.address_id.display}
+Please review your contribution_online_receipt message template and remove references to the token {$amount} as it has been replaced by {see default template for how to show this}
+Please review your membership_offline_receipt message template and remove references to the token {$billingName} as it has been replaced by {contribution.address_id.name}
+Please review your membership_offline_receipt message template and remove references to the token {$address} as it has been replaced by {contribution.address_id.display}
+Please review your membership_online_receipt message template and remove references to the token {$dataArray} as it has been replaced by {see default template for how to show this}
+Please review your membership_online_receipt message template and remove references to the token {$mem_start_date} as it has been replaced by {membership.start_date}
+Please review your membership_online_receipt message template and remove references to the token {$mem_end_date} as it has been replaced by {membership.end_date}
+Please review your membership_online_receipt message template and remove references to the token {$membership_name} as it has been replaced by {membership.membership_type_id:name}
+Please review your membership_online_receipt message template and remove references to the token {$currency} as it has been replaced by {contribution.currency}
+Please review your membership_online_receipt message template and remove references to the token {$totalTaxAmount} as it has been replaced by {contribution.tax_amount}
+Please review your membership_online_receipt message template and remove references to the token {$priceSetID} as it has been replaced by {no longer available / relevant}
+Please review your membership_online_receipt message template and remove references to the token {$useForMember} as it has been replaced by {no longer available / relevant}
+Please review your membership_online_receipt message template and remove references to the token {$billingName} as it has been replaced by {contribution.address_id.name}
+Please review your membership_online_receipt message template and remove references to the token {$price} as it has been replaced by {contribution_product.product_id.price|crmMoney}
+Please review your membership_online_receipt message template and remove references to the token {$address} as it has been replaced by {contribution.address_id.display}
+Please review your membership_online_receipt message template and remove references to the token {$amount} as it has been replaced by {see default template for how to show this}
+Please review your contribution_offline_receipt message template and remove references to the token {$billingName} as it has been replaced by {contribution.address_id.name}
+Please review your contribution_offline_receipt message template and remove references to the token {$address} as it has been replaced by {contribution.address_id.display}
+Please review your event_offline_receipt message template and remove references to the token {$dataArray} as it has been replaced by {see default template for how to show this}
+Please review your event_offline_receipt message template and remove references to the token {$paidBy} as it has been replaced by {contribution.payment_instrument_id:label}
+Please review your event_offline_receipt message template and remove references to the token {$totalTaxAmount} as it has been replaced by {contribution.tax_amount}
+Please review your event_offline_receipt message template and remove references to the token {$amount} as it has been replaced by {see default template for how to show this}
+Please review your event_offline_receipt message template and remove references to the token {$checkNumber} as it has been replaced by {contribution.check_number}
+Please review your event_offline_receipt message template and remove references to the token {$receive_date} as it has been replaced by {contribution.receive_date}
+Please review your event_offline_receipt message template and remove references to the token {$is_pay_later} as it has been replaced by {contribution.is_pay_later}
+Please review your event_offline_receipt message template and remove references to the token {$totalAmount} as it has been replaced by {contribution.total_amount}
+Please review your event_offline_receipt message template and remove references to the token {$location} as it has been replaced by {event.location}
+Please review your event_offline_receipt message template and remove references to the token {$isShowLocation} as it has been replaced by {event.is_show_location|boolean}
+Please review your event_offline_receipt message template and remove references to the token {$event.participant_role} as it has been replaced by {participant.role_id:label}
+Please review your event_offline_receipt message template and remove references to the token {$financialTypeName} as it has been replaced by {contribution.financial_type_id:label}
+Please review your event_offline_receipt message template and remove references to the token {$trxn_id} as it has been replaced by {contribution.trxn_id}
+Please review your event_offline_receipt message template and remove references to the token {$lineItem} as it has been replaced by {$lineItems}
+Please review your event_offline_receipt message template and remove references to the token {$billingName} as it has been replaced by {contribution.address_id.name}
+Please review your event_offline_receipt message template and remove references to the token {$address} as it has been replaced by {contribution.address_id.display}
+Please review your event_online_receipt message template and remove references to the token {$individual} as it has been replaced by {see default template for how to show this}
+Please review your event_online_receipt message template and remove references to the token {$amount} as it has been replaced by {see default template for how to show this}
+Please review your event_online_receipt message template and remove references to the token {$isAdditionalParticipant} as it has been replaced by {see default template for how to show this}
+Please review your event_online_receipt message template and remove references to the token {$location} as it has been replaced by {event.location}
+Please review your event_online_receipt message template and remove references to the token {$register_date} as it has been replaced by {participant.register_date}
+Please review your event_online_receipt message template and remove references to the token {$totalAmount} as it has been replaced by {contribution.total_amount}
+Please review your event_online_receipt message template and remove references to the token {$event.participant_role} as it has been replaced by {participant.role_id:label}
+Please review your event_online_receipt message template and remove references to the token {$paidBy} as it has been replaced by {contribution.payment_instrument_id:label}
+Please review your event_online_receipt message template and remove references to the token {$lineItem} as it has been replaced by {$lineItems}
+Please review your event_online_receipt message template and remove references to the token {$participant_status} as it has been replaced by {participant.status_id:label}
+Please review your event_online_receipt message template and remove references to the token {$billingName} as it has been replaced by {contribution.address_id.name}
+Please review your event_online_receipt message template and remove references to the token {$address} as it has been replaced by {contribution.address_id.display}
+Please review your participant_transferred message template and remove references to the token {$participant.role} as it has been replaced by {participant.role_id:label}
+Please review your participant_expired message template and remove references to the token {$participant.role} as it has been replaced by {participant.role_id:label}
+Please review your participant_confirm message template and remove references to the token {$participant.role} as it has been replaced by {participant.role_id:label}
+Please review your payment_or_refund_notification message template and remove references to the token {$location} as it has been replaced by {event.location}
+Please review your payment_or_refund_notification message template and remove references to the token {$event.participant_role} as it has been replaced by {participant.role_id:label}
+Please review your payment_or_refund_notification message template and remove references to the token {$paymentsComplete} as it has been replaced by {contribution.balance_amount}
+Please review your payment_or_refund_notification message template and remove references to the token {$billingName} as it has been replaced by {contribution.address_id.name}
+
+
 ## Updates 2026-06-25
 
     civicrm/civicrm-asset-plugin (v1.2.0 -> v1.2.1)
