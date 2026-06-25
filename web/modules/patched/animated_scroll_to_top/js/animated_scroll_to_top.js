@@ -1,7 +1,8 @@
 (function ($, Drupal) {
   Drupal.behaviors.animated_scroll_to_top = {
     attach: function (context, drupalSettings) {
-      $('body', context).once('animated_scroll_to_top').append('<a href="#" class="scrollup">' + Drupal.t('Scroll') + '</a>');
+      const elements = once('scroll-behavior', '.scroll-to-top', context);
+      $(elements).once('animated_scroll_to_top').append('<a href="#" class="scrollup">' + Drupal.t('Scroll') + '</a>');
       let position = drupalSettings.animated_scroll_to_top_position;
       let button_bg_color = drupalSettings.animated_scroll_to_top_button_bg_color;
       let hover_button_bg_color = drupalSettings.animated_scroll_to_top_button_hover_bg_color;

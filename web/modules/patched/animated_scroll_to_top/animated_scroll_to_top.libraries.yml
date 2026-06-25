@@ -6,3 +6,5 @@ animated_scroll_to_top:
     js/animated_scroll_to_top.js: { }
   dependencies:
     - core/jquery
+    - core/drupal
+    - core/once
