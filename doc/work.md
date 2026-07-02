@@ -1,3 +1,5 @@
+*:JR:2026-07-02:GOS:0.2: sys+ update drupal  civicrm. civicrm/civicrm-drupal-8 civicrm/civicrm-packages drupal/colorbox drupal/core-composer-scaffold drupal/core-project-message drupal/core-recommended drupal/gin drupal/gin_toolbar drupal/webform_xlsx_export 
+*:JR:2026-06-29:GOS:0.2: sys+ update drupal  civicrm. drupal/gin drupal/gin_toolbar drupal/webform_xlsx_export 
 *:JR:2026-06-25:GOS:0.2: sys+ update drupal  civicrm. civicrm/civicrm-asset-plugin civicrm/civicrm-drupal-8 civicrm/civicrm-packages drupal/webform_xlsx_export 
 *:JR:2026-06-25:GOS:0.2: sys+ update drupal  civicrm. civicrm/civicrm-asset-plugin civicrm/civicrm-drupal-8 civicrm/civicrm-packages drupal/webform_xlsx_export 
 *:JR:2026-06-25:GOS:0.2: sys+ update drupal  civicrm. drupal/webform_xlsx_export 

@@ -5,16 +5,15 @@ minor_updates=$1
 job='GOS'
 today=$(date '+%Y-%m-%d')
 
-# 1. Fetch direct outdated packages (including those restricted by constraints)
-UPDATES_REPORT=$(composer outdated --direct --with-dependencies --format=json 2>/dev/null | \
-  jq -r '.installed[] | select(.name | test("drupal/|civicrm/")) | "\(.name) (\(.version) -> \(.latest))"')
-
+# Fetch direct outdated packages (including those restricted by constraints)
+UPDATES_REPORT=$(composer outdated --direct --format=json 2>/dev/null | \
+  jq -r --arg pattern "drupal/|civicrm/" '.installed[]? | select(.name | test($pattern)) | "\(.name) (\(.version) -> \(.latest))"')
 if [ -z "$UPDATES_REPORT" ]; then
     echo "No Drupal or CiviCRM updates available."
     exit 0
 fi
 
-updates_clean=$(echo "$UPDATES_REPORT" | awk '{print $1}' | tr '\n' ' ')
+updates_clean=$(echo "$UPDATES_REPORT" | awk '{print $1}' | tr '\n' '    ')
 work_log="*:JR:${today}:${job}:0.2: sys+ update drupal & civicrm. ${updates_clean}\n"
 sed -i.old "1s;^;${work_log};" doc/work.md
 

@@ -220,6 +220,11 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/civicrm/cli-tools" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/phlib/xss-sanitizer" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/phpseclib/phpseclib2_compat" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/justinrainbow/json-schema" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/marc-mabe/php-enum" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/polyfill-php86" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/runtime" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/twig/html-extra" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
   </component>

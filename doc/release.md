@@ -1,3 +1,52 @@
+## Updates 2026-07-02
+
+    civicrm/civicrm-drupal-8 (6.15.5 -> 6.16.0)
+    civicrm/civicrm-packages (6.15.5 -> 6.16.0)
+    drupal/colorbox (2.2.0 -> 2.2.1)
+    drupal/core-composer-scaffold (11.3.13 -> 11.4.0)
+    drupal/core-project-message (11.3.13 -> 11.4.0)
+    drupal/core-recommended (11.3.13 -> 11.4.0)
+    drupal/gin (4.0.6 -> 5.0.15)
+    drupal/gin_toolbar (2.0.0 -> 3.0.3)
+    drupal/webform_xlsx_export (1.5.0 -> 1.6.0)
+        system_update_11400
+    system_update_11401
+    civicrm_update_10001
+    search_update_11400
+    field-post-clear_purge_batch_size
+    help-post-search_help_dependencies
+    system-post-migrate_compress_setting
+    system-post-remove_non_admin_routes_state
+
+
+## Delete customised templates
+
+
+    UPDATE civicrm_msg_template
+    SET is_default = 1
+    WHERE is_reserved = 1;
+
+
+    DELETE FROM civicrm_msg_template
+    WHERE is_reserved = 0 and msg_title NOT LIKE '%Sample%';
+
+
+## Updates 2026-06-29
+
+Actuall deletes the template
+
+    vendor/bin/cv api4 MessageTemplate.revert where='[["id", "=", 5]]'
+    vendor/bin/cv api4 MessageTemplate.revert where='[["id", "=", 7]]'
+        vendor/bin/cv api4 MessageTemplate.delete where='[["id", "=", 29]]'
+    vendor/bin/cv api4 MessageTemplate.revert where='[["id", "=", 31]]'
+    vendor/bin/cv api4 MessageTemplate.revert where='[["id", "=", 27]]'
+
+Riverlea theme installed.
+
+    drupal/gin (4.0.6 -> 5.0.15)
+drupal/gin_toolbar (2.0.0 -> 3.0.3)
+drupal/webform_xlsx_export (1.5.0 -> 1.6.0)
+    None
 
 You are using tokens that have been removed or deprecated.
 
