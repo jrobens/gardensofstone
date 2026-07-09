@@ -7,13 +7,14 @@ today=$(date '+%Y-%m-%d')
 
 # Fetch direct outdated packages (including those restricted by constraints)
 UPDATES_REPORT=$(composer outdated --direct --format=json 2>/dev/null | \
-  jq -r --arg pattern "drupal/|civicrm/" '.installed[]? | select(.name | test($pattern)) | "\(.name) (\(.version) -> \(.latest))"')
+jq -r --arg pattern "drupal/|civicrm/" '.installed[]? | select(.name | test($pattern)) | "* \(.name) (\(.version) -> \(.latest))"')
+
 if [ -z "$UPDATES_REPORT" ]; then
     echo "No Drupal or CiviCRM updates available."
     exit 0
 fi
 
-updates_clean=$(echo "$UPDATES_REPORT" | awk '{print $1}' | tr '\n' '    ')
+updates_clean=$(echo "$UPDATES_REPORT" | awk '{print $2}' | tr '\n' '    ')
 work_log="*:JR:${today}:${job}:0.2: sys+ update drupal & civicrm. ${updates_clean}\n"
 sed -i.old "1s;^;${work_log};" doc/work.md
 
@@ -21,6 +22,10 @@ echo -e "Proposed Updates:\n$UPDATES_REPORT"
 # Update both Drupal packages and civicrm/core simultaneously
 composer update $updates_clean --with-all-dependencies
 
+## Didn't work? composer require --no-update $updates_clean
+## Then composer update
+
+print_updates=$(echo "$UPDATES_REPORT" | awk '{print $1}' | tr '^\s+' '    ')
 PENDING_DB_UPDATES=$(vendor/bin/drush updatedb:status --format=list 2>/dev/null)
 
 ## Update the release file
@@ -29,7 +34,7 @@ ex doc/RELEASE.md <<eof
 ## Updates ${today}
 
     ${UPDATES_REPORT}
-    ${PENDING_DB_UPDATES:-None}
+    Database updates: ${PENDING_DB_UPDATES:-None}
 .
 xit
 eof

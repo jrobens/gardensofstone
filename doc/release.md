@@ -1,3 +1,28 @@
+## Updates 2026-07-09
+
+    * drupal/better_social_sharing_buttons (4.1.0 -> 5.0.0)
+* drupal/gin (4.0.6 -> 5.0.15)
+* drupal/gin_toolbar (2.0.0 -> 3.0.3)
+* drupal/webform_xlsx_export (1.5.0 -> 1.6.0)
+    Database updates: None
+## Updates 2026-07-09
+
+    drupal/better_ ocial_ haring_button 
+drupal/gin
+drupal/gin_toolbar
+drupal/webform_xl x_export
+    Database updates: None
+## Updates 2026-07-09
+
+    drupal/better_social_sharing_buttons (4.1.0 -> 5.0.0)
+drupal/core-composer-scaffold (11.4.0 -> 11.4.1)
+drupal/core-project-message (11.4.0 -> 11.4.1)
+drupal/core-recommended (11.4.0 -> 11.4.1)
+drupal/gin (4.0.6 -> 5.0.15)
+drupal/gin_toolbar (2.0.0 -> 3.0.3)
+drupal/webform (6.3.0-rc2 -> 6.3.0)
+drupal/webform_xlsx_export (1.5.0 -> 1.6.0)
+    None
 ## Updates 2026-07-02
 
     civicrm/civicrm-drupal-8 (6.15.5 -> 6.16.0)
