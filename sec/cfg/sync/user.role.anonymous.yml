@@ -7,7 +7,6 @@ dependencies:
   module:
     - civicrm
     - comment
-    - contact
     - filter
     - media
     - photos
@@ -24,7 +23,6 @@ permissions:
   - 'access all custom data'
   - 'access comments'
   - 'access content'
-  - 'access site-wide contact form'
   - 'access uploaded files'
   - 'profile create'
   - 'profile edit'

@@ -36,9 +36,14 @@ PRIMARY KEY (sid)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 ALTER TABLE help_search_items
 ADD COLUMN permission VARCHAR(255) NOT NULL DEFAULT '' COMMENT 'The permission required to clear or view this item';
-ALTER TABLE gos2_cms.help_search_items
-MODIFY COLUMN sid INT UNSIGNED NOT NULL AUTO_INCREMENT COMMENT 'Numeric index of this item in the search index';```
+ALTER TABLE help_search_items
+MODIFY COLUMN sid INT UNSIGNED NOT NULL AUTO_INCREMENT COMMENT 'Numeric index of this item in the search index
+```
+                                                                                                                                                                                   
+   [notice] Module admin_toolbar_links_access_filter has an entry in the system.schema key/value storage, but is not installed. <a href="https://www.drupal.org/node/3137656">More information a  
+  bout this er
 
+drush php:eval "\Drupal::keyValue('system.schema')->delete('admin_toolbar_links_access_filter');"
 
 
 ## Updates 2026-07-09

@@ -28,7 +28,6 @@ dependencies:
     - block
     - block_content
     - civicrm
-    - contact
     - context_ui
     - contextual
     - crop
@@ -72,7 +71,6 @@ permissions:
   - 'administer block content'
   - 'administer block types'
   - 'administer blocks'
-  - 'administer contact forms'
   - 'administer contexts'
   - 'administer crop'
   - 'administer media'
