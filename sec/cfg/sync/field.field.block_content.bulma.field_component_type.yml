@@ -1,0 +1,29 @@
+uuid: d00f8a3a-a62e-4896-ae00-53aab082694b
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.bulma
+    - field.storage.block_content.field_component_type
+    - taxonomy.vocabulary.component_type
+id: block_content.bulma.field_component_type
+field_name: field_component_type
+entity_type: block_content
+bundle: bulma
+label: 'Component type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      component_type: component_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

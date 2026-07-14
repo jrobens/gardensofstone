@@ -1,0 +1,36 @@
+uuid: f222aea2-e64f-47de-a7a6-a82bcb8aca16
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.comment_photos
+    - field.field.comment.comment_photos.comment_body
+  module:
+    - text
+_core:
+  default_config_hash: a7sJg4yVZ7cO8aQKgDCKdRvaMCVQtZ4_A3jpqplz8gE
+id: comment.comment_photos.default
+targetEntityType: comment
+bundle: comment_photos
+mode: default
+content:
+  author:
+    weight: -2
+    region: content
+  comment_body:
+    type: text_textarea
+    weight: 11
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  subject:
+    type: string_textfield
+    weight: 10
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

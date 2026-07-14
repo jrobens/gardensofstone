@@ -1,0 +1,28 @@
+uuid: 95f67973-9787-4c99-b675-aaffa52c6583
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.menu_link_content.field_things_to_do_image
+    - media.type.image
+    - system.menu.things-to-do
+id: menu_link_content.things-to-do.field_things_to_do_image
+field_name: field_things_to_do_image
+entity_type: menu_link_content
+bundle: things-to-do
+label: Image
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

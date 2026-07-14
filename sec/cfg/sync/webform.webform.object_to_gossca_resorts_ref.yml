@@ -1,0 +1,592 @@
+uuid: 281ca1d2-1d5c-449b-8978-c6788708e022
+langcode: en
+status: open
+dependencies:
+  module:
+    - webform_civicrm
+weight: 0
+open: null
+close: null
+uid: 9
+template: false
+archive: false
+id: object_to_gossca_resorts_ref
+title: 'Object to Glamping Resorts in the Gardens of Stone'
+description: '<p>Submission regarding the NPWS draft Review of Environmental Factors for three glamping resorts the Gardens of Stone State Conservation Area (the proposed activity).</p>'
+categories: {  }
+elements: |-
+  plan_of_management:
+    '#type': webform_wizard_page
+    '#title': 'Object now to three commercial resorts planned in pagoda landscapes'
+    markup:
+      '#type': webform_markup
+      '#markup': '<p><strong>Three glamping resorts are proposed in the pagodas landscapes of the Gardens of Stone State Conservation Area - object now</strong><br><br><span style="font-family:Calibri,sans-serif;font-size:11pt;line-height:107%;">The NSW National Parks and Wildlife Service (NPWS) has on exhibition for comment a draft Review of Environmental Factors (draft REF) for exclusive glamping accommodation located among pagoda landforms, that will cause significant visual blight. This </span><a href="/files/page/2026-02/Resort%20Issues.pdf"><span style="font-family:Calibri,sans-serif;font-size:11pt;line-height:107%;">slideshow graphically reveals</span></a><span style="font-family:Calibri,sans-serif;font-size:11pt;line-height:107%;"> what''s at stake with this resort proposal, check it out.</span></p><p><span style="font-family:Calibri,sans-serif;font-size:11pt;line-height:107%;"><strong>The three resort proposals are being advertised for public comment until 5pm Thursday February 26 so don''t delay, write a submission now</strong>.&nbsp;</span><br><br><a href="https://www.gardensofstone.org.au/campaigning-guide-stop-pagoda-resort-development#resort-sub-guide"><span style="font-family:Calibri,sans-serif;font-size:11pt;line-height:107%;">Please make unique individual submission</span></a><span style="font-family:Calibri,sans-serif;font-size:11pt;line-height:107%;">, rather than to use this webform. To assist you, </span><a href="https://www.gardensofstone.org.au/campaigning-guide-stop-pagoda-resort-development#resort-sub-guide"><span style="font-family:Calibri,sans-serif;font-size:11pt;line-height:107%;">access this dot guide</span></a><span style="font-family:Calibri,sans-serif;font-size:11pt;line-height:107%;"> that provides suggestions regarding the scope of the disturbing issues that are associated with this NPWS resort proposal for private commercial development.</span><br><br><span style="font-family:Calibri,sans-serif;font-size:11pt;line-height:107%;">The glamping resort proposal creates an appalling precedent for national parks of the NPWS advancing development blight in internationally significant platy pagoda landscapes that should be protected in this "national park in waiting".</span></p><p><span style="font-family:Calibri,sans-serif;font-size:11pt;line-height:107%;">Please make an objection by either going to the </span><a href="https://www.environment.nsw.gov.au/topics/parks-reserves-and-protected-areas/park-management/community-engagement/walking-tracks-and-trails-in-national-parks/gardens-of-stone-state-conservation-area/bush-camps-draft-review-environmental-factors-consultation"><span style="font-family:Calibri,sans-serif;font-size:11pt;line-height:107%;">NSW Government''s comments page</span></a><span style="font-family:Calibri,sans-serif;font-size:11pt;line-height:107%;"> or you can modify this guide submission in the webform below to make a quick submission from here:</span></p>'
+    submission:
+      '#type': fieldset
+      '#title': 'Objection to the granting of cabin leases among pagodas in the Gardens of Stone '
+      '#title_display': invisible
+      '#access_create_roles':
+        - authenticated
+        - anonymous
+      '#access_update_roles':
+        - authenticated
+        - anonymous
+      '#access_view_roles':
+        - authenticated
+        - anonymous
+      plan_of_management_submission:
+        '#type': textarea
+        '#title': 'Objection to resorts development among platy pagodas'
+        '#rows': 40
+        '#required': true
+        '#default_value': |-
+          Gardens of Stone State Conservation Area Project Team
+          PO Box 552
+          Katoomba NSW 2780
+
+          To whom it may concern,
+
+          Re: Objection to Glamping Resorts in rare pagoda landscapes
+
+          I am writing to formally object to the proposed glamping resorts (bush camps) within the Gardens of Stone State Conservation Area for the following reasons:
+
+          1. Environmental and Landscape Impact
+
+          Visual pollution: Placing commercial structures in undisturbed pagoda landscapes degrades the visual amenity of this geodiversity that the NPWS has a duty to preserve.
+
+          Irreplaceable Heritage: These resorts will permanently degrade these rare, internationally significant "platy pagoda" landscapes that this national park in waiting was specifically created to protect.
+
+          Physical Incompatibility: The requirement to build 60m² foreign soil mounds for waste disposal on top of sandstone rockplates proves these sites are physically and ecologically unsuitable for the proposed accommodation infrastructure.
+
+          2. Flawed Assessment (REF)
+
+          Misleading Claims: The draft REF incorrectly labels these pristine sites as "degraded" to justify development. This is a fundamental misrepresentation of the actual condition of both the resort sites and the specific locality in which they are placed.
+
+          Manipulated Definitions: I object to the NPWS narrowly defining pagoda landscapes to exclude sandstone rockplate buffers, which ignores the reality of the pagoda shrubland ecosystem in which the pagodas sit.
+
+          3. Public Equity and Integrity
+
+          Wealth vs. Access: This proposal replaces a so-called "fitness barrier" (the ability to walk) with a "wealth barrier" (the ability to pay for luxury stays). These outstanding landscapes of natural beauty should be protected for the general public, not commodified for a few.
+
+          Conflict of Interest: The NPWS is acting as both the proponent and the decision-maker. These specific duties compromise the core NPWS conservation responsibilities for commercial gain and is a breach of public trust.
+
+          Lack of Transparency: The leasing process has allowed these rare landscapes to be traded between corporations like speculative real estate without adequate public scrutiny.
+
+          Conclusion: I urge the NPWS to reject these three glamping proposals. The integrity of rare platy pagoda landscapes in the Gardens of Stone SCA requires rejection of these inappropriate located commercial resort proposals. The 60m² soil mound on a rock plate highlights how clumsy the engineering is for such a delicate area.
+
+          Yours sincerely, 
+  name_and_address:
+    '#type': webform_wizard_page
+    '#title': 'Name and Address'
+    '#access_create_roles':
+      - authenticated
+      - anonymous
+    '#access_update_roles':
+      - authenticated
+      - anonymous
+    '#access_view_roles':
+      - authenticated
+      - anonymous
+    civicrm_1_contact_1_fieldset_fieldset:
+      '#type': fieldset
+      '#title': 'Contact 1'
+      '#form_key': civicrm_1_contact_1_fieldset_fieldset
+      civicrm_1_contact_1_contact_existing:
+        '#type': civicrm_contact
+        '#search_prompt': '- Choose existing -'
+        '#widget': hidden
+        '#form_key': civicrm_1_contact_1_contact_existing
+        '#allow_create': 1
+        '#none_prompt': '+ Create new +'
+        '#default': user
+        '#contact_type': individual
+        '#parent': civicrm_1_contact_1_fieldset_fieldset
+        '#extra': {  }
+        '#title': 'Existing Contact'
+      civicrm_1_contact_1_contact_first_name:
+        '#type': textfield
+        '#counter_type': character
+        '#counter_maximum': 64
+        '#counter_maximum_message': ' '
+        '#contact_type': individual
+        '#form_key': civicrm_1_contact_1_contact_first_name
+        '#extra':
+          width: 20
+        '#parent': civicrm_1_contact_1_fieldset_fieldset
+        '#title': 'First Name'
+      civicrm_1_contact_1_contact_last_name:
+        '#type': textfield
+        '#counter_type': character
+        '#counter_maximum': 64
+        '#counter_maximum_message': ' '
+        '#contact_type': individual
+        '#form_key': civicrm_1_contact_1_contact_last_name
+        '#extra':
+          width: 20
+        '#parent': civicrm_1_contact_1_fieldset_fieldset
+        '#title': 'Last Name'
+      civicrm_1_contact_1_address_postal_code:
+        '#type': textfield
+        '#counter_type': character
+        '#counter_maximum': 64
+        '#counter_maximum_message': ' '
+        '#extra':
+          width: 7
+        '#form_key': civicrm_1_contact_1_address_postal_code
+        '#parent': civicrm_1_contact_1_fieldset_fieldset
+        '#title': 'Postal Code'
+      civicrm_1_contact_1_email_email:
+        '#type': email
+        '#form_key': civicrm_1_contact_1_email_email
+        '#extra':
+          width: 20
+        '#parent': civicrm_1_contact_1_fieldset_fieldset
+        '#title': Email
+    captcha:
+      '#type': captcha
+css: ''
+javascript: ''
+settings:
+  ajax: false
+  ajax_scroll_top: form
+  ajax_progress_type: ''
+  ajax_effect: ''
+  ajax_speed: null
+  page: true
+  page_submit_path: ''
+  page_confirm_path: ''
+  page_theme_name: ''
+  form_title: source_entity_webform
+  form_submit_once: false
+  form_open_message: ''
+  form_close_message: ''
+  form_exception_message: ''
+  form_previous_submissions: true
+  form_confidential: false
+  form_confidential_message: ''
+  form_disable_remote_addr: false
+  form_convert_anonymous: false
+  form_prepopulate: false
+  form_prepopulate_source_entity: false
+  form_prepopulate_source_entity_required: false
+  form_prepopulate_source_entity_type: ''
+  form_unsaved: false
+  form_disable_back: false
+  form_submit_back: false
+  form_disable_autocomplete: false
+  form_novalidate: false
+  form_disable_inline_errors: false
+  form_required: false
+  form_autofocus: false
+  form_details_toggle: false
+  form_reset: false
+  form_access_denied: default
+  form_access_denied_title: ''
+  form_access_denied_message: ''
+  form_access_denied_attributes: {  }
+  form_file_limit: ''
+  form_file_limit_message: ''
+  form_attributes: {  }
+  form_method: ''
+  form_action: ''
+  share: false
+  share_node: false
+  share_theme_name: ''
+  share_title: true
+  share_page_body_attributes: {  }
+  submission_label: ''
+  submission_exception_message: ''
+  submission_locked_message: ''
+  submission_log: false
+  submission_excluded_elements: {  }
+  submission_exclude_empty: false
+  submission_exclude_empty_checkbox: false
+  submission_views: {  }
+  submission_views_replace: {  }
+  submission_user_columns: {  }
+  submission_user_duplicate: false
+  submission_access_denied: default
+  submission_access_denied_title: ''
+  submission_access_denied_message: ''
+  submission_access_denied_attributes: {  }
+  previous_submission_message: ''
+  previous_submissions_message: ''
+  autofill: false
+  autofill_message: ''
+  autofill_excluded_elements: {  }
+  wizard_progress_bar: true
+  wizard_progress_pages: false
+  wizard_progress_percentage: false
+  wizard_progress_link: false
+  wizard_progress_states: false
+  wizard_start_label: ''
+  wizard_preview_link: false
+  wizard_confirmation: true
+  wizard_confirmation_label: ''
+  wizard_auto_forward: true
+  wizard_auto_forward_hide_next_button: false
+  wizard_keyboard: true
+  wizard_track: ''
+  wizard_prev_button_label: ''
+  wizard_next_button_label: ''
+  wizard_toggle: true
+  wizard_toggle_show_label: ''
+  wizard_toggle_hide_label: ''
+  wizard_page_type: container
+  wizard_page_title_tag: h2
+  preview: 0
+  preview_label: ''
+  preview_title: ''
+  preview_message: ''
+  preview_attributes: {  }
+  preview_excluded_elements: {  }
+  preview_exclude_empty: true
+  preview_exclude_empty_checkbox: false
+  draft: none
+  draft_multiple: false
+  draft_auto_save: false
+  draft_saved_message: ''
+  draft_loaded_message: ''
+  draft_pending_single_message: ''
+  draft_pending_multiple_message: ''
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_title: 'Thank you for your submission'
+  confirmation_message: '<p>Your submission to:</p><p>The <span style="-webkit-text-stroke-width:0px;caret-color:rgb(0, 0, 0);color:rgb(0, 0, 0);font-family:Aptos, sans-serif;font-size:12pt;font-style:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-thickness:auto;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;">Gardens of Stone State Conservation Area Project Team</span> of the NSW National Parks and Wildlife Service; and to&nbsp;</p><p>Mr Brett Mitchell, Managing Director of Intrepid Travel, Australia has been sent.&nbsp;</p><p>&nbsp;</p><p>An email record of your submissions has been sent to you.</p><p>Thank you for your help in seeking protection for the iconic plates pagoda landscapes of the Gardens of Stone State Conservation Area from the blight that would be caused by placing commercial glamping resorts in them.</p><p>Sincerely,</p><p>Keith Muir<br>Hon. Projects Officer<br>Wilderness Australia</p>'
+  confirmation_attributes: {  }
+  confirmation_back: true
+  confirmation_back_label: ''
+  confirmation_back_attributes: {  }
+  confirmation_exclude_query: false
+  confirmation_exclude_token: false
+  confirmation_update: false
+  limit_total: null
+  limit_total_interval: null
+  limit_total_message: ''
+  limit_total_unique: false
+  limit_user: null
+  limit_user_interval: null
+  limit_user_message: ''
+  limit_user_unique: false
+  entity_limit_total: null
+  entity_limit_total_interval: null
+  entity_limit_user: null
+  entity_limit_user_interval: null
+  purge: none
+  purge_days: null
+  results_disabled: false
+  results_disabled_ignore: false
+  results_customize: false
+  token_view: false
+  token_update: false
+  token_delete: false
+  serial_disabled: false
+access:
+  create:
+    roles:
+      - authenticated
+      - anonymous
+    users: {  }
+    permissions: {  }
+  view_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  purge_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  view_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  administer:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  test:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  configuration:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+handlers:
+  email:
+    id: email
+    handler_id: email
+    label: Email
+    notes: 'Send yourself a copy'
+    status: true
+    conditions: {  }
+    weight: 0
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:civicrm_1_contact_1_email_email]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: _default
+      from_options: {  }
+      from_name: _default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'Objection to Glamping Resorts among pagoda landscapes in the Gardens of Stone SCA'
+      body: '<p>[webform_submission:values:plan_of_management_submission]<br>&nbsp;</p><p>[webform_submission:values:civicrm_1_contact_1_contact_first_name] [webform_submission:values:civicrm_1_contact_1_contact_last_name] [webform_submission:values:civicrm_1_contact_1_email_email] [webform_submission:values:civicrm_1_contact_1_address_postal_code]</p>'
+      excluded_elements:
+        civicrm_1_contact_1_email_email: civicrm_1_contact_1_email_email
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: true
+      attachments: false
+      twig: false
+      theme_name: ''
+      langcode: ''
+      parameters: {  }
+      debug: false
+  branch_office_email:
+    id: email
+    handler_id: branch_office_email
+    label: 'NPWS GoS email'
+    notes: "target email address\r\n"
+    status: true
+    conditions: {  }
+    weight: 0
+    settings:
+      states:
+        - completed
+      to_mail: gardensofstonesca@environment.nsw.gov.au
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: 'keith.muir6@bigpond.com, brett.mitchell@intrepidtravel.com'
+      cc_options: {  }
+      from_mail: _default
+      from_options: {  }
+      from_name: _default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'Objection to Glamping Resorts in the Gardens of Stone SCA'
+      body: '<p>[webform_submission:values:plan_of_management_submission]<br>&nbsp;</p><p>[webform_submission:values:civicrm_1_contact_1_contact_first_name] [webform_submission:values:civicrm_1_contact_1_contact_last_name] [webform_submission:values:civicrm_1_contact_1_email_email] [webform_submission:values:civicrm_1_contact_1_address_postal_code]</p>'
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: true
+      attachments: false
+      twig: false
+      theme_name: ''
+      langcode: ''
+      parameters: {  }
+      debug: false
+  webform_civicrm:
+    id: webform_civicrm
+    handler_id: webform_civicrm
+    label: CiviCRM
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: -50
+    settings:
+      nid: 1
+      number_of_contacts: '1'
+      1_contact_type: individual
+      1_webform_label: 'Your details'
+      civicrm_1_contact_1_contact_contact_sub_type: {  }
+      civicrm_1_contact_1_contact_existing: create_civicrm_webform_element
+      civicrm_1_contact_1_contact_prefix_id: 0
+      civicrm_1_contact_1_contact_first_name: create_civicrm_webform_element
+      civicrm_1_contact_1_contact_middle_name: 0
+      civicrm_1_contact_1_contact_last_name: create_civicrm_webform_element
+      civicrm_1_contact_1_contact_suffix_id: 0
+      civicrm_1_contact_1_contact_nick_name: 0
+      civicrm_1_contact_1_contact_gender_id: 0
+      civicrm_1_contact_1_contact_job_title: 0
+      civicrm_1_contact_1_contact_birth_date: 0
+      civicrm_1_contact_1_contact_preferred_communication_method: 0
+      civicrm_1_contact_1_contact_privacy: 0
+      civicrm_1_contact_1_contact_preferred_language: 0
+      civicrm_1_contact_1_contact_communication_style_id: 0
+      civicrm_1_contact_1_contact_image_url: 0
+      civicrm_1_contact_1_contact_contact_id: 0
+      civicrm_1_contact_1_contact_user_id: 0
+      civicrm_1_contact_1_contact_external_identifier: 0
+      civicrm_1_contact_1_contact_source: 0
+      civicrm_1_contact_1_contact_cs: 0
+      civicrm_1_contact_1_contact_employer_id: 0
+      civicrm_1_contact_1_contact_is_deceased: 0
+      civicrm_1_contact_1_contact_deceased_date: 0
+      contact_1_settings_matching_rule: Unsupervised
+      contact_1_number_of_other: '1'
+      civicrm_1_contact_1_other_group:
+        10: '10'
+      civicrm_1_contact_1_other_tag:
+        '': ''
+      contact_1_number_of_address: '1'
+      civicrm_1_contact_1_address_street_address: 0
+      civicrm_1_contact_1_address_street_name: 0
+      civicrm_1_contact_1_address_street_number: 0
+      civicrm_1_contact_1_address_street_unit: 0
+      civicrm_1_contact_1_address_name: 0
+      civicrm_1_contact_1_address_supplemental_address_1: 0
+      civicrm_1_contact_1_address_supplemental_address_2: 0
+      civicrm_1_contact_1_address_supplemental_address_3: 0
+      civicrm_1_contact_1_address_city: 0
+      civicrm_1_contact_1_address_postal_code: create_civicrm_webform_element
+      civicrm_1_contact_1_address_postal_code_suffix: 0
+      civicrm_1_contact_1_address_country_id: 0
+      civicrm_1_contact_1_address_state_province_id: 0
+      civicrm_1_contact_1_address_county_id: 0
+      civicrm_1_contact_1_address_location_type_id: '1'
+      civicrm_1_contact_1_address_is_primary: '1'
+      contact_1_number_of_phone: '0'
+      contact_1_number_of_email: '1'
+      civicrm_1_contact_1_email_email: create_civicrm_webform_element
+      civicrm_1_contact_1_email_location_type_id: '1'
+      civicrm_1_contact_1_email_is_primary: '1'
+      contact_1_number_of_website: '0'
+      contact_1_number_of_im: '0'
+      prefix_known: ''
+      prefix_unknown: ''
+      toggle_message: 0
+      message: ''
+      activity_number_of_activity: '0'
+      participant_reg_type: '0'
+      reg_options:
+        event_type:
+          any: any
+        show_past_events: now
+        show_future_events: '1'
+        show_public_events: all
+        title_display: title
+        show_full_events: 1
+        event_sort_field: start_date
+        show_remaining: '0'
+        validate: 1
+        block_form: 0
+        disable_unregister: 0
+        allow_url_load: 0
+        disable_primary_participant: 0
+      membership_1_number_of_membership: '0'
+      checksum_text: ''
+      create_fieldsets: 1
+      confirm_subscription: 1
+      block_unknown_users: 0
+      create_new_relationship: 0
+      disable_contact_paging: 0
+      new_contact_source: 'Object to Glamping Resorts in the Gardens of Stone'
+      data:
+        contact:
+          1:
+            contact:
+              1:
+                contact_type: individual
+                contact_sub_type: {  }
+                webform_label: 'Your details'
+            matching_rule: Unsupervised
+            number_of_other: '1'
+            number_of_address: '1'
+            number_of_phone: '0'
+            number_of_email: '1'
+            number_of_website: '0'
+            number_of_im: '0'
+            other:
+              1:
+                group:
+                  10: '10'
+            address:
+              1:
+                location_type_id: '1'
+                is_primary: '1'
+            email:
+              1:
+                location_type_id: '1'
+                is_primary: '1'
+        activity:
+          number_of_activity: '0'
+        membership:
+          1:
+            number_of_membership: '0'
+        participant_reg_type: '0'
+        reg_options:
+          event_type:
+            any: any
+          show_past_events: now
+          show_future_events: '1'
+          show_public_events: all
+          title_display: title
+          show_full_events: 1
+          event_sort_field: start_date
+          show_remaining: '0'
+          validate: 1
+          block_form: 0
+          disable_unregister: 0
+          allow_url_load: 0
+          disable_primary_participant: 0
+  npws_gos_email:
+    id: email
+    handler_id: npws_gos_email
+    label: 'NPWS GoS email'
+    notes: "target email address\r\n"
+    status: true
+    conditions: {  }
+    weight: 3
+    settings:
+      states:
+        - completed
+      to_mail: jrobens@interlated.com.au
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: _default
+      from_options: {  }
+      from_name: _default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'Objection to Glamping Resorts in the Gardens of Stone SCA'
+      body: '<p>[webform_submission:values:plan_of_management_submission]<br>&nbsp;</p><p>[webform_submission:values:civicrm_1_contact_1_contact_first_name] [webform_submission:values:civicrm_1_contact_1_contact_last_name] [webform_submission:values:civicrm_1_contact_1_email_email] [webform_submission:values:civicrm_1_contact_1_address_postal_code]</p>'
+      excluded_elements:
+        civicrm_1_contact_1_contact_existing: civicrm_1_contact_1_contact_existing
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: true
+      attachments: false
+      twig: false
+      theme_name: ''
+      langcode: ''
+      parameters: {  }
+      debug: false
+variants: {  }

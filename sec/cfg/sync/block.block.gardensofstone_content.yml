@@ -1,0 +1,22 @@
+uuid: 11a74309-d8da-452c-bc31-d9926d3f959f
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - gardensofstone
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: gardensofstone_content
+theme: gardensofstone
+region: content
+weight: -7
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

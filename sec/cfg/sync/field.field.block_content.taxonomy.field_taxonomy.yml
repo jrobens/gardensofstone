@@ -1,0 +1,23 @@
+uuid: 1cf8bf41-7d1c-4636-bc12-53393fd76024
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.taxonomy
+    - field.storage.block_content.field_taxonomy
+id: block_content.taxonomy.field_taxonomy
+field_name: field_taxonomy
+entity_type: block_content
+bundle: taxonomy
+label: Taxonomy
+description: 'List terms'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_vocabulary'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: entity_reference

@@ -1,0 +1,10 @@
+uuid: 8c775624-9772-4faf-9f64-2113d65c8b1a
+langcode: en
+status: true
+dependencies: {  }
+id: crossfade_banner
+label: 'Crossfade banner'
+icon_uuid: null
+icon_default: null
+description: 'Build a cross fade banner'
+behavior_plugins: {  }

@@ -1,0 +1,42 @@
+uuid: 0dc92876-cfaf-48d3-9564-caa7f129d6f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.text.field_pbtext_style
+    - field.field.paragraph.text.field_pbtext_text
+    - field.field.paragraph.text.field_pbtext_textsum
+    - paragraphs.paragraphs_type.text
+  module:
+    - entity_class_formatter
+    - text
+id: paragraph.text.default
+targetEntityType: paragraph
+bundle: text
+mode: default
+content:
+  field_pbtext_style:
+    type: entity_class_formatter
+    label: hidden
+    settings:
+      prefix: ''
+      suffix: ''
+      attr: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_pbtext_text:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_pbtext_textsum:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

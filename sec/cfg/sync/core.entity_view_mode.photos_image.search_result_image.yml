@@ -1,0 +1,13 @@
+uuid: 91c55ea6-a7f8-4a50-b53b-293803785027
+langcode: en
+status: false
+dependencies:
+  module:
+    - photos
+_core:
+  default_config_hash: WyNxeXyqjPXGLGXUOsUOKw9VKmUrwlsIgEe8WupPPDY
+id: photos_image.search_result_image
+label: 'Search Result Image'
+description: ''
+targetEntityType: photos_image
+cache: true

@@ -1,0 +1,33 @@
+uuid: 28c16158-7e2c-44fb-8100-5340ca7979ef
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.index_block.field_pbindex_block
+    - paragraphs.paragraphs_type.index_block
+  module:
+    - viewsreference
+_core:
+  default_config_hash: LrcB6tyH2IFXTvFdpU4i7AzLzXWjLiTvQHSN5A9Kdls
+id: paragraph.index_block.default
+targetEntityType: paragraph
+bundle: index_block
+mode: default
+content:
+  admin_title:
+    type: string_textfield
+    weight: -10
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_pbindex_block:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: viewsreference_select
+    region: content
+hidden:
+  created: true
+  status: true

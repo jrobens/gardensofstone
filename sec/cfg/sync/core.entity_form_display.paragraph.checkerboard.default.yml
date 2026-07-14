@@ -1,0 +1,70 @@
+uuid: c55b0543-6913-4f82-ad10-dc22e8e16c90
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.checkerboard.field_pbcheckerboard_icon
+    - field.field.paragraph.checkerboard.field_pbcheckerboard_link
+    - field.field.paragraph.checkerboard.field_pbcheckerboard_style
+    - field.field.paragraph.checkerboard.field_pbcheckerboard_text
+    - field.field.paragraph.checkerboard.field_pbcheckerboard_title
+    - paragraphs.paragraphs_type.checkerboard
+  module:
+    - link
+    - media_library
+    - text
+_core:
+  default_config_hash: M_-fwR3JQnRmi5ON-LaPcDVGf4D5gjB5ejrVVmWFAl4
+id: paragraph.checkerboard.default
+targetEntityType: paragraph
+bundle: checkerboard
+mode: default
+content:
+  admin_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_pbcheckerboard_icon:
+    type: media_library_widget
+    weight: 1
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_pbcheckerboard_link:
+    type: link_default
+    weight: 4
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_pbcheckerboard_style:
+    type: options_buttons
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_pbcheckerboard_text:
+    type: text_textarea
+    weight: 3
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_pbcheckerboard_title:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

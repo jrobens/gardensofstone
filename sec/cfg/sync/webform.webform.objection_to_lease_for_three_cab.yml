@@ -1,0 +1,378 @@
+uuid: 79fc7fe2-aefb-43aa-a52b-908060ce5b6b
+langcode: en
+status: closed
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 9
+template: false
+archive: false
+id: objection_to_lease_for_three_cab
+title: 'Make an objection to lease for three cabin developments in the Gardens of Stone SCA'
+description: 'Submission regarding a commercial accommodation lease over the Gardens of Stone State Conservation Area'
+categories: {  }
+elements: |-
+  plan_of_management:
+    '#type': webform_wizard_page
+    '#title': 'Make an object to commerical lease development located among pagoda rocks/threats'
+    markup:
+      '#type': webform_markup
+      '#access_create_roles':
+        - authenticated
+        - anonymous
+      '#access_update_roles':
+        - authenticated
+        - anonymous
+      '#access_view_roles':
+        - authenticated
+        - anonymous
+      '#markup': |-
+        <p><strong>Make an objection to commercial cabin development among pagodas in Gardens of Stone State Conservation Area</strong><br />
+        <br />
+        <span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Calibri,sans-serif">The NSW Government has placed on exhibition for comment a lease notice for exclusive cabin accommodation located among pagoda landforms, causing visual blight. <a href="/news/bid-serviced-cabins-blue-mountains-park-will-test-minns-governments-green-credentials">A media response to the lease notice explains some of the issues</a>.<br />
+        <br />
+        It is far better to make an unique individual submission, than to use this webform. If you would like to have a go at that, then <a href="/gardens-stone-sca-cabins-lease-dot-point-guide-making-objection">please use this dot guide</a>.<br />
+        <br />
+        The lease proposal creates an appalling precedent of putting accommodation development in parks on top of visually prominent landscape features.</span></span></span><br />
+        <span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Calibri,sans-serif">The proposal also creates two classes of park visitor: the haves who get luxury accommodation, and are waited on; and the have nots who look after themselves. This sort of thing has been fought off our beaches, like Bondi, and now its time to fight it out of our parks.</span></span></span><br />
+        <br />
+        <span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Calibri,sans-serif"><strong>The lease proposal in this conservation reserve is being advertised until June 26</strong>. The parent company involved with these proposals is Experience Co (the company that has plans to develop cabins in the Tasmanian Wilderness World Heritage Area, denying the world its best temperate coastal wilderness).</span></span></span><br />
+        <br />
+        <span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Calibri,sans-serif">Please make an objection by either going to the <a href="https://www.environment.nsw.gov.au/topics/parks-reserves-and-protected-areas/park-management/community-engagement/walking-tracks-and-trails-in-national-parks/gardens-of-stone-state-conservation-area/gardens-of-stone-multi-day-walk-lease">NSW Government&#39;s comments page</a> or you can modify the guide submission in the webform below:</span></span></span></p>
+    submission:
+      '#type': fieldset
+      '#title': 'Objection to the granting of cabin leases among pagodas in the Gardens of Stone '
+      '#title_display': invisible
+      '#access_create_roles':
+        - authenticated
+        - anonymous
+      '#access_update_roles':
+        - authenticated
+        - anonymous
+      '#access_view_roles':
+        - authenticated
+        - anonymous
+      plan_of_management_submission:
+        '#type': textarea
+        '#title': 'Submission as an objection to cabin lease development'
+        '#rows': 40
+        '#required': true
+        '#default_value': |-
+          Manager
+          Property and Lease Management Unit
+          Locked Bag 5022
+          Parramatta NSW 2124
+
+          To whom it may concern,
+
+          I object to a lease being issued to Wild Bush Luxury because the proposed cabin accommodation would adversely impact the cultural and natural heritage of three beautiful pagoda landscapes in the Gardens of Stone State Conservation Area. 
+
+          I object to this company being given exclusive possession to create luxury, serviced accommodation that would blight pagoda scenery. The public campgrounds are discretely tucked away, but not so these cabin developments. Three cabin developments in pagoda landscapes are a development over-reach and completely inappropriate.
+
+          The tourist guidelines for parks are supposed to protect pristine areas, but this proposal seeks to develop cabin accommodation within the remote, undisturbed pagoda areas causing damage to the Gardens of Stone. The proposal will set an appalling precedent of prominent highly visual development in a park.
+
+          Experience Co wants to prominently develop cabins in spectacular landscapes so it can then use images of its cabins nestled among stunning pagodas rock formations in its marketing publicity. I strongly object to this a crude form of park privatisation.
+
+          The NSW Government rejected the Lost City adventure park that damaged valuable scenery. Environment Minister Penny Sharpe needs to be consistent and reject this lease proposal that would harm not one, but three pagoda landscapes.
+
+          Thank you for the opportunity to comment.
+
+          Sincerely,
+        '#access_create_roles':
+          - authenticated
+          - anonymous
+        '#access_update_roles':
+          - authenticated
+          - anonymous
+        '#access_view_roles':
+          - authenticated
+          - anonymous
+  name_and_address:
+    '#type': webform_wizard_page
+    '#title': 'Name and Address'
+    '#access_create_roles':
+      - authenticated
+      - anonymous
+    '#access_update_roles':
+      - authenticated
+      - anonymous
+    '#access_view_roles':
+      - authenticated
+      - anonymous
+    email:
+      '#type': email
+      '#title': Email
+      '#required': true
+    civicrm_1_contact_1_address_postal_code:
+      '#type': textfield
+      '#title': 'Post Code'
+      '#required': true
+      '#extra':
+        width: 7
+      '#form_key': civicrm_1_contact_1_address_postal_code
+      '#parent': civicrm_1_contact_1_fieldset_fieldset
+    subscribe_to_our_mailing_list:
+      '#type': checkbox
+      '#title': 'Subscribe to our mailing list'
+css: ''
+javascript: ''
+settings:
+  ajax: false
+  ajax_scroll_top: form
+  ajax_progress_type: ''
+  ajax_effect: ''
+  ajax_speed: null
+  page: true
+  page_submit_path: ''
+  page_confirm_path: ''
+  page_theme_name: ''
+  form_title: source_entity_webform
+  form_submit_once: false
+  form_open_message: ''
+  form_close_message: ''
+  form_exception_message: ''
+  form_previous_submissions: true
+  form_confidential: false
+  form_confidential_message: ''
+  form_disable_remote_addr: false
+  form_convert_anonymous: false
+  form_prepopulate: false
+  form_prepopulate_source_entity: false
+  form_prepopulate_source_entity_required: false
+  form_prepopulate_source_entity_type: ''
+  form_unsaved: false
+  form_disable_back: false
+  form_submit_back: false
+  form_disable_autocomplete: false
+  form_novalidate: false
+  form_disable_inline_errors: false
+  form_required: false
+  form_autofocus: false
+  form_details_toggle: false
+  form_reset: false
+  form_access_denied: default
+  form_access_denied_title: ''
+  form_access_denied_message: ''
+  form_access_denied_attributes: {  }
+  form_file_limit: ''
+  form_attributes: {  }
+  form_method: ''
+  form_action: ''
+  share: false
+  share_node: false
+  share_theme_name: ''
+  share_title: true
+  share_page_body_attributes: {  }
+  submission_label: ''
+  submission_exception_message: ''
+  submission_locked_message: ''
+  submission_log: false
+  submission_excluded_elements: {  }
+  submission_exclude_empty: false
+  submission_exclude_empty_checkbox: false
+  submission_views: {  }
+  submission_views_replace: {  }
+  submission_user_columns: {  }
+  submission_user_duplicate: false
+  submission_access_denied: default
+  submission_access_denied_title: ''
+  submission_access_denied_message: ''
+  submission_access_denied_attributes: {  }
+  previous_submission_message: ''
+  previous_submissions_message: ''
+  autofill: false
+  autofill_message: ''
+  autofill_excluded_elements: {  }
+  wizard_progress_bar: true
+  wizard_progress_pages: false
+  wizard_progress_percentage: false
+  wizard_progress_link: false
+  wizard_progress_states: false
+  wizard_start_label: ''
+  wizard_preview_link: false
+  wizard_confirmation: true
+  wizard_confirmation_label: ''
+  wizard_auto_forward: true
+  wizard_auto_forward_hide_next_button: false
+  wizard_keyboard: true
+  wizard_track: ''
+  wizard_prev_button_label: ''
+  wizard_next_button_label: ''
+  wizard_toggle: true
+  wizard_toggle_show_label: ''
+  wizard_toggle_hide_label: ''
+  wizard_page_type: container
+  wizard_page_title_tag: h2
+  preview: 0
+  preview_label: ''
+  preview_title: ''
+  preview_message: ''
+  preview_attributes: {  }
+  preview_excluded_elements: {  }
+  preview_exclude_empty: true
+  preview_exclude_empty_checkbox: false
+  draft: none
+  draft_multiple: false
+  draft_auto_save: false
+  draft_saved_message: ''
+  draft_loaded_message: ''
+  draft_pending_single_message: ''
+  draft_pending_multiple_message: ''
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_title: 'Thank you for your submission'
+  confirmation_message: "<p>Your submission to:</p>\r\n\r\n<ul>\r\n\t<li>\r\n\t<p>The Property and Lease Management Unit of the NSW National Parks and Wildlife Service</p>\r\n\t</li>\r\n</ul>\r\n\r\n<p>has been sent. An email record of your submissions has been sent to you.<br />\r\n<br />\r\nThank you for supporting protection of the Gardens of Stone State Conservation Area and ehlping to stop accommodation development on clifftops and pagodas in our parks.</p>"
+  confirmation_attributes: {  }
+  confirmation_back: true
+  confirmation_back_label: ''
+  confirmation_back_attributes: {  }
+  confirmation_exclude_query: false
+  confirmation_exclude_token: false
+  confirmation_update: false
+  limit_total: null
+  limit_total_interval: null
+  limit_total_message: ''
+  limit_total_unique: false
+  limit_user: null
+  limit_user_interval: null
+  limit_user_message: ''
+  limit_user_unique: false
+  entity_limit_total: null
+  entity_limit_total_interval: null
+  entity_limit_user: null
+  entity_limit_user_interval: null
+  purge: none
+  purge_days: null
+  results_disabled: false
+  results_disabled_ignore: false
+  results_customize: false
+  token_view: false
+  token_update: false
+  token_delete: false
+  serial_disabled: false
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+    permissions: {  }
+  view_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  purge_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  view_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  administer:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  test:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  configuration:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+handlers:
+  email:
+    id: email
+    handler_id: email
+    label: Email
+    notes: 'Send yourself a copy'
+    status: true
+    conditions: {  }
+    weight: 0
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:email:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: _default
+      from_options: {  }
+      from_name: _default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'Objection to the granting of an accommodation lease for cabins in the Gardens of Stone'
+      body: "[webform_submission:values:plan_of_management_submission]<br />\r\n<br />\r\n[webform_submission:values:first_name] [webform_submission:values:last_name]<br />\r\n[webform_submission:values:gos_dpom_address:value:address]<br />\r\n[webform_submission:values:email]"
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: true
+      attachments: false
+      twig: false
+      theme_name: ''
+      langcode: ''
+      parameters: {  }
+      debug: false
+  branch_office_email:
+    id: email
+    handler_id: branch_office_email
+    label: 'NPWS email'
+    notes: "target email address\r\n"
+    status: true
+    conditions: {  }
+    weight: 0
+    settings:
+      states:
+        - completed
+      to_mail: commercial.enquiries@environment.nsw.gov.au
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: 'keith.muir6@bigpond.com,jrobens@interlated.com.au'
+      cc_options: {  }
+      from_mail: _default
+      from_options: {  }
+      from_name: _default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'Objection to the granting of an accommodation lease for cabins in the Gardens of Stone'
+      body: "[webform_submission:values:plan_of_management_submission]<br />\r\n<br />\r\n[webform_submission:values:first_name] [webform_submission:values:last_name]<br />\r\n[webform_submission:values:gos_dpom_address:value:address]<br />\r\n[webform_submission:values:email]"
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: true
+      attachments: false
+      twig: false
+      theme_name: ''
+      langcode: ''
+      parameters: {  }
+      debug: false
+variants: {  }

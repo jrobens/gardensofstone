@@ -1,0 +1,10 @@
+uuid: 7cf4a9a8-1641-46af-b3fd-959beaa6cf2d
+langcode: en
+status: true
+dependencies: {  }
+id: map
+label: Map
+icon_uuid: null
+icon_default: null
+description: 'Enter a location to display a map'
+behavior_plugins: {  }

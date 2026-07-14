@@ -1,0 +1,11 @@
+uuid: fa346ed3-5b8e-45ec-af7b-3c8196c186cd
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.crossfade
+label: CrossFade
+description: ''
+targetEntityType: media
+cache: true

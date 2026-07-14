@@ -1,0 +1,22 @@
+uuid: 3fdad1ee-1112-48e0-8a02-9524ed57e3d2
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - drulma
+_core:
+  default_config_hash: 1AW1qFiMbT487wLyROimSYn6OlvfHry4F78UeMh10iA
+id: drulma_breadcrumbs
+theme: drulma
+region: content
+weight: -6
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

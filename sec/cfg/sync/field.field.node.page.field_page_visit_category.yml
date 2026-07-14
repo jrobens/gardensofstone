@@ -1,0 +1,29 @@
+uuid: 8bd6f77f-c3aa-49e0-b75f-589c75afd434
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_page_visit_category
+    - node.type.page
+    - taxonomy.vocabulary.visit_gardens_of_stone
+id: node.page.field_page_visit_category
+field_name: field_page_visit_category
+entity_type: node
+bundle: page
+label: 'Visit Gardens of Stone Category'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      visit_gardens_of_stone: visit_gardens_of_stone
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

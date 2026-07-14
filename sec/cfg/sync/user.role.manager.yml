@@ -1,0 +1,216 @@
+uuid: 84402c16-b82f-45c3-9157-e4e5d68133a5
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.node.landing.default
+    - filter.format.basic_html
+    - filter.format.full_html
+    - filter.format.restricted_html
+    - media.type.audio
+    - media.type.document
+    - media.type.image
+    - media.type.photos
+    - media.type.remote_video
+    - media.type.video
+    - node.type.article
+    - node.type.landing
+    - node.type.news_and_events
+    - node.type.page
+    - node.type.page_and_layout
+    - node.type.photos
+    - taxonomy.vocabulary.component_type
+    - taxonomy.vocabulary.event_and_news_type
+    - taxonomy.vocabulary.tags
+    - taxonomy.vocabulary.visit_gardens_of_stone
+  module:
+    - admin_toolbar_search
+    - block
+    - block_content
+    - civicrm
+    - contact
+    - context_ui
+    - contextual
+    - crop
+    - ds
+    - file
+    - filter
+    - help
+    - layout_builder
+    - media
+    - node
+    - paragraphs
+    - path
+    - photos
+    - search
+    - system
+    - taxonomy
+    - toolbar
+    - webform
+id: manager
+label: Manager
+weight: -9
+is_admin: null
+permissions:
+  - 'access CiviMail'
+  - 'access administration pages'
+  - 'access any webform configuration'
+  - 'access block library'
+  - 'access content overview'
+  - 'access contextual links'
+  - 'access files overview'
+  - 'access help pages'
+  - 'access media overview'
+  - 'access own webform configuration'
+  - 'access site in maintenance mode'
+  - 'access taxonomy overview'
+  - 'access toolbar'
+  - 'access webform help'
+  - 'access webform overview'
+  - 'access webform submission user'
+  - 'admin display suite'
+  - 'administer block content'
+  - 'administer block types'
+  - 'administer blocks'
+  - 'administer contact forms'
+  - 'administer contexts'
+  - 'administer crop'
+  - 'administer media'
+  - 'administer media types'
+  - 'administer users'
+  - 'administer webform'
+  - 'administer webform element access'
+  - 'administer webform overview'
+  - 'administer webform submission'
+  - 'configure all landing node layout overrides'
+  - 'configure editable landing node layout overrides'
+  - 'create article content'
+  - 'create audio media'
+  - 'create document media'
+  - 'create image media'
+  - 'create landing content'
+  - 'create media'
+  - 'create news_and_events content'
+  - 'create page content'
+  - 'create page_and_layout content'
+  - 'create photo'
+  - 'create photos content'
+  - 'create photos media'
+  - 'create remote_video media'
+  - 'create terms in component_type'
+  - 'create terms in event_and_news_type'
+  - 'create terms in tags'
+  - 'create terms in visit_gardens_of_stone'
+  - 'create url aliases'
+  - 'create video media'
+  - 'create webform'
+  - 'delete any article content'
+  - 'delete any audio media'
+  - 'delete any document media'
+  - 'delete any image media'
+  - 'delete any landing content'
+  - 'delete any media'
+  - 'delete any news_and_events content'
+  - 'delete any page content'
+  - 'delete any page_and_layout content'
+  - 'delete any photo'
+  - 'delete any photos content'
+  - 'delete any photos media'
+  - 'delete any remote_video media'
+  - 'delete any video media'
+  - 'delete any webform'
+  - 'delete any webform submission'
+  - 'delete in CiviMail'
+  - 'delete media'
+  - 'delete own article content'
+  - 'delete own audio media'
+  - 'delete own document media'
+  - 'delete own files'
+  - 'delete own image media'
+  - 'delete own landing content'
+  - 'delete own news_and_events content'
+  - 'delete own page content'
+  - 'delete own page_and_layout content'
+  - 'delete own photo'
+  - 'delete own photos content'
+  - 'delete own photos media'
+  - 'delete own remote_video media'
+  - 'delete own video media'
+  - 'delete own webform'
+  - 'delete own webform submission'
+  - 'delete terms in component_type'
+  - 'delete terms in event_and_news_type'
+  - 'delete terms in tags'
+  - 'delete terms in visit_gardens_of_stone'
+  - 'edit any article content'
+  - 'edit any audio media'
+  - 'edit any document media'
+  - 'edit any image media'
+  - 'edit any landing content'
+  - 'edit any news_and_events content'
+  - 'edit any page content'
+  - 'edit any page_and_layout content'
+  - 'edit any photo'
+  - 'edit any photos content'
+  - 'edit any photos media'
+  - 'edit any remote_video media'
+  - 'edit any video media'
+  - 'edit any webform'
+  - 'edit any webform submission'
+  - 'edit own article content'
+  - 'edit own audio media'
+  - 'edit own document media'
+  - 'edit own image media'
+  - 'edit own landing content'
+  - 'edit own news_and_events content'
+  - 'edit own page content'
+  - 'edit own page_and_layout content'
+  - 'edit own photo'
+  - 'edit own photos content'
+  - 'edit own photos media'
+  - 'edit own remote_video media'
+  - 'edit own video media'
+  - 'edit own webform'
+  - 'edit own webform submission'
+  - 'edit system workflow message templates'
+  - 'edit terms in component_type'
+  - 'edit terms in event_and_news_type'
+  - 'edit terms in tags'
+  - 'edit terms in visit_gardens_of_stone'
+  - 'edit user-driven message templates'
+  - 'edit webform assets'
+  - 'edit webform source'
+  - 'edit webform twig'
+  - 'edit webform variants'
+  - 'manage tags'
+  - 'merge duplicate contacts'
+  - 'revert article revisions'
+  - 'revert landing revisions'
+  - 'revert news_and_events revisions'
+  - 'revert page revisions'
+  - 'revert page_and_layout revisions'
+  - 'revert photos revisions'
+  - 'update any media'
+  - 'update media'
+  - 'use admin toolbar search'
+  - 'use advanced search'
+  - 'use text format basic_html'
+  - 'use text format full_html'
+  - 'use text format restricted_html'
+  - 'view all activities'
+  - 'view all contacts'
+  - 'view all media revisions'
+  - 'view any webform submission'
+  - 'view article revisions'
+  - 'view landing revisions'
+  - 'view news_and_events revisions'
+  - 'view original'
+  - 'view own unpublished content'
+  - 'view own unpublished media'
+  - 'view own webform submission'
+  - 'view page revisions'
+  - 'view page_and_layout revisions'
+  - 'view photo'
+  - 'view photos revisions'
+  - 'view the administration theme'
+  - 'view unpublished paragraphs'

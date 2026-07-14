@@ -1,0 +1,48 @@
+uuid: 5cdfc1b7-d180-4773-9165-6f39bff2f7ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.photos_image.list
+    - field.field.photos_image.photos_image.field_comments
+    - field.field.photos_image.photos_image.field_image
+    - field.field.photos_image.photos_image.field_photos_media_image
+  module:
+    - colorbox
+    - photos
+    - text
+_core:
+  default_config_hash: CsYUynxjidQZiixwPy6YPvtSPxQlEUmTiF6Fwy11-rA
+id: photos_image.photos_image.list
+targetEntityType: photos_image
+bundle: photos_image
+mode: list
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_image:
+    type: colorbox_responsive
+    label: hidden
+    settings:
+      colorbox_image_style: ''
+      colorbox_gallery: post
+      colorbox_gallery_custom: ''
+      colorbox_caption: auto
+      colorbox_caption_custom: ''
+      colorbox_responsive_node_style: ''
+      colorbox_responsive_image_style: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  album_id: true
+  created: true
+  field_comments: true
+  field_photos_media_image: true
+  uid: true
+  weight: true

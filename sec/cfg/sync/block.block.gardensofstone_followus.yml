@@ -1,0 +1,39 @@
+uuid: f0575fe4-a80b-4873-9e51-f0d4ca0cc4b4
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.follow-us
+  module:
+    - block_title_link
+    - drulma_companion
+  theme:
+    - gardensofstone
+third_party_settings:
+  block_title_link:
+    title_link_url: ''
+    link_title: ''
+    title_link_target: ''
+    title_link_enable: 0
+id: gardensofstone_followus
+theme: gardensofstone
+region: primary_menu
+weight: -10
+provider: null
+plugin: 'drulma_companion_menu_tabs:follow-us'
+settings:
+  id: 'drulma_companion_menu_tabs:follow-us'
+  label: 'Follow us'
+  label_display: '0'
+  provider: drulma_companion
+  level: 1
+  depth: 1
+  horizontally_centered: true
+  boxed: false
+  toggle: false
+  toggle_rounded: false
+  fullwidth: false
+  size: ''
+  alignment: ''
+  expand_all_items: 0
+visibility: {  }

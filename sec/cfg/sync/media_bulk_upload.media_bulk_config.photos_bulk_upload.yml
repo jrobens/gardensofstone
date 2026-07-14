@@ -1,0 +1,17 @@
+uuid: 0498328a-6f4d-4d28-a52e-4702732a89d6
+langcode: en
+status: true
+dependencies: {  }
+id: photos_bulk_upload
+label: 'Photos Bulk upload'
+media_types:
+  photos: photos
+  audio: 0
+  document: 0
+  image: 0
+  remote_video: 0
+  video: 0
+form_mode: default
+upload_location: ''
+show_alt: null
+show_title: null

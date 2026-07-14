@@ -1,0 +1,27 @@
+uuid: ca875971-bd0a-4aef-a8be-4220a7153124
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - gardensofstone
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: gardensofstone_page_title
+theme: gardensofstone
+region: title
+weight: -9
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    context_mapping: {  }
+    pages: '<front>'

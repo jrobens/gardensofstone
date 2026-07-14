@@ -1,0 +1,38 @@
+uuid: c5136063-556a-42e1-b58c-33ae170913aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.visit_gardens_of_stone.field_visit_image
+    - taxonomy.vocabulary.visit_gardens_of_stone
+  module:
+    - linked_field
+    - text
+id: taxonomy_term.visit_gardens_of_stone.default
+targetEntityType: taxonomy_term
+bundle: visit_gardens_of_stone
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings:
+      linked_field:
+        linked: '1'
+        type: custom
+        destination: '[term:name]'
+        advanced: {  }
+        token: ''
+    weight: 0
+    region: content
+  field_visit_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: square
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

@@ -1,0 +1,21 @@
+uuid: 9d4de416-0789-4472-a7b6-9557793ff692
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pbcheckerboard_title
+    - paragraphs.paragraphs_type.checkerboard
+_core:
+  default_config_hash: 5U0PfhLZ3zbLE6qh2DEVpf4CvK3p4o82NU0WUuoD1tA
+id: paragraph.checkerboard.field_pbcheckerboard_title
+field_name: field_pbcheckerboard_title
+entity_type: paragraph
+bundle: checkerboard
+label: Title
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

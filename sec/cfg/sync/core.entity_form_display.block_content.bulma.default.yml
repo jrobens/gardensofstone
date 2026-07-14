@@ -1,0 +1,44 @@
+uuid: 1bfa7505-3e90-42b4-9c10-ce90e53778ae
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.bulma
+    - field.field.block_content.bulma.body
+    - field.field.block_content.bulma.field_component_type
+  module:
+    - text
+id: block_content.bulma.default
+targetEntityType: block_content
+bundle: bulma
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 26
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  field_component_type:
+    type: entity_reference_autocomplete
+    weight: 27
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

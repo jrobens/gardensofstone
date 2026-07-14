@@ -1,0 +1,19 @@
+uuid: c775d3ce-1bb9-4f49-8e90-905db14f8625
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_pbtext_textsum
+field_name: field_pbtext_textsum
+entity_type: paragraph
+type: text_with_summary
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

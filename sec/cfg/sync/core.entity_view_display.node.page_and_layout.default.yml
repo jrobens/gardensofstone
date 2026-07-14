@@ -1,0 +1,39 @@
+uuid: bc70b285-ffe4-43d4-8237-d0624f24caae
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.page_and_layout.field_category
+    - field.field.node.page_and_layout.field_pl_component
+    - node.type.page_and_layout
+  module:
+    - layout_paragraphs
+    - user
+id: node.page_and_layout.default
+targetEntityType: node
+bundle: page_and_layout
+mode: default
+content:
+  field_category:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_pl_component:
+    type: layout_paragraphs
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

@@ -1,0 +1,8 @@
+uuid: 828c31a9-0b6a-42b0-98b2-af0687b7c434
+langcode: en
+status: true
+dependencies: {  }
+id: cross_fade_block
+label: 'Cross fade block'
+revision: false
+description: 'Add images to a cross fade block. '

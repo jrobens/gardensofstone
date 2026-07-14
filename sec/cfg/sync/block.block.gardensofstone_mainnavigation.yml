@@ -1,0 +1,41 @@
+uuid: 4b754be4-75a9-4574-ba70-108ae03090bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - block_class
+    - drulma_companion
+  theme:
+    - gardensofstone
+third_party_settings:
+  block_class:
+    classes: is-fixed-top
+id: gardensofstone_mainnavigation
+theme: gardensofstone
+region: primary_menu
+weight: -9
+provider: null
+plugin: 'drulma_companion_bulma_navbar_with_branding:main'
+settings:
+  id: 'drulma_companion_bulma_navbar_with_branding:main'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: drulma_companion
+  level: 1
+  depth: 0
+  navbar_color: black
+  navbar_title_tag: span
+  horizontally_centered: true
+  navbar_start_display: true
+  end_menu: ''
+  end_menu_level: 1
+  end_menu_depth: 0
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+  site_name_size: '4'
+  site_slogan_size: '6'
+  expand_all_items: 0
+visibility: {  }

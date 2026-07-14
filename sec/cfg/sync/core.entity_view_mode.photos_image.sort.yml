@@ -1,0 +1,13 @@
+uuid: e5a77e22-b236-4919-8ed5-0e5459feae4d
+langcode: en
+status: true
+dependencies:
+  module:
+    - photos
+_core:
+  default_config_hash: jV5aspUIO0UwKS7zfCEwtItI9tddSWC9fro4oU1Iq_0
+id: photos_image.sort
+label: Sort
+description: ''
+targetEntityType: photos_image
+cache: true

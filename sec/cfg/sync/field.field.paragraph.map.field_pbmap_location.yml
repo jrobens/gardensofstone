@@ -1,0 +1,32 @@
+uuid: 0363c9b3-bfba-426a-9bb4-bca2e1980bc0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pbmap_location
+    - paragraphs.paragraphs_type.map
+  module:
+    - geofield
+id: paragraph.map.field_pbmap_location
+field_name: field_pbmap_location
+entity_type: paragraph
+bundle: map
+label: Location
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 'POINT (150.1568925017 -33.481329168786)'
+    geo_type: Point
+    lat: -33.481329168786
+    lon: 150.1568925017
+    left: 150.1568925017
+    top: -33.481329168786
+    right: 150.1568925017
+    bottom: -33.481329168786
+    geohash: r64c8buvj5y5yjzv
+    latlon: '-33.481329168786,150.1568925017'
+default_value_callback: ''
+settings: {  }
+field_type: geofield

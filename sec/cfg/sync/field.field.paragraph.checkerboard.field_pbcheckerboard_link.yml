@@ -1,0 +1,25 @@
+uuid: 3e5b332f-9a7e-4947-b4ac-e5df62bef7af
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pbcheckerboard_link
+    - paragraphs.paragraphs_type.checkerboard
+  module:
+    - link
+_core:
+  default_config_hash: ud6smbQcA3JfpRLe-m6ovA3e9j64TpB-JZAIxKplS58
+id: paragraph.checkerboard.field_pbcheckerboard_link
+field_name: field_pbcheckerboard_link
+entity_type: paragraph
+bundle: checkerboard
+label: Link
+description: 'Link heading and image'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

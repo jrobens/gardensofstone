@@ -1,0 +1,20 @@
+uuid: 2e76cb3e-82c1-4901-a945-a9b4c3a8ecff
+langcode: en
+status: true
+dependencies:
+  theme:
+    - gardensofstone
+id: gardensofstone_tabs
+theme: gardensofstone
+region: footer
+weight: -8
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

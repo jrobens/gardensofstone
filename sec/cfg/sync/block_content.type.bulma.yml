@@ -1,0 +1,8 @@
+uuid: fab742ae-eb20-4d86-8128-dd79a74afb2d
+langcode: en
+status: true
+dependencies: {  }
+id: bulma
+label: Bulma
+revision: true
+description: 'A Bulma component'

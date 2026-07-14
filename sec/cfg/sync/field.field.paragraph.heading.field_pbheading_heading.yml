@@ -1,0 +1,19 @@
+uuid: e960eaf2-f167-4939-bd8a-844b48cca431
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pbheading_heading
+    - paragraphs.paragraphs_type.heading
+id: paragraph.heading.field_pbheading_heading
+field_name: field_pbheading_heading
+entity_type: paragraph
+bundle: heading
+label: Heading
+description: 'Add a heading. If there is a menu it will be displayed in the menu.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

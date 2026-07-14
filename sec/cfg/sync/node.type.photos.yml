@@ -1,0 +1,23 @@
+uuid: 109bf00e-ecfe-4896-aa3a-772a74dd46e1
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+  enforced:
+    module:
+      - photos
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: jBHIKHChyffkZw3urH4iD5huepwpBsJ4BEP9juzXi4c
+name: 'Photo album'
+type: photos
+description: 'Create a new photo album.'
+help: null
+new_revision: false
+preview_mode: 1
+display_submitted: false

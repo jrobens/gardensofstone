@@ -1,0 +1,31 @@
+uuid: 0519d00e-5786-4fc2-85d2-83e4ab137809
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.bulma
+    - field.field.block_content.bulma.body
+    - field.field.block_content.bulma.field_component_type
+  module:
+    - text
+id: block_content.bulma.default
+targetEntityType: block_content
+bundle: bulma
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_component_type:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

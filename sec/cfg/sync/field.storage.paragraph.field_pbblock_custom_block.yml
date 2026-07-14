@@ -1,0 +1,20 @@
+uuid: ec03870f-3e07-4911-9ed5-a5064493f258
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - paragraphs
+id: paragraph.field_pbblock_custom_block
+field_name: field_pbblock_custom_block
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: block_content
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,3 +1,46 @@
+## Configuration 2026-07-14 
+>  [error]  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'gos2_cms.help_search_items' doesn't exist: SELECT "hsi"."sid" AS "sid", "hsi"."topic_id" AS "topic_id", "hsi"."section_plugin_id" AS "section_plugin_id", "hsi"."permission" AS "permission"
+> FROM
+
+
+1815620   14/Jul 15:55   php      Error      Drupal\Component\Plugin\E  
+xception\PluginNotFoundEx  
+ception: The               
+"node_search" plugin does  
+not exist. Valid plugin    
+IDs for                    
+Drupal\search\SearchPlugi  
+nManager are:              
+photos_image_search,       
+help_se
+
+
+
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'hsi.permission' in 'SELECT': SELECT "hsi"."sid" AS "sid", "hsi"."topic_id" AS "topic_id", "hsi"."sec  
+tion_plugin_id" AS "section_plugin_id", "hsi"."permission" AS "permission"      
+FROM                                                                            
+"help_search_items" "hsi"; Array                                                
+(                                                                               
+)
+
+
+```ALTER TABLE gos2_cms.help_search_items
+ADD COLUMN permission VARCHAR(255) NOT NULL DEFAULT '' COMMENT 'The permission required to clear or view this item';
+
+
+CREATE TABLE help_search_items (
+sid INT UNSIGNED NOT NULL COMMENT 'Numeric index of this item in the search index',
+section_plugin_id VARCHAR(255) NOT NULL COMMENT 'The help section plugin id',
+topic_id VARCHAR(255) NOT NULL COMMENT 'The help topic id',
+PRIMARY KEY (sid)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+ALTER TABLE help_search_items
+ADD COLUMN permission VARCHAR(255) NOT NULL DEFAULT '' COMMENT 'The permission required to clear or view this item';
+ALTER TABLE gos2_cms.help_search_items
+MODIFY COLUMN sid INT UNSIGNED NOT NULL AUTO_INCREMENT COMMENT 'Numeric index of this item in the search index';```
+
+
+
 ## Updates 2026-07-09
 
     * drupal/better_social_sharing_buttons (4.1.0 -> 5.0.0)

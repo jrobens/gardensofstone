@@ -1,0 +1,8 @@
+uuid: 228a223a-e991-43b6-8415-0e6a8052f0e9
+langcode: en
+status: true
+dependencies: {  }
+id: keep-in-touch
+label: 'Keep in touch'
+description: 'Follow us menu'
+locked: false

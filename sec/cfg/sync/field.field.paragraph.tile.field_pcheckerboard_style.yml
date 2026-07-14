@@ -1,0 +1,23 @@
+uuid: 2089871f-a918-491d-be76-ad682e89bcea
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pcheckerboard_style
+    - paragraphs.paragraphs_type.tile
+id: paragraph.tile.field_pcheckerboard_style
+field_name: field_pcheckerboard_style
+entity_type: paragraph
+bundle: tile
+label: Style
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:classy_paragraphs_style'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: entity_reference

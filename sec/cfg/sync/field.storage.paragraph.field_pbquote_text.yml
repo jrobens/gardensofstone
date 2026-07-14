@@ -1,0 +1,20 @@
+uuid: 923bccaf-3d98-4ace-90c8-6584f5cd0e4b
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_pbquote_text
+field_name: field_pbquote_text
+entity_type: paragraph
+type: text
+settings:
+  max_length: 2047
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

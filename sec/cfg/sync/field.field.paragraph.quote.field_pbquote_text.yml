@@ -1,0 +1,21 @@
+uuid: 8e0d51b4-d2d0-4cc7-8cd9-562ee83883bc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pbquote_text
+    - paragraphs.paragraphs_type.quote
+  module:
+    - text
+id: paragraph.quote.field_pbquote_text
+field_name: field_pbquote_text
+entity_type: paragraph
+bundle: quote
+label: Text
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

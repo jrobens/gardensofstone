@@ -1,0 +1,32 @@
+uuid: 08391c2e-f04e-4e03-ae90-df4ac7610b12
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - drulma_companion
+  theme:
+    - gardensofstone
+id: gardensofstone_mainnavigation_3
+theme: gardensofstone
+region: footer
+weight: -9
+provider: null
+plugin: 'drulma_companion_menu_tabs:main'
+settings:
+  id: 'drulma_companion_menu_tabs:main'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: drulma_companion
+  level: 1
+  depth: 1
+  horizontally_centered: true
+  boxed: false
+  toggle: false
+  toggle_rounded: false
+  fullwidth: false
+  size: ''
+  alignment: ''
+  expand_all_items: 0
+visibility: {  }

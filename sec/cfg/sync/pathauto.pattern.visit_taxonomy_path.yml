@@ -1,0 +1,24 @@
+uuid: f7a27df9-9e8b-46c9-8f83-88dac9a3b3af
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.visit_gardens_of_stone
+  module:
+    - taxonomy
+id: visit_taxonomy_path
+label: 'Visit Taxonomy path'
+type: 'canonical_entities:taxonomy_term'
+pattern: '/[term:name]/[current-page:title]'
+selection_criteria:
+  1d60682e-2cbb-446a-b914-5cce73ba1779:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      visit_gardens_of_stone: visit_gardens_of_stone
+      visit_lithgow: visit_lithgow
+selection_logic: and
+weight: -5
+relationships: {  }

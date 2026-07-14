@@ -1,0 +1,44 @@
+uuid: fc07dd4a-b59e-4d6d-af09-63179736f57d
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+  module:
+    - civicrm
+    - comment
+    - contact
+    - file
+    - filter
+    - fontawesome
+    - media
+    - search
+    - shortcut
+    - system
+_core:
+  default_config_hash: btW6TFHajhy7Eo6YUvdFiPh4TcPggo8GBXYctjV6zag
+id: authenticated
+label: 'Authenticated user'
+weight: -8
+is_admin: false
+permissions:
+  - 'access CiviMail subscribe/unsubscribe pages'
+  - 'access all custom data'
+  - 'access comments'
+  - 'access content'
+  - 'access fontawesome additional settings'
+  - 'access shortcuts'
+  - 'access site-wide contact form'
+  - 'access uploaded files'
+  - 'delete own files'
+  - 'post comments'
+  - 'profile create'
+  - 'profile edit'
+  - 'profile view'
+  - 'register for events'
+  - 'search content'
+  - 'skip comment approval'
+  - 'use text format basic_html'
+  - 'view event info'
+  - 'view event participants'
+  - 'view media'

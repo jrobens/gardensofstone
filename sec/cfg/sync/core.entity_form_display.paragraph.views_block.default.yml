@@ -1,0 +1,24 @@
+uuid: 2f4e0dc4-6f30-4d89-bf2e-95814bba513a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.views_block.field_pbviewsblock_block
+    - paragraphs.paragraphs_type.views_block
+  module:
+    - viewsreference
+id: paragraph.views_block.default
+targetEntityType: paragraph
+bundle: views_block
+mode: default
+content:
+  field_pbviewsblock_block:
+    type: viewsreference_select
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  admin_title: true
+  created: true
+  status: true

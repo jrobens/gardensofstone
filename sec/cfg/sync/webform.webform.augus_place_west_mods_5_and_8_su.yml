@@ -1,0 +1,1327 @@
+uuid: a12e2953-2798-4e43-a6b3-d1d665b164b9
+langcode: en
+status: closed
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 9
+template: false
+archive: false
+id: augus_place_west_mods_5_and_8_su
+title: "Have your say on Centennial's proposed mine modifications"
+description: 'Submission on proposed Angus Place modifications 8 and Western Coal Services Modification 5 regarding protential environmental impacts'
+categories: {  }
+elements: |-
+  plan_of_management:
+    '#type': webform_wizard_page
+    '#title': 'Have your say on Centennial''s proposed mining modifications'
+    '#open': true
+    '#access_create_roles':
+      - authenticated
+      - anonymous
+    '#access_update_roles':
+      - authenticated
+      - anonymous
+    '#access_view_roles':
+      - authenticated
+      - anonymous
+    have_your_say:
+      '#type': details
+      '#title': 'Have your say'
+      '#help_title': 'Have your say on Centennial’s latest plans to mine'
+      '#help': 'Have your say on Centennial&rsquo;s latest plans to mine under unique wetlands and ancient rock formations - putting new areas of the Gardens of Stone conservation reserve at risk of damage. We&#39;ve included information below to help guide you through the process of making a submission on the Angus Place West.&nbsp;<strong>SSD-26254212</strong>'
+      '#open': true
+      '#access_create_roles':
+        - authenticated
+        - anonymous
+      '#access_update_roles':
+        - authenticated
+        - anonymous
+      '#access_view_roles':
+        - authenticated
+        - anonymous
+      markup:
+        '#type': webform_markup
+        '#access_create_roles':
+          - authenticated
+          - anonymous
+        '#access_update_roles':
+          - authenticated
+          - anonymous
+        '#access_view_roles':
+          - authenticated
+          - anonymous
+        '#markup': |-
+          <p><strong>Angus Place Mine and Western Coal Services modification proposals</strong></p>
+
+          <p dir="ltr"><span style="font-size:12pt"><span style="background:white"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-family:&quot;Calibri&quot;,sans-serif"><span style="color:#363636">Have your say on Centennial&rsquo;s latest plans </span><span style="color:#1b1b1b">to prepare for future mining under unique wetlands and ancient rock formations that put areas of the Gardens of Stone conservation reserve at risk of damage.&nbsp;Centennial&#39;s mine proposals also include plans to recommence discharges of mine water to the Coxs River catchment, part of Sydney&#39;s water catchment.</span></span></span></span></span><br />
+          <br />
+          <span style="font-size:11pt"><span style="background:white"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span lang="EN-AU" style="font-size:12.0pt"><span style="color:#363636">We&#39;ve included information below to help guide you through the process of making a submission on these plans.</span></span></span></span></span></span><br />
+          <br />
+          <span style="font-size:11pt"><span style="background:white"><span style="line-height:normal"><span style="font-family:Calibri,sans-serif"><span lang="EN-AU" style="font-size:12.0pt"><span style="color:#363636">Centennial&rsquo;s plans require modifications to two consents, modification 5 deals with Angus Place Mine&rsquo;s consent (MP06_0021) and modification 8 to Western Coal Services consent (SSD-5579).<br />
+          <br />
+          But you can address both of these in one submission.</span></span></span></span></span></span></p>
+
+          <h2 dir="ltr"><a href="https://majorprojects.planningportal.nsw.gov.au/prweb/PRRestService/mp/01/getContent?AttachRef=SSD-5579-MOD-5%2120230925T005143.800%20GMT">View Centennial Coal&#39;s report on the proposed modifications</a></h2>
+
+          <h2 dir="ltr"><a href="/centennial-coals-latest-mining-proposals-gardens-stone">View the issues and a simple text-based submission guide for those who don&#39;t want to use the submission form</a></h2>
+
+          <p>Your submission will have the most effect if you personalise your submission by introducing yourself and state your concerns in your own words.<br />
+          <br />
+          <strong>Make a submission before 11.59pm Thursday October 12, 2023</strong> and call for greater scrutiny of the proposals, including by the Federal Government, the&nbsp;Independent Expert Scientific Committee&nbsp;on Coal Seam Gas and Large Coal Mining Development, the NSW Independent&nbsp;Planning Commission and the&nbsp;Independent Expert Advisory Panel on underground mining so that these modification proposals receive thorough scrutiny and as much community involvement in decision making as possible.</p>
+
+          <p dir="ltr">If you have questions or need help to guide you through this process contact Keith Muir&nbsp;<a href="http://mailto:keith.muir6@bigpond.com">keith.muir6@bigpond.com</a>&nbsp;<br />
+          &nbsp;</p>
+
+          <h3 dir="ltr">Make a submission</h3>
+
+          <p style="line-height:1.38; background-color:#ffffff"><span style="font-size:12pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Merriweather,serif"><span style="color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none"><strong>Option 1 (preferred)</strong>: Draft a submission into a blank Word document and copy your answers across to the <a href="https://www.planningportal.nsw.gov.au/major-projects/projects/mod-8-water-transfer-western-coal-services">NSW Planning website</a> to ensure you don&#39;t lose anything.&nbsp;Please use this approach if you have made a reportable political donation in the last two years over $1,000 (this includes conservation groups like the NCC). </span></span></span></span></span></span><span style="font-size:11.0pt"><span style="line-height:107%"><span style="font-family:&quot;Calibri&quot;,sans-serif"><span style="color:#1b1b1b">This option is more direct, but it does require you to create a login for the NSW Planning Major Project portal. Our&nbsp;</span></span></span></span><span style="font-size:12pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Merriweather,serif"><span style="color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none"><a href="/centennial-coals-latest-mining-proposals-gardens-stone">submission guide</a> can assist you with your submission. </span></span></span></span></span></span><br />
+          <br />
+          <span style="font-size:12pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Merriweather,serif"><span style="color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none"><strong>Option 2</strong>: Use our form for step-by-step guidance to create your submission. You can draft directly into the text boxes on the following pages and the form compiles your submission as you go. Start at the bottom of this page by selecting the issues you&#39;re concerned about and then click next.</span></span></span></span></span></span></p>
+
+          <p dir="ltr">The Department does not count identicant or substantially the same submissions as spearate objections, so plase take the time to write these concerns in your own words.</p>
+
+          <p dir="ltr">Our step-by-step form will take you through:&nbsp;</p>
+
+          <ol dir="ltr">
+          	<li>Information about political donations and withholding your name</li>
+          	<li>Entering your personal details</li>
+          	<li>Writing a personal introduction for your submission</li>
+          	<li>Commenting on each of the issues you select below.</li>
+          </ol>
+
+          <h3 dir="ltr">Key concerns to raise in your submission</h3>
+
+          <p dir="ltr"><span style="font-size:12pt"><span style="background:white"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-family:&quot;Calibri&quot;,sans-serif"><span style="color:#1b1b1b">The Gardens of Stone Alliance has identified the issues below; you can raise one, some or all of these in your submission. You may have additional concerns and we&#39;d encourage you to include these in your submission, either via the planning website or by using the &#39;other&#39; checkbox below.&nbsp;</span></span></span></span></span><br />
+          <br />
+          Which concerns would you like to include in your submission? (Simply uncheck issues you <strong>don&#39;t </strong>wish comment on).</p>
+      damage_to_ancient_rock_formations_check:
+        '#type': checkbox
+        '#title': 'Exhibition over long weekend inappropriate'
+        '#default_value': true
+        '#access_create_roles':
+          - authenticated
+          - anonymous
+        '#access_update_roles':
+          - authenticated
+          - anonymous
+        '#access_view_roles':
+          - authenticated
+          - anonymous
+      destruction_of_historic_first_nation_s_rock_art_check:
+        '#type': checkbox
+        '#title': 'Modifications are part of the Angus Place West proposal'
+        '#default_value': true
+        '#access_create_roles':
+          - authenticated
+          - anonymous
+        '#access_update_roles':
+          - authenticated
+          - anonymous
+        '#access_view_roles':
+          - authenticated
+          - anonymous
+      destruction_of_unique_wetlands_check:
+        '#type': checkbox
+        '#title': 'Damage to unique wetlands'
+        '#default_value': true
+        '#access_create_roles':
+          - authenticated
+          - anonymous
+        '#access_update_roles':
+          - authenticated
+          - anonymous
+        '#access_view_roles':
+          - authenticated
+          - anonymous
+      contamination_of_drinking_water_in_sydney_s_warragamba_dam_check:
+        '#type': checkbox
+        '#title': 'Contamination of Sydney''s drinking water supplies'
+        '#default_value': true
+        '#access_create_roles':
+          - authenticated
+          - anonymous
+        '#access_update_roles':
+          - authenticated
+          - anonymous
+        '#access_view_roles':
+          - authenticated
+          - anonymous
+      long_term_impacts_for_the_local_economy_check:
+        '#type': checkbox
+        '#title': 'Modification should be a controlled action under the EPBC Act'
+        '#default_value': true
+        '#access_create_roles':
+          - authenticated
+          - anonymous
+        '#access_update_roles':
+          - authenticated
+          - anonymous
+        '#access_view_roles':
+          - authenticated
+          - anonymous
+      centennial_s_track_record_of_environmental_damage_check:
+        '#type': checkbox
+        '#title': 'Centennial’s track record of environmental damage'
+        '#default_value': true
+        '#access_create_roles':
+          - authenticated
+          - anonymous
+        '#access_update_roles':
+          - authenticated
+          - anonymous
+        '#access_view_roles':
+          - authenticated
+          - anonymous
+      climate_pollution_check:
+        '#type': checkbox
+        '#title': 'Additional Water Treatment'
+        '#default_value': true
+        '#access_create_roles':
+          - authenticated
+          - anonymous
+        '#access_update_roles':
+          - authenticated
+          - anonymous
+        '#access_view_roles':
+          - authenticated
+          - anonymous
+      other_topic_check:
+        '#type': checkbox
+        '#title': Other
+        '#default_value': true
+        '#access_create_roles':
+          - authenticated
+          - anonymous
+        '#access_update_roles':
+          - authenticated
+          - anonymous
+        '#access_view_roles':
+          - authenticated
+          - anonymous
+      view_the_issues_markup:
+        '#type': webform_markup
+        '#access_create_roles':
+          - authenticated
+          - anonymous
+        '#access_update_roles':
+          - authenticated
+          - anonymous
+        '#access_view_roles':
+          - authenticated
+          - anonymous
+        '#access': false
+        '#markup': '<h2>A submission can be made directly via the <a href="https://www.planningportal.nsw.gov.au/major-projects/projects/mod-5-water-transfer-angus-place">NSW Government Major Projects Portal</a>, use this option especially if you have made a political donation of $1000 or more. If using this approach, first&nbsp;<a href="/centennial-coals-latest-mining-proposals-gardens-stone">view the issues and a simple text-based submission guide</a>&nbsp;to help prepare your submission.</h2>'
+  political_donations:
+    '#type': webform_wizard_page
+    '#title': 'Political Donations'
+    '#access_create_roles':
+      - authenticated
+      - anonymous
+    '#access_update_roles':
+      - authenticated
+      - anonymous
+    '#access_view_roles':
+      - authenticated
+      - anonymous
+    title_political_donations:
+      '#type': webform_computed_token
+      '#title': title
+      '#title_display': none
+      '#wrapper_attributes':
+        class:
+          - wizard-page-title
+      '#access_create_roles':
+        - authenticated
+        - anonymous
+      '#access_update_roles':
+        - authenticated
+        - anonymous
+      '#access_view_roles':
+        - authenticated
+        - anonymous
+      '#display_on': form
+      '#template': '[webform_submission:current-page:title]'
+    markup_10:
+      '#type': webform_markup
+      '#access_create_roles':
+        - authenticated
+        - anonymous
+      '#access_update_roles':
+        - authenticated
+        - anonymous
+      '#access_view_roles':
+        - authenticated
+        - anonymous
+      '#markup': |-
+        <p>To improve transparency of the planning system, NSW laws require that when you are making a submission on a development proposal you must disclose any gifts or reportable political donations that you have made to a political party, elected member, group, candidate associated entity or third party campaigner in the two years prior to making your submission (includes Nature Conservation Council of NSW).<br />
+        <br />
+        Reportable political donations are donations of $1,000 or more (or smaller donations totaling $1,000 or more within the same financial year). A gift includes a gift of money or the provision of any other valuable thing or service for no money or inadequate money in return. If you think this might apply to you, please read the NSW Department of Planning&rsquo;s information on reportable political donations before proceeding.</p>
+
+        <ul>
+        	<li>If <strong>NO</strong>, continue to rest of form</li>
+        	<li>If <strong>YES.&nbsp;</strong>Please make your submission through the <a href="https://www.planningportal.nsw.gov.au/major-projects/projects/angus-place-west">NSW Government&rsquo;s Major Projects Portal</a> so that you can disclose your political donation. You can still use our <a href="/centennial-coals-latest-mining-proposals-gardens-stone">submission guide</a> to help with your submission.</li>
+        </ul>
+
+        <p>Thank you for helping ensure communities get a proper say on Centennial&rsquo;s plans!</p>
+    radio_button_yes_no_political_donations:
+      '#type': radios
+      '#title': 'Have you made a reportable political donation?'
+      '#description_display': before
+      '#options': yes_no
+      '#options_display': buttons
+      '#required': true
+      '#required_error': 'Have you made a reportable donation? Required'
+      '#default_value': 'No'
+      '#access_create_roles': {  }
+      '#access_update_roles':
+        - authenticated
+        - anonymous
+      '#access_view_roles':
+        - authenticated
+        - anonymous
+    i_would_like_my_name_withheld:
+      '#type': radios
+      '#title': 'I would like my name withheld?'
+      '#description': 'We will request that the NSW planning department not associate your name with this submission'
+      '#options': yes_no
+      '#options_display': buttons
+      '#required': true
+      '#default_value': 'No'
+      '#access_create_roles':
+        - authenticated
+        - anonymous
+      '#access_update_roles':
+        - authenticated
+        - anonymous
+      '#access_view_roles':
+        - authenticated
+        - anonymous
+  name_and_address:
+    '#type': webform_wizard_page
+    '#title': 'Name and Address'
+    '#access_create_roles':
+      - authenticated
+      - anonymous
+    '#access_update_roles':
+      - authenticated
+      - anonymous
+    '#access_view_roles':
+      - authenticated
+      - anonymous
+    address:
+      '#type': fieldset
+      '#title': Address
+      '#required': true
+      '#access_create_roles':
+        - authenticated
+        - anonymous
+      '#access_update_roles':
+        - authenticated
+        - anonymous
+      '#access_view_roles':
+        - authenticated
+        - anonymous
+      first_name:
+        '#type': textfield
+        '#title': 'First Name'
+        '#title_display': invisible
+        '#placeholder': 'Your first name'
+        '#required': true
+        '#access_create_roles':
+          - authenticated
+          - anonymous
+        '#access_update_roles':
+          - authenticated
+          - anonymous
+        '#access_view_roles':
+          - authenticated
+          - anonymous
+      last_name:
+        '#type': textfield
+        '#title': 'Last Name'
+        '#title_display': invisible
+        '#placeholder': 'Your last name'
+        '#required': true
+        '#access_create_roles':
+          - authenticated
+          - anonymous
+        '#access_update_roles':
+          - authenticated
+          - anonymous
+        '#access_view_roles':
+          - authenticated
+          - anonymous
+      email:
+        '#type': email
+        '#title': Email
+        '#title_display': invisible
+        '#placeholder': 'Your email address'
+        '#required': true
+        '#access_create_roles':
+          - authenticated
+          - anonymous
+        '#access_update_roles':
+          - authenticated
+          - anonymous
+        '#access_view_roles':
+          - authenticated
+          - anonymous
+      gos_dpom_address:
+        '#type': webform_address
+        '#title': Address
+        '#required': true
+        '#access_create_roles':
+          - authenticated
+          - anonymous
+        '#access_update_roles':
+          - authenticated
+          - anonymous
+        '#access_view_roles':
+          - authenticated
+          - anonymous
+        '#address__placeholder': 'Your address'
+        '#address__title_display': invisible
+        '#address_2__access': false
+        '#city__placeholder': 'Your town'
+        '#city__title_display': invisible
+        '#state_province__placeholder': 'Your state'
+        '#state_province__title_display': invisible
+        '#state_province__options': state_province_codes
+        '#postal_code__placeholder': 'Post code'
+        '#postal_code__title_display': invisible
+        '#country__access': false
+  part_2_introduce_yourself:
+    '#type': webform_wizard_page
+    '#title': 'Introduce yourself'
+    '#access_create_roles':
+      - authenticated
+      - anonymous
+    '#access_update_roles':
+      - authenticated
+      - anonymous
+    '#access_view_roles':
+      - authenticated
+      - anonymous
+    markup_09:
+      '#type': webform_markup
+      '#access_create_roles':
+        - authenticated
+        - anonymous
+      '#access_update_roles':
+        - authenticated
+        - anonymous
+      '#access_view_roles':
+        - authenticated
+        - anonymous
+      '#markup': |-
+        <h2 dir="ltr"><strong>Why are you making this submission?</strong></h2>
+
+        <p dir="ltr">Start by introducing yourself and explaining why you care about this proposal.</p>
+
+        <p dir="ltr">You could describe your connection to the Gardens of Stone conservation area and any concerns you have about mining underneath the reserve. Or you might want to include concerns that you may have due to potential mine water contamination of water resources.&nbsp;</p>
+
+        <p dir="ltr">Examples:&nbsp;</p>
+
+        <p dir="ltr"><em>To whom it may concern,<br />
+        <br />
+        I have lived in the Lithgow area for 30 years and have travelled extensively throughout the Gardens of Stone region. I feel a deep affinity with the natural beauty of the place. I wish that this beauty be appreciated by generations to come.<br />
+        <br />
+        Each time I see these beautiful pagodas, streams, waterfalls and swamps damaged I feel as though I have been personally injured. I appreciate it when my children wonder at how the rock formations look like a particular bird, boat or boot and feel that it is very short sighted to damage these formations for a relatively minor short term profit.</em><br />
+        - - -</p>
+
+        <p dir="ltr"><em>I am a parent who enjoys taking my kids exploring in the Gardens of Stone State Conservation Area on weekends. I am worried about what this project might mean for the health of the Coxs River and this beautiful environment. My kids love the Gardens of Stone but I&rsquo;m concerned that this mining project will have a long term impact on the environment and that mine water will pollute Sydney&#39;s drinking water supplies into the future.</em></p>
+
+        <p dir="ltr"><span style="font-size:12pt"><span style="background:white"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-family:&quot;Calibri&quot;,sans-serif"><span style="color:#1b1b1b">Remember, your concerns must be written in your own words and to call for greater scrutiny of these modification proposals.</span></span></span></span></span></p>
+    submission:
+      '#type': fieldset
+      '#title': 'Submission as an objection'
+      '#description': 'Don&#39;t forget to select Yes if you object.'
+      '#title_display': invisible
+      '#access_create_roles':
+        - authenticated
+        - anonymous
+      '#access_update_roles':
+        - authenticated
+        - anonymous
+      '#access_view_roles':
+        - authenticated
+        - anonymous
+      markup_introduce_yourself:
+        '#type': webform_markup
+        '#access_create_roles':
+          - authenticated
+          - anonymous
+        '#access_update_roles':
+          - authenticated
+          - anonymous
+        '#access_view_roles':
+          - authenticated
+          - anonymous
+        '#access': false
+        '#markup': |-
+          <p dir="ltr">Start by introducing yourself and explaining why you care about this proposal.</p>
+
+          <p dir="ltr">You could describe your connection to the Gardens of Stone conservation area and any concerns you have about mining underneath in the reserve. Or you might want to include concerns that you may have for <span style="font-size:11.0pt"><span style="line-height:107%"><span style="font-family:&quot;Calibri&quot;,sans-serif"><span style="color:#1b1b1b">mine water discharges polluting Sydney&rsquo;s drinking water supplies</span></span></span></span>.</p>
+
+          <p dir="ltr">For example:&nbsp;</p>
+
+          <p dir="ltr"><em>To whom it may concern,</em></p>
+
+          <p dir="ltr"><em>I have lived in the Lithgow area for 30 years and have travelled extensively throughout the Gardens of Stone conservation area. I feel a deep affinity with the natural beauty of the place. I wish that this beauty be appreciated by generations to come.<br />
+          <br />
+          Each time I see these beautiful pagodas, streams, waterfalls and swamps damaged I feel as though I have been personally injured. I appreciate it when my children wonder at how the rock formations look like a particular bird, boat or boot and feel that it is very short sighted to damage this reserve for short term profit.</em><br />
+          <br />
+          Or perhaps you are concerned about water</p>
+
+          <p dir="ltr"><em>I am a parent who enjoys taking my kids exploring in the Gardens of Stone State Conservation Area on weekends. I am worried about what this project might mean for the health of the Coxs River and this beautiful environment. My kids love the Gardens of Stone but I&rsquo;m concerned that this mining project will have a long term impact on the environment and that mine water could pollute Sydney&#39;s drinking water supplies into the future.</em></p>
+      i_am_objecting_to_the_proposal:
+        '#type': radios
+        '#title': 'I am objecting to the proposal'
+        '#options': yes_no
+        '#options_display': buttons
+        '#default_value': 'Yes'
+        '#access_create_roles':
+          - authenticated
+          - anonymous
+        '#access_update_roles':
+          - authenticated
+          - anonymous
+        '#access_view_roles':
+          - authenticated
+          - anonymous
+      why_are_you_making_this_submission_:
+        '#type': textarea
+        '#title': 'Why are you making this submission?'
+        '#placeholder': |-
+          Start by introducing yourself and explaining why you care about these modification proposals. e.g. 
+
+          Start with something like "To whom it may concern," 
+
+          Then perhaps describe your connection to the Gardens of Stone conservation area. You might express concerns you may have with the lack of scrutiny for coal mining proposals or perhaps some specific concerns you may have regarding mining underneath the Gardens of Stone reserve.
+        '#access_create_roles':
+          - authenticated
+          - anonymous
+        '#access_update_roles':
+          - authenticated
+          - anonymous
+        '#access_view_roles':
+          - authenticated
+          - anonymous
+  damage_to_ancient_rock_formations:
+    '#type': webform_wizard_page
+    '#title': 'Exhibition starts on a long weekend '
+    '#states':
+      visible:
+        '':
+          '': ''
+    '#access_create_roles':
+      - authenticated
+      - anonymous
+    '#access_update_roles':
+      - authenticated
+      - anonymous
+    '#access_view_roles':
+      - authenticated
+      - anonymous
+    title:
+      '#type': webform_computed_token
+      '#title': title
+      '#title_display': none
+      '#wrapper_attributes':
+        class:
+          - wizard-page-title
+      '#access_create_roles':
+        - authenticated
+        - anonymous
+      '#access_update_roles':
+        - authenticated
+        - anonymous
+      '#access_view_roles':
+        - authenticated
+        - anonymous
+      '#display_on': form
+      '#template': '[webform_submission:current-page:title]'
+    markup_02:
+      '#type': webform_markup
+      '#access_create_roles':
+        - authenticated
+        - anonymous
+      '#access_update_roles':
+        - authenticated
+        - anonymous
+      '#access_view_roles':
+        - authenticated
+        - anonymous
+      '#markup': '<p dir="ltr"><span style="font-size:11.0pt"><span style="line-height:107%"><span style="font-family:&quot;Calibri&quot;,sans-serif"><span style="color:#1b1b1b">The short window for public comment on these proposals opened at the beginning of the October long weekend. This timing means the public has effectively been denied the 14 day minimum time permitted under planning law for review and comment on modification proposals. </span></span></span></span></p>'
+    submission_damage_to_ancient_rock_formations:
+      '#type': textarea
+      '#title': Submission
+      '#placeholder': 'Do you think opening public exhibition for comment a day before a long weekend on a 14 day exhibition period is fair?'
+      '#access_create_roles':
+        - authenticated
+        - anonymous
+      '#access_update_roles':
+        - authenticated
+        - anonymous
+      '#access_view_roles':
+        - authenticated
+        - anonymous
+  destruction_of_historic_first_nation_s_rock_art:
+    '#type': webform_wizard_page
+    '#title': 'These modifications should be part of the Angus Place West proposal'
+    '#states':
+      visible:
+        ':input[name="destruction_of_historic_first_nation_s_rock_art_check"]':
+          checked: true
+    '#access_create_roles':
+      - authenticated
+      - anonymous
+    '#access_update_roles':
+      - authenticated
+      - anonymous
+    '#access_view_roles':
+      - authenticated
+      - anonymous
+    title_first_nations_rock_art:
+      '#type': webform_computed_token
+      '#title': title
+      '#title_display': none
+      '#wrapper_attributes':
+        class:
+          - wizard-page-title
+      '#access_create_roles':
+        - authenticated
+        - anonymous
+      '#access_update_roles':
+        - authenticated
+        - anonymous
+      '#access_view_roles':
+        - authenticated
+        - anonymous
+      '#display_on': form
+      '#template': '[webform_submission:current-page:title]'
+    markup_04:
+      '#type': webform_markup
+      '#access_create_roles':
+        - authenticated
+        - anonymous
+      '#access_update_roles':
+        - authenticated
+        - anonymous
+      '#access_view_roles':
+        - authenticated
+        - anonymous
+      '#markup': |-
+        <p dir="ltr"><span style="font-size:12pt"><span style="background:white"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-family:&quot;Calibri&quot;,sans-serif"><span style="color:#1b1b1b">Modification 8 for Angus Place and modification 5 for Western Coal Services appear to be part of Centennial&rsquo;s plans to expand mining under Angus Place West &ndash; which has to go through a state significant development application.</span></span></span></span></span><br />
+        <br />
+        <span style="font-size:12pt"><span style="background:white"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-family:&quot;Calibri&quot;,sans-serif"><span style="color:#1b1b1b">The executive summary of the report for these modifications makes their connection to Centennial&rsquo;s expansion plans clear when it concludes that, &ldquo;The proposed modification will &hellip; safeguard the feasible recovery of the coal resource remaining at the mine.&rdquo;</span></span></span></span></span><br />
+        <br />
+        <span style="font-size:12pt"><span style="background:white"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-family:&quot;Calibri&quot;,sans-serif"><span style="color:#1b1b1b">The impacts of these modifications should be assessed in totality with the proposed Angus Place West mine expansion, rather than piecemeal through these modifications.</span></span></span></span></span><br />
+        <br />
+        <span style="font-size:12pt"><span style="background:white"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-family:&quot;Calibri&quot;,sans-serif"><span style="color:#1b1b1b">If approved, these modifications could also obscure the extent of impacts from the future Angus Place West proposal on national heritage in the new Gardens of Stone reserve. Modifications are supposed to allow for minor changes to approved major projects. These modifications could damage nationally endangered swamps and plants and drain water from streams in the new Gardens of Stone State Conservation Area. These modification proposals also propose to by-pass the $120 million reverse osmosis mine water treatment plant and recommence the discharge of mine water into the Coxs River catchment. These changes are not minor matters.</span></span></span></span></span><br />
+        <br />
+        <span style="font-size:12pt"><span style="background:white"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-family:&quot;Calibri&quot;,sans-serif"><span style="color:#1b1b1b">By carving out these changes as modification requests, it seems that Centennial Coal is trying to get around the purposes of the <em>Environmental Planning and Assessment Act, 1979</em>.</span></span></span></span></span><br />
+        <br />
+        <span style="font-size:12pt"><span style="background:white"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-family:&quot;Calibri&quot;,sans-serif"><span style="color:#1b1b1b">The impacts of these modifications should be assessed in totality with Angus Place West major project, rather than piecemeal through these modifications.</span></span></span></span></span><br />
+        <br />
+        <span style="font-size:12pt"><span style="background:white"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-family:&quot;Calibri&quot;,sans-serif"><span style="color:#1b1b1b">The modifications should be withdrawn and the proposed changes should be included in Centennial&rsquo;s state significant development application for the Angus Place West mining area so that they can be appropriately assessed.</span></span></span></span></span></p>
+    submission_first_nations_rock_art:
+      '#type': textarea
+      '#title': Submission
+      '#placeholder': 'Do you think the modifications should be part of the Angus Place West proposal or do you think this modification processes are adequate for these mine proposals?'
+      '#access_create_roles':
+        - authenticated
+        - anonymous
+      '#access_update_roles':
+        - authenticated
+        - anonymous
+      '#access_view_roles':
+        - authenticated
+        - anonymous
+  destruction_of_unique_wetlands:
+    '#type': webform_wizard_page
+    '#title': 'Damage to unique wetlands'
+    '#states':
+      visible:
+        ':input[name="destruction_of_unique_wetlands_check"]':
+          checked: true
+    '#access_create_roles':
+      - authenticated
+      - anonymous
+    '#access_update_roles':
+      - authenticated
+      - anonymous
+    '#access_view_roles':
+      - authenticated
+      - anonymous
+    title_unique_wetlands:
+      '#type': webform_computed_token
+      '#title': title
+      '#title_display': none
+      '#wrapper_attributes':
+        class:
+          - wizard-page-title
+      '#access_create_roles':
+        - authenticated
+        - anonymous
+      '#access_update_roles':
+        - authenticated
+        - anonymous
+      '#access_view_roles':
+        - authenticated
+        - anonymous
+      '#display_on': form
+      '#template': '[webform_submission:current-page:title]'
+    markup_03:
+      '#type': webform_markup
+      '#access_create_roles':
+        - authenticated
+        - anonymous
+      '#access_update_roles':
+        - authenticated
+        - anonymous
+      '#access_view_roles':
+        - authenticated
+        - anonymous
+      '#markup': |-
+        <p dir="ltr"><span style="font-size:12pt"><span style="background:white"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-family:&quot;Calibri&quot;,sans-serif"><span style="color:#1b1b1b">In 2018, Angus Place Mine Modification 5 was approved allowing pumping at a rate of 10 ML/day from mine workings (areas 800 and 900). Following this approval, the groundwater table dropped between 21 and 30 metres (Centennial Coal, Coxs River Swamp Review, July 2018, pg44). This drop in groundwater was observed to quickly dry out Kangaroo and Lambs Creeks and associated swamps, as well as the Coxs River and swamps (</span></span></span></span></span>Lithgow Environment Group, pers. comm. 4 Oct, 2023)<span style="font-size:12pt"><span style="background:white"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-family:&quot;Calibri&quot;,sans-serif"><span style="color:#1b1b1b">. </span></span></span></span></span><br />
+        <br />
+        Since 2018, far-field loss of surface waters in Newnes Plateau streams and swamps have been observed&nbsp;over a kilometre away&nbsp;following depressurisation of groundwater in a coal seam due to coal mining at Springvale. Such far-field impacts may explain the observations made by Lithgow Environment Centre in 2018 and why future surface water losses from dewatering areas 800 and 900 may be expected.<br />
+        <br />
+        <span style="font-size:12pt"><span style="background:white"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-family:&quot;Calibri&quot;,sans-serif"><span style="color:#1b1b1b">The proposed modification 8 which would allow pumping at 10ML/day from areas 800 and 900 is likely to again lower the groundwater table and also impact on surface water resrouces of the area of operations for the Angus Place West proposal.</span></span></span></span></span><br />
+        <br />
+        <span style="font-size:12pt"><span style="background:white"><span style="box-sizing:inherit"><span style="font-variant-ligatures:normal"><span style="text-decoration-thickness:initial"><span style="text-decoration-style:initial"><span style="text-decoration-color:initial"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="box-sizing:inherit"><span style="font-style:inherit"><span style="font-weight:inherit"><span style="font-family:&quot;Calibri&quot;,sans-serif"><span style="color:#1b1b1b">Due to the proximity of the Lithgow Coal seam to the surface in the Angus Place West project area. These modifications may cause regional drawdown or localised far-field drawdown of near-surface groundwater, damaging Kangaroo and Lambs Creeks and swamps, as well as the upper Coxs River and its swamps.</span></span> Nationally endangered plants may also be harmed, including <em>Xerochrysum palustre</em> (Swamp everlasting), <em>Pultenaea glabra</em>, <em>Kunzea cambagei</em>, <em>Veronica blakleyi</em>, <em>Grevillea acanthifolia</em>, <em>Gentianella cunninghamii</em>, <em>Prasophyllum australe</em> and Latham&#39;s Snipe (a rare migratory bird species).</span></span></span></span></span></span></span></span></span></span></span></p>
+    submission_destruction_unique_wetlands:
+      '#type': textarea
+      '#title': Submission
+      '#placeholder': 'Do you think the Angus Place modification 8 proposal will damage wetlands and why this is a bad thing?'
+      '#access_create_roles':
+        - authenticated
+        - anonymous
+      '#access_update_roles':
+        - authenticated
+        - anonymous
+      '#access_view_roles':
+        - authenticated
+        - anonymous
+  issue_contamination:
+    '#type': webform_wizard_page
+    '#title': 'Contamination of Sydney''s drinking water resources'
+    '#states':
+      visible:
+        ':input[name="contamination_of_drinking_water_in_sydney_s_warragamba_dam_check"]':
+          checked: true
+    '#access_create_roles':
+      - authenticated
+      - anonymous
+    '#access_update_roles':
+      - authenticated
+      - anonymous
+    '#access_view_roles':
+      - authenticated
+      - anonymous
+    title_drinking_water:
+      '#type': webform_computed_token
+      '#title': title
+      '#title_display': none
+      '#wrapper_attributes':
+        class:
+          - wizard-page-title
+      '#access_create_roles':
+        - authenticated
+        - anonymous
+      '#access_update_roles':
+        - authenticated
+        - anonymous
+      '#access_view_roles':
+        - authenticated
+        - anonymous
+      '#display_on': form
+      '#template': '[webform_submission:current-page:title]'
+    markup_05:
+      '#type': webform_markup
+      '#access_create_roles':
+        - authenticated
+        - anonymous
+      '#access_update_roles':
+        - authenticated
+        - anonymous
+      '#access_view_roles':
+        - authenticated
+        - anonymous
+      '#markup': |-
+        <p dir="ltr">The mine effluent will have elevated levels of heavy metals if salinity is treated to the proposed 350&mu;S/cm standard. This level of treatment may not adequately protect aquatic ecosystems, especially macroinvertebrates, given the flow of mine water at the LDP001 entry point into Wangcol Creek. Wangcol Creek flows to the Coxs River and is part of Sydney&rsquo;s Drinking Water Catchment. The modifications will see more contaminated mine water going into the Wangcol Creek from the Western Coal Services site. This water is likely to be contaminated with toxic chemicals such as arsenic and selenium that have been recorded as present in the mine water of the Springvale-Angus Place mine water system.<br />
+        <br />
+        The proposed discharges should not meet the &ldquo;neutral or beneficial&rdquo; test&nbsp; for water pollution because it adds to the overall pollution load in the creek. The transfer of 10ML/day of mine water from Angus Place to the Western Coal Services site for discharge should not be allowed.&nbsp;<br />
+        <span style="font-size:11.0pt"><span style="line-height:107%"><span style="font-family:&quot;Calibri&quot;,sans-serif">Adding mine water to a highly polluted element of the Wangcol Creek catchment is also likely to flush out more heavy metals from that contiminated part of the catchment downstream into the Coxs River, a key part of Sydney&#39;s water catchment that flows through the Greater Blue Mountains World Heritage Area.&nbsp;</span></span></span></p>
+
+        <p dir="ltr"><span style="font-size:11.0pt"><span style="line-height:107%"><span style="font-family:&quot;Calibri&quot;,sans-serif">These modification proposals to allow large discharges of mine water also defeat the purpose of the $120 million Springvale Water Treatment Project (SSD-7592, approved in June 2017) that was built to eliminate mine water discharges from Springvale Mine and Angus Place Colliery. </span></span></span></p>
+    submission_contamination_drinking_water:
+      '#type': textarea
+      '#title': Submission
+      '#placeholder': |-
+        Do you believe the Angus Place modification proposal risks contaminating raw drinking water resources of the Coxs River and polluting the World Heritage Area?
+
+        Why do you think that the $120 million treatment plant, that can treat 40ML/day of mine water, is not being used to treat the mine water from Angus Place under modification 8?
+      '#access_create_roles':
+        - authenticated
+        - anonymous
+      '#access_update_roles':
+        - authenticated
+        - anonymous
+      '#access_view_roles':
+        - authenticated
+        - anonymous
+  long_term_impacts_for_the_local_economy:
+    '#type': webform_wizard_page
+    '#title': 'These modifications should be assessed under Federal environmental law'
+    '#states':
+      visible:
+        ':input[name="long_term_impacts_for_the_local_economy_check"]':
+          checked: true
+    '#access_create_roles':
+      - authenticated
+      - anonymous
+    '#access_update_roles':
+      - authenticated
+      - anonymous
+    '#access_view_roles':
+      - authenticated
+      - anonymous
+    title_economy:
+      '#type': webform_computed_token
+      '#title': title
+      '#title_display': none
+      '#wrapper_attributes':
+        class:
+          - wizard-page-title
+      '#access_create_roles':
+        - authenticated
+        - anonymous
+      '#access_update_roles':
+        - authenticated
+        - anonymous
+      '#access_view_roles':
+        - authenticated
+        - anonymous
+      '#display_on': form
+      '#template': '[webform_submission:current-page:title]'
+    markup_06:
+      '#type': webform_markup
+      '#access_create_roles':
+        - authenticated
+        - anonymous
+      '#access_update_roles':
+        - authenticated
+        - anonymous
+      '#access_view_roles':
+        - authenticated
+        - anonymous
+      '#markup': |-
+        <p dir="ltr"><span style="font-size:12pt"><span style="background:white"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-family:&quot;Calibri&quot;,sans-serif"><span style="color:#1b1b1b">We are concerned the modifications have not been referred for Commonwealth assessment under the EPBC Act. We think that this project is likely to have significant impacts on water and that the modifications should be referred to Environment Minister Plibersek to determine if the water trigger applies. Commonwealth assessment and the application of the water trigger is important to ensure that there is rigorous assessment of the surface and groundwater impacts of the modifications. </span></span></span></span></span><br />
+        <br />
+        Centennial Coal has failed to demonstrate that Modification 8 Angus Place and Modification 5 Western Coal Services do not impact of matters of national environmental significance. The modifications should be controlled actions under the Federal <em>Environmental Protection and Biodiversity Act </em>(EPBC Act) for the following reasons:</p>
+        &bull;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size:11.0pt"><span style="line-height:107%"><span style="font-family:&quot;Calibri&quot;,sans-serif"><span style="color:#1b1b1b">As &ldquo;large coal mining&rdquo; developments that will have, or are likely to have, &ldquo;a significant impact on a water resource&rdquo; the proposed modifications should be controlled actions under s 24D of the EPBC Act (known as the &ldquo;water trigger&rdquo;).</span></span></span></span><br />
+        <br />
+        &bull;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;These modifications will cause 10ML/day of mine water to be discharged into the Coxs River that flows downstream into the Greater Blue Mountains World Heritage Area. Any&nbsp;downstream impacts of mine water arising from the proposed modifications on World Heritage values of the World Heritage&nbsp;property must be considered.<br />
+        <br />
+        &bull;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Due to groundwater drawdown associated with the Angus Place modification 8 mine water pumping proposal, depressurisation between surface and the near-surface groundwater aquifers is possible, and could alter the existing groundwater and surface water regime. These modifications may also have a direct or indirect changes in the water resources of the Sydney Water catchment that must be considered. Far-field impacts on streams and swamps in the Angus Place West project area are possible and should be assessed.<br />
+        <br />
+        &bull;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Due to a probable lowering near-surface groundwater aquifers, Angus Place modification 8 may impact on nationally endangered species such as Swamp Everlasting, <em><span style="font-size:11.0pt"><span style="line-height:107%"><span style="font-family:&quot;Calibri&quot;,sans-serif"><span style="color:#1b1b1b">Grevillea acanthifolia</span></span></span></span></em><span style="font-size:11.0pt"><span style="line-height:107%"><span style="font-family:&quot;Calibri&quot;,sans-serif"><span style="color:#1b1b1b">, <em>Gentianella cunninghamii</em>, <em>Prasophyllum australe,&nbsp;</em>Latham&#39;s Snipe </span></span></span></span>and nationally endangered Temperate Highland Peat Swamps on Sandstone in the Angus Place West Project Area. These impacts must be assessed.
+
+        <p dir="ltr">The modifications are likely to impact on water resources of a drinking water catchment, a World Heritage Area and nationally endangered plants and communities. Modification 8 Angus Place and Modification 5 Western Coal Services should be controlled actions under the EPBC Act.</p>
+    submission_long_term_impacts_economy:
+      '#type': textarea
+      '#title': Submission
+      '#placeholder': 'Do you believe that the Angus Place and Western Coal Services modification proposals could impact of water resources, nationally endangered species and nationally endangered plant communities? Why would this happen and is it important?'
+      '#access_create_roles':
+        - authenticated
+        - anonymous
+      '#access_update_roles':
+        - authenticated
+        - anonymous
+      '#access_view_roles':
+        - authenticated
+        - anonymous
+  centennial_s_track_record_of_environmental_damage:
+    '#type': webform_wizard_page
+    '#title': 'Centennial’s track record of environmental damage'
+    '#states':
+      visible:
+        ':input[name="centennial_s_track_record_of_environmental_damage_check"]':
+          checked: true
+    '#access_create_roles':
+      - authenticated
+      - anonymous
+    '#access_update_roles':
+      - authenticated
+      - anonymous
+    '#access_view_roles':
+      - authenticated
+      - anonymous
+    title_track_record:
+      '#type': webform_computed_token
+      '#title': title
+      '#title_display': none
+      '#wrapper_attributes':
+        class:
+          - wizard-page-title
+      '#access_create_roles':
+        - authenticated
+        - anonymous
+      '#access_update_roles':
+        - authenticated
+        - anonymous
+      '#access_view_roles':
+        - authenticated
+        - anonymous
+      '#display_on': form
+      '#template': '[webform_submission:current-page:title]'
+    markup_07:
+      '#type': webform_markup
+      '#access_create_roles':
+        - authenticated
+        - anonymous
+      '#access_update_roles':
+        - authenticated
+        - anonymous
+      '#access_view_roles':
+        - authenticated
+        - anonymous
+      '#markup': |-
+        <p dir="ltr">Centennial has failed to demonstrate that it can operate responsibly in the Gardens of Stone region without causing irreversible damage to the environment. Records of environmental incidents and harm, consent and licence non-compliances and inaccurate predictions of environmental impacts from its operations suggest that current impact predictions in the environmental assessment should not be relied upon.</p>
+
+        <p dir="ltr">An audit of Centennial&rsquo;s mining licences for the past five years has found at least 134 licence non-compliances across its sites in the Gardens of Stone region. Centennial&#39;s non-compliance events in the region include:</p>
+
+        <p dir="ltr">&bull;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In 2022, Centennial breached its development consent for Airly mine causing major irreversible fractures to million-year-old sandstone pagoda formations in the Mugii Murum-ban State Conservation Area. The Department of Planning and Environment imposed a $150,000 enforceable undertaking on Centennial. The company has since mined outside its approved area at Airly Mine, a Class 1 reportable offence <span style="font-size:11.0pt"><span style="line-height:107%"><span style="font-family:&quot;Calibri&quot;,sans-serif"><span style="color:#1b1b1b">under NSW <em>Environmental Planning and Assessment Act</em></span></span></span></span>.</p>
+
+        <p dir="ltr">&bull;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In 2017, the EPA prosecuted Centennial after its coal waste storage at Clarence mine spilt 2330 tonnes of coal fines into the Wollangambe River and caused damage within the Blue Mountains World Heritage Area,&nbsp; and Centennial was fined over $1 million and clean-up operations took 12 months.</p>
+
+        <p dir="ltr">&bull;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In 2015, Centennial was fined $15,000 when toxic coal sludge was illegally discharged from Springvale mine sediment storage ponds into downstream wetlands.</p>
+
+        <p dir="ltr">&bull;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In 2011, Centennial acknowledged that the Federal Environment Minister considered its mining activities had had a significant impact on Temperate Highland Peat Swamps on Sandstone, namely Narrow Swamp, East Wolgan Swamp and Junction Swamp and entered a $1.45 million enforceable undertaking with the Commonwealth under s 486DA of the EPBC Act. These swamps have not recovered and are expected to be permanently lost. The company has since paid $28 million that only partly offsets some of the significant damage it has caused to nationally endangered swamps on Newnes Plateau.</p>
+    submission_centennial_track_record:
+      '#type': textarea
+      '#title': Submission
+      '#placeholder': 'Given its track record, do you believe Centennial Coal is a fit custodian/protector of our natural resources to give you confidence to rely on report on the proposed modificaitons?'
+      '#access_create_roles':
+        - authenticated
+        - anonymous
+      '#access_update_roles':
+        - authenticated
+        - anonymous
+      '#access_view_roles':
+        - authenticated
+        - anonymous
+  climate_pollution:
+    '#type': webform_wizard_page
+    '#title': 'Additional Water Treatment'
+    '#states':
+      visible:
+        ':input[name="climate_pollution_check"]':
+          checked: true
+    '#access_create_roles':
+      - authenticated
+      - anonymous
+    '#access_update_roles':
+      - authenticated
+      - anonymous
+    '#access_view_roles':
+      - authenticated
+      - anonymous
+    title_climate_pollution:
+      '#type': webform_computed_token
+      '#title': title
+      '#title_display': none
+      '#wrapper_attributes':
+        class:
+          - wizard-page-title
+      '#access_create_roles':
+        - authenticated
+        - anonymous
+      '#access_update_roles':
+        - authenticated
+        - anonymous
+      '#access_view_roles':
+        - authenticated
+        - anonymous
+      '#display_on': form
+      '#template': '[webform_submission:current-page:title]'
+    markup_08:
+      '#type': webform_markup
+      '#access_create_roles':
+        - authenticated
+        - anonymous
+      '#access_update_roles':
+        - authenticated
+        - anonymous
+      '#access_view_roles':
+        - authenticated
+        - anonymous
+      '#markup': |-
+        <p dir="ltr">If the capacity of the 40ML/day Springvale Water Treatment Plant has been exceed and cannot treat an additional 10ML/day of mine water from Angus Place Mine as proposed in modification 8, then an additional water treatment plant is required.&nbsp;<span style="font-size:11.0pt"><span style="line-height:107%"><span style="font-family:&quot;Calibri&quot;,sans-serif"><span style="color:#1b1b1b">This is a large amount of additional mine water and the entire Angus Place and Springvale mine water matter requires thorough scrutiny </span></span></span></span>by expert panels, including the Independent Expert Scientific Committee on Coal Seam Gas and Large Coal Mining Development, the NSW Independent Planning Commission and the Independent Expert Advisory Panel on Underground Mining.&nbsp;<br />
+        &nbsp;</p>
+
+        <p>Centennial Coal should withdraw modification 8 Angus Place and 5 Western Coal Services. Centennial Coal should at least seek to install a reverse osmosis treatment plant at Angus Place, as it did under modification 5, and then pump the brine effluent to Springvale Water Treatment Plant site for processing and appropriate disposal.</p>
+
+        <p>Any proposal for additional water treatment capacity at Angus Place Mine should be made as part of the major project for Angus Place West. Dischages from a reverse osmosis treatment plant at Angus Place should have a salinity of 30&mu;S/cm to have a neutral effect on the salinity of the Coxs River headwaters that would receive this discharge.&nbsp;</p>
+    submission_climate_pollution:
+      '#type': textarea
+      '#title': Submission
+      '#placeholder': 'Do you think Angus Place and Western Coal Services modification proposals may cause undue mine water pollution in Wangcol Creek and the Coxs River? If so, then what additional water treatment plant is necessary to protect the Coxs River and do you think the modification can proceed without such additional treatment?'
+      '#access_create_roles':
+        - authenticated
+        - anonymous
+      '#access_update_roles':
+        - authenticated
+        - anonymous
+      '#access_view_roles':
+        - authenticated
+        - anonymous
+  other_topic:
+    '#type': webform_wizard_page
+    '#title': 'Other topics'
+    '#states':
+      visible:
+        ':input[name="other_topic_check"]':
+          checked: true
+    '#access_create_roles':
+      - authenticated
+      - anonymous
+    '#access_update_roles':
+      - authenticated
+      - anonymous
+    '#access_view_roles':
+      - authenticated
+      - anonymous
+    title_other:
+      '#type': webform_computed_token
+      '#title': title_other
+      '#title_display': none
+      '#wrapper_attributes':
+        class:
+          - wizard-page-title
+      '#access_create_roles':
+        - authenticated
+        - anonymous
+      '#access_update_roles':
+        - authenticated
+        - anonymous
+      '#access_view_roles':
+        - authenticated
+        - anonymous
+      '#display_on': form
+      '#template': '[webform_submission:current-page:title]'
+    markup_11:
+      '#type': webform_markup
+      '#wrapper_attributes':
+        class:
+          - wizard-page-title
+      '#access_create_roles':
+        - authenticated
+        - anonymous
+      '#access_update_roles':
+        - authenticated
+        - anonymous
+      '#access_view_roles':
+        - authenticated
+        - anonymous
+      '#markup': 'Do you have any additional comments to on the proposed modification 8 to Angus Place Mine or to proposed modification 5 Western Coal Services?'
+    submission_other_topic:
+      '#type': textarea
+      '#title': 'Submission other topic'
+      '#placeholder': 'Outline your comments and give reasons for why your concerns are important.'
+      '#access_create_roles':
+        - authenticated
+        - anonymous
+      '#access_update_roles':
+        - authenticated
+        - anonymous
+      '#access_view_roles':
+        - authenticated
+        - anonymous
+  submission_page:
+    '#type': webform_wizard_page
+    '#title': Submission
+    '#access_create_roles':
+      - authenticated
+      - anonymous
+    '#access_update_roles':
+      - authenticated
+      - anonymous
+    '#access_view_roles':
+      - authenticated
+      - anonymous
+    signature:
+      '#type': webform_signature
+      '#title': 'Signature - draw a rough signature in the box using your mouse'
+      '#access_create_roles':
+        - authenticated
+        - anonymous
+      '#access_update_roles':
+        - authenticated
+        - anonymous
+      '#access_view_roles':
+        - authenticated
+        - anonymous
+css: ''
+javascript: ''
+settings:
+  ajax: false
+  ajax_scroll_top: form
+  ajax_progress_type: ''
+  ajax_effect: ''
+  ajax_speed: null
+  page: true
+  page_submit_path: ''
+  page_confirm_path: ''
+  page_theme_name: ''
+  form_title: source_entity_webform
+  form_submit_once: false
+  form_open_message: ''
+  form_close_message: ''
+  form_exception_message: ''
+  form_previous_submissions: true
+  form_confidential: false
+  form_confidential_message: ''
+  form_disable_remote_addr: false
+  form_convert_anonymous: false
+  form_prepopulate: false
+  form_prepopulate_source_entity: false
+  form_prepopulate_source_entity_required: false
+  form_prepopulate_source_entity_type: ''
+  form_unsaved: false
+  form_disable_back: false
+  form_submit_back: false
+  form_disable_autocomplete: false
+  form_novalidate: false
+  form_disable_inline_errors: false
+  form_required: false
+  form_autofocus: false
+  form_details_toggle: false
+  form_reset: false
+  form_access_denied: default
+  form_access_denied_title: ''
+  form_access_denied_message: ''
+  form_access_denied_attributes: {  }
+  form_file_limit: ''
+  form_attributes: {  }
+  form_method: ''
+  form_action: ''
+  share: false
+  share_node: false
+  share_theme_name: ''
+  share_title: true
+  share_page_body_attributes: {  }
+  submission_label: ''
+  submission_exception_message: ''
+  submission_locked_message: ''
+  submission_log: false
+  submission_excluded_elements: {  }
+  submission_exclude_empty: false
+  submission_exclude_empty_checkbox: false
+  submission_views: {  }
+  submission_views_replace: {  }
+  submission_user_columns: {  }
+  submission_user_duplicate: false
+  submission_access_denied: default
+  submission_access_denied_title: ''
+  submission_access_denied_message: ''
+  submission_access_denied_attributes: {  }
+  previous_submission_message: ''
+  previous_submissions_message: ''
+  autofill: false
+  autofill_message: ''
+  autofill_excluded_elements: {  }
+  wizard_progress_bar: false
+  wizard_progress_pages: false
+  wizard_progress_percentage: false
+  wizard_progress_link: false
+  wizard_progress_states: false
+  wizard_start_label: ''
+  wizard_preview_link: false
+  wizard_confirmation: true
+  wizard_confirmation_label: ''
+  wizard_auto_forward: true
+  wizard_auto_forward_hide_next_button: false
+  wizard_keyboard: true
+  wizard_track: ''
+  wizard_prev_button_label: ''
+  wizard_next_button_label: ''
+  wizard_toggle: false
+  wizard_toggle_show_label: ''
+  wizard_toggle_hide_label: ''
+  wizard_page_type: container
+  wizard_page_title_tag: h2
+  preview: 0
+  preview_label: ''
+  preview_title: ''
+  preview_message: ''
+  preview_attributes: {  }
+  preview_excluded_elements: {  }
+  preview_exclude_empty: true
+  preview_exclude_empty_checkbox: false
+  draft: none
+  draft_multiple: false
+  draft_auto_save: false
+  draft_saved_message: ''
+  draft_loaded_message: ''
+  draft_pending_single_message: ''
+  draft_pending_multiple_message: ''
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_title: "Thank you for your submission on Centennial's mine modification proposals"
+  confirmation_message: "Your submission to:\r\n<ul>\r\n\t<li><span style=\"font-size:11.0pt\"><span style=\"line-height:107%\"><span style=\"font-family:&quot;Calibri&quot;,sans-serif\">the NSW Department of Planning and Environment</span></span></span></li>\r\n</ul>\r\nhas been sent. An email record of your submissions have been sent to you.<br />\r\n<br />\r\nThank you for supporting the protection of our national heritage, our drinking water supplies and the new Gardens of Stone State Conservation Area."
+  confirmation_attributes: {  }
+  confirmation_back: true
+  confirmation_back_label: ''
+  confirmation_back_attributes: {  }
+  confirmation_exclude_query: false
+  confirmation_exclude_token: false
+  confirmation_update: false
+  limit_total: null
+  limit_total_interval: null
+  limit_total_message: ''
+  limit_total_unique: false
+  limit_user: null
+  limit_user_interval: null
+  limit_user_message: ''
+  limit_user_unique: false
+  entity_limit_total: null
+  entity_limit_total_interval: null
+  entity_limit_user: null
+  entity_limit_user_interval: null
+  purge: none
+  purge_days: null
+  results_disabled: false
+  results_disabled_ignore: false
+  results_customize: false
+  token_view: false
+  token_update: false
+  token_delete: false
+  serial_disabled: false
+access:
+  create:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  view_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  purge_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  view_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  administer:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  test:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  configuration:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+handlers:
+  email:
+    id: email
+    handler_id: email
+    label: Email
+    notes: 'Send yourself a copy'
+    status: true
+    conditions: {  }
+    weight: 0
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:email:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: _default
+      from_options: {  }
+      from_name: _default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'Angus Place mod 8 and West Coal Services mod 5 submission'
+      body: "I have made a reportable political donation:<br />\r\n[webform_submission:values:radio_button_yes_no_political_donations]<br />\r\n<br />\r\nI would like my name withheld: [webform_submission:values:i_would_like_my_name_withheld]<br />\r\n<br />\r\n[webform_submission:values:first_name]&nbsp;[webform_submission:values:last_name]<br />\r\n[webform_submission:values:email]<br />\r\n[webform_submission:values:gos_dpom_address]<br />\r\n<br />\r\nI am objecting to the proposal:<br />\r\n[webform_submission:values:i_am_objecting_to_the_proposal]<br />\r\n<br />\r\n[webform_submission:values:why_are_you_making_this_submission_]<br />\r\n[webform_submission:values:submission_damage_to_ancient_rock_formations]<br />\r\n[webform_submission:values:submission_first_nations_rock_art]<br />\r\n[webform_submission:values:submission_destruction_unique_wetlands]<br />\r\n[webform_submission:values:submission_contamination_drinking_water]<br />\r\n[webform_submission:values:submission_long_term_impacts_economy]<br />\r\n[webform_submission:values:submission_centennial_track_record]<br />\r\n[webform_submission:values:submission_climate_pollution]<br />\r\n[webform_submission:values:submission_other_topic]<br />\r\n[webform_submission:values:signature]<br />\r\n&nbsp;"
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: true
+      attachments: false
+      twig: false
+      theme_name: ''
+      langcode: ''
+      parameters: {  }
+      debug: false
+  branch_office_email:
+    id: email
+    handler_id: branch_office_email
+    label: 'DEP email'
+    notes: "target email address\r\n"
+    status: true
+    conditions: {  }
+    weight: 0
+    settings:
+      states:
+        - completed
+      to_mail: gabrielle.allan@dpie.nsw.gov.au
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: 'keith.muir6@bigpond.com,jrobens@interlated.com.au'
+      cc_options: {  }
+      from_mail: _default
+      from_options: {  }
+      from_name: _default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'Angus Place mod 8 and West Coal Services mod 5 submission'
+      body: "I have made a reportable political donation:<br />\r\n[webform_submission:values:radio_button_yes_no_political_donations]<br />\r\n<br />\r\nI would like my name withheld: [webform_submission:values:i_would_like_my_name_withheld]<br />\r\n<br />\r\n[webform_submission:values:first_name]&nbsp;[webform_submission:values:last_name]<br />\r\n[webform_submission:values:email]<br />\r\n[webform_submission:values:gos_dpom_address]<br />\r\n<br />\r\nI am objecting to the proposal:<br />\r\n[webform_submission:values:i_am_objecting_to_the_proposal]<br />\r\n<br />\r\n[webform_submission:values:why_are_you_making_this_submission_]<br />\r\n[webform_submission:values:submission_damage_to_ancient_rock_formations]<br />\r\n[webform_submission:values:submission_first_nations_rock_art]<br />\r\n[webform_submission:values:submission_destruction_unique_wetlands]<br />\r\n[webform_submission:values:submission_contamination_drinking_water]<br />\r\n[webform_submission:values:submission_long_term_impacts_economy]<br />\r\n[webform_submission:values:submission_centennial_track_record]<br />\r\n[webform_submission:values:submission_climate_pollution]<br />\r\n[webform_submission:values:submission_other_topic]<br />\r\n[webform_submission:values:signature]<br />\r\n&nbsp;"
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: true
+      attachments: false
+      twig: false
+      theme_name: ''
+      langcode: ''
+      parameters: {  }
+      debug: false
+variants: {  }

@@ -1,0 +1,13 @@
+uuid: 6dfa79a0-b0aa-4eb5-b571-f1b4b4400194
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - photos
+_core:
+  default_config_hash: lXZM1-bC0ILMbw81oaLD6ooM97yeb-WTSfUIOOcGhdo
+id: comment_photos
+label: 'Comment photos'
+target_entity_type_id: node
+description: 'Default comment field for photo albums'

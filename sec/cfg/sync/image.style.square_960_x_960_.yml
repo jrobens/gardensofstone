@@ -1,0 +1,17 @@
+uuid: 72b8c85a-ae8a-4a97-b990-6195273aecfe
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: square_960_x_960_
+label: 'Square (960 x 960)'
+effects:
+  ba8c67ea-5c84-40c5-91bc-6b5f4872d5e5:
+    uuid: ba8c67ea-5c84-40c5-91bc-6b5f4872d5e5
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 960
+      height: 960
+      crop_type: focal_point

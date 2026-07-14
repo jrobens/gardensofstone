@@ -1,0 +1,7 @@
+uuid: 83d31edc-c2f5-40e9-8e91-2d6630d41017
+langcode: en
+status: true
+dependencies: {  }
+id: cross_fade
+label: 'Cross fade'
+classes: cross-fade-paragraph

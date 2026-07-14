@@ -1,0 +1,13 @@
+uuid: 40094453-3cfc-4da0-8f8b-21bd504a65fa
+langcode: en
+status: true
+dependencies:
+  module:
+    - photos
+_core:
+  default_config_hash: GVPHeU1prC-CXZXDw2qcc2tABnfeA8OaMfnFjy5nlJ8
+id: photos_image.list
+label: List
+description: ''
+targetEntityType: photos_image
+cache: true

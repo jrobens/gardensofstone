@@ -1,0 +1,25 @@
+uuid: 5aeaad72-5a0b-4831-8721-ab49c6f8667e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pbimage_style
+    - paragraphs.paragraphs_type.image
+_core:
+  default_config_hash: QsWWVDfbGKUVSIGoQneN3jjPmE5d74UeP-j3LFFruck
+id: paragraph.image.field_pbimage_style
+field_name: field_pbimage_style
+entity_type: paragraph
+bundle: image
+label: Style
+description: "Choose 'full width' to get the image to cover the width of the page"
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:classy_paragraphs_style'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: entity_reference

@@ -1,0 +1,30 @@
+uuid: 46d20151-9964-4dee-93bc-4a38f2779bb6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.photos_image.field_photos_media_image
+    - media.type.album_media_items
+  module:
+    - photos
+id: photos_image.photos_image.field_photos_media_image
+field_name: field_photos_media_image
+entity_type: photos_image
+bundle: photos_image
+label: 'Photos Media Image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      album_media_items: album_media_items
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

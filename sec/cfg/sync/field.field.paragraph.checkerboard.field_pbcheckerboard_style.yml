@@ -1,0 +1,25 @@
+uuid: 3f75f52a-f312-4708-9309-d9880c3bd831
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pbcheckerboard_style
+    - paragraphs.paragraphs_type.checkerboard
+_core:
+  default_config_hash: 9jULdFTnhDgJVoyK-WjqkNC3yl9P6FasODBxxBtozP8
+id: paragraph.checkerboard.field_pbcheckerboard_style
+field_name: field_pbcheckerboard_style
+entity_type: paragraph
+bundle: checkerboard
+label: Style
+description: 'Choose the style of the tile, or leave blank for white background'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:classy_paragraphs_style'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: entity_reference

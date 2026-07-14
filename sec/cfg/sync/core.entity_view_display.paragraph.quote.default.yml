@@ -1,0 +1,31 @@
+uuid: 17bf240e-9b3a-48f8-8c3e-fc02106de7f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.quote.field_pbquote_link
+    - field.field.paragraph.quote.field_pbquote_text
+    - paragraphs.paragraphs_type.quote
+  module:
+    - linked_field
+    - text
+id: paragraph.quote.default
+targetEntityType: paragraph
+bundle: quote
+mode: default
+content:
+  field_pbquote_text:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings:
+      linked_field:
+        linked: '1'
+        type: field
+        destination: field_pbquote_link
+        advanced: {  }
+        token: ''
+    weight: 0
+    region: content
+hidden:
+  field_pbquote_link: true

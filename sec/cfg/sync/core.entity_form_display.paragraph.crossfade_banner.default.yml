@@ -1,0 +1,42 @@
+uuid: 760fff29-befd-4fa2-98b0-01a00aa004d8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.crossfade_banner.field_pbcrossfade_image
+    - field.field.paragraph.crossfade_banner.field_pbcrossfade_intro
+    - paragraphs.paragraphs_type.crossfade_banner
+  module:
+    - media_library
+    - text
+id: paragraph.crossfade_banner.default
+targetEntityType: paragraph
+bundle: crossfade_banner
+mode: default
+content:
+  admin_title:
+    type: string_textfield
+    weight: -10
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_pbcrossfade_image:
+    type: media_library_widget
+    weight: -9
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_pbcrossfade_intro:
+    type: text_textarea
+    weight: -8
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

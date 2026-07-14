@@ -1,0 +1,28 @@
+uuid: df0fe3c2-7cf7-4829-93e9-c6474aa05ac5
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.basic
+    - field.storage.paragraph.field_pbblock_custom_block
+    - paragraphs.paragraphs_type.block
+id: paragraph.block.field_pbblock_custom_block
+field_name: field_pbblock_custom_block
+entity_type: paragraph
+bundle: block
+label: 'Custom block'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:block_content'
+  handler_settings:
+    target_bundles:
+      basic: basic
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

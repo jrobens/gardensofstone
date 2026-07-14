@@ -1,0 +1,9 @@
+uuid: 26788eaf-fbca-4c4d-9bfb-9ae96fbe7b97
+langcode: en
+status: true
+dependencies: {  }
+name: 'Event and News type'
+vid: event_and_news_type
+description: null
+weight: 0
+new_revision: false

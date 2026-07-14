@@ -1,0 +1,528 @@
+uuid: 1f637e14-b9a5-42d4-88ef-fb893d016fdb
+langcode: en
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 9
+template: false
+archive: false
+id: emirates_wolgan_valley_resort_mo
+title: 'Emirates Wolgan Valley Resort - Modification 4 submission'
+description: '<p>Submission on Emirates Wolgan Valley Resort - Modification 4 regarding protential environmental impacts</p>'
+categories: {  }
+elements: |-
+  plan_of_management:
+    '#type': webform_wizard_page
+    '#title': 'Emirates Wolgan Valley Resort - Mod 4 submission'
+    '#open': true
+    have_your_say:
+      '#type': details
+      '#title': 'Have your say'
+      '#help_title': "Have your say on Emirates' latest plans for more helicopters"
+      '#help': "<p>Have your say on the Emirates' latest plans to proposal for 210 helicopter movements/week (105 in and 105 out) and 30/day to its Wolgan Valley resort. We've included information below to help guide you through the process of making a submission on these helicopter plans to shatter the peace.&nbsp;<strong>MP06_0310, Mod 4</strong></p>"
+      '#open': true
+      markup:
+        '#type': webform_markup
+        '#markup': '<p><strong>The proposal for 30 helicopters/day over the Gardens of Stone</strong></p><p dir="ltr">The Emirates latest plans to fly helicopters over unique the Gardens of Stone State Conservation Area ruining the peace and quiet park visitors expect. We''ve included &nbsp;Emirates Wolgan Valley Resort helicopter proposal - <strong>Mod 4,</strong>&nbsp;<strong>MP06_0310</strong></p><p dir="ltr">&nbsp;</p><h2><a href="https://www.planningportal.nsw.gov.au/major-projects/projects/mod-4-temporary-changes-helicopter-transport" target="_blank">View Emirates resort modification report</a></h2><p>&nbsp;</p><h2 dir="ltr"><a href="/stop-helicopter-apocalypse" target="_blank">Some issues</a> with this proposal:</h2><ol><li data-list-item-id="e39eb47c558d14bae4710c7bebd195e99">The Proposal is Unnecessary as Wolgan Road is re-opening</li><li data-list-item-id="e6566dcbe2b68f6f53b7370f9bc77ad6a">Excessive Helicopter Flights&nbsp;</li><li data-list-item-id="ea7c3c5cb5c74dfee65a241e1493f23a2">Safety hazards</li><li data-list-item-id="e97c33cf8db8372042905a1a6fe775db1">Helicopter noise concentration in the lower Blue Mountains</li><li data-list-item-id="e7526b52c7e08e65576deb4d18f5be845">Impact on Public Investment and Tourism</li><li data-list-item-id="e90918678c95c961a53d55ce12eaaa5af">Flawed Noise Assessments</li><li data-list-item-id="e70fcb534f1d79f600e4b2849e715abf0">Environmental impacts disregarded</li><li data-list-item-id="ec2b6e4cca776826e01a27995f3572836">Lack of Trust and Accountability</li><li data-list-item-id="eddb6501eb661afabc4639f7556a0688f">The proposal is effectively a heliport and requires an EIS</li></ol><p dir="ltr"><strong>Object before 5pm, 19 May</strong>, if you have questions or need help to guide you through this process contact Keith Muir, email: <a href="http://mailto:keith.muir6@bigpond.com">keith.muir6@bigpond.com</a>&nbsp;</p><h3 dir="ltr">Making a submission</h3><p dir="ltr">Due to there being insufficient time to make a decent submission, a pre-filled form submission is provided. You can modify the submission text in the text box on the following pages. Alternatively, you may like to draft into a blank Word document and copy your answers across.&nbsp;</p><p dir="ltr">The Department does not count identical or substantially the same submissions as separate objections, so it much better to use the Planning Department''s website.&nbsp;</p><p dir="ltr">A submission consists of&nbsp;</p><ol dir="ltr"><li data-list-item-id="ecfad3ce465be7c7d56784c040cc940b8">Political donations declaration</li><li data-list-item-id="e74a35521a883255de30b0b993c95d02d">Personal details</li><li data-list-item-id="e1a590884ce6e9b6ebfb7b344b6cae55b">Declaration that this is an objection</li><li data-list-item-id="e56a4c03b03dad6d22d73fca442d8458b">Submission&nbsp;</li></ol>'
+      view_the_issues_markup:
+        '#type': webform_markup
+        '#markup': '<h3 dir="ltr">A submission are best made directly via the <a href="https://www.planningportal.nsw.gov.au/major-projects/projects/mod-4-temporary-changes-helicopter-transport">NSW Government Major Projects Portal and click make a submission.</a></h3>'
+  political_donations:
+    '#type': webform_wizard_page
+    '#title': 'Political Donations'
+    '#access_create_roles':
+      - authenticated
+      - anonymous
+    '#access_update_roles':
+      - authenticated
+      - anonymous
+    '#access_view_roles':
+      - authenticated
+      - anonymous
+    title_political_donations:
+      '#type': webform_computed_token
+      '#title': title
+      '#title_display': none
+      '#wrapper_attributes':
+        class:
+          - wizard-page-title
+      '#access_create_roles':
+        - authenticated
+        - anonymous
+      '#access_update_roles':
+        - authenticated
+        - anonymous
+      '#access_view_roles':
+        - authenticated
+        - anonymous
+      '#display_on': form
+      '#template': '[webform_submission:current-page:title]'
+    markup_10:
+      '#type': webform_markup
+      '#markup': '<p>To improve transparency of the planning system, NSW laws require that when you are making a submission on a development proposal you must disclose any gifts or reportable political donations that you have made to a political party, elected member, group, candidate associated entity or third party campaigner in the two years prior to making your submission (includes Nature Conservation Council of NSW).</p><p>Reportable political donations are donations of $1,000 or more (or smaller donations totaling $1,000 or more within the same financial year). A gift includes a gift of money or the provision of any other valuable thing or service for no money or inadequate money in return. If you think this might apply to you, please read the NSW Department of Planning’s information on reportable political donations before proceeding.</p><ul><li data-list-item-id="e4e0bba8e22a54c8997a1fc3da84eaa48">If <strong>NO</strong>, continue to rest of form</li><li data-list-item-id="ef118b2dedd5a3e85de43bb7d2f1ca7d8">If <strong>YES.&nbsp;</strong>Please make your submission through the <a href="https://www.planningportal.nsw.gov.au/major-projects/projects/mod-4-temporary-changes-helicopter-transport">NSW Government’s Major Projects Portal</a> so that you can disclose your political donation. You can still use our FAQs to help with your submission.</li></ul><p>Thank you for helping ensure communities get a proper say on this massive increase in helicopter flights over the Gardens of Stone region!</p>'
+    radio_button_yes_no_political_donations:
+      '#type': radios
+      '#title': 'Have you made a reportable political donation?'
+      '#description_display': before
+      '#options': yes_no
+      '#options_display': buttons
+      '#required': true
+      '#required_error': 'Have you made a reportable donation? Required'
+      '#default_value': 'No'
+      '#access_create_roles': {  }
+    i_would_like_my_name_withheld:
+      '#type': radios
+      '#title': 'I would like my name withheld'
+      '#description': '<p>We will request that the NSW planning department not associate your name with this submission</p>'
+      '#options': yes_no
+      '#options_display': buttons_horizontal
+      '#default_value': 'No'
+  name_and_address:
+    '#type': webform_wizard_page
+    '#title': 'Name and Address'
+    '#access_create_roles':
+      - authenticated
+      - anonymous
+    '#access_update_roles':
+      - authenticated
+      - anonymous
+    '#access_view_roles':
+      - authenticated
+      - anonymous
+    address:
+      '#type': fieldset
+      '#title': Address
+      '#required': true
+      '#access_create_roles':
+        - authenticated
+        - anonymous
+      '#access_update_roles':
+        - authenticated
+        - anonymous
+      '#access_view_roles':
+        - authenticated
+        - anonymous
+      first_name:
+        '#type': textfield
+        '#title': 'First Name'
+        '#title_display': invisible
+        '#placeholder': 'Your first name'
+        '#required': true
+        '#access_create_roles':
+          - authenticated
+          - anonymous
+        '#access_update_roles':
+          - authenticated
+          - anonymous
+        '#access_view_roles':
+          - authenticated
+          - anonymous
+      last_name:
+        '#type': textfield
+        '#title': 'Last Name'
+        '#title_display': invisible
+        '#placeholder': 'Your last name'
+        '#required': true
+        '#access_create_roles':
+          - authenticated
+          - anonymous
+        '#access_update_roles':
+          - authenticated
+          - anonymous
+        '#access_view_roles':
+          - authenticated
+          - anonymous
+      email:
+        '#type': email
+        '#title': Email
+        '#title_display': invisible
+        '#placeholder': 'Your email address'
+        '#required': true
+        '#access_create_roles':
+          - authenticated
+          - anonymous
+        '#access_update_roles':
+          - authenticated
+          - anonymous
+        '#access_view_roles':
+          - authenticated
+          - anonymous
+      gos_dpom_address:
+        '#type': webform_address
+        '#title': Address
+        '#required': true
+        '#access_create_roles':
+          - authenticated
+          - anonymous
+        '#access_update_roles':
+          - authenticated
+          - anonymous
+        '#access_view_roles':
+          - authenticated
+          - anonymous
+        '#address__placeholder': 'Your address'
+        '#address__title_display': invisible
+        '#address_2__access': false
+        '#city__placeholder': 'Your town'
+        '#city__title_display': invisible
+        '#state_province__placeholder': 'Your state'
+        '#state_province__title_display': invisible
+        '#state_province__options': state_province_codes
+        '#postal_code__placeholder': 'Post code'
+        '#postal_code__title_display': invisible
+        '#country__access': false
+  part_2_introduce_yourself:
+    '#type': webform_wizard_page
+    '#title': 'Part 2: Introduce yourself, then share your concerns'
+    markup_09:
+      '#type': webform_markup
+      '#markup': '<h3 dir="ltr"><strong>Step 1: Introduce yourself and why are you making this submission?</strong></h3><p dir="ltr">You can improve the form submission by introducing yourself and explaining why you care about this proposal.</p><p dir="ltr">You could describe your connection to the Gardens of Stone Conservation Area and any concerns you have about helicopter flights over the reserve. Or you might want to include concerns that you may have for your health and that of your family due to the potential for noise during the day. By adding such comments your submission is unique, but I doubt that the Planning Department would treat it that way if coming from an external webform...</p><p dir="ltr">Examples:&nbsp;</p><p dir="ltr"><em>I am a retired grandmother. I am deeply concerned about the proposal to expand helicopter flights to the Wolgan Resort and what this means for community health. I know quiet recreation in nature benefits our mental health.&nbsp;</em> <em>My grandson suffers from autism and I worry that helicopter noise will deny us the opportunity to find relief for his symptoms by camping in this park.&nbsp;</em></p><p dir="ltr"><em>I am a parent who enjoys taking my kids exploring in the Gardens of Stone region on the weekends. I am worried about what this project might mean four our enjoyment of this beautiful environment. My kids love to exploring in the Gardens of &nbsp;Stone but I’m concerned that the frequent helicopters flights will mean that not only my family but also the majority of visitors will stay away.</em></p>'
+    submission:
+      '#type': fieldset
+      '#title': 'Submission as an objection'
+      '#title_display': invisible
+      '#access_create_roles':
+        - authenticated
+        - anonymous
+      '#access_update_roles':
+        - authenticated
+        - anonymous
+      '#access_view_roles':
+        - authenticated
+        - anonymous
+      markup_introduce_yourself:
+        '#type': webform_markup
+        '#markup': '<p dir="ltr">Another example:&nbsp;</p><p dir="ltr"><em>I have visited the Gardens of Stone region for 30 years and have explored throughout this part of the World Heritage Area and State Conservation Area. I feel a deep affinity with the natural beauty of the place. I wish that this beauty be appreciated by generations to come. I have come to love its beautiful pagodas, streams, waterfalls and swamps. I appreciate it when my children wonder at how the rock formations look like a particular bird, boat or boot and feel that it is very short sighted to introduce helicopter noise and drive visitors away for all this natural wonder.</em></p><h2>Points you could raise (already inserted in this webform submission, but can be modified):</h2><p><strong>Proposal requires more scrutiny</strong></p><p><span style="-webkit-text-stroke-width:0px;color:black;font-family:Aptos, sans-serif;font-size:11pt;font-style:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;line-height:15.693334px;orphans:2;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-thickness:auto;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;" lang="EN-GB">The high number of helicopter flights and levels of impact on the sensitive park areas and community require Environmental Impact Statement processes. This proposal effectively would create a private heliport and should not be a modification as it is substantially different from the original proposal of just four helicopter flights a week.&nbsp;</span></p><p dir="ltr"><strong>Significant impacts on tourism</strong></p><p dir="ltr">I object to this proposal as it will shatter the peace with what would become effectively a private commercial heliport in one of Australia’s most spectacular regions. The Gardens of Stone are diverse landscape of globally significant geological heritage and significant plant diversity. Visitors to the area should not be driven away by noise. Imagine looking forward to hiking in one of Australia’s most spectacular regions, only to have the peace of your walk shattered by frequent helicopter noise.</p><p dir="ltr">This proposal could waste $50 million that the NSW Government has invested in visitor facilities.&nbsp;</p><p>Constant helicopter noise will degrade the peace and quiet park visitors expect, and could lead to a net economic loss for the region’s tourism industry, as the majority of park visitors won’t come to the Gardens of Stone once it has earnt a reputation for constant helicopter noise. The proposal does not even consider the impacts of helicopter noise on the Pagoda Walk, a public campground, Forest Camp, Birds Rock Lookout or Acoustic Canyon.</p><p>The controversial glamping resort proposals among pagoda landscapes are going to become “stranded assets,” as the Emirates’ Wolgan Resort already has permission for up to 10 helicopter flights a day. Nobody is going pay $1,000 a day to stay in a glamping resort and then put up with helicopter noise.&nbsp;</p><p><strong>The proposal is unnecessary</strong></p><p dir="ltr">Lithgow Council recently announced that Wolgan Road would be re-opened in August 2026. &nbsp;As the road is being re-opened the helicopter proposal lacks any justification. The resort justifies 210 helicopter flights per week by claiming the Wolgan Gap Road is closed. However, the road is scheduled to reopen to 2WD traffic by August 2026 (Lithgow Mercury, 7 May 2026).</p><p>If the road is safe enough for heavy truck logistics (linen, food, waste), it is safe enough for guests in 2WD vehicles.</p><p>This modification is likely to become permanent &nbsp;and the Emirates is unlikely to accept terminational of the consent modification once the Wolgan Road is re-opened.If the road is safe enough for heavy truck logistics (linen, food, waste), it is safe enough for guests in 2WD vehicles.</p><p><b style="-webkit-text-stroke-width:0px;caret-color:rgb(0, 0, 0);color:rgb(0, 0, 0);font-style:normal;font-variant-caps:normal;letter-spacing:normal;orphans:2;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-thickness:auto;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;"><span style="font-family:Aptos, sans-serif;font-size:11pt;line-height:15.693334px;" lang="EN-GB"><strong>Helicopter noise concentration in the lower Blue Mountains&nbsp;</strong></span></b></p><p>The proposal has not assessed the increase in helicopter noise caused by controlled airspace of Western Sydney International Airport. The rising terrain between Glenbrook and Springwood will force helicopters to fly at altitudes to avoid commercial flight paths.&nbsp;</p><p>I strongly object to helicopter noise of 30 daily movements being concentrated over lower Blue Mountains townships and the World Heritage National Park. This could significantly degrading the acoustic amenity of the lower Blue Mountains region.</p><p>Thank you for the opportunity to comment.</p>'
+      i_am_objecting_to_the_proposal:
+        '#type': radios
+        '#title': 'I am objecting to the proposal'
+        '#options': yes_no
+        '#options_display': buttons_horizontal
+        '#default_value': 'Yes'
+      why_are_you_making_this_submission_:
+        '#type': textarea
+        '#title': 'Your submission'
+        '#placeholder': |
+          Start by introducing yourself and explaining why you care about this proposal.
+
+          Describe your connection to the Gardens of Stone State Conservation Area and any concerns you have about helicopter flights over this reserve. 
+        '#default_value': |-
+          Mr. Jeffrey Peng
+          NSW Department of Planning, Housing and Infrastructure
+
+
+          Dear Mr Peng,
+
+          Re: Emirates Wolgan Valley Resort - Mod 4, MP06_0310
+
+          The increase in helicopter flights requires more scrutiny
+
+          Please accept this submission as my objection to this proposal. Unfortunately the modification process does not provide enough time for me to write a detailed submission. I only recently heard about the proposed increases in helicopter flights. 
+
+          The high number of helicopter flights and levels of impact on the sensitive park areas and community require Environmental Impact Statement processes. This proposal effectively would create a private heliport and should not be a modification as it is substantially different from the original proposal of just four helicopter flights a week. 
+
+          Significant impacts on tourism
+
+          I object to this proposal as it will shatter the peace with what would become effectively a private commercial heliport in one of Australia’s most spectacular regions. The Gardens of Stone are diverse landscape of globally significant geological heritage and significant plant diversity. Visitors to the area should not be driven away by noise. Imagine planning to hike in this area, one of Australia’s most spectacular regions, only to then have the peace shattered by frequent helicopter noise during your walk.
+
+          This proposal could waste $50 million that the NSW Government has invested in visitor facilities. 
+
+          Constant helicopter noise will degrade the peace and quiet park visitors expect, and could lead to a net economic loss for the region’s tourism industry, as the majority of park visitors won’t come to the Gardens of Stone once it has earnt a reputation for constant helicopter noise. The proposal does not even consider the impacts of helicopter noise on the Pagoda Walk, a public campground, Forest Camp, Birds Rock Lookout or Acoustic Canyon.
+
+          The controversial glamping resort proposals among pagoda landscapes are going to become “stranded assets,” as the Emirates’ Wolgan Resort already has permission for up to 10 helicopter flights a day. Nobody is going pay $1,000 a day to stay in a glamping resort and then put up with helicopter noise. 
+
+          The proposal is unnecessary
+
+          Lithgow Council recently announced that Wolgan Road would be re-opened in August 2026.  As the road is being re-opened the helicopter proposal lacks any justification. The resort justifies 210 helicopter flights per week by claiming the Wolgan Gap Road is closed. However, the road is scheduled to reopen to 2WD traffic by August 2026 (Lithgow Mercury, 7 May 2026).
+
+          If the road is safe enough for heavy truck logistics (linen, food, waste), it is safe enough for guests in 2WD vehicles.
+
+          This modification is likely to become permanent  and the Emirates is unlikely to accept terminational of the consent modification once the Wolgan Road is re-opened.If the road is safe enough for heavy truck logistics (linen, food, waste), it is safe enough for guests in 2WD vehicles.
+
+          Helicopter noise concentration in the lower Blue Mountains 
+
+          The proposal has not assessed the increase in helicopter noise caused by controlled airspace of Western Sydney International Airport. The rising terrain between Glenbrook and Springwood will force helicopters to fly at altitudes to avoid commercial flight paths. 
+
+          I strongly object to helicopter noise of 30 daily movements being concentrated over lower Blue Mountains townships and the World Heritage National Park. This could significantly degrading the acoustic amenity of the lower Blue Mountains region.
+
+          Thank you for the opportunity to comment.
+  submission_page:
+    '#type': webform_wizard_page
+    '#title': Submission
+    '#access_create_roles':
+      - authenticated
+      - anonymous
+    '#access_update_roles':
+      - authenticated
+      - anonymous
+    '#access_view_roles':
+      - authenticated
+      - anonymous
+    signature:
+      '#type': webform_signature
+      '#title': Signature
+      '#description': '<p>Sign above / hit reset if necessary</p>'
+css: ''
+javascript: ''
+settings:
+  ajax: false
+  ajax_scroll_top: form
+  ajax_progress_type: ''
+  ajax_effect: ''
+  ajax_speed: null
+  page: true
+  page_submit_path: ''
+  page_confirm_path: ''
+  page_theme_name: ''
+  form_title: source_entity_webform
+  form_submit_once: false
+  form_open_message: ''
+  form_close_message: ''
+  form_exception_message: ''
+  form_previous_submissions: true
+  form_confidential: false
+  form_confidential_message: ''
+  form_disable_remote_addr: false
+  form_convert_anonymous: false
+  form_prepopulate: false
+  form_prepopulate_source_entity: false
+  form_prepopulate_source_entity_required: false
+  form_prepopulate_source_entity_type: ''
+  form_unsaved: false
+  form_disable_back: false
+  form_submit_back: false
+  form_disable_autocomplete: false
+  form_novalidate: false
+  form_disable_inline_errors: false
+  form_required: false
+  form_autofocus: false
+  form_details_toggle: false
+  form_reset: false
+  form_access_denied: default
+  form_access_denied_title: ''
+  form_access_denied_message: ''
+  form_access_denied_attributes: {  }
+  form_file_limit: ''
+  form_file_limit_message: ''
+  form_attributes: {  }
+  form_method: ''
+  form_action: ''
+  share: false
+  share_node: false
+  share_theme_name: ''
+  share_title: true
+  share_page_body_attributes: {  }
+  submission_label: ''
+  submission_exception_message: ''
+  submission_locked_message: ''
+  submission_log: false
+  submission_excluded_elements: {  }
+  submission_exclude_empty: false
+  submission_exclude_empty_checkbox: false
+  submission_views: {  }
+  submission_views_replace: {  }
+  submission_user_columns: {  }
+  submission_user_duplicate: false
+  submission_access_denied: default
+  submission_access_denied_title: ''
+  submission_access_denied_message: ''
+  submission_access_denied_attributes: {  }
+  previous_submission_message: ''
+  previous_submissions_message: ''
+  autofill: false
+  autofill_message: ''
+  autofill_excluded_elements: {  }
+  wizard_progress_bar: false
+  wizard_progress_pages: false
+  wizard_progress_percentage: false
+  wizard_progress_link: false
+  wizard_progress_states: false
+  wizard_start_label: ''
+  wizard_preview_link: false
+  wizard_confirmation: true
+  wizard_confirmation_label: ''
+  wizard_auto_forward: true
+  wizard_auto_forward_hide_next_button: false
+  wizard_keyboard: true
+  wizard_track: ''
+  wizard_prev_button_label: ''
+  wizard_next_button_label: ''
+  wizard_toggle: false
+  wizard_toggle_show_label: ''
+  wizard_toggle_hide_label: ''
+  wizard_page_type: container
+  wizard_page_title_tag: h2
+  preview: 0
+  preview_label: ''
+  preview_title: ''
+  preview_message: ''
+  preview_attributes: {  }
+  preview_excluded_elements: {  }
+  preview_exclude_empty: true
+  preview_exclude_empty_checkbox: false
+  draft: none
+  draft_multiple: false
+  draft_auto_save: false
+  draft_saved_message: ''
+  draft_loaded_message: ''
+  draft_pending_single_message: ''
+  draft_pending_multiple_message: ''
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_title: 'Thank you for your submission'
+  confirmation_message: '<p>Your submission to:</p><ul><li data-list-item-id="e4d88f6c28799af9999553660fd6df18a"><span style="font-family:&quot;Calibri&quot;,sans-serif;font-size:11.0pt;line-height:107%;">the Department of Planning, Housing and Infrastructure</span></li></ul><p>has been sent. Email records of your submission has been sent to you.<br><br>Thank you for supporting protection of our national heritage in the new Gardens of Stone State Conservation Area.</p>'
+  confirmation_attributes: {  }
+  confirmation_back: true
+  confirmation_back_label: ''
+  confirmation_back_attributes: {  }
+  confirmation_exclude_query: false
+  confirmation_exclude_token: false
+  confirmation_update: false
+  limit_total: null
+  limit_total_interval: null
+  limit_total_message: ''
+  limit_total_unique: false
+  limit_user: null
+  limit_user_interval: null
+  limit_user_message: ''
+  limit_user_unique: false
+  entity_limit_total: null
+  entity_limit_total_interval: null
+  entity_limit_user: null
+  entity_limit_user_interval: null
+  purge: none
+  purge_days: null
+  results_disabled: false
+  results_disabled_ignore: false
+  results_customize: false
+  token_view: false
+  token_update: false
+  token_delete: false
+  serial_disabled: false
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+    permissions: {  }
+  view_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  purge_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  view_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  administer:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  test:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  configuration:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+handlers:
+  email:
+    id: email
+    handler_id: email
+    label: Email
+    notes: 'Send yourself a copy'
+    status: true
+    conditions: {  }
+    weight: 0
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:email:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: _default
+      from_options: {  }
+      from_name: _default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'Emirates Wolgan Valley Resort - Mod 4 submission opposing increased helicopter flights'
+      body: '<p>Have you made a reportable political donation:&nbsp;<br>[webform_submission:values:radio_button_yes_no_political_donations]<br><br>I would like my name withheld:&nbsp;[webform_submission:values:i_would_like_my_name_withheld]<br><br>Contact details<br><br>[webform_submission:values:first_name]&nbsp;[webform_submission:values:last_name]<br>[webform_submission:values:email]<br>[webform_submission:values:gos_dpom_address]<br><br>I am objecting to the proposal:<br>[webform_submission:values:i_am_objecting_to_the_proposal]<br><br>[webform_submission:values:why_are_you_making_this_submission_]<br>​​​​​​<br>​​​​​​​[webform_submission:values:[webform_submission:values:signature]<br><br>​​​​​​​</p>'
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: true
+      attachments: false
+      twig: false
+      theme_name: ''
+      langcode: ''
+      parameters: {  }
+      debug: false
+  branch_office_email:
+    id: email
+    handler_id: branch_office_email
+    label: 'DPHI email'
+    notes: "target email address\r\n"
+    status: true
+    conditions: {  }
+    weight: 0
+    settings:
+      states:
+        - completed
+      to_mail: jeffrey.peng@planning.nsw.gov.au
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: 'keith.muir6@bigpond.com,jrobens@interlated.com.au'
+      cc_options: {  }
+      from_mail: _default
+      from_options: {  }
+      from_name: _default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'Emirates Wolgan Valley Resort - Mod 4 submission opposing increased helicopter flights'
+      body: '<p><span style="-webkit-text-stroke-width:0px;caret-color:rgb(0, 0, 0);color:rgb(0, 0, 0);display:inline !important;float:none;font-size:medium;font-style:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-align:start;text-decoration:none;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;">Have you made a reportable political donation:</span><br>[webform_submission:values:radio_button_yes_no_political_donations]<br><br>I would like my name withheld:&nbsp;[webform_submission:values:i_would_like_my_name_withheld]<br><br>Contact details<br><br>[webform_submission:values:first_name]&nbsp;[webform_submission:values:last_name]<br>[webform_submission:values:email]<br>[webform_submission:values:gos_dpom_address]<br><br>I am objecting to the proposal:<br>[webform_submission:values:i_am_objecting_to_the_proposal]<br><br>[webform_submission:values:why_are_you_making_this_submission_]<br>​​​​​​<br>​​​​​​​[webform_submission:values:[webform_submission:values:signature]<br><br>​​​​​​​</p>'
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: true
+      attachments: false
+      twig: false
+      theme_name: ''
+      langcode: ''
+      parameters: {  }
+      debug: false
+variants: {  }

@@ -1,0 +1,24 @@
+uuid: 30d6acb7-306d-44c1-959d-433332d1daeb
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_pbtext_style
+field_name: field_pbtext_style
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: countup
+      label: CountUp
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

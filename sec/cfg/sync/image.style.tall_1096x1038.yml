@@ -1,0 +1,17 @@
+uuid: 43c42096-6cd1-41bf-a65e-01b06f8f430f
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: tall_1096x1038
+label: 'tall 1096x1038'
+effects:
+  fc783036-e137-4861-95c8-673b893fac48:
+    uuid: fc783036-e137-4861-95c8-673b893fac48
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1105
+      height: 1391
+      crop_type: focal_point

@@ -1,0 +1,13 @@
+uuid: cf5d1517-76be-4eb0-8948-8d3304638a72
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - photos
+_core:
+  default_config_hash: kcRy4Fi7hzmManLfDtsCgcji7QBxw2FeDZiEVKI70xo
+id: photos_image_comment
+label: 'Photo Comments'
+target_entity_type_id: photos_image
+description: 'Allows commenting on images'

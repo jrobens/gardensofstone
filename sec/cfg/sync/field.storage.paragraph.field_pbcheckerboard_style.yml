@@ -1,0 +1,22 @@
+uuid: dfefc32c-2a4f-4e69-8000-c7d1eef5b1d7
+langcode: en
+status: true
+dependencies:
+  module:
+    - classy_paragraphs
+    - paragraphs
+_core:
+  default_config_hash: NZp-MvgptTqBd0G3f86oU3WIH_rTVV9XA0AbhLTVqvw
+id: paragraph.field_pbcheckerboard_style
+field_name: field_pbcheckerboard_style
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: classy_paragraphs_style
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

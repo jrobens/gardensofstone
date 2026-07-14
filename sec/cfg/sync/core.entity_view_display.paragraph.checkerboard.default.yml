@@ -1,0 +1,61 @@
+uuid: d4a77db8-f73a-4604-9d39-a350dfe4c01d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.checkerboard.field_pbcheckerboard_icon
+    - field.field.paragraph.checkerboard.field_pbcheckerboard_link
+    - field.field.paragraph.checkerboard.field_pbcheckerboard_style
+    - field.field.paragraph.checkerboard.field_pbcheckerboard_text
+    - field.field.paragraph.checkerboard.field_pbcheckerboard_title
+    - paragraphs.paragraphs_type.checkerboard
+  module:
+    - linked_field
+    - text
+_core:
+  default_config_hash: Skovul2z8UfmjiCRYK3vWaWNjA9v5CY5fZ3y9tAVswU
+id: paragraph.checkerboard.default
+targetEntityType: paragraph
+bundle: checkerboard
+mode: default
+content:
+  field_pbcheckerboard_icon:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings:
+      linked_field:
+        linked: '1'
+        type: field
+        destination: field_pbcheckerboard_link
+        advanced: {  }
+        token: ''
+    weight: 1
+    region: content
+  field_pbcheckerboard_text:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_pbcheckerboard_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      linked_field:
+        linked: '1'
+        type: field
+        destination: field_pbcheckerboard_link
+        advanced: {  }
+        token: ''
+    weight: 2
+    region: content
+hidden:
+  field_pbcheckerboard_link: true
+  field_pbcheckerboard_style: true
+  search_api_excerpt: true

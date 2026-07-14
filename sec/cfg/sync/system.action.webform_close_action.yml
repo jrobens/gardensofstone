@@ -1,0 +1,11 @@
+uuid: 6f2d8530-b86d-4d8e-a6af-79e8cdee6ed5
+langcode: en
+status: true
+dependencies:
+  module:
+    - webform
+id: webform_close_action
+label: 'Close webform'
+type: webform
+plugin: webform_close_action
+configuration: {  }

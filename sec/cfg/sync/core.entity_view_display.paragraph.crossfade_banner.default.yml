@@ -1,0 +1,32 @@
+uuid: 422db964-a96b-4193-ab6e-8ae263306e9f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.crossfade_banner.field_pbcrossfade_image
+    - field.field.paragraph.crossfade_banner.field_pbcrossfade_intro
+    - paragraphs.paragraphs_type.crossfade_banner
+  module:
+    - text
+id: paragraph.crossfade_banner.default
+targetEntityType: paragraph
+bundle: crossfade_banner
+mode: default
+content:
+  field_pbcrossfade_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_pbcrossfade_intro:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

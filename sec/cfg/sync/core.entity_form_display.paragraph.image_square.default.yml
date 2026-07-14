@@ -1,0 +1,44 @@
+uuid: 7e1c3031-eec2-4a90-bea5-b6588d9ad7a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.image_square.field_pbimagesquare_caption
+    - field.field.paragraph.image_square.field_pbimagesquare_image
+    - paragraphs.paragraphs_type.image_square
+  module:
+    - media_library
+    - text
+_core:
+  default_config_hash: KKWf8nB9EBpGoP6bvOsuqO5t9lIPpGCc2s81rrxYOQA
+id: paragraph.image_square.default
+targetEntityType: paragraph
+bundle: image_square
+mode: default
+content:
+  admin_title:
+    type: string_textfield
+    weight: -10
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_pbimagesquare_caption:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  field_pbimagesquare_image:
+    type: media_library_widget
+    weight: 0
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

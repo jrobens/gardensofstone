@@ -1,0 +1,8 @@
+uuid: 6d1a3b70-1c03-45da-87e5-f8c214907dec
+langcode: en
+status: true
+dependencies: {  }
+id: visit-gardens-of-stone
+label: 'Visit Gardens of Stone'
+description: ''
+locked: false

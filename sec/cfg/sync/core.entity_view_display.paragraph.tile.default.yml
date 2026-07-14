@@ -1,0 +1,49 @@
+uuid: e3a3bfff-5af3-4fdf-8527-e8d6c1c51dc3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.tile.field_pbcheckerboard_image
+    - field.field.paragraph.tile.field_pbcheckerboard_link
+    - field.field.paragraph.tile.field_pbcheckerboard_text
+    - field.field.paragraph.tile.field_pcheckerboard_style
+    - paragraphs.paragraphs_type.tile
+  module:
+    - linked_field
+    - text
+id: paragraph.tile.default
+targetEntityType: paragraph
+bundle: tile
+mode: default
+content:
+  field_pbcheckerboard_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: square
+      link: false
+    third_party_settings:
+      linked_field:
+        linked: '1'
+        type: field
+        destination: field_pbcheckerboard_link
+        advanced: {  }
+        token: ''
+    weight: 0
+    region: content
+  field_pbcheckerboard_text:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings:
+      linked_field:
+        linked: '1'
+        type: field
+        destination: field_pbcheckerboard_link
+        advanced: {  }
+        token: ''
+    weight: 1
+    region: content
+hidden:
+  field_pbcheckerboard_link: true
+  field_pcheckerboard_style: true

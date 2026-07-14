@@ -1,0 +1,31 @@
+uuid: b3fb5b41-a691-40c7-9476-a73b5431fa75
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.heading.field_pbheading_heading
+    - field.field.paragraph.heading.field_pbheading_link
+    - paragraphs.paragraphs_type.heading
+  module:
+    - linked_field
+id: paragraph.heading.default
+targetEntityType: paragraph
+bundle: heading
+mode: default
+content:
+  field_pbheading_heading:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      linked_field:
+        linked: '1'
+        type: field
+        destination: field_pbheading_link
+        advanced: {  }
+        token: ''
+    weight: 0
+    region: content
+hidden:
+  field_pbheading_link: true

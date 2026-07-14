@@ -1,0 +1,21 @@
+uuid: 100d6da9-2f66-44fb-956f-9ddb12a8834e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_metatag
+    - node.type.news_and_events
+  module:
+    - metatag
+id: node.news_and_events.field_metatag
+field_name: field_metatag
+entity_type: node
+bundle: news_and_events
+label: Metatag
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

@@ -1,0 +1,40 @@
+uuid: 3197dc2e-0e14-42c4-b812-aa0f75cdbddd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.block.field_pbblock_block
+    - field.field.paragraph.block.field_pbblock_custom_block
+    - field.field.paragraph.block.field_style
+    - paragraphs.paragraphs_type.block
+id: paragraph.block.default
+targetEntityType: paragraph
+bundle: block
+mode: default
+content:
+  field_pbblock_block:
+    type: options_select
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_pbblock_custom_block:
+    type: options_select
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_style:
+    type: entity_reference_autocomplete
+    weight: 2
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  admin_title: true
+  created: true
+  status: true

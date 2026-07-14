@@ -1,0 +1,12 @@
+uuid: 433c8457-6a14-46da-92ad-d7c0e3388741
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: uQIOCQHyK_gppMKXh8zWxNf49mV5ylYprLp_1dnQujA
+id: quote
+label: Quote
+icon_uuid: null
+icon_default: null
+description: 'A quote paragraph'
+behavior_plugins: {  }

@@ -1,0 +1,17 @@
+uuid: f34fe37f-51a2-4efa-9995-496aa4964b63
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: teaser_wide_1066x1600
+label: 'teaser tall 1066x1600'
+effects:
+  7c4508f5-de17-44b3-b0b3-bd84cb3848dd:
+    uuid: 7c4508f5-de17-44b3-b0b3-bd84cb3848dd
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1066
+      height: 1600
+      crop_type: focal_point

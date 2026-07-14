@@ -1,0 +1,39 @@
+uuid: c0f65ca8-46b1-41fb-8dad-2b46b39410f5
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.photos_image.sort
+    - field.field.photos_image.photos_image.field_comments
+    - field.field.photos_image.photos_image.field_image
+    - field.field.photos_image.photos_image.field_photos_media_image
+    - image.style.thumbnail
+  module:
+    - image
+    - photos
+_core:
+  default_config_hash: vbbAHUq12NOyDepT28X0u7YkqkmKznHE6dHUGTNb0s8
+id: photos_image.photos_image.sort
+targetEntityType: photos_image
+bundle: photos_image
+mode: sort
+content:
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: thumbnail
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  album_id: true
+  created: true
+  description: true
+  field_comments: true
+  field_photos_media_image: true
+  uid: true
+  weight: true

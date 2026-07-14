@@ -1,0 +1,23 @@
+uuid: d3db9d5c-8e3b-4061-b602-64bfdab3fd09
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pbimagesquare_caption
+    - paragraphs.paragraphs_type.image_square
+  module:
+    - text
+_core:
+  default_config_hash: k5VPiGJbCuQrRJHP9_92CPqNjzilD9_mpDm_rpHdxXo
+id: paragraph.image_square.field_pbimagesquare_caption
+field_name: field_pbimagesquare_caption
+entity_type: paragraph
+bundle: image_square
+label: Caption
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

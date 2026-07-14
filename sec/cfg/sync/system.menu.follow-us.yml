@@ -1,0 +1,10 @@
+uuid: 26f22fb8-5616-4758-9550-652eb6fc8a3e
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 5Nr2GbCqVz9DvK5-pXVNwfr9b8qb4Lj0JY5kA1pFa-o
+id: follow-us
+label: 'Follow us'
+description: ''
+locked: false

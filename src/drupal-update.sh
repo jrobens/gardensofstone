@@ -1,7 +1,6 @@
 #!/bin/bash
 #  src/drupal-update.sh -y
 
-minor_updates=$1
 job='GOS'
 today=$(date '+%Y-%m-%d')
 
@@ -25,7 +24,6 @@ composer update $updates_clean --with-all-dependencies
 ## Didn't work? composer require --no-update $updates_clean
 ## Then composer update
 
-print_updates=$(echo "$UPDATES_REPORT" | awk '{print $1}' | tr '^\s+' '    ')
 PENDING_DB_UPDATES=$(vendor/bin/drush updatedb:status --format=list 2>/dev/null)
 
 ## Update the release file

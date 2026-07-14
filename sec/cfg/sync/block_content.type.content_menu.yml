@@ -1,0 +1,8 @@
+uuid: cf8ed4f2-e0be-402d-9501-44f0d7fe4811
+langcode: en
+status: true
+dependencies: {  }
+id: content_menu
+label: 'Content menu'
+revision: false
+description: 'A menu built from the content on the current page.'

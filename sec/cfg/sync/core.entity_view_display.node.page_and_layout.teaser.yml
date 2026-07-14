@@ -1,0 +1,36 @@
+uuid: 5085db21-598c-4a02-b104-8d6d2dcfaf3e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.page_and_layout.field_category
+    - field.field.node.page_and_layout.field_pl_component
+    - node.type.page_and_layout
+  module:
+    - ds
+    - entity_reference_revisions
+    - user
+id: node.page_and_layout.teaser
+targetEntityType: node
+bundle: page_and_layout
+mode: teaser
+content:
+  field_pl_component:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: teaser
+      link: ''
+    third_party_settings:
+      ds:
+        ds_limit: ''
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_category: true

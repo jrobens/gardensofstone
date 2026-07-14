@@ -1,0 +1,20 @@
+uuid: 2d85b762-c59f-40e8-8679-52aa74b44a40
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - paragraphs
+id: paragraph.field_pbcrossfade_image
+field_name: field_pbcrossfade_image
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 4
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

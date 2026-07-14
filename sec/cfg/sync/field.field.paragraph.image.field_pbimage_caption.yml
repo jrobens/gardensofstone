@@ -1,0 +1,21 @@
+uuid: b5c80878-0834-48a8-930e-548166960b20
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pbimage_caption
+    - paragraphs.paragraphs_type.image
+  module:
+    - text
+id: paragraph.image.field_pbimage_caption
+field_name: field_pbimage_caption
+entity_type: paragraph
+bundle: image
+label: Caption
+description: 'Short caption describing the image'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

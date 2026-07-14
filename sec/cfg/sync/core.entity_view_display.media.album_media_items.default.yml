@@ -1,0 +1,31 @@
+uuid: 2684b29a-8ac4-40c7-acaa-fa0acbd100c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.album_media_items.field_media_image_1
+    - image.style.large
+    - media.type.album_media_items
+  module:
+    - image
+id: media.album_media_items.default
+targetEntityType: media
+bundle: album_media_items
+mode: default
+content:
+  field_media_image_1:
+    type: image
+    label: visually_hidden
+    settings:
+      image_link: ''
+      image_style: large
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  name: true
+  thumbnail: true
+  uid: true

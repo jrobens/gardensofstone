@@ -1,0 +1,14 @@
+uuid: 3385e565-9ec9-459f-b3b1-dfb73cd7ee5b
+langcode: en
+status: true
+dependencies: {  }
+id: album_media_items
+label: 'Album media items'
+description: ''
+source: image
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_image_1
+field_map:
+  name: name

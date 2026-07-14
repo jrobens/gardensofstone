@@ -1,0 +1,457 @@
+uuid: c808c2db-b612-46c3-b024-156843730674
+langcode: en
+status: closed
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 9
+template: false
+archive: false
+id: objection_to_leases_in_the_garde
+title: 'Objection to leases in the Gardens of Stone SCA'
+description: 'Submission regarding the commercial leases over the Gardens of Stone State Conservation Area'
+categories: {  }
+elements: |-
+  plan_of_management:
+    '#type': webform_wizard_page
+    '#title': 'Submission on lease developments'
+    '#access_create_roles':
+      - authenticated
+      - anonymous
+    '#access_update_roles':
+      - authenticated
+      - anonymous
+    '#access_view_roles':
+      - authenticated
+      - anonymous
+    markup:
+      '#type': webform_markup
+      '#access_create_roles':
+        - authenticated
+        - anonymous
+      '#access_update_roles':
+        - authenticated
+        - anonymous
+      '#access_view_roles':
+        - authenticated
+        - anonymous
+      '#markup': |-
+        <p><strong>Make an objection to commercial lease in Gardens of Stone State Conservation Area</strong><br />
+        <br />
+        <span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Calibri,sans-serif">When the Gardens of Stone State Conservation Area was announced on November 13, 2021, the NSW Government also announced exclusive resort accommodation in association with a Great Walk and an adventure theme park at Lost City.</span></span></span><br />
+        <br />
+        <span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Calibri,sans-serif">Two leases over this conservation reserve in connection with these developments are being advertised over the holiday period until January 18. The parent company involved with these proposals is Experience Co (this is the same company that has plans to develop the Tasmanian Wilderness World Heritage Area).</span></span></span><br />
+        <br />
+        <span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Calibri,sans-serif">Object to these leases that seek would privatise parts of this conservation reserve before the public has an opportunity to comment on the details of these developments. Cynically ticking the consultation box without information is a sham process.&nbsp;<a href="https://www.environment.nsw.gov.au/topics/parks-reserves-and-protected-areas/park-management/community-engagement/walking-tracks-and-trails-in-national-parks/gardens-of-stone-state-conservation-area/gardens-of-stone-state-conservation-area-leases">Very limited information is available in the public exhibition of the notice to grant leases.</a></span></span></span><br />
+        <br />
+        <span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Calibri,sans-serif">Express your concerns about the development threat to this important Blue Mountains reserve <strong>before cob, January 18</strong>. </span></span></span><br />
+        <br />
+        <span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Calibri,sans-serif">Please make an objection by either going to the <a href="https://www.environment.nsw.gov.au/topics/parks-reserves-and-protected-areas/park-management/community-engagement/walking-tracks-and-trails-in-national-parks/gardens-of-stone-state-conservation-area/gardens-of-stone-state-conservation-area-leases">NSW Government&#39;s comments page</a> or you can modify the guide submission in the webform below:</span></span></span></p>
+    submission:
+      '#type': fieldset
+      '#title': 'Objection to the granting of Gardens of Stone leases'
+      '#title_display': invisible
+      '#access_create_roles':
+        - authenticated
+        - anonymous
+      '#access_update_roles':
+        - authenticated
+        - anonymous
+      '#access_view_roles':
+        - authenticated
+        - anonymous
+      plan_of_management_submission:
+        '#type': textarea
+        '#title': 'Submission on lease developments'
+        '#rows': 40
+        '#required': true
+        '#default_value': |-
+          Manager
+          Property and Lease Management Unit
+          Locked Bag 5022
+          Parramatta NSW 2124
+
+          To whom it may concern,
+
+          I object to the NSW Government announcing an intention to issue leases over the Gardens of Stone State Conservation Area before specific details are made available regarding the four accommodation resorts and the Lost City adventure theme park.
+
+          I object to a lease being issued to Wild Bush Luxury because the four proposed accommodation resorts will adversely impact the cultural and natural heritage of the Gardens of Stone State Conservation Area. I object to this company being given exclusive possession of this conservation reserve before its development proposal has been subject to public comment and review.
+
+          The lease is for multi-day walk accommodation caters to high-paying guests. The impacts on the reserve of the four proposed resorts will be relatively large relative to the accommodation benefits gained by a small elite group. I object to the exclusive monopoly use of remote parts of the Gardens of Stone State Conservation Area where impacts from this kind tourism are greatest. This poor tourism model also siphons off the highest paying tourists who might otherwise spend their money in the local community.
+
+          I also object to a lease being issued to Trees Adventure Holdings over the Lost City Precinct for an adventure theme park. Ziplines, toilets, carparks, elevated walkways/suspension bridges, via ferrata climbs and possibly a food outlet will cause visual blight to Lithgow’s most scenic pagoda landscape. The natural beauty of Lost City in the Gardens of Stone State Conservation Area should not be spoiled to provide amusement rides. The Lost City location may also put children at risk as it adjoins the Marrangaroo Military Base that uses live ammunition and ordinance.
+
+          The marketing value of the Lost City for Trees Adventure Holdings is its naturalness, but natural beauty of this area will be further degraded by this development and the local community will lose its chance to establish a scenic lookout as good as that at Echo Point, Katoomba.
+
+          I further object to the Lost City location for an adventure park as most visitors will not go to Lithgow but enter the reserve from Clarence via the Old Bells Line of Road so that the local community will gain little benefit from this proposed development.
+
+          Given the lack of information, I request that the Minister for the Environment convene a public hearing on both these leases that are proposed to be issued to subsidiary companies of Experience Co. A public hearing should remedy the serious defects in the lease issuing process that has kept almost all details of these proposals secret. The public hearing process should give the public access to details on what is proposed at the accommodation resort sites and adventure park, as well as information about the impacts to heritage values of the planned development under these leases, and permit any person to make an informed contribution at the hearing regarding these leases.
+
+          Thank you for the opportunity to comment.
+
+          Sincerely,
+        '#access_create_roles':
+          - authenticated
+          - anonymous
+        '#access_update_roles':
+          - authenticated
+          - anonymous
+        '#access_view_roles':
+          - authenticated
+          - anonymous
+  name_and_address:
+    '#type': webform_wizard_page
+    '#title': 'Name and Address'
+    '#access_create_roles':
+      - authenticated
+      - anonymous
+    '#access_update_roles':
+      - authenticated
+      - anonymous
+    '#access_view_roles':
+      - authenticated
+      - anonymous
+    address:
+      '#type': fieldset
+      '#title': Address
+      '#required': true
+      '#access_create_roles':
+        - authenticated
+        - anonymous
+      '#access_update_roles':
+        - authenticated
+        - anonymous
+      '#access_view_roles':
+        - authenticated
+        - anonymous
+      first_name:
+        '#type': textfield
+        '#title': 'First Name'
+        '#title_display': invisible
+        '#placeholder': 'Your first name'
+        '#required': true
+        '#access_create_roles':
+          - authenticated
+          - anonymous
+        '#access_update_roles':
+          - authenticated
+          - anonymous
+        '#access_view_roles':
+          - authenticated
+          - anonymous
+      last_name:
+        '#type': textfield
+        '#title': 'Last Name'
+        '#title_display': invisible
+        '#placeholder': 'Your last name'
+        '#required': true
+        '#access_create_roles':
+          - authenticated
+          - anonymous
+        '#access_update_roles':
+          - authenticated
+          - anonymous
+        '#access_view_roles':
+          - authenticated
+          - anonymous
+      email:
+        '#type': email
+        '#title': Email
+        '#title_display': invisible
+        '#placeholder': 'Your email address'
+        '#required': true
+        '#access_create_roles':
+          - authenticated
+          - anonymous
+        '#access_update_roles':
+          - authenticated
+          - anonymous
+        '#access_view_roles':
+          - authenticated
+          - anonymous
+      gos_dpom_address:
+        '#type': webform_address
+        '#title': Address
+        '#required': true
+        '#access_create_roles':
+          - authenticated
+          - anonymous
+        '#access_update_roles':
+          - authenticated
+          - anonymous
+        '#access_view_roles':
+          - authenticated
+          - anonymous
+        '#address__placeholder': 'Your address'
+        '#address__title_display': invisible
+        '#address_2__access': false
+        '#city__placeholder': 'Your town'
+        '#city__title_display': invisible
+        '#state_province__placeholder': 'Your state'
+        '#state_province__title_display': invisible
+        '#state_province__options': state_province_codes
+        '#postal_code__placeholder': 'Post code'
+        '#postal_code__title_display': invisible
+        '#country__access': false
+css: ''
+javascript: ''
+settings:
+  ajax: false
+  ajax_scroll_top: form
+  ajax_progress_type: ''
+  ajax_effect: ''
+  ajax_speed: null
+  page: true
+  page_submit_path: ''
+  page_confirm_path: ''
+  page_theme_name: ''
+  form_title: source_entity_webform
+  form_submit_once: false
+  form_open_message: ''
+  form_close_message: ''
+  form_exception_message: ''
+  form_previous_submissions: true
+  form_confidential: false
+  form_confidential_message: ''
+  form_disable_remote_addr: false
+  form_convert_anonymous: false
+  form_prepopulate: false
+  form_prepopulate_source_entity: false
+  form_prepopulate_source_entity_required: false
+  form_prepopulate_source_entity_type: ''
+  form_unsaved: false
+  form_disable_back: false
+  form_submit_back: false
+  form_disable_autocomplete: false
+  form_novalidate: false
+  form_disable_inline_errors: false
+  form_required: false
+  form_autofocus: false
+  form_details_toggle: false
+  form_reset: false
+  form_access_denied: default
+  form_access_denied_title: ''
+  form_access_denied_message: ''
+  form_access_denied_attributes: {  }
+  form_file_limit: ''
+  form_attributes: {  }
+  form_method: ''
+  form_action: ''
+  share: false
+  share_node: false
+  share_theme_name: ''
+  share_title: true
+  share_page_body_attributes: {  }
+  submission_label: ''
+  submission_exception_message: ''
+  submission_locked_message: ''
+  submission_log: false
+  submission_excluded_elements: {  }
+  submission_exclude_empty: false
+  submission_exclude_empty_checkbox: false
+  submission_views: {  }
+  submission_views_replace: {  }
+  submission_user_columns: {  }
+  submission_user_duplicate: false
+  submission_access_denied: default
+  submission_access_denied_title: ''
+  submission_access_denied_message: ''
+  submission_access_denied_attributes: {  }
+  previous_submission_message: ''
+  previous_submissions_message: ''
+  autofill: false
+  autofill_message: ''
+  autofill_excluded_elements: {  }
+  wizard_progress_bar: true
+  wizard_progress_pages: false
+  wizard_progress_percentage: false
+  wizard_progress_link: false
+  wizard_progress_states: false
+  wizard_start_label: ''
+  wizard_preview_link: false
+  wizard_confirmation: true
+  wizard_confirmation_label: ''
+  wizard_auto_forward: true
+  wizard_auto_forward_hide_next_button: false
+  wizard_keyboard: true
+  wizard_track: ''
+  wizard_prev_button_label: ''
+  wizard_next_button_label: ''
+  wizard_toggle: true
+  wizard_toggle_show_label: ''
+  wizard_toggle_hide_label: ''
+  wizard_page_type: container
+  wizard_page_title_tag: h2
+  preview: 0
+  preview_label: ''
+  preview_title: ''
+  preview_message: ''
+  preview_attributes: {  }
+  preview_excluded_elements: {  }
+  preview_exclude_empty: true
+  preview_exclude_empty_checkbox: false
+  draft: none
+  draft_multiple: false
+  draft_auto_save: false
+  draft_saved_message: ''
+  draft_loaded_message: ''
+  draft_pending_single_message: ''
+  draft_pending_multiple_message: ''
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_title: 'Thank you for your submission'
+  confirmation_message: "<p>Your submission to:</p>\r\n\r\n<ul>\r\n\t<li>\r\n\t<p>Property and Lease Management Unit of the NSW National Parks and Wildlife Service</p>\r\n\t</li>\r\n</ul>\r\n\r\n<p>has been sent. An email record of your submissions have been sent to you.<br />\r\n<br />\r\nThank you for supporting protection of the Gardens of Stone State Conservation Area.</p>"
+  confirmation_attributes: {  }
+  confirmation_back: true
+  confirmation_back_label: ''
+  confirmation_back_attributes: {  }
+  confirmation_exclude_query: false
+  confirmation_exclude_token: false
+  confirmation_update: false
+  limit_total: null
+  limit_total_interval: null
+  limit_total_message: ''
+  limit_total_unique: false
+  limit_user: null
+  limit_user_interval: null
+  limit_user_message: ''
+  limit_user_unique: false
+  entity_limit_total: null
+  entity_limit_total_interval: null
+  entity_limit_user: null
+  entity_limit_user_interval: null
+  purge: none
+  purge_days: null
+  results_disabled: false
+  results_disabled_ignore: false
+  results_customize: false
+  token_view: false
+  token_update: false
+  token_delete: false
+  serial_disabled: false
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+    permissions: {  }
+  view_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  purge_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  view_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  administer:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  test:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  configuration:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+handlers:
+  email:
+    id: email
+    handler_id: email
+    label: Email
+    notes: 'Send yourself a copy'
+    status: true
+    conditions: {  }
+    weight: 0
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:email:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: _default
+      from_options: {  }
+      from_name: _default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'Objection to the granting of leases in the Gardens of Stone'
+      body: "[webform_submission:values:plan_of_management_submission]<br />\r\n<br />\r\n[webform_submission:values:first_name] [webform_submission:values:last_name]<br />\r\n[webform_submission:values:gos_dpom_address:value:address]<br />\r\n[webform_submission:values:email]"
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: true
+      attachments: false
+      twig: false
+      theme_name: ''
+      langcode: ''
+      parameters: {  }
+      debug: false
+  branch_office_email:
+    id: email
+    handler_id: branch_office_email
+    label: 'NPWS email'
+    notes: "target email address\r\n"
+    status: true
+    conditions: {  }
+    weight: 0
+    settings:
+      states:
+        - completed
+      to_mail: Commercial.Enquiries@environment.nsw.gov.au
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: 'keith.muir6@bigpond.com,jrobens@interlated.com.au'
+      cc_options: {  }
+      from_mail: _default
+      from_options: {  }
+      from_name: _default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'Objection to the granting of leases in the Gardens of Stone'
+      body: "[webform_submission:values:plan_of_management_submission]<br />\r\n<br />\r\n[webform_submission:values:first_name] [webform_submission:values:last_name]<br />\r\n[webform_submission:values:gos_dpom_address:value:address]<br />\r\n[webform_submission:values:email]"
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: true
+      attachments: false
+      twig: false
+      theme_name: ''
+      langcode: ''
+      parameters: {  }
+      debug: false
+variants: {  }

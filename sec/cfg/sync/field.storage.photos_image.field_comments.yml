@@ -1,0 +1,22 @@
+uuid: a8d80385-a419-485b-827b-0269358a587c
+langcode: en
+status: true
+dependencies:
+  module:
+    - comment
+    - photos
+_core:
+  default_config_hash: 2LvqTpZT8yNUzfjarzjOUHcxUu_IZBtxUAQ7R-WYcjg
+id: photos_image.field_comments
+field_name: field_comments
+entity_type: photos_image
+type: comment
+settings:
+  comment_type: photos_image_comment
+module: comment
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

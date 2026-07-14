@@ -1,0 +1,32 @@
+uuid: da556c78-cc52-42d3-a57c-f3b20ef9521c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_visit_image
+    - media.type.image
+    - media.type.remote_video
+    - media.type.video
+    - taxonomy.vocabulary.visit_gardens_of_stone
+id: taxonomy_term.visit_gardens_of_stone.field_visit_image
+field_name: field_visit_image
+entity_type: taxonomy_term
+bundle: visit_gardens_of_stone
+label: Image
+description: 'Select an image'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+      remote_video: remote_video
+      video: video
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: image
+field_type: entity_reference

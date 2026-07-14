@@ -1,0 +1,9 @@
+uuid: 250ab89e-df3f-416f-99d1-9111accb5d64
+langcode: en
+status: true
+dependencies: {  }
+name: 'Visit Gardens of Stone'
+vid: visit_gardens_of_stone
+description: 'Visit the region links'
+weight: 0
+new_revision: false

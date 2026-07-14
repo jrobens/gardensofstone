@@ -1,0 +1,9 @@
+uuid: 95645333-70d4-4049-b583-0077e8964b0d
+langcode: en
+status: true
+dependencies: {  }
+name: 'Component type'
+vid: component_type
+description: 'Map to a Bulma component type'
+weight: 0
+new_revision: false

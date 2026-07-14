@@ -1,0 +1,50 @@
+uuid: ade47852-36c1-4ff0-b045-ec7f60e292fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.teaser
+    - field.field.paragraph.text.field_pbtext_style
+    - field.field.paragraph.text.field_pbtext_text
+    - field.field.paragraph.text.field_pbtext_textsum
+    - paragraphs.paragraphs_type.text
+  module:
+    - entity_class_formatter
+    - layout_builder
+    - text
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: paragraph.text.teaser
+targetEntityType: paragraph
+bundle: text
+mode: teaser
+content:
+  field_pbtext_style:
+    type: entity_class_formatter
+    label: hidden
+    settings:
+      prefix: ''
+      suffix: ''
+      attr: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_pbtext_text:
+    type: text_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_pbtext_textsum:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

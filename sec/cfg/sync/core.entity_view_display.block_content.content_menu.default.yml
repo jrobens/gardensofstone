@@ -1,0 +1,22 @@
+uuid: 681528c3-794b-450f-aebe-aafc50d03180
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.content_menu
+    - field.field.block_content.content_menu.body
+  module:
+    - text
+id: block_content.content_menu.default
+targetEntityType: block_content
+bundle: content_menu
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

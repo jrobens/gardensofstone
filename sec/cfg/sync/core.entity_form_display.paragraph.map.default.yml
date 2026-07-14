@@ -1,0 +1,25 @@
+uuid: 51352137-c671-409d-ae24-5e291ccc8c88
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.map.field_pbmap_location
+    - paragraphs.paragraphs_type.map
+  module:
+    - geofield
+id: paragraph.map.default
+targetEntityType: paragraph
+bundle: map
+mode: default
+content:
+  field_pbmap_location:
+    type: geofield_latlon
+    weight: 0
+    region: content
+    settings:
+      html5_geolocation: false
+    third_party_settings: {  }
+hidden:
+  admin_title: true
+  created: true
+  status: true

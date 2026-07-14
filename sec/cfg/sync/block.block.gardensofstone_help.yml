@@ -1,0 +1,22 @@
+uuid: 7dc2f1b5-01a7-4d4f-a7d4-5b247976ef60
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - gardensofstone
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: gardensofstone_help
+theme: gardensofstone
+region: help
+weight: -8
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

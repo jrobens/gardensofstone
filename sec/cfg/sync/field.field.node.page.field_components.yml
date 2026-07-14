@@ -1,0 +1,92 @@
+uuid: 5380934c-4456-4890-865f-94d7a45089e2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_components
+    - node.type.page
+    - paragraphs.paragraphs_type.heading
+    - paragraphs.paragraphs_type.image
+    - paragraphs.paragraphs_type.image_square
+    - paragraphs.paragraphs_type.map
+    - paragraphs.paragraphs_type.quote
+    - paragraphs.paragraphs_type.text
+    - paragraphs.paragraphs_type.webform
+  module:
+    - entity_reference_revisions
+    - paragraph_blocks
+third_party_settings:
+  paragraph_blocks:
+    status: 1
+id: node.page.field_components
+field_name: field_components
+entity_type: node
+bundle: page
+label: Components
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      heading: heading
+      image: image
+      image_square: image_square
+      map: map
+      quote: quote
+      text: text
+      webform: webform
+    negate: 0
+    target_bundles_drag_drop:
+      block:
+        weight: 17
+        enabled: false
+      checkerboard:
+        weight: 18
+        enabled: false
+      crossfade_banner:
+        weight: 19
+        enabled: false
+      heading:
+        weight: 20
+        enabled: true
+      hero:
+        weight: 21
+        enabled: false
+      image:
+        weight: 22
+        enabled: true
+      image_square:
+        weight: 23
+        enabled: true
+      index_block:
+        weight: 24
+        enabled: false
+      map:
+        weight: 25
+        enabled: true
+      quote:
+        weight: 26
+        enabled: true
+      row:
+        weight: 27
+        enabled: false
+      text:
+        weight: 28
+        enabled: true
+      tile:
+        weight: 29
+        enabled: false
+      video:
+        weight: 30
+        enabled: false
+      views_block:
+        weight: 31
+        enabled: false
+      webform:
+        weight: 32
+        enabled: true
+field_type: entity_reference_revisions

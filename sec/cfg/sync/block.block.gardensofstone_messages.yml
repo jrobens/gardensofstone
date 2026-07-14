@@ -1,0 +1,22 @@
+uuid: a791ae10-061c-4008-8a95-807ec57097e3
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - gardensofstone
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: gardensofstone_messages
+theme: gardensofstone
+region: highlighted
+weight: -7
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

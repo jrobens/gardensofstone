@@ -1,0 +1,15 @@
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE
+langcode: en
+uuid: 6ea982d0-3a84-4e62-a591-6d5aece45858
+name: 'Gardens of Stone'
+mail: sysadmin@interlated.com.au
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node/13
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en
+mail_notification: ''

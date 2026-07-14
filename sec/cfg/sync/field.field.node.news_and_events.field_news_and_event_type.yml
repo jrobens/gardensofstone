@@ -1,0 +1,29 @@
+uuid: 91b48003-84cc-42a8-94bb-ac7a0f0b853f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_news_and_event_type
+    - node.type.news_and_events
+    - taxonomy.vocabulary.event_and_news_type
+id: node.news_and_events.field_news_and_event_type
+field_name: field_news_and_event_type
+entity_type: node
+bundle: news_and_events
+label: 'News and event type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      event_and_news_type: event_and_news_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

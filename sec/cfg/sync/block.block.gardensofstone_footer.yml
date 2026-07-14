@@ -1,0 +1,27 @@
+uuid: f005e551-9f13-43b1-9ba0-f26ccd941739
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - system
+  theme:
+    - gardensofstone
+_core:
+  default_config_hash: 8zRjTNbfNAJ94lQpZDu6MkyD87GYJ2zpH9VQPVmRbcM
+id: gardensofstone_footer
+theme: gardensofstone
+region: footer
+weight: -6
+provider: null
+plugin: 'system_menu_block:footer'
+settings:
+  id: 'system_menu_block:footer'
+  label: 'Footer menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: null
+  expand_all_items: false
+visibility: {  }

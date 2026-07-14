@@ -1,0 +1,27 @@
+uuid: 020debc3-2470-4baf-b64f-fbdba4ae94eb
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.tools
+  module:
+    - system
+  theme:
+    - gardensofstone
+_core:
+  default_config_hash: rH6PpAn7-RScha1rGkohGAYSSh_1OVeZzioJPzPw6O4
+id: gardensofstone_tools
+theme: gardensofstone
+region: sidebar_first
+weight: -10
+provider: null
+plugin: 'system_menu_block:tools'
+settings:
+  id: 'system_menu_block:tools'
+  label: Tools
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: null
+  expand_all_items: false
+visibility: {  }

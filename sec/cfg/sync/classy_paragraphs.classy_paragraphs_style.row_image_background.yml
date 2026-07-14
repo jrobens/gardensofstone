@@ -1,0 +1,9 @@
+uuid: 496f2c58-6deb-40d3-b901-7aadbee6a89d
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: kQ6YCknD9ipSkhvdHUtq7w3OSXTVHfYUQUCmUTQCfhk
+id: row_image_background
+label: 'Row image background'
+classes: row-image-background

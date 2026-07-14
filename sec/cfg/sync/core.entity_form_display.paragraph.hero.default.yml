@@ -1,0 +1,33 @@
+uuid: 680c6110-ce1b-4e69-8400-6af892012709
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.hero.field_pbhero_title
+    - field.field.paragraph.hero.field_subtitle
+    - paragraphs.paragraphs_type.hero
+id: paragraph.hero.default
+targetEntityType: paragraph
+bundle: hero
+mode: default
+content:
+  field_pbhero_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_subtitle:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  admin_title: true
+  created: true
+  status: true

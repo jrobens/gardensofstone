@@ -1,0 +1,30 @@
+uuid: 865dff6d-c12c-4ffd-996a-7673eb87f6a3
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:7b9c8dc6-ac61-40a9-a099-2ebd5ba8f420'
+  module:
+    - block_content
+    - block_title_link
+  theme:
+    - gardensofstone
+third_party_settings:
+  block_title_link:
+    title_link_url: ''
+    link_title: ''
+    title_link_target: ''
+    title_link_enable: 0
+id: aboriginalcountry
+theme: gardensofstone
+region: footer
+weight: -4
+provider: null
+plugin: 'block_content:7b9c8dc6-ac61-40a9-a099-2ebd5ba8f420'
+settings:
+  id: 'block_content:7b9c8dc6-ac61-40a9-a099-2ebd5ba8f420'
+  label: 'Aboriginal Country'
+  label_display: '0'
+  provider: block_content
+  view_mode: full
+visibility: {  }

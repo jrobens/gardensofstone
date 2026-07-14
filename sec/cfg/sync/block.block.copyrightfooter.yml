@@ -1,0 +1,33 @@
+uuid: a5f61e81-6806-4e6f-943d-6df3f3d3d01c
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_title_link
+    - copyright_footer
+  theme:
+    - gardensofstone
+third_party_settings:
+  block_title_link:
+    title_link_url: ''
+    link_title: ''
+    title_link_target: ''
+    title_link_enable: 0
+id: copyrightfooter
+theme: gardensofstone
+region: footer
+weight: -5
+provider: null
+plugin: copyright_footer
+settings:
+  id: copyright_footer
+  label: 'Copyright Footer'
+  label_display: '0'
+  provider: copyright_footer
+  organization_name: 'Keith Muir'
+  organization_url: ''
+  year_origin: null
+  year_to_date: null
+  version: ''
+  version_url: ''
+visibility: {  }

@@ -1,0 +1,23 @@
+uuid: 722ec775-4a0b-4244-a267-ba46e3559d86
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_style
+    - paragraphs.paragraphs_type.block
+id: paragraph.block.field_style
+field_name: field_style
+entity_type: paragraph
+bundle: block
+label: Style
+description: 'Set a specific CSS class'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:classy_paragraphs_style'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: entity_reference

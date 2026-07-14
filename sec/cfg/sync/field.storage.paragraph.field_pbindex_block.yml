@@ -1,0 +1,23 @@
+uuid: f9cd0167-3348-4105-9cf6-e4f5c3b5de85
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - views
+    - viewsreference
+_core:
+  default_config_hash: OPN57gl6xuTOLTlVKLK8QoK-2JLJoT9VRauDBC4OTG0
+id: paragraph.field_pbindex_block
+field_name: field_pbindex_block
+entity_type: paragraph
+type: viewsreference
+settings:
+  target_type: view
+module: viewsreference
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

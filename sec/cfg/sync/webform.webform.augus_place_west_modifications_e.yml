@@ -1,0 +1,462 @@
+uuid: 955e63d0-5161-4beb-8376-d7c4cadd0982
+langcode: en
+status: closed
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 9
+template: false
+archive: false
+id: augus_place_west_modifications_e
+title: 'Augus Place West - Modifications – email action'
+description: 'Representations to Minister Paul Scully regarding Centennial Coal mine modifications&nbsp;'
+categories: {  }
+elements: |-
+  plan_of_management:
+    '#type': webform_wizard_page
+    '#title': 'Protect Sydney’s drinking water from coal mine waste '
+    '#access_create_roles':
+      - authenticated
+      - anonymous
+    '#access_update_roles':
+      - authenticated
+      - anonymous
+    '#access_view_roles':
+      - authenticated
+      - anonymous
+    markup:
+      '#type': webform_markup
+      '#access_create_roles':
+        - authenticated
+        - anonymous
+      '#access_update_roles':
+        - authenticated
+        - anonymous
+      '#access_view_roles':
+        - authenticated
+        - anonymous
+      '#markup': |-
+        <p><strong>Angus Place Colliery mine plans</strong><br />
+        <br />
+        Centennial Coal proposes to discharge of millions of litres of contaminated water into a stream that feeds Sydney&rsquo;s main drinking water source. This proposed discharge would by-passes the purpose-built water treatment plant that is supposed to treat all of Centennial&#39;s mine water.<br />
+        <br />
+        It&rsquo;s part of the company&rsquo;s broader plan to expand its Angus Place coal mine &ndash; beneath the protected Gardens of Stone State Conservation Area.&nbsp;<br />
+        <br />
+        Plans like these pose serious threats to community health, to water, and to our environment &ndash; so they must be thoroughly scrutinised.&nbsp;<br />
+        <br />
+        That&rsquo;s why we&rsquo;re calling for our NSW Planning Minister, Paul Scully, to refer these plans to Federal Environment Minister Tanya Plibersek.&nbsp;By taking action you help ensure there will be an independent review of these coal mine proposals that could damage nationally significant water and conservation values.<br />
+        <br />
+        Please use the form below to send a quick email to Minister Scully:&nbsp;</p>
+    submission:
+      '#type': fieldset
+      '#title': 'Letter to Planning Minister Paul Scully'
+      '#title_display': invisible
+      '#access_create_roles':
+        - authenticated
+        - anonymous
+      '#access_update_roles':
+        - authenticated
+        - anonymous
+      '#access_view_roles':
+        - authenticated
+        - anonymous
+      plan_of_management_submission:
+        '#type': textarea
+        '#title': 'Letter to Planning Minister Paul Scully'
+        '#rows': 40
+        '#required': true
+        '#default_value': |-
+          The Hon Paul Scully
+          Minister for Planning and Public Spaces
+          GPO Box 5341
+          SYDNEY NSW 2001
+
+
+          Dear Minister Scully,
+
+          I am concerned about the threats to community health and our environment posed by Centennial Coal’s plans to modify the existing consents for Angus Place coal mine (MP06_0021-Mod-8) and the Western Coal Services site (SSD-5579-Mod-5).
+
+          These plans propose discharging 10 million litres of contaminated mine water per day into Wangcol Creek, which flows to the Coxs River, and is part of the Sydney Drinking Water Catchment. These proposals would by-pass the purpose-built water treatment plant that can treat up to 42 million litres a day of contraminated mine water before reuse.
+
+          I am deeply concerned about these projects for a number of reasons.
+
+          The discharge water will be contaminated with toxic chemicals like arsenic, selenium, ammonia and fluoride, as well as other heavy metals. This water will flow into waterways and will cause likely harm to aquatic ecosystems before it ends up in Sydney’s drinking water supply at Warragamba Dam – which is relied on by hundreds of thousands of people for clean, safe, unpolluted water. 
+
+          Additionally, pumping millions of litres of water from Angus Place mine is underneath the Gardens of Stone State Conservation Area – home to incredible ancient "pagoda" rock formations, ecological communities, cultural heritage, and countless threatened plants and animals. The proposed pumping may impact on near-surface groundwater availability and precious wetlands that are sensitive to changes in the surface watertable. The Gardens of Stone region is a globally-recognised area and its remaining wetlands must be protected.
+
+          Minister Scully, you have a duty to ensure robust processes for these proposals. This includes ensuring that the requirements of the Bilateral Agreement between NSW and the Commonwealth on matters of national environmental significance are met, and to facilitate referral of proposals that may impact on these important heritage matters.
+
+          That’s why I am requesting you refer these Centennial Coal plans for assessment under our federal Environment Protection and Biodiversity Conservation Act. Due to Centennial’s plans being integral to coal mining and that significant impacts on water resources are likely, the ‘water trigger’ applies and the plans must be assessed under the EPBC Act. 
+
+          Clean water is vital for life. It is essential to the health of our communities and our environment. 
+
+          I believe that the potential for nationally endangered swamps and plants to be impacted in these mine water pumping, transfer and disposal proposals should also be referred for assessment under the EPBC Act.
+
+          Minister, I am asking you to recognise this and act to ensure these projects receive the highest possible scrutiny and inefficient, inconsistent assessment of these projects is avoided.
+
+          Yours sincerely,
+        '#access_create_roles':
+          - authenticated
+          - anonymous
+        '#access_update_roles':
+          - authenticated
+          - anonymous
+        '#access_view_roles':
+          - authenticated
+          - anonymous
+  name_and_address:
+    '#type': webform_wizard_page
+    '#title': 'Name and Address'
+    '#access_create_roles':
+      - authenticated
+      - anonymous
+    '#access_update_roles':
+      - authenticated
+      - anonymous
+    '#access_view_roles':
+      - authenticated
+      - anonymous
+    address:
+      '#type': fieldset
+      '#title': Address
+      '#required': true
+      '#access_create_roles':
+        - authenticated
+        - anonymous
+      '#access_update_roles':
+        - authenticated
+        - anonymous
+      '#access_view_roles':
+        - authenticated
+        - anonymous
+      first_name:
+        '#type': textfield
+        '#title': 'First Name'
+        '#title_display': invisible
+        '#placeholder': 'Your first name'
+        '#required': true
+        '#access_create_roles':
+          - authenticated
+          - anonymous
+        '#access_update_roles':
+          - authenticated
+          - anonymous
+        '#access_view_roles':
+          - authenticated
+          - anonymous
+      last_name:
+        '#type': textfield
+        '#title': 'Last Name'
+        '#title_display': invisible
+        '#placeholder': 'Your last name'
+        '#required': true
+        '#access_create_roles':
+          - authenticated
+          - anonymous
+        '#access_update_roles':
+          - authenticated
+          - anonymous
+        '#access_view_roles':
+          - authenticated
+          - anonymous
+      email:
+        '#type': email
+        '#title': Email
+        '#title_display': invisible
+        '#placeholder': 'Your email address'
+        '#required': true
+        '#access_create_roles':
+          - authenticated
+          - anonymous
+        '#access_update_roles':
+          - authenticated
+          - anonymous
+        '#access_view_roles':
+          - authenticated
+          - anonymous
+      gos_dpom_address:
+        '#type': webform_address
+        '#title': Address
+        '#required': true
+        '#access_create_roles':
+          - authenticated
+          - anonymous
+        '#access_update_roles':
+          - authenticated
+          - anonymous
+        '#access_view_roles':
+          - authenticated
+          - anonymous
+        '#address__placeholder': 'Your address'
+        '#address__title_display': invisible
+        '#address_2__access': false
+        '#city__placeholder': 'Your town'
+        '#city__title_display': invisible
+        '#state_province__placeholder': 'Your state'
+        '#state_province__title_display': invisible
+        '#state_province__options': state_province_codes
+        '#postal_code__placeholder': 'Post code'
+        '#postal_code__title_display': invisible
+        '#country__access': false
+css: ''
+javascript: ''
+settings:
+  ajax: false
+  ajax_scroll_top: form
+  ajax_progress_type: ''
+  ajax_effect: ''
+  ajax_speed: null
+  page: true
+  page_submit_path: ''
+  page_confirm_path: ''
+  page_theme_name: ''
+  form_title: source_entity_webform
+  form_submit_once: false
+  form_open_message: ''
+  form_close_message: ''
+  form_exception_message: ''
+  form_previous_submissions: true
+  form_confidential: false
+  form_confidential_message: ''
+  form_disable_remote_addr: false
+  form_convert_anonymous: false
+  form_prepopulate: false
+  form_prepopulate_source_entity: false
+  form_prepopulate_source_entity_required: false
+  form_prepopulate_source_entity_type: ''
+  form_unsaved: false
+  form_disable_back: false
+  form_submit_back: false
+  form_disable_autocomplete: false
+  form_novalidate: false
+  form_disable_inline_errors: false
+  form_required: false
+  form_autofocus: false
+  form_details_toggle: false
+  form_reset: false
+  form_access_denied: default
+  form_access_denied_title: ''
+  form_access_denied_message: ''
+  form_access_denied_attributes: {  }
+  form_file_limit: ''
+  form_attributes: {  }
+  form_method: ''
+  form_action: ''
+  share: false
+  share_node: false
+  share_theme_name: ''
+  share_title: true
+  share_page_body_attributes: {  }
+  submission_label: ''
+  submission_exception_message: ''
+  submission_locked_message: ''
+  submission_log: false
+  submission_excluded_elements: {  }
+  submission_exclude_empty: false
+  submission_exclude_empty_checkbox: false
+  submission_views: {  }
+  submission_views_replace: {  }
+  submission_user_columns: {  }
+  submission_user_duplicate: false
+  submission_access_denied: default
+  submission_access_denied_title: ''
+  submission_access_denied_message: ''
+  submission_access_denied_attributes: {  }
+  previous_submission_message: ''
+  previous_submissions_message: ''
+  autofill: false
+  autofill_message: ''
+  autofill_excluded_elements: {  }
+  wizard_progress_bar: true
+  wizard_progress_pages: false
+  wizard_progress_percentage: false
+  wizard_progress_link: false
+  wizard_progress_states: false
+  wizard_start_label: ''
+  wizard_preview_link: false
+  wizard_confirmation: true
+  wizard_confirmation_label: ''
+  wizard_auto_forward: true
+  wizard_auto_forward_hide_next_button: false
+  wizard_keyboard: true
+  wizard_track: ''
+  wizard_prev_button_label: ''
+  wizard_next_button_label: ''
+  wizard_toggle: false
+  wizard_toggle_show_label: ''
+  wizard_toggle_hide_label: ''
+  wizard_page_type: container
+  wizard_page_title_tag: h2
+  preview: 0
+  preview_label: ''
+  preview_title: ''
+  preview_message: ''
+  preview_attributes: {  }
+  preview_excluded_elements: {  }
+  preview_exclude_empty: true
+  preview_exclude_empty_checkbox: false
+  draft: none
+  draft_multiple: false
+  draft_auto_save: false
+  draft_saved_message: ''
+  draft_loaded_message: ''
+  draft_pending_single_message: ''
+  draft_pending_multiple_message: ''
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_title: 'Thank you for your submission'
+  confirmation_message: "<strong>Thank you for your support</strong><br />\r\n<br />\r\nYour letter to:\r\n<ul>\r\n\t<li><span style=\"font-size:11.0pt\"><span style=\"line-height:107%\"><span style=\"font-family:&quot;Calibri&quot;,sans-serif\">The Hon Paul Scully,<br />\r\n\tMinister for Planning and Public Spaces&nbsp;</span></span></span></li>\r\n</ul>\r\nhas been sent.<br />\r\n<br />\r\nAn email record of your submissions have been sent to you.<br />\r\n<br />\r\nThank you for supporting protection of our water resrouces and the national heritage in the new Gardens of Stone State Conservation Area."
+  confirmation_attributes: {  }
+  confirmation_back: true
+  confirmation_back_label: ''
+  confirmation_back_attributes: {  }
+  confirmation_exclude_query: false
+  confirmation_exclude_token: false
+  confirmation_update: false
+  limit_total: null
+  limit_total_interval: null
+  limit_total_message: ''
+  limit_total_unique: false
+  limit_user: null
+  limit_user_interval: null
+  limit_user_message: ''
+  limit_user_unique: false
+  entity_limit_total: null
+  entity_limit_total_interval: null
+  entity_limit_user: null
+  entity_limit_user_interval: null
+  purge: none
+  purge_days: null
+  results_disabled: false
+  results_disabled_ignore: false
+  results_customize: false
+  token_view: false
+  token_update: false
+  token_delete: false
+  serial_disabled: false
+access:
+  create:
+    roles:
+      - authenticated
+      - anonymous
+    users: {  }
+    permissions: {  }
+  view_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  purge_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  view_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  administer:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  test:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  configuration:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+handlers:
+  email:
+    id: email
+    handler_id: email
+    label: Email
+    notes: 'Send yourself a copy'
+    status: true
+    conditions: {  }
+    weight: 0
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:email:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: _default
+      from_options: {  }
+      from_name: _default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'Letter of concern regarding Centennial Coal mine modifications'
+      body: "[webform_submission:values:plan_of_management_submission]<br />\r\n<br />\r\n[webform_submission:values:first_name] [webform_submission:values:last_name]<br />\r\n[webform_submission:values:gos_dpom_address:value:address]<br />\r\n[webform_submission:values:email]"
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: true
+      attachments: false
+      twig: false
+      theme_name: ''
+      langcode: ''
+      parameters: {  }
+      debug: false
+  branch_office_email:
+    id: email
+    handler_id: branch_office_email
+    label: 'Minister Scully email'
+    notes: "target email address\r\n"
+    status: true
+    conditions: {  }
+    weight: 0
+    settings:
+      states:
+        - completed
+      to_mail: office@scully.minister.nsw.gov.au
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: 'keith.muir6@bigpond.com,jrobens@interlated.com.au'
+      cc_options: {  }
+      from_mail: _default
+      from_options: {  }
+      from_name: _default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'Centennial Coal mine modifications - request for referral'
+      body: "[webform_submission:values:plan_of_management_submission]<br />\r\n<br />\r\n[webform_submission:values:first_name] [webform_submission:values:last_name]<br />\r\n[webform_submission:values:gos_dpom_address:value:address]<br />\r\n[webform_submission:values:email]"
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: true
+      attachments: false
+      twig: false
+      theme_name: ''
+      langcode: ''
+      parameters: {  }
+      debug: false
+variants: {  }

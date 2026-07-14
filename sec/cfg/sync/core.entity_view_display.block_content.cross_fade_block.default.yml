@@ -1,0 +1,22 @@
+uuid: e7ad2875-76d2-4874-bc3d-60a99ec29b54
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.cross_fade_block
+    - field.field.block_content.cross_fade_block.field_image
+id: block_content.cross_fade_block.default
+targetEntityType: block_content
+bundle: cross_fade_block
+mode: default
+content:
+  field_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

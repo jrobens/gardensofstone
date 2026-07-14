@@ -1,0 +1,32 @@
+uuid: 0cbcda0a-679e-43f5-bfd2-3e1cdb2d8c3a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.video.field_pbvideo_video
+    - paragraphs.paragraphs_type.video
+  module:
+    - media_library
+id: paragraph.video.default
+targetEntityType: paragraph
+bundle: video
+mode: default
+content:
+  admin_title:
+    type: string_textfield
+    weight: -10
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_pbvideo_video:
+    type: media_library_widget
+    weight: -9
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
