@@ -1,3 +1,23 @@
+## Updates 2026-07-19
+
+    * civicrm/civicrm-drupal-8 (6.16.0 -> 6.16.1)
+* civicrm/civicrm-packages (6.16.0 -> 6.16.1)
+* drupal/core-composer-scaffold (11.4.3 -> 11.4.4)
+* drupal/core-project-message (11.4.3 -> 11.4.4)
+* drupal/core-recommended (11.4.3 -> 11.4.4)
+* drupal/webform_xlsx_export (1.5.0 -> 1.6.0)
+    Database updates: None
+## Updates 2026-07-14
+
+    * drupal/core-composer-scaffold (11.4.1 -> 11.4.3)
+* drupal/core-project-message (11.4.1 -> 11.4.3)
+* drupal/core-recommended (11.4.1 -> 11.4.3)
+* drupal/viewsreference (2.0.0-beta12 -> 2.0.0-beta13)
+* drupal/webform_xlsx_export (1.5.0 -> 1.6.0)
+    Database updates: help_update_11400
+search_update_11401
+search_update_11402
+search-post-search_help_dependencies
 ## Configuration 2026-07-14 
 >  [error]  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'gos2_cms.help_search_items' doesn't exist: SELECT "hsi"."sid" AS "sid", "hsi"."topic_id" AS "topic_id", "hsi"."section_plugin_id" AS "section_plugin_id", "hsi"."permission" AS "permission"
 > FROM

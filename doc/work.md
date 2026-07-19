@@ -1,3 +1,5 @@
+*:JR:2026-07-19:GOS:0.2: sys+ update drupal  civicrm. civicrm/civicrm-drupal-8 civicrm/civicrm-packages drupal/core-composer-scaffold drupal/core-project-message drupal/core-recommended drupal/webform_xlsx_export 
+*:JR:2026-07-14:GOS:0.2: sys+ update drupal  civicrm. drupal/core-composer-scaffold drupal/core-project-message drupal/core-recommended drupal/viewsreference drupal/webform_xlsx_export 
 *:JR:2026-07-09:GOS:0.2: sys+ update drupal  civicrm. drupal/better_social_sharing_buttons drupal/gin drupal/gin_toolbar drupal/webform_xlsx_export 
 *:JR:2026-07-09:GOS:0.2: sys+ update drupal  civicrm. drupal/better_social_sharing_buttons drupal/gin drupal/gin_toolbar drupal/webform_xlsx_export 
 *:JR:2026-07-09:GOS:0.2: sys+ update drupal  civicrm. drupal/better_social_sharing_buttons drupal/core-composer-scaffold drupal/core-project-message drupal/core-recommended drupal/gin drupal/gin_toolbar drupal/webform drupal/webform_xlsx_export 
