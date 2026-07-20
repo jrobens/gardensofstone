@@ -1,3 +1,17 @@
+## Updates 2026-07-20
+
+civicrm/civicrm-core       6.15.6 requires phpoffice/phpspreadsheet (^1.18 || ^2)
+drupal/webform_xlsx_export 1.5.0  requires phpoffice/phpspreadsheet (^2.3)
+
+- drupal/webform_xlsx_export[dev-1.x, 1.6.0, ..., 1.x-dev] require phpoffice/phpspreadsheet ^3.5 -> found phpoffice/phpspreadsheet[3.5.0
+- 
+
+- civicrm/civicrm-core[6.16.0, ..., 6.17.x-dev] require phpoffice/phpspreadsheet ^5 -> found phpoffice/phpspreadsheet[5.0.0, ..., 5.9.0] b
+
+## Updates 2026-07-19
+
+    * drupal/webform_xlsx_export (1.5.0 -> 1.6.0)
+    Database updates: None
 ## Updates 2026-07-19
 
     * civicrm/civicrm-drupal-8 (6.16.0 -> 6.16.1)
@@ -7,6 +21,25 @@
 * drupal/core-recommended (11.4.3 -> 11.4.4)
 * drupal/webform_xlsx_export (1.5.0 -> 1.6.0)
     Database updates: None
+
+
+
+remote:   help     11400                      hook_update_n   11400 - Remove the                
+remote:                                                       help_search_items table.          
+remote:   search   11401                      hook_update_n   11401 - Install Help              
+remote:                                                       Search module if the              
+remote:                                                       Search and Help modules           
+remote:                                                       are installed.                    
+remote:   search   11402                      hook_update_n   11402 - Install Search            
+remote:                                                       node module if node is            
+remote:                                                       installed.                        
+remote:   search   search_help_dependencies   post-update     Update config entity              
+remote:                                                       dependencies to the               
+remote:                                                       Search Help module, if            
+remote:                                                       necessary.   @see                 
+remote:                                                       search_update_11402()             
+remote:  -------- -------------------------- --------------- --------------------------
+
 ## Updates 2026-07-14
 
     * drupal/core-composer-scaffold (11.4.1 -> 11.4.3)
