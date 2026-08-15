@@ -68,6 +68,9 @@
   background-color: #005a3f;
 }
 
+/*
+Color NameHex CodeTone & IntentBest UI ApplicationDeep Waratah Crimson#B7342AMuted native red with rich earth undertones. High contrast, zero neon glare.Active menu indicators, left border accents, hover highlights.Sandstone Burnt Ochre#C95A2EWarm rust/burnt orange inspired by Blue Mountains pagoda rock ironstone.Sub-navigation hover states, CTA buttons, section badges.Golden Banksia#E08B22Vibrant warm amber/gold. Radiates light like sunset hitting cliff faces.Icon accents, active tab borders, secondary link highlights.
+ */
 .paragraph--type--quote {
   display: flex;
   align-items: center;

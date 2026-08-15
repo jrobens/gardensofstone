@@ -11,7 +11,7 @@ dependencies:
 id: gardensofstone_mainnavigation_3
 theme: gardensofstone
 region: footer
-weight: -9
+weight: -7
 provider: null
 plugin: 'drulma_companion_menu_tabs:main'
 settings:

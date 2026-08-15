@@ -11,7 +11,7 @@ _core:
 id: gardensofstone_search
 theme: gardensofstone
 region: footer
-weight: -7
+weight: -8
 provider: null
 plugin: search_form_block
 settings:

@@ -1,4 +1,4 @@
-
+$breakpoint-desktop: 1024px;
 $primary: #a2046b;
 $secondary: #E1C158;
 
@@ -6,6 +6,9 @@ $quote: 'Mukta Malar', sans-serif;
 $element-colour: #a2671c;
 $link: #a2671c;
 $link-inverse: white;
+
+$action-bg-color: $secondary;
+$action-border-color: $link;
 
 $orange-message: rgb(232, 105, 74);
 $burgundy-message: rgb(119, 0, 67);
@@ -15,7 +18,7 @@ $dark: #333;
 $font-size-caption: 0.9rem;
 
 $light: #fefefe !default;
-$family-heading: 'DMSans-Bold', san-serif;
+$family-heading: 'DMSans-Bold', sans-serif;
 
 $background: #438029;
 $navbar-active: $background;
@@ -41,7 +44,7 @@ $salmon: #f7acbc;
 $olive: #b8b98e;
 $mission-brown: #d0c78d;
 
-$breakpoint-large: 960px;
+$breakpoint-large: 1024px;
 
 :root {
   --color-highlight-1: #{$primary};
@@ -112,3 +115,7 @@ $breakpoint-large: 960px;
 .dark-green {
   background-color: #005a3f;
 }
+
+/*
+Color NameHex CodeTone & IntentBest UI ApplicationDeep Waratah Crimson#B7342AMuted native red with rich earth undertones. High contrast, zero neon glare.Active menu indicators, left border accents, hover highlights.Sandstone Burnt Ochre#C95A2EWarm rust/burnt orange inspired by Blue Mountains pagoda rock ironstone.Sub-navigation hover states, CTA buttons, section badges.Golden Banksia#E08B22Vibrant warm amber/gold. Radiates light like sunset hitting cliff faces.Icon accents, active tab borders, secondary link highlights.
+ */

@@ -1,0 +1,76 @@
+{# Template: themes/custom/gardensofstone/templates/system/_menu--bulma-navbar.html.twig #}
+{% import _self as menus %}
+
+{{ menus.menu_links(items, attributes) }}
+
+{% macro menu_links(items, attributes) %}
+  {% if items %}
+    <div class="navbar-start">
+      {% for item in items %}
+        {% set has_dropdown = item.below or item.content|render %}
+        {% set unique_id = 'mega-menu-' ~ loop.index %}
+
+        <div class="navbar-item {{ has_dropdown ? 'has-dropdown is-hoverable' : '' }}">
+
+          <a href="{{ item.url }}"
+             class="navbar-link {{ has_dropdown ? '' : 'is-arrowless' }}"
+                  {% if has_dropdown %}
+            id="{{ unique_id }}-trigger"
+            aria-expanded="false"
+            aria-haspopup="true"
+            aria-controls="{{ unique_id }}-dropdown"
+                  {% endif %}>
+            {{ item.title }}
+          </a>
+
+          {% if has_dropdown %}
+            <div id="{{ unique_id }}-dropdown" class="navbar-dropdown" aria-labelledby="{{ unique_id }}-trigger">
+              <div class="mega-menu-wrapper">
+
+                {# COLUMN 1: Custom Fields #}
+                {% if item.content.field_menu_section_title|render or item.content.field_menu_description|render %}
+                  <div class="mega-menu-column promo-column">
+                    {% if item.content.field_menu_section_title|render %}
+                      <div class="menu-extra-field-title">
+                        {{ item.content.field_menu_section_title }}
+                      </div>
+                    {% endif %}
+                    {% if item.content.field_menu_description|render %}
+                      <div class="menu-extra-field-description">
+                        {{ item.content.field_menu_description }}
+                      </div>
+                    {% endif %}
+                  </div>
+                {% endif %}
+
+                {# COLUMNS 2+: Child Links #}
+                {% if item.below %}
+                  <div class="mega-menu-column children-column-wrapper">
+                    <ul class="menu-extra-links">
+
+                      {% for sub_item in item.below %}
+                        <li>
+                          {% if sub_item.url and sub_item.url.toString() %}
+                            {# Standard Drupal Menu Link Object #}
+                            <a href="{{ sub_item.url }}">{{ sub_item.title }}</a>
+                          {% elseif sub_item.content['#menu_link_content'] %}
+                            {# Menu Item Extras Entity Object #}
+                            {% set entity = sub_item.content['#menu_link_content'] %}
+                            {{ entity.title.value }}</a>
+                          {% endif %}
+                        </li>
+                      {% endfor %}
+
+                    </ul>
+                  </div>
+                {% endif %}
+
+              </div>
+            </div>
+          {% endif %}
+
+        </div>
+      {% endfor %}
+    </div>
+  {% endif %}
+{% endmacro %}

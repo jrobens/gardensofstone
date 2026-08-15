@@ -1,0 +1,311 @@
+@use '../../../../sites/variables' as *;
+
+/* ==========================================================================
+   1. Footer Base & Shared Styles (Mobile First)
+   ========================================================================== */
+
+footer.footer {
+  position: relative;
+  background-color: #1b1b1b;
+  color: #ffffff;
+  font-size: 0.875rem;
+  padding: 3rem 1.5rem 2rem;
+  margin-top: 3rem;
+
+  h2 {
+    display: none;
+  }
+
+  a,
+  a:visited {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  a:hover,
+  a:active {
+    color: #b5ba80;
+  }
+
+  /* Main Region Grid Container */
+  .region-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  /* ---- Search Block ---- */
+  #block-gardensofstone-search,
+  .search-block-form {
+    grid-column: 1 / -1;
+
+    form,
+    .content {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      max-width: 400px;
+    }
+
+    .field {
+      margin: 0;
+      flex: 1;
+    }
+
+    .input {
+      width: 100%;
+      height: 2.25rem;
+      padding: 0 0.75rem;
+      background-color: #2a2a2a;
+      border: 1px solid #444444;
+      border-radius: 4px;
+      color: #ffffff;
+      font-size: 0.85rem;
+
+      &:focus {
+        outline: none;
+        border-color: #ffffff;
+      }
+    }
+
+    .button,
+    .button.is-link {
+      height: 2.25rem;
+      padding: 0 1.25rem;
+      background-color: transparent;
+      border: 1px solid #ffffff;
+      border-radius: 4px;
+      color: #ffffff;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.2s ease, color 0.2s ease;
+
+      &:hover {
+        background-color: #ffffff;
+        color: #1b1b1b;
+      }
+    }
+  }
+
+  /* ---- Main Navigation Cards ---- */
+  #block-gardensofstone-mainnavigation-3,
+  #block-mainnavigation-3 {
+    grid-column: 1 / -1;
+
+    ul.menu-level-0 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+
+      > .container > ul.menu-item > .menu_link_content > .group-left {
+        display: none;
+      }
+
+      li.menu-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        border: none;
+        padding: 0;
+        margin: 0;
+        background-color: rgba(255, 255, 255, 0.03);
+        border-radius: 8px;
+        padding: 1.25rem;
+        transition: background-color 0.2s ease;
+
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.06);
+        }
+
+        /* Hide empty grid cards without descriptions or images */
+        &:empty,
+        &:not(:has(.field_menu_section_title)):not(:has(img)) {
+          display: none;
+        }
+      }
+    }
+
+    /* Card Content Structure */
+    .field_menu_section_title {
+      font-weight: 700;
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+      color: #ffffff;
+    }
+
+    .field_menu_description {
+      font-size: 0.85rem;
+      color: rgba(255, 255, 255, 0.75);
+      line-height: 1.45;
+      margin-bottom: 1.25rem;
+      flex-grow: 1; /* Pushes image to bottom of card */
+    }
+
+    .field_menu_image {
+      margin-top: auto;
+
+      img {
+        width: 100%;
+        height: 180px;
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+        display: block;
+        border-radius: 6px;
+      }
+    }
+  }
+
+  /* ---- Footer Navigation Menu (News, Contact, etc.) ---- */
+  #block-gardensofstone-footer {
+    grid-column: 1 / -1;
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem 2rem;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    a {
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
+  }
+
+  /* ---- Aboriginal Country Block ---- */
+  #block-aboriginalcountry {
+    grid-column: 1 / -1;
+
+    .content {
+      font-size: 0.85rem;
+      line-height: 1.6;
+      color: rgba(255, 255, 255, 0.8);
+      max-width: 900px;
+
+      p {
+        margin-bottom: 0.75rem;
+
+        &:last-child {
+          margin-bottom: 0;
+          font-style: italic;
+        }
+      }
+    }
+  }
+
+  /* ---- Social & Connect Buttons ---- */
+  #block-gardensofstone-followus-2 {
+    grid-column: 1 / -1;
+
+    .tabs ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      border: none;
+    }
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.5rem 1.25rem;
+      border: 1px solid rgba(255, 255, 255, 0.6);
+      border-radius: 4px;
+      color: #ffffff;
+      font-size: 0.85rem;
+      font-weight: 500;
+
+      &:hover,
+      &.is-active {
+        background-color: #ffffff;
+        color: #1b1b1b;
+        border-color: #ffffff;
+      }
+    }
+
+    .visually-hidden {
+      display: none;
+    }
+  }
+
+  /* ---- Copyright Block ---- */
+  #block-copyrightfooter {
+    grid-column: 1 / -1;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.6);
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 2rem;
+  }
+}
+
+/* ==========================================================================
+   2. Subfooter Region Grid (Admin / Account Links)
+   ========================================================================== */
+
+.region-subfooter {
+  max-width: 1200px;
+  margin: 1.5rem auto 0;
+  padding: 1rem 1.5rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#block-gardensofstone-account-menu,
+.menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  a {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.5);
+
+    &:hover {
+      color: #ffffff;
+    }
+  }
+}
+
+/* ==========================================================================
+   3. Tablet & Desktop Responsive Layout
+   ========================================================================== */
+
+@media screen and (min-width: $breakpoint-large) {
+  footer.footer {
+    padding: 4rem 2rem 3rem;
+
+    .region-footer {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 3rem 2rem;
+    }
+
+    /* Expand main card menu to 3 columns on desktop */
+    #block-gardensofstone-mainnavigation-3 ul.menu-level-0,
+    #block-mainnavigation-3 ul.menu-level-0 {
+      li.menu-item {
+        border-top: none;
+        padding-top: 0;
+
+        .group-right {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+    }
+  }
+}

@@ -1,3 +1,54 @@
+## Updates 2026-08-11
+
+    * civicrm/civicrm-core (6.17.0 -> 6.17.2)
+* civicrm/civicrm-drupal-8 (6.17.0 -> 6.17.2)
+* civicrm/civicrm-packages (6.17.0 -> 6.17.2)
+* drupal/core-composer-scaffold (11.4.4 -> 11.4.5)
+* drupal/core-project-message (11.4.4 -> 11.4.5)
+* drupal/core-recommended (11.4.4 -> 11.4.5)
+* drupal/leaflet (10.4.9 -> 10.4.10)
+    Database updates: None
+## Updates 2026-08-06
+
+    * civicrm/civicrm-core (6.16.3 -> 6.17.0)
+* civicrm/civicrm-drupal-8 (6.16.3 -> 6.17.0)
+* civicrm/civicrm-packages (6.16.3 -> 6.17.0)
+* drupal/paragraphs (1.22.0 -> 1.23.0)
+    Database updates: None
+## Updates 2026-08-05
+
+    * civicrm/civicrm-core (6.16.1 -> 6.16.3)
+    * civicrm/civicrm-drupal-8 (6.16.1 -> 6.16.3)
+    * civicrm/civicrm-packages (6.16.1 -> 6.16.3)
+    * drupal/menu_item_extras (3.1.1 -> 3.1.2)
+    * drupal/paragraphs (1.21.0 -> 1.22.0)
+    
+Database updates: None
+## Updates 2026-07-28
+
+    * drupal/entity_class_formatter (2.0.1 -> 2.0.2)
+    Database updates: None
+
+Hi John,
+
+Andrew Cox wanted some changes to the GoS website, which I have done but I have had some problems I am at a loss to fix without doing a lot of Drupal research into what is really behind these problems. 
+
+The first problem is that every webpage, except the home page, has this small “home" textlink below the main menu. As the main menu has a home button and the GoS text graphic has a hidden home button,  this third home button isn't needed. But where is it located and should I remove it or will the site go weird without it?
+
+Second: is a graphics issue.  In edit mode, everything is OK, two cols, with two equally sized square images. Once saved, the mining timeline graphic squashes flat. Tried to fix with a bigger image in png format to fill the square up more. No luck. What is going on here? (See screenshots below)
+
+Third: I have a problem with two layers of subheadings off the main menu (I was asked to create this 2nd layer), and well these second level submenus only show once you get into the first layer of menus. How do I get the 2nd order menus to come on once you move over “Coal Threats” instead of once you get into “Campaigns”? (Also see screenshots below the first lot)
+
+Fourth: is another graphics problem where the graphic https://www.gardensofstone.org.au/failed-zero-discharge-promise would be cropped on the left and right sides until I added quite a bit of vertical padding top and bottom of the image. It sort of looks weird but at least I got it to work. (Just use the url to go to the page and see what a pathetic hack I’ve do to work around some configuration issue).
+
+Can you help me with any of these problems, John?  
+
+Also any design suggestions on these changes would be greatly appreciated.
+
+Thank you as always
+
+
+
 ## Updates 2026-07-20
 
 civicrm/civicrm-core       6.15.6 requires phpoffice/phpspreadsheet (^1.18 || ^2)

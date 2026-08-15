@@ -1,3 +1,7 @@
+*:JR:2026-08-11:GOS:0.2: sys+ update drupal  civicrm. civicrm/civicrm-core civicrm/civicrm-drupal-8 civicrm/civicrm-packages drupal/core-composer-scaffold drupal/core-project-message drupal/core-recommended drupal/leaflet 
+*:JR:2026-08-06:GOS:0.2: sys+ update drupal  civicrm. civicrm/civicrm-core civicrm/civicrm-drupal-8 civicrm/civicrm-packages drupal/paragraphs 
+*:JR:2026-08-05:GOS:0.2: sys+ update drupal  civicrm. civicrm/civicrm-core civicrm/civicrm-drupal-8 civicrm/civicrm-packages drupal/menu_item_extras drupal/paragraphs 
+*:JR:2026-07-28:GOS:0.2: sys+ update drupal  civicrm. drupal/entity_class_formatter 
 *:JR:2026-07-20:GOS:0.2: sys+ update drupal  civicrm. civicrm/civicrm-core drupal/webform_xlsx_export 
 *:JR:2026-07-20:GOS:0.2: sys+ update drupal  civicrm. 
 *:JR:2026-07-20:GOS:0.2: sys+ update drupal  civicrm. 

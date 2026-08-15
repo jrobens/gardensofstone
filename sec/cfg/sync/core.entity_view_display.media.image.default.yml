@@ -5,38 +5,68 @@ dependencies:
   config:
     - field.field.media.image.field_caption
     - field.field.media.image.field_media_image
-    - image.style.square
     - media.type.image
   module:
-    - image
+    - layout_builder
+    - layout_discovery
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          fde0032f-edab-4c14-9f20-fc2bd2b60c05:
+            uuid: fde0032f-edab-4c14-9f20-fc2bd2b60c05
+            region: content
+            configuration:
+              id: 'field_block:media:image:field_media_image'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: square
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          95853f37-c2fb-4b3c-8e72-c2e0d62ffa41:
+            uuid: 95853f37-c2fb-4b3c-8e72-c2e0d62ffa41
+            region: content
+            configuration:
+              id: 'field_block:media:image:field_caption'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                  link_rel: canonical
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
 _core:
   default_config_hash: B1a2aBHmUulUZN6HrxITEH1tSResuVjXMBEv1lUBtOo
 id: media.image.default
 targetEntityType: media
 bundle: image
 mode: default
-content:
-  field_caption:
-    type: string
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 2
-    region: content
-  field_media_image:
-    type: image
-    label: hidden
-    settings:
-      image_link: ''
-      image_style: square
-      image_loading:
-        attribute: lazy
-    third_party_settings: {  }
-    weight: 1
-    region: content
+content: {  }
 hidden:
   created: true
+  field_caption: true
+  field_media_image: true
   name: true
   thumbnail: true
   uid: true

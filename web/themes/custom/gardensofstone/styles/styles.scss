@@ -1,8 +1,8 @@
+@use "../../../../libraries/node_modules/bulma/sass/utilities/initial-variables";
 @use '../../../../sites/variables' as *;
 @use 'navbar';
 @use 'breadcrumbs';
 @use 'crossfade';
-@use 'highlighted';
 @use 'view_events';
 @use 'pbcheckerboard';
 @use 'pbimage';
@@ -100,10 +100,15 @@ header {
   padding-top: 2.8rem;
 }
 
+body.toolbar-tray-open .main {
+  top: 79px;
+}
+
 main {
   scroll-snap-type: y mandatory;
   background: transparent;
   // clip-path: inset(-14rem 0 0 0)
+
 }
 
 body.full-width main {
@@ -145,10 +150,6 @@ body.path--.toolbar-horizontal main > section {
 /* for inspiration https://codepen.io/dimaZubkov/pen/rLxrXZ */
 .navbar.is-fixed-top {
   z-index: 100;
-}
-
-body.toolbar-tray-open .navbar.is-fixed-top {
-  top: 79px;
 }
 
 .menu-list a.is-active {
@@ -306,7 +307,6 @@ body.path-- .column {
   }
 
   article > div > .content h2 {
-    /*  color: white*/
     font-weight: normal;
   }
 }
