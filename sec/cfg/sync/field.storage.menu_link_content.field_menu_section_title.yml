@@ -1,0 +1,21 @@
+uuid: 49b0d02e-2cc6-4864-9f99-71fe3893056a
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_link_content
+id: menu_link_content.field_menu_section_title
+field_name: field_menu_section_title
+entity_type: menu_link_content
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

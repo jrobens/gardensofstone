@@ -1,0 +1,31 @@
+uuid: f21c329b-b532-41f0-81c0-468c9ba989be
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.menu_link_content.field_menu_image
+    - media.type.image
+    - media.type.remote_video
+    - system.menu.main
+id: menu_link_content.main.field_menu_image
+field_name: field_menu_image
+entity_type: menu_link_content
+bundle: main
+label: Image
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+      remote_video: remote_video
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: image
+field_type: entity_reference

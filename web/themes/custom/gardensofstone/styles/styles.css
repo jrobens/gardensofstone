@@ -73,7 +73,7 @@
 Color NameHex CodeTone & IntentBest UI ApplicationDeep Waratah Crimson#B7342AMuted native red with rich earth undertones. High contrast, zero neon glare.Active menu indicators, left border accents, hover highlights.Sandstone Burnt Ochre#C95A2EWarm rust/burnt orange inspired by Blue Mountains pagoda rock ironstone.Sub-navigation hover states, CTA buttons, section badges.Golden Banksia#E08B22Vibrant warm amber/gold. Radiates light like sunset hitting cliff faces.Icon accents, active tab borders, secondary link highlights.
  */
 /* ==========================================================================
-   1. Base / Mobile-First Styles (Default)
+   1. Base Styles (All Screens)
    ========================================================================== */
 /* Navbar Base */
 .navbar.is-black {
@@ -105,176 +105,209 @@ Color NameHex CodeTone & IntentBest UI ApplicationDeep Waratah Crimson#B7342AMut
 .navbar.is-black .navigation__link-description {
   display: none;
 }
-.navbar.is-black .navbar-dropdown {
-  border-top: 2px solid rgba(255, 255, 255, 0.2);
-  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
-}
-.navbar.is-black .navbar-dropdown a,
-.navbar.is-black .navbar-dropdown a:visited {
-  color: white;
-  background-color: transparent;
-}
-.navbar.is-black .navbar-dropdown a:hover,
-.navbar.is-black .navbar-dropdown a:focus {
-  background-color: rgba(255, 255, 255, 0.15);
-  color: white !important;
-}
-
-/* Mobile Dropdown & Accordion Layout */
-.navbar-item.has-dropdown .navbar-link::after {
-  transition: transform 0.2s ease;
-}
-.navbar-item.has-dropdown.is-active .navbar-link::after {
-  transform: rotate(135deg);
-}
-.navbar-item.has-dropdown .navbar-dropdown {
-  display: none;
-  padding: 0.875rem 1.25rem;
-  background-color: #f9f9f9;
-  border-left: 3px solid #a2671c;
-  /* Mobile Square Image */
-}
-.navbar-item.has-dropdown .navbar-dropdown.is-active {
-  display: block;
-}
-.navbar-item.has-dropdown .navbar-dropdown .field_menu_section_title {
-  font-size: 1.05rem;
-  font-weight: 700;
-  color: #111111;
-  margin-bottom: 0.25rem;
-  letter-spacing: -0.01em;
-}
-.navbar-item.has-dropdown .navbar-dropdown .field_menu_description {
-  font-size: 0.85rem;
-  font-weight: 400;
-  color: #555555;
-  line-height: 1.35;
-  margin-bottom: 0.5rem;
-}
-.navbar-item.has-dropdown .navbar-dropdown .field_menu_image img,
-.navbar-item.has-dropdown .navbar-dropdown .field_media_image img {
-  width: 100%;
-  aspect-ratio: 1/1;
-  object-fit: cover;
-  object-position: center;
-  display: block;
-  border-radius: 4px;
-}
-.navbar-item.has-dropdown .navbar-dropdown .children-column-wrapper {
-  flex: 1 1 100%;
-}
-.navbar-item.has-dropdown .navbar-dropdown .menu-extra-links {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.navbar-item.has-dropdown .navbar-dropdown .menu-extra-links li a {
-  padding: 0.35rem 0;
-  display: block;
-  color: #333 !important;
-  background-color: transparent !important;
-}
-.navbar-item.has-dropdown .navbar-dropdown .menu-extra-links li a:hover {
-  background-color: rgba(162, 103, 28, 0.1) !important;
-}
-
-/* Base Fluid Stack */
-.menu-link-content.ds-2col-fluid {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  width: 100%;
-}
-.menu-link-content.ds-2col-fluid .group-left,
-.menu-link-content.ds-2col-fluid .group-right {
-  width: 100%;
-}
 
 /* ==========================================================================
-   2. Desktop Overrides (Containment & Viewport-Scaled Height)
+   2. Mobile-Only Styles (Accordion Layout)
+   ========================================================================== */
+@media screen and (max-width: 1023px) {
+  .navbar-item.has-dropdown .navbar-link::after {
+    transition: transform 0.2s ease;
+  }
+  .navbar-item.has-dropdown.is-active .navbar-link::after {
+    transform: rotate(135deg);
+  }
+  .navbar-item.has-dropdown .navbar-dropdown {
+    display: none;
+    padding: 0.875rem 1.25rem;
+    background-color: #f9f9f9;
+    border-left: 3px solid #a2671c;
+    border-top: 2px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  }
+  .navbar-item.has-dropdown .navbar-dropdown.is-active {
+    display: block !important;
+  }
+  .navbar-item.has-dropdown .navbar-dropdown .mega-menu-container {
+    width: 100%;
+  }
+  .navbar-item.has-dropdown .navbar-dropdown .mega-menu-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .navbar-item.has-dropdown .navbar-dropdown .level-2-item .mega-menu-heading {
+    margin-bottom: 0.35rem;
+  }
+  .navbar-item.has-dropdown .navbar-dropdown .level-2-item .mega-menu-heading .mega-menu-title-link,
+  .navbar-item.has-dropdown .navbar-dropdown .level-2-item .mega-menu-heading .mega-menu-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #111111 !important;
+    letter-spacing: -0.01em;
+    display: block;
+    padding: 0.2rem 0;
+  }
+  .navbar-item.has-dropdown .navbar-dropdown .level-2-item .mega-menu-heading .mega-menu-title-link:hover,
+  .navbar-item.has-dropdown .navbar-dropdown .level-2-item .mega-menu-heading .mega-menu-title:hover {
+    color: #a2671c !important;
+  }
+  .navbar-item.has-dropdown .navbar-dropdown .level-2-item .mega-menu-description {
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: #555555;
+    line-height: 1.35;
+    margin-bottom: 0.5rem;
+  }
+  .navbar-item.has-dropdown .navbar-dropdown .level-2-item .mega-menu-sublinks {
+    list-style: none;
+    margin: 0;
+    padding: 0 0 0 0.75rem;
+    border-left: 2px solid rgba(162, 103, 28, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+  .navbar-item.has-dropdown .navbar-dropdown .level-2-item .mega-menu-sublinks .level-3-item .mega-menu-sublink {
+    padding: 0.3rem 0;
+    display: block;
+    color: #333333 !important;
+    background-color: transparent !important;
+    font-size: 0.9rem;
+  }
+  .navbar-item.has-dropdown .navbar-dropdown .level-2-item .mega-menu-sublinks .level-3-item .mega-menu-sublink:hover {
+    color: #a2671c !important;
+    background-color: rgba(162, 103, 28, 0.08) !important;
+  }
+  .navbar-item.has-dropdown .navbar-dropdown .level-2-item .mega-menu-sublinks .level-3-item .mega-menu-sublink-text {
+    padding: 0.3rem 0;
+    display: block;
+    color: #333333;
+    font-size: 0.9rem;
+  }
+}
+/* ==========================================================================
+   3. Desktop Styles (Mega Menu Grid & Containment)
    ========================================================================== */
 @media screen and (min-width: 1024px) {
   .navbar {
     position: relative;
   }
-  .navbar-item.has-dropdown:hover > .navbar-dropdown, .navbar-item.has-dropdown.is-active > .navbar-dropdown {
-    visibility: visible;
-    opacity: 1;
-    transform: translateY(0);
-    pointer-events: auto;
+  .navbar-start > .navbar-item.has-dropdown > .navbar-dropdown {
+    height: auto;
+  }
+  .navbar-item.has-dropdown {
+    position: static;
   }
   .navbar-item.has-dropdown .navbar-dropdown {
-    position: fixed;
-    top: 3rem;
+    position: absolute;
+    top: 100%;
     left: 0;
     right: 0;
-    height: clamp(320px, 42vh, 520px);
-    padding: 1.5rem 2rem;
+    width: 100%;
+    max-height: 80vh;
+    overflow-y: auto;
+    padding: 2rem 2.5rem;
     box-sizing: border-box;
     margin: 0;
-    display: flex;
-    flex-direction: column;
-    background-color: #E08B22 !important;
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-6px);
+    transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease;
+    pointer-events: none;
+    background-color: rgb(80, 50, 25);
     border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
     font-family: "DMSans-Bold", sans-serif;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
   }
-  .navbar-item.has-dropdown .navbar-dropdown .field_menu_section_title {
-    color: #ffffff;
-    font-size: clamp(1.1rem, 2.2vh, 1.5rem);
-    font-weight: 700;
-    margin-bottom: 0.5rem;
+  .navbar-item.has-dropdown .navbar-dropdown .mega-menu-container {
+    max-width: 1344px;
+    margin: 0 auto;
+    width: 100%;
   }
-  .navbar-item.has-dropdown .navbar-dropdown .field_menu_description {
-    color: rgba(255, 255, 255, 0.85);
-    font-size: clamp(0.85rem, 1.5vh, 1rem);
-    font-weight: 400;
-    line-height: 1.45;
-  }
-  .navbar-item.has-dropdown .navbar-dropdown .menu-link-content.ds-2col-fluid {
+  .navbar-item.has-dropdown .navbar-dropdown .mega-menu-grid {
     display: grid;
-    grid-template-columns: 1.2fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2rem;
-    /* Fill remaining vertical space without expanding past parent container */
-    flex: 1;
-    height: 100%;
-    min-height: 0;
-    align-items: stretch;
-    box-sizing: border-box;
+    align-items: start;
   }
-  .navbar-item.has-dropdown .navbar-dropdown .menu-link-content.ds-2col-fluid .group-left {
+  .navbar-item.has-dropdown .navbar-dropdown .level-2-item {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    height: 100%;
-    min-height: 0;
+    gap: 0.5rem;
   }
-  .navbar-item.has-dropdown .navbar-dropdown .menu-link-content.ds-2col-fluid .group-right {
+  .navbar-item.has-dropdown .navbar-dropdown .level-2-item .mega-menu-heading {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.25rem;
+  }
+  .navbar-item.has-dropdown .navbar-dropdown .level-2-item .mega-menu-heading .mega-menu-title-link,
+  .navbar-item.has-dropdown .navbar-dropdown .level-2-item .mega-menu-heading .mega-menu-title {
+    color: #ffffff !important;
+    font-size: clamp(1.05rem, 1.8vh, 1.25rem);
+    font-weight: 700;
+    text-decoration: none;
+    display: inline-block;
+    transition: color 0.15s ease, transform 0.15s ease;
+  }
+  .navbar-item.has-dropdown .navbar-dropdown .level-2-item .mega-menu-heading .mega-menu-title-link:hover,
+  .navbar-item.has-dropdown .navbar-dropdown .level-2-item .mega-menu-heading .mega-menu-title:hover {
+    color: #ffbb63 !important;
+    transform: translateX(2px);
+  }
+  .navbar-item.has-dropdown .navbar-dropdown .level-2-item .mega-menu-heading .mega-menu-title-link.is-active,
+  .navbar-item.has-dropdown .navbar-dropdown .level-2-item .mega-menu-heading .mega-menu-title.is-active {
+    color: #ffbb63 !important;
+  }
+  .navbar-item.has-dropdown .navbar-dropdown .level-2-item .mega-menu-description {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.85rem;
+    font-weight: 400;
+    line-height: 1.4;
+  }
+  .navbar-item.has-dropdown .navbar-dropdown .level-2-item .mega-menu-sublinks {
+    list-style: none;
+    margin: 0;
+    padding: 0;
     display: flex;
-    height: 100%;
-    width: 100%;
-    min-height: 0;
-    overflow: hidden;
-    border-radius: 6px;
+    flex-direction: column;
+    gap: 0.35rem;
   }
-  .navbar-item.has-dropdown .navbar-dropdown .menu-link-content.ds-2col-fluid .group-right .field_menu_image,
-  .navbar-item.has-dropdown .navbar-dropdown .menu-link-content.ds-2col-fluid .group-right .field_media_image {
-    height: 100%;
-    width: 100%;
-    min-height: 0;
-    display: flex;
-  }
-  .navbar-item.has-dropdown .navbar-dropdown .menu-link-content.ds-2col-fluid .group-right img {
-    width: 100%;
-    height: 100%;
-    max-height: 100%;
-    object-fit: cover;
-    border-radius: 0.3rem;
+  .navbar-item.has-dropdown .navbar-dropdown .level-2-item .mega-menu-sublinks .level-3-item .mega-menu-sublink {
+    color: rgba(255, 255, 255, 0.85) !important;
+    font-size: 0.9rem;
+    font-weight: 400;
+    padding: 0.25rem 0;
     display: block;
+    background-color: transparent !important;
+    transition: color 0.15s ease, transform 0.15s ease;
+  }
+  .navbar-item.has-dropdown .navbar-dropdown .level-2-item .mega-menu-sublinks .level-3-item .mega-menu-sublink:hover {
+    color: #ffffff !important;
+    transform: translateX(4px);
+  }
+  .navbar-item.has-dropdown .navbar-dropdown .level-2-item .mega-menu-sublinks .level-3-item .mega-menu-sublink.is-active {
+    color: #ffbb63 !important;
+    font-weight: 600;
+  }
+  .navbar-item.has-dropdown .navbar-dropdown .level-2-item .mega-menu-sublinks .level-3-item .mega-menu-sublink-text {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 0.9rem;
+    padding: 0.25rem 0;
+    display: block;
+  }
+  .navbar-item.has-dropdown:hover > .navbar-dropdown, .navbar-item.has-dropdown.is-hoverable:hover > .navbar-dropdown, .navbar-item.has-dropdown.is-active > .navbar-dropdown,
+  .navbar-item.has-dropdown > .navbar-dropdown.is-active {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+    pointer-events: auto !important;
   }
 }
 /* ==========================================================================
-   3. Gin Toolbar Offset
+   4. Gin Toolbar Offset
    ========================================================================== */
 .gin-secondary-toolbar__layout-container {
   min-width: 1px;
@@ -286,7 +319,7 @@ Color NameHex CodeTone & IntentBest UI ApplicationDeep Waratah Crimson#B7342AMut
 }
 
 body.gin-secondary-toolbar--frontend .my-custom-frontend-header {
-  margin-top: calc(var(--gin-toolbar-height) + var(--gin-height-sticky, 48px)) !important;
+  margin-top: calc(var(--gin-toolbar-height) + var(--gin-height-sticky, 48px));
 }
 
 .region-breadcrumb nav.breadcrumb a, .region-breadcrumb nav.breadcrumb a:visited {

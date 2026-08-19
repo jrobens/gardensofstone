@@ -4,8 +4,8 @@
     Drupal.behaviors.drulmaAccessibleMegaMenu = {
         attach: function (context, settings) {
 
-            // Dynamic synchronization with sv.$breakpoint-large
-            const breakpoint = 960;
+            // Synchronized with sv.$breakpoint-large (1024px)
+            const breakpoint = 1024;
             const dropdownItems = once('accessibleMegaMenu', '.navbar-item.has-dropdown', context);
 
             dropdownItems.forEach(function (element) {
@@ -64,9 +64,9 @@
                     if (window.innerWidth >= breakpoint) toggleMenu(false);
                 });
 
-                // W3C Navigation Rules Matrix
+                // Keyboard Accessibility Navigation
                 item.addEventListener('keydown', function (e) {
-                    const focusableSubLinks = Array.from(dropdown.querySelectorAll('a, button, input'));
+                    const focusableSubLinks = Array.from(dropdown.querySelectorAll('a, button, input, [tabindex="0"]'));
                     const currentFocusIndex = focusableSubLinks.indexOf(document.activeElement);
 
                     switch (e.key) {
@@ -106,6 +106,20 @@
                             break;
                     }
                 });
+            });
+
+            // Close on click outside (Desktop)
+            document.addEventListener('click', function(e) {
+                if (window.innerWidth >= breakpoint) {
+                    if (!e.target.closest('.navbar-item.has-dropdown')) {
+                        document.querySelectorAll('.navbar-item.has-dropdown, .navbar-dropdown').forEach(el => {
+                            el.classList.remove('is-active');
+                        });
+                        document.querySelectorAll('.navbar-link').forEach(link => {
+                            link.setAttribute('aria-expanded', 'false');
+                        });
+                    }
+                }
             });
 
             window.addEventListener('resize', function () {

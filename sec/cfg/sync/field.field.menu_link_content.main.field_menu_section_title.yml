@@ -1,0 +1,19 @@
+uuid: 87962463-4340-4dcb-8d4d-b03acd8f737e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.menu_link_content.field_menu_section_title
+    - system.menu.main
+id: menu_link_content.main.field_menu_section_title
+field_name: field_menu_section_title
+entity_type: menu_link_content
+bundle: main
+label: 'Section Title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
