@@ -236,6 +236,8 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/php-http/message-factory" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/php-http/promise" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/upstreamable/jsdelivr-api-client" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/npm-asset/bulma" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/oomphinc/composer-installers-extender" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
   </component>

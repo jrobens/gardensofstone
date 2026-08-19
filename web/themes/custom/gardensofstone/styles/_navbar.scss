@@ -48,8 +48,8 @@ $mega-menu-border-color: #dbdbdb;
 
     a,
     a:visited {
-      color: white !important;
-      background-color: transparent !important;
+      color: white;
+      background-color: transparent;
     }
 
     a:hover,
@@ -151,35 +151,38 @@ $mega-menu-border-color: #dbdbdb;
     position: relative;
   }
 
-  .navbar-item.has-dropdown {
-    position: static;
+  .navbar-start > .navbar-item {
+    height: 1px;
+  }
 
+  .navbar-item.has-dropdown {
     &:hover > .navbar-dropdown,
     &.is-active > .navbar-dropdown {
-      visibility: visible !important;
-      opacity: 1 !important;
-      transform: translateY(0) !important;
-      pointer-events: auto !important;
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
     }
 
     .navbar-dropdown {
-      position: absolute;
-      top: 100%;
+      position: fixed;
+      top: 3rem;
       left: 0;
       right: 0;
-      width: auto;
       height: clamp(320px, 42vh, 520px);
       padding: 1.5rem 2rem;
       box-sizing: border-box;
+      margin: 0;
+
 
       display: flex;
       flex-direction: column;
 
-      background-color: #E08B22;
-      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      background-color: black;
+      border: none;
       font-family: sv.$family-heading;
-      border-left: none;
       box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+
 
       .field_menu_section_title {
         color: #ffffff;
@@ -262,3 +265,5 @@ $mega-menu-border-color: #dbdbdb;
     margin-top: calc(var(--gin-toolbar-height) + var(--gin-height-sticky, 48px)) !important;
   }
 }
+
+

@@ -1,5 +1,5 @@
 @use '../../../../sites/variables' as sv;
-@use '../../../../libraries/node_modules/bulma/sass/utilities' as bulma;
+@use '../../../../libraries/bulma/sass/utilities' as bulma;
 
 @mixin hills {
   content: "";
