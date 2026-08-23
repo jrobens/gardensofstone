@@ -1483,7 +1483,7 @@ footer.footer ul.menu-level-0 > li .menu-level-1 > li .field__image img,
 footer.footer ul.menu-level-0 > li .menu-level-1 > li .field_menu_image img,
 footer.footer ul.menu-level-0 > li .menu-level-1 > li .field_things_to_do_image img {
   width: 100%;
-  height: 150px;
+  height: auto;
   object-fit: cover;
   object-position: center;
   border-radius: 7px;
