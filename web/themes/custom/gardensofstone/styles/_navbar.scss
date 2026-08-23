@@ -1,6 +1,8 @@
 @use '../../../../sites/variables' as sv;
 
-$mega-menu-border-color: #dbdbdb;
+$mega-menu-bg: #181818;
+$mega-menu-accent: #E08B22; // Golden Banksia contrast
+$mega-menu-border-color: rgba(255, 255, 255, 0.1);
 
 /* ==========================================================================
    1. Base Styles (All Screens)
@@ -58,11 +60,11 @@ $mega-menu-border-color: #dbdbdb;
 
     .navbar-dropdown {
       display: none;
-      padding: 0.875rem 1.25rem;
-      background-color: #f9f9f9;
-      border-left: 3px solid #a2671c;
-      border-top: 2px solid rgba(255, 255, 255, 0.2);
-      border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+      padding: 1rem;
+      background-color: #222222;
+      border-left: 3px solid $mega-menu-accent;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 
       &.is-active {
         display: block !important;
@@ -70,6 +72,9 @@ $mega-menu-border-color: #dbdbdb;
 
       .mega-menu-container {
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
       }
 
       .mega-menu-grid {
@@ -79,62 +84,94 @@ $mega-menu-border-color: #dbdbdb;
       }
 
       .level-2-item {
-        .mega-menu-heading {
-          margin-bottom: 0.35rem;
+        background-color: rgba(255, 255, 255, 0.04);
+        border-radius: 6px;
+        padding: 0.85rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
 
+        .level-2-image-wrapper img {
+          width: 100%;
+          height: 140px;
+          object-fit: cover;
+          border-radius: 4px;
+          display: block;
+        }
+
+        .mega-menu-heading {
           .mega-menu-title-link,
           .mega-menu-title {
             font-size: 1.05rem;
             font-weight: 700;
-            color: #111111 !important;
-            letter-spacing: -0.01em;
+            color: #ffffff !important;
             display: block;
-            padding: 0.2rem 0;
 
             &:hover {
-              color: #a2671c !important;
+              color: $mega-menu-accent !important;
             }
           }
         }
 
         .mega-menu-description {
-          font-size: 0.85rem;
-          font-weight: 400;
-          color: #555555;
+          font-size: 0.825rem;
+          color: rgba(255, 255, 255, 0.7);
           line-height: 1.35;
-          margin-bottom: 0.5rem;
         }
 
         .mega-menu-sublinks {
           list-style: none;
           margin: 0;
-          padding: 0 0 0 0.75rem;
-          border-left: 2px solid rgba(162, 103, 28, 0.2);
+          padding: 0.5rem 0 0 0.5rem;
+          border-top: 1px solid rgba(255, 255, 255, 0.1);
           display: flex;
           flex-direction: column;
-          gap: 0.25rem;
+          gap: 0.5rem;
 
           .level-3-item {
-            .mega-menu-sublink {
-              padding: 0.3rem 0;
-              display: block;
-              color: #333333 !important;
-              background-color: transparent !important;
-              font-size: 0.9rem;
+            display: flex;
+            align-items: flex-start;
+            gap: 0.5rem;
 
-              &:hover {
-                color: #a2671c !important;
-                background-color: rgba(162, 103, 28, 0.08) !important;
+            .level-3-image img {
+              width: 32px;
+              height: 32px;
+              object-fit: cover;
+              border-radius: 3px;
+              display: block;
+            }
+
+            .level-3-content {
+              flex: 1;
+
+              .mega-menu-sublink {
+                display: block;
+                color: rgba(255, 255, 255, 0.9) !important;
+                font-size: 0.85rem;
+
+                &:hover {
+                  color: $mega-menu-accent !important;
+                }
+              }
+
+              .level-3-description {
+                font-size: 0.75rem;
+                color: rgba(255, 255, 255, 0.6);
+                line-height: 1.25;
               }
             }
-
-            .mega-menu-sublink-text {
-              padding: 0.3rem 0;
-              display: block;
-              color: #333333;
-              font-size: 0.9rem;
-            }
           }
+        }
+      }
+
+      .mega-menu-media-column {
+        width: 100%;
+        img {
+          width: 100%;
+          max-height: 180px;
+          object-fit: cover;
+          border-radius: 6px;
+          display: block;
         }
       }
     }
@@ -142,7 +179,7 @@ $mega-menu-border-color: #dbdbdb;
 }
 
 /* ==========================================================================
-   3. Desktop Styles (Mega Menu Grid & Containment)
+   3. Desktop Single-Page Mega Menu Grid (Contained Height & Animated Scroll)
    ========================================================================== */
 @media screen and (min-width: sv.$breakpoint-large) {
   .navbar {
@@ -162,108 +199,249 @@ $mega-menu-border-color: #dbdbdb;
       left: 0;
       right: 0;
       width: 100%;
-      max-height: 80vh;
+      height: calc(100vh - 3.25rem);
+      max-height: calc(100vh - 3.25rem);
       overflow-y: auto;
-      padding: 2rem 2.5rem;
+      overflow-x: hidden;
+      overscroll-behavior: contain;
+      scroll-behavior: smooth;
+      padding: 2rem 2.5rem 3rem;
       box-sizing: border-box;
       margin: 0;
       display: none;
       visibility: hidden;
       opacity: 0;
       transform: translateY(-6px);
-      transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease;
+      transition: opacity 0.22s ease, transform 0.22s ease, visibility 0.22s ease;
       pointer-events: none;
-      background-color: rgb(80, 50, 25);
+      background-color: $mega-menu-bg;
       border: none;
-      border-top: 1px solid rgba(255, 255, 255, 0.15);
+      border-top: 2px solid $mega-menu-accent;
       font-family: sv.$family-heading;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      box-shadow: 0 16px 48px rgba(0, 0, 0, 0.65);
 
-      .mega-menu-container {
-        max-width: 1344px;
+      /* Custom Subtle Scrollbar */
+      &::-webkit-scrollbar {
+        width: 6px;
+      }
+      &::-webkit-scrollbar-track {
+        background: rgba(0, 0, 0, 0.25);
+      }
+      &::-webkit-scrollbar-thumb {
+        background: rgba(224, 139, 34, 0.5);
+        border-radius: 3px;
+        &:hover {
+          background: $mega-menu-accent;
+        }
+      }
+
+      .mega-menu-wrapper {
+        max-width: 1400px;
         margin: 0 auto;
         width: 100%;
       }
 
-      .mega-menu-grid {
+      .mega-menu-container {
+        width: 100%;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-template-columns: 1fr;
         gap: 2rem;
         align-items: start;
+
+        &.has-media {
+          grid-template-columns: 1fr 300px;
+        }
       }
 
+      /* Multi-Column Grid of Level 2 Cards */
+      .mega-menu-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 1.5rem;
+        align-items: start;
+        width: 100%;
+      }
+
+      /* Level 2 Card */
       .level-2-item {
+        background-color: rgba(255, 255, 255, 0.035);
+        border: 1px solid $mega-menu-border-color;
+        border-radius: 8px;
+        padding: 1.25rem;
         display: flex;
         flex-direction: column;
         gap: 0.5rem;
+        box-sizing: border-box;
+        transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s ease, background-color 0.2s ease;
 
-        .mega-menu-heading {
-          border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-          padding-bottom: 0.5rem;
+        &:hover {
+          transform: translateY(-2px);
+          background-color: rgba(255, 255, 255, 0.055);
+          border-color: rgba(224, 139, 34, 0.4);
+          box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Level 2 Image */
+        .level-2-image-wrapper {
+          width: 100%;
+          border-radius: 6px;
+          overflow: hidden;
           margin-bottom: 0.25rem;
+
+          img {
+            width: 100%;
+            height: 110px;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 6px;
+            display: block;
+            transition: transform 0.3s ease;
+          }
+
+          &:hover img {
+            transform: scale(1.03);
+          }
+        }
+
+        /* Level 2 Title */
+        .mega-menu-heading {
+          border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+          padding-bottom: 0.4rem;
+          margin-bottom: 0.2rem;
 
           .mega-menu-title-link,
           .mega-menu-title {
             color: #ffffff !important;
-            font-size: clamp(1.05rem, 1.8vh, 1.25rem);
+            font-size: 1.05rem;
             font-weight: 700;
             text-decoration: none;
             display: inline-block;
             transition: color 0.15s ease, transform 0.15s ease;
 
             &:hover {
-              color: #ffbb63 !important;
+              color: $mega-menu-accent !important;
               transform: translateX(2px);
             }
 
             &.is-active {
-              color: #ffbb63 !important;
+              color: $mega-menu-accent !important;
             }
           }
         }
 
+        /* Level 2 Description */
         .mega-menu-description {
-          color: rgba(255, 255, 255, 0.8);
-          font-size: 0.85rem;
+          color: rgba(255, 255, 255, 0.75);
+          font-size: 0.8rem;
           font-weight: 400;
-          line-height: 1.4;
+          line-height: 1.35;
+          margin-bottom: 0.35rem;
         }
 
+        /* Level 3 Sublinks (All Open) */
         .mega-menu-sublinks {
           list-style: none;
           margin: 0;
-          padding: 0;
+          padding: 0.4rem 0 0 0;
+          border-top: 1px solid rgba(255, 255, 255, 0.08);
           display: flex;
           flex-direction: column;
-          gap: 0.35rem;
+          gap: 0.4rem;
 
           .level-3-item {
-            .mega-menu-sublink {
-              color: rgba(255, 255, 255, 0.85) !important;
-              font-size: 0.9rem;
-              font-weight: 400;
-              padding: 0.25rem 0;
-              display: block;
-              background-color: transparent !important;
-              transition: color 0.15s ease, transform 0.15s ease;
+            display: flex;
+            align-items: flex-start;
+            gap: 0.5rem;
+            padding: 0.2rem 0;
 
-              &:hover {
-                color: #ffffff !important;
-                transform: translateX(4px);
-              }
+            .level-3-image {
+              flex-shrink: 0;
+              width: 32px;
+              height: 32px;
+              border-radius: 4px;
+              overflow: hidden;
 
-              &.is-active {
-                color: #ffbb63 !important;
-                font-weight: 600;
+              img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block;
               }
             }
 
-            .mega-menu-sublink-text {
-              color: rgba(255, 255, 255, 0.85);
-              font-size: 0.9rem;
-              padding: 0.25rem 0;
-              display: block;
+            .level-3-content {
+              flex: 1;
+              min-width: 0;
+
+              .mega-menu-sublink {
+                color: rgba(255, 255, 255, 0.85) !important;
+                font-size: 0.85rem;
+                font-weight: 500;
+                display: block;
+                background-color: transparent !important;
+                transition: color 0.15s ease, transform 0.15s ease;
+
+                &:hover {
+                  color: #ffffff !important;
+                  transform: translateX(3px);
+                }
+
+                &.is-active {
+                  color: $mega-menu-accent !important;
+                  font-weight: 600;
+                }
+              }
+
+              .mega-menu-sublink-text {
+                color: rgba(255, 255, 255, 0.85);
+                font-size: 0.85rem;
+                display: block;
+              }
+
+              .level-3-description {
+                font-size: 0.75rem;
+                color: rgba(255, 255, 255, 0.6);
+                line-height: 1.3;
+                margin-top: 0.1rem;
+              }
             }
+          }
+        }
+      }
+
+      /* Right-Hand Side Media Showcase Column */
+      .mega-menu-media-column {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+        width: 100%;
+
+        .mega-menu-image-wrapper,
+        .field_menu_image,
+        .field_media_image,
+        article,
+        figure {
+          width: 100%;
+          border-radius: 8px;
+          overflow: hidden;
+          display: flex;
+        }
+
+        img {
+          width: 100%;
+          height: auto;
+          max-height: 280px;
+          object-fit: cover;
+          object-position: center;
+          border-radius: 8px;
+          box-shadow: 0 6px 20px rgba(0, 0, 0, 0.45);
+          border: 1px solid rgba(255, 255, 255, 0.1);
+          display: block;
+          transition: transform 0.3s ease;
+
+          &:hover {
+            transform: scale(1.02);
           }
         }
       }

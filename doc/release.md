@@ -1,3 +1,9 @@
+
+
+"undefined/chat/completions" cannot be parsed as a URL.
+
+setup an advisor that says to always check against screen shots.
+
 ## Updates 2026-08-11
 
     * civicrm/civicrm-core (6.17.0 -> 6.17.2)

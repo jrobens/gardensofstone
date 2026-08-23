@@ -1,378 +1,545 @@
-@use '../../../../sites/variables' as *;
+@use '../../../../sites/variables' as sv;
 
 /* ==========================================================================
-   1. Footer Base & Shared Styles (Mobile First)
+   Footer Component Styles
+
+   Structure produced by page.html.twig + region.html.twig:
+
+     footer.footer
+       div.region-footer          flex container (the "content rail")
+         <menu block>  -> nav > container > ul.menu-level-0   (3 columns)
+         div#block-gardensofstone-search
+         div#block-gardensofstone-footer            (quick links)
+         div#block-gardensofstone-followus-2        (social)
+         div#block-aboriginalcountry                (full-width band)
+         div...(copyright)                          (legal bar, the one divider)
+       div.region-subfooter       account / admin / utilities (no divider)
+       div.region-footer-editing  admin only
+z
+   - Full-bleed dark background; content padded + centred to a shared width
+     so every left edge lines up.
+   - One divider only (the copyright bar). Acknowledgement is its own band.
+   - Type scale (strong -> quiet), reused for the quick-links row:
+       menu header   .menu-level-0 > li > a     1.05rem / 700 / uppercase
+       menu item     ... > li > ul.menu > li > a 0.95rem / 600
+       level-3 item  ... ul.menu ul.menu > li > a 0.85rem / 500
+       quick link    #block-gardensofstone-footer a 0.85rem / 500
+       description   muted, 0.8rem / 0.75rem
    ========================================================================== */
+
+:root {
+  --footer-content: 1152px;
+  --footer-pad-x: clamp(1.25rem, 5vw, 5rem);
+  --footer-pad-y: clamp(3rem, 6vw, 4.5rem);
+}
 
 footer.footer {
   position: relative;
-  background-color: #1b1b1b;
+  background-color: #181818;
   color: #ffffff;
   font-size: 0.875rem;
-  padding: 3rem 1.5rem 2rem;
-  margin-top: 3rem;
+  line-height: 1.5;
+  padding: var(--footer-pad-y) var(--footer-pad-x) 1.75rem;
+  margin-top: 4rem;
+  border-top: 2px solid #E08B22;
 
+  /* Decorative block titles; hierarchy is carried by the type scale above. */
   h2 {
     display: none;
   }
 
   a,
   a:visited {
-    color: #ffffff;
+    color: rgba(255, 255, 255, 0.9);
     text-decoration: none;
-    transition: color 0.2s ease;
+    transition: color 0.15s ease, opacity 0.15s ease;
   }
 
   a:hover,
   a:active {
-    color: #b5ba80;
+    color: #ffbb63;
   }
 
-  /* Main Region Grid Container */
-  .region-footer {
-    display: flex;
-    flex-direction: column;
-    gap: 2.5rem;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-
-  /* ---- Search Block ---- */
-  #block-gardensofstone-search,
-  .search-block-form {
-    grid-column: 1 / -1;
-
-    form,
-    .content {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      max-width: 400px;
-    }
-
-    .field {
-      margin: 0;
-      flex: 1;
-    }
-
-    .input {
-      width: 100%;
-      height: 2.25rem;
-      padding: 0 0.75rem;
-      background-color: #2a2a2a;
-      border: 1px solid #444444;
-      border-radius: 4px;
-      color: #ffffff;
-      font-size: 0.85rem;
-
-      &:focus {
-        outline: none;
-        border-color: #ffffff;
-      }
-    }
-
-    .button,
-    .button.is-link {
-      height: 2.25rem;
-      padding: 0 1.25rem;
-      background-color: transparent;
-      border: 1px solid #ffffff;
-      border-radius: 4px;
-      color: #ffffff;
-      font-size: 0.85rem;
-      font-weight: 600;
-      cursor: pointer;
-      transition: background-color 0.2s ease, color 0.2s ease;
-
-      &:hover {
-        background-color: #ffffff;
-        color: #1b1b1b;
-      }
-    }
-  }
-
-  /* ---- Main Navigation Cards (Footer Menu 1) ---- */
-  #block-gardensofstone-mainnavigation-3,
-  #block-mainnavigation-3 {
-    grid-column: 1 / -1;
-
-    /* Outer Grid for Major Sections */
-    ul.menu-level-0 {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 2rem;
-      padding: 0;
-      margin: 0;
-      list-style: none;
-
-      /* Level 1 Major Card Item */
-      > li.menu-item {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        text-align: left;
-        background-color: rgba(255, 255, 255, 0.04);
-        border-radius: 8px;
-        padding: 1.5rem;
-        box-sizing: border-box;
-
-        /* Major Top-Level Heading */
-        > a,
-        > .field_menu_section_title {
-          font-size: 1.25rem;
-          font-weight: 700;
-          color: #ffffff;
-          margin-bottom: 1rem;
-          padding-bottom: 0.5rem;
-          border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-          width: 100%;
-          text-align: left;
-        }
-
-        /* Sub-items Container */
-        ul {
-          list-style: none;
-          padding: 0;
-          margin: 0;
-          width: 100%;
-          display: flex;
-          flex-direction: column;
-          gap: 1.25rem;
-        }
-      }
-    }
-
-    /* Sub-card Grid: 2/3 Content Left, 1/3 Image Right */
-    .ds-2col-fluid,
-    .menu-link-content {
-      display: grid;
-      grid-template-columns: 2fr 1fr; /* 2/3 left, 1/3 right */
-      gap: 1rem;
-      align-items: start;
-      width: 100%;
-      text-align: left;
-
-      /* Left Column (2/3 Container): Headings + Description + Links */
-      .group-left {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        text-align: left;
-        width: 100%;
-
-        .field_menu_section_title {
-          font-size: 1.05rem;
-          font-weight: 700;
-          color: #ffffff;
-          margin-bottom: 0.35rem;
-          text-align: left;
-        }
-
-        .field_menu_description {
-          font-size: 0.85rem;
-          color: rgba(255, 255, 255, 0.75);
-          line-height: 1.4;
-          margin-bottom: 0.5rem;
-          text-align: left;
-        }
-
-        .menu-extra-links,
-        ul.menu {
-          list-style: none;
-          padding: 0;
-          margin: 0;
-          width: 100%;
-
-          li a {
-            display: block;
-            font-size: 0.85rem;
-            color: rgba(255, 255, 255, 0.9);
-            padding: 0.2rem 0;
-            text-align: left;
-
-            &:hover {
-              color: #ffffff;
-              text-decoration: underline;
-            }
-          }
-        }
-      }
-
-      /* Right Column (1/3 Container): Image */
-      .group-right {
-        width: 100%;
-        display: flex;
-
-        .field_menu_image,
-        .field_media_image {
-          width: 100%;
-        }
-
-        img {
-          width: 100%;
-          height: auto;
-          aspect-ratio: 4 / 3;
-          object-fit: cover;
-          border-radius: 4px;
-          display: block;
-        }
-      }
-
-      /* Single column fallback if no image is rendered */
-      &:not(:has(.group-right img)) {
-        grid-template-columns: 1fr;
-
-        .group-right {
-          display: none;
-        }
-      }
-    }
-  }
-
-  /* ---- Footer Navigation Menu (News, Contact, etc.) ---- */
-  #block-gardensofstone-footer {
-    grid-column: 1 / -1;
-
-    ul {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem 2rem;
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    a {
-      font-size: 0.95rem;
-      font-weight: 600;
-    }
-  }
-
-  /* ---- Aboriginal Country Block ---- */
-  #block-aboriginalcountry {
-    grid-column: 1 / -1;
-
-    .content {
-      font-size: 0.85rem;
-      line-height: 1.6;
-      color: rgba(255, 255, 255, 0.8);
-      max-width: 900px;
-
-      p {
-        margin-bottom: 0.75rem;
-
-        &:last-child {
-          margin-bottom: 0;
-          font-style: italic;
-        }
-      }
-    }
-  }
-
-  /* ---- Social & Connect Buttons ---- */
-  #block-gardensofstone-followus-2 {
-    grid-column: 1 / -1;
-
-    .tabs ul {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.75rem;
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      border: none;
-    }
-
-    a {
-      display: inline-flex;
-      align-items: center;
-      padding: 0.5rem 1.25rem;
-      border: 1px solid rgba(255, 255, 255, 0.6);
-      border-radius: 4px;
-      color: #ffffff;
-      font-size: 0.85rem;
-      font-weight: 500;
-
-      &:hover,
-      &.is-active {
-        background-color: #ffffff;
-        color: #1b1b1b;
-        border-color: #ffffff;
-      }
-    }
-
-    .visually-hidden {
-      display: none;
-    }
-  }
-
-  /* ---- Copyright Block ---- */
-  #block-copyrightfooter {
-    grid-column: 1 / -1;
-    font-size: 0.8rem;
-    color: rgba(255, 255, 255, 0.6);
-    padding-top: 1.5rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    margin-top: 2rem;
+  /* Neutralise default block/region gutters inside the footer rail. */
+  .region-footer,
+  .region-footer .block {
+    max-width: none;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
-/* ==========================================================================
-   2. Subfooter Region Grid (Admin / Account Links)
-   ========================================================================== */
-
-.region-subfooter {
-  max-width: 1200px;
-  margin: 1.5rem auto 0;
-  padding: 1rem 1.5rem 0;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-#block-gardensofstone-account-menu,
-.menu-list {
+/* --------------------------------------------------------------------------
+   Main content rail: centred, padded, and flex-wrapping so the utility
+   blocks form one aligned row.
+   -------------------------------------------------------------------------- */
+footer.footer .region-footer {
+   max-width: none;
+  width: 100%;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  gap: 0.75rem 1.5rem;
+  align-items: flex-start;
+  gap: clamp(1.5rem, 3.5vw, 3.5rem);
+}
+
+/* Full-width children span the whole rail. */
+footer.footer .region-footer > *,
+footer.footer .region-footer .menu-level-0,
+footer.footer .region-footer #block-aboriginalcountry {
+  flex: 1 1 100%;
+  order: 1;
+}
+
+/* Search, quick-links and social share a single aligned row. */
+footer.footer .region-footer #block-gardensofstone-search,
+footer.footer .region-footer #block-gardensofstone-footer,
+footer.footer .region-footer #block-gardensofstone-followus-2 {
+  flex: 1 1 20rem;
+  min-width: 0;
+}
+
+footer.footer .region-footer #block-gardensofstone-search {
+  order: 2;
+}
+footer.footer .region-footer #block-gardensofstone-footer {
+  order: 2;
+}
+footer.footer .region-footer #block-gardensofstone-followus-2 {
+  order: 2;
+}
+
+footer.footer .region-footer #block-aboriginalcountry {
+  order: 3;
+}
+
+footer.footer .region-footer .block-copyrightfooter,
+footer.footer .region-footer #block-copyrightfooter {
+  order: 4;
+}
+
+/* Remove the container's own width/padding inside the menu block. */
+footer.footer .region-footer nav > .container:not(.is-max-tablet):not(.is-max-desktop):not(.is-max-widescreen) {
+  max-width: none;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* --------------------------------------------------------------------------
+   Main menu: 3 equal, top-aligned columns
+   -------------------------------------------------------------------------- */
+footer.footer ul.menu-level-0 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: start;
+  gap: clamp(1.25rem, 2.5vw, 2.5rem);
   list-style: none;
   padding: 0;
   margin: 0;
 
-  a {
-    font-size: 0.8rem;
-    color: rgba(255, 255, 255, 0.5);
+  > li {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    min-width: 0;
 
-    &:hover {
+    /* Menu header */
+    & > a {
+      font-size: 1.05rem;
+      font-weight: 700;
       color: #ffffff;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      padding: 0 0 0.6rem;
+      border-bottom: 2px solid #E08B22;
+      margin: 0 0 1.25rem;
+    }
+
+    /* Level-2 card list */
+    & .menu-level-1 {
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      > li {
+        background-color: rgba(255, 255, 255, 0.04);
+        border: 1px solid rgba(255, 255, 255, 0.10);
+        border-radius: 8px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        transition: border-color 0.15s ease, background-color 0.15s ease;
+
+        &:hover {
+          border-color: rgba(224, 139, 34, 0.55);
+          background-color: rgba(255, 255, 255, 0.06);
+        }
+
+        /* Menu item (level 2 link) */
+        & > a {
+          display: block;
+          padding: 0.85rem 1.1rem 0.45rem;
+          font-size: 0.95rem;
+          font-weight: 600;
+          color: #ffffff;
+          flex-shrink: 0;
+        }
+
+        /* Level-2 image */
+        .field__image,
+        .field_menu_image,
+        .field_things_to_do_image {
+          margin: 0;
+          padding: 0;
+
+          img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 7px;
+            display: block;
+            margin: 0 1.1rem 0.9rem;
+          }
+        }
+
+        /* Description (level 2) */
+        .field_menu_description,
+        .field_things_to_do_text {
+          padding: 0 1.1rem 1rem;
+          font-size: 0.8rem;
+          color: rgba(255, 255, 255, 0.68);
+          line-height: 1.45;
+        }
+
+        /* Level-3 submenu */
+        & .menu-level-1 {
+          list-style: none;
+          margin: 0;
+          padding: 0.85rem 1.1rem 1rem;
+          display: flex;
+          flex-direction: column;
+          gap: 0.7rem;
+          border-top: 1px solid rgba(255, 255, 255, 0.10);
+
+          > li {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 0.7rem;
+
+            & > a {
+              font-size: 0.85rem;
+              font-weight: 500;
+              color: rgba(255, 255, 255, 0.82);
+              padding: 0;
+              flex: 1 1 auto;
+            }
+
+            .field__image,
+            .field_menu_image,
+            .field_things_to_do_image {
+              margin: 0;
+              flex-shrink: 0;
+
+              img {
+                width: 44px;
+                height: 44px;
+                object-fit: cover;
+                border-radius: 4px;
+                display: block;
+              }
+            }
+
+            .field_menu_description,
+            .field_things_to_do_text {
+              width: 100%;
+              font-size: 0.75rem;
+              color: rgba(255, 255, 255, 0.58);
+              line-height: 1.35;
+              padding: 0 0 0.1rem;
+            }
+          }
+        }
+      }
+    }
+    .menu_link_content {
+      display: flex;
+      flex-direction: column;
+
+      .field_menu_description {
+        margin: 0.75rem 0;
+        font-size: 0.85rem;
+        color: rgba(255, 255, 255, 0.7);
+        line-height: 1.5;
+      }
+
+      .field_menu_image {
+        margin: 0.75rem 0;
+
+        img {
+          width: 100%;
+          height: auto;
+          max-height: 200px;
+          object-fit: cover;
+          border-radius: 8px;
+          display: block;
+        }
+      }
     }
   }
 }
 
-/* ==========================================================================
-   3. Tablet & Desktop Responsive Layout
-   ========================================================================== */
+/* --------------------------------------------------------------------------
+   1. Search
+   -------------------------------------------------------------------------- */
+#block-gardensofstone-search,
+.search-block-form {
+  form,
+  .content {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    max-width: 420px;
+    width: 100%;
+    margin-bottom: 0;
+  }
 
-@media screen and (min-width: $breakpoint-large) {
-  footer.footer {
-    padding: 4rem 2rem 3rem;
+  .field,
+  .form-item {
+    margin: 0;
+    flex: 1;
+  }
 
-    .region-footer {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 3rem 2rem;
+  .input {
+    width: 100%;
+    height: 2.4rem;
+    padding: 0 0.85rem;
+    background-color: #242424;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 0.875rem;
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.5);
     }
 
-    /* Expand main card menu to 3 columns on desktop */
-    #block-gardensofstone-mainnavigation-3 ul.menu-level-0,
-    #block-mainnavigation-3 ul.menu-level-0 {
-      li.menu-item {
-        border-top: none;
-        padding-top: 0;
+    &:focus {
+      outline: none;
+      background-color: #2c2c2c;
+      border-color: #E08B22;
+      box-shadow: 0 0 0 2px rgba(224, 139, 34, 0.25);
+    }
+  }
 
-        .group-right {
-          display: grid;
-          grid-template-columns: repeat(2, 1fr);
-        }
+  .button,
+  .button.is-link,
+  input[type="submit"] {
+    height: 2.4rem;
+    padding: 0 1.25rem;
+    background-color: transparent;
+    border: 1px solid #E08B22;
+    border-radius: 4px;
+    color: #E08B22;
+    font-size: 0.875rem;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background-color 0.2s ease, color 0.2s ease;
+
+    &:hover {
+      background-color: #E08B22;
+      color: #181818;
+    }
+  }
+}
+
+/* --------------------------------------------------------------------------
+   2. Secondary footer menu (quick links) — vertical, same rhythm as the row
+   -------------------------------------------------------------------------- */
+#block-gardensofstone-footer {
+  .content {
+    margin-bottom: 0;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.55rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      margin: 0;
+    }
+
+    li a {
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.78);
+
+      &:hover {
+        color: #ffffff;
       }
     }
+  }
+}
+
+/* --------------------------------------------------------------------------
+   3. Social & connect
+   -------------------------------------------------------------------------- */
+#block-gardensofstone-followus-2 {
+  .tabs ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: none;
+  }
+
+  li {
+    margin: 0;
+  }
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1.1rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 0.85rem;
+    font-weight: 500;
+    background-color: rgba(255, 255, 255, 0.04);
+    transition: all 0.2s ease;
+
+    &:hover,
+    &.is-active {
+      background-color: #E08B22;
+      border-color: #E08B22;
+      color: #181818;
+      font-weight: 600;
+    }
+  }
+
+  .visually-hidden {
+    display: none;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   5. Aboriginal Country acknowledgement (full-width band)
+   -------------------------------------------------------------------------- */
+#block-aboriginalcountry {
+  margin-top: clamp(1rem, 2vw, 1.5rem);
+  padding: 1.25rem 1.5rem;
+  background-color: rgba(255, 255, 255, 0.03);
+  border-left: 3px solid #E08B22;
+  border-radius: 4px;
+
+  .content {
+    font-size: 0.85rem;
+    line-height: 1.65;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+    max-width: none;
+
+    p {
+      margin-bottom: 0.5rem;
+
+      &:last-child {
+        margin-bottom: 0;
+        font-style: italic;
+        color: rgba(255, 255, 255, 0.62);
+      }
+    }
+  }
+}
+
+/* --------------------------------------------------------------------------
+   6. Copyright / legal bar — the single divider above the legal strip
+   -------------------------------------------------------------------------- */
+.block-copyrightfooter,
+#block-copyrightfooter {
+  margin-top: clamp(1.5rem, 3vw, 2.5rem);
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 0.78rem;
+  color: rgba(255, 255, 255, 0.55);
+
+  * {
+    margin: 0;
+  }
+
+  a,
+  a:visited {
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  a:hover,
+  a:active {
+    color: #ffbb63;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   7. Subfooter (account / admin / utilities) — text only, no extra divider
+   -------------------------------------------------------------------------- */
+.region-subfooter {
+  max-width: var(--footer-content);
+  width: 100%;
+  margin: 1rem auto 0;
+  padding: 0;
+
+  #block-gardensofstone-account-menu,
+  .menu-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem 1.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      margin: 0;
+    }
+
+    a {
+      font-size: 0.75rem;
+      color: rgba(255, 255, 255, 0.42);
+
+      &:hover {
+        color: #ffbb63;
+      }
+    }
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Responsive
+   -------------------------------------------------------------------------- */
+@media (max-width: 540px) {
+  footer.footer ul.menu-level-0 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 820px) and (min-width: 541px) {
+  footer.footer ul.menu-level-0 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }

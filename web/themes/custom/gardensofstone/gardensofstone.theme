@@ -37,6 +37,16 @@ function gardensofstone_preprocess_region(&$variables)
   }
 }
 
+/**
+ * Implements hook_preprocess_IMAGE().
+ */
+function gardensofstone_preprocess_image(&$variables) {
+  // Remove the attributes completely
+  unset($variables['attributes']['width']);
+  unset($variables['attributes']['height']);
+}
+
+
 /*function gardensofstone_image_formatter(&$variables) {
   $fred = 1;
 }*/
