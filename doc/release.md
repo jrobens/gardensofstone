@@ -1,3 +1,9 @@
+## Updates 2026-08-24
+
+    * drupal/leaflet (10.4.10 -> 10.4.11)
+* drupal/paragraph_blocks (4.2.2 -> 4.2.3)
+* drupal/viewsreference (2.0.0-beta13 -> 2.0.0-beta14)
+    Database updates: None
 
 
 "undefined/chat/completions" cannot be parsed as a URL.

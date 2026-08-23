@@ -6,12 +6,18 @@ dependencies:
     - system.menu.main
   module:
     - block_class
+    - block_title_link
     - drulma_companion
   theme:
     - gardensofstone
 third_party_settings:
   block_class:
     classes: is-fixed-top
+  block_title_link:
+    title_link_url: ''
+    link_title: ''
+    title_link_target: ''
+    title_link_enable: 0
 id: gardensofstone_mainnavigation
 theme: gardensofstone
 region: primary_menu
@@ -24,7 +30,7 @@ settings:
   label_display: '0'
   provider: drulma_companion
   level: 1
-  depth: 0
+  depth: null
   navbar_color: black
   navbar_title_tag: span
   horizontally_centered: true
@@ -37,5 +43,5 @@ settings:
   use_site_slogan: false
   site_name_size: '4'
   site_slogan_size: '6'
-  expand_all_items: 0
+  expand_all_items: 1
 visibility: {  }

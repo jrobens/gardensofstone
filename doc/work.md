@@ -1,3 +1,4 @@
+*:JR:2026-08-24:GOS:0.2: sys+ update drupal  civicrm. drupal/leaflet drupal/paragraph_blocks drupal/viewsreference 
 *:JR:2026-08-11:GOS:0.2: sys+ update drupal  civicrm. civicrm/civicrm-core civicrm/civicrm-drupal-8 civicrm/civicrm-packages drupal/core-composer-scaffold drupal/core-project-message drupal/core-recommended drupal/leaflet 
 *:JR:2026-08-06:GOS:0.2: sys+ update drupal  civicrm. civicrm/civicrm-core civicrm/civicrm-drupal-8 civicrm/civicrm-packages drupal/paragraphs 
 *:JR:2026-08-05:GOS:0.2: sys+ update drupal  civicrm. civicrm/civicrm-core civicrm/civicrm-drupal-8 civicrm/civicrm-packages drupal/menu_item_extras drupal/paragraphs 

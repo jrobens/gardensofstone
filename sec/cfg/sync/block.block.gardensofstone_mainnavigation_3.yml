@@ -5,9 +5,16 @@ dependencies:
   config:
     - system.menu.main
   module:
+    - block_title_link
     - drulma_companion
   theme:
     - gardensofstone
+third_party_settings:
+  block_title_link:
+    title_link_url: ''
+    link_title: ''
+    title_link_target: ''
+    title_link_enable: 0
 id: gardensofstone_mainnavigation_3
 theme: gardensofstone
 region: footer
@@ -20,7 +27,7 @@ settings:
   label_display: '0'
   provider: drulma_companion
   level: 1
-  depth: 1
+  depth: 2
   horizontally_centered: true
   boxed: false
   toggle: false
@@ -28,5 +35,5 @@ settings:
   fullwidth: false
   size: ''
   alignment: ''
-  expand_all_items: 0
+  expand_all_items: 1
 visibility: {  }
