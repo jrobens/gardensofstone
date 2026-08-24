@@ -1408,6 +1408,7 @@ footer.footer .region-footer nav > .container:not(.is-max-tablet):not(.is-max-de
   width: 100%;
   padding-left: 0;
   padding-right: 0;
+  white-space: wrap;
 }
 
 /* --------------------------------------------------------------------------
@@ -1453,6 +1454,7 @@ footer.footer ul.menu-level-0 > li .menu-level-1 > li {
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 8px;
   overflow: hidden;
+  min-width: 100%;
   display: flex;
   flex-direction: column;
   transition: border-color 0.15s ease, background-color 0.15s ease;
