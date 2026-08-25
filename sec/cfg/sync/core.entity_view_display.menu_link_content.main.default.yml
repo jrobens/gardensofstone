@@ -5,9 +5,11 @@ dependencies:
   config:
     - field.field.menu_link_content.main.field_menu_description
     - field.field.menu_link_content.main.field_menu_image
+    - field.field.menu_link_content.main.field_menu_index
     - system.menu.main
   module:
     - linked_field
+    - viewsreference
 id: menu_link_content.main.default
 targetEntityType: menu_link_content
 bundle: main
@@ -16,14 +18,14 @@ content:
   children:
     settings: {  }
     third_party_settings: {  }
-    weight: 2
+    weight: 1
     region: content
   field_menu_description:
     type: basic_string
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 1
+    weight: 0
     region: content
   field_menu_image:
     type: entity_reference_entity_view
@@ -39,5 +41,14 @@ content:
         advanced: {  }
         token: ''
     weight: 3
+    region: content
+  field_menu_index:
+    type: viewsreference_formatter
+    label: above
+    settings:
+      plugin_types:
+        - block
+    third_party_settings: {  }
+    weight: 2
     region: content
 hidden: {  }

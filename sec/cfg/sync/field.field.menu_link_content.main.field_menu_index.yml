@@ -1,0 +1,29 @@
+uuid: 6c90822a-7b62-48b1-9dfe-482749643365
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.menu_link_content.field_menu_index
+    - system.menu.main
+  module:
+    - viewsreference
+id: menu_link_content.main.field_menu_index
+field_name: field_menu_index
+entity_type: menu_link_content
+bundle: main
+label: Index
+description: 'Include a views index.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:view'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+  plugin_types:
+    block: block
+  preselect_views: {  }
+  enabled_settings: {  }
+field_type: viewsreference

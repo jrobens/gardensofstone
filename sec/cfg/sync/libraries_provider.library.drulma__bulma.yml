@@ -1,0 +1,15 @@
+uuid: a5728927-08c0-4276-84b8-974d919829a4
+langcode: en
+status: true
+dependencies:
+  theme:
+    - drulma
+id: drulma__bulma
+label: bulma
+source: local
+version: 1.0.4
+enabled: true
+minified: when_aggregating
+variant: ''
+replaces: {  }
+custom_options: {  }
