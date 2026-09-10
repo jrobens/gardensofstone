@@ -1,76 +1,75 @@
-@media (min-width: 720px) {
-  .view-id-visit_gardens_of_stone_terms {
-     .view-content {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-     }
+.view-id-visit_gardens_of_stone_terms {
+  .view-content > .views-row {
+    position: relative;
+  }
 
-     .views-row:nth-child(3n+1),
-     .views-row:nth-child(3n+1) {
-      grid-column-end: span 2;
-     }
+  .views-field.views-field-name a,
+  .views-field.views-field-name a:visited {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 0 1px 13px rgba(204, 223, 203, 0.67);
+    color: var(--lighter-1);
+  }
 
-     > .views-row {
-      position: relative;
-     }
+  .views-field.views-field-field-visit-image .field_media_image.container > div {
+    padding: 0;
+    display: flex;
+  }
 
-     .views-field.views-field-description__value a,
-     .views-field.views-field-description__value a:visited {
-      color: #333;
-     }
-   }
+  .views-field.views-field-field-visit-image .field_media_image img {
+    opacity: 1;
+  }
+
+  .views-field.views-field-field-visit-image .field_media_image img:hover {
+    opacity: 0;
+    transition: opacity .55s ease-in-out;
+    -moz-transition: opacity .55s ease-in-out;
+    -webkit-transition: opacity .55s ease-in-out;
+  }
 }
 
 @media (min-width: 720px) {
   .view-id-visit_gardens_of_stone_terms {
-     .views-field.views-field-name {
+    .view-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .views-row:nth-child(3n+1),
+    .views-row:nth-child(3n+1) {
+      grid-column-end: span 2;
+    }
+
+    .views-field.views-field-description__value a,
+    .views-field.views-field-description__value a:visited {
+      color: #333;
+    }
+
+    .views-field.views-field-name {
       margin: 0;
       position: absolute;
       top: 30%;
       left: 10%;
       transform: translate(0, -30%);
-     }
+    }
 
-     .views-field.views-field-description__value {
+    .views-field.views-field-description__value {
       margin: 0 2rem;
       position: absolute;
       top: 60%;
       left: 10%;
       transform: translate(0, -60%);
-     }
+    }
 
-     .views-row:nth-child(3n+2) .views-field-description__value,
-     .views-row:nth-child(+3) .views-field-description__value {
+    .views-row:nth-child(3n+2) .views-field-description__value,
+    .views-row:nth-child(+3) .views-field-description__value {
       margin: 0;
       position: absolute;
       height: 1%;
       bottom: 0;
       left: 5%;
-     }
-   }
+    }
+  }
 }
 
-.view-id-visit_gardens_of_stone_terms .views-field.views-field-name a,
-.view-id-visit_gardens_of_stone_terms .views-field.views-field-name a:visited {
-  text-transform: uppercase;
-  font-size: 2rem;
-  font-weight: bold;
-  text-shadow: 0 1px 13px rgba(103,160,100,0.67);
-  color: var(--lighter-1);
-}
-
-.view-id-visit_gardens_of_stone_terms .views-field.views-field-field-visit-image .field_media_image.container > div {
-  padding: 0;
-  display: flex;
-}
-
-.view-id-visit_gardens_of_stone_terms .views-field.views-field-field-visit-image .field_media_image img {
-  opacity: 1;
-}
-
-.view-id-visit_gardens_of_stone_terms .views-field.views-field-field-visit-image .field_media_image img:hover {
-  opacity: 0;
-  transition: opacity .55s ease-in-out;
-  -moz-transition: opacity .55s ease-in-out;
-  -webkit-transition: opacity .55s ease-in-out;
-}

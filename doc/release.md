@@ -1,3 +1,25 @@
+
+## Display
+
+https://www.gardensofstone.org.au/visit-gardens-stone missing relative on blocks.
+
+news-context gin--vertical-toolbar /visit-gardens-stone node-type--page-and-layout path--visit-gardens-stone not-front toolbar-fixed toolbar-horizontal
+
+contextual-region view view-visit-gardens-of-stone-terms view-id-visit_gardens_of_stone_terms view-display-id-block_1 js-view-dom-id-293c318e4b616390e9d3b38056fce91b3e5e5c52e06e157116e05d7d57e0395d
+
+## Updates 2026-09-10
+
+    * civicrm/civicrm-core (6.17.2 -> 6.18.0)
+* civicrm/civicrm-drupal-8 (6.17.2 -> 6.18.0)
+* civicrm/civicrm-packages (6.17.2 -> 6.18.0)
+* drupal/ckeditor_media_embed (dev-2.x 9be0f9d -> dev-2.x 724e9be)
+* drupal/copyright_footer (3.1.1 -> 3.2.0)
+* drupal/core-composer-scaffold (11.4.5 -> 11.4.6)
+* drupal/core-project-message (11.4.5 -> 11.4.6)
+* drupal/core-recommended (11.4.5 -> 11.4.6)
+* drupal/leaflet (10.4.11 -> 10.4.12)
+* drupal/module_filter (5.0.5 -> 6.0.0)
+    Database updates: None
 ## Updates 2026-08-24
 
     * drupal/leaflet (10.4.10 -> 10.4.11)
