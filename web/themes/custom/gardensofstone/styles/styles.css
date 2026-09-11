@@ -1324,6 +1324,11 @@ footer.footer {
   border-top: 2px solid #E08B22;
   /* Decorative block titles; hierarchy is carried by the type scale above. */
   /* Neutralise default block/region gutters inside the footer rail. */
+  /* --------------------------------------------------------------------------
+     Main content rail: centred, padded, and flex-wrapping so the utility
+     blocks form one aligned row.
+     -------------------------------------------------------------------------- */
+  /* Full-width children span the whole rail. */
 }
 footer.footer h2 {
   display: none;
@@ -1345,11 +1350,6 @@ footer.footer .region-footer .block {
   margin-left: 0;
   margin-right: 0;
 }
-
-/* --------------------------------------------------------------------------
-   Main content rail: centred, padded, and flex-wrapping so the utility
-   blocks form one aligned row.
-   -------------------------------------------------------------------------- */
 footer.footer .region-footer {
   max-width: none;
   width: 100%;
@@ -1359,8 +1359,9 @@ footer.footer .region-footer {
   align-items: flex-start;
   gap: clamp(1.5rem, 3.5vw, 3.5rem);
 }
-
-/* Full-width children span the whole rail. */
+footer.footer .region-footer .menu-list a, footer.footer .region-footer .menu-list button, footer.footer .region-footer .menu-list .menu-item {
+  background-color: #181818;
+}
 footer.footer .region-footer > *,
 footer.footer .region-footer .menu-level-0,
 footer.footer .region-footer #block-aboriginalcountry {
@@ -1535,7 +1536,7 @@ footer.footer ul.menu-level-0 > li .menu-level-1 > li .menu-level-1 > li .field_
 footer.footer ul.menu-level-0 > li .menu-level-1 > li .menu-level-1 > li .field_things_to_do_text {
   width: 100%;
   font-size: 0.75rem;
-  color: rgba(255, 255, 255, 0.58);
+  color: white;
   line-height: 1.35;
   padding: 0 0 0.1rem;
 }
