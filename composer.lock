@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d431c0c818d66237e637828df3b1b8d5",
+    "content-hash": "e4715307f75e00617c30acf658236143",
     "packages": [
         {
             "name": "adrienrn/php-mimetyper",
@@ -3215,26 +3215,32 @@
         },
         {
             "name": "drupal/ckeditor_media_embed",
-            "version": "dev-2.x",
+            "version": "2.0.7",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/ckeditor_media_embed.git",
-                "reference": "9be0f9dd433bf8216f92b0a89cff22e32e6c65d7"
+                "reference": "2.0.7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/ckeditor_media_embed-2.0.7.zip",
+                "reference": "2.0.7",
+                "shasum": "96fa8b3c0c67d65368c26494033b6b0e3afec770"
             },
             "require": {
                 "drupal/core": "^10.3 || ^11"
             },
+            "suggest": {
+                "vardot/ckeditor5-media-embed-drupal": "The CKEditor 5 Media embed plugin library, as a drupal-library. Require the tag matching the CKEditor 5 version Drupal core bundles: ~47.6.2 for core 11.4.x. See composer.libraries.json."
+            },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-2.x": "2.x-dev"
-                },
                 "drupal": {
-                    "version": "2.0.5+1-dev",
-                    "datestamp": "1773429951",
+                    "version": "2.0.7",
+                    "datestamp": "1788352445",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 },
                 "drush": {
@@ -17684,7 +17690,6 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "drupal/ckeditor_media_embed": 20,
         "drupal/entity_clone": 10,
         "drupal/layout_paragraphs": 20,
         "drupal/masquerade": 5,

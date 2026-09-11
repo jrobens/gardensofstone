@@ -181,7 +181,6 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/chillerlan/php-settings-container" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/christian-riesen/otp" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/paragonie/constant_time_encoding" />
-      <excludeFolder url="file://$MODULE_DIR$/web/files/civicrm/ext/uk.co.vedaconsulting.mosaico/vendor/civicrm/composer-downloads-plugin" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/google/recaptcha" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/soundasleep/html2text" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/knplabs/knp-snappy" />
@@ -213,10 +212,8 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/fileeye/pel" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/polyfill-php84" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/dompdf/php-svg-lib" />
-      <excludeFolder url="file://$MODULE_DIR$/web/files/civicrm/ext/uk.co.vedaconsulting.mosaico/vendor/civicrm/gitignore" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/polyfill-php85" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/thecodingmachine/safe" />
-      <excludeFolder url="file://$MODULE_DIR$/web/files/civicrm/ext/uk.co.vedaconsulting.mosaico/vendor/cweagans/composer-patches" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/civicrm/cli-tools" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/phlib/xss-sanitizer" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/phpseclib/phpseclib2_compat" />
@@ -238,6 +235,7 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/upstreamable/jsdelivr-api-client" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/npm-asset/bulma" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/oomphinc/composer-installers-extender" />
+      <excludeFolder url="file://$MODULE_DIR$/web/files/civicrm/ext/uk.co.vedaconsulting.mosaico/vendor/intervention/gif" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
   </component>

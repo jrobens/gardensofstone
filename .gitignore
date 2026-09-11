@@ -14,6 +14,7 @@ src/dev
 src/pix
 
 sec/files
+
 web/files/20*
 web/files/civicrm/persist
 web/files/civicrm/upload
@@ -83,5 +84,9 @@ work.md.old
 /sec/.env
 /src/The Gardens of Stone _ Gardens of Stone_files/
 /src/The Gardens of Stone _ Gardens of Stone.html
-/web/files/
 /web/libraries/bulma/
+/web/files/civicrm/ext/.civicrm-staging/
+/web/files/js/
+/web/files/webform/
+/web/files/page/
+/web/files/inline-images/

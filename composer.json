@@ -25,7 +25,7 @@
     "drupal/admin_toolbar": "^3.3",
     "drupal/better_social_sharing_buttons": "^5.0",
     "drupal/block_title_link": "^1.1",
-    "drupal/ckeditor_media_embed": "2.x-dev@dev",
+    "drupal/ckeditor_media_embed": "^2.0",
     "drupal/classy_paragraphs": "^2.0",
     "drupal/colorbox": "^2.2",
     "drupal/copyright_footer": "^3.0",
