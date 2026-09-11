@@ -33,6 +33,7 @@ web/sites/*/files
 web/sites/*/private
 
 vendor/
+!web/files/civicrm/ext/uk.co.vedaconsulting.mosaico/vendor
 node_modules/
 
 web/core
