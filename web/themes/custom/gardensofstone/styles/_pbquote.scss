@@ -73,17 +73,15 @@ $action-border-color: sv.$action-border-color;
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center; // Vertically center content inside tile
-  align-items: center;     // Horizontally center content inside tile
+  justify-content: center;
+  align-items: center;
   aspect-ratio: 1 / 1;
   container-type: inline-size;
 
-  // Card background & borders
   background-color: $action-card-bg !important;
   padding: clamp(1rem, 6cqw, 2.5rem);
   border-radius: bulma.$radius-large;
   border: 1px solid rgba(sv.$dark, 0.08);
-  border-left: 6px solid $action-border-color;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
   transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1),
   box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1);

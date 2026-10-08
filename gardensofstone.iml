@@ -213,7 +213,6 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/polyfill-php84" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/dompdf/php-svg-lib" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/polyfill-php85" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/thecodingmachine/safe" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/civicrm/cli-tools" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/phlib/xss-sanitizer" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/phpseclib/phpseclib2_compat" />
@@ -236,6 +235,7 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/npm-asset/bulma" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/oomphinc/composer-installers-extender" />
       <excludeFolder url="file://$MODULE_DIR$/web/files/civicrm/ext/uk.co.vedaconsulting.mosaico/vendor/intervention/gif" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/smarty/smarty" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
   </component>

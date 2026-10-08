@@ -1,3 +1,26 @@
+## Updates 2026-09-27
+
+    * civicrm/civicrm-core (6.17.2 -> 6.18.1)
+* civicrm/civicrm-drupal-8 (6.17.2 -> 6.18.1)
+* civicrm/civicrm-packages (6.17.2 -> 6.18.1)
+* drupal/copyright_footer (3.1.1 -> 3.4.0)
+* drupal/core-composer-scaffold (11.4.5 -> 11.4.8)
+* drupal/core-project-message (11.4.5 -> 11.4.8)
+* drupal/core-recommended (11.4.5 -> 11.4.8)
+* drupal/focal_point (2.1.2 -> 2.1.3)
+* drupal/leaflet (10.4.11 -> 10.4.12)
+* drupal/module_filter (5.0.5 -> 6.0.0)
+* drupal/tfa (1.12.0 -> 1.13.0)
+* drupal/webform (6.3.0 -> 6.3.1)
+    Database updates: None
+
+vendor/bin/cv upgrad[PHP Deprecation] Drupal\context_ui\Form\ConditionDeleteForm::buildForm(): Implicitly marking parameter $context as nullable is deprecated, the explicit nullable type must be used instead at /Users/jrobens/Sites/gardensofstone2/web/modules/patched/context/modules/context_ui/src/Form/ConditionDeleteForm.php:92
+[PHP Deprecation] Drupal\context_ui\Form\ReactionDeleteForm::buildForm(): Implicitly marking parameter $context as nullable is deprecated, the explicit nullable type must be used instead at /Users/jrobens/Sites/gardensofstone2/web/modules/patched/context/modules/context_ui/src/Form/ReactionDeleteForm.php:95
+[PHP Deprecation] Drupal\context\Reaction\Blocks\Form\BlockDeleteForm::buildForm(): Implicitly marking parameter $context as nullable is deprecated, the explicit nullable type must be used instead at /Users/jrobens/Sites/gardensofstone2/web/modules/patched/context/src/Reaction/Blocks/Form/BlockDeleteForm.php:95
+[PHP Deprecation] Drupal\context\Reaction\Blocks\Form\BlockFormBase::buildForm(): Implicitly marking parameter $context as nullable is deprecated, the explicit nullable type must be used instead at /Users/jrobens/Sites/gardensofstone2/web/modules/patched/context/src/Reaction/Blocks/Form/BlockFormBase.php:206
+[PHP Deprecation] Drupal\media_bulk_upload\Form\MediaBulkUploadForm::buildForm(): Implicitly marking parameter $media_bulk_config as nullable is deprecated, the explicit nullable type must be used instead at /Users/jrobens/Sites/gardensofstone2/web/modules/patched/media_bulk_upload/src/Form/MediaBulkUploadForm.php:176
+e:db%
+
 ## Updates 2026-09-11
 
     * civicrm/civicrm-core (6.17.2 -> 6.18.0)

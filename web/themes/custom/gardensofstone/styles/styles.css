@@ -976,7 +976,6 @@ section.hero.is-primary.block-views-blockevents-block-2 .views-field-title a:vis
   padding: clamp(1rem, 6cqw, 2.5rem);
   border-radius: 0.75rem;
   border: 1px solid rgba(51, 51, 51, 0.08);
-  border-left: 6px solid #a2671c;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
   transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1);
   overflow: hidden;
@@ -1800,6 +1799,31 @@ footer.footer ul.menu-level-0 > li .menu_link_content .field_menu_image img {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
+.region-footer-editing .block-local-tasks-block {
+  position: fixed;
+  bottom: 2rem;
+  right: 0;
+  z-index: 9999;
+  margin-bottom: 0.5em;
+  font-size: 0.8rem;
+}
+
+.page-civicrm .gin-secondary-toolbar {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background: rgba(1, 1, 1, 0.1);
+  padding: 1rem;
+}
+
+:root #gin-toolbar-bar {
+  font-size: 0.7rem;
+}
+
+#gin-toolbar-bar li.menu-item > a.toolbar-icon {
+  font-size: 0.7rem;
+}
+
 @media (min-width: 768px) {
   :root {
     font-size: 1.5rem;
@@ -1903,7 +1927,6 @@ body.full-width main > section > .container:not(.is-max-desktop):not(.is-max-wid
 
 body.path-- main > section {
   background: rgba(255, 255, 255, 0.2);
-  margin-top: 1rem;
 }
 
 body.path--.toolbar-horizontal main > section {

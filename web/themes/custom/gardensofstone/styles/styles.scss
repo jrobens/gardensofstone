@@ -14,6 +14,7 @@
 @use 'photos';
 @use 'webform';
 @use 'footer';
+@use 'editing';
 
 @media (min-width: 768px) {
   :root {
@@ -132,7 +133,6 @@ body.full-width main {
 
 body.path-- main > section {
   background: rgba(255, 255, 255, 0.2);
-  margin-top: 1rem;
 }
 
 body.path--.toolbar-horizontal main > section {

@@ -14,3 +14,15 @@
   background: rgba(1, 1, 1, 0.1);
   padding: 1rem;
 }
+
+:root #gin-toolbar-bar {
+  font-size: 0.7rem;
+}
+
+#gin-toolbar-bar {
+  li.menu-item > a.toolbar-icon {
+    font-size: 0.7rem;
+  }
+}
+
+
