@@ -15,14 +15,46 @@
   padding: 1rem;
 }
 
-:root #gin-toolbar-bar {
-  font-size: 0.7rem;
+/* #block-gardensofstone-tabs: local task tabs, fixed to bottom right */
+#block-gardensofstone-tabs {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 10000;
+  margin: 0;
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+
+  > ul {
+    display: flex;
+  }
+
+  li {
+    padding: 0.1rem 0.5rem;
+    margin-right: 0.2rem;
+    background-color: rgba(200, 200, 200, 0.5);
+    -webkit-border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    border-radius: 5px 5px 0 0;
+
+    a, a:visited {
+      color: #333;
+    }
+  }
 }
 
 #gin-toolbar-bar {
+  font-size: 0.7rem;
+
   li.menu-item > a.toolbar-icon {
     font-size: 0.7rem;
   }
+
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: auto;
+  z-index: 1;
 }
 
 
