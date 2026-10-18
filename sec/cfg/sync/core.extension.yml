@@ -66,6 +66,7 @@ module:
   ip_pb_image_square: 0
   ip_pb_index_block: 0
   ip_pb_quote: 0
+  ip_watershed: 0
   key: 0
   layout_builder: 0
   layout_discovery: 0
