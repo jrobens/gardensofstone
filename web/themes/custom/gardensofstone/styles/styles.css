@@ -1452,6 +1452,9 @@ $mobile-breakpoint: 767px;
   grid-template-columns: 1.3fr 1fr;
   gap: 44px;
   align-items: start;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .watershed-page .case-card {
@@ -1483,6 +1486,9 @@ $mobile-breakpoint: 767px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .watershed-page .stat-card {
@@ -1550,6 +1556,9 @@ $mobile-breakpoint: 767px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 22px;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .watershed-page .ask-card {
