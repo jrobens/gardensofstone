@@ -1,0 +1,19 @@
+uuid: ws-type-001
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - home
+      - main
+    parent: 'home:'
+name: 'Watershed Page'
+type: watershed_page
+description: 'Watershed landing page with hero, story, and video paragraphs'
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: false

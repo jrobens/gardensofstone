@@ -1,0 +1,71 @@
+uuid: ws-field-config-001
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_watershed_content
+    - node.type.watershed_page
+  module:
+    - entity_reference_revisions
+id: node.watershed_page.field_watershed_content
+field_name: field_watershed_content
+entity_type: node
+bundle: watershed_page
+label: Content
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles: null
+    negate: 0
+    target_bundles_drag_drop:
+      hero:
+        weight: 1
+        enabled: true
+      text:
+        weight: 2
+        enabled: true
+      video:
+        weight: 3
+        enabled: true
+      heading:
+        weight: 4
+        enabled: true
+      quote:
+        weight: 5
+        enabled: true
+      block:
+        weight: 6
+        enabled: true
+      checkerboard:
+        weight: 7
+        enabled: false
+      image:
+        weight: 8
+        enabled: false
+      view_events:
+        weight: 9
+        enabled: false
+      views_block:
+        weight: 10
+        enabled: false
+      webform:
+        weight: 11
+        enabled: false
+      image_square:
+        weight: 12
+        enabled: false
+      map:
+        weight: 13
+        enabled: false
+      row:
+        weight: 14
+        enabled: false
+      tile:
+        weight: 15
+        enabled: false
+field_type: entity_reference_revisions
