@@ -1,0 +1,8 @@
+name: 'Interlated Paragraphs Hero Campaign'
+type: module
+description: 'A hero campaign paragraph bundle for displaying campaign intro content.'
+core_version_requirement: ^9 || ^10 || ^11
+package: Paragraphs
+dependencies:
+  - paragraphs:paragraphs
+  - interlated_paragraphs:interlated_paragraphs

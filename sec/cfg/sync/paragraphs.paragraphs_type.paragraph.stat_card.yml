@@ -1,0 +1,15 @@
+uuid: stat-card-uuid
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.stat_card
+label: 'Stat Card'
+icon_uuid: null
+icon_default: null
+description: 'A stat card with number and label'
+behavior_plugins:
+  layout_paragraphs:
+    enabled: false
+    available_layouts: {  }

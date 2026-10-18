@@ -1,0 +1,51 @@
+{#
+/**
+ * @file
+ * Theme implementation to display a journey stop paragraph.
+ *
+ * Available variables:
+ * - paragraph: Full paragraph entity.
+ * - content: All paragraph items.
+ * - attributes: HTML attributes for the containing element.
+ */
+#}
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--journey-stop',
+    'journey-stop',
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished',
+    'journey-stop'
+  ]
+%}
+{% block paragraph %}
+  <div{{ attributes.addClass(classes) }}>
+    {% if content.field_pbjourneystop_icon %}
+      <div class="journey-icon {% if content.field_pbjourneystop_pollution %}pollution{% endif %}">
+        {{ content.field_pbjourneystop_icon }}
+      </div>
+    {% endif %}
+    <div class="journey-header">
+      <div class="journey-heading">
+        {% if content.field_pbjourneystop_label %}
+          <div class="journey-label">{{ content.field_pbjourneystop_label }}</div>
+        {% endif %}
+        {% if content.field_pbjourneystop_sub %}
+          <div class="journey-sub">{{ content.field_pbjourneystop_sub }}</div>
+        {% endif %}
+      </div>
+      <svg class="journey-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+    </div>
+    <div class="journey-detail">
+      <div class="journey-detail-inner">
+        {% if content.field_pbjourneystop_description %}
+          {{ content.field_pbjourneystop_description }}
+        {% endif %}
+        {% if content.field_pbjourneystop_stat %}
+          <span class="journey-stat">{{ content.field_pbjourneystop_stat }}</span>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+{% endblock paragraph %}

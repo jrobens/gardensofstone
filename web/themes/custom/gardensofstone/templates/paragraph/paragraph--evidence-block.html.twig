@@ -1,0 +1,74 @@
+{#
+/**
+ * @file
+ * Theme implementation to display an evidence block paragraph.
+ *
+ * Available variables:
+ * - paragraph: Full paragraph entity.
+ * - content: All paragraph items.
+ * - attributes: HTML attributes for the containing element.
+ */
+#}
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--evidence-block',
+    'evidence-block',
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished'
+  ]
+%}
+{% block paragraph %}
+  <div{{ attributes.addClass(classes) }}>
+    {% block content %}
+      <div class="wrap{{ attributes.addClass('wrap') }}">
+        {% if content.field_pbevidence_kicker %}
+          <div class="kicker">{{ content.field_pbevidence_kicker }}</div>
+        {% endif %}
+        {% if content.field_pbevidence_title %}
+          <h2 class="title">{{ content.field_pbevidence_title }}</h2>
+        {% endif %}
+        {% if content.field_pbevidence_lede %}
+          <div class="lede">{{ content.field_pbevidence_lede }}</div>
+        {% endif %}
+        {% if content.field_pbevidence_body %}
+          <div class="evidence-grid">
+            <div class="case-card">
+              {{ content.field_pbevidence_body }}
+            </div>
+          </div>
+        {% endif %}
+        {% if content.field_pbevidence_stats %}
+          <div class="stat-row">
+            {% for item in content.field_pbevidence_stats %}
+              <div class="stat-card">
+                {% if item.field_pbevidence_stat_number %}
+                  <div class="stat-num">{{ item.field_pbevidence_stat_number }}</div>
+                {% endif %}
+                {% if item.field_pbevidence_stat_label %}
+                  <div class="stat-label">{{ item.field_pbevidence_stat_label }}</div>
+                {% endif %}
+              </div>
+            {% endfor %}
+          </div>
+        {% endif %}
+        {% if content.field_pbevidence_eco_block %}
+          <div class="eco-block">
+            {% if content.field_pbevidence_eco_title %}
+              <h3>{{ content.field_pbevidence_eco_title }}</h3>
+            {% endif %}
+            {% if content.field_pbevidence_eco_description %}
+              <p>{{ content.field_pbevidence_eco_description }}</p>
+            {% endif %}
+            {% if content.field_pbevidence_eco_link %}
+              <a class="eco-link" href="{{ content.field_pbevidence_eco_link }}">{{ content.field_pbevidence_eco_link }}</a>
+            {% endif %}
+            {% if content.field_pbevidence_punchline %}
+              <p class="punchline">{{ content.field_pbevidence_punchline }}</p>
+            {% endif %}
+          </div>
+        {% endif %}
+      </div>
+    {% endblock %}
+  </div>
+{% endblock paragraph %}

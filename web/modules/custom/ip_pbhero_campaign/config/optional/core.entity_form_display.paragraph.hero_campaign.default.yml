@@ -1,0 +1,79 @@
+uuid: b0123456-0123-4567-8901-23456789abc1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.hero_campaign.field_pbhero_campaign_tag
+    - field.field.paragraph.hero_campaign.field_pbhero_campaign_headline
+    - field.field.paragraph.hero_campaign.field_pbhero_campaign_intro
+    - field.field.paragraph.hero_campaign.field_pbhero_campaign_primary_btn
+    - field.field.paragraph.hero_campaign.field_pbhero_campaign_primary_btn_url
+    - field.field.paragraph.hero_campaign.field_pbhero_campaign_ghost_btn
+    - field.field.paragraph.hero_campaign.field_pbhero_campaign_ghost_btn_url
+    - field.field.paragraph.hero_campaign.field_pbhero_campaign_scroll_cue
+    - field.field.paragraph.hero_campaign.field_pbhero_campaign_scroll_cue_url
+    - paragraphs.paragraphs_type.hero_campaign
+id: paragraph.hero_campaign.default
+targetEntity: paragraph
+targetBundle: hero_campaign
+label: Default
+third_party_settings: {  }
+content:
+  field_pbhero_campaign_tag:
+    type: options_select
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  field_pbhero_campaign_headline:
+    type: string_textfield
+    label: above
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_pbhero_campaign_intro:
+    type: text_textarea
+    label: above
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_pbhero_campaign_primary_btn:
+    type: link_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  field_pbhero_campaign_primary_btn_url:
+    type: string_textfield
+    label: above
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_pbhero_campaign_ghost_btn:
+    type: link_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  field_pbhero_campaign_ghost_btn_url:
+    type: string_textfield
+    label: above
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_pbhero_campaign_scroll_cue:
+    type: boolean_checkbox
+    label: above
+    settings:
+      on_label: 'On'
+      off_label: 'Off'
+    third_party_settings: {  }
+  field_pbhero_campaign_scroll_cue_url:
+    type: string_textfield
+    label: above
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

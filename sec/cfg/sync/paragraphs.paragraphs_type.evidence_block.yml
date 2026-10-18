@@ -1,0 +1,15 @@
+uuid: evidence-block-uuid-here
+langcode: en
+status: true
+dependencies:
+  module:
+    - layout_paragraphs
+id: evidence_block
+label: 'Evidence Block'
+icon_uuid: null
+icon_default: null
+description: 'Evidence section with kicker, title, lede, and stat cards'
+behavior_plugins:
+  layout_paragraphs:
+    enabled: false
+    available_layouts: {  }

@@ -1,0 +1,15 @@
+uuid: journey-stop-uuid-here
+langcode: en
+status: true
+dependencies:
+  module:
+    - layout_paragraphs
+id: journey_stop
+label: 'Journey Stop'
+icon_uuid: null
+icon_default: null
+description: 'A stop in the journey timeline with icon, label, and expandable content'
+behavior_plugins:
+  layout_paragraphs:
+    enabled: false
+    available_layouts: {  }

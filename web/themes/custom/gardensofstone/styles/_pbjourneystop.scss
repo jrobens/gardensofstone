@@ -1,0 +1,126 @@
+.journey-track {
+  margin-top: 38px;
+  position: relative;
+  padding-left: 52px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 23px;
+    top: 6px;
+    bottom: 6px;
+    width: 2px;
+    background: repeating-linear-gradient(
+      180deg,
+      var(--water) 0 8px,
+      transparent 8px 14px
+    );
+  }
+}
+
+.journey-stop {
+  position: relative;
+  margin-bottom: 6px;
+
+  &:last-child {
+    .journey-detail {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.journey-icon {
+  position: absolute;
+  left: -52px;
+  top: 0;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: var(--paper);
+  border: 2.5px solid var(--water);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+
+  svg {
+    width: 20px;
+    height: 20px;
+    stroke: var(--water);
+    fill: none;
+    stroke-width: 1.8;
+  }
+
+  &.pollution {
+    border-color: var(--clay);
+
+    svg {
+      stroke: var(--clay);
+    }
+  }
+}
+
+.journey-header {
+  cursor: pointer;
+  padding: 10px 0 10px 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.journey-heading {
+  flex: 1;
+}
+
+.journey-label {
+  font-weight: 700;
+  color: var(--forest-deep);
+  font-size: 1.02rem;
+}
+
+.journey-sub {
+  font-size: 0.86rem;
+  color: #5a5648;
+  margin-top: 2px;
+}
+
+.journey-chevron {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+  color: var(--water);
+  transition: transform 0.25s ease;
+}
+
+.journey-stop.open .journey-chevron {
+  transform: rotate(180deg);
+}
+
+.journey-detail {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  font-size: 0.92rem;
+  color: #3c392f;
+  line-height: 1.6;
+}
+
+.journey-detail-inner {
+  padding: 0 4px 18px;
+}
+
+.journey-stop.open .journey-detail {
+  max-height: 340px;
+}
+
+.journey-stat {
+  display: inline-block;
+  margin-top: 10px;
+  background: var(--cream);
+  padding: 6px 12px;
+  border-radius: 3px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--clay);
+}

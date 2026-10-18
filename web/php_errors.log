@@ -1,0 +1,108 @@
+[11-Oct-2026 00:32:27 UTC] PHP Fatal error:  Uncaught RuntimeException: Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.4.1". You are running 8.3.35. in /Users/jrobens/Sites/gardensofstone2/vendor/composer/platform_check.php:26
+Stack trace:
+#0 /Users/jrobens/Sites/gardensofstone2/vendor/composer/autoload_real.php(25): require()
+#1 /Users/jrobens/Sites/gardensofstone2/vendor/autoload.php(22): ComposerAutoloaderInit81fd382f5a50a8a895de0d89a9ebdf22::getLoader()
+#2 /Users/jrobens/Sites/gardensofstone2/vendor/autoload_runtime.php(5): require_once('/Users/jrobens/...')
+#3 /Users/jrobens/Sites/gardensofstone2/web/autoload_runtime.php(22): require('/Users/jrobens/...')
+#4 /Users/jrobens/Sites/gardensofstone2/web/index.php(13): require_once('/Users/jrobens/...')
+#5 {main}
+  thrown in /Users/jrobens/Sites/gardensofstone2/vendor/composer/platform_check.php on line 26
+[11-Oct-2026 00:32:29 UTC] PHP Fatal error:  Uncaught RuntimeException: Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.4.1". You are running 8.3.35. in /Users/jrobens/Sites/gardensofstone2/vendor/composer/platform_check.php:26
+Stack trace:
+#0 /Users/jrobens/Sites/gardensofstone2/vendor/composer/autoload_real.php(25): require()
+#1 /Users/jrobens/Sites/gardensofstone2/vendor/autoload.php(22): ComposerAutoloaderInit81fd382f5a50a8a895de0d89a9ebdf22::getLoader()
+#2 /Users/jrobens/Sites/gardensofstone2/vendor/autoload_runtime.php(5): require_once('/Users/jrobens/...')
+#3 /Users/jrobens/Sites/gardensofstone2/web/autoload_runtime.php(22): require('/Users/jrobens/...')
+#4 /Users/jrobens/Sites/gardensofstone2/web/index.php(13): require_once('/Users/jrobens/...')
+#5 {main}
+  thrown in /Users/jrobens/Sites/gardensofstone2/vendor/composer/platform_check.php on line 26
+[11-Oct-2026 00:38:16 UTC] PHP Fatal error:  Uncaught RuntimeException: Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.4.1". You are running 8.3.35. in /Users/jrobens/Sites/gardensofstone2/vendor/composer/platform_check.php:26
+Stack trace:
+#0 /Users/jrobens/Sites/gardensofstone2/vendor/composer/autoload_real.php(25): require()
+#1 /Users/jrobens/Sites/gardensofstone2/vendor/autoload.php(22): ComposerAutoloaderInit81fd382f5a50a8a895de0d89a9ebdf22::getLoader()
+#2 /Users/jrobens/Sites/gardensofstone2/vendor/autoload_runtime.php(5): require_once('/Users/jrobens/...')
+#3 /Users/jrobens/Sites/gardensofstone2/web/autoload_runtime.php(22): require('/Users/jrobens/...')
+#4 /Users/jrobens/Sites/gardensofstone2/web/index.php(13): require_once('/Users/jrobens/...')
+#5 {main}
+  thrown in /Users/jrobens/Sites/gardensofstone2/vendor/composer/platform_check.php on line 26
+[11-Oct-2026 00:57:09 UTC] PHP Fatal error:  Uncaught RuntimeException: Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.4.1". You are running 8.3.35. in /Users/jrobens/Sites/gardensofstone2/vendor/composer/platform_check.php:26
+Stack trace:
+#0 /Users/jrobens/Sites/gardensofstone2/vendor/composer/autoload_real.php(25): require()
+#1 /Users/jrobens/Sites/gardensofstone2/vendor/autoload.php(22): ComposerAutoloaderInit81fd382f5a50a8a895de0d89a9ebdf22::getLoader()
+#2 /Users/jrobens/Sites/gardensofstone2/vendor/autoload_runtime.php(5): require_once('/Users/jrobens/...')
+#3 /Users/jrobens/Sites/gardensofstone2/web/autoload_runtime.php(22): require('/Users/jrobens/...')
+#4 /Users/jrobens/Sites/gardensofstone2/web/index.php(13): require_once('/Users/jrobens/...')
+#5 {main}
+  thrown in /Users/jrobens/Sites/gardensofstone2/vendor/composer/platform_check.php on line 26
+[11-Oct-2026 00:57:11 UTC] PHP Fatal error:  Uncaught RuntimeException: Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.4.1". You are running 8.3.35. in /Users/jrobens/Sites/gardensofstone2/vendor/composer/platform_check.php:26
+Stack trace:
+#0 /Users/jrobens/Sites/gardensofstone2/vendor/composer/autoload_real.php(25): require()
+#1 /Users/jrobens/Sites/gardensofstone2/vendor/autoload.php(22): ComposerAutoloaderInit81fd382f5a50a8a895de0d89a9ebdf22::getLoader()
+#2 /Users/jrobens/Sites/gardensofstone2/vendor/autoload_runtime.php(5): require_once('/Users/jrobens/...')
+#3 /Users/jrobens/Sites/gardensofstone2/web/autoload_runtime.php(22): require('/Users/jrobens/...')
+#4 /Users/jrobens/Sites/gardensofstone2/web/index.php(13): require_once('/Users/jrobens/...')
+#5 {main}
+  thrown in /Users/jrobens/Sites/gardensofstone2/vendor/composer/platform_check.php on line 26
+[11-Oct-2026 00:58:50 UTC] PHP Fatal error:  Uncaught RuntimeException: Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.4.1". You are running 8.3.35. in /Users/jrobens/Sites/gardensofstone2/vendor/composer/platform_check.php:26
+Stack trace:
+#0 /Users/jrobens/Sites/gardensofstone2/vendor/composer/autoload_real.php(25): require()
+#1 /Users/jrobens/Sites/gardensofstone2/vendor/autoload.php(22): ComposerAutoloaderInit81fd382f5a50a8a895de0d89a9ebdf22::getLoader()
+#2 /Users/jrobens/Sites/gardensofstone2/vendor/autoload_runtime.php(5): require_once('/Users/jrobens/...')
+#3 /Users/jrobens/Sites/gardensofstone2/web/autoload_runtime.php(22): require('/Users/jrobens/...')
+#4 /Users/jrobens/Sites/gardensofstone2/web/index.php(13): require_once('/Users/jrobens/...')
+#5 {main}
+  thrown in /Users/jrobens/Sites/gardensofstone2/vendor/composer/platform_check.php on line 26
+[11-Oct-2026 00:58:51 UTC] PHP Fatal error:  Uncaught RuntimeException: Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.4.1". You are running 8.3.35. in /Users/jrobens/Sites/gardensofstone2/vendor/composer/platform_check.php:26
+Stack trace:
+#0 /Users/jrobens/Sites/gardensofstone2/vendor/composer/autoload_real.php(25): require()
+#1 /Users/jrobens/Sites/gardensofstone2/vendor/autoload.php(22): ComposerAutoloaderInit81fd382f5a50a8a895de0d89a9ebdf22::getLoader()
+#2 /Users/jrobens/Sites/gardensofstone2/vendor/autoload_runtime.php(5): require_once('/Users/jrobens/...')
+#3 /Users/jrobens/Sites/gardensofstone2/web/autoload_runtime.php(22): require('/Users/jrobens/...')
+#4 /Users/jrobens/Sites/gardensofstone2/web/index.php(13): require_once('/Users/jrobens/...')
+#5 {main}
+  thrown in /Users/jrobens/Sites/gardensofstone2/vendor/composer/platform_check.php on line 26
+[11-Oct-2026 00:59:02 UTC] PHP Fatal error:  Uncaught RuntimeException: Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.4.1". You are running 8.3.35. in /Users/jrobens/Sites/gardensofstone2/vendor/composer/platform_check.php:26
+Stack trace:
+#0 /Users/jrobens/Sites/gardensofstone2/vendor/composer/autoload_real.php(25): require()
+#1 /Users/jrobens/Sites/gardensofstone2/vendor/autoload.php(22): ComposerAutoloaderInit81fd382f5a50a8a895de0d89a9ebdf22::getLoader()
+#2 /Users/jrobens/Sites/gardensofstone2/vendor/autoload_runtime.php(5): require_once('/Users/jrobens/...')
+#3 /Users/jrobens/Sites/gardensofstone2/web/autoload_runtime.php(22): require('/Users/jrobens/...')
+#4 /Users/jrobens/Sites/gardensofstone2/web/index.php(13): require_once('/Users/jrobens/...')
+#5 {main}
+  thrown in /Users/jrobens/Sites/gardensofstone2/vendor/composer/platform_check.php on line 26
+[11-Oct-2026 01:00:37 UTC] PHP Fatal error:  Uncaught RuntimeException: Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.4.1". You are running 8.3.35. in /Users/jrobens/Sites/gardensofstone2/vendor/composer/platform_check.php:26
+Stack trace:
+#0 /Users/jrobens/Sites/gardensofstone2/vendor/composer/autoload_real.php(25): require()
+#1 /Users/jrobens/Sites/gardensofstone2/vendor/autoload.php(22): ComposerAutoloaderInit81fd382f5a50a8a895de0d89a9ebdf22::getLoader()
+#2 /Users/jrobens/Sites/gardensofstone2/vendor/autoload_runtime.php(5): require_once('/Users/jrobens/...')
+#3 /Users/jrobens/Sites/gardensofstone2/web/autoload_runtime.php(22): require('/Users/jrobens/...')
+#4 /Users/jrobens/Sites/gardensofstone2/web/index.php(13): require_once('/Users/jrobens/...')
+#5 {main}
+  thrown in /Users/jrobens/Sites/gardensofstone2/vendor/composer/platform_check.php on line 26
+[11-Oct-2026 01:00:38 UTC] PHP Fatal error:  Uncaught RuntimeException: Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.4.1". You are running 8.3.35. in /Users/jrobens/Sites/gardensofstone2/vendor/composer/platform_check.php:26
+Stack trace:
+#0 /Users/jrobens/Sites/gardensofstone2/vendor/composer/autoload_real.php(25): require()
+#1 /Users/jrobens/Sites/gardensofstone2/vendor/autoload.php(22): ComposerAutoloaderInit81fd382f5a50a8a895de0d89a9ebdf22::getLoader()
+#2 /Users/jrobens/Sites/gardensofstone2/vendor/autoload_runtime.php(5): require_once('/Users/jrobens/...')
+#3 /Users/jrobens/Sites/gardensofstone2/web/autoload_runtime.php(22): require('/Users/jrobens/...')
+#4 /Users/jrobens/Sites/gardensofstone2/web/index.php(13): require_once('/Users/jrobens/...')
+#5 {main}
+  thrown in /Users/jrobens/Sites/gardensofstone2/vendor/composer/platform_check.php on line 26
+[11-Oct-2026 01:02:14 UTC] PHP Fatal error:  Uncaught RuntimeException: Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.4.1". You are running 8.3.35. in /Users/jrobens/Sites/gardensofstone2/vendor/composer/platform_check.php:26
+Stack trace:
+#0 /Users/jrobens/Sites/gardensofstone2/vendor/composer/autoload_real.php(25): require()
+#1 /Users/jrobens/Sites/gardensofstone2/vendor/autoload.php(22): ComposerAutoloaderInit81fd382f5a50a8a895de0d89a9ebdf22::getLoader()
+#2 /Users/jrobens/Sites/gardensofstone2/vendor/autoload_runtime.php(5): require_once('/Users/jrobens/...')
+#3 /Users/jrobens/Sites/gardensofstone2/web/autoload_runtime.php(22): require('/Users/jrobens/...')
+#4 /Users/jrobens/Sites/gardensofstone2/web/index.php(13): require_once('/Users/jrobens/...')
+#5 {main}
+  thrown in /Users/jrobens/Sites/gardensofstone2/vendor/composer/platform_check.php on line 26
+[11-Oct-2026 01:05:16 UTC] PHP Fatal error:  Uncaught RuntimeException: Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.4.1". You are running 8.3.35. in /Users/jrobens/Sites/gardensofstone2/vendor/composer/platform_check.php:26
+Stack trace:
+#0 /Users/jrobens/Sites/gardensofstone2/vendor/composer/autoload_real.php(25): require()
+#1 /Users/jrobens/Sites/gardensofstone2/vendor/autoload.php(22): ComposerAutoloaderInit81fd382f5a50a8a895de0d89a9ebdf22::getLoader()
+#2 /Users/jrobens/Sites/gardensofstone2/vendor/autoload_runtime.php(5): require_once('/Users/jrobens/...')
+#3 /Users/jrobens/Sites/gardensofstone2/web/autoload_runtime.php(22): require('/Users/jrobens/...')
+#4 /Users/jrobens/Sites/gardensofstone2/web/index.php(13): require_once('/Users/jrobens/...')
+#5 {main}
+  thrown in /Users/jrobens/Sites/gardensofstone2/vendor/composer/platform_check.php on line 26

@@ -1,0 +1,62 @@
+{#
+/**
+ * @file
+ * Theme implementation to display a loophole section paragraph.
+ *
+ * Available variables:
+ * - paragraph: Full paragraph entity.
+ * - content: All paragraph items.
+ * - attributes: HTML attributes for the containing element.
+ */
+#}
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--loophole',
+    'loophole-section',
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished'
+  ]
+%}
+{% block paragraph %}
+  <div{{ attributes.addClass(classes) }}>
+    {% block content %}
+      <div class="wrap{{ attributes.addClass('wrap') }}">
+        {% if content.field_pbloophole_kicker %}
+          <div class="kicker">{{ content.field_pbloophole_kicker }}</div>
+        {% endif %}
+        {% if content.field_pbloophole_title %}
+          <h2 class="title">{{ content.field_pbloophole_title }}</h2>
+        {% endif %}
+        {% if content.field_pbloophole_standout_lede %}
+          <div class="standout-lede">{{ content.field_pbloophole_standout_lede }}</div>
+        {% endif %}
+        {% if content.field_pbloophole_lede %}
+          <div class="lede">{{ content.field_pbloophole_lede }}</div>
+        {% endif %}
+        {% if content.field_pbloophole_stats %}
+          <div class="loophole-stats">
+            <div class="stat-row">
+              {% for item in content.field_pbloophole_stats %}
+                <div class="stat-card">
+                  {% if item.field_pbloophole_stat_number %}
+                    <div class="stat-num">{{ item.field_pbloophole_stat_number }}</div>
+                  {% endif %}
+                  {% if item.field_pbloophole_stat_label %}
+                    <div class="stat-label">{{ item.field_pbloophole_stat_label }}</div>
+                  {% endif %}
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+        {% endif %}
+        {% if content.field_pbloophole_close %}
+          <p class="loophole-close">{{ content.field_pbloophole_close }}</p>
+        {% endif %}
+        {% if content.field_pbloophole_copy_note %}
+          <div class="copy-note">{{ content.field_pbloophole_copy_note }}</div>
+        {% endif %}
+      </div>
+    {% endblock %}
+  </div>
+{% endblock paragraph %}

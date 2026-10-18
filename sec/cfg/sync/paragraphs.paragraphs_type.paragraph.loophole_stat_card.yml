@@ -1,0 +1,15 @@
+uuid: loophole-stat-card-uuid
+langcode: en
+status: true
+dependencies:
+  module:
+    - layout_paragraphs
+id: paragraph.loophole_stat_card
+label: 'Loophole Stat Card'
+icon_uuid: null
+icon_default: null
+description: 'A stat card for the loophole section'
+behavior_plugins:
+  layout_paragraphs:
+    enabled: false
+    available_layouts: {  }

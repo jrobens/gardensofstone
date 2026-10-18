@@ -1,0 +1,23 @@
+uuid: 89012345-8901-8901-8901-890123456012
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pbhero_campaign_scroll_cue
+    - paragraphs.paragraphs_type.hero_campaign
+id: paragraph.hero_campaign.field_pbhero_campaign_scroll_cue
+field_name: field_pbhero_campaign_scroll_cue
+entity_type: paragraph
+bundle: hero_campaign
+label: 'Show Scroll Cue'
+description: 'Display a scroll cue element'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

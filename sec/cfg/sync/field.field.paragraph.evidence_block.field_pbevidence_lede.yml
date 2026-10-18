@@ -1,0 +1,18 @@
+uuid: evidence-lede-uuid
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.evidence_block.field_pbevidence_lede
+field_name: field_pbevidence_lede
+entity_type: paragraph
+bundle: evidence_block
+label: Lede
+description: 'Introductory summary'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,18 @@
+uuid: evidence-punchline-uuid
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.evidence_block.field_pbevidence_punchline
+field_name: field_pbevidence_punchline
+entity_type: paragraph
+bundle: evidence_block
+label: Punchline
+description: 'Punchline text'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

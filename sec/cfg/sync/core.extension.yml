@@ -66,9 +66,6 @@ module:
   ip_pb_image_square: 0
   ip_pb_index_block: 0
   ip_pb_quote: 0
-  jquery_ui: 0
-  jquery_ui_autocomplete: 0
-  jquery_ui_menu: 0
   key: 0
   layout_builder: 0
   layout_discovery: 0

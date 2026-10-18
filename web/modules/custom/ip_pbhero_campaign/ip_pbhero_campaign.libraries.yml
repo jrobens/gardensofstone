@@ -1,0 +1,4 @@
+ip_pbhero_campaign:
+  css:
+    component:
+      styles/ip_pbhero_campaign.css: { preprocess: false, minified: false }

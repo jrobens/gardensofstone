@@ -1,0 +1,19 @@
+uuid: evidence-eco-desc-uuid
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.evidence_block.field_pbevidence_eco_description
+field_name: field_pbevidence_eco_description
+entity_type: paragraph
+bundle: evidence_block
+label: 'Eco Block Description'
+description: 'Description for the eco block section'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

@@ -1,0 +1,42 @@
+{#
+/**
+ * @file
+ * Theme implementation to display a network strip paragraph.
+ *
+ * Available variables:
+ * - paragraph: Full paragraph entity.
+ * - content: All paragraph items.
+ * - attributes: HTML attributes for the containing element.
+ */
+#}
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--network-strip',
+    'network-strip',
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished'
+  ]
+%}
+{% block paragraph %}
+  <div{{ attributes.addClass(classes) }}>
+    {% block content %}
+      <div class="wrap{{ attributes.addClass('wrap') }} network-inner">
+        <div style="flex:1;min-width:260px;">
+          {% if content.field_pbnetwork_stat %}
+            <div class="network-stat">{{ content.field_pbnetwork_stat }}</div>
+          {% endif %}
+          {% if content.field_pbnetwork_text %}
+            <p class="network-text">{{ content.field_pbnetwork_text }}</p>
+          {% endif %}
+          {% if content.field_pbnetwork_form %}
+            <div class="subscribe-row">
+              <input type="email" placeholder="you@example.com" />
+              <a class="ask-btn" style="background:var(--forest-deep);" href="#">Subscribe</a>
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    {% endblock %}
+  </div>
+{% endblock paragraph %}

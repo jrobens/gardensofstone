@@ -2,6 +2,12 @@ global:
   css:
     theme:
       styles/styles.css: { attributes: { type: "text/css" } }
+      '//fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Libre+Franklin:wght@400;500;600;700&display=swap': { type: external, minified: true }
+
+watershed:
+  css:
+    theme:
+      styles/watershed-override.css: { attributes: { type: "text/css" } }
       '//fonts.googleapis.com/css2?family=Hind+Guntur:wght@300;500;700&display=swap': { type: external, minified: true }
       '//fonts.googleapis.com/css?family=Titillium+Web': { type: external, minified: true }
       '//fonts:googleapis:com/css2?family=Mukta+Malar:wght@500;wght@800&display=swap': { type: external, minified: true }

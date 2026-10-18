@@ -1,0 +1,78 @@
+uuid: a0123456-0123-4567-8901-23456789abc0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.hero_campaign.field_pbhero_campaign_tag
+    - field.field.paragraph.hero_campaign.field_pbhero_campaign_headline
+    - field.field.paragraph.hero_campaign.field_pbhero_campaign_intro
+    - field.field.paragraph.hero_campaign.field_pbhero_campaign_primary_btn
+    - field.field.paragraph.hero_campaign.field_pbhero_campaign_primary_btn_url
+    - field.field.paragraph.hero_campaign.field_pbhero_campaign_ghost_btn
+    - field.field.paragraph.hero_campaign.field_pbhero_campaign_ghost_btn_url
+    - field.field.paragraph.hero_campaign.field_pbhero_campaign_scroll_cue
+    - field.field.paragraph.hero_campaign.field_pbhero_campaign_scroll_cue_url
+    - paragraphs.paragraphs_type.hero_campaign
+id: paragraph.hero_campaign.default
+targetEntity: paragraph
+targetBundle: hero_campaign
+label: 'Default'
+status: true
+dependencies:
+  module: {  }
+content:
+  field_pbhero_campaign_tag:
+    type: entity_reference_label
+    label: visually_hidden
+    settings:
+      link: true
+   third_party_settings: {  }
+  field_pbhero_campaign_headline:
+    type: basic_string
+    label: visually_hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_pbhero_campaign_intro:
+    type: text_default
+    label: visually_hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_pbhero_campaign_primary_btn:
+    type: link
+    label: visually_hidden
+    settings:
+      trim: true
+    third_party_settings: {  }
+  field_pbhero_campaign_primary_btn_url:
+    type: string
+    label: visually_hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_pbhero_campaign_ghost_btn:
+    type: link
+    label: visually_hidden
+    settings:
+      trim: true
+    third_party_settings: {  }
+  field_pbhero_campaign_ghost_btn_url:
+    type: string
+    label: visually_hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_pbhero_campaign_scroll_cue:
+    type: boolean
+    label: visually_hidden
+    settings:
+      format: default
+      format_custom_false: {  }
+      format_custom_true: {  }
+    third_party_settings: {  }
+  field_pbhero_campaign_scroll_cue_url:
+    type: string
+    label: visually_hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden: {  }

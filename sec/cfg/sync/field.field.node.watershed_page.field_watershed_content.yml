@@ -23,30 +23,42 @@ settings:
     target_bundles: null
     negate: 0
     target_bundles_drag_drop:
-      hero:
-        weight: 1
-        enabled: true
-      text:
-        weight: 2
-        enabled: true
-      video:
-        weight: 3
-        enabled: true
-      heading:
-        weight: 4
-        enabled: true
-      quote:
-        weight: 5
-        enabled: true
       block:
         weight: 6
         enabled: true
       checkerboard:
         weight: 7
         enabled: false
+      heading:
+        weight: 4
+        enabled: true
+      hero:
+        weight: 1
+        enabled: true
       image:
         weight: 8
         enabled: false
+      image_square:
+        weight: 12
+        enabled: false
+      map:
+        weight: 13
+        enabled: false
+      quote:
+        weight: 5
+        enabled: true
+      row:
+        weight: 14
+        enabled: false
+      text:
+        weight: 2
+        enabled: true
+      tile:
+        weight: 15
+        enabled: false
+      video:
+        weight: 3
+        enabled: true
       view_events:
         weight: 9
         enabled: false
@@ -55,17 +67,5 @@ settings:
         enabled: false
       webform:
         weight: 11
-        enabled: false
-      image_square:
-        weight: 12
-        enabled: false
-      map:
-        weight: 13
-        enabled: false
-      row:
-        weight: 14
-        enabled: false
-      tile:
-        weight: 15
         enabled: false
 field_type: entity_reference_revisions

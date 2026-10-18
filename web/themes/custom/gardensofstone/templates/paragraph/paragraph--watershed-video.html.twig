@@ -1,0 +1,48 @@
+{#
+/**
+ * @file
+ * Theme implementation to display a watershed video section.
+ *
+ * Available variables:
+ * - paragraph: Full paragraph entity.
+ * - content: All paragraph items.
+ * - attributes: HTML attributes for the containing element.
+ */
+#}
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--watershed-video',
+    'watershed-section',
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished'
+  ]
+%}
+{% block paragraph %}
+  <div{{ attributes.addClass(classes) }}>
+    {% block content %}
+      <div class="wrap{{ attributes.addClass('wrap') }}">
+        <div class="watershed-wrap">
+          {% if content.field_pbwatershed_video_frame %}
+            <a class="video-frame" href="{{ content.field_pbwatershed_video_url }}" aria-label="Play Watershed Episode 1: Mine Water">
+              <span class="play-btn">
+                <svg viewBox="0 0 24 24"><path d="M6 4 L20 12 L6 20 Z"/></svg>
+              </span>
+            </a>
+          {% endif %}
+          <div>
+            {% if content.field_pbwatershed_kicker %}
+              <div class="kicker">{{ content.field_pbwatershed_kicker }}</div>
+            {% endif %}
+            {% if content.field_pbwatershed_title %}
+              <h2 class="watershed-title">{{ content.field_pbwatershed_title }}</h2>
+            {% endif %}
+            {% if content.field_pbwatershed_lede %}
+              <div class="lede">{{ content.field_pbwatershed_lede }}</div>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    {% endblock %}
+  </div>
+{% endblock paragraph %}

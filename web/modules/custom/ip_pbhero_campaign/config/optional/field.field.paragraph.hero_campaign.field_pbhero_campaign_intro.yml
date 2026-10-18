@@ -1,0 +1,19 @@
+uuid: 34567890-3456-3456-3456-345678901bcd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pbhero_campaign_intro
+    - paragraphs.paragraphs_type.hero_campaign
+id: paragraph.hero_campaign.field_pbhero_campaign_intro
+field_name: field_pbhero_campaign_intro
+entity_type: paragraph
+bundle: hero_campaign
+label: Introduction
+description: 'Long-form introduction text for the campaign'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

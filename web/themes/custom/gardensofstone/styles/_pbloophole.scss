@@ -1,0 +1,81 @@
+.loophole-section {
+  .kicker {
+    color: var(--ochre);
+    margin-bottom: 10px;
+  }
+
+  h2.title {
+    font-size: clamp(1.5rem, 3vw, 2.1rem);
+    max-width: 22ch;
+  }
+
+  .standout-lede {
+    margin-top: 18px;
+    background: var(--cream-deep);
+    border-left: 5px solid var(--clay);
+    padding: 20px 24px;
+    border-radius: 2px;
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--forest-deep);
+    line-height: 1.5;
+    max-width: 64ch;
+  }
+
+  .loophole-stats {
+    margin-top: 34px;
+  }
+
+  .stat-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .stat-card {
+    background: var(--cream);
+    border-top: 4px solid var(--ochre);
+    border-radius: 2px;
+    padding: 20px 20px 22px;
+  }
+
+  .stat-num {
+    font-family: 'Fraunces', serif;
+    font-size: 1.9rem;
+    color: var(--forest-deep);
+    line-height: 1.1;
+  }
+
+  .stat-label {
+    font-size: 0.83rem;
+    color: #4a4738;
+    margin-top: 6px;
+    line-height: 1.4;
+  }
+
+  .loophole-close {
+    margin-top: 28px;
+    font-size: 1.05rem;
+    color: var(--forest-deep);
+    font-weight: 600;
+    max-width: 66ch;
+    line-height: 1.6;
+  }
+
+  .copy-note {
+    margin-top: 22px;
+    padding: 16px 20px;
+    background: rgba(140, 59, 46, 0.07);
+    border-radius: 3px;
+    font-size: 0.92rem;
+    font-style: italic;
+    color: #4a4738;
+    max-width: 64ch;
+  }
+}
+
+@media (max-width: 720px) {
+  .loophole-section .stat-row {
+    grid-template-columns: 1fr;
+  }
+}

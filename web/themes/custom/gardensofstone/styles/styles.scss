@@ -13,6 +13,13 @@
 @use 'page';
 @use 'photos';
 @use 'webform';
+@use 'pbjourneystop';
+@use 'pbevidence';
+@use 'pbasks';
+@use 'pbloophole';
+@use 'pbwatershed';
+@use 'pbnetwork';
+@use 'pbherocampaign';
 @use 'footer';
 @use 'editing';
 
@@ -36,6 +43,16 @@
 @font-face {
   font-family: "Font Awesome 6 Free";
   src: url("fontawesome-free-web/webfonts/fa-solid-900.woff2");
+}
+
+@font-face {
+  font-family: "Libre Franklin";
+  src: url("fonts/Libre_Franklin/LibreFranklin-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "Fraunces";
+  src: url("fonts/Fraunces/Fraunces-VariableFont_Wght.ttf");
 }
 
 @font-face {
@@ -305,8 +322,11 @@ body.path-- .column {
     margin-left: 2rem;
   }
 
-  article > div > .content h2 {
-    font-weight: normal;
-  }
+   article > div > .content h2 {
+     font-weight: normal;
+   }
 }
+
+// Hero Campaign Component (Coxs River Campaign)
+@import "pbherocampaign";
 
