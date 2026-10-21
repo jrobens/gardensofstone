@@ -1,0 +1,25 @@
+uuid: 25a46397-afda-4366-b512-d096ff27d3cb
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:3c0b711f-813d-4aee-b9f9-b0819020e3b6'
+  module:
+    - block_content
+active_version: 5f41fdf918956af9
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: 'block_content:3c0b711f-813d-4aee-b9f9-b0819020e3b6'
+        label: 'Front page image tiles'
+        label_display: '0'
+        provider: block_content
+        view_mode: full
+    fallback_metadata:
+      slot_definitions: null
+label: 'Front page image tiles'
+id: block.block_content.3c0b711f-813d-4aee-b9f9-b0819020e3b6
+provider: block_content
+source: block
+source_local_id: 'block_content:3c0b711f-813d-4aee-b9f9-b0819020e3b6'

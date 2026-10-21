@@ -1,0 +1,26 @@
+uuid: 61cd51e5-02f4-44dd-93aa-4ae26e584fa6
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.visit_gardens_of_stone_terms
+  module:
+    - views
+active_version: 7fc29ff7ade8c11b
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: 'views_block:visit_gardens_of_stone_terms-block_1'
+        label: 'Visit Gardens of stone terms: Block visit Destination Pagoda'
+        label_display: '0'
+        provider: views
+        views_label: ''
+        items_per_page: null
+    fallback_metadata:
+      slot_definitions: null
+label: 'Visit Gardens of stone terms: Block visit Destination Pagoda'
+id: block.views_block.visit_gardens_of_stone_terms-block_1
+provider: views
+source: block
+source_local_id: 'views_block:visit_gardens_of_stone_terms-block_1'

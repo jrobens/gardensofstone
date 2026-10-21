@@ -1,0 +1,23 @@
+uuid: 7c4d5e6f-8a9b-0c1d-2e3f-4a5b6c7d8e9f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.canvas_watershed.components
+    - node.type.canvas_watershed
+  module:
+    - canvas
+id: node.canvas_watershed.default
+targetEntityType: node
+bundle: canvas_watershed
+mode: default
+content:
+  components:
+    type: canvas_naive_render_sdc_tree
+    label: hidden
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  links: true

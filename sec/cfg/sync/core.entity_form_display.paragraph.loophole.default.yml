@@ -1,0 +1,85 @@
+uuid: f4a5b6c7-d8e9-0123-4567-89abcdef0123
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.loophole.field_pbloophole_close
+    - field.field.paragraph.loophole.field_pbloophole_copy_note
+    - field.field.paragraph.loophole.field_pbloophole_kicker
+    - field.field.paragraph.loophole.field_pbloophole_lede
+    - field.field.paragraph.loophole.field_pbloophole_standout_lede
+    - field.field.paragraph.loophole.field_pbloophole_stats
+    - field.field.paragraph.loophole.field_pbloophole_title
+    - paragraphs.paragraphs_type.loophole
+  module:
+    - paragraphs
+    - text
+id: paragraph.loophole.default
+targetEntityType: paragraph
+bundle: loophole
+mode: default
+content:
+  field_pbloophole_kicker:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_pbloophole_title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_pbloophole_standout_lede:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+  field_pbloophole_lede:
+    type: text_textarea
+    weight: 3
+    region: content
+    settings:
+      rows: 4
+      placeholder: ''
+    third_party_settings: {  }
+  field_pbloophole_stats:
+    type: paragraphs
+    weight: 4
+    region: content
+    settings:
+      title: 'Stat Card'
+      title_plural: 'Stat Cards'
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: loophole_stat_card
+    third_party_settings: {  }
+  field_pbloophole_close:
+    type: text_textarea
+    weight: 5
+    region: content
+    settings:
+      rows: 4
+      placeholder: ''
+    third_party_settings: {  }
+  field_pbloophole_copy_note:
+    type: text_textarea
+    weight: 6
+    region: content
+    settings:
+      rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  admin_title: true
+  created: true
+  status: true

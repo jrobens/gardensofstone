@@ -1,0 +1,9 @@
+uuid: 375ccf63-bb89-4d79-a5f4-463c910b868d
+langcode: en
+status: true
+dependencies: {  }
+name: Campaign
+vid: campaign
+description: null
+weight: 0
+new_revision: false

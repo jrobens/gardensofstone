@@ -1,0 +1,75 @@
+uuid: a5b6c7d8-e9f0-1234-5678-9abcdef01234
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.loophole.field_pbloophole_close
+    - field.field.paragraph.loophole.field_pbloophole_copy_note
+    - field.field.paragraph.loophole.field_pbloophole_kicker
+    - field.field.paragraph.loophole.field_pbloophole_lede
+    - field.field.paragraph.loophole.field_pbloophole_standout_lede
+    - field.field.paragraph.loophole.field_pbloophole_stats
+    - field.field.paragraph.loophole.field_pbloophole_title
+    - paragraphs.paragraphs_type.loophole
+  module:
+    - entity_reference_revisions
+    - text
+id: paragraph.loophole.default
+targetEntityType: paragraph
+bundle: loophole
+mode: default
+content:
+  field_pbloophole_kicker:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_pbloophole_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_pbloophole_standout_lede:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_pbloophole_lede:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_pbloophole_stats:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_pbloophole_close:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_pbloophole_copy_note:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: content
+hidden: {  }

@@ -1,0 +1,56 @@
+uuid: c7d8e9f0-a1b2-4345-5678-901234567890
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.asks.field_pbasks_cards
+    - field.field.paragraph.asks.field_pbasks_copy_note
+    - field.field.paragraph.asks.field_pbasks_kicker
+    - field.field.paragraph.asks.field_pbasks_standout_lede
+    - field.field.paragraph.asks.field_pbasks_title
+    - paragraphs.paragraphs_type.asks
+id: paragraph.asks.default
+targetEntityType: paragraph
+bundle: asks
+mode: default
+content:
+  field_pbasks_cards:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: '0'
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_pbasks_copy_note:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_pbasks_kicker:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_pbasks_standout_lede:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_pbasks_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

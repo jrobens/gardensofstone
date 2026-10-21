@@ -1,0 +1,27 @@
+uuid: 045e857a-9a4a-4158-9781-59452c14a0e8
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.follow-us
+  module:
+    - system
+active_version: beb4b23b4dc121c5
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: 'system_menu_block:follow-us'
+        label: 'Follow us'
+        label_display: '0'
+        provider: system
+        level: 1
+        depth: null
+        expand_all_items: false
+    fallback_metadata:
+      slot_definitions: null
+label: 'Follow us'
+id: block.system_menu_block.follow-us
+provider: system
+source: block
+source_local_id: 'system_menu_block:follow-us'

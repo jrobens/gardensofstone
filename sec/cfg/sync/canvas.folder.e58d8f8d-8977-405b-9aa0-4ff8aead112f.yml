@@ -1,0 +1,25 @@
+uuid: e58d8f8d-8977-405b-9aa0-4ff8aead112f
+langcode: en
+status: true
+dependencies:
+  config:
+    - canvas.component.block.views_block.comments_recent-block_1
+    - canvas.component.block.views_block.content_by_category-block_1
+    - canvas.component.block.views_block.content_recent-block_1
+    - canvas.component.block.views_block.events-block_1
+    - canvas.component.block.views_block.events-block_2
+    - canvas.component.block.views_block.photos_album-block_1
+    - canvas.component.block.views_block.visit_gardens_of_stone_terms-block_1
+    - canvas.component.block.views_block.who_s_online-who_s_online_block
+name: 'Lists (Views)'
+configEntityTypeId: component
+weight: 0
+items:
+  - block.views_block.comments_recent-block_1
+  - block.views_block.content_by_category-block_1
+  - block.views_block.content_recent-block_1
+  - block.views_block.events-block_1
+  - block.views_block.events-block_2
+  - block.views_block.photos_album-block_1
+  - block.views_block.visit_gardens_of_stone_terms-block_1
+  - block.views_block.who_s_online-who_s_online_block

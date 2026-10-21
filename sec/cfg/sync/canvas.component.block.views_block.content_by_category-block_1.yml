@@ -1,0 +1,26 @@
+uuid: 16555375-e570-4ac4-bd40-d21b94808fa1
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.content_by_category
+  module:
+    - views
+active_version: 3f78f563f6ef8593
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: 'views_block:content_by_category-block_1'
+        label: 'Content by category'
+        label_display: '0'
+        provider: views
+        views_label: ''
+        items_per_page: null
+    fallback_metadata:
+      slot_definitions: null
+label: 'Content by category'
+id: block.views_block.content_by_category-block_1
+provider: views
+source: block
+source_local_id: 'views_block:content_by_category-block_1'

@@ -1,0 +1,26 @@
+uuid: 5526dcad-916b-46cf-8888-2dfa687bf602
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.photos_album
+  module:
+    - views
+active_version: 841d186b4afcebdb
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: 'views_block:photos_album-block_1'
+        label: 'Album: Block: Album images'
+        label_display: '0'
+        provider: views
+        views_label: ''
+        items_per_page: null
+    fallback_metadata:
+      slot_definitions: null
+label: 'Album: Block: Album images'
+id: block.views_block.photos_album-block_1
+provider: views
+source: block
+source_local_id: 'views_block:photos_album-block_1'

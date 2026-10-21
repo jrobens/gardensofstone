@@ -1,0 +1,67 @@
+uuid: d8e9f0a1-b2c3-4567-89ab-cdef01234567
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.asks.field_pbasks_cards
+    - field.field.paragraph.asks.field_pbasks_copy_note
+    - field.field.paragraph.asks.field_pbasks_kicker
+    - field.field.paragraph.asks.field_pbasks_standout_lede
+    - field.field.paragraph.asks.field_pbasks_title
+    - paragraphs.paragraphs_type.asks
+  module:
+    - paragraphs
+    - text
+id: paragraph.asks.default
+targetEntityType: paragraph
+bundle: asks
+mode: default
+content:
+  field_pbasks_kicker:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_pbasks_title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_pbasks_standout_lede:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+  field_pbasks_copy_note:
+    type: text_textarea
+    weight: 3
+    region: content
+    settings:
+      rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+  field_pbasks_cards:
+    type: paragraphs
+    weight: 4
+    region: content
+    settings:
+      title: 'Ask Card'
+      title_plural: 'Ask Cards'
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ask_card
+    third_party_settings: {  }
+hidden:
+  admin_title: true
+  created: true
+  status: true

@@ -1,0 +1,25 @@
+uuid: 91ef5b36-7672-413d-99e3-60abd7544ab7
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:cross_fade_block:afa93580-3085-43b1-8bf6-3f1c9e8e0283'
+  module:
+    - block_content
+active_version: 8f21d34993a04547
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: 'block_content:afa93580-3085-43b1-8bf6-3f1c9e8e0283'
+        label: 'Home page cross fade banner'
+        label_display: '0'
+        provider: block_content
+        view_mode: full
+    fallback_metadata:
+      slot_definitions: null
+label: 'Home page cross fade banner'
+id: block.block_content.afa93580-3085-43b1-8bf6-3f1c9e8e0283
+provider: block_content
+source: block
+source_local_id: 'block_content:afa93580-3085-43b1-8bf6-3f1c9e8e0283'

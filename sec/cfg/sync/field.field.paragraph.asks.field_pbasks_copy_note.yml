@@ -1,0 +1,20 @@
+uuid: f8a9b0c1-d2e3-4456-6789-012345678901
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pbasks_copy_note
+    - paragraphs.paragraphs_type.asks
+id: paragraph.asks.field_pbasks_copy_note
+field_name: field_pbasks_copy_note
+entity_type: paragraph
+bundle: asks
+label: 'Copy Note'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

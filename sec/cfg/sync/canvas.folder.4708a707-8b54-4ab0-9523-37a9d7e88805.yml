@@ -1,0 +1,21 @@
+uuid: 4708a707-8b54-4ab0-9523-37a9d7e88805
+langcode: en
+status: true
+dependencies:
+  config:
+    - canvas.component.block.block_content.1c72d68e-ecaf-44b8-9643-9b31407cae79
+    - canvas.component.block.block_content.3c0b711f-813d-4aee-b9f9-b0819020e3b6
+    - canvas.component.block.block_content.7b9c8dc6-ac61-40a9-a099-2ebd5ba8f420
+    - canvas.component.block.block_content.afa93580-3085-43b1-8bf6-3f1c9e8e0283
+    - canvas.component.block.block_content.b92430e2-7c9d-4f63-9c4d-8609d7e1e586
+    - canvas.component.block.block_content.c0902c60-d8cc-4946-88ac-4de6832d0ff9
+name: 'Content block'
+configEntityTypeId: component
+weight: 0
+items:
+  - block.block_content.1c72d68e-ecaf-44b8-9643-9b31407cae79
+  - block.block_content.3c0b711f-813d-4aee-b9f9-b0819020e3b6
+  - block.block_content.7b9c8dc6-ac61-40a9-a099-2ebd5ba8f420
+  - block.block_content.afa93580-3085-43b1-8bf6-3f1c9e8e0283
+  - block.block_content.b92430e2-7c9d-4f63-9c4d-8609d7e1e586
+  - block.block_content.c0902c60-d8cc-4946-88ac-4de6832d0ff9

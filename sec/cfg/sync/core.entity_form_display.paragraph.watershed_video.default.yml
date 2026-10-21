@@ -1,0 +1,15 @@
+uuid: f0a1b2c3-d4e5-6789-abcd-ef0123456789
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.watershed_video
+id: paragraph.watershed_video.default
+targetEntityType: paragraph
+bundle: watershed_video
+mode: default
+content: {  }
+hidden:
+  admin_title: true
+  created: true
+  status: true

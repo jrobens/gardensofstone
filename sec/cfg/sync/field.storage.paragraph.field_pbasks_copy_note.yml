@@ -1,0 +1,19 @@
+uuid: f6a7b8c9-d0e1-4234-4567-890123456789
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_pbasks_copy_note
+field_name: field_pbasks_copy_note
+entity_type: paragraph
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

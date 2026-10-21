@@ -1,0 +1,27 @@
+uuid: 1d2fae4a-dddc-46cb-8729-aafeee4916e7
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.highlights
+  module:
+    - system
+active_version: 5a95e0dc69d4c269
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: 'system_menu_block:highlights'
+        label: Highlights
+        label_display: '0'
+        provider: system
+        level: 1
+        depth: null
+        expand_all_items: false
+    fallback_metadata:
+      slot_definitions: null
+label: Highlights
+id: block.system_menu_block.highlights
+provider: system
+source: block
+source_local_id: 'system_menu_block:highlights'

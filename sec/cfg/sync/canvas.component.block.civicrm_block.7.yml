@@ -1,0 +1,22 @@
+uuid: f3e6a362-2590-41a3-8348-a3b7cadd3be0
+langcode: en
+status: true
+dependencies:
+  module:
+    - civicrm
+active_version: 4af93e16e855005a
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: 'civicrm_block:7'
+        label: 'Full-text Search'
+        label_display: '0'
+        provider: civicrm
+    fallback_metadata:
+      slot_definitions: null
+label: 'Full-text Search'
+id: block.civicrm_block.7
+provider: civicrm
+source: block
+source_local_id: 'civicrm_block:7'

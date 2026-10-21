@@ -1,0 +1,21 @@
+uuid: b0c1d2e3-f4a5-4678-8901-234567890123
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pbasks_card_type
+    - paragraphs.paragraphs_type.ask_card
+  module:
+    - options
+id: paragraph.ask_card.field_pbasks_card_type
+field_name: field_pbasks_card_type
+entity_type: paragraph
+bundle: ask_card
+label: 'Card Type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

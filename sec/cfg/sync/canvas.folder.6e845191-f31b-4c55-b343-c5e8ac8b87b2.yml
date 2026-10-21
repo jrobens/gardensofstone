@@ -1,0 +1,23 @@
+uuid: 6e845191-f31b-4c55-b343-c5e8ac8b87b2
+langcode: en
+status: true
+dependencies:
+  config:
+    - canvas.component.block.civicrm_block.1
+    - canvas.component.block.civicrm_block.2
+    - canvas.component.block.civicrm_block.3
+    - canvas.component.block.civicrm_block.4
+    - canvas.component.block.civicrm_block.5
+    - canvas.component.block.civicrm_block.6
+    - canvas.component.block.civicrm_block.7
+name: Civicrm
+configEntityTypeId: component
+weight: 0
+items:
+  - block.civicrm_block.1
+  - block.civicrm_block.2
+  - block.civicrm_block.3
+  - block.civicrm_block.4
+  - block.civicrm_block.5
+  - block.civicrm_block.6
+  - block.civicrm_block.7

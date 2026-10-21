@@ -1,0 +1,19 @@
+uuid: d6e7f8a9-b0c1-4234-4567-890123456789
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pbasks_title
+    - paragraphs.paragraphs_type.asks
+id: paragraph.asks.field_pbasks_title
+field_name: field_pbasks_title
+entity_type: paragraph
+bundle: asks
+label: Title
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

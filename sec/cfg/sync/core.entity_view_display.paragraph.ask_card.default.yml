@@ -1,0 +1,84 @@
+uuid: d8e9f0a1-b2c3-4456-6789-012345678901
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.ask_card.field_pbasks_card_type
+    - field.field.paragraph.ask_card.field_pbasks_copy_button
+    - field.field.paragraph.ask_card.field_pbasks_description
+    - field.field.paragraph.ask_card.field_pbasks_email_link
+    - field.field.paragraph.ask_card.field_pbasks_role
+    - field.field.paragraph.ask_card.field_pbasks_sample_text
+    - field.field.paragraph.ask_card.field_pbasks_title
+    - paragraphs.paragraphs_type.ask_card
+  module:
+    - link
+    - options
+    - text
+id: paragraph.ask_card.default
+targetEntityType: paragraph
+bundle: ask_card
+mode: default
+content:
+  field_pbasks_card_type:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_pbasks_copy_button:
+    type: boolean
+    label: hidden
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_pbasks_description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_pbasks_email_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: '1'
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_pbasks_role:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+      link_rel: canonical
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_pbasks_sample_text:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_pbasks_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+      link_rel: canonical
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

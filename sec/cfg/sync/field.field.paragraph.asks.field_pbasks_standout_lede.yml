@@ -1,0 +1,20 @@
+uuid: e7f8a9b0-c1d2-4345-5678-901234567890
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pbasks_standout_lede
+    - paragraphs.paragraphs_type.asks
+id: paragraph.asks.field_pbasks_standout_lede
+field_name: field_pbasks_standout_lede
+entity_type: paragraph
+bundle: asks
+label: 'Standout Lede'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

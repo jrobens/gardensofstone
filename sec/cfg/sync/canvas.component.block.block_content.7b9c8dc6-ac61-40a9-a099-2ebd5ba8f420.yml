@@ -1,0 +1,25 @@
+uuid: 4acd03d7-ad86-4040-823a-b062e8c465b5
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:7b9c8dc6-ac61-40a9-a099-2ebd5ba8f420'
+  module:
+    - block_content
+active_version: deb80e204fb0e310
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: 'block_content:7b9c8dc6-ac61-40a9-a099-2ebd5ba8f420'
+        label: 'Aboriginal Country'
+        label_display: '0'
+        provider: block_content
+        view_mode: full
+    fallback_metadata:
+      slot_definitions: null
+label: 'Aboriginal Country'
+id: block.block_content.7b9c8dc6-ac61-40a9-a099-2ebd5ba8f420
+provider: block_content
+source: block
+source_local_id: 'block_content:7b9c8dc6-ac61-40a9-a099-2ebd5ba8f420'

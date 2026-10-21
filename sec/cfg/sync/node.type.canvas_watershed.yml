@@ -1,0 +1,11 @@
+uuid: 513cdeef-a60f-43ad-a37a-283e1f60d9a7
+langcode: en
+status: true
+dependencies: {  }
+name: 'Canvas Watershed'
+type: canvas_watershed
+description: null
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: true

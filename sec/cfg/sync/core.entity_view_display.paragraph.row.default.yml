@@ -1,0 +1,12 @@
+uuid: e4f5a6b7-c8d9-0123-4567-89abcdef0123
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.row
+id: paragraph.row.default
+targetEntityType: paragraph
+bundle: row
+mode: default
+content: {  }
+hidden: {  }

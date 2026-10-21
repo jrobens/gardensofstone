@@ -1,15 +1,10 @@
-uuid: loophole-uuid-here
+uuid: 9973f6f0-b626-4e22-a1ba-180266954043
 langcode: en
 status: true
-dependencies:
-  module:
-    - layout_paragraphs
+dependencies: {  }
 id: loophole
 label: Loophole
 icon_uuid: null
 icon_default: null
-description: 'Loophole section with kicker, title, standout lede, and stat cards'
-behavior_plugins:
-  layout_paragraphs:
-    enabled: false
-    available_layouts: {  }
+description: 'Loophole content type'
+behavior_plugins: {  }

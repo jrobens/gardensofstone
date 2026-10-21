@@ -1,0 +1,25 @@
+uuid: e311d8e0-c730-436c-8163-3afb89c1b7f1
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:1c72d68e-ecaf-44b8-9643-9b31407cae79'
+  module:
+    - block_content
+active_version: d8faefeeb2bde7fb
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: 'block_content:1c72d68e-ecaf-44b8-9643-9b31407cae79'
+        label: 'Social Media Links'
+        label_display: '0'
+        provider: block_content
+        view_mode: full
+    fallback_metadata:
+      slot_definitions: null
+label: 'Social Media Links'
+id: block.block_content.1c72d68e-ecaf-44b8-9643-9b31407cae79
+provider: block_content
+source: block
+source_local_id: 'block_content:1c72d68e-ecaf-44b8-9643-9b31407cae79'

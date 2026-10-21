@@ -1,0 +1,25 @@
+uuid: 4b82cfc5-a03f-4018-85b3-1325ff22a36e
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:taxonomy:c0902c60-d8cc-4946-88ac-4de6832d0ff9'
+  module:
+    - block_content
+active_version: 2a81e75c3b0047d6
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: 'block_content:c0902c60-d8cc-4946-88ac-4de6832d0ff9'
+        label: 'Visit Gardens of Stone'
+        label_display: '0'
+        provider: block_content
+        view_mode: full
+    fallback_metadata:
+      slot_definitions: null
+label: 'Visit Gardens of Stone'
+id: block.block_content.c0902c60-d8cc-4946-88ac-4de6832d0ff9
+provider: block_content
+source: block
+source_local_id: 'block_content:c0902c60-d8cc-4946-88ac-4de6832d0ff9'

@@ -15,6 +15,7 @@ module:
   block_content: 0
   block_title_link: 0
   breakpoint: 0
+  canvas: 0
   captcha: 0
   civicrm: 0
   civicrmtheme: 0
@@ -23,8 +24,6 @@ module:
   colorbox: 0
   comment: 0
   config: 0
-  context: 0
-  context_ui: 0
   contextual: 0
   copyright_footer: 0
   core_event_dispatcher: 0
@@ -66,6 +65,7 @@ module:
   ip_pb_image_square: 0
   ip_pb_index_block: 0
   ip_pb_quote: 0
+  ip_pbhero_campaign: 0
   ip_watershed: 0
   key: 0
   layout_builder: 0

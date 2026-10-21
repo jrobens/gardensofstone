@@ -1,0 +1,34 @@
+uuid: a9b0c1d2-e3f4-4567-7890-123456789012
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pbasks_cards
+    - paragraphs.paragraphs_type.ask_card
+    - paragraphs.paragraphs_type.asks
+  module:
+    - entity_reference_revisions
+id: paragraph.asks.field_pbasks_cards
+field_name: field_pbasks_cards
+entity_type: paragraph
+bundle: asks
+label: Cards
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      ask_card: ask_card
+    negate: 0
+    target_bundles_drag_drop:
+      ask_card:
+        weight: 11
+        enabled: true
+      asks:
+        weight: 10
+        enabled: false
+field_type: entity_reference_revisions

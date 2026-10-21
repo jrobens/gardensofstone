@@ -1,0 +1,15 @@
+uuid: 12c3d4e5-f6a7-89ab-cdef-0123456789ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.network_strip
+id: paragraph.network_strip.default
+targetEntityType: paragraph
+bundle: network_strip
+mode: default
+content: {  }
+hidden:
+  admin_title: true
+  created: true
+  status: true

@@ -1,0 +1,22 @@
+uuid: b1123bcf-e84d-4ec6-b95c-1700ac43c7a8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pbloophole_close
+    - paragraphs.paragraphs_type.loophole
+  module:
+    - text
+id: paragraph.loophole.field_pbloophole_close
+field_name: field_pbloophole_close
+entity_type: paragraph
+bundle: loophole
+label: Close
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

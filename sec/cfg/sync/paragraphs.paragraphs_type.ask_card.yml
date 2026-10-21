@@ -1,14 +1,14 @@
-uuid: loophole-stat-card-uuid
+uuid: b2c3d4e5-f6a7-4890-0123-456789012345
 langcode: en
 status: true
 dependencies:
   module:
     - layout_paragraphs
-id: paragraph.loophole_stat_card
-label: 'Loophole Stat Card'
+id: ask_card
+label: 'Ask Card'
 icon_uuid: null
 icon_default: null
-description: 'A stat card for the loophole section'
+description: ''
 behavior_plugins:
   layout_paragraphs:
     enabled: false

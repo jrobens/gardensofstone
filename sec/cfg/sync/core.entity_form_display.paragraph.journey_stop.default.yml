@@ -1,0 +1,63 @@
+uuid: c1d2e3f4-a5b6-7890-1234-56789abcdef0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.journey_stop.field_pbjourney_content
+    - field.field.paragraph.journey_stop.field_pbjourney_icon
+    - field.field.paragraph.journey_stop.field_pbjourney_label
+    - field.field.paragraph.journey_stop.field_pbjourney_link
+    - field.field.paragraph.journey_stop.field_pbjourney_title
+    - paragraphs.paragraphs_type.journey_stop
+  module:
+    - file
+    - link
+    - text
+id: paragraph.journey_stop.default
+targetEntityType: paragraph
+bundle: journey_stop
+mode: default
+content:
+  field_pbjourney_icon:
+    type: file_generic
+    weight: 0
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+  field_pbjourney_label:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_pbjourney_title:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_pbjourney_content:
+    type: text_textarea
+    weight: 3
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_pbjourney_link:
+    type: link_default
+    weight: 4
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+hidden:
+  admin_title: true
+  created: true
+  status: true

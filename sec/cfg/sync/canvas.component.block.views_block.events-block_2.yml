@@ -1,0 +1,26 @@
+uuid: d4cc912a-41e1-479c-bf04-1e5f9644d988
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.events
+  module:
+    - views
+active_version: f4543927a59d5e4b
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: 'views_block:events-block_2'
+        label: 'News and events'
+        label_display: '0'
+        provider: views
+        views_label: ''
+        items_per_page: null
+    fallback_metadata:
+      slot_definitions: null
+label: 'News and events'
+id: block.views_block.events-block_2
+provider: views
+source: block
+source_local_id: 'views_block:events-block_2'

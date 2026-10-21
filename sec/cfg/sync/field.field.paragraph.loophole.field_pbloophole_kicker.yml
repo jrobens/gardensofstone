@@ -1,0 +1,19 @@
+uuid: 5540ebce-1569-4bc8-afec-7ee12f3f83bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pbloophole_kicker
+    - paragraphs.paragraphs_type.loophole
+id: paragraph.loophole.field_pbloophole_kicker
+field_name: field_pbloophole_kicker
+entity_type: paragraph
+bundle: loophole
+label: Kicker
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

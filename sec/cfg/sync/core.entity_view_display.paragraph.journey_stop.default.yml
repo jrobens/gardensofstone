@@ -1,0 +1,58 @@
+uuid: journey-view-display-uuid-here
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.journey_stop.field_pbjourney_icon
+    - field.field.paragraph.journey_stop.field_pbjourney_label
+    - field.field.paragraph.journey_stop.field_pbjourney_title
+    - field.field.paragraph.journey_stop.field_pbjourney_content
+    - field.field.paragraph.journey_stop.field_pbjourney_link
+    - paragraphs.paragraphs_type.journey_stop
+id: paragraph.journey_stop.default
+targetEntityType: paragraph
+bundle: journey_stop
+mode: default
+content:
+  field_pbjourney_content:
+    type: text_default
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_pbjourney_icon:
+    type: file_default
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_pbjourney_label:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_pbjourney_link:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      allow_redirect_relative: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_pbjourney_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

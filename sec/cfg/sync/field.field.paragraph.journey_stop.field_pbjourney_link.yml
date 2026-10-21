@@ -1,0 +1,21 @@
+uuid: journey-link-field-uuid
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pbjourney_link
+    - paragraphs.paragraphs_type.journey_stop
+id: paragraph.journey_stop.field_pbjourney_link
+field_name: field_pbjourney_link
+entity_type: paragraph
+bundle: journey_stop
+label: Link
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 1
+field_type: link

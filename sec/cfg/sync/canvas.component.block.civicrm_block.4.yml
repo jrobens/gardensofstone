@@ -1,0 +1,22 @@
+uuid: 96f592b1-9f04-44b8-b85a-d2b9ec8de789
+langcode: en
+status: true
+dependencies:
+  module:
+    - civicrm
+active_version: b770e03f1b2004ca
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: 'civicrm_block:4'
+        label: 'Quick Add'
+        label_display: '0'
+        provider: civicrm
+    fallback_metadata:
+      slot_definitions: null
+label: 'Quick Add'
+id: block.civicrm_block.4
+provider: civicrm
+source: block
+source_local_id: 'civicrm_block:4'

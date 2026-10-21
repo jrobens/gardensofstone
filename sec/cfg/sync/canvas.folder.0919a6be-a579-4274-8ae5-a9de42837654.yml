@@ -1,0 +1,31 @@
+uuid: 0919a6be-a579-4274-8ae5-a9de42837654
+langcode: en
+status: true
+dependencies:
+  config:
+    - canvas.component.block.shortcuts
+    - canvas.component.block.system_menu_block.account
+    - canvas.component.block.system_menu_block.admin
+    - canvas.component.block.system_menu_block.follow-us
+    - canvas.component.block.system_menu_block.footer
+    - canvas.component.block.system_menu_block.highlights
+    - canvas.component.block.system_menu_block.keep-in-touch
+    - canvas.component.block.system_menu_block.main
+    - canvas.component.block.system_menu_block.things-to-do
+    - canvas.component.block.system_menu_block.tools
+    - canvas.component.block.system_menu_block.visit-gardens-of-stone
+name: Menus
+configEntityTypeId: component
+weight: 0
+items:
+  - block.shortcuts
+  - block.system_menu_block.account
+  - block.system_menu_block.admin
+  - block.system_menu_block.follow-us
+  - block.system_menu_block.footer
+  - block.system_menu_block.highlights
+  - block.system_menu_block.keep-in-touch
+  - block.system_menu_block.main
+  - block.system_menu_block.things-to-do
+  - block.system_menu_block.tools
+  - block.system_menu_block.visit-gardens-of-stone

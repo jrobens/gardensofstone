@@ -1,0 +1,19 @@
+uuid: 4f1a2b3c-5d6e-7f8a-9b0c-1d2e3f4a5b6c
+langcode: en
+status: true
+dependencies:
+  module:
+    - canvas
+    - node
+id: node.components
+field_name: components
+entity_type: node
+type: component_tree
+settings: {  }
+module: canvas
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

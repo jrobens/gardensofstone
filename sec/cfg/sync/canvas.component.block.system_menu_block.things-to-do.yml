@@ -1,0 +1,27 @@
+uuid: 0cef6573-6d0c-4590-96b1-019643f83484
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.things-to-do
+  module:
+    - system
+active_version: e5612b31955b554e
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: 'system_menu_block:things-to-do'
+        label: 'Things to do'
+        label_display: '0'
+        provider: system
+        level: 1
+        depth: null
+        expand_all_items: false
+    fallback_metadata:
+      slot_definitions: null
+label: 'Things to do'
+id: block.system_menu_block.things-to-do
+provider: system
+source: block
+source_local_id: 'system_menu_block:things-to-do'

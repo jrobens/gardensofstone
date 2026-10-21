@@ -1,0 +1,11 @@
+uuid: d4356006-68e5-4f5e-8fc3-024ac03c5c1f
+langcode: en
+status: true
+dependencies:
+  config:
+    - canvas.component.block.social_sharing_buttons_block
+name: 'Better Social Sharing Buttons'
+configEntityTypeId: component
+weight: 0
+items:
+  - block.social_sharing_buttons_block

@@ -1,0 +1,22 @@
+uuid: f335bc97-5ad1-466d-b34f-a691eee1e8ef
+langcode: en
+status: true
+dependencies:
+  module:
+    - civicrm
+active_version: 57f63751634de12f
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: 'civicrm_block:2'
+        label: 'Recent Items'
+        label_display: '0'
+        provider: civicrm
+    fallback_metadata:
+      slot_definitions: null
+label: 'Recent Items'
+id: block.civicrm_block.2
+provider: civicrm
+source: block
+source_local_id: 'civicrm_block:2'

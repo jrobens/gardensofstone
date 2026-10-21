@@ -1,0 +1,19 @@
+uuid: c5d6e7f8-a9b0-4123-3456-789012345678
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pbasks_kicker
+    - paragraphs.paragraphs_type.asks
+id: paragraph.asks.field_pbasks_kicker
+field_name: field_pbasks_kicker
+entity_type: paragraph
+bundle: asks
+label: Kicker
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

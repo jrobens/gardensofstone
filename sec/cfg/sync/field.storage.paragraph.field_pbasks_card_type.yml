@@ -1,0 +1,33 @@
+uuid: b8c9d0e1-f2a3-4456-6789-012345678901
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_pbasks_card_type
+field_name: field_pbasks_card_type
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: premier
+      label: premier
+    -
+      value: political
+      label: political
+    -
+      value: operational
+      label: operational
+    -
+      value: local
+      label: local
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

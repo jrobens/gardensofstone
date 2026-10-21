@@ -1,0 +1,27 @@
+uuid: 93f8d367-55f9-41a9-951b-fe304cca6374
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.visit-gardens-of-stone
+  module:
+    - system
+active_version: 1e5d2dddfce29e39
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: 'system_menu_block:visit-gardens-of-stone'
+        label: 'Visit Gardens of Stone'
+        label_display: '0'
+        provider: system
+        level: 1
+        depth: null
+        expand_all_items: false
+    fallback_metadata:
+      slot_definitions: null
+label: 'Visit Gardens of Stone'
+id: block.system_menu_block.visit-gardens-of-stone
+provider: system
+source: block
+source_local_id: 'system_menu_block:visit-gardens-of-stone'

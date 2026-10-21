@@ -1,0 +1,18 @@
+uuid: journey-link-storage-uuid
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+id: paragraph.field_pbjourney_link
+field_name: field_pbjourney_link
+entity_type: paragraph
+type: link
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

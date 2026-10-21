@@ -1,0 +1,22 @@
+uuid: df3a287c-1584-4de8-adaf-99ab908ed9ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pbloophole_copy_note
+    - paragraphs.paragraphs_type.loophole
+  module:
+    - text
+id: paragraph.loophole.field_pbloophole_copy_note
+field_name: field_pbloophole_copy_note
+entity_type: paragraph
+bundle: loophole
+label: 'Copy Note'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

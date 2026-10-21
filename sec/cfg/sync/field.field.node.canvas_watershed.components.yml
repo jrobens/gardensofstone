@@ -1,0 +1,21 @@
+uuid: 5a2b3c4d-6e7f-8a9b-0c1d-2e3f4a5b6c7d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.components
+    - node.type.canvas_watershed
+  module:
+    - canvas
+id: node.canvas_watershed.components
+field_name: components
+entity_type: node
+bundle: canvas_watershed
+label: Components
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: component_tree

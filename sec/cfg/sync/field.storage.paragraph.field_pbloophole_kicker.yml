@@ -1,0 +1,21 @@
+uuid: f903096b-bda0-49b7-bb84-725d4b51e4db
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_pbloophole_kicker
+field_name: field_pbloophole_kicker
+entity_type: paragraph
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,22 @@
+uuid: 495de9ca-0c3c-44d4-8bf8-407615b6e0df
+langcode: en
+status: true
+dependencies:
+  module:
+    - civicrm
+active_version: 7a6f0b1d3440a837
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: 'civicrm_block:1'
+        label: 'Create New Record'
+        label_display: '0'
+        provider: civicrm
+    fallback_metadata:
+      slot_definitions: null
+label: 'Create New Record'
+id: block.civicrm_block.1
+provider: civicrm
+source: block
+source_local_id: 'civicrm_block:1'

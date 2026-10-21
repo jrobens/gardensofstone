@@ -1,0 +1,19 @@
+uuid: c1d2e3f4-a5b6-4789-9012-345678901234
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pbasks_role
+    - paragraphs.paragraphs_type.ask_card
+id: paragraph.ask_card.field_pbasks_role
+field_name: field_pbasks_role
+entity_type: paragraph
+bundle: ask_card
+label: Role
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

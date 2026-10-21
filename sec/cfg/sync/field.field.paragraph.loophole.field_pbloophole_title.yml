@@ -1,0 +1,19 @@
+uuid: 840bea10-7e75-49d1-b39f-07f984f38f6c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pbloophole_title
+    - paragraphs.paragraphs_type.loophole
+id: paragraph.loophole.field_pbloophole_title
+field_name: field_pbloophole_title
+entity_type: paragraph
+bundle: loophole
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

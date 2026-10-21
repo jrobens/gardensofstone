@@ -1,0 +1,78 @@
+uuid: e9f0a1b2-c3d4-5678-9abc-def012345678
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.ask_card.field_pbasks_card_type
+    - field.field.paragraph.ask_card.field_pbasks_copy_button
+    - field.field.paragraph.ask_card.field_pbasks_description
+    - field.field.paragraph.ask_card.field_pbasks_email_link
+    - field.field.paragraph.ask_card.field_pbasks_role
+    - field.field.paragraph.ask_card.field_pbasks_sample_text
+    - field.field.paragraph.ask_card.field_pbasks_title
+    - paragraphs.paragraphs_type.ask_card
+  module:
+    - link
+    - text
+id: paragraph.ask_card.default
+targetEntityType: paragraph
+bundle: ask_card
+mode: default
+content:
+  field_pbasks_card_type:
+    type: options_select
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_pbasks_role:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_pbasks_title:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_pbasks_description:
+    type: text_textarea
+    weight: 3
+    region: content
+    settings:
+      rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+  field_pbasks_sample_text:
+    type: text_textarea
+    weight: 4
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_pbasks_email_link:
+    type: link_default
+    weight: 5
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_pbasks_copy_button:
+    type: boolean_checkbox
+    weight: 6
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden:
+  admin_title: true
+  created: true
+  status: true

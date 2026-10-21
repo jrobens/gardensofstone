@@ -1,0 +1,22 @@
+uuid: 983b6ef3-70a9-4cad-a555-9eb6a3278d94
+langcode: en
+status: true
+dependencies:
+  module:
+    - civicrm
+active_version: 0325639a0ef89f93
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: 'civicrm_block:6'
+        label: 'Upcoming Events'
+        label_display: '0'
+        provider: civicrm
+    fallback_metadata:
+      slot_definitions: null
+label: 'Upcoming Events'
+id: block.civicrm_block.6
+provider: civicrm
+source: block
+source_local_id: 'civicrm_block:6'

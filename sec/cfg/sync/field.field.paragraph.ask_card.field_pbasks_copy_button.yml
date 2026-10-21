@@ -1,0 +1,23 @@
+uuid: b6c7d8e9-f0a1-4234-4567-890123456789
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pbasks_copy_button
+    - paragraphs.paragraphs_type.ask_card
+id: paragraph.ask_card.field_pbasks_copy_button
+field_name: field_pbasks_copy_button
+entity_type: paragraph
+bundle: ask_card
+label: 'Show Copy Button'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

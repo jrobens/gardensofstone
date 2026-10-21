@@ -1,0 +1,23 @@
+uuid: a5b6c7d8-e9f0-4123-3456-789012345678
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pbasks_email_link
+    - paragraphs.paragraphs_type.ask_card
+  module:
+    - link
+id: paragraph.ask_card.field_pbasks_email_link
+field_name: field_pbasks_email_link
+entity_type: paragraph
+bundle: ask_card
+label: 'Email Link'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

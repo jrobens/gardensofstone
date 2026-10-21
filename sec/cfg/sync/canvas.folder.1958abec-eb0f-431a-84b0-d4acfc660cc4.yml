@@ -1,0 +1,11 @@
+uuid: 1958abec-eb0f-431a-84b0-d4acfc660cc4
+langcode: en
+status: true
+dependencies:
+  config:
+    - canvas.component.block.photos_information
+name: Photos
+configEntityTypeId: component
+weight: 0
+items:
+  - block.photos_information

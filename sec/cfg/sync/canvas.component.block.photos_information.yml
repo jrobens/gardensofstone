@@ -1,0 +1,22 @@
+uuid: 64deb14a-cd99-4ca2-8999-6cb63f300e22
+langcode: en
+status: true
+dependencies:
+  module:
+    - photos
+active_version: 18255cd1cfde7e05
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: photos_information
+        label: 'Photo Information'
+        label_display: '0'
+        provider: photos
+    fallback_metadata:
+      slot_definitions: null
+label: 'Photo Information'
+id: block.photos_information
+provider: photos
+source: block
+source_local_id: photos_information

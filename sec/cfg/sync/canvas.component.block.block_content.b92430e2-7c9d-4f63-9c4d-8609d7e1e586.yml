@@ -1,0 +1,25 @@
+uuid: f9f97833-1337-4048-abf7-3d0d25ac04c8
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:b92430e2-7c9d-4f63-9c4d-8609d7e1e586'
+  module:
+    - block_content
+active_version: b3ccb12b18da8828
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: 'block_content:b92430e2-7c9d-4f63-9c4d-8609d7e1e586'
+        label: 'Front page image grid'
+        label_display: '0'
+        provider: block_content
+        view_mode: full
+    fallback_metadata:
+      slot_definitions: null
+label: 'Front page image grid'
+id: block.block_content.b92430e2-7c9d-4f63-9c4d-8609d7e1e586
+provider: block_content
+source: block
+source_local_id: 'block_content:b92430e2-7c9d-4f63-9c4d-8609d7e1e586'

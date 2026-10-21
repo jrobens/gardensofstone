@@ -1,0 +1,23 @@
+uuid: fa39d337-3655-498b-8670-79b2cea91b81
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pbloophole_stats
+    - paragraphs.paragraphs_type.loophole
+  module:
+    - entity_reference_revisions
+id: paragraph.loophole.field_pbloophole_stats
+field_name: field_pbloophole_stats
+entity_type: paragraph
+bundle: loophole
+label: Stats
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings: {  }
+field_type: entity_reference_revisions
