@@ -3,10 +3,10 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_pbhero_campaign_scroll_cue
+    - field.storage.paragraph.field_pbhero_scue
     - paragraphs.paragraphs_type.hero_campaign
-id: paragraph.hero_campaign.field_pbhero_campaign_scroll_cue
-field_name: field_pbhero_campaign_scroll_cue
+id: field.field.paragraph.hero_campaign.field_pbhero_scue
+field_name: field_pbhero_scue
 entity_type: paragraph
 bundle: hero_campaign
 label: 'Show Scroll Cue'

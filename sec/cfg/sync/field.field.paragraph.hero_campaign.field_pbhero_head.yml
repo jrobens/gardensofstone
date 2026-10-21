@@ -3,10 +3,10 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_pbhero_campaign_headline
+    - field.storage.paragraph.field_pbhero_head
     - paragraphs.paragraphs_type.hero_campaign
-id: paragraph.hero_campaign.field_pbhero_campaign_headline
-field_name: field_pbhero_campaign_headline
+id: paragraph.hero_campaign.field_pbhero_head
+field_name: field_pbhero_head
 entity_type: paragraph
 bundle: hero_campaign
 label: Headline

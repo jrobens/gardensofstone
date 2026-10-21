@@ -4,8 +4,8 @@ status: true
 dependencies:
   module:
     - paragraphs
-id: paragraph.field_pbhero_campaign_scroll_cue
-field_name: field_pbhero_campaign_scroll_cue
+id: paragraph.field_pbhero_scue
+field_name: field_pbhero_scue
 entity_type: paragraph
 type: boolean
 settings: {  }

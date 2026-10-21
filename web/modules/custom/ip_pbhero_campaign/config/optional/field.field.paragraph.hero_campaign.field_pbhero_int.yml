@@ -3,10 +3,10 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_pbhero_campaign_intro
+    - field.storage.paragraph.field_pbhero_int
     - paragraphs.paragraphs_type.hero_campaign
-id: paragraph.hero_campaign.field_pbhero_campaign_intro
-field_name: field_pbhero_campaign_intro
+id: field.field.paragraph.hero_campaign.field_pbhero_int
+field_name: field_pbhero_int
 entity_type: paragraph
 bundle: hero_campaign
 label: Introduction

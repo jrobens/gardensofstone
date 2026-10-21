@@ -4,8 +4,8 @@ status: true
 dependencies:
   module:
     - paragraphs
-id: paragraph.field_pbhero_campaign_ghost_btn
-field_name: field_pbhero_campaign_ghost_btn
+id: field.storage.paragraph.field_pbhero_gbtn
+field_name: field_pbhero_gbtn
 entity_type: paragraph
 type: link
 settings: {  }

@@ -1,15 +1,15 @@
-uuid: a7b8c9d0-e1f2-3456-0123-456789012345
+uuid: b2c3d4e5-f6a7-8901-bcde-f01234567890
 langcode: en
 status: true
 dependencies:
   module:
     - paragraphs
-id: paragraph.field_pbhero_campaign_ghost_btn_url
-field_name: field_pbhero_campaign_ghost_btn_url
+id: field.storage.paragraph.field_pbhero_head
+field_name: field_pbhero_head
 entity_type: paragraph
 type: string
 settings:
-  max_length: 2048
+  max_length: 255
   is_ascii: false
   case_sensitive: false
 module: core

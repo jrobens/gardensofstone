@@ -3,10 +3,10 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_pbhero_campaign_tag
+    - field.storage.paragraph.field_pbhero_tag
     - paragraphs.paragraphs_type.hero_campaign
-id: paragraph.hero_campaign.field_pbhero_campaign_tag
-field_name: field_pbhero_campaign_tag
+id: paragraph.hero_campaign.field_pbhero_tag
+field_name: field_pbhero_tag
 entity_type: paragraph
 bundle: hero_campaign
 label: 'Campaign Tag'

@@ -5,8 +5,8 @@ dependencies:
   module:
     - paragraphs
     - taxonomy
-id: paragraph.field_pbhero_campaign_tag
-field_name: field_pbhero_campaign_tag
+id: field.storage.paragraph.field_pbhero_tag
+field_name: field_pbhero_tag
 entity_type: paragraph
 type: entity_reference
 settings:

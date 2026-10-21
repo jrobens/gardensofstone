@@ -3,10 +3,10 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_pbhero_campaign_primary_btn
+    - field.storage.paragraph.field_pbhero_pbtn
     - paragraphs.paragraphs_type.hero_campaign
-id: paragraph.hero_campaign.field_pbhero_campaign_primary_btn
-field_name: field_pbhero_campaign_primary_btn
+id: field.field.paragraph.hero_campaign.field_pbhero_pbtn
+field_name: field_pbhero_pbtn
 entity_type: paragraph
 bundle: hero_campaign
 label: 'Primary Button Text'

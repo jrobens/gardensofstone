@@ -3,10 +3,10 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_pbhero_campaign_ghost_btn_url
+    - field.storage.paragraph.field_pbhero_gurl
     - paragraphs.paragraphs_type.hero_campaign
-id: paragraph.hero_campaign.field_pbhero_campaign_ghost_btn_url
-field_name: field_pbhero_campaign_ghost_btn_url
+id: paragraph.hero_campaign.field_pbhero_gurl
+field_name: field_pbhero_gurl
 entity_type: paragraph
 bundle: hero_campaign
 label: 'Ghost Button URL'
