@@ -1,12 +1,30 @@
-uuid: 01b2c3d4-e5f6-789a-bcde-f0123456789a
+uuid: watershed-video-display-uuid
 langcode: en
 status: true
 dependencies:
   config:
     - paragraphs.paragraphs_type.watershed_video
+  module:
+    - media
 id: paragraph.watershed_video.default
 targetEntityType: paragraph
 bundle: watershed_video
 mode: default
-content: {  }
+content:
+  field_pbvideo_video:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_watershed_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
 hidden: {  }

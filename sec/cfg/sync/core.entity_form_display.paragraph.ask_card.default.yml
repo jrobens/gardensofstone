@@ -25,21 +25,12 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_pbasks_role:
-    type: string_textfield
-    weight: 1
+  field_pbasks_copy_button:
+    type: boolean_checkbox
+    weight: 6
     region: content
     settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-  field_pbasks_title:
-    type: string_textfield
-    weight: 2
-    region: content
-    settings:
-      size: 60
-      placeholder: ''
+      display_label: true
     third_party_settings: {  }
   field_pbasks_description:
     type: text_textarea
@@ -47,14 +38,6 @@ content:
     region: content
     settings:
       rows: 3
-      placeholder: ''
-    third_party_settings: {  }
-  field_pbasks_sample_text:
-    type: text_textarea
-    weight: 4
-    region: content
-    settings:
-      rows: 5
       placeholder: ''
     third_party_settings: {  }
   field_pbasks_email_link:
@@ -65,12 +48,29 @@ content:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
-  field_pbasks_copy_button:
-    type: boolean_checkbox
-    weight: 6
+  field_pbasks_role:
+    type: string_textfield
+    weight: 1
     region: content
     settings:
-      display_label: true
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_pbasks_sample_text:
+    type: text_textarea
+    weight: 4
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_pbasks_title:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
 hidden:
   admin_title: true

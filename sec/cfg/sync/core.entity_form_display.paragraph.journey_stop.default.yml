@@ -18,6 +18,14 @@ targetEntityType: paragraph
 bundle: journey_stop
 mode: default
 content:
+  field_pbjourney_content:
+    type: text_textarea
+    weight: 3
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
   field_pbjourney_icon:
     type: file_generic
     weight: 0
@@ -33,22 +41,6 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  field_pbjourney_title:
-    type: string_textfield
-    weight: 2
-    region: content
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-  field_pbjourney_content:
-    type: text_textarea
-    weight: 3
-    region: content
-    settings:
-      rows: 5
-      placeholder: ''
-    third_party_settings: {  }
   field_pbjourney_link:
     type: link_default
     weight: 4
@@ -56,6 +48,14 @@ content:
     settings:
       placeholder_url: ''
       placeholder_title: ''
+    third_party_settings: {  }
+  field_pbjourney_title:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
 hidden:
   admin_title: true

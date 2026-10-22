@@ -20,6 +20,14 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  entity_body_class:
+    type: string_textfield
+    weight: 26
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   field_category:
     type: options_select
     weight: 2
@@ -31,9 +39,12 @@ content:
     weight: 1
     region: content
     settings:
+      view_mode: default
       preview_view_mode: default
+      form_display_mode: default
       nesting_depth: 0
       require_layouts: 0
+      empty_message: ''
     third_party_settings: {  }
   path:
     type: path

@@ -1,0 +1,23 @@
+uuid: d07e0809-b700-45ea-ad69-eb20db200201
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pb_grid_cell
+    - paragraphs.paragraphs_type.pb_grid_container
+  module:
+    - entity_reference_revisions
+id: paragraph.pb_grid_container.field_pb_grid_cell
+field_name: field_pb_grid_cell
+entity_type: paragraph
+bundle: pb_grid_container
+label: field_pb_grid_cell
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings: {  }
+field_type: entity_reference_revisions

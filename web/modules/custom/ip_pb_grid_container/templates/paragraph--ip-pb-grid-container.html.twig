@@ -1,0 +1,12 @@
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle(),
+    'paragraph--type--ip-pb-grid-container',
+    'ip-pb-grid-container',
+    view_mode ? 'paragraph--view-mode--' ~ view_mode,
+  ]
+%}
+<div{{ attributes.addClass(classes) }}>
+  {{ content }}
+</div>

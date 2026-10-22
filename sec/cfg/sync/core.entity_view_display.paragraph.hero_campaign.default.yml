@@ -13,6 +13,9 @@ dependencies:
     - field.field.paragraph.hero_campaign.field_pbhero_scurl
     - field.field.paragraph.hero_campaign.field_pbhero_tag
     - paragraphs.paragraphs_type.hero_campaign
+  module:
+    - link
+    - text
 third_party_settings:
   content_view_extra_fields:
     attach_library: true
@@ -24,41 +27,50 @@ bundle: hero_campaign
 mode: default
 content:
   field_pbhero_gbtn:
-    type: string
-    label: above
+    type: link
+    label: hidden
     settings:
-      link_to_entity: false
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
     third_party_settings: {  }
     weight: 4
     region: content
   field_pbhero_head:
     type: string
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
+      link_rel: canonical
     third_party_settings: {  }
     weight: 1
     region: content
   field_pbhero_int:
     type: text_default
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     weight: 2
     region: content
   field_pbhero_pbtn:
-    type: string
-    label: above
+    type: link
+    label: hidden
     settings:
-      link_to_entity: false
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
     third_party_settings: {  }
     weight: 3
     region: content
   field_pbhero_tag:
     type: entity_reference_label
-    label: above
+    label: hidden
     settings:
-      link_to_entity: false
+      link: true
     third_party_settings: {  }
     weight: 0
     region: content

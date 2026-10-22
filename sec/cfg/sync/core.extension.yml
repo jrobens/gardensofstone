@@ -60,6 +60,7 @@ module:
   ip_connect: 0
   ip_footer: 0
   ip_pb_checkerboard: 0
+  ip_pb_grid_container: 0
   ip_pb_heading: 0
   ip_pb_image: 0
   ip_pb_image_square: 0

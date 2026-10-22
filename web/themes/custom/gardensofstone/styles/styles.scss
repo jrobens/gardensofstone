@@ -22,6 +22,11 @@
 @use 'pbherocampaign';
 @use 'footer';
 @use 'editing';
+// Hero Campaign Component (Coxs River Campaign)
+@import "pbherocampaign";
+
+// Grid Container - Responsive columns
+@import "ip_pb_grid_container";
 
 @media (min-width: 768px) {
   :root {
@@ -52,7 +57,7 @@
 
 @font-face {
   font-family: "Fraunces";
-  src: url("fonts/Fraunces/Fraunces-VariableFont_Wght.ttf");
+  src: url("fonts/Fraunces/Fraunces-VariableFont_SOFT,WONK,opsz,wght.ttf");
 }
 
 @font-face {
@@ -100,7 +105,7 @@ body .region-content a, body .region-content a:visited {
 
 
 html .is-family-primary {
-  font-family: 'Hind Guntur', sans-serif !important;
+  font-family: 'Hind Guntur', sans-serif;
 }
 
 body a:active {
@@ -327,6 +332,5 @@ body.path-- .column {
    }
 }
 
-// Hero Campaign Component (Coxs River Campaign)
-@import "pbherocampaign";
+
 

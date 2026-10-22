@@ -1,0 +1,5 @@
+name: 'IP PB Grid Container'
+type: module
+description: 'Provides a grid container paragraph type for responsive column layouts'
+core_version_requirement:  ^11
+package: IP Paragraph Bundles

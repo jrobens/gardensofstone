@@ -15,9 +15,9 @@ content:
   components:
     type: canvas_naive_render_sdc_tree
     label: hidden
-    weight: 0
-    region: content
     settings: {  }
     third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
   links: true

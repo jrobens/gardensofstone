@@ -12,4 +12,6 @@ content: {  }
 hidden:
   admin_title: true
   created: true
+  field_pbvideo_video: true
+  field_watershed_body: true
   status: true

@@ -1,0 +1,23 @@
+<?php
+
+
+/**
+ * @file
+ * Module file for IP PB Grid Container.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function ip_pb_grid_container_theme() {
+  return [
+    'ip_pb_grid_container' => [
+      'render element' => 'element',
+      'theme path' => __DIR__ . '/templates',
+    ],
+  ];
+}
+
+function ip_pb_grid_container_page_attachments(array &$page): void {
+  $page['#attached']['library'][] = 'ip_pb_grid_container/ip_pb_grid_container';
+}

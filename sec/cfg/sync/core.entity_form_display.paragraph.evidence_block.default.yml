@@ -19,44 +19,12 @@ targetEntityType: paragraph
 bundle: evidence_block
 mode: default
 content:
-  field_pbevidence_kicker:
-    type: string_textfield
-    weight: 0
-    region: content
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-  field_pbevidence_title:
-    type: string_textfield
-    weight: 1
-    region: content
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-  field_pbevidence_lede:
-    type: string_textfield
-    weight: 2
-    region: content
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
   field_pbevidence_body:
     type: text_textarea
     weight: 3
     region: content
     settings:
       rows: 7
-      placeholder: ''
-    third_party_settings: {  }
-  field_pbevidence_eco_title:
-    type: string_textfield
-    weight: 4
-    region: content
-    settings:
-      size: 60
       placeholder: ''
     third_party_settings: {  }
   field_pbevidence_eco_description:
@@ -75,9 +43,41 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  field_pbevidence_eco_title:
+    type: string_textfield
+    weight: 4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_pbevidence_kicker:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_pbevidence_lede:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   field_pbevidence_punchline:
     type: string_textfield
     weight: 7
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_pbevidence_title:
+    type: string_textfield
+    weight: 1
     region: content
     settings:
       size: 60

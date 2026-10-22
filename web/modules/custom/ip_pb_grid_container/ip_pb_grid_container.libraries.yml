@@ -1,0 +1,5 @@
+ip_pb_grid_container:
+  version: 1.x
+  css:
+    theme:
+      styles/ip_pb_grid_container.css: { preprocess: false, minified: false }

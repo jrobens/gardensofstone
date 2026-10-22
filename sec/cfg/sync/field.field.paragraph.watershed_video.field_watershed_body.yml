@@ -1,0 +1,20 @@
+uuid: watershed-video-body-uuid
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.watershed_video.field_watershed_body
+field_name: field_watershed_body
+entity_type: paragraph
+bundle: watershed_video
+label: Body
+description: 'Video description text'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

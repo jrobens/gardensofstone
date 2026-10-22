@@ -12,17 +12,23 @@ targetEntityType: node
 bundle: canvas_watershed
 mode: default
 content:
-  title:
+  components:
+    type: component_tree
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  entity_body_class:
     type: string_textfield
-    weight: -5
+    weight: 121
     region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  components:
-    type: component_tree
-    weight: 0
+  path:
+    type: path
+    weight: 30
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -32,6 +38,14 @@ content:
     region: content
     settings:
       display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
 hidden:
   created: true

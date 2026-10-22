@@ -1,0 +1,24 @@
+/* Grid Container - Responsive 1-4 columns */
+.paragraph--type--pb-grid-container > .layout > .layout__region--content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding: 1rem 0;
+}
+@media (min-width: 640px) {
+  .paragraph--type--pb-grid-container > .layout > .layout__region--content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .paragraph--type--pb-grid-container > .layout > .layout__region--content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 1280px) {
+  .paragraph--type--pb-grid-container > .layout > .layout__region--content {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/*# sourceMappingURL=ip_pb_grid_container.css.map */

@@ -1,0 +1,24 @@
+uuid: 84ebf82f-5a01-4c56-9dbe-36a0fd61938d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.pb_grid_container.field_pb_grid_cell
+    - paragraphs.paragraphs_type.pb_grid_container
+  module:
+    - entity_reference_revisions
+id: paragraph.pb_grid_container.default
+targetEntityType: paragraph
+bundle: pb_grid_container
+mode: default
+content:
+  field_pb_grid_cell:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }
