@@ -2,7 +2,7 @@
 .paragraph--type--pb-grid-container > .layout > .layout__region--content {
   display: grid;
   /* Automatically fits as many columns as possible, down to 250px each, up to a max of 4 columns */
-  grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(32rem, 100%), 1fr));
   gap: 2rem;
   padding: 1rem 0;
 }
