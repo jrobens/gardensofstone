@@ -1,19 +1,8 @@
-/* Grid Container - Responsive 1-4 columns */
-.paragraph--type--pb-grid-container > .layout > .layout__region--content{
+/* Grid Container - Responsive 1-4 columns (Auto-adjusting) */
+.paragraph--type--pb-grid-container > .layout > .layout__region--content {
   display: grid;
-  grid-template-columns: 1fr;
+  /* Automatically fits as many columns as possible, down to 250px each, up to a max of 4 columns */
+  grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
   gap: 2rem;
   padding: 1rem 0;
-
-  @media (min-width: 640px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  @media (min-width: 1024px) {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  @media (min-width: 1280px) {
-    grid-template-columns: repeat(4, 1fr);
-  }
 }
