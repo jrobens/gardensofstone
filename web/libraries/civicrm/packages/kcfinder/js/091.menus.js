@@ -498,7 +498,12 @@ _.openClipboard = function() {
 
         // CLIPBOARD FILES
         $.each(_.clipboard, function(i, val) {
-            let icon = val.smallIcon;
+            var icon = $.$.getFileExtension(val.name);
+            if (val.thumb)
+                icon = ".image";
+            else if (!val.smallIcon || !icon.length)
+                icon = ".";
+            icon = "themes/" + _.theme + "/img/files/small/" + icon + ".png";
             html += '<a title="' + _.label("Click to remove from the Clipboard") + '" onclick="_.removeFromClipboard(' + i + ')"' + ((i == 0) ? ' class="first"' : "") + '><span style="background-image:url(' + $.$.escapeDirs(icon) + ')">' + $.$.htmlData($.$.basename(val.name)) + '</span></a>';
         });
         html += '</div></li><li class="div-files">-</li>';

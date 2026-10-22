@@ -315,13 +315,6 @@
             }
             return angular.equals(val1, val2) === yes;
 
-          case 'BETWEEN':
-          case 'NOT BETWEEN':
-            if (Array.isArray(val2) && val2.length === 2) {
-              return (val1 >= val2[0] && val1 <= val2[1]) === yes;
-            }
-            return false;
-
           case 'LIKE':
           case 'NOT LIKE':
             if (typeof val1 === 'string' && typeof val2 === 'string') {
@@ -465,9 +458,6 @@
           }
           return;
         }
-        // Give elements (e.g. captcha widgets) a chance to write their
-        // current value into `data` before it's read for the API call.
-        $scope.$parent.$broadcast('afFormPreSubmit', data);
         $element.block();
         if (cancelDraftWatcher) {
           cancelDraftWatcher();

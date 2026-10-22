@@ -54,7 +54,12 @@ _.showFiles = function(callBack, selected) {
             if ($.$.kuki.get('view') == "list") {
                 if (!i) c.html('<table></table>');
 
-                icon = file.smallIcon;
+                icon = $.$.getFileExtension(file.name);
+                if (file.thumb)
+                    icon = ".image";
+                else if (!icon.length || !file.smallIcon)
+                    icon = ".";
+                icon = "themes/" + _.theme + "/img/files/small/" + icon + ".png";
 
                 f = $('<tr class="file"><td class="name thumb"></td><td class="time"></td><td class="size"></td></tr>');
                 f.appendTo(c.find('table'));
@@ -67,7 +72,9 @@ _.showFiles = function(callBack, selected) {
                     icon = _.uploadURL + "/" + _.dir + "/" + encodeURIComponent(file.name);
                     icon = $.$.escapeDirs(icon).replace(/\'/g, "%27");
                 } else {
-                    icon = file.bigIcon;
+                    icon = file.bigIcon ? $.$.getFileExtension(file.name) : ".";
+                    if (!icon.length) icon = ".";
+                    icon = "themes/" + _.theme + "/img/files/big/" + icon + ".png";
                 }
                 f = $('<div class="file"><div class="thumb"></div><div class="name"></div><div class="time"></div><div class="size"></div></div>');
                 f.appendTo(c);

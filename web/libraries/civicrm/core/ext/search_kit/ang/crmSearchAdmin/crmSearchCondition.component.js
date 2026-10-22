@@ -108,7 +108,7 @@
 
       // Ensures clause is using an operator that is allowed for the field
       function updateOperators() {
-        if ((!getOperator() || !ctrl.getOperators().map((operator) => operator.key).includes(getOperator()))) {
+        if ((!getOperator() || !_.includes(_.pluck(ctrl.getOperators(), 'key'), getOperator()))) {
           setOperator(ctrl.getOperators()[0].key);
         }
       }

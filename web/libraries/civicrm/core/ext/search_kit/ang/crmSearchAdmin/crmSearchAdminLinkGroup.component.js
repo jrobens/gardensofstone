@@ -18,7 +18,7 @@
       this.styles = CRM.crmSearchAdmin.styles;
 
       this.getStyle = function(item) {
-        return this.styles.find((style) => style.key === item.style);
+        return _.findWhere(this.styles, {key: item.style});
       };
 
       this.sortableOptions = {

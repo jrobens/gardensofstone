@@ -152,7 +152,7 @@
           // Calc fields are specific to a search display, not part of the schema
           if (!defn && ctrl.container.getSearchDisplay()) {
             const searchDisplay = ctrl.container.getSearchDisplay();
-            defn = searchDisplay.calc_fields.find((field) => field.name === fieldName);
+            defn = _.findWhere(searchDisplay.calc_fields, {name: fieldName});
           }
         } else if (ctrl.node.defn?.input_type) {
           // Extra (non-entity) field: seed from the inputType's extra_defn

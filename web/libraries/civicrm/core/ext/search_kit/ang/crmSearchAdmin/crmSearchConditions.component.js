@@ -21,7 +21,7 @@
         {key: '!=', value: ts('Lacks All')}
       ];
 
-      this.getField = (fieldName) => searchMeta.getField(fieldName, this.crmSearchAdmin.savedSearch);
+      this.getField = searchMeta.getField;
 
       this.fields = () => {
         let selectFields = this.crmSearchAdmin.getSelectFields(this.crmSearchAdmin.savedSearch);

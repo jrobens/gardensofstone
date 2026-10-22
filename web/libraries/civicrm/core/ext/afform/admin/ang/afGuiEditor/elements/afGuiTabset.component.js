@@ -46,10 +46,10 @@
         }
       };
 
-      this.addTab = () => {
+      this.addTab = function() {
         this.node['#children'].push({
           '#tag': 'af-tab',
-          'title': this.isPages() ? ts('New Page') : ts('New Tab'),
+          'title': ts('New Tab'),
           '#children': [],
         });
         this.selectTab(this.node['#children'].length - 1);
@@ -103,8 +103,6 @@
       this.getSetCount = function (tabIndex) {
         return _.wrap(tabIndex, getSetCount);
       };
-
-      this.isPages = () => this.node['page-nav-buttons'];
 
     }
   });

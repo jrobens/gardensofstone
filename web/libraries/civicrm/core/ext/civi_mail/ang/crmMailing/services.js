@@ -113,10 +113,7 @@
       get: function get(id) {
         var crmMailingMgr = this;
         var mailing;
-        return qApi('Mailing', 'get', {
-          select: ['*', 'custom.*'],
-          where: [['id', '=', id]],
-        })
+        return qApi('Mailing', 'get', {where: [['id', '=', id]]})
           .then((getResult) => {
             mailing = getResult[0];
             return $q.all([

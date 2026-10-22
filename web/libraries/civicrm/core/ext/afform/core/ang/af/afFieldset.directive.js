@@ -6,7 +6,6 @@
       require: ['afFieldset', '?^^afForm', '?afRepeat'],
       bindToController: {
         modelName: '@afFieldset',
-        fieldData: '<',
         storeValues: '<'
       },
       link: function($scope, $el, $attr, ctrls) {
@@ -91,14 +90,8 @@
           return this.reloadedStoredValues[fieldName];
         };
 
-        this.$onInit = () => {
-          if (typeof this.fieldData === 'object') {
-            localData.push({
-              fields: this.fieldData,
-            });
-          }
-
-          $scope.$watch(this.getFieldData, (newVal, oldVal) => {
+        this.$onInit = function() {
+          $scope.$watch(ctrl.getFieldData, (newVal, oldVal) => {
             $element[0].dispatchEvent(new Event('crmFormChangeFilters'));
             if (this.storeValues) {
               if (typeof newVal === 'object' && typeof oldVal === 'object' && Object.keys(newVal).length) {
