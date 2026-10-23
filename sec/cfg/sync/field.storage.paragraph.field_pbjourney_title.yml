@@ -1,9 +1,9 @@
-uuid: journey-title-storage-uuid
+uuid: journey-section-title-storage-uuid
 langcode: en
 status: true
 dependencies:
   module:
-    - text
+    - paragraphs
 id: paragraph.field_pbjourney_title
 field_name: field_pbjourney_title
 entity_type: paragraph
@@ -15,7 +15,7 @@ settings:
 module: core
 locked: false
 cardinality: 1
-translatable: false
+translatable: true
 indexes: {  }
 persist_with_no_fields: false
 custom_storage: false
