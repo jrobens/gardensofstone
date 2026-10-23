@@ -1,0 +1,20 @@
+uuid: journey-section-body-field-instance-uuid
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pbjourney_body
+    - paragraphs.paragraphs_type.journey_section
+id: paragraph.journey_section.field_pbjourney_body
+field_name: field_pbjourney_body
+entity_type: paragraph
+bundle: journey_section
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

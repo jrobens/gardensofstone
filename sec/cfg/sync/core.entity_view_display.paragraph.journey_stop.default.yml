@@ -3,11 +3,13 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.journey_stop.field_pbjourney_content
+    - field.field.paragraph.journey_stop.field_pbjourney_description
     - field.field.paragraph.journey_stop.field_pbjourney_icon
     - field.field.paragraph.journey_stop.field_pbjourney_label
     - field.field.paragraph.journey_stop.field_pbjourney_link
-    - field.field.paragraph.journey_stop.field_pbjourney_title
+    - field.field.paragraph.journey_stop.field_pbjourney_pollution
+    - field.field.paragraph.journey_stop.field_pbjourney_stat
+    - field.field.paragraph.journey_stop.field_pbjourney_sub
     - paragraphs.paragraphs_type.journey_stop
   module:
     - file
@@ -18,7 +20,7 @@ targetEntityType: paragraph
 bundle: journey_stop
 mode: default
 content:
-  field_pbjourney_content:
+  field_pbjourney_description:
     type: text_default
     label: hidden
     settings: {  }
@@ -26,10 +28,9 @@ content:
     weight: 3
     region: content
   field_pbjourney_icon:
-    type: file_default
+    type: file_url_plain
     label: hidden
-    settings:
-      use_description_as_link_text: true
+    settings: {  }
     third_party_settings: {  }
     weight: 0
     region: content
@@ -52,15 +53,32 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    weight: 4
+    weight: 6
     region: content
-  field_pbjourney_title:
+  field_pbjourney_pollution:
+    type: boolean
+    label: hidden
+    settings:
+      format: default
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_pbjourney_stat:
     type: string
     label: hidden
     settings:
       link_to_entity: false
-      link_rel: canonical
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_pbjourney_sub:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
     third_party_settings: {  }
     weight: 2
     region: content
-hidden: {  }
+hidden:
+  field_pbjourney_content: true
+  field_pbjourney_title: true

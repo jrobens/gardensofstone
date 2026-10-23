@@ -1,0 +1,19 @@
+uuid: journey-section-kicker-instance-uuid
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pbjourney_kicker
+    - paragraphs.paragraphs_type.journey_section
+id: paragraph.journey_section.field_pbjourney_kicker
+field_name: field_pbjourney_kicker
+entity_type: paragraph
+bundle: journey_section
+label: Kicker
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

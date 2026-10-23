@@ -1,0 +1,27 @@
+uuid: journey-section-stops-field-instance-uuid
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pbjourney_stops
+    - paragraphs.paragraphs_type.journey_section
+id: paragraph.journey_section.field_pbjourney_stops
+field_name: field_pbjourney_stops
+entity_type: paragraph
+bundle: journey_section
+label: 'Journey Stops'
+description: 'Add journey stops here'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings:
+    target_bundles:
+      journey_stop: journey_stop
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference_revisions

@@ -60,4 +60,8 @@ content:
 hidden:
   admin_title: true
   created: true
+  field_pbjourney_description: true
+  field_pbjourney_pollution: true
+  field_pbjourney_stat: true
+  field_pbjourney_sub: true
   status: true

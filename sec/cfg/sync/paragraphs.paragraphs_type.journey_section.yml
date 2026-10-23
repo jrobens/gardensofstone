@@ -1,0 +1,15 @@
+uuid: journey-section-uuid
+langcode: en
+status: true
+dependencies:
+  module:
+    - layout_paragraphs
+id: journey_section
+label: 'Journey Section'
+icon_uuid: null
+icon_default: null
+description: 'A container for journey stops'
+behavior_plugins:
+  layout_paragraphs:
+    enabled: false
+    available_layouts: {  }

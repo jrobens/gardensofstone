@@ -1,0 +1,51 @@
+uuid: 8a1def1d-4983-4d09-a5f6-dfd9cb106fad
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.journey_section.field_pbjourney_body
+    - field.field.paragraph.journey_section.field_pbjourney_kicker
+    - field.field.paragraph.journey_section.field_pbjourney_title
+    - paragraphs.paragraphs_type.journey_section
+  module:
+    - text
+id: paragraph.journey_section.default
+targetEntityType: paragraph
+bundle: journey_section
+mode: default
+content:
+  admin_title:
+    type: string_textfield
+    weight: 4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_pbjourney_body:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_pbjourney_kicker:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_pbjourney_title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

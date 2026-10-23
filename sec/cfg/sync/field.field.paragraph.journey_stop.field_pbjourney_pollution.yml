@@ -1,0 +1,21 @@
+uuid: journey-pollution-field-instance-uuid
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pbjourney_pollution
+    - paragraphs.paragraphs_type.journey_stop
+id: paragraph.journey_stop.field_pbjourney_pollution
+field_name: field_pbjourney_pollution
+entity_type: paragraph
+bundle: journey_stop
+label: Pollution
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
