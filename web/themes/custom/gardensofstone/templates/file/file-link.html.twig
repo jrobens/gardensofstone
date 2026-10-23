@@ -1,0 +1,18 @@
+{#
+/**
+ * @file
+ * Override to handle SVG files inline.
+ */
+#}
+<p>DEBUG: file-link.twig being used</p>
+<p>MIME: {{ attributes.get('data-mime') }}</p>
+{% if attributes.get('src') %}
+    <img{{ attributes }}>
+{% else %}
+    <span{{ attributes }}>{{ link }}</span>
+{% endif %}
+{% if file_size and not attributes.get('src') %}
+    <span>({{ file_size }})</span>
+{% endif %}
+
+
