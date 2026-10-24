@@ -38,6 +38,18 @@ content:
     third_party_settings: {  }
     weight: 4
     region: content
+  field_pbhero_gurl:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 6
+    region: content
   field_pbhero_head:
     type: string
     label: hidden
@@ -66,6 +78,38 @@ content:
     third_party_settings: {  }
     weight: 3
     region: content
+  field_pbhero_purl:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_pbhero_scue:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_pbhero_scurl:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 8
+    region: content
   field_pbhero_tag:
     type: entity_reference_label
     label: hidden
@@ -74,8 +118,4 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
-hidden:
-  field_pbhero_gurl: true
-  field_pbhero_purl: true
-  field_pbhero_scue: true
-  field_pbhero_scurl: true
+hidden: {  }

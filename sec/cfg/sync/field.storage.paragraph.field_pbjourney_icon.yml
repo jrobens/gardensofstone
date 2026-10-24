@@ -1,23 +1,20 @@
-uuid: journey-icon-storage-uuid
+uuid: 5d63d146-8d52-4bf7-a807-16e5821143b0
 langcode: en
 status: true
 dependencies:
   module:
-    - file
-    - image
+    - media
+    - paragraphs
 id: paragraph.field_pbjourney_icon
 field_name: field_pbjourney_icon
 entity_type: paragraph
-type: file
+type: entity_reference
 settings:
-  target_type: file
-  display_field: false
-  display_default: false
-  uri_scheme: public
+  target_type: media
 module: core
 locked: false
 cardinality: 1
-translatable: false
+translatable: true
 indexes: {  }
 persist_with_no_fields: false
 custom_storage: false

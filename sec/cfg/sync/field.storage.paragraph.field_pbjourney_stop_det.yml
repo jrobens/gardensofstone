@@ -1,18 +1,16 @@
-uuid: pbevidence-lede-uuid
+uuid: 19734815-dd97-45e3-b792-656947456c2c
 langcode: en
 status: true
 dependencies:
   module:
     - paragraphs
-id: paragraph.field_pbevidence_lede
-field_name: field_pbevidence_lede
+    - text
+id: paragraph.field_pbjourney_stop_det
+field_name: field_pbjourney_stop_det
 entity_type: paragraph
-type: string
-settings:
-  max_length: 255
-  case_sensitive: false
-  is_ascii: false
-module: core
+type: text_long
+settings: {  }
+module: text
 locked: false
 cardinality: 1
 translatable: true

@@ -149,6 +149,12 @@ content:
     third_party_settings: {  }
     weight: 5
     region: content
+  field_watershed_content:
+    type: entity_reference_revisions_entity_view
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: content
   links:
     settings: {  }
     third_party_settings: {  }

@@ -4,7 +4,7 @@ status: true
 dependencies:
   module:
     - paragraphs
-id: paragraph.stat_card
+id: paragraph_stat_card
 label: 'Stat Card'
 icon_uuid: null
 icon_default: null

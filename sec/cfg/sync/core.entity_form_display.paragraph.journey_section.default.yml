@@ -5,9 +5,11 @@ dependencies:
   config:
     - field.field.paragraph.journey_section.field_pbjourney_body
     - field.field.paragraph.journey_section.field_pbjourney_kicker
+    - field.field.paragraph.journey_section.field_pbjourney_stops
     - field.field.paragraph.journey_section.field_pbjourney_title
     - paragraphs.paragraphs_type.journey_section
   module:
+    - layout_paragraphs
     - text
 id: paragraph.journey_section.default
 targetEntityType: paragraph
@@ -37,6 +39,18 @@ content:
     settings:
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  field_pbjourney_stops:
+    type: layout_paragraphs
+    weight: 3
+    region: content
+    settings:
+      view_mode: default
+      preview_view_mode: default
+      form_display_mode: default
+      nesting_depth: 0
+      require_layouts: 0
+      empty_message: ''
     third_party_settings: {  }
   field_pbjourney_title:
     type: string_textfield

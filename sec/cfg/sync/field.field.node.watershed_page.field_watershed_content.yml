@@ -41,6 +41,12 @@ settings:
       image_square:
         weight: 12
         enabled: false
+      journey_section:
+        weight: 16
+        enabled: true
+      journey_stop:
+        weight: 17
+        enabled: false
       map:
         weight: 13
         enabled: false

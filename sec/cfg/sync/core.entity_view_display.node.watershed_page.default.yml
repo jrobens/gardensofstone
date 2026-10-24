@@ -1,0 +1,30 @@
+uuid: fd881036-fb49-4407-a4e8-9688a83c2a65
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.watershed_page.field_watershed_content
+    - node.type.watershed_page
+  module:
+    - entity_reference_revisions
+    - user
+id: node.watershed_page.default
+targetEntityType: node
+bundle: watershed_page
+mode: default
+content:
+  field_watershed_content:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

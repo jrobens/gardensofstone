@@ -23,6 +23,14 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  entity_body_class:
+    type: string_textfield
+    weight: 102
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   field_caption:
     type: string_textfield
     weight: 101

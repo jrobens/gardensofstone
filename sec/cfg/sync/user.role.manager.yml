@@ -40,6 +40,7 @@ dependencies:
     - paragraphs
     - path
     - photos
+    - save_edit
     - search
     - system
     - taxonomy
@@ -190,6 +191,7 @@ permissions:
   - 'update media'
   - 'use admin toolbar search'
   - 'use advanced search'
+  - 'use save and edit'
   - 'use text format basic_html'
   - 'use text format full_html'
   - 'use text format restricted_html'

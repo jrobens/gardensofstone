@@ -3,35 +3,26 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.journey_stop.field_pbjourney_content
     - field.field.paragraph.journey_stop.field_pbjourney_icon
     - field.field.paragraph.journey_stop.field_pbjourney_label
     - field.field.paragraph.journey_stop.field_pbjourney_link
-    - field.field.paragraph.journey_stop.field_pbjourney_title
+    - field.field.paragraph.journey_stop.field_pbjourney_stop_det
     - paragraphs.paragraphs_type.journey_stop
   module:
-    - file
     - link
+    - media_library
     - text
 id: paragraph.journey_stop.default
 targetEntityType: paragraph
 bundle: journey_stop
 mode: default
 content:
-  field_pbjourney_content:
-    type: text_textarea
-    weight: 3
-    region: content
-    settings:
-      rows: 5
-      placeholder: ''
-    third_party_settings: {  }
   field_pbjourney_icon:
-    type: file_generic
+    type: media_library_widget
     weight: 0
     region: content
     settings:
-      progress_indicator: throbber
+      media_types: {  }
     third_party_settings: {  }
   field_pbjourney_label:
     type: string_textfield
@@ -43,25 +34,21 @@ content:
     third_party_settings: {  }
   field_pbjourney_link:
     type: link_default
-    weight: 4
+    weight: 3
     region: content
     settings:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
-  field_pbjourney_title:
-    type: string_textfield
+  field_pbjourney_stop_det:
+    type: text_textarea
     weight: 2
     region: content
     settings:
-      size: 60
+      rows: 5
       placeholder: ''
     third_party_settings: {  }
 hidden:
   admin_title: true
   created: true
-  field_pbjourney_description: true
-  field_pbjourney_pollution: true
-  field_pbjourney_stat: true
-  field_pbjourney_sub: true
   status: true

@@ -8,7 +8,6 @@ dependencies:
     - field.field.paragraph.evidence_block.field_pbevidence_eco_link
     - field.field.paragraph.evidence_block.field_pbevidence_eco_title
     - field.field.paragraph.evidence_block.field_pbevidence_kicker
-    - field.field.paragraph.evidence_block.field_pbevidence_lede
     - field.field.paragraph.evidence_block.field_pbevidence_punchline
     - field.field.paragraph.evidence_block.field_pbevidence_title
     - paragraphs.paragraphs_type.evidence_block
@@ -54,14 +53,6 @@ content:
   field_pbevidence_kicker:
     type: string_textfield
     weight: 0
-    region: content
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-  field_pbevidence_lede:
-    type: string_textfield
-    weight: 2
     region: content
     settings:
       size: 60

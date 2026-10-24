@@ -1,0 +1,21 @@
+_core:
+  default_config_hash: L7Q6G9fWNFbrzMeBzG3gacQfIVAm_vKH7gUi3fgNSk8
+button_value: 'Save & Edit'
+button_weight: '-1'
+gin_primary: true
+unpublish: false
+unpublish_new_only: false
+hide_default_save: false
+hide_default_preview: false
+hide_default_delete: false
+enable_node_types_automatically: false
+node_types:
+  page_and_layout: page_and_layout
+  watershed_page: watershed_page
+  article: '0'
+  canvas_watershed: '0'
+  landing: '0'
+  news_and_events: '0'
+  page: '0'
+  photos: '0'
+save_button_text: ''

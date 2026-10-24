@@ -1,0 +1,40 @@
+uuid: d255e8ae-379e-4b7d-b277-df8f816481cc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.paragraph_stat_card.field_pbstat_label
+    - field.field.paragraph.paragraph_stat_card.field_pbstat_number
+    - paragraphs.paragraphs_type.paragraph_stat_card
+id: paragraph.paragraph_stat_card.default
+targetEntityType: paragraph
+bundle: paragraph_stat_card
+mode: default
+content:
+  admin_title:
+    type: string_textfield
+    weight: -10
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_pbstat_label:
+    type: string_textfield
+    weight: -8
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_pbstat_number:
+    type: string_textfield
+    weight: -9
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

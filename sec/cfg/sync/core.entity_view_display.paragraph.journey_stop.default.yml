@@ -3,16 +3,12 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.journey_stop.field_pbjourney_description
     - field.field.paragraph.journey_stop.field_pbjourney_icon
     - field.field.paragraph.journey_stop.field_pbjourney_label
     - field.field.paragraph.journey_stop.field_pbjourney_link
-    - field.field.paragraph.journey_stop.field_pbjourney_pollution
-    - field.field.paragraph.journey_stop.field_pbjourney_stat
-    - field.field.paragraph.journey_stop.field_pbjourney_sub
+    - field.field.paragraph.journey_stop.field_pbjourney_stop_det
     - paragraphs.paragraphs_type.journey_stop
   module:
-    - file
     - link
     - text
 id: paragraph.journey_stop.default
@@ -20,17 +16,12 @@ targetEntityType: paragraph
 bundle: journey_stop
 mode: default
 content:
-  field_pbjourney_description:
-    type: text_default
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    weight: 3
-    region: content
   field_pbjourney_icon:
-    type: file_url_plain
-    label: hidden
-    settings: {  }
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
     third_party_settings: {  }
     weight: 0
     region: content
@@ -53,32 +44,13 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    weight: 6
+    weight: 3
     region: content
-  field_pbjourney_pollution:
-    type: boolean
+  field_pbjourney_stop_det:
+    type: text_default
     label: hidden
-    settings:
-      format: default
-    third_party_settings: {  }
-    weight: 5
-    region: content
-  field_pbjourney_stat:
-    type: string
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 4
-    region: content
-  field_pbjourney_sub:
-    type: string
-    label: hidden
-    settings:
-      link_to_entity: false
+    settings: {  }
     third_party_settings: {  }
     weight: 2
     region: content
-hidden:
-  field_pbjourney_content: true
-  field_pbjourney_title: true
+hidden: {  }

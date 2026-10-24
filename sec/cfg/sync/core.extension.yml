@@ -26,7 +26,6 @@ module:
   config: 0
   contextual: 0
   copyright_footer: 0
-  core_event_dispatcher: 0
   crop: 0
   crossfade: 0
   ctools: 0
@@ -66,8 +65,6 @@ module:
   ip_pb_image_square: 0
   ip_pb_index_block: 0
   ip_pb_quote: 0
-  ip_pbhero_campaign: 0
-  ip_watershed: 0
   key: 0
   layout_builder: 0
   layout_discovery: 0
@@ -76,11 +73,8 @@ module:
   leaflet_demo: 0
   leaflet_more_maps: 0
   leaflet_views: 0
-  libraries_provider: 0
-  libraries_provider_ui: 0
   link: 0
   lp_fontawesome: 0
-  markdown: 0
   media: 0
   media_bulk_upload: 0
   media_bulk_upload_dropzonejs: 0
@@ -105,10 +99,13 @@ module:
   plupload: 0
   recaptcha_v3: 0
   responsive_image: 0
+  save_edit: 0
   search: 0
   search_help: 0
   search_node: 0
   shortcut: 0
+  svg_image: 0
+  svg_image_responsive: 0
   system: 0
   taxonomy: 0
   term_condition: 0

@@ -1,29 +1,31 @@
-uuid: c7d8e9f0-a1b2-3456-789a-bcdef0123456
+uuid: c4812b80-ef85-4db0-b489-ea56ad3aeec3
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.loophole_stat_card.field_pbloophole_stat_label
-    - field.field.paragraph.loophole_stat_card.field_pbloophole_stat_number
-    - paragraphs.paragraphs_type.loophole_stat_card
-id: paragraph.loophole_stat_card.default
+    - field.field.paragraph.paragraph_stat_card.field_pbstat_label
+    - field.field.paragraph.paragraph_stat_card.field_pbstat_number
+    - paragraphs.paragraphs_type.paragraph_stat_card
+id: paragraph.paragraph_stat_card.default
 targetEntityType: paragraph
-bundle: loophole_stat_card
+bundle: paragraph_stat_card
 mode: default
 content:
-  field_pbloophole_stat_label:
+  field_pbstat_label:
     type: string
     label: hidden
     settings:
       link_to_entity: false
+      link_rel: canonical
     third_party_settings: {  }
     weight: 1
     region: content
-  field_pbloophole_stat_number:
+  field_pbstat_number:
     type: string
     label: hidden
     settings:
       link_to_entity: false
+      link_rel: canonical
     third_party_settings: {  }
     weight: 0
     region: content
