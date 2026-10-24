@@ -42,6 +42,12 @@
   }
 }
 
+#gin-toolbar-bar {
+  li.menu-item > a.toolbar-icon {
+    font-size: 0.8rem;
+  }
+}
+
 #admin-toolbar-search-field-tab {
   position: fixed;
   bottom: 0;
