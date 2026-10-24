@@ -1,3 +1,36 @@
+5879   23/Oct 17:20   php    Debug      Deprecated function: ArrayIterator::__construct(): Using an    
+object as a backing array for ArrayIterator is deprecated, as  
+it allows violating class constraints and invariants in        
+Drupal\markdown\Annotation\AnnotationObject->getIterator()     
+(line 245 of                                                   
+/Users/jrobens/Sites/gardensofstone2/web/modules/contrib/mark  
+down/src/Annotation/AnnotationObject.php) #0                   
+/Users/jrobens/Sites/gardensofstone2/web/core/includes/bootst  
+rap.inc(104): _drupal_error_handler_real(8192,
+
+5879   23/Oct 17:20   php    Debug      Deprecated function: ArrayIterator::__construct(): Using an    
+object as a backing array for ArrayIterator is deprecated, as  
+it allows violating class constraints and invariants in        
+Drupal\markdown\Annotation\AnnotationObject->getIterator()     
+(line 245 of                                                   
+/Users/jrobens/Sites/gardensofstone2/web/modules/contrib/mark  
+down/src/Annotation/AnnotationObject.php) #0                   
+/Users/jrobens/Sites/gardensofstone2/web/core/includes/bootst  
+rap.inc(104): _drupal_error_handler_real(8192,                 
+'ArrayIterator::...', '/Users/jrobens/...', 245)               
+#1 [internal function]: _drupal_error_handler(8192,            
+'ArrayIterator::...', '/Users/jrobens/...', 245)               
+#2                                                             
+/Users/jrobens/Sites/gardensofstone2/web/modules/contrib/mark  
+down/src/Annotation/AnnotationObject.php(245):                 
+ArrayIterator->__construct(Object(Drupal\markdown\Annotation\  
+MarkdownExtension))                                            
+#3 [internal function]:                                        
+Drupal\markdown\Annotation\AnnotationObject->getIterator()     
+#4
+
+
+
 
 Deprecated function: dirname(): Passing null to parameter #1 ($path) of type string is deprecated in Drupal\Core\Extension\ExtensionPathResolver->getPath() (line 85 of /srv/web/gardensofstone.org.au/web/core/lib/Drupal/Core/Extension/ExtensionPathResolver.php)
 #0 /srv/web/gardensofstone.org.au/web/core/includes/bootstrap.inc(104): _drupal_error_handler_real()
