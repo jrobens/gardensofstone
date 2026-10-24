@@ -1,7 +1,0 @@
-name: IP Watershed
-type: module
-description: 'Watershed theme components for Gardens of Stone Alliance'
-package: Interlated
-core_version_requirement: ^10 || ^11
-dependencies:
-  - paragraphs:paragraphs
