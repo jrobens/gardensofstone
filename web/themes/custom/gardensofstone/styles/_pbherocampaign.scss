@@ -1,92 +1,106 @@
 // Hero Campaign styles
 // Compiled from ip_pbhero_campaign module
+.field_watershed_content {
+  .hero {
+    position: relative;
+    background: linear-gradient(180deg, rgba(15, 22, 17, 0.78) 0%, rgba(15, 22, 17, 0.6) 55%, rgba(15, 22, 17, 0.82) 100%), url('../images/hero-coxs-river.jpg') center 38% / cover no-repeat;;
+    padding: 96px 0 84px;
+    overflow: hidden;
 
-.hero {
-  position: relative;
-  background:
-    linear-gradient(180deg, rgba(15,22,17,0.78) 0%, rgba(15,22,17,0.6) 55%, rgba(15,22,17,0.82) 100%);
-  padding: 96px 0 84px;
-  overflow: hidden;
+    .wrap {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 36px;
+      margin: 0 auto;
+      padding: 0 28px;
+    }
 
-  .wrap {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 36px;
-    max-width: 1080px;
-    margin: 0 auto;
-    padding: 0 28px;
-  }
-
-  .eyebrow-line {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 0.86rem;
-    color: #D3A868;
-    font-weight: 600;
-    margin-bottom: 18px;
-  }
-
-  .eyebrow-line .dot {
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
-    background: var(--clay);
-  }
-
-  .headline {
-    font-family: 'Fraunces', serif;
-    font-size: clamp(2.1rem, 4.4vw, 3.4rem);
-    line-height: 1.1;
-    max-width: 16ch;
-    color: var(--paper);
-  }
-
-  .sub,
-  .intro {
-    margin-top: 20px;
-    max-width: 56ch;
-    font-size: 1.08rem;
-    color: #DCD6C4;
-  }
-
-  .hero-ctas {
-    display: flex;
-    gap: 14px;
-    margin-top: 30px;
-    flex-wrap: wrap;
-  }
-
-  .btn-primary {
-    background: var(--clay);
-    color: var(--paper);
-    padding: 14px 26px;
-    border-radius: 3px;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 0.96rem;
-  }
-
-  .btn-ghost {
-    border: 1.5px solid rgba(247,243,234,0.7);
-    color: var(--paper);
-    padding: 12.5px 24px;
-    border-radius: 3px;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 0.96rem;
-  }
-
-  .scroll-cue {
-    margin-top: 44px;
-
-    a {
-      font-size: 0.9rem;
+    .eyebrow-line {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.86rem;
+      color: #D3A868;
       font-weight: 600;
+      margin-bottom: 18px;
+    }
+
+    .eyebrow-line .dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--clay);
+    }
+
+    .headline {
+      font-family: 'Fraunces', serif;
+      font-size: clamp(2.1rem, 4.4vw, 3.4rem);
+      line-height: 1.1;
+      max-width: 16ch;
       color: var(--paper);
+    }
+
+    .sub,
+    .intro {
+      margin-top: 20px;
+      max-width: 56ch;
+      font-size: 1.08rem;
+      color: #DCD6C4;
+    }
+
+    .hero .sub .field_pbhero_int,
+    .hero .sub .field-watershed-content {
+      margin-top: 0;
+    }
+
+    .hero .sub .field_pbhero_int p,
+    .hero .sub .field_pbhero_int,
+    .hero .sub .field-watershed-content p,
+    .hero .sub .field-watershed-content {
+      margin: 0;
+      max-width: 56ch;
+      font-size: 1.08rem;
+      color: #DCD6C4;
+    }
+
+    .hero-ctas {
+      display: flex;
+      gap: 14px;
+      margin-top: 30px;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      background: var(--clay);
+      color: var(--paper);
+      padding: 14px 26px;
+      border-radius: 3px;
       text-decoration: none;
-      border-bottom: 1.5px solid rgba(247,243,234,0.45);
-      padding-bottom: 2px;
+      font-weight: 600;
+      font-size: 0.96rem;
+    }
+
+    .btn-ghost {
+      border: 1.5px solid rgba(247, 243, 234, 0.7);
+      color: var(--paper);
+      padding: 12.5px 24px;
+      border-radius: 3px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.96rem;
+    }
+
+    .scroll-cue {
+      margin-top: 44px;
+
+      a {
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: var(--paper);
+        text-decoration: none;
+        border-bottom: 1.5px solid rgba(247, 243, 234, 0.45);
+        padding-bottom: 2px;
+      }
     }
   }
 }

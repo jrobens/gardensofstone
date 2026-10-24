@@ -21,37 +21,42 @@
 {% block paragraph %}
   <div{{ attributes.addClass(classes) }}>
     {% block content %}
-      <div class="wrap{{ attributes.addClass('wrap') }}">
+      <div class="wrap container">
         <div>
-          {% if content.field_pbhero_campaign_tag %}
+          {% if content.field_pbhero_tag %}
             <div class="eyebrow-line">
               <span class="dot"></span>
-              {{ content.field_pbhero_campaign_tag }}
+              {{ content.field_pbhero_tag }}
             </div>
           {% endif %}
-          {% if content.field_pbhero_campaign_headline %}
-            <h1 class="headline">{{ content.field_pbhero_campaign_headline }}</h1>
+          {% if content.field_pbhero_head %}
+            <h1 class="headline">{{ content.field_pbhero_head }}</h1>
           {% endif %}
-          {% if content.field_pbhero_campaign_intro %}
-            <p class="sub">{{ content.field_pbhero_campaign_intro }}</p>
-          {% endif %}
-          <div class="hero-ctas">
-            {% if content.field_pbhero_campaign_primary_btn and content.field_pbhero_campaign_primary_btn_url %}
-              <a class="btn-primary" href="{{ content.field_pbhero_campaign_primary_btn_url }}">{{ content.field_pbhero_campaign_primary_btn }}</a>
-            {% endif %}
-            {% if content.field_pbhero_campaign_ghost_btn and content.field_pbhero_campaign_ghost_btn_url %}
-              <a class="btn-ghost" href="{{ content.field_pbhero_campaign_ghost_btn_url }}">{{ content.field_pbhero_campaign_ghost_btn }}</a>
-            {% endif %}
-          </div>
-          {% if content.field_pbhero_campaign_scroll_cue %}
-            <div class="scroll-cue">
-              {% if content.field_pbhero_campaign_scroll_cue_url %}
-                <a href="{{ content.field_pbhero_campaign_scroll_cue_url }}">See how the water gets here &darr;</a>
-              {% else %}
-                <span>See how the water gets here &darr;</span>
-              {% endif %}
-            </div>
-          {% endif %}
+           {% if content.field_pbhero_int %}
+             <div class="sub">{{ content.field_pbhero_int }}</div>
+           {% endif %}
+           {% set purl = paragraph.field_pbhero_pbtn.uri ?: '' %}
+           {% set gurl = paragraph.field_pbhero_gbtn.uri ?: '' %}
+           {% set scurl = paragraph.field_pbhero_scurl.value|default('') %}
+           {% set pbtn = paragraph.field_pbhero_pbtn.title ?: '' %}
+           {% set gbtn = paragraph.field_pbhero_gbtn.title ?: '' %}
+           <div class="hero-ctas">
+             {% if pbtn and purl %}
+               <a class="btn-primary" href="{{ purl }}">{{ pbtn }}</a>
+             {% endif %}
+             {% if gbtn and gurl %}
+               <a class="btn-ghost" href="{{ gurl }}">{{ gbtn }}</a>
+             {% endif %}
+           </div>
+           {% if content.field_pbhero_scue %}
+             <div class="scroll-cue">
+               {% if scurl %}
+                 <a href="{{ scurl }}">See how the water gets here &darr;</a>
+               {% else %}
+                 <span>See how the water gets here &darr;</span>
+               {% endif %}
+             </div>
+           {% endif %}
         </div>
       </div>
     {% endblock %}

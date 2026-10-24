@@ -1,5 +1,6 @@
 @use "../../../../libraries/bulma/sass/utilities/initial-variables";
 @use '../../../../sites/variables' as *;
+@use "../../../../libraries/node_modules/bulma/sass";
 @use 'navbar';
 @use 'breadcrumbs';
 @use 'crossfade';
@@ -10,9 +11,10 @@
 @use 'pbtext';
 @use 'pbquote';
 @use 'views_image_layout';
-@use 'page';
+@use 'page_layout';
 @use 'photos';
 @use 'webform';
+@use 'pbjourney';
 @use 'pbjourneystop';
 @use 'pbevidence';
 @use 'pbasks';
@@ -20,13 +22,9 @@
 @use 'pbwatershed';
 @use 'pbnetwork';
 @use 'pbherocampaign';
+@use 'watershed-reference';
 @use 'footer';
 @use 'editing';
-// Hero Campaign Component (Coxs River Campaign)
-@import "pbherocampaign";
-
-// Grid Container - Responsive columns
-@import "ip_pb_grid_container";
 
 @media (min-width: 768px) {
   :root {
@@ -35,69 +33,16 @@
   }
 }
 
-@font-face {
-  font-family: "Lexend_Deca";
-  src: url("fonts/Lexend_Deca/LexendDeca-VariableFont_wght.ttf");
-}
-
-@font-face {
-  font-family: "Electrolize";
-  src: url('fonts/Electrolize/Electrolize-Regular.ttf');
-}
-
-@font-face {
-  font-family: "Font Awesome 6 Free";
-  src: url("fontawesome-free-web/webfonts/fa-solid-900.woff2");
-}
-
-@font-face {
-  font-family: "Libre Franklin";
-  src: url("fonts/Libre_Franklin/LibreFranklin-VariableFont_wght.ttf");
-}
-
-@font-face {
-  font-family: "Fraunces";
-  src: url("fonts/Fraunces/Fraunces-VariableFont_SOFT,WONK,opsz,wght.ttf");
-}
-
-@font-face {
-  font-family: "Handlee";
-  src: url("fonts/Handlee/Handlee-Regular.ttf");
-}
-
-@font-face {
-  font-family: DMSans-Regular;
-  src: local(DMSans-Regular), url(fonts/DM_Sans/DMSans-VariableFont_opsz,wght.ttf) format("truetype");
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-}
-
-@font-face {
-  font-family: DMSans-Bold;
-  src: local(DMSans-Bold), url(fonts/DM_Sans/DMSans-VariableFont_opsz,wght.ttf) format("truetype");
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-}
-
-@font-face {
-  font-family: DMSerifDisplay;
-  src: local(DMSerifDisplay-Regular), url(fonts/DM_Serif_Display/DMSerifDisplay-Regular.ttf) format("truetype");
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-}
 
 body {
   font: 100 100%/1.5 'Hind Guntur', sans-serif;
   color: rgb(27, 27, 27);
+
+  a, a:visited {
+    color: $link_inverse;
+  }
 }
 
-body a,
-body a:visited {
-  color: $link_inverse;
-}
 
 body .region-content a, body .region-content a:visited {
   color: $link;
@@ -118,219 +63,3 @@ h3,
 h4 {
   font-family: 'Lato', sans-serif;
 }
-
-header {
-  padding-top: 2.8rem;
-}
-
-body.toolbar-tray-open .main {
-  top: 79px;
-}
-
-main {
-  scroll-snap-type: y mandatory;
-  background: transparent;
-  // clip-path: inset(-14rem 0 0 0)
-
-}
-
-body.full-width main {
-  > section > .container:not(.is-max-desktop):not(.is-max-widescreen) {
-    max-width: 100%;
-
-    .field_pl_component {
-      max-width: 100%;
-    }
-  }
-}
-
-.layout > div > * {
-  scroll-snap-align: start;
-}
-
-.node-type--page-and-layout main > section {
-  background: rgba(255, 255, 255, 0.2);
-  padding: 0;
-}
-
-body.path-- main > section {
-  background: rgba(255, 255, 255, 0.2);
-}
-
-body.path--.toolbar-horizontal main > section {
-  background: rgba(255, 255, 255, 0.2);
-}
-
-.social-sharing-buttons {
-  flex-direction: column;
-  position: absolute;
-  right: 0;
-  z-index: 10;
-}
-
-/* for inspiration https://codepen.io/dimaZubkov/pen/rLxrXZ */
-.navbar.is-fixed-top {
-  z-index: 100;
-}
-
-.menu-list a.is-active {
-  color: white;
-  background-color: #ffbb63;
-  z-index: 12;
-  font-size: 0.8rem;
-}
-
-@-webkit-keyframes CrossFade {
-  25% {
-    opacity: 1;
-    transform: scale(1) rotate(0);
-  }
-
-  40% {
-    opacity: 0;
-  }
-}
-
-@keyframes CrossFade {
-  25% {
-    opacity: 1;
-    transform: scale(1) rotate(0);
-  }
-
-  40% {
-    opacity: 0;
-  }
-}
-
-body .navbar {
-  z-index: 10;
-}
-
-body.user-logged-in .navbar {
-  top: 0;
-}
-
-.is-black.navbar .navbar-start a {
-  font-size: 0.85rem;
-  outline: white;
-}
-
-body.path-- .region-primary-menu + .hero.is-primary,
-body.path--gardensofstone .region-primary-menu + .hero.is-primary {
-  background-color: transparent;
-  z-index: 29;
-  height: auto;
-}
-
-.hero-head .region-header {
-  padding-top: 6rem;
-  padding-bottom: 1rem;
-}
-
-.header.hero.is-primary .block-system-branding-block {
-  background: white;
-  padding: 3rem;
-}
-
-.region-title {
-  padding-top: 3rem;
-
-  #block-gardensofstone-page-title {
-    max-width: 66vw;
-  }
-}
-
-body.path-- section.section .block-page-title-block {
-  margin-top: 21rem;
-  padding: 2rem;
-  margin-bottom: 0;
-  color: white;
-  background-color: rgb(162, 103, 28);
-}
-
-
-section.section .block-page-title-block {
-  background: rgb(162, 103, 28);
-}
-
-body.path-- section.section .block-page-title-block {
-  background: inherit;
-}
-
-section.section .block-page-title-block h1.title {
-  color: white;
-  margin-left: 1em
-}
-
-// Breadcrumb
-nav.breadcrumb a,
-nav.breadcrumb a:visited {
-  color: white;
-}
-
-.columns .column {
-  flex: 4 1 auto;
-}
-
-.columns .column.is-narrow {
-  flex: 1 1 10%;
-}
-
-body.path-- .section {
-  padding: 0;
-}
-
-body.path-- .columns {
-  margin: 0;
-}
-
-body.path-- .column {
-  padding: 0;
-}
-
-@media (min-width: 768px) {
-  // Page body
-  .layout__region--content {
-    position: relative;
-    scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
-  }
-
-  .layout__region--content > * {
-    scroll-snap-align: start;
-  }
-
-  .block-system-main-block > article {
-    position: relative;
-    background: white;
-    padding-top: 0;
-  }
-
-  article.content.landing::after {
-    content: "";
-    pointer-events: none;
-    position: absolute;
-    top: 10rem;
-    left: 0;
-    width: 100vw;
-    height: 100%;
-    background: white;
-    z-index: -1;
-  }
-
-  article > div > .content {
-    padding: 2rem;
-    margin-bottom: 0;
-  }
-
-  article > div > .content > div {
-    margin-left: 2rem;
-  }
-
-   article > div > .content h2 {
-     font-weight: normal;
-   }
-}
-
-
-

@@ -1,0 +1,57 @@
+
+
+.journey-section {
+  background: var(--lichen);
+  padding: 4rem 0;
+
+  .wrap {
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 23px;
+      top: 6px;
+      bottom: 6px;
+      width: 2px;
+      background: repeating-linear-gradient(
+              180deg,
+              var(--water) 0 8px,
+              transparent 8px 14px
+      );
+    }
+  }
+
+  .intro {
+    .kicker {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--ochre);
+      margin-bottom: 10px;
+    }
+
+    .title {
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: var(--forest-deep);
+      margin: 0 0 16px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .journey-section {
+    padding: 40px 0;
+  }
+
+  .journey-section .wrap {
+    padding: 0 16px;
+  }
+
+  .journey-section .intro .title {
+    font-size: 1.6rem;
+  }
+
+  .journey-section .intro .lede {
+    font-size: 1rem;
+  }
+}

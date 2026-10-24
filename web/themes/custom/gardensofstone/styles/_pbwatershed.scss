@@ -1,3 +1,15 @@
+/* --------------------------------------------------------------------------
+   Full-width container for node pages
+   -------------------------------------------------------------------------- */
+.node-type--watershed-page main > section {
+  padding: 0;
+}
+
+.node-type--watershed-page main > section > .container:not(.is-max-desktop):not(.is-max-widescreen) {
+  max-width: 100%;
+}
+
+
 .watershed-wrap {
   margin-top: 36px;
   display: grid;

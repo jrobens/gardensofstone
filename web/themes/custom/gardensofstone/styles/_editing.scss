@@ -42,18 +42,8 @@
   }
 }
 
-#gin-toolbar-bar {
-  font-size: 0.7rem;
-
-  li.menu-item > a.toolbar-icon {
-    font-size: 0.7rem;
-  }
-
+#admin-toolbar-search-field-tab {
   position: fixed;
   bottom: 0;
-  left: 0;
-  right: auto;
-  z-index: 101;
+  left: 10rem;
 }
-
-

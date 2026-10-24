@@ -1,0 +1,44 @@
+{#
+/**
+ * @file
+ * Theme implementation for individual ask card paragraphs.
+ */
+#}
+{% set card_type = paragraph.field_pbasks_card_type.value %}
+{%
+    set card_classes = [
+    'paragraph',
+    'paragraph--type--ask-card',
+    'ask-card',
+    card_type ? card_type : ''
+]
+%}
+<div{{ attributes.addClass(card_classes) }}>
+    {% if not paragraph.field_pbasks_role.isEmpty() %}
+        <div class="ask-role">{{ content.field_pbasks_role }}</div>
+    {% endif %}
+
+    {% if not paragraph.field_pbasks_title.isEmpty() %}
+        <h3>{{ content.field_pbasks_title }}</h3>
+    {% endif %}
+
+    {% if not paragraph.field_pbasks_description.isEmpty() %}
+        <p>{{ content.field_pbasks_description }}</p>
+    {% endif %}
+
+    {% if not paragraph.field_pbasks_sample_text.isEmpty() %}
+        <div class="sample-text" data-sample="{{ paragraph.id() }}">
+            {{ content.field_pbasks_sample_text }}
+        </div>
+    {% endif %}
+
+    <div class="ask-actions">
+        {% if not paragraph.field_pbasks_email_link.isEmpty() %}
+            <a class="ask-btn" href="{{ paragraph.field_pbasks_email_link.0.url }}">Email</a>
+        {% endif %}
+
+        {% if not paragraph.field_pbasks_copy_button.isEmpty() %}
+            <button class="copy-btn" data-copy-target="{{ paragraph.id() }}" type="button">Copy text</button>
+        {% endif %}
+    </div>
+</div>

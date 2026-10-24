@@ -2,79 +2,43 @@
 /**
  * @file
  * Theme implementation to display an asks section paragraph.
- *
- * Available variables:
- * - paragraph: Full paragraph entity.
- * - content: All paragraph items.
- * - attributes: HTML attributes for the containing element.
  */
 #}
 {%
-  set classes = [
+    set classes = [
     'paragraph',
     'paragraph--type--asks',
     'asks-section',
     view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
     not paragraph.isPublished() ? 'paragraph--unpublished'
-  ]
+]
 %}
 {% block paragraph %}
-  <div{{ attributes.addClass(classes) }}>
-    {% block content %}
-      <div class="wrap{{ attributes.addClass('wrap') }}">
-        {% if content.field_pbasks_kicker %}
-          <div class="kicker">{{ content.field_pbasks_kicker }}</div>
-        {% endif %}
-        {% if content.field_pbasks_title %}
-          <h2 class="title">{{ content.field_pbasks_title }}</h2>
-        {% endif %}
-        {% if content.field_pbasks_standout_lede %}
-          <div class="standout-lede">{{ content.field_pbasks_standout_lede }}</div>
-        {% endif %}
-        {% if content.field_pbasks_copy_note %}
-          <div class="copy-note">{{ content.field_pbasks_copy_note }}</div>
-        {% endif %}
-        {% if content.field_pbasks_cards %}
-          <div class="asks-grid">
-            {% for item in content.field_pbasks_cards %}
-              {% set card_classes = ['ask-card'] %}
-              {% if item.field_pbasks_card_type == 'premier' %}
-                {% set card_classes = card_classes|merge(['premier']) %}
-              {% elseif item.field_pbasks_card_type == 'political' %}
-                {% set card_classes = card_classes|merge(['political']) %}
-              {% elseif item.field_pbasks_card_type == 'operational' %}
-                {% set card_classes = card_classes|merge(['operational']) %}
-              {% elseif item.field_pbasks_card_type == 'local' %}
-                {% set card_classes = card_classes|merge(['local']) %}
-              {% endif %}
-              <div{{ attributes.addClass(card_classes) }}>
-                {% if item.field_pbasks_role %}
-                  <div class="ask-role">{{ item.field_pbasks_role }}</div>
+    <div{{ attributes.addClass(classes) }}>
+        {% block content %}
+            <div class="wrap">
+                {% if not paragraph.field_pbasks_kicker.isEmpty() %}
+                    <div class="kicker">{{ content.field_pbasks_kicker }}</div>
                 {% endif %}
-                {% if item.field_pbasks_title %}
-                  <h3>{{ item.field_pbasks_title }}</h3>
+
+                {% if not paragraph.field_pbasks_title.isEmpty() %}
+                    <h2 class="title">{{ content.field_pbasks_title }}</h2>
                 {% endif %}
-                {% if item.field_pbasks_description %}
-                  <p>{{ item.field_pbasks_description }}</p>
+
+                {% if not paragraph.field_pbasks_standout_lede.isEmpty() %}
+                    <div class="standout-lede">{{ content.field_pbasks_standout_lede }}</div>
                 {% endif %}
-                {% if item.field_pbasks_sample_text %}
-                  <div class="sample-text" data-sample="{{ item.id() }}">
-                    {{ item.field_pbasks_sample_text }}
-                  </div>
+
+                {% if not paragraph.field_pbasks_copy_note.isEmpty() %}
+                    <div class="copy-note">{{ content.field_pbasks_copy_note }}</div>
                 {% endif %}
-                <div class="ask-actions">
-                  {% if item.field_pbasks_email_link %}
-                    <a class="ask-btn" href="{{ item.field_pbasks_email_link }}">Email</a>
-                  {% endif %}
-                  {% if item.field_pbasks_copy_button %}
-                    <button class="copy-btn" data-copy-target="{{ item.id() }}" type="button">Copy text</button>
-                  {% endif %}
-                </div>
-              </div>
-            {% endfor %}
-          </div>
-        {% endif %}
-      </div>
-    {% endblock %}
-  </div>
+
+                {% if not paragraph.field_pbasks_cards.isEmpty() %}
+                    <div class="asks-grid">
+                        {{ content.field_pbasks_cards }}
+                    </div>
+                {% endif %}
+            </div>
+        {% endblock %}
+    </div>
 {% endblock paragraph %}

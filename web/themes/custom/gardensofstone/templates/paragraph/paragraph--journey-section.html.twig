@@ -1,0 +1,65 @@
+{#
+/**
+ * @file
+ * Theme implementation to display a journey section paragraph using Layout Paragraphs.
+ *
+ * Available variables:
+ * - paragraph: Full paragraph entity.
+ * - content: All paragraph items.
+ * - attributes: HTML attributes for the containing element.
+ */
+#}
+{% set classes = [
+    'paragraph',
+    'paragraph--type--journey-section',
+    'section',
+    'journey-section',
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished'
+] %}
+
+{% block paragraph %}
+    <section id="journey"{{ attributes.addClass(classes) }}>
+        <div class="wrap container">
+
+            {# Safe rendering wrappers to prevent empty markup #}
+            {% if (content.field_pbjourney_kicker and content.field_pbjourney_kicker|render) or
+                (content.field_pbjourney_title and content.field_pbjourney_title|render) or
+                (content.field_pbjourney_body and content.field_pbjourney_body|render) %}
+                <div class="intro">
+
+                    {% if content.field_pbjourney_kicker and content.field_pbjourney_kicker|render %}
+                        <div class="kicker">
+                            {{ content.field_pbjourney_kicker }}
+                        </div>
+                    {% endif %}
+
+                    {% if content.field_pbjourney_title and content.field_pbjourney_title|render %}
+                        <h2 class="title">
+                            {{ content.field_pbjourney_title }}
+                        </h2>
+                    {% endif %}
+
+                    {% if content.field_pbjourney_body and content.field_pbjourney_body|render %}
+                        <div class="body-content">
+                            {{ content.field_pbjourney_body }}
+                        </div>
+                    {% endif %}
+
+                </div>
+            {% endif %}
+
+            {#
+            Layout Paragraphs tracks require careful rendering. Ensure your
+            core.entity_view_display.paragraph.journey_section.default config
+            is also set to use the layout_paragraphs formatter if available.
+            #}
+            <div class="journey-track">
+                {% if content.field_pbjourney_stops and content.field_pbjourney_stops|render %}
+                    {{ content.field_pbjourney_stops }}
+                {% endif %}
+            </div>
+
+        </div>
+    </section>
+{% endblock paragraph %}

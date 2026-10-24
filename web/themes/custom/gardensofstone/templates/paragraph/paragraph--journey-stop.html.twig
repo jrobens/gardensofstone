@@ -9,43 +9,64 @@
  * - attributes: HTML attributes for the containing element.
  */
 #}
-{%
-  set classes = [
+{% set classes = [
     'paragraph',
     'paragraph--type--journey-stop',
     'journey-stop',
     view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
-    not paragraph.isPublished() ? 'paragraph--unpublished',
-    'journey-stop'
-  ]
-%}
+    not paragraph.isPublished() ? 'paragraph--unpublished'
+] %}
+
 {% block paragraph %}
-  <div{{ attributes.addClass(classes) }}>
-    {% if content.field_pbjourneystop_icon %}
-      <div class="journey-icon {% if content.field_pbjourneystop_pollution %}pollution{% endif %}">
-        {{ content.field_pbjourneystop_icon }}
-      </div>
-    {% endif %}
-    <div class="journey-header">
-      <div class="journey-heading">
-        {% if content.field_pbjourneystop_label %}
-          <div class="journey-label">{{ content.field_pbjourneystop_label }}</div>
+    <div{{ attributes.addClass(classes) }}>
+
+        {% set icon_classes = ['journey-icon'] %}
+        {# Check if pollution field exists and is filled (assumes it is added to the schema later) #}
+        {% if content.field_pbjourney_pollution and content.field_pbjourney_pollution|render %}
+            {% set icon_classes = icon_classes|merge(['pollution']) %}
         {% endif %}
-        {% if content.field_pbjourneystop_sub %}
-          <div class="journey-sub">{{ content.field_pbjourneystop_sub }}</div>
+
+        {# Render the icon field wrapper safely #}
+        {% if content.field_pbjourney_icon and content.field_pbjourney_icon|render %}
+            <div class="{{ icon_classes|join(' ') }}">
+                {# If outputting via entity_reference_entity_view, just render the field block #}
+                {{ content.field_pbjourney_icon }}
+            </div>
         {% endif %}
-      </div>
-      <svg class="journey-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+
+        <div class="journey-header">
+            <div class="journey-heading">
+                {% if content.field_pbjourney_label and content.field_pbjourney_label|render %}
+                    <div class="journey-label">{{ content.field_pbjourney_label }}</div>
+                {% endif %}
+
+                {# Check if sub heading exists (assumes it is added to the schema later) #}
+                {% if content.field_pbjourney_sub and content.field_pbjourney_sub|render %}
+                    <div class="journey-sub">{{ content.field_pbjourney_sub }}</div>
+                {% endif %}
+            </div>
+        </div>
+
+        <div class="journey-detail">
+            <div class="journey-detail-inner">
+                {# Mapped from schema's field_pbjourney_stop_det field #}
+                {% if content.field_pbjourney_stop_det and content.field_pbjourney_stop_det|render %}
+                    <div class="journey-description">
+                        {{ content.field_pbjourney_stop_det }}
+                    </div>
+                {% endif %}
+
+                {# Check if stat exists (assumes it is added to the schema later) #}
+                {% if content.field_pbjourney_stat and content.field_pbjourney_stat|render %}
+                    <span class="journey-stat">{{ content.field_pbjourney_stat }}</span>
+                {% endif %}
+
+                {# Render the link field that was missing from your template layout #}
+                {% if content.field_pbjourney_link and content.field_pbjourney_link|render %}
+                    <div class="journey-link">{{ content.field_pbjourney_link }}</div>
+                {% endif %}
+            </div>
+        </div>
+
     </div>
-    <div class="journey-detail">
-      <div class="journey-detail-inner">
-        {% if content.field_pbjourneystop_description %}
-          {{ content.field_pbjourneystop_description }}
-        {% endif %}
-        {% if content.field_pbjourneystop_stat %}
-          <span class="journey-stat">{{ content.field_pbjourneystop_stat }}</span>
-        {% endif %}
-      </div>
-    </div>
-  </div>
 {% endblock paragraph %}
