@@ -302,6 +302,10 @@ class CampaignPageController extends ControllerBase {
   
   .video-frame .play-btn{position:absolute;right:18px;bottom:18px;z-index:2;width:56px;height:56px;box-shadow:0 4px 14px rgba(0,0,0,0.35);transition:transform .2s;}
   .video-frame:hover .play-btn{transform:scale(1.08);}
+  .video-frame{cursor:pointer;}
+  .video-frame.playing{cursor:default;}
+  .video-frame.playing::after{display:none;}
+  .video-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0;z-index:3;background:#000;}
   .play-btn{
     width:64px;height:64px;border-radius:50%;
     background:rgba(237,230,214,0.94);
@@ -484,7 +488,6 @@ class CampaignPageController extends ControllerBase {
     <div class="eco-block">
       <h3>The platypus, biladurang in Wiradjuri, are gone. So is what they eat.</h3>
       <p>Independent university research has confirmed platypus have vanished entirely from stretches of the Coxs River near Lithgow, driven out by salinity and heavy metal pollution. The reason is simple: without healthy populations of yabbies, mayflies and dragonflies, there's nothing left for a platypus to eat. Peer-reviewed studies of this catchment have found the same pollution significantly reduces the abundance and diversity of the small invertebrate life that the entire river food chain depends on.</p>
-      <a class="eco-link" href="#" target="_blank" rel="noopener">Watch the Mingaan Rangers' platypus survey &rarr;</a>
       <p class="punchline">Who wants a <span>dead river</span> to fish in?</p>
     </div>
   </div>
@@ -520,37 +523,37 @@ class CampaignPageController extends ControllerBase {
   <div class="wrap">
     <div class="kicker" style="color:var(--ochre);">What you can do</div>
     <h2 class="title">Three people can act on this. Here's what to ask each of them.</h2>
-    <p class="standout-lede">The Premier and the Minister hold the power to strengthen the law, and the local member represents Lithgow in Parliament. Send them all.</p>
+    <p class="standout-lede">The Planning Minister and the Water Minister hold the power to strengthen the law and protect the catchment, and your local MP can raise it in Parliament. Wherever you live in Sydney, send them all.</p>
     <p class="copy-note">Copy our text below, or better yet, use it to write your own. Change a few words, make it yours, an original sentence is worth more than you think.</p>
 
     <div class="asks-grid">
       <div class="ask-card premier">
-        <div class="ask-role">Top-level ask</div>
-        <h3>Premier of NSW, Chris Minns</h3>
-        <p>Strengthen the NorBE test, as your party promised in 2017.</p>
-        <p class="sample-text" data-sample="1">"Premier, mine water now makes up an estimated 80 to 90 per cent of dry-weather flow in this stretch of the Coxs River, on its way to Warragamba Dam and the taps of 5,000,000 Sydneysiders. The law meant to protect that water, the Neutral or Beneficial Effect test, was weakened in 2017, and at the time your party committed in Parliament to restore the proper protections if the rules deteriorated. They have deteriorated. Three mines in this catchment plan to apply to extend their lives to 2040 and 2042, and the weakened test, along with the loophole that lets expansions skip it, would allow them to keep discharging polluted mine water for that long. I'm asking you to keep that promise and strengthen the NorBE test, so it is measured against a clean baseline and requires real treatment of polluted discharge."</p>
+        <div class="ask-role">Planning ask</div>
+        <h3>Minister for Planning and Public Spaces, Paul Scully</h3>
+        <p>The NorBE test sits in planning law. Strengthen it, as your party promised in 2017.</p>
+        <p class="sample-text" data-sample="1">"Minister, mine water now makes up an estimated 80 to 90 per cent of dry-weather flow in this stretch of the Coxs River, on its way to Warragamba Dam and the taps of 5,000,000 Sydneysiders. The law meant to protect that water, the Neutral or Beneficial Effect test, was weakened in 2017, and at the time your party committed in Parliament to restore the proper protections if the rules deteriorated. They have deteriorated. Three mines in this catchment plan to apply to extend their lives to 2040 and 2042, and the weakened test, along with the loophole that lets expansions skip it, would allow them to keep discharging polluted mine water for that long. As the Minister responsible for planning law, I'm asking you to keep that promise and strengthen the NorBE test, so it is measured against a clean baseline, requires real treatment of polluted discharge, and applies to expansions of existing mines too."</p>
         <div class="ask-actions">
-          <a class="ask-btn" href="mailto:office@minns.example.gov.au?subject=Protect%20the%20Coxs%20River%20catchment">Email the Premier</a>
+          <a class="ask-btn" href="https://www.nsw.gov.au/nsw-government/ministers/minister-for-planning-and-public-spaces" target="_blank" rel="noopener">Contact the Minister</a>
           <button class="copy-btn" data-copy-target="1" type="button">Copy text</button>
         </div>
       </div>
       <div class="ask-card political">
-        <div class="ask-role">Political ask</div>
-        <h3>Minister for the Environment, Penny Sharpe</h3>
-        <p>Argue for a strong NorBE test.</p>
-        <p class="sample-text" data-sample="2">"Minister, the mines in this stretch of the Coxs River are approved to extract up to 42 million litres of mine water a day, and mine water now makes up an estimated 80 to 90 per cent of the river's dry-weather flow on its way to Warragamba Dam. Platypus have disappeared from stretches of the river, and mining companies have been fined and penalised almost $1.9 million for discharges into the catchment since 2015. The NorBE test is meant to protect Sydney's drinking water, but it was weakened in 2017. I'm asking you to argue within Government for a strong NorBE test, measured against a clean baseline, with best-practice treatment required wherever polluted water is discharged."</p>
+        <div class="ask-role">Water ask</div>
+        <h3>Minister for Water, Rose Jackson</h3>
+        <p>Argue for a strong NorBE test, and for independent monitoring of the water Sydney drinks.</p>
+        <p class="sample-text" data-sample="2">"Minister, the mines in this stretch of the Coxs River are approved to extract up to 42 million litres of mine water a day, and mine water now makes up an estimated 80 to 90 per cent of the river's dry-weather flow on its way to Warragamba Dam. Platypus have disappeared from stretches of the river, and mining companies have been fined and penalised almost $1.9 million for discharges into the catchment since 2015. The NorBE test is meant to protect Sydney's drinking water, but it was weakened in 2017. As the Minister for Water, I'm asking you to argue within Government for a strong NorBE test, measured against a clean baseline, with best-practice treatment required wherever polluted water is discharged, and to back independent, public monitoring of water quality in the catchment."</p>
         <div class="ask-actions">
-          <a class="ask-btn" href="mailto:office@sharpe.example.gov.au?subject=Protect%20the%20Coxs%20River%20catchment">Email the Minister</a>
+          <a class="ask-btn" href="mailto:office@jackson.minister.nsw.gov.au?subject=Protect%20the%20Coxs%20River%20catchment">Email the Minister</a>
           <button class="copy-btn" data-copy-target="2" type="button">Copy text</button>
         </div>
       </div>
       <div class="ask-card local">
         <div class="ask-role">Local ask</div>
-        <h3>Member for Bathurst, Paul Toole</h3>
-        <p>If you live in the Bathurst electorate, let your local member hear from you.</p>
-        <p class="sample-text" data-sample="3">"As a resident of the Bathurst electorate, I'm asking you to raise the state of the Coxs River catchment in Parliament. Mine water now dominates this stretch of the river in dry weather, and three mines nearby plan to apply to keep operating until 2040 and 2042. The test meant to protect the water flowing on to Warragamba Dam, the NorBE test, was weakened in 2017. I'd like you to back a stronger test, and to tell me where you stand."</p>
+        <h3>Your local MP</h3>
+        <p>Whichever electorate you live in, Sydney's drinking water is your MP's business. First <a href="https://elections.nsw.gov.au/elections/find-my-electorate" target="_blank" rel="noopener" style="color:var(--water);font-weight:600;">find your electorate</a>, then get your MP's email from the <a href="https://www.parliament.nsw.gov.au/members-and-electorates/electorates-elections/electorate-office-contacts" target="_blank" rel="noopener" style="color:var(--water);font-weight:600;">electorate office list</a>.</p>
+        <p class="sample-text" data-sample="3">"As a resident of [your electorate], I'm asking you to raise the state of the Coxs River catchment in Parliament. Mine water now dominates a stretch of the river in dry weather, and three mines in the catchment plan to apply to keep operating until 2040 and 2042. The river runs on to Warragamba Dam, which supplies the drinking water of around 5,000,000 people, including your constituents. The test meant to protect that water, the NorBE test, was weakened in 2017. I'd like you to back a stronger test, and to tell me where you stand."</p>
         <div class="ask-actions">
-          <a class="ask-btn" href="mailto:office@toole.example.nsw.gov.au?subject=Protect%20the%20Coxs%20River%20catchment">Email your local MP</a>
+          <a class="ask-btn" href="https://elections.nsw.gov.au/elections/find-my-electorate" target="_blank" rel="noopener">Find your electorate</a>
           <button class="copy-btn" data-copy-target="3" type="button">Copy text</button>
         </div>
       </div>
@@ -563,9 +566,9 @@ class CampaignPageController extends ControllerBase {
 <section id="watershed" class="section-forest" style="padding-top:56px;">
   <div class="wrap">
     <div class="watershed-wrap">
-      <a class="video-frame" href="#" aria-label="Play Watershed Episode 1: Mine Water">
+      <div class="video-frame" id="watershed-player" role="button" tabindex="0" aria-label="Play Watershed Episode 1: Mine Water">
         <span class="play-btn"><svg viewBox="0 0 24 24"><path d="M6 4 L20 12 L6 20 Z"/></svg></span>
-      </a>
+      </div>
       <div>
         <div class="kicker">The documentary</div>
         <h2 class="watershed-title">Watershed</h2>
@@ -604,6 +607,72 @@ class CampaignPageController extends ControllerBase {
 </footer>
 
 <script>
+  /* WATERSHED PLAYER: paste the Vimeo link for Episode 1 between the quotes. */
+  var WATERSHED_VIDEO = 'https://vimeo.com/1237521403/65e1c5252b';
+  (function(){
+    var frame = document.getElementById('watershed-player');
+    if(!frame) return;
+    function embedUrl(link){
+      var m = link.match(/vimeo\.com\/(?:video\/)?(\d+)(?:\/([0-9a-f]+))?/i);
+      if(!m) return null;
+      var u = 'https://player.vimeo.com/video/' + m[1] + '?';
+      var q = [];
+      var hm = link.match(/[?&]h=([0-9a-f]+)/i);
+      var hash = m[2] || (hm && hm[1]);
+      if(hash) q.push('h=' + hash);
+      q.push('autoplay=1','playsinline=1','title=0','byline=0','portrait=0','badge=0','dnt=1','color=A8632F');
+      return u + q.join('&');
+    }
+    function start(){
+      if(frame.classList.contains('playing')) return;
+      var src = embedUrl(WATERSHED_VIDEO);
+      if(!src) return;
+      frame.classList.add('playing');
+      var f = document.createElement('iframe');
+      f.src = src;
+      f.title = 'Watershed, Episode 1: Mine Water';
+      f.allow = 'autoplay; fullscreen; picture-in-picture';
+      f.setAttribute('allowfullscreen','');
+      frame.appendChild(f);
+      /* Subtitles are burned into the picture, so switch off any caption track the player adds.
+         When the video ends, return to the thumbnail so Vimeo's end screen (other videos) never shows. */
+      var attach = function(){
+        try{
+          var p = new Vimeo.Player(f);
+          var off = function(){ p.disableTextTrack().catch(function(){}); };
+          p.ready().then(off);
+          p.on('play', off);
+          p.on('loaded', off);
+          var done = false;
+          var finish = function(){
+            if(done) return; done = true;
+            try{ p.pause(); }catch(e){}
+            try{ p.destroy(); }catch(e){}
+            if(f.parentNode) f.parentNode.removeChild(f);
+            frame.classList.remove('playing');
+          };
+          p.on('ended', finish);
+          /* Cut slightly before the very end, in case the end screen appears before the ended event fires. */
+          p.on('timeupdate', function(d){
+            if(d && d.duration > 5 && d.seconds > 1 && (d.duration - d.seconds) < 0.5) finish();
+          });
+          p.on('pause', function(d){
+            if(d && d.duration > 5 && (d.duration - d.seconds) < 0.75) finish();
+          });
+        }catch(e){}
+      };
+      if(window.Vimeo){ attach(); }
+      else {
+        var s = document.createElement('script');
+        s.src = 'https://cdn.jsdelivr.net/npm/@vimeo/player@2.22.0/dist/player.min.js';
+        s.onload = attach;
+        s.onerror = function(){ var s2=document.createElement('script'); s2.src='https://player.vimeo.com/api/player.js'; s2.onload=attach; document.head.appendChild(s2); };
+        document.head.appendChild(s);
+      }
+    }
+    frame.addEventListener('click', start);
+    frame.addEventListener('keydown', function(e){ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); start(); } });
+  })();
   document.querySelectorAll('.journey-header').forEach(function(header){
     header.addEventListener('click', function(){
       header.closest('.journey-stop').classList.toggle('open');
@@ -647,6 +716,7 @@ class CampaignPageController extends ControllerBase {
 </script>
 </body>
 </html>
+
 
 EOD;
 
