@@ -9,67 +9,58 @@
  * - attributes: HTML attributes for the containing element.
  */
 #}
-{%
-  set classes = [
+{% set classes = [
     'paragraph',
     'paragraph--type--evidence-block',
     'evidence-block',
     view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
     not paragraph.isPublished() ? 'paragraph--unpublished'
-  ]
-%}
-<svg class="wave" viewBox="0 0 1200 44" preserveAspectRatio="none"><path d="M0,22 C 200,44 400,0 600,22 C 800,44 1000,0 1200,22 L1200,44 L0,44 Z" fill="#182A1F"></path></svg>
+] %}
+<svg class="wave" viewBox="0 0 1200 44" preserveAspectRatio="none">
+    <path d="M0,22 C 200,44 400,0 600,22 C 800,44 1000,0 1200,22 L1200,44 L0,44 Z" fill="#182A1F"></path>
+</svg>
 {% block paragraph %}
-  <div{{ attributes.addClass(classes) }}>
-    {% block content %}
-      <div class="wrap{{ attributes.addClass('wrap') }}">
-        {% if content.field_pbevidence_kicker %}
-          <div class="kicker">{{ content.field_pbevidence_kicker }}</div>
-        {% endif %}
-        {% if content.field_pbevidence_title %}
-          <h2 class="title">{{ content.field_pbevidence_title }}</h2>
-        {% endif %}
-        {% if content.field_pbevidence_lede %}
-          <div class="lede">{{ content.field_pbevidence_lede }}</div>
-        {% endif %}
-        {% if content.field_pbevidence_body %}
-          <div class="evidence-grid">
-            <div class="case-card">
-              {{ content.field_pbevidence_body }}
+    <div{{ attributes.addClass(classes) }}>
+        {% block content %}
+            <div class="wrap container">
+                {% if not paragraph.field_pbevidence_kicker.isEmpty() %}
+                    <div class="kicker">{{ content.field_pbevidence_kicker }}</div>
+                {% endif %}
+                {% if not paragraph.field_pbevidence_title.isEmpty() %}
+                    <h2 class="title">{{ content.field_pbevidence_title }}</h2>
+                {% endif %}
+                {% if not paragraph.field_pbevidence_body.isEmpty() %}
+                    <div class="evidence-grid">
+                        <div class="case-card">
+                            {{ content.field_pbevidence_body }}
+                        </div>
+                    </div>
+                {% endif %}
+                {% if not paragraph.field_pbevidence_statistics.isEmpty() %}
+                    <div class="stat-row">
+                        {{ content.field_pbevidence_statistics }}
+                    </div>
+                {% endif %}
+                {% if (not paragraph.field_pbevidence_eco_title.isEmpty()) or
+                      (not paragraph.field_pbevidence_eco_description.isEmpty()) or
+                      (not paragraph.field_pbevidence_eco_link.isEmpty()) or
+                      (not paragraph.field_pbevidence_punchline.isEmpty()) %}
+                    <div class="eco-block">
+                        {% if not paragraph.field_pbevidence_eco_title.isEmpty() %}
+                            <h3>{{ content.field_pbevidence_eco_title }}</h3>
+                        {% endif %}
+                        {% if not paragraph.field_pbevidence_eco_link.isEmpty() %}
+                            <a class="eco-link" href="{{ paragraph.field_pbevidence_eco_link.value }}">{{ content.field_pbevidence_eco_link }}</a>
+                        {% endif %}
+                        {% if not paragraph.field_pbevidence_eco_description.isEmpty() %}
+                            <div class="eco-description">{{ content.field_pbevidence_eco_description }}</div>
+                        {% endif %}
+                        {% if not paragraph.field_pbevidence_punchline.isEmpty() %}
+                            <p class="punchline">{{ content.field_pbevidence_punchline }}</p>
+                        {% endif %}
+                    </div>
+                {% endif %}
             </div>
-          </div>
-        {% endif %}
-        {% if content.field_pbevidence_stats %}
-          <div class="stat-row">
-            {% for item in content.field_pbevidence_stats %}
-              <div class="stat-card">
-                {% if item.field_pbevidence_stat_number %}
-                  <div class="stat-num">{{ item.field_pbevidence_stat_number }}</div>
-                {% endif %}
-                {% if item.field_pbevidence_stat_label %}
-                  <div class="stat-label">{{ item.field_pbevidence_stat_label }}</div>
-                {% endif %}
-              </div>
-            {% endfor %}
-          </div>
-        {% endif %}
-        {% if content.field_pbevidence_eco_block %}
-          <div class="eco-block">
-            {% if content.field_pbevidence_eco_title %}
-              <h3>{{ content.field_pbevidence_eco_title }}</h3>
-            {% endif %}
-            {% if content.field_pbevidence_eco_description %}
-              <p>{{ content.field_pbevidence_eco_description }}</p>
-            {% endif %}
-            {% if content.field_pbevidence_eco_link %}
-              <a class="eco-link" href="{{ content.field_pbevidence_eco_link }}">{{ content.field_pbevidence_eco_link }}</a>
-            {% endif %}
-            {% if content.field_pbevidence_punchline %}
-              <p class="punchline">{{ content.field_pbevidence_punchline }}</p>
-            {% endif %}
-          </div>
-        {% endif %}
-      </div>
-    {% endblock %}
-  </div>
+        {% endblock %}
+    </div>
 {% endblock paragraph %}

@@ -21,39 +21,28 @@
 {% block paragraph %}
   <div{{ attributes.addClass(classes) }}>
     {% block content %}
-      <div class="wrap{{ attributes.addClass('wrap') }}">
-        {% if content.field_pbloophole_kicker %}
+      <div class="wrap container">
+        {% if not paragraph.field_pbloophole_kicker.isEmpty() %}
           <div class="kicker">{{ content.field_pbloophole_kicker }}</div>
         {% endif %}
-        {% if content.field_pbloophole_title %}
+        {% if not paragraph.field_pbloophole_title.isEmpty() %}
           <h2 class="title">{{ content.field_pbloophole_title }}</h2>
         {% endif %}
-        {% if content.field_pbloophole_standout_lede %}
+        {% if not paragraph.field_pbloophole_standout_lede.isEmpty() %}
           <div class="standout-lede">{{ content.field_pbloophole_standout_lede }}</div>
         {% endif %}
-        {% if content.field_pbloophole_lede %}
+        {% if not paragraph.field_pbloophole_lede.isEmpty() %}
           <div class="lede">{{ content.field_pbloophole_lede }}</div>
         {% endif %}
-        {% if content.field_pbloophole_stats %}
-          <div class="loophole-stats">
-            <div class="stat-row">
-              {% for item in content.field_pbloophole_stats %}
-                <div class="stat-card">
-                  {% if item.field_pbloophole_stat_number %}
-                    <div class="stat-num">{{ item.field_pbloophole_stat_number }}</div>
-                  {% endif %}
-                  {% if item.field_pbloophole_stat_label %}
-                    <div class="stat-label">{{ item.field_pbloophole_stat_label }}</div>
-                  {% endif %}
-                </div>
-              {% endfor %}
-            </div>
+        {% if not paragraph.field_pbloophole_stats.isEmpty() %}
+          <div class="stat-row">
+            {{ content.field_pbloophole_stats }}
           </div>
         {% endif %}
-        {% if content.field_pbloophole_close %}
-          <p class="loophole-close">{{ content.field_pbloophole_close }}</p>
+        {% if not paragraph.field_pbloophole_close.isEmpty() %}
+          <div class="loophole-close">{{ content.field_pbloophole_close }}</div>
         {% endif %}
-        {% if content.field_pbloophole_copy_note %}
+        {% if not paragraph.field_pbloophole_copy_note.isEmpty() %}
           <div class="copy-note">{{ content.field_pbloophole_copy_note }}</div>
         {% endif %}
       </div>

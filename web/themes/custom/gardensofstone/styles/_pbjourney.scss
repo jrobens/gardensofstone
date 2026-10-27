@@ -1,57 +1,120 @@
+// Journey section styles matching doc/coxs-river-campaign-landing-page.html (line 106+)
 
+.journey-section,
+#journey,
+.paragraph--type--journey-section {
+  padding: 64px 0;
+  position: relative;
+  background: var(--paper, #F7F3EA);
 
-.journey-section {
-  background: var(--lichen);
-  padding: 4rem 0;
-
-  .wrap {
-
-    &::before {
-      content: '';
-      position: absolute;
-      left: 23px;
-      top: 6px;
-      bottom: 6px;
-      width: 2px;
-      background: repeating-linear-gradient(
-              180deg,
-              var(--water) 0 8px,
-              transparent 8px 14px
-      );
-    }
+  .wrap,
+  .container {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 24px;
+    position: relative;
   }
 
   .intro {
-    .kicker {
+    margin-bottom: 24px;
+
+    .kicker,
+    .field_pbjourney_kicker {
       font-size: 0.85rem;
       font-weight: 600;
-      color: var(--ochre);
+      color: var(--ochre, #A8632F);
       margin-bottom: 10px;
+      text-transform: none;
+      letter-spacing: normal;
     }
 
-    .title {
-      font-size: 2.2rem;
-      font-weight: 700;
-      color: var(--forest-deep);
+    .title,
+    h2.title,
+    .field_pbjourney_title {
+      font-family: 'Fraunces', serif;
+      font-weight: 600;
+      font-size: clamp(1.5rem, 3vw, 2.1rem);
+      max-width: 22ch;
+      color: var(--forest-deep, #182A1F);
+      line-height: 1.25;
       margin: 0 0 16px;
+    }
+
+    .body-content,
+    .field_pbjourney_body {
+      max-width: 62ch;
+      margin-top: 16px;
+      font-size: 1.03rem;
+      color: #3c392f;
+      line-height: 1.6;
+
+      p {
+        margin: 0 0 12px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
     }
   }
 }
 
+// Track container & vertical dashed line
+.journey-track,
+.field_pbjourney_stops {
+  margin-top: 38px;
+  position: relative;
+  padding-left: 52px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 23px;
+    top: 6px;
+    bottom: 6px;
+    width: 2px;
+    background: repeating-linear-gradient(
+      180deg,
+      var(--water, #2E5266) 0 8px,
+      transparent 8px 14px
+    );
+    pointer-events: none;
+  }
+}
+
+// Prevent duplicate line/padding when nested within journey-track
+.journey-track .field_pbjourney_stops {
+  margin-top: 0;
+  padding-left: 0;
+
+  &::before {
+    display: none;
+  }
+}
+
 @media (max-width: 768px) {
-  .journey-section {
+  .journey-section,
+  #journey,
+  .paragraph--type--journey-section {
     padding: 40px 0;
-  }
 
-  .journey-section .wrap {
-    padding: 0 16px;
-  }
+    .wrap,
+    .container {
+      padding: 0 16px;
+    }
 
-  .journey-section .intro .title {
-    font-size: 1.6rem;
-  }
+    .intro {
+      .title,
+      h2.title,
+      .field_pbjourney_title {
+        font-size: 1.6rem;
+      }
 
-  .journey-section .intro .lede {
-    font-size: 1rem;
+      .lede,
+      .body-content,
+      .field_pbjourney_body {
+        font-size: 1rem;
+      }
+    }
   }
 }

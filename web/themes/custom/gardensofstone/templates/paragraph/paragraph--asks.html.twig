@@ -16,7 +16,7 @@
 {% block paragraph %}
     <div{{ attributes.addClass(classes) }}>
         {% block content %}
-            <div class="wrap">
+            <div class="wrap container">
                 {% if not paragraph.field_pbasks_kicker.isEmpty() %}
                     <div class="kicker">{{ content.field_pbasks_kicker }}</div>
                 {% endif %}

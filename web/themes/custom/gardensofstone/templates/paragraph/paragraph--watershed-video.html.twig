@@ -21,26 +21,18 @@
 {% block paragraph %}
   <div{{ attributes.addClass(classes) }}>
     {% block content %}
-      <div class="wrap{{ attributes.addClass('wrap') }}">
+      <div class="wrap">
         <div class="watershed-wrap">
-          {% if content.field_pbwatershed_video_frame %}
-            <a class="video-frame" href="{{ content.field_pbwatershed_video_url }}" aria-label="Play Watershed Episode 1: Mine Water">
-              <span class="play-btn">
-                <svg viewBox="0 0 24 24"><path d="M6 4 L20 12 L6 20 Z"/></svg>
-              </span>
-            </a>
+          {% if not paragraph.field_pbvideo_video.isEmpty() %}
+            <div class="video-frame">
+              {{ content.field_pbvideo_video }}
+            </div>
           {% endif %}
-          <div>
-            {% if content.field_pbwatershed_kicker %}
-              <div class="kicker">{{ content.field_pbwatershed_kicker }}</div>
-            {% endif %}
-            {% if content.field_pbwatershed_title %}
-              <h2 class="watershed-title">{{ content.field_pbwatershed_title }}</h2>
-            {% endif %}
-            {% if content.field_pbwatershed_lede %}
-              <div class="lede">{{ content.field_pbwatershed_lede }}</div>
-            {% endif %}
-          </div>
+          {% if not paragraph.field_watershed_body.isEmpty() %}
+            <div class="watershed-body">
+              {{ content.field_watershed_body }}
+            </div>
+          {% endif %}
         </div>
       </div>
     {% endblock %}

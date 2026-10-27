@@ -23,40 +23,42 @@
     {% block content %}
       <div class="wrap container">
         <div>
-          {% if content.field_pbhero_tag %}
+          {% if not paragraph.field_pbhero_tag.isEmpty() %}
             <div class="eyebrow-line">
               <span class="dot"></span>
               {{ content.field_pbhero_tag }}
             </div>
           {% endif %}
-          {% if content.field_pbhero_head %}
+          {% if not paragraph.field_pbhero_head.isEmpty() %}
             <h1 class="headline">{{ content.field_pbhero_head }}</h1>
           {% endif %}
-           {% if content.field_pbhero_int %}
-             <div class="sub">{{ content.field_pbhero_int }}</div>
-           {% endif %}
-           {% set purl = paragraph.field_pbhero_pbtn.uri ?: '' %}
-           {% set gurl = paragraph.field_pbhero_gbtn.uri ?: '' %}
-           {% set scurl = paragraph.field_pbhero_scurl.value|default('') %}
-           {% set pbtn = paragraph.field_pbhero_pbtn.title ?: '' %}
-           {% set gbtn = paragraph.field_pbhero_gbtn.title ?: '' %}
-           <div class="hero-ctas">
-             {% if pbtn and purl %}
-               <a class="btn-primary" href="{{ purl }}">{{ pbtn }}</a>
-             {% endif %}
-             {% if gbtn and gurl %}
-               <a class="btn-ghost" href="{{ gurl }}">{{ gbtn }}</a>
-             {% endif %}
-           </div>
-           {% if content.field_pbhero_scue %}
-             <div class="scroll-cue">
-               {% if scurl %}
-                 <a href="{{ scurl }}">See how the water gets here &darr;</a>
-               {% else %}
-                 <span>See how the water gets here &darr;</span>
-               {% endif %}
-             </div>
-           {% endif %}
+          {% if not paragraph.field_pbhero_int.isEmpty() %}
+            <div class="sub">{{ content.field_pbhero_int }}</div>
+          {% endif %}
+          {% set purl = (not paragraph.field_pbhero_pbtn.isEmpty() and paragraph.field_pbhero_pbtn.0.url) ? paragraph.field_pbhero_pbtn.0.url : paragraph.field_pbhero_purl.value %}
+          {% set pbtn = (not paragraph.field_pbhero_pbtn.isEmpty() and paragraph.field_pbhero_pbtn.0.title) ? paragraph.field_pbhero_pbtn.0.title : (paragraph.field_pbhero_purl.value ? 'Learn More'|t : '') %}
+          {% set gurl = (not paragraph.field_pbhero_gbtn.isEmpty() and paragraph.field_pbhero_gbtn.0.url) ? paragraph.field_pbhero_gbtn.0.url : paragraph.field_pbhero_gurl.value %}
+          {% set gbtn = (not paragraph.field_pbhero_gbtn.isEmpty() and paragraph.field_pbhero_gbtn.0.title) ? paragraph.field_pbhero_gbtn.0.title : (paragraph.field_pbhero_gurl.value ? 'Explore'|t : '') %}
+          {% set scurl = paragraph.field_pbhero_scurl.value|default('') %}
+          {% if (pbtn and purl) or (gbtn and gurl) %}
+            <div class="hero-ctas">
+              {% if pbtn and purl %}
+                <a class="btn-primary" href="{{ purl }}">{{ pbtn }}</a>
+              {% endif %}
+              {% if gbtn and gurl %}
+                <a class="btn-ghost" href="{{ gurl }}">{{ gbtn }}</a>
+              {% endif %}
+            </div>
+          {% endif %}
+          {% if paragraph.field_pbhero_scue.value %}
+            <div class="scroll-cue">
+              {% if scurl %}
+                <a href="{{ scurl }}">See how the water gets here &darr;</a>
+              {% else %}
+                <span>See how the water gets here &darr;</span>
+              {% endif %}
+            </div>
+          {% endif %}
         </div>
       </div>
     {% endblock %}

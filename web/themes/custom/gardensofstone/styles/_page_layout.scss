@@ -1,6 +1,5 @@
 @use '../../../../sites/variables' as sv;
 
-
 body.node-type--page-and-layout main {
   > section {
     padding: 0;
@@ -15,7 +14,6 @@ body.node-type--page-and-layout main {
   }
 }
 
-
 /* ==========================================================================
    Watershed Landing Page Styles
    Based on coxs-river-campaign-landing-page.html design reference
@@ -25,26 +23,7 @@ body.node-type--page-and-layout main {
 /* --------------------------------------------------------------------------
    5. Dark Section (Forest Background)
    -------------------------------------------------------------------------- */
-.watershed-page .section-forest {
-  background: var(--forest-deep);
-  color: var(--cream);
-  padding: 64px 0;
 
-  h2 {
-    color: var(--cream);
-  }
-}
-
-.watershed-page .kicker {
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: var(--ochre);
-  margin-bottom: 10px;
-
-  .section-forest & {
-    color: #D3A868;
-  }
-}
 
 .watershed-page .title {
   font-size: clamp(1.5rem, 3vw, 2.1rem);
@@ -81,29 +60,6 @@ body.node-type--page-and-layout main {
   max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
-}
-
-.watershed-page .case-card {
-  background: var(--cream);
-  border-left: 4px solid var(--clay);
-  padding: 22px 24px;
-  border-radius: 2px;
-  color: var(--ink);
-
-  p {
-    margin: 0 0 10px;
-    font-size: 0.95rem;
-    color: var(--ink);
-  }
-
-  .case-tag {
-    display: inline-block;
-    font-size: 0.74rem;
-    font-weight: 700;
-    letter-spacing: 0.03em;
-    color: var(--clay);
-    margin-bottom: 10px;
-  }
 }
 
 /* --------------------------------------------------------------------------
@@ -486,27 +442,8 @@ body.node-type--page-and-layout main {
 /* --------------------------------------------------------------------------
    16. Responsive Breakpoints
    -------------------------------------------------------------------------- */
-@media (max-width: 780px) {
-  .watershed-page {
-    .evidence-grid {
-      grid-template-columns: 1fr;
-    }
 
-    .watershed-wrap {
-      grid-template-columns: 1fr;
-    }
-
-    .stat-row {
-      grid-template-columns: 1fr;
-    }
-
-    .asks-grid {
-      grid-template-columns: 1fr;
-    }
-  }
-}
-
-@media (max-width: 720px) {
+@media (max-width: 768px) {
   .watershed-page {
     .hero-ctas {
       flex-direction: column;

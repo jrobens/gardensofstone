@@ -17,6 +17,7 @@
 @use 'pbjourney';
 @use 'pbjourneystop';
 @use 'pbevidence';
+@use 'pb_stat_card';
 @use 'pbasks';
 @use 'pbloophole';
 @use 'pbwatershed';
@@ -33,9 +34,62 @@
   }
 }
 
+@font-face {
+  font-family: "Lexend_Deca";
+  src: url("fonts/Lexend_Deca/LexendDeca-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "Electrolize";
+  src: url('fonts/Electrolize/Electrolize-Regular.ttf');
+}
+
+@font-face {
+  font-family: "Font Awesome 6 Free";
+  src: url("fontawesome-free-web/webfonts/fa-solid-900.woff2");
+}
+
+@font-face {
+  font-family: "Libre Franklin";
+  src: url("fonts/Libre_Franklin/LibreFranklin-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "Fraunces";
+  src: url("fonts/Fraunces/Fraunces-VariableFont_SOFT,WONK,opsz,wght.ttf");
+}
+
+@font-face {
+  font-family: "Handlee";
+  src: url("fonts/Handlee/Handlee-Regular.ttf");
+}
+
+@font-face {
+  font-family: DMSans-Regular;
+  src: local(DMSans-Regular), url(fonts/DM_Sans/DMSans-VariableFont_opsz,wght.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: DMSans-Bold;
+  src: local(DMSans-Bold), url(fonts/DM_Sans/DMSans-VariableFont_opsz,wght.ttf) format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: DMSerifDisplay;
+  src: local(DMSerifDisplay-Regular), url(fonts/DM_Serif_Display/DMSerifDisplay-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+}
 
 body {
-  font: 100 100%/1.5 'Hind Guntur', sans-serif;
+  font: 100 100%/1.25 'Libre Franklin', sans-serif;
   color: rgb(27, 27, 27);
 
   a, a:visited {
@@ -50,16 +104,17 @@ body .region-content a, body .region-content a:visited {
 
 
 html .is-family-primary {
-  font-family: 'Hind Guntur', sans-serif;
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 600;
 }
 
 body a:active {
   outline: white;
 }
 
-h1,
-h2,
-h3,
-h4 {
-  font-family: 'Lato', sans-serif;
+h1, h2, h3, h4, h5, h6,
+.title,
+.heading {
+  font-family: 'Fraunces', serif;
+  font-weight: 600;
 }

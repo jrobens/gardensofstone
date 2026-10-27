@@ -18,55 +18,55 @@
 ] %}
 
 {% block paragraph %}
-    <div{{ attributes.addClass(classes) }}>
+    <details{{ attributes.addClass(classes) }}>
 
         {% set icon_classes = ['journey-icon'] %}
         {# Check if pollution field exists and is filled (assumes it is added to the schema later) #}
-        {% if content.field_pbjourney_pollution and content.field_pbjourney_pollution|render %}
+        {% if paragraph.field_pbjourney_pollution and not paragraph.field_pbjourney_pollution.isEmpty() %}
             {% set icon_classes = icon_classes|merge(['pollution']) %}
         {% endif %}
 
-        {# Render the icon field wrapper safely #}
-        {% if content.field_pbjourney_icon and content.field_pbjourney_icon|render %}
-            <div class="{{ icon_classes|join(' ') }}">
-                {# If outputting via entity_reference_entity_view, just render the field block #}
-                {{ content.field_pbjourney_icon }}
-            </div>
-        {% endif %}
+        <summary class="journey-header">
+            {# Render the icon field wrapper inside summary so it's always accessible & clickable #}
+            {% if not paragraph.field_pbjourney_icon.isEmpty() %}
+                <div class="{{ icon_classes|join(' ') }}">
+                    {# If outputting via entity_reference_entity_view, just render the field block #}
+                    {{ content.field_pbjourney_icon }}
+                </div>
+            {% endif %}
 
-        <div class="journey-header">
             <div class="journey-heading">
-                {% if content.field_pbjourney_label and content.field_pbjourney_label|render %}
+                {% if not paragraph.field_pbjourney_label.isEmpty() %}
                     <div class="journey-label">{{ content.field_pbjourney_label }}</div>
                 {% endif %}
 
                 {# Check if sub heading exists (assumes it is added to the schema later) #}
-                {% if content.field_pbjourney_sub and content.field_pbjourney_sub|render %}
+                {% if paragraph.field_pbjourney_sub and not paragraph.field_pbjourney_sub.isEmpty() %}
                     <div class="journey-sub">{{ content.field_pbjourney_sub }}</div>
                 {% endif %}
             </div>
-        </div>
+        </summary>
 
         <div class="journey-detail">
             <div class="journey-detail-inner">
                 {# Mapped from schema's field_pbjourney_stop_det field #}
-                {% if content.field_pbjourney_stop_det and content.field_pbjourney_stop_det|render %}
+                {% if not paragraph.field_pbjourney_stop_det.isEmpty() %}
                     <div class="journey-description">
                         {{ content.field_pbjourney_stop_det }}
                     </div>
                 {% endif %}
 
                 {# Check if stat exists (assumes it is added to the schema later) #}
-                {% if content.field_pbjourney_stat and content.field_pbjourney_stat|render %}
+                {% if paragraph.field_pbjourney_stat and not paragraph.field_pbjourney_stat.isEmpty() %}
                     <span class="journey-stat">{{ content.field_pbjourney_stat }}</span>
                 {% endif %}
 
                 {# Render the link field that was missing from your template layout #}
-                {% if content.field_pbjourney_link and content.field_pbjourney_link|render %}
+                {% if not paragraph.field_pbjourney_link.isEmpty() %}
                     <div class="journey-link">{{ content.field_pbjourney_link }}</div>
                 {% endif %}
             </div>
         </div>
 
-    </div>
+    </details>
 {% endblock paragraph %}

@@ -1,0 +1,32 @@
+{#
+/**
+ * @file
+ * Theme implementation for a Stat Card paragraph.
+ */
+#}
+{%
+    set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    'stat-card',
+]
+%}
+<div{{ attributes.addClass(classes) }}>
+    <div class="stat-card__body">
+
+        {% if not paragraph.field_pbstat_number.isEmpty() %}
+            <div class="stat-card__number">
+                {{ content.field_pbstat_number }}
+            </div>
+        {% endif %}
+
+        {% if not paragraph.field_pbstat_label.isEmpty() %}
+            <div class="stat-card__label">
+                {{ content.field_pbstat_label }}
+            </div>
+        {% endif %}
+
+    </div>
+</div>
+

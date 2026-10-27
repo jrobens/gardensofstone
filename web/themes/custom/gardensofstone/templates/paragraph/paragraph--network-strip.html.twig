@@ -21,18 +21,17 @@
 {% block paragraph %}
   <div{{ attributes.addClass(classes) }}>
     {% block content %}
-      <div class="wrap{{ attributes.addClass('wrap') }} network-inner">
+      <div class="wrap network-inner">
         <div style="flex:1;min-width:260px;">
-          {% if content.field_pbnetwork_stat %}
+          {% if paragraph.field_pbnetwork_stat and not paragraph.field_pbnetwork_stat.isEmpty() %}
             <div class="network-stat">{{ content.field_pbnetwork_stat }}</div>
           {% endif %}
-          {% if content.field_pbnetwork_text %}
-            <p class="network-text">{{ content.field_pbnetwork_text }}</p>
+          {% if paragraph.field_pbnetwork_text and not paragraph.field_pbnetwork_text.isEmpty() %}
+            <div class="network-text">{{ content.field_pbnetwork_text }}</div>
           {% endif %}
-          {% if content.field_pbnetwork_form %}
+          {% if paragraph.field_pbnetwork_form and not paragraph.field_pbnetwork_form.isEmpty() %}
             <div class="subscribe-row">
-              <input type="email" placeholder="you@example.com" />
-              <a class="ask-btn" style="background:var(--forest-deep);" href="#">Subscribe</a>
+              {{ content.field_pbnetwork_form }}
             </div>
           {% endif %}
         </div>
