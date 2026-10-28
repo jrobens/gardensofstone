@@ -9,9 +9,11 @@ dependencies:
     - field.field.paragraph.evidence_block.field_pbevidence_eco_title
     - field.field.paragraph.evidence_block.field_pbevidence_kicker
     - field.field.paragraph.evidence_block.field_pbevidence_punchline
+    - field.field.paragraph.evidence_block.field_pbevidence_statistics
     - field.field.paragraph.evidence_block.field_pbevidence_title
     - paragraphs.paragraphs_type.evidence_block
   module:
+    - paragraphs
     - text
 id: paragraph.evidence_block.default
 targetEntityType: paragraph
@@ -20,7 +22,7 @@ mode: default
 content:
   field_pbevidence_body:
     type: text_textarea
-    weight: 3
+    weight: 2
     region: content
     settings:
       rows: 7
@@ -65,6 +67,24 @@ content:
     settings:
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  field_pbevidence_statistics:
+    type: paragraphs
+    weight: 3
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+      features:
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
     third_party_settings: {  }
   field_pbevidence_title:
     type: string_textfield

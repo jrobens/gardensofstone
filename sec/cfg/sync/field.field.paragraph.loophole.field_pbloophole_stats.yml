@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.storage.paragraph.field_pbloophole_stats
     - paragraphs.paragraphs_type.loophole
-    - paragraphs.paragraphs_type.paragraph_stat_card
   module:
     - entity_reference_revisions
     - paragraph_blocks
@@ -25,8 +24,7 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    target_bundles:
-      paragraph_stat_card: paragraph_stat_card
+    target_bundles: {  }
     negate: 0
     target_bundles_drag_drop:
       ask_card:

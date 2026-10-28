@@ -1,19 +1,19 @@
-uuid: d255e8ae-379e-4b7d-b277-df8f816481cc
+uuid: a7365913-cce0-4a11-be70-7308bfd82523
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.paragraph_stat_card.field_pbstat_label
-    - field.field.paragraph.paragraph_stat_card.field_pbstat_number
-    - paragraphs.paragraphs_type.paragraph_stat_card
-id: paragraph.paragraph_stat_card.default
+    - field.field.paragraph.stat_card.field_pbstat_label
+    - field.field.paragraph.stat_card.field_pbstat_number
+    - paragraphs.paragraphs_type.stat_card
+id: paragraph.stat_card.default
 targetEntityType: paragraph
-bundle: paragraph_stat_card
+bundle: stat_card
 mode: default
 content:
   admin_title:
     type: string_textfield
-    weight: -10
+    weight: 2
     region: content
     settings:
       size: 60
@@ -21,7 +21,7 @@ content:
     third_party_settings: {  }
   field_pbstat_label:
     type: string_textfield
-    weight: -8
+    weight: 1
     region: content
     settings:
       size: 60
@@ -29,7 +29,7 @@ content:
     third_party_settings: {  }
   field_pbstat_number:
     type: string_textfield
-    weight: -9
+    weight: 0
     region: content
     settings:
       size: 60

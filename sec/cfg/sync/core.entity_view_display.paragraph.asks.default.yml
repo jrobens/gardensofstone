@@ -9,6 +9,9 @@ dependencies:
     - field.field.paragraph.asks.field_pbasks_standout_lede
     - field.field.paragraph.asks.field_pbasks_title
     - paragraphs.paragraphs_type.asks
+  module:
+    - entity_reference_revisions
+    - text
 id: paragraph.asks.default
 targetEntityType: paragraph
 bundle: asks
@@ -25,31 +28,33 @@ content:
     region: content
   field_pbasks_copy_note:
     type: text_default
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     weight: 3
     region: content
   field_pbasks_kicker:
     type: string
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
+      link_rel: canonical
     third_party_settings: {  }
     weight: 0
     region: content
   field_pbasks_standout_lede:
     type: text_default
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     weight: 2
     region: content
   field_pbasks_title:
     type: string
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
+      link_rel: canonical
     third_party_settings: {  }
     weight: 1
     region: content

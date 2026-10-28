@@ -1,0 +1,113 @@
+uuid: c09780ee-ac9b-4816-9426-fe27392a9956
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pbevidence_statistics
+    - paragraphs.paragraphs_type.evidence_block
+    - paragraphs.paragraphs_type.stat_card
+  module:
+    - entity_reference_revisions
+    - paragraph_blocks
+third_party_settings:
+  paragraph_blocks:
+    status: 1
+id: paragraph.evidence_block.field_pbevidence_statistics
+field_name: field_pbevidence_statistics
+entity_type: paragraph
+bundle: evidence_block
+label: Statistics
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      stat_card: stat_card
+    negate: 0
+    target_bundles_drag_drop:
+      ask_card:
+        weight: 29
+        enabled: false
+      asks:
+        weight: 28
+        enabled: false
+      block:
+        weight: 30
+        enabled: false
+      checkerboard:
+        weight: 31
+        enabled: false
+      crossfade_banner:
+        weight: 32
+        enabled: false
+      evidence_block:
+        weight: 33
+        enabled: false
+      heading:
+        weight: 34
+        enabled: false
+      hero:
+        weight: 35
+        enabled: false
+      hero_campaign:
+        weight: 36
+        enabled: false
+      image:
+        weight: 37
+        enabled: false
+      image_square:
+        weight: 38
+        enabled: false
+      index_block:
+        weight: 39
+        enabled: false
+      journey_section:
+        weight: 40
+        enabled: false
+      journey_stop:
+        weight: 41
+        enabled: false
+      loophole:
+        weight: 42
+        enabled: false
+      map:
+        weight: 43
+        enabled: false
+      network_strip:
+        weight: 44
+        enabled: false
+      pb_grid_container:
+        weight: 46
+        enabled: false
+      quote:
+        weight: 47
+        enabled: false
+      row:
+        weight: 48
+        enabled: false
+      stat_card:
+        weight: 48
+        enabled: true
+      text:
+        weight: 49
+        enabled: false
+      tile:
+        weight: 50
+        enabled: false
+      video:
+        weight: 51
+        enabled: false
+      views_block:
+        weight: 52
+        enabled: false
+      watershed_video:
+        weight: 53
+        enabled: false
+      webform:
+        weight: 54
+        enabled: false
+field_type: entity_reference_revisions

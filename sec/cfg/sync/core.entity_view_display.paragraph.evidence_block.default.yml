@@ -9,9 +9,11 @@ dependencies:
     - field.field.paragraph.evidence_block.field_pbevidence_eco_title
     - field.field.paragraph.evidence_block.field_pbevidence_kicker
     - field.field.paragraph.evidence_block.field_pbevidence_punchline
+    - field.field.paragraph.evidence_block.field_pbevidence_statistics
     - field.field.paragraph.evidence_block.field_pbevidence_title
     - paragraphs.paragraphs_type.evidence_block
   module:
+    - entity_reference_revisions
     - text
 id: paragraph.evidence_block.default
 targetEntityType: paragraph
@@ -23,7 +25,7 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 3
+    weight: 2
     region: content
   field_pbevidence_eco_description:
     type: text_default
@@ -37,6 +39,7 @@ content:
     label: hidden
     settings:
       link_to_entity: false
+      link_rel: canonical
     third_party_settings: {  }
     weight: 6
     region: content
@@ -45,6 +48,7 @@ content:
     label: hidden
     settings:
       link_to_entity: false
+      link_rel: canonical
     third_party_settings: {  }
     weight: 4
     region: content
@@ -53,6 +57,7 @@ content:
     label: hidden
     settings:
       link_to_entity: false
+      link_rel: canonical
     third_party_settings: {  }
     weight: 0
     region: content
@@ -61,14 +66,25 @@ content:
     label: hidden
     settings:
       link_to_entity: false
+      link_rel: canonical
     third_party_settings: {  }
     weight: 7
+    region: content
+  field_pbevidence_statistics:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 3
     region: content
   field_pbevidence_title:
     type: string
     label: hidden
     settings:
       link_to_entity: false
+      link_rel: canonical
     third_party_settings: {  }
     weight: 1
     region: content
