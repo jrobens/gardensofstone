@@ -4,7 +4,32 @@
  * Can be quickly compiled to CSS at https://www.sassmeister.com/.
  */
 :root {
+  --ink: #2B2822;
+  --cream: #EDE6D6;
+  --cream-deep: #E2D9C4;
+  --forest: #22392C;
+  --forest-deep: #182A1F;
+  --ochre: #A8632F;
+  --water: #2E5266;
+  --clay: #8C3B2E;
+  --paper: #F7F3EA;
   --color-highlight-1: #a2046b;
+  /* Suggested Mid-Tone Green Bridges */
+  --sage-soft: #9caf88;
+  --eucalyptus: #7a8b7b;
+  --olive-warm: #606639;
+  --moss-matcha: #848b60;
+  --lichen: #cdd797;
+  --soft-alibaster: #F2EFE9;
+  /* Functional Roles (Highlight 1 Primary) */
+  --bg-primary: var(--paper);
+  --bg-secondary: var(--cream);
+  --bg-tertiary: var(--cream-deep);
+  --text-primary: var(--root-ink);
+  --text-muted: var(--forest);
+  /* Highlight 1 Primary Selection */
+  --highlight-primary: var(--ochre);
+  --highlight-primary-contrast: var(--paper);
 }
 
 .green {
@@ -73,9 +98,6 @@
   background-color: #005a3f;
 }
 
-/*
-Color NameHex CodeTone & IntentBest UI ApplicationDeep Waratah Crimson#B7342AMuted native red with rich earth undertones. High contrast, zero neon glare.Active menu indicators, left border accents, hover highlights.Sandstone Burnt Ochre#C95A2EWarm rust/burnt orange inspired by Blue Mountains pagoda rock ironstone.Sub-navigation hover states, CTA buttons, section badges.Golden Banksia#E08B22Vibrant warm amber/gold. Radiates light like sunset hitting cliff faces.Icon accents, active tab borders, secondary link highlights.
- */
 .paragraph--type--image {
   position: relative;
   width: 100%;
