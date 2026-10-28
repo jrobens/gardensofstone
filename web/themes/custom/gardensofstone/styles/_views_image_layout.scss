@@ -1,3 +1,5 @@
+@use '../../../../sites/variables' as sv;
+@use "../../../../libraries/bulma/sass/utilities/mixins" as bv;
 .view-id-visit_gardens_of_stone_terms {
   .view-content > .views-row {
     position: relative;
@@ -24,8 +26,6 @@
   .views-field.views-field-field-visit-image .field_media_image img:hover {
     opacity: 0;
     transition: opacity .55s ease-in-out;
-    -moz-transition: opacity .55s ease-in-out;
-    -webkit-transition: opacity .55s ease-in-out;
   }
 }
 

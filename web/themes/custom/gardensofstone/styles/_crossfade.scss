@@ -1,3 +1,6 @@
+@use '../../../../sites/variables' as sv;
+@use "../../../../libraries/bulma/sass/utilities/mixins" as bv;
+
 .paragraph--type--crossfade-banner, #CrossFade {
   z-index: 1;
   background: #000;
