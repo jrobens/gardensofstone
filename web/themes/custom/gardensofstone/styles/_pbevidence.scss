@@ -25,10 +25,9 @@
     color: #DCD6C4;
   }
 
-  @media (max-width: 720px) {
-    .evidence-block .stat-row {
-      grid-template-columns: 1fr;
-    }
+  .is-family-primary, .evidence-grid {
+    line-height: 1.55;
+    max-width: 62ch;
   }
 
   .eco-block {

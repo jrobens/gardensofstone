@@ -1,3 +1,6 @@
+@use '../../../../sites/variables' as sv;
+@use "../../../../libraries/bulma/sass/utilities/mixins" as bv;
+
 /* --------------------------------------------------------------------------
    Full-width container for node pages
    -------------------------------------------------------------------------- */
@@ -12,10 +15,7 @@
 .field_watershed_content {
   background-color: var(--soft-alibaster);
 
-  .is-family-primary, .evidence-grid {
-    line-height: 1.55;
-    max-width: 62ch;
-  }
+
 
   h1, h2, h3 {
     margin: 0;
@@ -138,16 +138,6 @@
     align-items: start;
   }
 
-  // Evidence Grid
-  .evidence-grid {
-    margin-top: 2.25rem;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2.75rem;
-    max-width: 1400px;
-    margin-left: auto;
-    margin-right: auto;
-  }
 
   // Stat Cards - mobile first (1 column)
   .stat-row {
@@ -248,7 +238,7 @@
 }
 
 // Tablet enhancements
-@include tablet {
+@include bv.tablet {
   .field_watershed_content {
     section {
       padding: 5rem 0;
@@ -279,11 +269,6 @@
         padding: 1.625rem;
       }
     }
-
-    .evidence-grid {
-      grid-template-columns: 1.3fr 1fr;
-      gap: 2.75rem;
-    }
   }
 
   .video-frame {
@@ -303,8 +288,7 @@
   }
 }
 
-// Desktop enhancements
-@include desktop {
+@include bv.desktop {
   .field_watershed_content {
     section {
       padding: 6rem 0;
@@ -334,10 +318,6 @@
       .ask-card {
         padding: 1.625rem;
       }
-    }
-
-    .evidence-grid {
-      gap: 2.75rem;
     }
 
     .watershed-wrap {

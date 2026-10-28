@@ -1,3 +1,6 @@
+@use '../../../../sites/variables' as sv;
+@use "../../../../libraries/bulma/sass/utilities/mixins" as bv;
+
 // Hero Campaign styles
 .field_watershed_content {
   // Base mobile styles
@@ -93,7 +96,7 @@
   }
 
   // Tablet enhancements
-  @include tablet {
+  @include bv.tablet {
     .hero {
       padding: 5rem 0 4rem;
 
@@ -110,7 +113,7 @@
   }
 
   // Desktop enhancements
-  @include desktop {
+  @include bv.desktop {
     .hero {
       padding: 6rem 0 5.25rem;
 
