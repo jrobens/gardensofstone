@@ -3,106 +3,89 @@
 
 .asks-section {
   .asks-grid {
-    margin-top: 2.5rem;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 22px;
-  }
-
-  @include bv.mobile {
-    .asks-grid {
+    .field_pbasks_cards {
+      display: grid;
       grid-template-columns: 1fr;
+      margin-top: 2.5rem;
+      gap: 22px;
+    }
+
+    @include bv.tablet {
+      .field_pbasks_cards {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+    }
+
+    .ask-card {
+      display: flex;
+      flex-direction: column;
+      background: var(--paper);
+      border: 0.0625rem solid rgba(43, 40, 34, 0.14);
+      border-radius: 0.25rem;
+      padding: 1.625rem;
+
+      .ask-role {
+        font-size: 0.78rem;
+        font-weight: 700;
+        text-transform: none;
+        color: var(--water);
+        margin-bottom: 0.5rem;
+      }
+
+      h3 {
+        font-size: 1.15rem;
+        margin-bottom: 0.75rem;
+      }
+
+      p {
+        font-size: 0.93rem;
+        color: #3c392f;
+        margin-bottom: 1rem;
+      }
+
+      .sample_submission {
+        flex: 1;
+        background: var(--cream);
+        border-left: 0.1875rem solid rgba(43, 40, 34, 0.15);
+        padding: 0.875rem 1rem;
+        border-radius: 0.125rem;
+        margin-bottom: 0.875rem;
+        font-size: 0.86rem;
+        line-height: 1.55;
+        color: #4a4738;
+        font-style: italic;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .ask-btn {
+        display: inline-block;
+        background: var(--water);
+        color: var(--paper);
+        padding: 0.6875rem 1.25rem;
+        border-radius: 0.1875rem;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 0.875rem;
+        border: none;
+      }
+
+      &.political {
+        border-top: 0.25rem solid var(--forest-deep);
+      }
+
+      &.operational {
+        border-top: 0.25rem solid var(--ochre);
+      }
+
+      &.local {
+        border-top: 0.25rem solid var(--water);
+      }
+
+      &.premier {
+        border-top: 0.25rem solid var(--clay);
+      }
     }
   }
-
-  .ask-card {
-    background: var(--paper);
-    border: 1px solid rgba(43, 40, 34, 0.14);
-    border-radius: 4px;
-    padding: 26px;
-  }
-
-  .ask-role {
-    font-size: 0.78rem;
-    font-weight: 700;
-    text-transform: none;
-    color: var(--water);
-    margin-bottom: 8px;
-  }
-
-  .ask-card h3 {
-    font-size: 1.15rem;
-    margin-bottom: 12px;
-  }
-
-  .ask-card p {
-    font-size: 0.93rem;
-    color: #3c392f;
-    margin-bottom: 16px;
-  }
-
-  .ask-btn {
-    display: inline-block;
-    background: var(--water);
-    color: var(--paper);
-    padding: 11px 20px;
-    border-radius: 3px;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 0.88rem;
-    border: none;
-    cursor: pointer;
-  }
-
-  .ask-card.premier {
-    border-top: 4px solid var(--clay);
-  }
-
-  .ask-card.political {
-    border-top: 4px solid var(--forest-deep);
-  }
-
-  .ask-card.operational {
-    border-top: 4px solid var(--ochre);
-  }
-
-  .ask-card.local {
-    border-top: 4px solid var(--water);
-  }
-
-  .sample-text {
-    background: var(--cream);
-    border-left: 3px solid rgba(43, 40, 34, 0.15);
-    padding: 14px 16px;
-    border-radius: 2px;
-    margin-bottom: 14px;
-    font-size: 0.86rem;
-    line-height: 1.55;
-    color: #4a4738;
-    font-style: italic;
-  }
-
-  .ask-actions {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-  }
-
-  .copy-btn {
-    background: transparent;
-    border: 1.5px solid var(--water);
-    color: var(--water);
-    padding: 9px 16px;
-    border-radius: 3px;
-    font-weight: 600;
-    font-size: 0.85rem;
-    cursor: pointer;
-  }
-
-  .copy-btn.copied {
-    border-color: var(--ochre);
-    color: var(--ochre);
-  }
-
-
 }

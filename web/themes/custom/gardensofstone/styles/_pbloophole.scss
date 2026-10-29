@@ -31,12 +31,6 @@
     margin-top: 34px;
   }
 
-  .stat-row {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-  }
-
   .stat-card {
     background: var(--cream);
     border-top: 4px solid var(--ochre);
@@ -79,8 +73,3 @@
   }
 }
 
-@media (max-width: 720px) {
-  .loophole-section .stat-row {
-    grid-template-columns: 1fr;
-  }
-}
