@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "abbedf17d4053074b2c078574064f895",
+    "content-hash": "31589088e729e8264c2b97ea49645df1",
     "packages": [
         {
             "name": "adrienrn/php-mimetyper",
@@ -5910,6 +5910,50 @@
             }
         },
         {
+            "name": "drupal/inline_svg",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/inline_svg.git",
+                "reference": "1.0.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/inline_svg-1.0.0.zip",
+                "reference": "1.0.0",
+                "shasum": "38eb74d059ea7090af5728691e29156f1a60c23b"
+            },
+            "require": {
+                "drupal/core": "^10 || ^11"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.0.0",
+                    "datestamp": "1758824579",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "sujan shrestha",
+                    "homepage": "https://www.drupal.org/user/3475737"
+                }
+            ],
+            "description": "Provides a custom textarea field to store and render inline SVG with configurable display settings.",
+            "homepage": "https://www.drupal.org/project/inline_svg",
+            "support": {
+                "source": "https://git.drupalcode.org/project/inline_svg"
+            }
+        },
+        {
             "name": "drupal/key",
             "version": "1.22.0",
             "source": {
@@ -6570,6 +6614,116 @@
             "support": {
                 "source": "git://git.drupal.org/project/media_bulk_upload.git",
                 "issues": "https://www.drupal.org/project/issues/media_bulk_upload"
+            }
+        },
+        {
+            "name": "drupal/media_thumbnails",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/media_thumbnails.git",
+                "reference": "2.0.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/media_thumbnails-2.0.0.zip",
+                "reference": "2.0.0",
+                "shasum": "bf8fed213de635be2b90c8a355a22aa7d8fb8b91"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9 || ^10 || ^11"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.0",
+                    "datestamp": "1727345523",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Boris Böhne (drubb)",
+                    "homepage": "https://www.drupal.org/u/drubb",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Quentin Fahrner (renrhaf)",
+                    "homepage": "https://www.drupal.org/u/renrhaf",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "renrhaf",
+                    "homepage": "https://www.drupal.org/user/2478454"
+                }
+            ],
+            "description": "Plugin manager for media entity thumbnail generation",
+            "homepage": "https://www.drupal.org/project/media_thumbnails",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "https://git.drupalcode.org/project/media_thumbnails",
+                "issues": "https://www.drupal.org/project/issues/media_thumbnails"
+            }
+        },
+        {
+            "name": "drupal/media_thumbnails_svg",
+            "version": "3.0.0-beta1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/media_thumbnails_svg.git",
+                "reference": "3.0.0-beta1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/media_thumbnails_svg-3.0.0-beta1.zip",
+                "reference": "3.0.0-beta1",
+                "shasum": "153b75f6efc62dd8b01f61785b3570819e5ba61a"
+            },
+            "require": {
+                "drupal/core": "^11.2 || ^12",
+                "drupal/media_thumbnails": "^1.0 || ^2.0",
+                "meyfa/php-svg": "^0.12.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "3.0.0-beta1",
+                    "datestamp": "1781713147",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Beta releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Boris Böhne (drubb)",
+                    "homepage": "https://www.drupal.org/u/drubb",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "drubb",
+                    "homepage": "https://www.drupal.org/user/69706"
+                }
+            ],
+            "description": "Generate custom thumbnails for svg media entities.",
+            "homepage": "https://drupal.org/project/media_thumbnails_svg",
+            "support": {
+                "source": "https://cgit.drupalcode.org/media_thumbnails_svg",
+                "issues": "https://drupal.org/project/issues/media_thumbnails_svg"
             }
         },
         {
@@ -7626,6 +7780,99 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/svg_image",
                 "issues": "https://www.drupal.org/project/issues/svg_image"
+            }
+        },
+        {
+            "name": "drupal/svg_upload_sanitizer",
+            "version": "2.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/svg_upload_sanitizer.git",
+                "reference": "8.x-2.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/svg_upload_sanitizer-8.x-2.2.zip",
+                "reference": "8.x-2.2",
+                "shasum": "4ac4ec2583f4b1995c606f97c2e49c7cfcc2df43"
+            },
+            "require": {
+                "drupal/core": "^10.0 || ^11.0",
+                "enshrined/svg-sanitize": "~1.0",
+                "php": "^8.1"
+            },
+            "conflict": {
+                "drupal/drupal": "*"
+            },
+            "require-dev": {
+                "behat/mink": "^1.10",
+                "dealerdirect/phpcodesniffer-composer-installer": "0.7.0",
+                "drupal/coder": "8.3.11",
+                "drupal/core-composer-scaffold": "^10.0 || ^11.0",
+                "mikey179/vfsstream": "1.6.7"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.2",
+                    "datestamp": "1791888015",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                },
+                "drupal-scaffold": {
+                    "locations": {
+                        "project-root": "./vendor/drupal",
+                        "web-root": "./vendor/drupal"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Drupal\\svg_upload_sanitizer\\": "src/",
+                    "Drupal\\Tests\\svg_upload_sanitizer\\": "tests/src/"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "scripts": {
+                "clean": [
+                    "rm -rf composer.lock vendor"
+                ],
+                "quality-analysis": [
+                    "composer phpcs && composer phpmd && composer phpunit"
+                ],
+                "phpcs": [
+                    "./vendor/bin/phpcs"
+                ],
+                "phpmd": [
+                    "./tools/phpmd src,svg_upload_sanitizer.module ansi phpmd.xml.dist"
+                ],
+                "phpunit": [
+                    "./tools/phpunit.phar"
+                ]
+            },
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Benjamin Rambaud (beram.job@gmail.com)",
+                    "homepage": "https://drupal.org/user/3508624",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Sanitize SVG file at the upload.",
+            "homepage": "https://www.drupal.org/project/svg_upload_sanitizer",
+            "keywords": [
+                "Drupal",
+                "Media",
+                "Security",
+                "svg"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/svg_upload_sanitizer",
+                "issues": "http://drupal.org/project/issues/svg_upload_sanitizer"
             }
         },
         {
@@ -10370,6 +10617,59 @@
                 "source": "https://github.com/mck89/peast/tree/v1.17.7"
             },
             "time": "2026-07-21T11:56:06+00:00"
+        },
+        {
+            "name": "meyfa/php-svg",
+            "version": "v0.12.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/meyfa/php-svg.git",
+                "reference": "f6cc2fa743c4a2012cdec9143033f69eee3b501d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/meyfa/php-svg/zipball/f6cc2fa743c4a2012cdec9143033f69eee3b501d",
+                "reference": "f6cc2fa743c4a2012cdec9143033f69eee3b501d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "meyfa/phpunit-assert-gd": "^1.2",
+                "phpmd/phpmd": "@stable",
+                "phpunit/phpunit": "^4.8"
+            },
+            "suggest": {
+                "ext-gd": "Needed to rasterize images",
+                "ext-simplexml": "Needed to read SVG strings and files"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "SVG\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabian Meyer",
+                    "homepage": "http://meyfa.net"
+                }
+            ],
+            "description": "Read, edit, write, and render SVG files with PHP",
+            "homepage": "https://github.com/meyfa/php-svg",
+            "keywords": [
+                "svg"
+            ],
+            "support": {
+                "issues": "https://github.com/meyfa/php-svg/issues",
+                "source": "https://github.com/meyfa/php-svg/tree/v0.12.0"
+            },
+            "time": "2022-11-15T15:49:03+00:00"
         },
         {
             "name": "nette/schema",
@@ -18096,6 +18396,7 @@
         "drupal/entity_clone": 10,
         "drupal/layout_paragraphs": 20,
         "drupal/masquerade": 5,
+        "drupal/media_thumbnails_svg": 10,
         "drupal/xmlsitemap": 20
     },
     "prefer-stable": true,
