@@ -20,7 +20,7 @@
 
   .field_pbevidence_body {
     max-width: 62ch;
-    margin-top: 16px;
+    margin-top: 1rem;
     font-size: 1.03rem;
     color: #DCD6C4;
   }
@@ -31,21 +31,21 @@
   }
 
   .eco-block {
-    margin-top: 40px;
-    padding-top: 34px;
-    border-top: 1px solid rgba(237, 230, 214, 0.16);
+    margin-top: 2.5rem;
+    padding: 0.875rem 1rem 2.125rem;
+    border-top: 0.0625rem solid rgba(237, 230, 214, 0.16);
 
     h3 {
       color: var(--cream);
       font-size: 1.2rem;
-      margin-bottom: 12px;
+      margin-bottom: 0.75rem;
     }
 
     p {
       color: #DCD6C4;
       font-size: 0.96rem;
       max-width: 68ch;
-      margin: 0 0 10px;
+      margin: 0 0 0.625rem;
     }
   }
 
@@ -55,11 +55,11 @@
     font-size: 0.9rem;
     font-weight: 600;
     text-decoration: underline;
-    margin-bottom: 8px;
+    margin-bottom: 0.5rem;
   }
 
   .punchline {
-    margin-top: 26px;
+    margin-top: 1.625rem;
     font-family: 'Fraunces', serif;
     font-weight: 600;
     font-size: 1.5rem;
