@@ -1,0 +1,10 @@
+uuid: 84e010af-a35d-4f97-a27f-4493cc1876dc
+langcode: en
+status: true
+dependencies: {  }
+id: stat_card
+label: 'Stat Card'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }
