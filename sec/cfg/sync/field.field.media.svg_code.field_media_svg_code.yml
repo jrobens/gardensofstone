@@ -1,0 +1,23 @@
+uuid: b2be1afb-1691-4575-98d7-0cf51f8f50a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_svg_code
+    - media.type.svg_code
+  module:
+    - inline_svg
+_core:
+  default_config_hash: gjT8AYRi7OfezpSnYF161_f85SwYMRvTpkLYTj5jjsg
+id: media.svg_code.field_media_svg_code
+field_name: field_media_svg_code
+entity_type: media
+bundle: svg_code
+label: 'SVG Code'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: svg_code

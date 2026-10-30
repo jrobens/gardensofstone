@@ -1,0 +1,46 @@
+uuid: 4a4cfd21-9690-446b-9b30-996b81090da7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.svg_code.field_media_svg_code
+    - media.type.svg_code
+  module:
+    - inline_svg
+_core:
+  default_config_hash: 1qWM9gskQ7ypFRw8Hgm7OC_ZY_pvlFOpKySTXDjG3m0
+id: media.svg_code.default
+targetEntityType: media
+bundle: svg_code
+mode: default
+content:
+  field_media_svg_code:
+    type: svg_code_formatter
+    label: visually_hidden
+    settings:
+      fill: ''
+      fill_opacity: ''
+      stroke: ''
+      stroke_width: ''
+      stroke_opacity: ''
+      stroke_linecap: ''
+      stroke_linejoin: ''
+      stroke_dasharray: ''
+      stroke_dashoffset: ''
+      font_family: ''
+      font_size: ''
+      font_weight: ''
+      text_anchor: ''
+      letter_spacing: ''
+      height: ''
+      width: ''
+      transform: ''
+      class: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  name: true
+  thumbnail: true
+  uid: true

@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.paragraph.field_pbjourney_icon
     - media.type.image
+    - media.type.svg_code
     - paragraphs.paragraphs_type.journey_stop
 id: paragraph.journey_stop.field_pbjourney_icon
 field_name: field_pbjourney_icon
@@ -21,9 +22,10 @@ settings:
   handler_settings:
     target_bundles:
       image: image
+      svg_code: svg_code
     sort:
       field: _none
       direction: ASC
     auto_create: false
-    auto_create_bundle: ''
+    auto_create_bundle: image
 field_type: entity_reference

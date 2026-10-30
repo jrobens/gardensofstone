@@ -1,0 +1,17 @@
+uuid: 4c84e5e7-e510-456e-abf5-fffa4efff902
+langcode: en
+status: true
+dependencies:
+  module:
+    - inline_svg_media
+_core:
+  default_config_hash: _B7Iwt8pOoe_nr1EOU3XLeRQHzcxQGPIe7bTpe1qz-4
+id: svg_code
+label: 'SVG code'
+description: 'Inline SVG'
+source: svg_code
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_svg_code
+field_map: {  }

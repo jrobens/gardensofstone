@@ -10,8 +10,8 @@ dependencies:
     - media.type.image
   module:
     - ds
-    - image
     - layout_builder
+    - svg_image
 third_party_settings:
   layout_builder:
     enabled: false

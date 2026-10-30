@@ -18,9 +18,9 @@ mode: default
 content:
   field_pbjourney_icon:
     type: entity_reference_entity_view
-    label: above
+    label: hidden
     settings:
-      view_mode: default
+      view_mode: original
       link: false
     third_party_settings: {  }
     weight: 0

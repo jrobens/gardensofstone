@@ -3,9 +3,13 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.watershed_video.field_pbvideo_video
+    - field.field.paragraph.watershed_video.field_pbwvideo_kicker
+    - field.field.paragraph.watershed_video.field_pbwvideo_title
+    - field.field.paragraph.watershed_video.field_watershed_body
     - paragraphs.paragraphs_type.watershed_video
   module:
-    - media
+    - text
 id: paragraph.watershed_video.default
 targetEntityType: paragraph
 bundle: watershed_video
@@ -20,11 +24,29 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
+  field_pbwvideo_kicker:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+      link_rel: canonical
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_pbwvideo_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+      link_rel: canonical
+    third_party_settings: {  }
+    weight: 2
+    region: content
   field_watershed_body:
     type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 1
+    weight: 3
     region: content
 hidden: {  }

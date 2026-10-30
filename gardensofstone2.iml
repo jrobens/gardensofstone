@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/sec/cfg/sync" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/web/core/recipes/feedback_contact_form/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/web/files/civicrm/ext/.civicrm-staging/2025-07-07-i4kZeYr6f0JBlXHD/old/uk.co.vedaconsulting.mosaico/vendor/civicrm/composer-downloads-plugin/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/web/files/civicrm/ext/uk.co.vedaconsulting.mosaico/tests" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/meyfa/php-svg" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

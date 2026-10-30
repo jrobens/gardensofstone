@@ -4,6 +4,8 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.watershed_video.field_pbvideo_video
+    - field.field.paragraph.watershed_video.field_pbwvideo_kicker
+    - field.field.paragraph.watershed_video.field_pbwvideo_title
     - field.field.paragraph.watershed_video.field_watershed_body
     - paragraphs.paragraphs_type.watershed_video
   module:
@@ -23,9 +25,25 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  field_pbwvideo_kicker:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_pbwvideo_title:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   field_watershed_body:
     type: text_textarea
-    weight: 1
+    weight: 3
     region: content
     settings:
       rows: 5

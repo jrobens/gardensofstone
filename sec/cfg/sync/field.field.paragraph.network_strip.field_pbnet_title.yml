@@ -1,0 +1,19 @@
+uuid: dfbf0025-6d7f-490a-81f8-a0a3357b79cf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pbnet_title
+    - paragraphs.paragraphs_type.network_strip
+id: paragraph.network_strip.field_pbnet_title
+field_name: field_pbnet_title
+entity_type: paragraph
+bundle: network_strip
+label: Title
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

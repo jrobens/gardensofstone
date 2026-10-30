@@ -55,6 +55,8 @@ module:
   honeypot: 0
   hook_event_dispatcher: 0
   image: 0
+  inline_svg: 0
+  inline_svg_media: 0
   interlated_paragraphs: 0
   ip_connect: 0
   ip_footer: 0
@@ -80,6 +82,8 @@ module:
   media_bulk_upload: 0
   media_bulk_upload_dropzonejs: 0
   media_library: 0
+  media_thumbnails: 0
+  media_thumbnails_svg: 0
   menu_item_extras: 0
   menu_link_content: 0
   menu_ui: 0
@@ -107,6 +111,7 @@ module:
   shortcut: 0
   svg_image: 0
   svg_image_responsive: 0
+  svg_upload_sanitizer: 0
   system: 0
   taxonomy: 0
   term_condition: 0

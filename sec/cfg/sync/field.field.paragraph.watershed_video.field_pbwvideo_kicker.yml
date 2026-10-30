@@ -1,0 +1,19 @@
+uuid: 20a79f5a-26fa-4156-84e3-7174383b1e0a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pbwvideo_kicker
+    - paragraphs.paragraphs_type.watershed_video
+id: paragraph.watershed_video.field_pbwvideo_kicker
+field_name: field_pbwvideo_kicker
+entity_type: paragraph
+bundle: watershed_video
+label: Kicker
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

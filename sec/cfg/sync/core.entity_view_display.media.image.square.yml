@@ -9,8 +9,8 @@ dependencies:
     - image.style.square_960_x_960_
     - media.type.image
   module:
-    - image
     - layout_builder
+    - svg_image
 third_party_settings:
   layout_builder:
     enabled: false

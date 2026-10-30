@@ -1,0 +1,37 @@
+uuid: a14ac96b-5adf-46a7-991e-400cdd21dc6f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.media.media_library
+    - field.field.media.svg_code.field_media_svg_code
+    - media.type.svg_code
+_core:
+  default_config_hash: ikR3GT74ZQY2zJITG_hF28dh_9fiHzen1Em6OjVuAj4
+id: media.svg_code.media_library
+targetEntityType: media
+bundle: svg_code
+mode: media_library
+content:
+  entity_body_class:
+    type: string_textfield
+    weight: 26
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_media_svg_code: true
+  path: true
+  status: true
+  uid: true

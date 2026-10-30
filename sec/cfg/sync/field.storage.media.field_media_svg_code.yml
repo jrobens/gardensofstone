@@ -1,0 +1,21 @@
+uuid: ffdfd3de-39ab-4ec1-8f79-d45fbda3a7cf
+langcode: en
+status: true
+dependencies:
+  module:
+    - inline_svg
+    - media
+_core:
+  default_config_hash: n0wEKAMUqajOV_FEJwFI-KnahhDivSWSFwPfyMadxOk
+id: media.field_media_svg_code
+field_name: field_media_svg_code
+entity_type: media
+type: svg_code
+settings: {  }
+module: inline_svg
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,19 @@
+uuid: 0608d8c9-74c8-4498-b03a-1a37283602cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pbwvideo_title
+    - paragraphs.paragraphs_type.watershed_video
+id: paragraph.watershed_video.field_pbwvideo_title
+field_name: field_pbwvideo_title
+entity_type: paragraph
+bundle: watershed_video
+label: 'Watershed video title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
