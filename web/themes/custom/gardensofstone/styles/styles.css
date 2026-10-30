@@ -23771,6 +23771,15 @@ body.node-type--page-and-layout main > section > .container:not(.is-max-desktop)
   border: 1px solid rgba(237, 230, 214, 0.15);
   box-shadow: 0 14px 34px rgba(0, 0, 0, 0.28);
 }
+.field_watershed_content .watershed-page .video-frame iframe,
+.field_watershed_content .watershed-page .video-frame video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
 .field_watershed_content .watershed-page .video-frame::after {
   content: "";
   position: absolute;
@@ -24061,7 +24070,7 @@ footer {
   }
 }
 
-.video-frame {
+.paragraph--type--watershed-video .video-frame {
   background: var(--forest);
   aspect-ratio: 16/9;
   width: 100%;
@@ -24075,40 +24084,57 @@ footer {
   box-shadow: 0 0.875rem 2.125rem rgba(0, 0, 0, 0.28);
   margin: 0 1rem;
 }
-.video-frame iframe,
-.video-frame video {
+.paragraph--type--watershed-video .video-frame .field_pbvideo_video,
+.paragraph--type--watershed-video .video-frame .field_pbvideo_video > div,
+.paragraph--type--watershed-video .video-frame .field_pbvideo_video > div > div,
+.paragraph--type--watershed-video .video-frame .field_media_oembed_video,
+.paragraph--type--watershed-video .video-frame .field_media_oembed_video > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.paragraph--type--watershed-video .video-frame iframe,
+.paragraph--type--watershed-video .video-frame video,
+.paragraph--type--watershed-video .video-frame .media-oembed-content {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   border: none;
+  z-index: 1;
 }
-.video-frame::after {
+.paragraph--type--watershed-video .video-frame::after {
   content: "";
   position: absolute;
   inset: 0;
   background: rgba(24, 42, 31, 0);
   transition: background 0.2s;
+  z-index: 2;
+  pointer-events: none;
 }
-.video-frame .play-btn {
+.paragraph--type--watershed-video .video-frame .play-btn {
   position: absolute;
   right: 0.75rem;
   bottom: 0.75rem;
-  z-index: 2;
+  z-index: 3;
   width: 3rem;
   height: 3rem;
   box-shadow: 0 0.25rem 0.875rem rgba(0, 0, 0, 0.35);
   transition: transform 0.2s;
   padding: 0;
 }
-.video-frame .play-btn svg {
+.paragraph--type--watershed-video .video-frame .play-btn svg {
   width: 1.125rem;
   height: 1.125rem;
   fill: var(--forest-deep);
   margin-left: 0.1875rem;
 }
-.video-frame:hover .play-btn {
+.paragraph--type--watershed-video .video-frame:hover .play-btn {
   transform: scale(1.08);
 }
 
