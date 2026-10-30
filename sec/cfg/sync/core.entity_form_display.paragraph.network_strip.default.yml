@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.network_strip.field_pbnet_form
+    - field.field.paragraph.network_strip.field_pbnet_kicker
     - field.field.paragraph.network_strip.field_pbnet_lede
     - field.field.paragraph.network_strip.field_pbnet_title
     - paragraphs.paragraphs_type.network_strip
@@ -16,15 +17,23 @@ mode: default
 content:
   field_pbnet_form:
     type: webform_entity_reference_select
-    weight: 2
+    weight: 3
     region: content
     settings:
       default_data: true
       webforms: {  }
     third_party_settings: {  }
+  field_pbnet_kicker:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   field_pbnet_lede:
     type: string_textarea
-    weight: 1
+    weight: 2
     region: content
     settings:
       rows: 5
@@ -32,7 +41,7 @@ content:
     third_party_settings: {  }
   field_pbnet_title:
     type: string_textfield
-    weight: 0
+    weight: 1
     region: content
     settings:
       size: 60

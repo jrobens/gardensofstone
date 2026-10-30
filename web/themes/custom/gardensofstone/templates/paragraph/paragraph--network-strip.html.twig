@@ -23,15 +23,18 @@
     {% block content %}
       <div class="wrap network-inner">
         <div style="flex:1;min-width:260px;">
-          {% if paragraph.field_pbnetwork_stat and not paragraph.field_pbnetwork_stat.isEmpty() %}
-            <div class="network-stat">{{ content.field_pbnetwork_stat }}</div>
+            {% if paragraph.field_pbnet_kicker and not paragraph.field_pbnet_kicker.isEmpty() %}
+                <div class="network-kicker">{{ content.field_pbnet_kicker }}</div>
+            {% endif %}
+          {% if paragraph.field_pbnet_title and not paragraph.field_pbnet_title.isEmpty() %}
+            <div class="network-stat">{{ content.field_pbnet_title }}</div>
           {% endif %}
-          {% if paragraph.field_pbnetwork_text and not paragraph.field_pbnetwork_text.isEmpty() %}
-            <div class="network-text">{{ content.field_pbnetwork_text }}</div>
+          {% if paragraph.field_pbnet_lede and not paragraph.field_pbnet_lede.isEmpty() %}
+            <div class="network-text">{{ content.field_pbnet_lede }}</div>
           {% endif %}
-          {% if paragraph.field_pbnetwork_form and not paragraph.field_pbnetwork_form.isEmpty() %}
+          {% if paragraph.field_pbnet_form and not paragraph.field_pbnet_form.isEmpty() %}
             <div class="subscribe-row">
-              {{ content.field_pbnetwork_form }}
+              {{ content.field_pbnet_form }}
             </div>
           {% endif %}
         </div>

@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.network_strip.field_pbnet_form
+    - field.field.paragraph.network_strip.field_pbnet_kicker
     - field.field.paragraph.network_strip.field_pbnet_lede
     - field.field.paragraph.network_strip.field_pbnet_title
     - paragraphs.paragraphs_type.network_strip
@@ -23,12 +24,21 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
+  field_pbnet_kicker:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+      link_rel: canonical
+    third_party_settings: {  }
+    weight: 1
+    region: content
   field_pbnet_lede:
     type: basic_string
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 2
+    weight: 3
     region: content
   field_pbnet_title:
     type: string
@@ -37,6 +47,6 @@ content:
       link_to_entity: false
       link_rel: canonical
     third_party_settings: {  }
-    weight: 1
+    weight: 2
     region: content
 hidden: {  }
