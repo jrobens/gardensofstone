@@ -2,6 +2,9 @@
 /**
  * @file
  * Theme implementation for individual ask card paragraphs.
+ *
+ * Note: This template uses sample_submission class for sample text elements.
+ * The field_pbasks_sample_text field contains the sample text content.
  */
 #}
 {% set card_type = paragraph.field_pbasks_card_type.value %}
@@ -27,7 +30,7 @@
     {% endif %}
 
     {% if not paragraph.field_pbasks_sample_text.isEmpty() %}
-        <div class="sample-text" data-sample="{{ paragraph.id() }}">
+        <div class="sample_submission" data-sample="{{ paragraph.id() }}">
             {{ content.field_pbasks_sample_text }}
         </div>
     {% endif %}
