@@ -22773,416 +22773,6 @@ body.node-type--page-and-layout main > section > .container:not(.is-max-desktop)
   max-width: 100%;
 }
 
-/* ==========================================================================
-   Watershed Landing Page Styles
-   Based on coxs-river-campaign-landing-page.html design reference
-   ========================================================================== */
-/* --------------------------------------------------------------------------
-   5. Dark Section (Forest Background)
-   -------------------------------------------------------------------------- */
-.watershed-page .title {
-  font-size: clamp(1.5rem, 3vw, 2.1rem);
-  max-width: 22ch;
-}
-
-.watershed-page .watershed-title {
-  font-size: clamp(3rem, 8vw, 5.5rem);
-  line-height: 1;
-  margin-top: 6px;
-  margin-bottom: 18px;
-  color: var(--cream);
-}
-
-.watershed-page .lede {
-  max-width: 62ch;
-  margin-top: 16px;
-  font-size: 1.03rem;
-}
-.section-forest .watershed-page .lede {
-  color: #DCD6C4;
-}
-
-/* --------------------------------------------------------------------------
-   6. Evidence Grid
-   -------------------------------------------------------------------------- */
-.watershed-page .evidence-grid {
-  margin-top: 36px;
-  display: grid;
-  grid-template-columns: 1.3fr 1fr;
-  gap: 44px;
-  align-items: start;
-  max-width: 1400px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* --------------------------------------------------------------------------
-   7. Stat Cards / Row
-   -------------------------------------------------------------------------- */
-.watershed-page .stat-row {
-  margin-top: 34px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  max-width: 1400px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.watershed-page .stat-card {
-  background: var(--cream);
-  border-top: 4px solid var(--ochre);
-  border-radius: 2px;
-  padding: 20px 20px 22px;
-}
-.watershed-page .stat-card .stat-num {
-  font-family: "Fraunces", serif;
-  font-size: 1.9rem;
-  color: var(--forest-deep);
-  line-height: 1.1;
-}
-.watershed-page .stat-card .stat-label {
-  font-size: 0.83rem;
-  color: #4a4738;
-  margin-top: 6px;
-  line-height: 1.4;
-}
-
-/* --------------------------------------------------------------------------
-   8. Eco Block
-   -------------------------------------------------------------------------- */
-.watershed-page .eco-block {
-  margin-top: 40px;
-  padding-top: 34px;
-  border-top: 1px solid rgba(237, 230, 214, 0.16);
-}
-.watershed-page .eco-block h3 {
-  color: var(--cream);
-  font-size: 1.2rem;
-  margin-bottom: 12px;
-}
-.watershed-page .eco-block p {
-  color: #DCD6C4;
-  font-size: 0.96rem;
-  max-width: 68ch;
-  margin: 0 0 10px;
-}
-.watershed-page .eco-block .eco-link {
-  display: inline-block;
-  color: #D3A868;
-  font-size: 0.9rem;
-  font-weight: 600;
-  text-decoration: underline;
-  margin-bottom: 8px;
-}
-.watershed-page .eco-block .punchline {
-  margin-top: 26px;
-  font-family: "Fraunces", serif;
-  font-weight: 600;
-  font-size: 1.5rem;
-  color: var(--cream);
-}
-.watershed-page .eco-block .punchline span {
-  color: #D3A868;
-}
-
-/* --------------------------------------------------------------------------
-   9. Ask Cards Grid
-   -------------------------------------------------------------------------- */
-.watershed-page .asks-grid {
-  margin-top: 40px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 22px;
-  max-width: 1400px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.watershed-page .ask-card {
-  background: var(--paper);
-  border: 1px solid rgba(43, 40, 34, 0.14);
-  border-radius: 4px;
-  padding: 26px;
-}
-.watershed-page .ask-card .ask-role {
-  font-size: 0.78rem;
-  font-weight: 700;
-  text-transform: none;
-  color: var(--water);
-  margin-bottom: 8px;
-}
-.watershed-page .ask-card h3 {
-  font-size: 1.15rem;
-  margin-bottom: 12px;
-}
-.watershed-page .ask-card p {
-  font-size: 0.93rem;
-  color: #3c392f;
-  margin-bottom: 16px;
-}
-.watershed-page .ask-card .ask-btn {
-  display: inline-block;
-  background: var(--water);
-  color: var(--paper);
-  padding: 11px 20px;
-  border-radius: 3px;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 0.88rem;
-  border: none;
-}
-.watershed-page .ask-card.political {
-  border-top: 4px solid var(--forest-deep);
-}
-.watershed-page .ask-card.operational {
-  border-top: 4px solid var(--ochre);
-}
-.watershed-page .ask-card.local {
-  border-top: 4px solid var(--water);
-}
-.watershed-page .ask-card.premier {
-  border-top: 4px solid var(--clay);
-}
-
-/* --------------------------------------------------------------------------
-   10. Sample Text / Copy Block
-   -------------------------------------------------------------------------- */
-.watershed-page .sample-text {
-  background: var(--cream);
-  border-left: 3px solid rgba(43, 40, 34, 0.15);
-  padding: 14px 16px;
-  border-radius: 2px;
-  margin-bottom: 14px;
-  font-size: 0.86rem;
-  line-height: 1.55;
-  color: #4a4738;
-  font-style: italic;
-}
-
-.watershed-page .ask-actions {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-
-.watershed-page .copy-btn {
-  background: transparent;
-  border: 1.5px solid var(--water);
-  color: var(--water);
-  padding: 9px 16px;
-  border-radius: 3px;
-  font-weight: 600;
-  font-size: 0.85rem;
-  cursor: pointer;
-}
-.watershed-page .copy-btn.copied {
-  border-color: var(--ochre);
-  color: var(--ochre);
-}
-
-/* --------------------------------------------------------------------------
-   11. Loophole / Standout Section
-   -------------------------------------------------------------------------- */
-.watershed-page .standout-lede {
-  margin-top: 18px;
-  background: var(--cream-deep);
-  border-left: 5px solid var(--clay);
-  padding: 20px 24px;
-  border-radius: 2px;
-  font-size: 1.15rem;
-  font-weight: 600;
-  color: var(--forest-deep);
-  line-height: 1.5;
-  max-width: 64ch;
-}
-
-.watershed-page .copy-note {
-  margin-top: 22px;
-  padding: 16px 20px;
-  background: rgba(140, 59, 46, 0.07);
-  border-radius: 3px;
-  font-size: 0.92rem;
-  font-style: italic;
-  color: #4a4738;
-  max-width: 64ch;
-}
-
-.watershed-page .loophole-stats {
-  margin-top: 34px;
-}
-
-.watershed-page .loophole-close {
-  margin-top: 28px;
-  font-size: 1.05rem;
-  color: var(--forest-deep);
-  font-weight: 600;
-  max-width: 66ch;
-  line-height: 1.6;
-}
-
-/* --------------------------------------------------------------------------
-   12. Watershed Video Section
-   -------------------------------------------------------------------------- */
-.watershed-page .watershed-wrap {
-  margin-top: 36px;
-  display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: 40px;
-  align-items: center;
-}
-
-.watershed-page .video-frame {
-  background: var(--forest);
-  aspect-ratio: 16/9;
-  border-radius: 6px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  overflow: hidden;
-  border: 1px solid rgba(237, 230, 214, 0.15);
-  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.28);
-}
-.watershed-page .video-frame::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(24, 42, 31, 0);
-  transition: background 0.2s;
-}
-.watershed-page .video-frame .play-btn {
-  position: absolute;
-  right: 18px;
-  bottom: 18px;
-  z-index: 2;
-  width: 56px;
-  height: 56px;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
-  transition: transform 0.2s;
-}
-.watershed-page .video-frame .play-btn:hover {
-  transform: scale(1.08);
-}
-.watershed-page .video-frame .video-cap {
-  position: absolute;
-  bottom: 14px;
-  left: 16px;
-  font-size: 0.78rem;
-  color: #DCD6C4;
-}
-
-/* --------------------------------------------------------------------------
-   13. Network Strip
-   -------------------------------------------------------------------------- */
-.watershed-page .network-strip {
-  background: var(--cream-deep);
-  padding: 46px 0;
-}
-
-.watershed-page .network-inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 30px;
-  flex-wrap: wrap;
-}
-
-.watershed-page .network-stat {
-  font-family: "Fraunces", serif;
-  font-size: 2.1rem;
-  color: var(--forest-deep);
-}
-
-.watershed-page .network-text {
-  max-width: 42ch;
-  font-size: 0.96rem;
-}
-
-.watershed-page .subscribe-row {
-  display: flex;
-  gap: 10px;
-  margin-top: 16px;
-  flex-wrap: wrap;
-}
-.watershed-page .subscribe-row input {
-  flex: 1;
-  min-width: 200px;
-  padding: 12px 14px;
-  border: 1px solid rgba(43, 40, 34, 0.25);
-  border-radius: 3px;
-  font-family: inherit;
-  font-size: 0.92rem;
-  background: var(--paper);
-}
-
-/* --------------------------------------------------------------------------
-   14. Wave Divider
-   -------------------------------------------------------------------------- */
-.watershed-page .wave {
-  display: block;
-  width: 100%;
-  height: 44px;
-}
-
-/* --------------------------------------------------------------------------
-   15. Video Paragraph Overrides
-   -------------------------------------------------------------------------- */
-.watershed-page {
-  /* Hero paragraph styling */
-}
-.watershed-page .paragraph--type--video .field_media_oembed_video {
-  height: 0;
-  padding-top: 56.2%;
-}
-.watershed-page .paragraph--type--video .field_media_oembed_video iframe.media-oembed-content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  max-width: 100%;
-  width: 100%;
-  height: 100%;
-}
-.watershed-page .paragraph--type--video .field_media_video_embed .mediaembed-wrapper {
-  margin: 0;
-  border: none;
-}
-.watershed-page .paragraph--type--video .field_media_video_embed .mediaembed-wrapper .mediaembed-container {
-  aspect-ratio: 16/9;
-  max-width: 100%;
-  margin: 0;
-}
-.watershed-page .paragraph--type--hero {
-  background: linear-gradient(180deg, rgba(15, 22, 17, 0.78) 0%, rgba(15, 22, 17, 0.6) 55%, rgba(15, 22, 17, 0.82) 100%);
-  padding: 96px 0;
-  color: var(--paper);
-}
-
-/* --------------------------------------------------------------------------
-   16. Responsive Breakpoints
-   -------------------------------------------------------------------------- */
-@media (max-width: 768px) {
-  .watershed-page .hero-ctas {
-    flex-direction: column;
-  }
-  .watershed-page .journey-track {
-    padding-left: 0;
-  }
-  .watershed-page .journey-track::before {
-    display: none;
-  }
-  .watershed-page .journey-stop .journey-icon {
-    display: none;
-  }
-}
-@media (max-width: 1000px) {
-  .watershed-page .asks-grid {
-    grid-template-columns: 1fr;
-  }
-}
-/* ==========================================================================
-   End Watershed Styles
-   ========================================================================== */
 .view-photos-album .photos-list-view-title {
   display: none;
 }
@@ -23701,7 +23291,7 @@ body.node-type--page-and-layout main > section > .container:not(.is-max-desktop)
 }
 .evidence-block .field_pbevidence_body {
   max-width: 62ch;
-  margin-top: 16px;
+  margin-top: 1rem;
   font-size: 1.03rem;
   color: #DCD6C4;
 }
@@ -23710,20 +23300,20 @@ body.node-type--page-and-layout main > section > .container:not(.is-max-desktop)
   max-width: 62ch;
 }
 .evidence-block .eco-block {
-  margin-top: 40px;
-  padding-top: 34px;
-  border-top: 1px solid rgba(237, 230, 214, 0.16);
+  margin-top: 2.5rem;
+  padding: 0.875rem 1rem 2.125rem;
+  border-top: 0.0625rem solid rgba(237, 230, 214, 0.16);
 }
 .evidence-block .eco-block h3 {
   color: var(--cream);
   font-size: 1.2rem;
-  margin-bottom: 12px;
+  margin-bottom: 0.75rem;
 }
 .evidence-block .eco-block p {
   color: #DCD6C4;
   font-size: 0.96rem;
   max-width: 68ch;
-  margin: 0 0 10px;
+  margin: 0 0 0.625rem;
 }
 .evidence-block .eco-link {
   display: inline-block;
@@ -23731,10 +23321,10 @@ body.node-type--page-and-layout main > section > .container:not(.is-max-desktop)
   font-size: 0.9rem;
   font-weight: 600;
   text-decoration: underline;
-  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
 }
 .evidence-block .punchline {
-  margin-top: 26px;
+  margin-top: 1.625rem;
   font-family: "Fraunces", serif;
   font-weight: 600;
   font-size: 1.5rem;
@@ -23774,117 +23364,89 @@ body.node-type--page-and-layout main > section > .container:not(.is-max-desktop)
     grid-template-columns: repeat(3, 1fr);
   }
 }
-/*
-.stat-row {
-  margin-top: 34px;
+.asks-section .kicker {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--ochre);
+  margin-bottom: 10px;
+  text-transform: none;
+  letter-spacing: normal;
+}
+.asks-section .asks-grid .field_pbasks_cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  max-width: 1400px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.stat-card {
-  background: var(--cream);
-  border-top: 4px solid var(--ochre);
-  border-radius: 2px;
-  padding: 20px 20px 22px;
-}
-
-.
-@media (max-width: 720px) {
-  .stat-row {
-    grid-template-columns: 1fr;
-  }
-}
-*/
-.asks-section .asks-grid {
+  grid-template-columns: 1fr;
+  grid-template-rows: subgrid;
   margin-top: 2.5rem;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
   gap: 22px;
 }
-@media screen and (max-width: 768px) {
-  .asks-section .asks-grid {
-    grid-template-columns: 1fr;
+@media screen and (min-width: 769px), print {
+  .asks-section .asks-grid .field_pbasks_cards {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
-.asks-section .ask-card {
+.asks-section .asks-grid .ask-card {
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
   background: var(--paper);
-  border: 1px solid rgba(43, 40, 34, 0.14);
-  border-radius: 4px;
-  padding: 26px;
+  border: 0.0625rem solid rgba(43, 40, 34, 0.14);
+  border-radius: 0.25rem;
+  padding: 1.625rem;
+  align-items: start;
 }
-.asks-section .ask-role {
+.asks-section .asks-grid .ask-card .ask-role {
   font-size: 0.78rem;
   font-weight: 700;
   text-transform: none;
   color: var(--water);
-  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
 }
-.asks-section .ask-card h3 {
+.asks-section .asks-grid .ask-card h3 {
   font-size: 1.15rem;
-  margin-bottom: 12px;
+  margin-bottom: 0.75rem;
 }
-.asks-section .ask-card p {
+.asks-section .asks-grid .ask-card p {
   font-size: 0.93rem;
   color: #3c392f;
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
-.asks-section .ask-btn {
-  display: inline-block;
-  background: var(--water);
-  color: var(--paper);
-  padding: 11px 20px;
-  border-radius: 3px;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 0.88rem;
-  border: none;
-  cursor: pointer;
-}
-.asks-section .ask-card.premier {
-  border-top: 4px solid var(--clay);
-}
-.asks-section .ask-card.political {
-  border-top: 4px solid var(--forest-deep);
-}
-.asks-section .ask-card.operational {
-  border-top: 4px solid var(--ochre);
-}
-.asks-section .ask-card.local {
-  border-top: 4px solid var(--water);
-}
-.asks-section .sample-text {
+.asks-section .asks-grid .ask-card .sample_submission {
   background: var(--cream);
-  border-left: 3px solid rgba(43, 40, 34, 0.15);
-  padding: 14px 16px;
-  border-radius: 2px;
-  margin-bottom: 14px;
+  border-left: 0.1875rem solid rgba(43, 40, 34, 0.15);
+  padding: 0.875rem 1rem;
+  border-radius: 0.125rem;
+  margin-bottom: 0.875rem;
   font-size: 0.86rem;
   line-height: 1.55;
   color: #4a4738;
   font-style: italic;
 }
-.asks-section .ask-actions {
+.asks-section .asks-grid .ask-card .ask-actions {
   display: flex;
-  gap: 10px;
+  gap: 0.625rem;
   flex-wrap: wrap;
 }
-.asks-section .copy-btn {
-  background: transparent;
-  border: 1.5px solid var(--water);
-  color: var(--water);
-  padding: 9px 16px;
-  border-radius: 3px;
+.asks-section .asks-grid .ask-card .ask-btn {
+  display: inline-block;
+  background: var(--water);
+  color: var(--paper);
+  padding: 0.6875rem 1.25rem;
+  border-radius: 0.1875rem;
+  text-decoration: none;
   font-weight: 600;
-  font-size: 0.85rem;
-  cursor: pointer;
+  font-size: 0.875rem;
+  border: none;
 }
-.asks-section .copy-btn.copied {
-  border-color: var(--ochre);
-  color: var(--ochre);
+.asks-section .asks-grid .ask-card.political {
+  border-top: 0.25rem solid var(--forest-deep);
+}
+.asks-section .asks-grid .ask-card.operational {
+  border-top: 0.25rem solid var(--ochre);
+}
+.asks-section .asks-grid .ask-card.local {
+  border-top: 0.25rem solid var(--water);
+}
+.asks-section .asks-grid .ask-card.premier {
+  border-top: 0.25rem solid var(--clay);
 }
 
 .paragraph--type--loophole {
@@ -23912,11 +23474,6 @@ body.node-type--page-and-layout main > section > .container:not(.is-max-desktop)
 }
 .paragraph--type--loophole .loophole-stats {
   margin-top: 34px;
-}
-.paragraph--type--loophole .stat-row {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
 }
 .paragraph--type--loophole .stat-card {
   background: var(--cream);
@@ -23955,11 +23512,6 @@ body.node-type--page-and-layout main > section > .container:not(.is-max-desktop)
   max-width: 64ch;
 }
 
-@media (max-width: 720px) {
-  .loophole-section .stat-row {
-    grid-template-columns: 1fr;
-  }
-}
 /* --------------------------------------------------------------------------
    Full-width container for node pages
    -------------------------------------------------------------------------- */
@@ -23973,6 +23525,37 @@ body.node-type--page-and-layout main > section > .container:not(.is-max-desktop)
 
 .field_watershed_content {
   background-color: var(--soft-alibaster);
+  /* ==========================================================================
+     Watershed Landing Page Styles
+     Based on coxs-river-campaign-landing-page.html design reference
+     ========================================================================== */
+  /* --------------------------------------------------------------------------
+     5. Dark Section (Forest Background)
+     -------------------------------------------------------------------------- */
+  /* --------------------------------------------------------------------------
+     7. Stat Cards / Row
+     -------------------------------------------------------------------------- */
+  /* --------------------------------------------------------------------------
+     10. Sample Text / Copy Block
+     -------------------------------------------------------------------------- */
+  /* --------------------------------------------------------------------------
+     11. Loophole / Standout Section
+     -------------------------------------------------------------------------- */
+  /* --------------------------------------------------------------------------
+     12. Watershed Video Section
+     -------------------------------------------------------------------------- */
+  /* --------------------------------------------------------------------------
+     13. Network Strip
+     -------------------------------------------------------------------------- */
+  /* --------------------------------------------------------------------------
+     14. Wave Divider
+     -------------------------------------------------------------------------- */
+  /* --------------------------------------------------------------------------
+     15. Video Paragraph Overrides
+     -------------------------------------------------------------------------- */
+  /* --------------------------------------------------------------------------
+     16. Responsive Breakpoints
+     -------------------------------------------------------------------------- */
 }
 .field_watershed_content h1, .field_watershed_content h2, .field_watershed_content h3 {
   margin: 0;
@@ -24007,85 +23590,12 @@ body.node-type--page-and-layout main > section > .container:not(.is-max-desktop)
 .field_watershed_content section {
   padding: 4rem 0;
 }
-.field_watershed_content .video-frame {
-  background: var(--forest);
-  aspect-ratio: 16/9;
-  max-width: 100%;
-  width: 100%;
-  border-radius: 0.375rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  overflow: hidden;
-  border: 0.0625rem solid rgba(237, 230, 214, 0.15);
-  box-shadow: 0 0.875rem 2.125rem rgba(0, 0, 0, 0.28);
-  margin: 0 1rem;
-}
-.field_watershed_content .video-frame::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(24, 42, 31, 0);
-  transition: background 0.2s;
-}
-.field_watershed_content .video-frame .play-btn {
-  position: absolute;
-  right: 0.75rem;
-  bottom: 0.75rem;
-  z-index: 2;
-  width: 3rem;
-  height: 3rem;
-  box-shadow: 0 0.25rem 0.875rem rgba(0, 0, 0, 0.35);
-  transition: transform 0.2s;
-  padding: 0;
-}
-.field_watershed_content .video-frame .play-btn svg {
-  width: 1.125rem;
-  height: 1.125rem;
-  fill: var(--forest-deep);
-  margin-left: 0.1875rem;
-}
-.field_watershed_content .video-frame:hover .play-btn {
-  transform: scale(1.08);
-}
-.field_watershed_content .play-btn {
-  width: 4rem;
-  height: 4rem;
-  border-radius: 50%;
-  background: rgba(237, 230, 214, 0.94);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.field_watershed_content .play-btn svg {
-  width: 1.375rem;
-  height: 1.375rem;
-  fill: var(--forest-deep);
-  margin-left: 0.1875rem;
-}
-.field_watershed_content .video-cap {
-  position: absolute;
-  bottom: 0.875rem;
-  left: 1rem;
-  font-size: 0.78rem;
-  color: #DCD6C4;
-}
 .field_watershed_content .watershed-wrap {
   margin-top: 2.25rem;
   display: grid;
   grid-template-columns: 1fr;
   gap: 2.5rem;
   align-items: start;
-}
-.field_watershed_content .stat-row {
-  margin-top: 2.125rem;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.25rem;
-  max-width: 1400px;
-  margin-left: auto;
-  margin-right: auto;
 }
 .field_watershed_content .stat-row .stat-card {
   background: var(--cream);
@@ -24105,144 +23615,274 @@ body.node-type--page-and-layout main > section > .container:not(.is-max-desktop)
   margin-top: 0.375rem;
   line-height: 1.4;
 }
-.field_watershed_content .asks-grid {
-  margin-top: 2.5rem;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.375rem;
-  max-width: 1400px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.field_watershed_content .asks-grid .ask-card {
-  background: var(--paper);
-  border: 0.0625rem solid rgba(43, 40, 34, 0.14);
-  border-radius: 0.25rem;
-  padding: 1.625rem;
-}
-.field_watershed_content .asks-grid .ask-card .ask-role {
-  font-size: 0.78rem;
-  font-weight: 700;
-  text-transform: none;
-  color: var(--water);
-  margin-bottom: 0.5rem;
-}
-.field_watershed_content .asks-grid .ask-card h3 {
-  font-size: 1.15rem;
-  margin-bottom: 0.75rem;
-}
-.field_watershed_content .asks-grid .ask-card p {
-  font-size: 0.93rem;
-  color: #3c392f;
-  margin-bottom: 1rem;
-}
-.field_watershed_content .asks-grid .ask-card .ask-btn {
-  display: inline-block;
-  background: var(--water);
-  color: var(--paper);
-  padding: 0.6875rem 1.25rem;
-  border-radius: 0.1875rem;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 0.875rem;
-  border: none;
-}
-.field_watershed_content .asks-grid .ask-card.political {
-  border-top: 0.25rem solid var(--forest-deep);
-}
-.field_watershed_content .asks-grid .ask-card.operational {
-  border-top: 0.25rem solid var(--ochre);
-}
-.field_watershed_content .asks-grid .ask-card.local {
-  border-top: 0.25rem solid var(--water);
-}
-.field_watershed_content .asks-grid .ask-card.premier {
-  border-top: 0.25rem solid var(--clay);
-}
-
 @media screen and (min-width: 769px), print {
-  .field_watershed_content section {
+  .field_watershed_content .field_watershed_content section {
     padding: 5rem 0;
   }
-  .field_watershed_content .stat-row {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.25rem;
-  }
-  .field_watershed_content .stat-row .stat-card {
+  .field_watershed_content .field_watershed_content .stat-row .stat-card {
     padding: 1.25rem 1.25rem 1.375rem;
   }
-  .field_watershed_content .stat-row .stat-card .stat-num {
+  .field_watershed_content .field_watershed_content .stat-row .stat-card .stat-num {
     font-size: 1.75rem;
   }
-  .field_watershed_content .stat-row .stat-card .stat-label {
+  .field_watershed_content .field_watershed_content .stat-row .stat-card .stat-label {
     font-size: 0.8125rem;
-  }
-  .field_watershed_content .asks-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.375rem;
-  }
-  .field_watershed_content .asks-grid .ask-card {
-    padding: 1.625rem;
-  }
-  .video-frame {
-    margin: 0 auto;
-    max-width: 60rem;
-  }
-  .video-frame .play-btn {
-    width: 3.5rem;
-    height: 3.5rem;
-  }
-  .video-frame .play-btn svg {
-    width: 1.375rem;
-    height: 1.375rem;
-    margin-left: 0.1875rem;
   }
 }
 @media screen and (min-width: 1024px) {
-  .field_watershed_content section {
+  .field_watershed_content .field_watershed_content section {
     padding: 6rem 0;
   }
-  .field_watershed_content .stat-row {
+  .field_watershed_content .field_watershed_content .stat-row {
     grid-template-columns: repeat(3, 1fr);
     gap: 1.25rem;
   }
-  .field_watershed_content .stat-row .stat-card {
+  .field_watershed_content .field_watershed_content .stat-row .stat-card {
     padding: 1.25rem 1.25rem 1.375rem;
   }
-  .field_watershed_content .stat-row .stat-card .stat-num {
+  .field_watershed_content .field_watershed_content .stat-row .stat-card .stat-num {
     font-size: 1.9rem;
   }
-  .field_watershed_content .stat-row .stat-card .stat-label {
+  .field_watershed_content .field_watershed_content .stat-row .stat-card .stat-label {
     font-size: 0.83rem;
   }
-  .field_watershed_content .asks-grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.375rem;
-  }
-  .field_watershed_content .asks-grid .ask-card {
-    padding: 1.625rem;
-  }
-  .field_watershed_content .watershed-wrap {
+  .field_watershed_content .field_watershed_content .watershed-wrap {
     grid-template-columns: 1.1fr 0.9fr;
     gap: 2.5rem;
     align-items: center;
   }
-  .field_watershed_content .video-frame {
-    margin: 0;
-    max-width: 960px;
+}
+.field_watershed_content .watershed-page .title {
+  font-size: clamp(1.5rem, 3vw, 2.1rem);
+  max-width: 22ch;
+}
+.field_watershed_content .watershed-page .watershed-title {
+  font-size: clamp(3rem, 8vw, 5.5rem);
+  line-height: 1;
+  margin-top: 6px;
+  margin-bottom: 18px;
+  color: var(--cream);
+}
+.field_watershed_content .watershed-page .lede {
+  max-width: 62ch;
+  margin-top: 16px;
+  font-size: 1.03rem;
+}
+.section-forest .field_watershed_content .watershed-page .lede {
+  color: #DCD6C4;
+}
+.field_watershed_content .watershed-page .stat-card {
+  background: var(--cream);
+  border-top: 4px solid var(--ochre);
+  border-radius: 2px;
+  padding: 20px 20px 22px;
+}
+.field_watershed_content .watershed-page .stat-card .stat-num {
+  font-family: "Fraunces", serif;
+  font-size: 1.9rem;
+  color: var(--forest-deep);
+  line-height: 1.1;
+}
+.field_watershed_content .watershed-page .stat-card .stat-label {
+  font-size: 0.83rem;
+  color: #4a4738;
+  margin-top: 6px;
+  line-height: 1.4;
+}
+.field_watershed_content .watershed-page .sample_submission {
+  background: var(--cream);
+  border-left: 3px solid rgba(43, 40, 34, 0.15);
+  padding: 14px 16px;
+  border-radius: 2px;
+  margin-bottom: 14px;
+  font-size: 0.86rem;
+  line-height: 1.55;
+  color: #4a4738;
+  font-style: italic;
+}
+.field_watershed_content .watershed-page .ask-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.field_watershed_content .watershed-page .copy-btn {
+  background: transparent;
+  border: 1.5px solid var(--water);
+  color: var(--water);
+  padding: 9px 16px;
+  border-radius: 3px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+.field_watershed_content .watershed-page .copy-btn.copied {
+  border-color: var(--ochre);
+  color: var(--ochre);
+}
+.field_watershed_content .watershed-page .standout-lede {
+  margin-top: 18px;
+  background: var(--cream-deep);
+  border-left: 5px solid var(--clay);
+  padding: 20px 24px;
+  border-radius: 2px;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--forest-deep);
+  line-height: 1.5;
+  max-width: 64ch;
+}
+.field_watershed_content .watershed-page .copy-note {
+  margin-top: 22px;
+  padding: 16px 20px;
+  background: rgba(140, 59, 46, 0.07);
+  border-radius: 3px;
+  font-size: 0.92rem;
+  font-style: italic;
+  color: #4a4738;
+  max-width: 64ch;
+}
+.field_watershed_content .watershed-page .loophole-stats {
+  margin-top: 34px;
+}
+.field_watershed_content .watershed-page .loophole-close {
+  margin-top: 28px;
+  font-size: 1.05rem;
+  color: var(--forest-deep);
+  font-weight: 600;
+  max-width: 66ch;
+  line-height: 1.6;
+}
+.field_watershed_content .watershed-page .watershed-wrap {
+  margin-top: 36px;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 40px;
+  align-items: center;
+}
+.field_watershed_content .watershed-page .video-frame {
+  background: var(--forest);
+  aspect-ratio: 16/9;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(237, 230, 214, 0.15);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.28);
+}
+.field_watershed_content .watershed-page .video-frame::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(24, 42, 31, 0);
+  transition: background 0.2s;
+}
+.field_watershed_content .watershed-page .video-frame .play-btn {
+  position: absolute;
+  right: 18px;
+  bottom: 18px;
+  z-index: 2;
+  width: 56px;
+  height: 56px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+  transition: transform 0.2s;
+}
+.field_watershed_content .watershed-page .video-frame .play-btn:hover {
+  transform: scale(1.08);
+}
+.field_watershed_content .watershed-page .video-frame .video-cap {
+  position: absolute;
+  bottom: 14px;
+  left: 16px;
+  font-size: 0.78rem;
+  color: #DCD6C4;
+}
+.field_watershed_content .watershed-page .network-strip {
+  background: var(--cream-deep);
+  padding: 46px 0;
+}
+.field_watershed_content .watershed-page .network-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.field_watershed_content .watershed-page .network-stat {
+  font-family: "Fraunces", serif;
+  font-size: 2.1rem;
+  color: var(--forest-deep);
+}
+.field_watershed_content .watershed-page .network-text {
+  max-width: 42ch;
+  font-size: 0.96rem;
+}
+.field_watershed_content .watershed-page .subscribe-row {
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
+  flex-wrap: wrap;
+}
+.field_watershed_content .watershed-page .subscribe-row input {
+  flex: 1;
+  min-width: 200px;
+  padding: 12px 14px;
+  border: 1px solid rgba(43, 40, 34, 0.25);
+  border-radius: 3px;
+  font-family: inherit;
+  font-size: 0.92rem;
+  background: var(--paper);
+}
+.field_watershed_content .watershed-page .wave {
+  display: block;
+  width: 100%;
+  height: 44px;
+}
+.field_watershed_content .watershed-page {
+  /* Hero paragraph styling */
+}
+.field_watershed_content .watershed-page .paragraph--type--video .field_media_oembed_video {
+  height: 0;
+  padding-top: 56.2%;
+}
+.field_watershed_content .watershed-page .paragraph--type--video .field_media_oembed_video iframe.media-oembed-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+}
+.field_watershed_content .watershed-page .paragraph--type--video .field_media_video_embed .mediaembed-wrapper {
+  margin: 0;
+  border: none;
+}
+.field_watershed_content .watershed-page .paragraph--type--video .field_media_video_embed .mediaembed-wrapper .mediaembed-container {
+  aspect-ratio: 16/9;
+  max-width: 100%;
+  margin: 0;
+}
+.field_watershed_content .watershed-page .paragraph--type--hero {
+  background: linear-gradient(180deg, rgba(15, 22, 17, 0.78) 0%, rgba(15, 22, 17, 0.6) 55%, rgba(15, 22, 17, 0.82) 100%);
+  padding: 96px 0;
+  color: var(--paper);
+}
+@media (max-width: 768px) {
+  .field_watershed_content .watershed-page .hero-ctas {
+    flex-direction: column;
   }
-  .field_watershed_content .video-frame .play-btn {
-    right: 1.125rem;
-    bottom: 1.125rem;
-    width: 3.5rem;
-    height: 3.5rem;
+  .field_watershed_content .watershed-page .journey-track {
+    padding-left: 0;
   }
-  .field_watershed_content .video-frame .play-btn svg {
-    width: 1.375rem;
-    height: 1.375rem;
-    margin-left: 0.1875rem;
+  .field_watershed_content .watershed-page .journey-track::before {
+    display: none;
+  }
+  .field_watershed_content .watershed-page .journey-stop .journey-icon {
+    display: none;
   }
 }
+
 .network-strip {
   background: var(--cream-deep);
   padding: 46px 0;
@@ -24421,6 +24061,113 @@ footer {
   }
 }
 
+.video-frame {
+  background: var(--forest);
+  aspect-ratio: 16/9;
+  width: 100%;
+  border-radius: 0.375rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  border: 0.0625rem solid rgba(237, 230, 214, 0.15);
+  box-shadow: 0 0.875rem 2.125rem rgba(0, 0, 0, 0.28);
+  margin: 0 1rem;
+}
+.video-frame iframe,
+.video-frame video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+.video-frame::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(24, 42, 31, 0);
+  transition: background 0.2s;
+}
+.video-frame .play-btn {
+  position: absolute;
+  right: 0.75rem;
+  bottom: 0.75rem;
+  z-index: 2;
+  width: 3rem;
+  height: 3rem;
+  box-shadow: 0 0.25rem 0.875rem rgba(0, 0, 0, 0.35);
+  transition: transform 0.2s;
+  padding: 0;
+}
+.video-frame .play-btn svg {
+  width: 1.125rem;
+  height: 1.125rem;
+  fill: var(--forest-deep);
+  margin-left: 0.1875rem;
+}
+.video-frame:hover .play-btn {
+  transform: scale(1.08);
+}
+
+.play-btn {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background: rgba(237, 230, 214, 0.94);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.play-btn svg {
+  width: 1.375rem;
+  height: 1.375rem;
+  fill: var(--forest-deep);
+  margin-left: 0.1875rem;
+}
+
+.video-cap {
+  position: absolute;
+  bottom: 0.875rem;
+  left: 1rem;
+  font-size: 0.78rem;
+  color: #DCD6C4;
+}
+
+@media screen and (min-width: 769px), print {
+  .video-frame {
+    margin: 0 auto;
+    max-width: 60rem;
+  }
+  .video-frame .play-btn {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  .video-frame .play-btn svg {
+    width: 1.375rem;
+    height: 1.375rem;
+    margin-left: 0.1875rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .video-frame {
+    margin: 0;
+    max-width: 960px;
+  }
+  .video-frame .play-btn {
+    right: 1.125rem;
+    bottom: 1.125rem;
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  .video-frame .play-btn svg {
+    width: 1.375rem;
+    height: 1.375rem;
+    margin-left: 0.1875rem;
+  }
+}
 /* ==========================================================================
    Footer Component Styles
 
