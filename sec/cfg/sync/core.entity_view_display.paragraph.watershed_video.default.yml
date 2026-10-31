@@ -22,7 +22,7 @@ content:
       view_mode: default
       link: false
     third_party_settings: {  }
-    weight: 0
+    weight: 3
     region: content
   field_pbwvideo_kicker:
     type: string
@@ -31,7 +31,7 @@ content:
       link_to_entity: false
       link_rel: canonical
     third_party_settings: {  }
-    weight: 1
+    weight: 0
     region: content
   field_pbwvideo_title:
     type: string
@@ -40,13 +40,13 @@ content:
       link_to_entity: false
       link_rel: canonical
     third_party_settings: {  }
-    weight: 2
+    weight: 1
     region: content
   field_watershed_body:
     type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 3
+    weight: 2
     region: content
 hidden: {  }

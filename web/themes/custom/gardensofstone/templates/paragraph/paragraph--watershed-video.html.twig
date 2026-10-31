@@ -19,13 +19,8 @@
 {% block paragraph %}
     <article{{ attributes.addClass(classes) }}>
         {% block content %}
-            <div class="wrap">
+            <div class="wrap container">
                 <div class="watershed-wrap">
-                    {% if not paragraph.field_pbvideo_video.isEmpty() %}
-                        <div class="video-frame">
-                            {{ content.field_pbvideo_video }}
-                        </div>
-                    {% endif %}
                     {% if not paragraph.field_pbwvideo_kicker.isEmpty() or
                            not paragraph.field_pbwvideo_title.isEmpty() or
                            not paragraph.field_watershed_body.isEmpty() %}
@@ -41,6 +36,11 @@
                                     {{ content.field_watershed_body }}
                                 </div>
                             {% endif %}
+                        </div>
+                    {% endif %}
+                    {% if not paragraph.field_pbvideo_video.isEmpty() %}
+                        <div class="video-frame">
+                            {{ content.field_pbvideo_video }}
                         </div>
                     {% endif %}
                 </div>

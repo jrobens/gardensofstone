@@ -21,7 +21,7 @@
 {% block paragraph %}
   <div{{ attributes.addClass(classes) }}>
     {% block content %}
-      <div class="wrap network-inner">
+      <div class="wrap container    network-inner">
         <div style="flex:1;min-width:260px;">
             {% if paragraph.field_pbnet_kicker and not paragraph.field_pbnet_kicker.isEmpty() %}
                 <div class="network-kicker">{{ content.field_pbnet_kicker }}</div>
