@@ -9,32 +9,42 @@
  * - attributes: HTML attributes for the containing element.
  */
 #}
-{%
-  set classes = [
+{% set classes = [
     'paragraph',
     'paragraph--type--watershed-video',
     'watershed-section',
     view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
     not paragraph.isPublished() ? 'paragraph--unpublished'
-  ]
-%}
+] %}
 {% block paragraph %}
-  <div{{ attributes.addClass(classes) }}>
-    {% block content %}
-      <div class="wrap">
-        <div class="watershed-wrap">
-          {% if not paragraph.field_pbvideo_video.isEmpty() %}
-            <div class="video-frame">
-              {{ content.field_pbvideo_video }}
+    <article{{ attributes.addClass(classes) }}>
+        {% block content %}
+            <div class="wrap">
+                <div class="watershed-wrap">
+                    {% if not paragraph.field_pbvideo_video.isEmpty() %}
+                        <div class="video-frame">
+                            {{ content.field_pbvideo_video }}
+                        </div>
+                    {% endif %}
+                    {% if not paragraph.field_pbwvideo_kicker.isEmpty() or
+                           not paragraph.field_pbwvideo_title.isEmpty() or
+                           not paragraph.field_watershed_body.isEmpty() %}
+                        <div class="video-content">
+                            {% if not paragraph.field_pbwvideo_kicker.isEmpty() %}
+                                <div class="kicker">{{ content.field_pbwvideo_kicker }}</div>
+                            {% endif %}
+                            {% if not paragraph.field_pbwvideo_title.isEmpty() %}
+                                <h2 class="title">{{ content.field_pbwvideo_title }}</h2>
+                            {% endif %}
+                            {% if not paragraph.field_watershed_body.isEmpty() %}
+                                <div class="watershed-body">
+                                    {{ content.field_watershed_body }}
+                                </div>
+                            {% endif %}
+                        </div>
+                    {% endif %}
+                </div>
             </div>
-          {% endif %}
-          {% if not paragraph.field_watershed_body.isEmpty() %}
-            <div class="watershed-body">
-              {{ content.field_watershed_body }}
-            </div>
-          {% endif %}
-        </div>
-      </div>
-    {% endblock %}
-  </div>
+        {% endblock %}
+    </article>
 {% endblock paragraph %}

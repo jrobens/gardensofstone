@@ -1,3 +1,23 @@
+## Updates 2026-10-31
+
+    * civicrm/civicrm-core (6.18.1 -> 6.19.4)
+* civicrm/civicrm-drupal-8 (6.18.1 -> 6.19.4)
+* civicrm/civicrm-packages (6.18.1 -> 6.19.4)
+* civicrm/cli-tools (v2026.03.20.1774037652 -> v2026.10.22.1792644823)
+* drupal/core-composer-scaffold (11.4.8 -> 11.4.11)
+* drupal/core-project-message (11.4.8 -> 11.4.11)
+* drupal/core-recommended (11.4.8 -> 11.4.11)
+* drupal/gin (5.0.15 -> 5.0.16)
+* drupal/layout_paragraphs (dev-2.1.x 8bf9a09 -> dev-2.1.x d2e2435)
+* drupal/leaflet (10.4.12 -> 10.4.13)
+* drupal/linked_field (1.7.0 -> 1.8.0)
+* drupal/mediafield_gallery (1.0.0 -> 1.0.1)
+* drupal/menu_item_extras (3.1.2 -> 3.2.0)
+* drupal/menu_link_attributes (1.7.0 -> 1.10.0)
+* drupal/metatag (2.2.0 -> 2.2.4)
+* drupal/module_filter (6.0.0 -> 6.0.1)
+* drupal/shield (1.8.0 -> 1.10.0)
+    Database updates: None
 ## Updates 2026-10-22
 
     * civicrm/civicrm-core (6.18.1 -> 6.19.2)

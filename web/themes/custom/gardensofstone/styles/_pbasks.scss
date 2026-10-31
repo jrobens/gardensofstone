@@ -12,46 +12,60 @@
   }
 
   .asks-grid {
-    .field_pbasks_cards {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: subgrid;
-      margin-top: 2.5rem;
-      gap: 22px;
-    }
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
 
-    @include bv.tablet {
-      .field_pbasks_cards {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
+    // Support intermediate field/item wrappers if present in DOM
+    > div:not(.ask-card),
+    .field_pbasks_cards,
+    [class*="field--name-field-pbasks-cards"],
+    .field__item {
+      display: contents;
+
+      > div:not(.ask-card),
+      .field__item {
+        display: contents;
       }
     }
 
     .ask-card {
-      display: grid;
-      grid-template-rows: auto auto 1fr auto;
+      display: flex;
+      flex-direction: column;
       background: var(--paper);
       border: 0.0625rem solid rgba(43, 40, 34, 0.14);
       border-radius: 0.25rem;
       padding: 1.625rem;
-      align-items: start;
 
       .ask-role {
         font-size: 0.78rem;
         font-weight: 700;
         text-transform: none;
         color: var(--water);
+        margin-top: 0;
         margin-bottom: 0.5rem;
       }
 
       h3 {
         font-size: 1.15rem;
+        margin-top: 0;
         margin-bottom: 0.75rem;
       }
 
-      p {
+      p,
+      .ask-description {
         font-size: 0.93rem;
         color: #3c392f;
+        margin-top: 0;
         margin-bottom: 1rem;
+
+        p {
+          font-size: inherit;
+          color: inherit;
+          margin-top: 0;
+          margin-bottom: 0;
+        }
       }
 
       .sample_submission {
@@ -59,17 +73,24 @@
         border-left: 0.1875rem solid rgba(43, 40, 34, 0.15);
         padding: 0.875rem 1rem;
         border-radius: 0.125rem;
+        margin-top: 0;
         margin-bottom: 0.875rem;
         font-size: 0.86rem;
         line-height: 1.55;
         color: #4a4738;
         font-style: italic;
+
+        p {
+          margin-top: 0;
+          margin-bottom: 0;
+        }
       }
 
       .ask-actions {
         display: flex;
         gap: 0.625rem;
         flex-wrap: wrap;
+        margin-top: auto;
       }
 
       .ask-btn {
@@ -82,6 +103,22 @@
         font-weight: 600;
         font-size: 0.875rem;
         border: none;
+      }
+
+      .copy-btn {
+        background: transparent;
+        border: 0.09375rem solid var(--water);
+        color: var(--water);
+        padding: 0.5625rem 1rem;
+        border-radius: 0.1875rem;
+        font-weight: 600;
+        font-size: 0.85rem;
+        cursor: pointer;
+
+        &.copied {
+          border-color: var(--ochre);
+          color: var(--ochre);
+        }
       }
 
       &.political {
@@ -98,6 +135,48 @@
 
       &.premier {
         border-top: 0.25rem solid var(--clay);
+      }
+    }
+
+    @include bv.tablet {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-template-rows: auto auto auto 1fr auto;
+      grid-auto-rows: auto auto auto 1fr auto;
+      column-gap: 22px;
+      row-gap: 0;
+
+      .ask-card {
+        grid-row: span 5;
+        display: grid;
+        grid-template-rows: subgrid;
+        align-items: start;
+        margin-bottom: 0;
+
+        .ask-role {
+          grid-row: 1;
+        }
+
+        h3 {
+          grid-row: 2;
+        }
+
+        p,
+        .ask-description {
+          grid-row: 3;
+        }
+
+        .sample_submission {
+          grid-row: 4;
+          align-self: stretch;
+          margin-bottom: 0.875rem;
+        }
+
+        .ask-actions {
+          grid-row: 5;
+          margin-top: 0;
+          align-self: end;
+        }
       }
     }
   }

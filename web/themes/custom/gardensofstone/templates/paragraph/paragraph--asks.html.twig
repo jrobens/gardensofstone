@@ -35,7 +35,11 @@
 
                 {% if not paragraph.field_pbasks_cards.isEmpty() %}
                     <div class="asks-grid">
-                        {{ content.field_pbasks_cards }}
+                        {% for key, item in content.field_pbasks_cards %}
+                            {% if key|first != '#' %}
+                                {{ item }}
+                            {% endif %}
+                        {% endfor %}
                     </div>
                 {% endif %}
             </div>

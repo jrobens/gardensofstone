@@ -1,0 +1,19 @@
+uuid: b67b6052-af14-41f2-8695-15a89efd09f4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pbnet_kicker
+    - paragraphs.paragraphs_type.network_strip
+id: paragraph.network_strip.field_pbnet_kicker
+field_name: field_pbnet_kicker
+entity_type: paragraph
+bundle: network_strip
+label: Kicker
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

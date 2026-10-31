@@ -1,3 +1,16 @@
+Deprecated function: Drupal\webform_civicrm\Plugin\WebformElement\CivicrmContact::prepare(): Implicitly marking parameter $webform_submission as nullable is deprecated, the explicit nullable type must be used instead in include() (line 576 of /Users/jrobens/Sites/gardensofstone2/vendor/composer/ClassLoader.php).
+Deprecated function: Drupal\webform_civicrm\Plugin\WebformElement\CivicrmContact::wf_crm_fill_contact_value(): Implicitly marking parameter $ids as nullable is deprecated, the explicit nullable type must be used instead in include() (line 576 of /Users/jrobens/Sites/gardensofstone2/vendor/composer/ClassLoader.php).
+Deprecated function: Drupal\webform_civicrm\Plugin\WebformElement\CivicrmContact::prepareElementValidateCallbacks(): Implicitly marking parameter $webform_submission as nullable is deprecated, the explicit nullable type must be used instead in include() (line 576 of /Users/jrobens/Sites/gardensofstone2/vendor/composer/ClassLoader.php).
+Deprecated function: Creation of dynamic property Drupal\webform_civicrm\WebformCivicrmPreProcess::$utils is deprecated in Drupal\webform_civicrm\WebformCivicrmPreProcess->__construct() (line 35 of modules/patched/webform_civicrm/src/WebformCivicrmPreProcess.php).
+Deprecated function: Creation of dynamic property Drupal\webform_civicrm\Fields::$utils is deprecated in Drupal\webform_civicrm\Fields->__construct() (line 15 of modules/patched/webform_civicrm/src/Fields.php).
+Deprecated function: Drupal\webform_civicrm\Plugin\WebformElement\CivicrmNumber::prepare(): Implicitly marking parameter $webform_submission as nullable is deprecated, the explicit nullable type must be used instead in include() (line 576 of /Users/jrobens/Sites/gardensofstone2/vendor/composer/ClassLoader.php).
+Deprecated function: Drupal\webform_civicrm\Plugin\WebformElement\CivicrmOptions::prepare(): Implicitly marking parameter $webform_submission as nullable is deprecated, the explicit nullable type must be used instead in include() (line 576 of /Users/jrobens/Sites/gardensofstone2/vendor/composer/ClassLoader.php).
+Deprecated function: Drupal\webform_civicrm\Plugin\WebformElement\CivicrmOptions::prepareElementValidateCallbacks(): Implicitly marking parameter $webform_submission as nullable is deprecated, the explicit nullable type must be used instead in include() (line 576 of /Users/jrobens/Sites/gardensofstone2/vendor/composer/ClassLoader.php).
+Warning: Trying to access array offset on int in Drupal\webform_civicrm\WebformCivicrmPreProcess->fillForm() (line 494 of modules/patched/webform_civicrm/src/WebformCivicrmPreProcess.php).
+Open Follow the water, from source to tap configuration options
+
+***
+
 5879   23/Oct 17:20   php    Debug      Deprecated function: ArrayIterator::__construct(): Using an    
 object as a backing array for ArrayIterator is deprecated, as  
 it allows violating class constraints and invariants in        
