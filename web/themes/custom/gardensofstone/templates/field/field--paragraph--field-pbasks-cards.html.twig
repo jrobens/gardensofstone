@@ -1,0 +1,11 @@
+{#
+/**
+ * @file
+ * Theme override for field_pbasks_cards on paragraph.
+ * Renders items without wrapping divs to allow direct grid placement.
+ */
+#}
+{% for item in items %}
+  {{ item.content }}
+{% endfor %}
+
