@@ -23886,7 +23886,7 @@ body.node-type--page-and-layout main > section > .container:not(.is-max-desktop)
 }
 .field_watershed_content .watershed-page .network-strip {
   background: var(--cream-deep);
-  padding: 46px 0;
+  padding: 2.875rem 0;
 }
 .field_watershed_content .watershed-page .network-inner {
   display: flex;
@@ -23971,7 +23971,16 @@ body.node-type--page-and-layout main > section > .container:not(.is-max-desktop)
 
 .network-strip {
   background: var(--cream-deep);
-  padding: 46px 0;
+  padding: 2.875rem 0;
+}
+
+.network-kicker {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--ochre);
+  margin-bottom: 0.6rem;
+  text-transform: none;
+  letter-spacing: normal;
 }
 
 .network-inner {
