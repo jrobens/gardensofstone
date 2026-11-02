@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.paragraph.field_pbloophole_stats
     - paragraphs.paragraphs_type.loophole
+    - paragraphs.paragraphs_type.stat_card
   module:
     - entity_reference_revisions
     - paragraph_blocks
@@ -24,7 +25,8 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    target_bundles: {  }
+    target_bundles:
+      stat_card: stat_card
     negate: 0
     target_bundles_drag_drop:
       ask_card:
@@ -78,9 +80,6 @@ settings:
       network_strip:
         weight: 44
         enabled: false
-      paragraph_stat_card:
-        weight: 45
-        enabled: true
       pb_grid_container:
         weight: 46
         enabled: false
@@ -90,6 +89,9 @@ settings:
       row:
         weight: 48
         enabled: false
+      stat_card:
+        weight: 48
+        enabled: true
       text:
         weight: 49
         enabled: false
