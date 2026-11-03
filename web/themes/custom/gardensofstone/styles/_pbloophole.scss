@@ -27,8 +27,17 @@
     max-width: 64ch;
   }
 
-  .loophole-stats {
-    margin-top: 34px;
+  .stat-row .field_pbloophole_stats {
+    margin-top: 2.125rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  @include bv.tablet() {
+    .stat-row .field_pbloophole_stats {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
   }
 
   .stat-card {
@@ -36,6 +45,7 @@
     border-top: 4px solid var(--ochre);
     border-radius: 2px;
     padding: 20px 20px 22px;
+    min-height: 18rem;
   }
 
   .stat-num {

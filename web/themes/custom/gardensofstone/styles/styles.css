@@ -23099,7 +23099,8 @@ body.node-type--page-and-layout main > section > .container:not(.is-max-desktop)
 .paragraph--type--journey-stop summary.journey-header,
 .paragraph--type--journey-stop .journey-header {
   cursor: pointer;
-  padding: 10px 0 10px 4px;
+  min-height: 3rem;
+  padding: 0.7rem 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -23166,6 +23167,7 @@ body.node-type--page-and-layout main > section > .container:not(.is-max-desktop)
   font-size: 1.02rem;
   line-height: 1.3;
   padding: 0.7rem 0;
+  margin-top: 0.3rem;
 }
 .journey-stop .journey-heading .journey-label div,
 .journey-stop .journey-heading .field_pbjourney_label div,
@@ -23550,14 +23552,23 @@ body.node-type--page-and-layout main > section > .container:not(.is-max-desktop)
   line-height: 1.5;
   max-width: 64ch;
 }
-.paragraph--type--loophole .loophole-stats {
-  margin-top: 34px;
+.paragraph--type--loophole .stat-row .field_pbloophole_stats {
+  margin-top: 2.125rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+@media screen and (min-width: 769px), print {
+  .paragraph--type--loophole .stat-row .field_pbloophole_stats {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 }
 .paragraph--type--loophole .stat-card {
   background: var(--cream);
   border-top: 4px solid var(--ochre);
   border-radius: 2px;
   padding: 20px 20px 22px;
+  min-height: 18rem;
 }
 .paragraph--type--loophole .stat-num {
   font-family: "Fraunces", serif;
@@ -24851,7 +24862,7 @@ footer.footer ul.menu-level-0 > li .menu_link_content .field_menu_image img {
   left: 10rem;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 769px), print {
   :root {
     font-size: 1.5rem;
     font-size: calc(0.7rem + 0.5vw);
@@ -24903,8 +24914,14 @@ footer.footer ul.menu-level-0 > li .menu_link_content .field_menu_image img {
   font-stretch: normal;
 }
 body {
-  font: 100 100%/1 "Libre Franklin", sans-serif;
+  font: 100 1.3 "Libre Franklin", sans-serif;
   color: rgb(27, 27, 27);
+}
+@media screen and (min-width: 769px), print {
+  body {
+    font-size: 1.5rem;
+    font-size: calc(0.7rem + 0.5vw);
+  }
 }
 body a, body a:visited {
   color: white;
@@ -24915,8 +24932,8 @@ body .region-content a, body .region-content a:visited {
 }
 
 html .is-family-primary {
-  font-family: "Libre Franklin", sans-serif;
-  font-weight: 500;
+  font-family: "Libre Franklin", sans-serif !important;
+  font-weight: 500 !important;
 }
 
 body a:active {

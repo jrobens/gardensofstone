@@ -1,0 +1,21 @@
+uuid: 7e98e9dc-4d56-44e3-9c7e-097703cfb865
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_pbjourney_stop_heading
+field_name: field_pbjourney_stop_heading
+entity_type: paragraph
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

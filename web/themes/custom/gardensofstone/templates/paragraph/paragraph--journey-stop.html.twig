@@ -41,8 +41,8 @@
                 {% endif %}
 
                 {# Check if sub heading exists (assumes it is added to the schema later) #}
-                {% if paragraph.field_pbjourney_sub and not paragraph.field_pbjourney_sub.isEmpty() %}
-                    <div class="journey-sub">{{ content.field_pbjourney_sub }}</div>
+                {% if paragraph.field_pbjourney_stop_heading and not paragraph.field_pbjourney_stop_heading.isEmpty() %}
+                    <div class="journey-sub">{{ content.field_pbjourney_stop_heading }}</div>
                 {% endif %}
             </div>
         </summary>

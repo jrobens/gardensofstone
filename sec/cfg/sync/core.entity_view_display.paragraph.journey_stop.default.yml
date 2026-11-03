@@ -7,6 +7,7 @@ dependencies:
     - field.field.paragraph.journey_stop.field_pbjourney_label
     - field.field.paragraph.journey_stop.field_pbjourney_link
     - field.field.paragraph.journey_stop.field_pbjourney_stop_det
+    - field.field.paragraph.journey_stop.field_pbjourney_stop_heading
     - paragraphs.paragraphs_type.journey_stop
   module:
     - link
@@ -44,12 +45,21 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    weight: 3
+    weight: 4
     region: content
   field_pbjourney_stop_det:
     type: text_default
     label: hidden
     settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_pbjourney_stop_heading:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+      link_rel: canonical
     third_party_settings: {  }
     weight: 2
     region: content

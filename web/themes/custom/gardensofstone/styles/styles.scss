@@ -1,5 +1,10 @@
 @use "../../../../libraries/bulma/sass/utilities/initial-variables";
+@use "../../../../libraries/bulma/sass/utilities/mixins" as bv;
 @use '../../../../sites/variables' as *;
+
+// Override Bulma primary font family variable
+$family-primary: 'Libre Franklin', sans-serif;
+
 @use "../../../../libraries/node_modules/bulma/sass";
 @use 'navbar';
 @use 'breadcrumbs';
@@ -26,7 +31,7 @@
 @use 'footer';
 @use 'editing';
 
-@media (min-width: 768px) {
+@include bv.tablet() {
   :root {
     font-size: 1.5rem;
     font-size: calc(0.7rem + 0.5vw);
@@ -88,8 +93,13 @@
 }
 
 body {
-  font: 100 100%/1 'Libre Franklin', sans-serif;
+  font: 100 1.3 $family-primary;
   color: rgb(27, 27, 27);
+
+  @include bv.tablet() {
+    font-size: 1.5rem;
+    font-size: calc(0.7rem + 0.5vw);
+  }
 
   a, a:visited {
     color: $link_inverse;
@@ -103,8 +113,8 @@ body .region-content a, body .region-content a:visited {
 
 
 html .is-family-primary {
-  font-family: 'Libre Franklin', sans-serif;
-  font-weight: 500;
+  font-family: 'Libre Franklin', sans-serif !important;
+  font-weight: 500 !important;
 }
 
 body a:active {
