@@ -1,5 +1,5 @@
 ip_watershed.landing_page:
-  path: '/coxs-river-campaign'
+  path: '/coxs-river-campaign-sample'
   defaults:
     _controller: '\Drupal\ip_watershed\Controller\CampaignPageController::renderPage'
     _title: 'Coxs River Catchment Campaign'
