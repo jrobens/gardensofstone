@@ -23604,7 +23604,7 @@ body.node-type--page-and-layout main > section > .container:not(.is-max-desktop)
    Full-width container for node pages
    -------------------------------------------------------------------------- */
 .node-type--watershed-page main > section {
-  padding: 4rem 0;
+  padding: 0;
 }
 
 .node-type--watershed-page main > section > .container:not(.is-max-desktop):not(.is-max-widescreen) {
