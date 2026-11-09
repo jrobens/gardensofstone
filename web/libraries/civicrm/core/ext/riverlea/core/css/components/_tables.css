@@ -304,7 +304,7 @@ tbody.scrollContent tr.alternateRow:hover,
 }
 .crm-container .table > :is(thead,tbody,tfoot) > :is(tr > td.active,tr > th.active,tr.active > td,tr.active > th) {
   background-color: var(--crm-table-row-bg-color);
-}*/
+}
 .crm-container .table-hover > tbody > :is(tr > td.active:hover,th.active:hover,tr.active:hover > td,tr:hover > .active,tr.active:hover > th) {
   background-color: var(--crm-table-row-hover-color);
 }
@@ -313,7 +313,7 @@ tbody.scrollContent tr.alternateRow:hover,
 .crm-container .table tr.success > td,
 .crm-container .table tr.success > th,
 .crm-container table tr.crm-row-ok,
-.crm-container table tr.crm-row-ok > td {
+.crm-container table tr.crm-row-ok:not(.crm-row-selected) > td {
   background-color: var(--crm-alert-success-bg-color);
   color: var(--crm-alert-success-text-color);
 }
@@ -347,7 +347,7 @@ tbody.scrollContent tr.alternateRow:hover,
 .crm-container table tr.error > td,
 .crm-container table tr.error,
 .crm-container table tr.crm-row-error,
-.crm-container table tr.crm-row-error > td {
+.crm-container table tr.crm-row-error:not(.crm-row-selected) > td {
   background-color: var(--crm-alert-danger-bg-color);
   color: var(--crm-alert-danger-text-color);
 }

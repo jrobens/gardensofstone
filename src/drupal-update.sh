@@ -46,7 +46,7 @@ REQUIRE_ARGS=$(echo "$UPDATES_JSON" | jq -r --arg pat "$PATTERN" '
   | if (.name | contains("civicrm/")) then
       "\(.name):^\(.latest | split(".")[0]).\(.latest | split(".")[1])"
     else
-      "\(.name):\(.latest)"
+       "\(.name):\(.latest | split(" ")[0])"
     end' | tr '\n' ' ')
 
 # 3. Execute the upgrade using require to forcefully bump constraints

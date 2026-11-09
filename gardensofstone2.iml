@@ -26,6 +26,11 @@
       <sourceFolder url="file://$MODULE_DIR$/web/core/lib/Drupal/Component/Uuid/" isTestSource="false" packagePrefix="Drupal\Component\Uuid\" />
       <sourceFolder url="file://$MODULE_DIR$/web/core/lib/Drupal/Component/Version/" isTestSource="false" packagePrefix="Drupal\Component\Version\" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/meyfa/php-svg" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/nyholm/psr7" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/phrity/comparison" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/phrity/http" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/phrity/util-accessor" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/phrity/util-interpolator" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
