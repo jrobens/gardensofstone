@@ -1,5 +1,11 @@
 ## Updates 2026-11-09
 
+Warning message
+Module ip_pbhero_campaign has an entry in the system.schema key/value storage, but is missing from your site. More information about this error.
+Module jquery_ui has an entry in the system.schema key/value storage, but is missing from your site. More information about this error.
+Module jquery_ui_autocomplete has an entry in the system.schema key/value storage, but is missing from your site. More information about this error.
+Module jquery_ui_menu has an entry in the system.schema key/value storage, but is missing from your site. More information about this error.
+
     * civicrm/civicrm-core (6.18.1 -> 6.20.0)
 * civicrm/civicrm-drupal-8 (6.18.1 -> 6.20.0)
 * civicrm/civicrm-packages (6.18.1 -> 6.20.0)
