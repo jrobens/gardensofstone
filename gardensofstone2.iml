@@ -8,6 +8,23 @@
       <sourceFolder url="file://$MODULE_DIR$/web/core/recipes/feedback_contact_form/tests" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/web/files/civicrm/ext/.civicrm-staging/2025-07-07-i4kZeYr6f0JBlXHD/old/uk.co.vedaconsulting.mosaico/vendor/civicrm/composer-downloads-plugin/tests" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/web/files/civicrm/ext/uk.co.vedaconsulting.mosaico/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/web/core/lib/Drupal/Component/Assertion/" isTestSource="false" packagePrefix="Drupal\Component\Assertion\" />
+      <sourceFolder url="file://$MODULE_DIR$/web/core/lib/Drupal/Component/ClassFinder/" isTestSource="false" packagePrefix="Drupal\Component\ClassFinder\" />
+      <sourceFolder url="file://$MODULE_DIR$/web/core/lib/Drupal/Component/Datetime/" isTestSource="false" packagePrefix="Drupal\Component\Datetime\" />
+      <sourceFolder url="file://$MODULE_DIR$/web/core/lib/Drupal/Component/Discovery/" isTestSource="false" packagePrefix="Drupal\Component\Discovery\" />
+      <sourceFolder url="file://$MODULE_DIR$/web/core/lib/Drupal/Component/EventDispatcher/" isTestSource="false" packagePrefix="Drupal\Component\EventDispatcher\" />
+      <sourceFolder url="file://$MODULE_DIR$/web/core/lib/Drupal/Component/FileCache/" isTestSource="false" packagePrefix="Drupal\Component\FileCache\" />
+      <sourceFolder url="file://$MODULE_DIR$/web/core/lib/Drupal/Component/FileSecurity/" isTestSource="false" packagePrefix="Drupal\Component\FileSecurity\" />
+      <sourceFolder url="file://$MODULE_DIR$/web/core/lib/Drupal/Component/FileSystem/" isTestSource="false" packagePrefix="Drupal\Component\FileSystem\" />
+      <sourceFolder url="file://$MODULE_DIR$/web/core/lib/Drupal/Component/Gettext/" isTestSource="false" packagePrefix="Drupal\Component\Gettext\" />
+      <sourceFolder url="file://$MODULE_DIR$/web/core/lib/Drupal/Component/Graph/" isTestSource="false" packagePrefix="Drupal\Component\Graph\" />
+      <sourceFolder url="file://$MODULE_DIR$/web/core/lib/Drupal/Component/HttpFoundation/" isTestSource="false" packagePrefix="Drupal\Component\HttpFoundation\" />
+      <sourceFolder url="file://$MODULE_DIR$/web/core/lib/Drupal/Component/PhpStorage/" isTestSource="false" packagePrefix="Drupal\Component\PhpStorage\" />
+      <sourceFolder url="file://$MODULE_DIR$/web/core/lib/Drupal/Component/ProxyBuilder/" isTestSource="false" packagePrefix="Drupal\Component\ProxyBuilder\" />
+      <sourceFolder url="file://$MODULE_DIR$/web/core/lib/Drupal/Component/Render/" isTestSource="false" packagePrefix="Drupal\Component\Render\" />
+      <sourceFolder url="file://$MODULE_DIR$/web/core/lib/Drupal/Component/Utility/" isTestSource="false" packagePrefix="Drupal\Component\Utility\" />
+      <sourceFolder url="file://$MODULE_DIR$/web/core/lib/Drupal/Component/Uuid/" isTestSource="false" packagePrefix="Drupal\Component\Uuid\" />
+      <sourceFolder url="file://$MODULE_DIR$/web/core/lib/Drupal/Component/Version/" isTestSource="false" packagePrefix="Drupal\Component\Version\" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/meyfa/php-svg" />
     </content>
     <orderEntry type="inheritedJdk" />
