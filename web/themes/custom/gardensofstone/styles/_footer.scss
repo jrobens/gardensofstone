@@ -1,5 +1,6 @@
 @use '../../../../sites/variables' as sv;
 @use "../../../../libraries/bulma/sass/utilities/mixins" as bv;
+
 /* ==========================================================================
    Footer Component Styles
 
@@ -69,31 +70,31 @@ footer.footer {
     margin-right: 0;
   }
 
-/* --------------------------------------------------------------------------
-   Main content rail: centred, padded, and flex-wrapping so the utility
-   blocks form one aligned row.
-   -------------------------------------------------------------------------- */
-.region-footer {
-  max-width: none;
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  gap: clamp(1.5rem, 3.5vw, 3.5rem);
+  /* --------------------------------------------------------------------------
+     Main content rail: centred, padded, and flex-wrapping so the utility
+     blocks form one aligned row.
+     -------------------------------------------------------------------------- */
+  .region-footer {
+    max-width: none;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: clamp(1.5rem, 3.5vw, 3.5rem);
 
-  .menu-list a, .menu-list button, .menu-list .menu-item {
-    background-color: #181818;;
+    .menu-list a, .menu-list button, .menu-list .menu-item {
+      background-color: #181818;;
+    }
   }
-}
 
-/* Full-width children span the whole rail. */
-.region-footer > *,
-.region-footer .menu-level-0,
-.region-footer #block-aboriginalcountry {
-  flex: 1 1 100%;
-  order: 1;
-}
+  /* Full-width children span the whole rail. */
+  .region-footer > *,
+  .region-footer .menu-level-0,
+  .region-footer #block-aboriginalcountry {
+    flex: 1 1 100%;
+    order: 1;
+  }
 }
 
 /* Search, quick-links and social share a single aligned row. */
@@ -107,9 +108,11 @@ footer.footer .region-footer #block-gardensofstone-followus-2 {
 footer.footer .region-footer #block-gardensofstone-search {
   order: 2;
 }
+
 footer.footer .region-footer #block-gardensofstone-footer {
   order: 2;
 }
+
 footer.footer .region-footer #block-gardensofstone-followus-2 {
   order: 2;
 }
@@ -274,6 +277,7 @@ footer.footer ul.menu-level-0 {
         }
       }
     }
+
     .menu_link_content {
       display: flex;
       flex-direction: column;
