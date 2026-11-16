@@ -1,3 +1,7 @@
+## Updates 2026-11-12
+
+    * drupal/metatag (2.2.6 -> 2.2.7)
+    Database updates: metatag-post-v2_07_error_page_defaults_untranslated_none
 ## Updates 2026-11-09
 
 Warning message
