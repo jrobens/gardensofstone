@@ -17,7 +17,7 @@ this round (the v3 package was tested with Bulma 1.0.2; the scoping method is un
 ## Install
 
 1. Copy both folders to `themes/custom/YOURTHEME/components/`.
-2. Make sure the core Single Directory Components module is enabled, then clear caches.
+2. Make sure the core Single Directory Components module is enabled, then clear caches [No - in core]
 3. Render them from templates:
 
        {# Campaign page body, e.g. node--page--NID.html.twig #}

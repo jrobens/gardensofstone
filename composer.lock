@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "03341368accdc73513ab48d512c9e68e",
+    "content-hash": "af11a825d6c44291fa8235c2b2496fdf",
     "packages": [
         {
             "name": "adrienrn/php-mimetyper",
@@ -3386,6 +3386,164 @@
                 }
             ],
             "description": "Canvas",
+            "homepage": "https://www.drupal.org/project/canvas",
+            "keywords": [
+                "Actively maintained",
+                "Site structure"
+            ],
+            "support": {
+                "source": "https://git.drupalcode.org/project/canvas"
+            }
+        },
+        {
+            "name": "drupal/canvas_stark",
+            "version": "1.13.0",
+            "require": {
+                "drupal/canvas": "^1",
+                "drupal/core": "^11.3"
+            },
+            "type": "metapackage",
+            "extra": {
+                "drupal": {
+                    "version": "1.13.0",
+                    "datestamp": "1795041066",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "akhil babu",
+                    "homepage": "https://www.drupal.org/user/3632866"
+                },
+                {
+                    "name": "amangrover90",
+                    "homepage": "https://www.drupal.org/user/3602433"
+                },
+                {
+                    "name": "attilatilman",
+                    "homepage": "https://www.drupal.org/user/3528404"
+                },
+                {
+                    "name": "balintbrews",
+                    "homepage": "https://www.drupal.org/user/613760"
+                },
+                {
+                    "name": "bnjmnm",
+                    "homepage": "https://www.drupal.org/user/2369194"
+                },
+                {
+                    "name": "chandu7929",
+                    "homepage": "https://www.drupal.org/user/2907229"
+                },
+                {
+                    "name": "effulgentsia",
+                    "homepage": "https://www.drupal.org/user/78040"
+                },
+                {
+                    "name": "f.mazeikis",
+                    "homepage": "https://www.drupal.org/user/3513671"
+                },
+                {
+                    "name": "gábor hojtsy",
+                    "homepage": "https://www.drupal.org/user/4166"
+                },
+                {
+                    "name": "harjot.singh@acquia.com",
+                    "homepage": "https://www.drupal.org/user/3871293"
+                },
+                {
+                    "name": "hooroomoo",
+                    "homepage": "https://www.drupal.org/user/3688872"
+                },
+                {
+                    "name": "isholgueras",
+                    "homepage": "https://www.drupal.org/user/733162"
+                },
+                {
+                    "name": "jessebaker",
+                    "homepage": "https://www.drupal.org/user/3546546"
+                },
+                {
+                    "name": "jptaranto",
+                    "homepage": "https://www.drupal.org/user/135234"
+                },
+                {
+                    "name": "justafish",
+                    "homepage": "https://www.drupal.org/user/161058"
+                },
+                {
+                    "name": "kunal.sachdev",
+                    "homepage": "https://www.drupal.org/user/3685163"
+                },
+                {
+                    "name": "larowlan",
+                    "homepage": "https://www.drupal.org/user/395439"
+                },
+                {
+                    "name": "lauriii",
+                    "homepage": "https://www.drupal.org/user/1078742"
+                },
+                {
+                    "name": "longwave",
+                    "homepage": "https://www.drupal.org/user/246492"
+                },
+                {
+                    "name": "marcus_johansson",
+                    "homepage": "https://www.drupal.org/user/385947"
+                },
+                {
+                    "name": "mglaman",
+                    "homepage": "https://www.drupal.org/user/2416470"
+                },
+                {
+                    "name": "narendrar",
+                    "homepage": "https://www.drupal.org/user/1730192"
+                },
+                {
+                    "name": "penyaskito",
+                    "homepage": "https://www.drupal.org/user/959536"
+                },
+                {
+                    "name": "phenaproxima",
+                    "homepage": "https://www.drupal.org/user/205645"
+                },
+                {
+                    "name": "ravi.maniyar.123",
+                    "homepage": "https://www.drupal.org/user/3867193"
+                },
+                {
+                    "name": "tedbow",
+                    "homepage": "https://www.drupal.org/user/240860"
+                },
+                {
+                    "name": "thoward216",
+                    "homepage": "https://www.drupal.org/user/3576535"
+                },
+                {
+                    "name": "tim.plunkett",
+                    "homepage": "https://www.drupal.org/user/241634"
+                },
+                {
+                    "name": "utkarsh_33",
+                    "homepage": "https://www.drupal.org/user/3727088"
+                },
+                {
+                    "name": "wim leers",
+                    "homepage": "https://www.drupal.org/user/99777"
+                },
+                {
+                    "name": "wotnak",
+                    "homepage": "https://www.drupal.org/user/3558113"
+                }
+            ],
+            "description": "A theme for rendering forms in the Drupal Canvas UI. It includes logic that can bridges Drupal-rendered markup to React components.",
             "homepage": "https://www.drupal.org/project/canvas",
             "keywords": [
                 "Actively maintained",
