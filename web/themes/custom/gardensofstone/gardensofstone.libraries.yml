@@ -14,3 +14,33 @@ global:
   dependencies:
     - core/jquery
     - core/jquery.once
+
+gosa-watershed-fonts:
+  version: 1.0
+  css:
+    theme:
+      fonts/fonts.css: { }
+
+coxs-campaign:
+  version: 1.0
+  css:
+    theme:
+      components/coxs-campaign/coxs-campaign.css: { }
+  js:
+    components/coxs-campaign/coxs-campaign.js: { }
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - gardensofstone/gosa-watershed-fonts
+
+watershed-feature:
+  version: 1.0
+  css:
+    theme:
+      components/watershed-feature/watershed-feature.css: { }
+  js:
+    components/watershed-feature/watershed-feature.js: { }
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - gardensofstone/gosa-watershed-fonts

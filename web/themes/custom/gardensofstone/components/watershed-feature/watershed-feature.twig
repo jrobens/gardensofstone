@@ -1,0 +1,26 @@
+{#
+  Watershed feature block for the GOSA home page.
+  Single Directory Component. Props: title, kicker, blurb, video_url, thumbnail_url,
+  campaign_url, campaign_label. See README.md.
+#}
+{% set wf_title = title|default('Watershed, Episode 2: Salinity') %}
+{% set wf_kicker = kicker|default('New episode') %}
+{% set wf_blurb = blurb|default('Watershed is a short form documentary series following Sam, a fifth-generation Lithgow resident, as he discovers the current state of his beloved river.') %}
+{% set wf_video = video_url|default('https://vimeo.com/1247958755/f4642d552a') %}
+{% set wf_thumb = thumbnail_url|default('') %}
+{% set wf_href = campaign_url|default('#') %}
+{% set wf_label = campaign_label|default('Read the campaign') %}
+{% attach_library 'gardensofstone/watershed-feature' %}
+<section{{ attributes.addClass('wf-feature').setAttribute('data-wf-feature', '').setAttribute('data-video-url', wf_video).setAttribute('data-video-title', wf_title) }}>
+  <div class="wf-inner">
+    <div class="wf-text">
+      <div class="wf-kicker">{{ wf_kicker }}</div>
+      <h2 class="wf-title">{{ wf_title }}</h2>
+      <p class="wf-blurb">{{ wf_blurb }}</p>
+      <a class="wf-btn" href="{{ wf_href }}">{{ wf_label }}</a>
+    </div>
+    <div class="wf-video{% if not wf_thumb %} wf-poster{% endif %}" role="button" tabindex="0"{% if wf_thumb %} style="background-image:url('{{ wf_thumb|e('html_attr') }}');"{% endif %} aria-label="Play {{ wf_title }}">
+      <span class="wf-play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4 L20 12 L6 20 Z"/></svg></span>
+    </div>
+  </div>
+</section>

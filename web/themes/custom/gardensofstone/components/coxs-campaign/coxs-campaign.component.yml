@@ -1,0 +1,32 @@
+$schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
+name: Coxs River campaign
+status: experimental
+group: GOSA campaigns
+description: Coxs River catchment campaign landing page for the Gardens of Stone Alliance. Hero, evidence, loophole, three letters to send, Watershed video, network strip, numbered sources and acknowledgement.
+props:
+  type: object
+  properties:
+    video_url:
+      type: string
+      title: Watershed Vimeo link
+      description: Full Vimeo link including the private code, for example https://vimeo.com/1247958755/f4642d552a
+      default: 'https://vimeo.com/1247958755/f4642d552a'
+    video_title:
+      type: string
+      title: Video title
+      description: Used for the player's accessible name.
+      default: 'Watershed, Episode 2: Salinity'
+    episode_blurb:
+      type: string
+      title: Line under the series description
+      default: 'Now showing: Episode 2, Salinity.'
+    thumbnail_url:
+      type: string
+      title: Video thumbnail image URL
+      description: Optional. 16:9 image. When empty, the bundled Episode 2 thumbnail is used.
+      default: ''
+    show_footer:
+      type: boolean
+      title: Show acknowledgement and footer strip
+      description: Turn off if the site already shows the Acknowledgement of Country in its own footer.
+      default: true

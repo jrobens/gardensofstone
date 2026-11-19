@@ -1,0 +1,25 @@
+/* Watershed feature block. Every class has a wf- prefix and every rule sits under .wf-feature. */
+.wf-feature{--wf-forest:#22392C;--wf-forest-deep:#182A1F;--wf-cream:#EDE6D6;--wf-paper:#F7F3EA;--wf-ochre:#A8632F;--wf-gold:#D3A868;
+  background:var(--wf-forest-deep);color:var(--wf-cream);font-family:'Libre Franklin',sans-serif;line-height:1.55;text-align:left;padding:64px 0;}
+.wf-feature *{box-sizing:border-box;}
+.wf-feature .wf-inner{max-width:1080px;margin:0 auto;padding:0 28px;display:grid;grid-template-columns:0.9fr 1.1fr;gap:44px;align-items:center;}
+.wf-feature .wf-text{min-width:0;}
+.wf-feature .wf-kicker{font-size:0.78rem;font-weight:600;letter-spacing:0.16em;text-transform:uppercase;color:var(--wf-gold);margin-bottom:12px;}
+.wf-feature .wf-title{margin:0 0 16px;font-family:'Bricolage Grotesque','Libre Franklin',sans-serif;font-weight:800;letter-spacing:-0.015em;line-height:1.08;font-size:clamp(2rem,4.4vw,3.2rem);color:var(--wf-paper);text-wrap:balance;}
+.wf-feature .wf-blurb{margin:0 0 24px;font-size:1.04rem;color:rgba(237,230,214,0.88);max-width:46ch;}
+.wf-feature .wf-btn{display:inline-block;background:var(--wf-ochre);color:var(--wf-paper);padding:13px 24px;border-radius:3px;font-weight:600;font-size:0.95rem;text-decoration:none;transition:background .2s;}
+.wf-feature .wf-btn:hover,.wf-feature .wf-btn:focus-visible{background:#BE7339;color:var(--wf-paper);}
+.wf-feature .wf-video{position:relative;aspect-ratio:16/9;border-radius:6px;overflow:hidden;cursor:pointer;container-type:inline-size;background:var(--wf-forest) center/cover no-repeat;border:1px solid rgba(237,230,214,0.15);box-shadow:0 14px 34px rgba(0,0,0,0.32);min-width:0;}
+.wf-feature .wf-video.wf-poster{background-image:url(images/watershed-ep2-thumbnail.jpg);}
+.wf-feature .wf-play{position:absolute;right:18px;bottom:18px;z-index:2;width:56px;height:56px;border-radius:50%;background:rgba(237,230,214,0.94);display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(0,0,0,0.35);transition:transform .2s;}
+.wf-feature .wf-video:hover .wf-play{transform:scale(1.08);}
+.wf-feature .wf-play svg{width:22px;height:22px;fill:var(--wf-forest-deep);margin-left:3px;}
+.wf-feature .wf-video:focus-visible{outline:3px solid var(--wf-gold);outline-offset:3px;}
+.wf-feature .wf-video.wf-playing{cursor:default;}
+.wf-feature .wf-video.wf-playing .wf-play{display:none;}
+.wf-feature .wf-video iframe{position:absolute;inset:0;width:100%;height:100%;border:0;z-index:3;background:#000;}
+@media(max-width:860px){
+  .wf-feature{padding:48px 0;}
+  .wf-feature .wf-inner{grid-template-columns:1fr;gap:28px;}
+  .wf-feature .wf-video{order:-1;}
+}

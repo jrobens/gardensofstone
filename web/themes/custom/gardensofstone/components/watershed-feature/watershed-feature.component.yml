@@ -1,0 +1,39 @@
+$schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
+name: Watershed feature
+status: experimental
+group: GOSA campaigns
+description: Home page feature block for the Watershed documentary series. Episode title, short blurb, click-to-play Vimeo video and a button to the campaign page.
+props:
+  type: object
+  properties:
+    title:
+      type: string
+      title: Episode title
+      default: 'Watershed, Episode 2: Salinity'
+    kicker:
+      type: string
+      title: Small label above the title
+      default: 'New episode'
+    blurb:
+      type: string
+      title: Short description
+      default: 'Watershed is a short form documentary series following Sam, a fifth-generation Lithgow resident, as he discovers the current state of his beloved river.'
+    video_url:
+      type: string
+      title: Watershed Vimeo link
+      description: Full Vimeo link including the private code.
+      default: 'https://vimeo.com/1247958755/f4642d552a'
+    thumbnail_url:
+      type: string
+      title: Video thumbnail image URL
+      description: Optional. 16:9 image. When empty, the bundled Episode 2 thumbnail is used.
+      default: ''
+    campaign_url:
+      type: string
+      title: Campaign page link
+      description: Where the button goes, for example the path of the Coxs River campaign page.
+      default: '#'
+    campaign_label:
+      type: string
+      title: Button text
+      default: 'Read the campaign'

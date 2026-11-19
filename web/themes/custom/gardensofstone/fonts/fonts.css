@@ -1,0 +1,79 @@
+/* Self-hosted fonts for Coxs River campaign and Watershed feature */
+/* Font files are located in the fonts/ directory relative to this CSS file */
+
+/* Bricolage Grotesque - Variable font */
+@font-face {
+  font-family: 'Bricolage Grotesque';
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
+  src: url('./BricolageGrotesque-VariableFont_wght.woff2') format('woff2');
+}
+
+/* Oswald - Variable font */
+@font-face {
+  font-family: 'Oswald';
+  font-weight: 200 700;
+  font-display: swap;
+  font-style: normal;
+  src: url('./Oswald-VariableFont_wght.woff2') format('woff2');
+}
+
+/* Anton - Regular only */
+@font-face {
+  font-family: 'Anton';
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+  src: url('./Anton-Regular.woff2') format('woff2');
+}
+
+/* Fraunces - Variable font */
+@font-face {
+  font-family: 'Fraunces';
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
+  src: url('./Fraunces-VariableFont_Wght.woff2') format('woff2');
+}
+
+/* Libre Franklin - Weight 400, 500, 600, 700, 800 */
+@font-face {
+  font-family: 'Libre Franklin';
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+  src: url('./LibreFranklin-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Libre Franklin';
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+  src: url('./LibreFranklin-Medium.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Libre Franklin';
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+  src: url('./LibreFranklin-SemiBold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Libre Franklin';
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+  src: url('./LibreFranklin-Bold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Libre Franklin';
+  font-weight: 800;
+  font-display: swap;
+  font-style: normal;
+  src: url('./LibreFranklin-ExtraBold.woff2') format('woff2');
+}
