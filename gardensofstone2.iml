@@ -31,6 +31,8 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/phrity/http" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/phrity/util-accessor" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/phrity/util-interpolator" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/pear/mail_mime" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/phpoffice/phpspreadsheet" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

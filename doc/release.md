@@ -1,3 +1,14 @@
+## Updates 2026-11-19
+
+    * civicrm/civicrm-core (6.20.0 -> 6.20.1)
+* civicrm/civicrm-drupal-8 (6.20.0 -> 6.20.1)
+* civicrm/civicrm-packages (6.20.0 -> 6.20.1)
+* drupal/canvas (1.12.0 -> 1.13.0)
+* drupal/core-composer-scaffold (11.4.12 -> 11.4.13)
+* drupal/core-project-message (11.4.12 -> 11.4.13)
+* drupal/core-recommended (11.4.12 -> 11.4.13)
+* drupal/google_tag (2.0.9 -> 2.1.0)
+    Database updates: canvas-post-0031_canvas_page_canonical_url_metatag_default
 ## Updates 2026-11-12
 
     * drupal/metatag (2.2.6 -> 2.2.7)

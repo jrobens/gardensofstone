@@ -1,10 +1,13 @@
-uuid: f930e225-eb2b-45b2-8e01-7812d577e6c8
+uuid: c309d5fe-0eb4-4be2-aaaf-31867cf7cf0b
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.field_pbnet_lede
+    - filter.format.basic_html
     - paragraphs.paragraphs_type.network_strip
+  module:
+    - text
 id: paragraph.network_strip.field_pbnet_lede
 field_name: field_pbnet_lede
 entity_type: paragraph
@@ -15,5 +18,7 @@ required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
-settings: {  }
-field_type: string_long
+settings:
+  allowed_formats:
+    - basic_html
+field_type: text_long

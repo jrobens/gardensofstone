@@ -1,16 +1,16 @@
-uuid: a2246d99-ce73-4901-b8b7-346281454169
+uuid: 317d25a2-f765-4e70-a981-abd54c2f0656
 langcode: en
 status: true
 dependencies:
   module:
     - paragraphs
+    - text
 id: paragraph.field_pbnet_lede
 field_name: field_pbnet_lede
 entity_type: paragraph
-type: string_long
-settings:
-  case_sensitive: false
-module: core
+type: text_long
+settings: {  }
+module: text
 locked: false
 cardinality: 1
 translatable: true

@@ -9,6 +9,7 @@ dependencies:
     - field.field.paragraph.network_strip.field_pbnet_title
     - paragraphs.paragraphs_type.network_strip
   module:
+    - text
     - webform
 id: paragraph.network_strip.default
 targetEntityType: paragraph
@@ -22,7 +23,7 @@ content:
       source_entity: true
       lazy: false
     third_party_settings: {  }
-    weight: 0
+    weight: 3
     region: content
   field_pbnet_kicker:
     type: string
@@ -31,14 +32,14 @@ content:
       link_to_entity: false
       link_rel: canonical
     third_party_settings: {  }
-    weight: 1
+    weight: 0
     region: content
   field_pbnet_lede:
-    type: basic_string
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 3
+    weight: 2
     region: content
   field_pbnet_title:
     type: string
@@ -47,6 +48,6 @@ content:
       link_to_entity: false
       link_rel: canonical
     third_party_settings: {  }
-    weight: 2
+    weight: 1
     region: content
 hidden: {  }
