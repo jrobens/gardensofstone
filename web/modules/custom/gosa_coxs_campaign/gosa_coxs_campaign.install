@@ -1,0 +1,108 @@
+<?php
+
+use Drupal\Core\Field\FieldStorageDefinitionInterface;
+use Drupal\field\Entity\FieldConfig;
+use Drupal\field\Entity\FieldStorageConfig;
+use Drupal\node\Entity\NodeType;
+
+/**
+ * @file
+ * Install, update, and uninstall functions for the gosa_coxs_campaign module.
+ */
+
+/**
+ * Implements hook_install().
+ */
+function gosa_coxs_campaign_install() {
+  // Create coxs campaign content type.
+  $type = NodeType::create([
+    'type' => 'coxs_campaign_page',
+    'status' => TRUE,
+    'name' => 'Coxs Campaign Page',
+    'description' => 'Full Coxs River campaign landing page.',
+  ]);
+  $type->save();
+
+  // Create field: campaign_headline
+  gosa_coxs_campaign_create_field('field_cx_headline', 'Headline', 'text_long');
+
+  // Create field: campaign_blurb
+  gosa_coxs_campaign_create_field('field_cx_blurb', 'Blurb/Subtitle', 'text_long');
+
+  // Create field: campaign_stats (for the 20 billion, 80-90%, etc.)
+  gosa_coxs_campaign_create_field('field_cx_stats', 'Campaign Statistics', 'text_long');
+
+  // Create field: campaign_evidence (the full evidence section)
+  gosa_coxs_campaign_create_field('field_cx_evidence', 'Evidence Section', 'text_long');
+
+  // Create field: campaign_video_url
+  gosa_coxs_campaign_create_field('field_cx_video_url', 'Video URL', 'string');
+
+  // Create field: campaign_video_title
+  gosa_coxs_campaign_create_field('field_cx_video_title', 'Video Title', 'string');
+
+  // Clear caches.
+  \Drupal::service('cache.data')->clear();
+}
+
+/**
+ * Helper function to create a field.
+ */
+function gosa_coxs_campaign_create_field($field_name, $label, $field_type) {
+  try {
+    $storage = FieldStorageConfig::loadByName('node', $field_name);
+    if (!$storage) {
+      $storage = FieldStorageConfig::create([
+        'field_name' => $field_name,
+        'entity_type' => 'node',
+        'type' => $field_type,
+      ]);
+      $storage->save();
+    }
+  }
+  catch (\Exception $e) {
+    return;
+  }
+
+  try {
+    $field = FieldConfig::loadByName('node', 'coxs_campaign_page', $field_name);
+    if (!$field) {
+      $field = FieldConfig::create([
+        'field_storage' => $storage,
+        'bundle' => 'coxs_campaign_page',
+        'label' => $label,
+        'required' => FALSE,
+      ]);
+      $field->save();
+    }
+  }
+  catch (\Exception $e) {
+    return;
+  }
+}
+
+/**
+ * Implements hook_uninstall().
+ */
+function gosa_coxs_campaign_uninstall() {
+  $fields = [
+    'field_cx_headline',
+    'field_cx_blurb',
+    'field_cx_stats',
+    'field_cx_evidence',
+    'field_cx_video_url',
+    'field_cx_video_title',
+  ];
+
+  foreach ($fields as $field_name) {
+    $field_storage = FieldStorageConfig::loadByName('node', $field_name);
+    if ($field_storage) {
+      $field_storage->delete();
+    }
+  }
+
+  $type = NodeType::load('coxs_campaign_page');
+  if ($type) {
+    $type->delete();
+  }
+}

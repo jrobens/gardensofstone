@@ -1,0 +1,22 @@
+uuid: 11f5ad23-8399-4d8a-9f1b-75ffe13ca32f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cx_stats
+    - node.type.coxs_campaign_page
+  module:
+    - text
+id: node.coxs_campaign_page.field_cx_stats
+field_name: field_cx_stats
+entity_type: node
+bundle: coxs_campaign_page
+label: 'Campaign Statistics'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

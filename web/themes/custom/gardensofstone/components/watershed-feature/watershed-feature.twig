@@ -10,7 +10,7 @@
 {% set wf_thumb = thumbnail_url|default('') %}
 {% set wf_href = campaign_url|default('#') %}
 {% set wf_label = campaign_label|default('Read the campaign') %}
-{% attach_library 'gardensofstone/watershed-feature' %}
+{{ attach_library( 'gardensofstone/watershed-feature' ) }}
 <section{{ attributes.addClass('wf-feature').setAttribute('data-wf-feature', '').setAttribute('data-video-url', wf_video).setAttribute('data-video-title', wf_title) }}>
   <div class="wf-inner">
     <div class="wf-text">

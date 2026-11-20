@@ -1,0 +1,11 @@
+uuid: 65bbf4e5-274d-4db4-9a44-d479b05e8c98
+langcode: en
+status: true
+dependencies: {  }
+name: 'Watershed Feature'
+type: watershed_feature
+description: 'Watershed feature block for the GOSA home page.'
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: true

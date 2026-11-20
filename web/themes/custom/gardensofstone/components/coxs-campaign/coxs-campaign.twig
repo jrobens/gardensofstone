@@ -8,7 +8,7 @@
 {% set cx_blurb = episode_blurb|default('Now showing: Episode 2, Salinity.') %}
 {% set cx_thumb = thumbnail_url|default('') %}
 {% set cx_footer = (show_footer is defined and show_footer is not null) ? show_footer : true %}
-{% attach_library 'gardensofstone/coxs-campaign' %}
+{{ attach_library( 'gardensofstone/coxs-campaign' ) }}
 <div{{ attributes.addClass('cx-campaign').setAttribute('data-cx-campaign', '').setAttribute('data-video-url', cx_video).setAttribute('data-video-title', cx_title) }}>
 <section class="cx-hero">
   <div class="cx-wrap">
@@ -94,7 +94,7 @@
     <details class="cx-evid-detail">
       <summary>Read the full detail</summary>
       <p class="cx-lede">Rain that falls on the Gardens of Stone soaks through sandstone into groundwater, which is why water from natural catchments like this one is normally clean enough to drink. Intensive underground mining breaks that cycle. Groundwater floods into the mine workings and is pumped out from deep underground, millions of litres every day. By the time it reaches the surface it has been through coal seams and mine workings, and it carries salt and heavy metals such as arsenic and selenium.</p>
-      <p class="cx-lede">During low flow periods, mine water discharge makes up an estimated 80 to 90 per cent of the Coxs River's baseflow in the upper to mid catchment, according to Lithgow Environment Group's own water monitoring. Much of what's actually flowing here isn't natural river water at all, it's mine water, flowing on toward Warragamba Dam. Local environmental groups have been monitoring this catchment for over twenty years, blowing the whistle on repeated discharges that have cost mining companies almost $1.9 million in fines and penalties.</p>
+      <p class="cx-lede">During low flow periods, mine water discharge makes up an estimated 80 to 90 percent of the Coxs River's baseflow in the upper to mid-catchment, according to Lithgow Environment Group's own water monitoring. Much of what's actually flowing here isn't natural river water at all, it's mine water, flowing on toward Warragamba Dam. Local environmental groups have been monitoring this catchment for over twenty years, blowing the whistle on repeated discharges that have cost mining companies almost $1.9 million in fines and penalties.</p>
       <p class="cx-lede">The mine water is sent to a treatment plant that is approved to take up to 42 million litres of mine water a day.<sup class="cx-src"><a href="#cx-src-16" aria-label="Source 16">[16]</a></sup> About 28.8 million litres a day goes through reverse osmosis. The other 13.2 million litres a day, nearly a third, is only filtered. The two are mixed, and about 18.5 million litres a day of that semi-treated water is released into the catchment. It still carries salt and heavy metals, and the Gardens of Stone Alliance says this release has neither planning consent nor an EPA licence. The concentrated brine left behind goes to the power station, and toxic groundwater contaminated by the brine leaches into Wangcol Creek and then the Coxs River.<sup class="cx-src"><a href="#cx-src-5" aria-label="Source 5">[5]</a></sup></p>
       <p class="cx-lede">And the mines want to keep going. Three mines in this catchment plan to apply to extend their lives, one to 2040 and two to 2042.</p>
     </details>

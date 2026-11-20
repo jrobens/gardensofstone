@@ -1,0 +1,145 @@
+{#
+/**
+ * @file
+ * Theme implementation to display a campaign node.
+ */
+#}
+{% set cx_video = content.field_video_url[0]?['#text']|default('https://vimeo.com/1247958755/f4642d552a') %}
+{% set cx_title = content.field_video_title[0]?['#text']|default('Watershed, Episode 2: Salinity') %}
+{% set cx_blurb = content.field_episode_blurb[0]?['#text']|default('Now showing: Episode 2, Salinity.') %}
+{% set cx_thumb = content.field_thumbnail_url[0]?['#text']|default('') %}
+{% set cx_footer = content.field_show_footer[0]?['#value']|default(true) %}
+
+{{ attach_library('gardensofstone/coxs-campaign') }}
+
+<!-- DEBUG: video_url={{ cx_video }} -->
+<div{{ attributes.addClass('cx-campaign').setAttribute('data-cx-campaign', '').setAttribute('data-video-url', cx_video).setAttribute('data-video-title', cx_title) }}>
+<section class="cx-hero">
+  <div class="cx-wrap">
+    <div>
+      <div class="cx-eyebrow-line"><span class="cx-dot"></span> Coxs River Catchment Campaign</div>
+      <h1 class="cx-headline">More than<br>5,000,000 people<br>drink water<br>that starts here.</h1>
+      <p class="cx-sub">A foreign owned mining company is dumping billions of litres of polluted water into the Coxs River catchment every year. This is where Sydney's drinking water starts.<sup class="cx-src"><a href="#cx-src-15" aria-label="Source 15">[15]</a></sup></p>
+      <div class="cx-hero-ctas">
+        <a class="cx-btn-ghost" href="#cx-watershed">Watch Watershed</a>
+      </div>
+
+      <div class="cx-scroll-cue"><a href="#cx-evidence">See how the water gets here &darr;</a></div>
+    </div>
+  </div>
+</section>
+
+<div class="cx-wave-wrap cx-wave-a" aria-hidden="true"><svg class="cx-wave cx-w1" viewBox="0 0 3600 96" preserveAspectRatio="none"><path d="M0,38 C 100,12 200,64 300,38 C 400,12 500,64 600,38 C 700,12 800,64 900,38 C 1000,12 1100,64 1200,38 C 1300,12 1400,64 1500,38 C 1600,12 1700,64 1800,38 C 1900,12 2000,64 2100,38 C 2200,12 2300,64 2400,38 C 2500,12 2600,64 2700,38 C 2800,12 2900,64 3000,38 C 3100,12 3200,64 3300,38 C 3400,12 3500,64 3600,38 L3600,96 L0,96 Z" fill="rgba(46,82,102,.55)"/><path d="M0,38 C 100,12 200,64 300,38 C 400,12 500,64 600,38 C 700,12 800,64 900,38 C 1000,12 1100,64 1200,38 C 1300,12 1400,64 1500,38 C 1600,12 1700,64 1800,38 C 1900,12 2000,64 2100,38 C 2200,12 2300,64 2400,38 C 2500,12 2600,64 2700,38 C 2800,12 2900,64 3000,38 C 3100,12 3200,64 3300,38 C 3400,12 3500,64 3600,38" fill="none" stroke="#7FB0CC" stroke-opacity=".7" stroke-width="1.6" vector-effect="non-scaling-stroke"/></svg><svg class="cx-wave cx-w2" viewBox="0 0 3600 96" preserveAspectRatio="none"><path d="M0,52 C 66,32 133,72 200,52 C 266,32 333,72 400,52 C 466,32 533,72 600,52 C 666,32 733,72 800,52 C 866,32 933,72 1000,52 C 1066,32 1133,72 1200,52 C 1266,32 1333,72 1400,52 C 1466,32 1533,72 1600,52 C 1666,32 1733,72 1800,52 C 1866,32 1933,72 2000,52 C 2066,32 2133,72 2200,52 C 2266,32 2333,72 2400,52 C 2466,32 2533,72 2600,52 C 2666,32 2733,72 2800,52 C 2866,32 2933,72 3000,52 C 3066,32 3133,72 3200,52 C 3266,32 3333,72 3400,52 C 3466,32 3533,72 3600,52 L3600,96 L0,96 Z" fill="rgba(91,147,181,.30)"/><path d="M0,52 C 66,32 133,72 200,52 C 266,32 333,72 400,52 C 466,32 533,72 600,52 C 666,32 733,72 800,52 C 866,32 933,72 1000,52 C 1066,32 1133,72 1200,52 C 1266,32 1333,72 1400,52 C 1466,32 1533,72 1600,52 C 1666,32 1733,72 1800,52 C 1866,32 1933,72 2000,52 C 2066,32 2133,72 2200,52 C 2266,32 2333,72 2400,52 C 2466,32 2533,72 2600,52 C 2666,32 2733,72 2800,52 C 2866,32 2933,72 3000,52 C 3066,32 3133,72 3200,52 C 3266,32 3333,72 3400,52 C 3466,32 3533,72 3600,52" fill="none" stroke="#7FB0CC" stroke-opacity=".7" stroke-width="1.6" vector-effect="non-scaling-stroke"/></svg></div>
+
+<section id="cx-evidence" class="cx-section-forest">
+  <div class="cx-wrap">
+    <h2 class="cx-title">What is really flowing into Sydney's drinking water</h2>
+
+    <div class="cx-bignum-band">
+      <div class="cx-bignum">
+        <div class="cx-bignum-pre">More than</div>
+        <div class="cx-bignum-val"><span data-count="20">20</span><span class="cx-bignum-unit">billion litres</span></div>
+        <div class="cx-bignum-label">of polluted mine water per year are pumped out of mines in the Gardens of Stone area. A lot of this water ends up in the Coxs River catchment and is only semi-treated, still carrying salts and heavy metals.<sup class="cx-src"><a href="#cx-src-1" aria-label="Source 1">[1]</a></sup><sup class="cx-src"><a href="#cx-src-5" aria-label="Source 5">[5]</a></sup></div>
+      </div>
+      <div class="cx-bignum">
+        <div class="cx-bignum-pre">An estimated</div>
+        <div class="cx-bignum-val"><span data-count="80">80</span>&ndash;<span data-count="90">90</span>%</div>
+        <div class="cx-bignum-label">of the dry-weather flow in the upper to mid Coxs River catchment is mine water, not river water<sup class="cx-src"><a href="#cx-src-2" aria-label="Source 2">[2]</a></sup></div>
+      </div>
+      <div class="cx-bignum cx-bignum-alert">
+        <div class="cx-bignum-pre">In 2023&ndash;24 alone</div>
+        <div class="cx-bignum-val"><span data-count="5.7" data-decimals="1">5.7</span><span class="cx-bignum-unit">billion litres</span></div>
+        <div class="cx-bignum-label">of polluted mine water discharged into local creeks.<sup class="cx-src"><a href="#cx-src-3" aria-label="Source 3">[3]</a></sup></div>
+      </div>
+      <div class="cx-bignum">
+        <div class="cx-bignum-pre">The catchment</div>
+        <div class="cx-bignum-val">11,000<span class="cx-bignum-unit">km&sup2;</span></div>
+        <div class="cx-bignum-label">area that feeds the Coxs River.<sup class="cx-src"><a href="#cx-src-4" aria-label="Source 4">[4]</a></sup></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="cx-watershed" class="cx-section-video">
+  <div class="cx-wrap">
+    <h2 class="cx-title">Watershed</h2>
+    <div class="cx-video-container">
+      <div class="cx-video-placeholder" data-video-url="{{ cx_video }}" data-video-title="{{ cx_title }}">
+        <div class="cx-play-button">
+          <div class="cx-play-icon">
+            <svg viewBox="0 0 100 100" class="cx-play-icon-svg">
+              <circle cx="50" cy="50" r="48" fill="#fff" fill-opacity=".3"/>
+              <path d="M40,35 L65,50 L40,65 Z" fill="#fff"/>
+            </svg>
+          </div>
+          <div class="cx-play-text">Play Episode</div>
+        </div>
+        <div class="cx-video-title">{{ cx_title }}</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cx-section-evidence">
+  <div class="cx-wrap">
+    <h2 class="cx-title">The evidence</h2>
+    <div class="cx-evidence-grid">
+      <div class="cx-evidence-card">
+        <div class="cx-evidence-img"><img src="{{ cx_thumb|default('/themes/custom/gardensofstone/images/evidence-1.jpg') }}" alt="Satellite image of mining operations"></div>
+        <div class="cx-evidence-content">
+          <h3 class="cx-evidence-title">Mining Operations</h3>
+          <p class="cx-evidence-text">Satellite imagery shows extensive mining activity in the Gardens of Stone area.</p>
+        </div>
+      </div>
+      <div class="cx-evidence-card">
+        <div class="cx-evidence-img"><img src="{{ cx_thumb|default('/themes/custom/gardensofstone/images/evidence-2.jpg') }}" alt="Water quality data"></div>
+        <div class="cx-evidence-content">
+          <h3 class="cx-evidence-title">Water Quality</h3>
+          <p class="cx-evidence-text">Data showing elevated levels of contaminants in the Coxs River.</p>
+        </div>
+      </div>
+      <div class="cx-evidence-card">
+        <div class="cx-evidence-img"><img src="{{ cx_thumb|default('/themes/custom/gardensofstone/images/evidence-3.jpg') }}" alt="Community impact"></div>
+        <div class="cx-evidence-content">
+          <h3 class="cx-evidence-title">Community Impact</h3>
+          <p class="cx-evidence-text">Stories from local communities affected by the pollution.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cx-section-takeaction">
+  <div class="cx-wrap">
+    <h2 class="cx-title">Take Action</h2>
+    <p class="cx-sub">Join the campaign to protect the Coxs River catchment.</p>
+    <div class="cx-action-buttons">
+      <a href="#" class="cx-btn-primary">Sign the Petition</a>
+      <a href="#" class="cx-btn-secondary">Contact Your MP</a>
+    </div>
+  </div>
+</section>
+
+<section class="cx-section-sources">
+  <div class="cx-wrap">
+    <h2 class="cx-title">Sources</h2>
+    <ol>
+      <li id="cx-src-1"><a href="#">Source 1</a></li>
+      <li id="cx-src-2"><a href="#">Source 2</a></li>
+      <li id="cx-src-3"><a href="#">Source 3</a></li>
+      <li id="cx-src-4"><a href="#">Source 4</a></li>
+      <li id="cx-src-5"><a href="#">Source 5</a></li>
+      <li id="cx-src-15"><a href="#">Source 15</a></li>
+    </ol>
+  </div>
+</section>
+
+{% if cx_footer %}
+<footer class="cx-footer">
+  <div class="cx-wrap">
+    <p class="cx-footer-text">&copy; 2024 Gardens of Stone Alliance. All rights reserved.</p>
+  </div>
+</footer>
+{% endif %}
+
+</div>

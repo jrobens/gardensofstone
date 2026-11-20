@@ -18,4 +18,7 @@ node_types:
   news_and_events: '0'
   page: '0'
   photos: '0'
+  campaign: '0'
+  watershed_feature: '0'
+  coxs_campaign_page: '0'
 save_button_text: ''

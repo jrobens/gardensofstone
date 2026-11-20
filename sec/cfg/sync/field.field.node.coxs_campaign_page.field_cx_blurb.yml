@@ -1,0 +1,22 @@
+uuid: 3f4a9bd6-74cc-44c0-8a04-b8dbe0eae89e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cx_blurb
+    - node.type.coxs_campaign_page
+  module:
+    - text
+id: node.coxs_campaign_page.field_cx_blurb
+field_name: field_cx_blurb
+entity_type: node
+bundle: coxs_campaign_page
+label: Blurb/Subtitle
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

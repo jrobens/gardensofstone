@@ -1,0 +1,41 @@
+{#
+/**
+ * @file
+ * Theme implementation to display a watershed feature node.
+ */
+#}
+{{ attach_library('gardensofstone/watershed-feature') }}
+
+{% set wf_title = node.field_watershed_title.value|default('Watershed Episode 3') %}
+{% set wf_kicker = node.field_watershed_kicker.value|default('New episode') %}
+{% set wf_blurb = node.field_watershed_blurb.value|default('Test blurb content') %}
+{% set wf_video = node.field_watershed_video_url.value|default('https://vimeo.com/test') %}
+{% set wf_href = node.field_watershed_campaign_url.value|default('/coxs-river-campaign') %}
+{% set wf_label = node.field_watershed_campaign_label.value|default('Read Campaign') %}
+
+<!-- DEBUG: wf_title={{ wf_title }} -->
+
+<section{{ attributes.addClass('wf-feature').setAttribute('data-wf-feature', '').setAttribute('data-video-url', wf_video).setAttribute('data-video-title', wf_title) }}>
+  <div class="wf-inner">
+    <div class="wf-text">
+      <div class="wf-kicker">{{ wf_kicker }}</div>
+      <h2 class="wf-title">{{ wf_title }}</h2>
+      <p class="wf-blurb">{{ wf_blurb }}</p>
+      <a class="wf-btn" href="{{ wf_href }}">{{ wf_label }}</a>
+    </div>
+    <div class="wf-video">
+      <div class="wf-video-placeholder" data-video-url="{{ wf_video }}" data-video-title="{{ wf_title }}">
+        <div class="wf-play-button">
+          <div class="wf-play-icon">
+            <svg viewBox="0 0 100 100" class="wf-play-icon-svg">
+              <circle cx="50" cy="50" r="48" fill="#fff" fill-opacity=".3"/>
+              <path d="M40,35 L65,50 L40,65 Z" fill="#fff"/>
+            </svg>
+          </div>
+          <div class="wf-play-text">Play Episode</div>
+        </div>
+        <div class="wf-video-title">{{ wf_title }}</div>
+      </div>
+    </div>
+  </div>
+</section>

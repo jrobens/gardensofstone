@@ -1,0 +1,11 @@
+uuid: fdabaecb-2db4-49e5-b3ec-93b1fee08e76
+langcode: en
+status: true
+dependencies: {  }
+name: 'Coxs Campaign Page'
+type: coxs_campaign_page
+description: 'Full Coxs River campaign landing page.'
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: true

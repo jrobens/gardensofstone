@@ -1,0 +1,19 @@
+uuid: 339445e5-af59-4577-9406-d3cb5fed8a4d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_episode_blurb
+    - node.type.campaign
+id: node.campaign.field_episode_blurb
+field_name: field_episode_blurb
+entity_type: node
+bundle: campaign
+label: 'Episode Blurb'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

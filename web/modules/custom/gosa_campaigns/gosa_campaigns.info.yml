@@ -1,0 +1,5 @@
+name: GOSA Campaigns
+type: module
+description: Provides campaign content type and component integration for Gardens of Stone Alliance.
+core_version_requirement: ^11
+package: Custom

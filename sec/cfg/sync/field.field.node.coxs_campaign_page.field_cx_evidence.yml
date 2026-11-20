@@ -1,0 +1,22 @@
+uuid: 9c2859f8-ce03-4acb-8847-208ae896c2e5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cx_evidence
+    - node.type.coxs_campaign_page
+  module:
+    - text
+id: node.coxs_campaign_page.field_cx_evidence
+field_name: field_cx_evidence
+entity_type: node
+bundle: coxs_campaign_page
+label: 'Evidence Section'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

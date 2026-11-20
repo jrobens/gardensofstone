@@ -1,0 +1,21 @@
+uuid: 12b851e1-95f9-4658-b067-4c0008034dcb
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_cx_video_title
+field_name: field_cx_video_title
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

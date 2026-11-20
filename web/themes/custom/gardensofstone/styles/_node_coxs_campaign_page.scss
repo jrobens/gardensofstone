@@ -1,0 +1,11 @@
+
+@use '../../../../sites/variables' as sv;
+@use "../../../../libraries/bulma/sass/utilities/mixins" as bv;
+
+.node-type--coxs-campaign-page main > section {
+  padding: 0;
+}
+
+.node-type--coxs-campaign-page main > section > .container:not(.is-max-desktop):not(.is-max-widescreen) {
+  max-width: 100%;
+}

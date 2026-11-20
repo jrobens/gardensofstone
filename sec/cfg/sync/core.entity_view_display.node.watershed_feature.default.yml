@@ -1,0 +1,86 @@
+uuid: 88ffa043-63f8-4127-b5c6-3206e8a6ec57
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.watershed_feature.field_watershed_blurb
+    - field.field.node.watershed_feature.field_watershed_campaign_label
+    - field.field.node.watershed_feature.field_watershed_campaign_url
+    - field.field.node.watershed_feature.field_watershed_kicker
+    - field.field.node.watershed_feature.field_watershed_thumbnail_url
+    - field.field.node.watershed_feature.field_watershed_title
+    - field.field.node.watershed_feature.field_watershed_video_url
+    - node.type.watershed_feature
+  module:
+    - text
+    - user
+id: node.watershed_feature.default
+targetEntityType: node
+bundle: watershed_feature
+mode: default
+content:
+  field_watershed_blurb:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_watershed_campaign_label:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+      link_rel: canonical
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_watershed_campaign_url:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+      link_rel: canonical
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_watershed_kicker:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+      link_rel: canonical
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_watershed_thumbnail_url:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+      link_rel: canonical
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_watershed_title:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_watershed_video_url:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+      link_rel: canonical
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 7
+    region: content
+hidden: {  }

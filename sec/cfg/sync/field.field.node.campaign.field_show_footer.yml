@@ -1,0 +1,23 @@
+uuid: 1b2133bb-e115-4a26-ba7a-f8126519d676
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_show_footer
+    - node.type.campaign
+id: node.campaign.field_show_footer
+field_name: field_show_footer
+entity_type: node
+bundle: campaign
+label: 'Show Footer'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: true
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

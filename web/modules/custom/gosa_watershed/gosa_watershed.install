@@ -1,0 +1,125 @@
+<?php
+
+use Drupal\Core\Field\FieldStorageDefinitionInterface;
+use Drupal\field\Entity\FieldConfig;
+use Drupal\field\Entity\FieldStorageConfig;
+use Drupal\node\Entity\NodeType;
+
+/**
+ * @file
+ * Install, update, and uninstall functions for the gosa_watershed module.
+ */
+
+/**
+ * Implements hook_install().
+ */
+function gosa_watershed_install() {
+  // Create watershed feature content type.
+  $vocab = NodeType::create([
+    'type' => 'watershed_feature',
+    'status' => TRUE,
+    'name' => 'Watershed Feature',
+    'description' => 'Watershed feature block for the GOSA home page.',
+  ]);
+  $vocab->save();
+
+  // Create title field (Drupa defaults to 'title' field for nodes).
+  // No additional field creation needed for title as it's core functionality.
+
+  // Create field_watershed_title
+  gosa_watershed_create_field('field_watershed_title', 'Watershed Title', 'text_long');
+
+  // Create field_watershed_kicker
+  gosa_watershed_create_field('field_watershed_kicker', 'Kicker', 'string');
+
+  // Create field_watershed_blurb
+  gosa_watershed_create_field('field_watershed_blurb', 'Blurb', 'text_long');
+
+  // Create field_watershed_video_url
+  gosa_watershed_create_field('field_watershed_video_url', 'Video URL', 'string');
+
+  // Create field_watershed_thumbnail_url
+  gosa_watershed_create_field('field_watershed_thumbnail_url', 'Thumbnail URL', 'string');
+
+  // Create field_watershed_campaign_url
+  gosa_watershed_create_field('field_watershed_campaign_url', 'Campaign URL', 'string');
+
+  // Create field_watershed_campaign_label
+  gosa_watershed_create_field('field_watershed_campaign_label', 'Campaign Label', 'string');
+
+  // Add fields to default view mode.
+  $storage = \Drupal::entityTypeManager()->getStorage('node');
+  $storage->resetCache();
+
+  // Clear caches.
+  \Drupal::service('cache.data')->clear();
+}
+
+/**
+ * Helper function to create a field.
+ */
+function gosa_watershed_create_field($field_name, $label, $field_type) {
+  try {
+    // Check if field storage already exists.
+    $storage = FieldStorageConfig::loadByName('node', $field_name);
+    if (!$storage) {
+      $storage = FieldStorageConfig::create([
+        'field_name' => $field_name,
+        'entity_type' => 'node',
+        'type' => $field_type,
+      ]);
+      $storage->save();
+    }
+  }
+  catch (\Exception $e) {
+    // Field storage creation failed, skip.
+    return;
+  }
+
+  try {
+    // Check if field config already exists.
+    $field = FieldConfig::loadByName('node', 'watershed_feature', $field_name);
+    if (!$field) {
+      $field = FieldConfig::create([
+        'field_storage' => $storage,
+        'bundle' => 'watershed_feature',
+        'label' => $label,
+        'required' => FALSE,
+      ]);
+      $field->save();
+    }
+  }
+  catch (\Exception $e) {
+    // Field config creation failed, skip.
+    return;
+  }
+}
+
+/**
+ * Implements hook_uninstall().
+ */
+function gosa_watershed_uninstall() {
+  // Delete fields and field storage.
+  $fields = [
+    'field_watershed_title',
+    'field_watershed_kicker',
+    'field_watershed_blurb',
+    'field_watershed_video_url',
+    'field_watershed_thumbnail_url',
+    'field_watershed_campaign_url',
+    'field_watershed_campaign_label',
+  ];
+
+  foreach ($fields as $field_name) {
+    $field_storage = FieldStorageConfig::loadByName('node', $field_name);
+    if ($field_storage) {
+      $field_storage->delete();
+    }
+  }
+
+  // Delete content type.
+  $vocab = NodeType::load('watershed_feature');
+  if ($vocab) {
+    $vocab->delete();
+  }
+}

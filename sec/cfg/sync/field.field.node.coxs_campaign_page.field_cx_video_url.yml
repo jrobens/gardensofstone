@@ -1,0 +1,19 @@
+uuid: 07360c9c-9114-4c98-bf44-83042ccf92a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cx_video_url
+    - node.type.coxs_campaign_page
+id: node.coxs_campaign_page.field_cx_video_url
+field_name: field_cx_video_url
+entity_type: node
+bundle: coxs_campaign_page
+label: 'Video URL'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

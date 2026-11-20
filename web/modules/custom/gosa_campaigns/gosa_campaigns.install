@@ -1,0 +1,173 @@
+<?php
+
+/**
+ * @file
+ * Installation file for the GOSA Campaigns module.
+ */
+
+use Drupal\Core\Field\FieldStorageConfigInterface;
+use Drupal\field\Entity\FieldStorageConfig;
+use Drupal\field\Entity\FieldConfig;
+
+/**
+ * Implements hook_install().
+ */
+function gosa_campaigns_install() {
+  // Create the Campaign content type.
+  $storage = \Drupal::entityTypeManager()->getStorage('node_type');
+  $content_type = $storage->create([
+    'type' => 'campaign',
+    'name' => 'Campaign',
+  ]);
+  try {
+    $content_type->save();
+  } catch (\Exception $e) {
+    // Content type already exists, continue.
+  }
+
+  // Create field_storage_config for video_url.
+  $field_storage = FieldStorageConfig::create([
+    'field_name' => 'field_video_url',
+    'entity_type' => 'node',
+    'type' => 'string',
+    'cardinality' => 1,
+    'settings' => ['max_length' => 255],
+  ]);
+  try {
+    $field_storage->save();
+  } catch (\Exception $e) {
+    // Field storage already exists, continue.
+  }
+
+  // Create field_config for video_url.
+  FieldConfig::create([
+    'field_name' => 'field_video_url',
+    'entity_type' => 'node',
+    'bundle' => 'campaign',
+    'label' => 'Video URL',
+    'required' => TRUE,
+  ])->save();
+
+  // Create field_config for video_url.
+  FieldConfig::create([
+    'field_name' => 'field_video_url',
+    'entity_type' => 'node',
+    'bundle' => 'campaign',
+    'label' => 'Video URL',
+    'required' => TRUE,
+  ])->save();
+
+  // Create field_storage_config for video_title.
+  $field_storage = FieldStorageConfig::create([
+    'field_name' => 'field_video_title',
+    'entity_type' => 'node',
+    'type' => 'string',
+    'cardinality' => 1,
+    'settings' => ['max_length' => 255],
+  ]);
+  try {
+    $field_storage->save();
+  } catch (\Exception $e) {
+    // Field storage already exists, continue.
+  }
+
+  // Create field_config for video_title.
+  FieldConfig::create([
+    'field_name' => 'field_video_title',
+    'entity_type' => 'node',
+    'bundle' => 'campaign',
+    'label' => 'Video Title',
+    'required' => FALSE,
+  ])->save();
+
+  // Create field_storage_config for episode_blurb.
+  $field_storage = FieldStorageConfig::create([
+    'field_name' => 'field_episode_blurb',
+    'entity_type' => 'node',
+    'type' => 'string',
+    'cardinality' => 1,
+    'settings' => ['max_length' => 255],
+  ]);
+  try {
+    $field_storage->save();
+  } catch (\Exception $e) {
+    // Field storage already exists, continue.
+  }
+
+  // Create field_config for episode_blurb.
+  FieldConfig::create([
+    'field_name' => 'field_episode_blurb',
+    'entity_type' => 'node',
+    'bundle' => 'campaign',
+    'label' => 'Episode Blurb',
+    'required' => FALSE,
+  ])->save();
+
+  // Create field_storage_config for thumbnail_url.
+  $field_storage = FieldStorageConfig::create([
+    'field_name' => 'field_thumbnail_url',
+    'entity_type' => 'node',
+    'type' => 'string',
+    'cardinality' => 1,
+    'settings' => ['max_length' => 255],
+  ]);
+  try {
+    $field_storage->save();
+  } catch (\Exception $e) {
+    // Field storage already exists, continue.
+  }
+
+  // Create field_config for thumbnail_url.
+  FieldConfig::create([
+    'field_name' => 'field_thumbnail_url',
+    'entity_type' => 'node',
+    'bundle' => 'campaign',
+    'label' => 'Thumbnail URL',
+    'required' => FALSE,
+  ])->save();
+
+  // Create field_storage_config for show_footer.
+  $field_storage = FieldStorageConfig::create([
+    'field_name' => 'field_show_footer',
+    'entity_type' => 'node',
+    'type' => 'boolean',
+    'cardinality' => 1,
+  ]);
+  try {
+    $field_storage->save();
+  } catch (\Exception $e) {
+    // Field storage already exists, continue.
+  }
+
+  // Create field_config for show_footer.
+  FieldConfig::create([
+    'field_name' => 'field_show_footer',
+    'entity_type' => 'node',
+    'bundle' => 'campaign',
+    'label' => 'Show Footer',
+    'required' => FALSE,
+    'default_value' => [['value' => 1]],
+  ])->save();
+
+  // Add fields to form display.
+  $display = \Drupal::service('entity_display.repository')
+    ->getFormDisplay('node', 'campaign');
+
+  $display->setComponent('field_video_url', ['type' => 'string_textfield', 'settings' => ['size' => 60], 'weight' => 10])
+    ->setComponent('field_video_title', ['type' => 'string_textfield', 'settings' => ['size' => 60], 'weight' => 11])
+    ->setComponent('field_episode_blurb', ['type' => 'string_textfield', 'settings' => ['size' => 60], 'weight' => 12])
+    ->setComponent('field_thumbnail_url', ['type' => 'string_textfield', 'settings' => ['size' => 60], 'weight' => 13])
+    ->setComponent('field_show_footer', ['type' => 'boolean_checkbox', 'settings' => ['display_label' => TRUE], 'weight' => 14])
+    ->save();
+
+  // Set view display.
+  $view_display = \Drupal::service('entity_display.repository')
+    ->getViewDisplay('node', 'campaign');
+
+  $view_display->setComponent('field_video_url', ['label' => 'hidden', 'type' => 'string', 'weight' => 10])
+    ->setComponent('field_video_title', ['label' => 'hidden', 'type' => 'string', 'weight' => 11])
+    ->setComponent('field_episode_blurb', ['label' => 'hidden', 'type' => 'string', 'weight' => 12])
+    ->setComponent('field_thumbnail_url', ['label' => 'hidden', 'type' => 'string', 'weight' => 13])
+    ->setComponent('field_show_footer', ['label' => 'hidden', 'type' => 'boolean', 'weight' => 14])
+    ->save();
+}

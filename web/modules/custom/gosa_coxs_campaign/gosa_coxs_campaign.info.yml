@@ -1,0 +1,7 @@
+name: 'Garden of Stone Coxs Campaign'
+type: module
+description: 'Provides Coxs River campaign full page content type.'
+core_version_requirement: ^11
+package: Custom
+dependencies:
+  - drupal:node

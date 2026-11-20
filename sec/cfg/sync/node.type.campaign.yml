@@ -1,0 +1,11 @@
+uuid: 3efc823a-58b6-43c2-b8fd-0db01168b343
+langcode: en
+status: true
+dependencies: {  }
+name: Campaign
+type: campaign
+description: null
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: true

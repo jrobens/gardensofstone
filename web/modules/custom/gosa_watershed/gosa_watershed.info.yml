@@ -1,0 +1,7 @@
+name: 'Garden of Stone Watershed'
+type: module
+description: 'Provides watershed feature content type.'
+core_version_requirement: ^11
+package: Custom
+dependencies:
+  - drupal:node
