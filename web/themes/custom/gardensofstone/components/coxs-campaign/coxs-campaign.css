@@ -63,12 +63,12 @@
 .cx-campaign .cx-eco-link{display:inline-block;color:#D3A868;font-size:0.9rem;font-weight:600; text-decoration:underline;margin-bottom:8px;}
 .cx-campaign .cx-punchline{margin-top:26px;font-family:'Fraunces',serif;font-weight:600; font-size:1.5rem;color:var(--cream);}
 .cx-campaign .cx-punchline span{color:#D3A868;}
-.cx-campaign .cx-asks-grid{margin-top:40px; display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
-.cx-campaign .cx-ask-card{background:var(--paper); border:1px solid rgba(43,40,34,0.14); border-radius:4px; padding:26px;}
+.cx-campaign .cx-asks-grid{margin-top:40px; display:grid;grid-template-columns:repeat(3,1fr);gap:22px;align-items:stretch;}
+.cx-campaign .cx-ask-card{background:var(--paper); border:1px solid rgba(43,40,34,0.14); border-radius:4px; padding:26px 22px;display:flex;flex-direction:column;}
 .cx-campaign .cx-ask-role{font-size:0.78rem;font-weight:700;text-transform:none;color:var(--water);margin-bottom:8px;}
-.cx-campaign .cx-ask-card h3{font-size:1.15rem;margin-bottom:12px;}
-.cx-campaign .cx-ask-card p{font-size:0.93rem;color:#3c392f;margin-bottom:16px;}
-.cx-campaign .cx-ask-btn{display:inline-block;background:var(--water);color:var(--paper); padding:11px 20px;border-radius:3px;text-decoration:none; font-weight:600;font-size:0.88rem;border:none;cursor:pointer;}
+.cx-campaign .cx-ask-card h3{font-size:1.15rem;margin-bottom:10px;}
+.cx-campaign .cx-ask-card p{font-size:0.93rem;color:#3c392f;margin-bottom:12px;}
+.cx-campaign .cx-ask-btn{display:inline-block;background:var(--water);color:var(--paper); padding:10px 18px;border-radius:3px;text-decoration:none; font-weight:600;font-size:0.88rem;border:none;cursor:pointer;}
 .cx-campaign .cx-ask-card.cx-political{border-top:4px solid var(--forest-deep);}
 .cx-campaign .cx-ask-card.cx-operational{border-top:4px solid var(--ochre);}
 .cx-campaign .cx-ask-card.cx-local{border-top:4px solid var(--water);}
@@ -76,9 +76,9 @@
 @media(max-width:1000px){
   .cx-campaign .cx-asks-grid{grid-template-columns:1fr;}
 }
-.cx-campaign .cx-sample-text{background:var(--cream);border-left:3px solid rgba(43,40,34,0.15); padding:14px 16px;border-radius:2px;margin-bottom:14px; font-size:0.86rem;line-height:1.55;color:#4a4738;font-style:italic;}
-.cx-campaign .cx-ask-actions{display:flex;gap:10px;flex-wrap:wrap;}
-.cx-campaign .cx-copy-btn{background:transparent;border:1.5px solid var(--water);color:var(--water); padding:9px 16px;border-radius:3px;font-weight:600;font-size:0.85rem;cursor:pointer;}
+.cx-campaign .cx-sample-text{background:var(--cream);border-left:3px solid rgba(43,40,34,0.15); padding:12px 14px;border-radius:2px;margin-bottom:10px; font-size:0.86rem;line-height:1.55;color:#4a4738;font-style:italic;}
+.cx-campaign .cx-ask-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:auto;}
+.cx-campaign .cx-copy-btn{background:transparent;border:1.5px solid var(--water);color:var(--water); padding:8px 14px;border-radius:3px;font-weight:600;font-size:0.85rem;cursor:pointer;}
 .cx-campaign .cx-copy-btn.cx-copied{border-color:var(--ochre);color:var(--ochre);}
 .cx-campaign .cx-loophole-stats{margin-top:34px;}
 .cx-campaign .cx-loophole-close{margin-top:28px;font-size:1.05rem;color:var(--forest-deep);font-weight:600; max-width:66ch;line-height:1.6;}

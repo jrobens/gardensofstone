@@ -1,3 +1,12 @@
+Content types
+
+- watershed page : editable version with paragraphs
+- watershed feature : for adding movies. Delete
+- Campaign. Broken side trip. Delete
+- Coxs Campaign Page: embeds the spc.
+
+## Single Page component
+
 Could you open the zipped Drupal files, John? I did and can send them to you.
 
 Keith
