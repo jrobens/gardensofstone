@@ -1,0 +1,41 @@
+<?php
+$databases = [];
+$settings['hash_salt'] = '36WHE54z--lkQ0NHXkQVmUamzasDxngZtGtYWxynLxJ14nfUVbTijhGQBpzUhBJ2EanfuLokfw';
+$settings['update_free_access'] = FALSE;
+$settings['container_yamls'][] = $app_root . '/' . $site_path . '/services.yml';
+$settings['trusted_host_patterns'] = [
+        '^gardensofstone2.test',
+];
+$settings['file_scan_ignore_directories'] = [
+  'node_modules',
+  'bower_components',
+];
+$settings['entity_update_batch_size'] = 50;
+$settings['entity_update_backup'] = TRUE;
+$settings['migrate_node_migrate_type_classic'] = FALSE;
+ if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
+   include $app_root . '/' . $site_path . '/settings.local.php';
+ }
+$databases['default']['default'] = array (
+  'database' => 'gos2_cms',
+  'username' => 'gos2_cms',
+  'password' => 'MJdo9rUk6c]a4T1TTEv',
+  'prefix' => '',
+  'host' => 'localhost',
+  'port' => '3306',
+  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+  'driver' => 'mysql',
+);
+$databases['civicrm']['default'] = array (
+  'database' => 'gos2_crm',
+  'username' => 'gos2_crm',
+  'password' => 'MJdo9rUk6c]a4T1TTEv',
+  'prefix' => '',
+  'host' => 'localhost',
+  'port' => '3306',
+  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+  'driver' => 'mysql',
+);
+$settings['config_sync_directory'] = '../sec/cfg/sync';
+$settings['file_public_path'] = 'files';
+$settings['file_private_path'] = '../sec/files';
