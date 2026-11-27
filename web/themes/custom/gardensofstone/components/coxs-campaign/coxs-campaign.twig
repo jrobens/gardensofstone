@@ -1,7 +1,7 @@
 {#
-  Coxs River campaign landing page (Gardens of Stone Alliance).
-  Single Directory Component. Props: video_url, video_title, episode_blurb,
-  thumbnail_url, show_footer. See README.md.
+Coxs River campaign landing page (Gardens of Stone Alliance).
+Single Directory Component. Props: video_url, video_title, episode_blurb,
+thumbnail_url, show_footer. See README.md.
 #}
 {% set cx_video = video_url|default('https://vimeo.com/1247958755/f4642d552a') %}
 {% set cx_title = video_title|default('Watershed, Episode 2: Salinity') %}
@@ -10,243 +10,581 @@
 {% set cx_footer = (show_footer is defined and show_footer is not null) ? show_footer : true %}
 {{ attach_library( 'gardensofstone/coxs-campaign' ) }}
 <div{{ attributes.addClass('cx-campaign').setAttribute('data-cx-campaign', '').setAttribute('data-video-url', cx_video).setAttribute('data-video-title', cx_title) }}>
-<section class="cx-hero">
-  <div class="cx-wrap">
-    <div>
-      <div class="cx-eyebrow-line"><span class="cx-dot"></span> Coxs River Catchment Campaign</div>
-      <h1 class="cx-headline">More than<br>5,000,000 people<br>drink water<br>that starts here.</h1>
-      <p class="cx-sub">A foreign owned mining company is dumping billions of litres of polluted water into the Coxs River catchment every year. This is where Sydney's drinking water starts.<sup class="cx-src"><a href="#cx-src-15" aria-label="Source 15">[15]</a></sup></p>
-      <div class="cx-hero-ctas">
-        <a class="cx-btn-ghost" href="#cx-watershed">Watch Watershed</a>
-      </div>
+    <section class="cx-hero">
+        <div class="cx-wrap">
+            <div>
+                <div class="cx-eyebrow-line"><span class="cx-dot"></span> Coxs River Catchment Campaign</div>
+                <h1 class="cx-headline">More than<br>5,000,000 people<br>drink water<br>that starts here.</h1>
+                <p class="cx-sub">A foreign owned mining company is dumping billions of litres of polluted water into
+                    the Coxs River catchment every year. This is where Sydney's drinking water starts.<sup
+                            class="cx-src"><a href="#cx-src-15" aria-label="Source 15">[15]</a></sup></p>
+                <div class="cx-hero-ctas">
+                    <a class="cx-btn-ghost" href="#cx-watershed">Watch Watershed</a>
+                </div>
 
-      <div class="cx-scroll-cue"><a href="#cx-evidence">See how the water gets here &darr;</a></div>
-    </div>
-  </div>
-</section>
-
-<div class="cx-wave-wrap cx-wave-a" aria-hidden="true"><svg class="cx-wave cx-w1" viewBox="0 0 3600 96" preserveAspectRatio="none"><path d="M0,38 C 100,12 200,64 300,38 C 400,12 500,64 600,38 C 700,12 800,64 900,38 C 1000,12 1100,64 1200,38 C 1300,12 1400,64 1500,38 C 1600,12 1700,64 1800,38 C 1900,12 2000,64 2100,38 C 2200,12 2300,64 2400,38 C 2500,12 2600,64 2700,38 C 2800,12 2900,64 3000,38 C 3100,12 3200,64 3300,38 C 3400,12 3500,64 3600,38 L3600,96 L0,96 Z" fill="rgba(46,82,102,.55)"/><path d="M0,38 C 100,12 200,64 300,38 C 400,12 500,64 600,38 C 700,12 800,64 900,38 C 1000,12 1100,64 1200,38 C 1300,12 1400,64 1500,38 C 1600,12 1700,64 1800,38 C 1900,12 2000,64 2100,38 C 2200,12 2300,64 2400,38 C 2500,12 2600,64 2700,38 C 2800,12 2900,64 3000,38 C 3100,12 3200,64 3300,38 C 3400,12 3500,64 3600,38" fill="none" stroke="#7FB0CC" stroke-opacity=".7" stroke-width="1.6" vector-effect="non-scaling-stroke"/></svg><svg class="cx-wave cx-w2" viewBox="0 0 3600 96" preserveAspectRatio="none"><path d="M0,52 C 66,32 133,72 200,52 C 266,32 333,72 400,52 C 466,32 533,72 600,52 C 666,32 733,72 800,52 C 866,32 933,72 1000,52 C 1066,32 1133,72 1200,52 C 1266,32 1333,72 1400,52 C 1466,32 1533,72 1600,52 C 1666,32 1733,72 1800,52 C 1866,32 1933,72 2000,52 C 2066,32 2133,72 2200,52 C 2266,32 2333,72 2400,52 C 2466,32 2533,72 2600,52 C 2666,32 2733,72 2800,52 C 2866,32 2933,72 3000,52 C 3066,32 3133,72 3200,52 C 3266,32 3333,72 3400,52 C 3466,32 3533,72 3600,52 L3600,96 L0,96 Z" fill="rgba(91,147,181,.30)"/><path d="M0,52 C 66,32 133,72 200,52 C 266,32 333,72 400,52 C 466,32 533,72 600,52 C 666,32 733,72 800,52 C 866,32 933,72 1000,52 C 1066,32 1133,72 1200,52 C 1266,32 1333,72 1400,52 C 1466,32 1533,72 1600,52 C 1666,32 1733,72 1800,52 C 1866,32 1933,72 2000,52 C 2066,32 2133,72 2200,52 C 2266,32 2333,72 2400,52 C 2466,32 2533,72 2600,52 C 2666,32 2733,72 2800,52 C 2866,32 2933,72 3000,52 C 3066,32 3133,72 3200,52 C 3266,32 3333,72 3400,52 C 3466,32 3533,72 3600,52" fill="none" stroke="#7FB0CC" stroke-opacity=".7" stroke-width="1.6" vector-effect="non-scaling-stroke"/></svg><svg class="cx-wave cx-w3" viewBox="0 0 3600 96" preserveAspectRatio="none"><path d="M0,68 C 100,52 200,84 300,68 C 400,52 500,84 600,68 C 700,52 800,84 900,68 C 1000,52 1100,84 1200,68 C 1300,52 1400,84 1500,68 C 1600,52 1700,84 1800,68 C 1900,52 2000,84 2100,68 C 2200,52 2300,84 2400,68 C 2500,52 2600,84 2700,68 C 2800,52 2900,84 3000,68 C 3100,52 3200,84 3300,68 C 3400,52 3500,84 3600,68 L3600,96 L0,96 Z" fill="#182A1F"/></svg></div>
-
-<section id="cx-evidence" class="cx-section-forest">
-  <div class="cx-wrap">
-    <h2 class="cx-title">What is really flowing into Sydney's drinking water</h2>
-
-    <div class="cx-bignum-band">
-      <div class="cx-bignum">
-        <div class="cx-bignum-pre">More than</div>
-        <div class="cx-bignum-val"><span data-count="20">20</span><span class="cx-bignum-unit">billion litres</span></div>
-        <div class="cx-bignum-label">of polluted mine water per year are pumped out of mines in the Gardens of Stone area. A lot of this water ends up in the Coxs River catchment and is only semi-treated, still carrying salts and heavy metals.<sup class="cx-src"><a href="#cx-src-1" aria-label="Source 1">[1]</a></sup><sup class="cx-src"><a href="#cx-src-5" aria-label="Source 5">[5]</a></sup></div>
-      </div>
-      <div class="cx-bignum">
-        <div class="cx-bignum-pre">An estimated</div>
-        <div class="cx-bignum-val"><span data-count="80">80</span>&ndash;<span data-count="90">90</span>%</div>
-        <div class="cx-bignum-label">of the dry-weather flow in the upper to mid Coxs River catchment is mine water, not river water<sup class="cx-src"><a href="#cx-src-2" aria-label="Source 2">[2]</a></sup></div>
-      </div>
-      <div class="cx-bignum cx-bignum-alert">
-        <div class="cx-bignum-pre">In 2023&ndash;24 alone</div>
-        <div class="cx-bignum-val"><span data-count="5.7" data-decimals="1">5.7</span><span class="cx-bignum-unit">billion litres</span></div>
-        <div class="cx-bignum-label">of polluted mine water discharged into local creeks.<sup class="cx-src"><a href="#cx-src-3" aria-label="Source 3">[3]</a></sup></div>
-      </div>
-      <div class="cx-bignum">
-        <div class="cx-bignum-pre">Three mines plan to run until</div>
-        <div class="cx-bignum-val">2040<span class="cx-bignum-unit">&amp; 2042</span></div>
-        <div class="cx-bignum-label">one to 2040, two to 2042, and each needs only a modification to get there<sup class="cx-src"><a href="#cx-src-4" aria-label="Source 4">[4]</a></sup></div>
-      </div>
-    </div>
-
-    <div class="cx-flow-block">
-      <h3>From clean catchment to polluted river in four steps</h3>
-      <p class="cx-flow-intro">Rain that falls on the Gardens of Stone soaks through sandstone into groundwater, which is why water from natural catchments like this one is normally pristine. Here's what changes:</p>
-      <ol class="cx-flow-steps">
-        <li class="cx-flow-step">
-          <span class="cx-flow-badge">1</span>
-          <h4>Pumped out</h4>
-          <p>Groundwater floods the mine workings and is pumped up from deep underground and off the Newnes Plateau, more than 20 billion litres a year.<sup class="cx-src"><a href="#cx-src-1" aria-label="Source 1">[1]</a></sup></p>
-        </li>
-        <li class="cx-flow-step">
-          <span class="cx-flow-badge">2</span>
-          <h4>Semi-treated</h4>
-          <p>Reverse osmosis is a process for cleaning water that strips out most of the salt and dissolved metals, but around a third of the water is only filtered, so the salt and heavy metals stay in. The two are mixed, and about 18.5 million litres a day of that semi-treated mix is released, still carrying salinity and metals.<sup class="cx-src"><a href="#cx-src-5" aria-label="Source 5">[5]</a></sup></p>
-        </li>
-        <li class="cx-flow-step">
-          <span class="cx-flow-badge">3</span>
-          <h4>Brine left behind</h4>
-          <p>Evaporation leaves a toxic brine. Groundwater contaminated by it leaches into Wangcol Creek, then the Coxs River.<sup class="cx-src"><a href="#cx-src-5" aria-label="Source 5">[5]</a></sup></p>
-        </li>
-        <li class="cx-flow-step cx-flow-step-alert">
-          <span class="cx-flow-badge">4</span>
-          <h4>Into the river</h4>
-          <p>In 2023&ndash;24, 5.7 billion litres of polluted mine water was discharged into local creeks.<sup class="cx-src"><a href="#cx-src-3" aria-label="Source 3">[3]</a></sup></p>
-        </li>
-      </ol>
-      <div class="cx-ps-panel">
-        <h4 class="cx-ps-title">The power station</h4>
-        <p>The brine is mixed with fly ash and placed in ash repositories at Mt Piper power station. The older heap was built without a base liner, according to the operator's own consultants, and leachate from it is still being detected in groundwater.<sup class="cx-src"><a href="#cx-src-13" aria-label="Source 13">[13]</a></sup> Since 2022, brine-mixed ash has gone into a newer, lined repository, and the old heap has now largely been capped.<sup class="cx-src"><a href="#cx-src-13" aria-label="Source 13">[13]</a></sup> The operator also says the liners of two of its brine waste ponds may be compromised, with replacement scheduled for 2026/27.<sup class="cx-src"><a href="#cx-src-13" aria-label="Source 13">[13]</a></sup> Community groups say toxic brine is being squeezed into the aquifer that feeds Wangcol Creek, and report years of complaints about illegal, unlicensed and excessive discharges from the power station.<sup class="cx-src"><a href="#cx-src-11" aria-label="Source 11">[11]</a></sup></p>
-        <div class="cx-ps-stats">
-          <div class="cx-ps-stat"><div class="cx-ps-num">9&times;</div><div class="cx-ps-lab">the 350 &micro;S/cm guideline for upland streams: Wangcol Creek salinity reached 3,298 &micro;S/cm on 10 December 2025<sup class="cx-src"><a href="#cx-src-11" aria-label="Source 11">[11]</a></sup></div></div>
-          <div class="cx-ps-stat"><div class="cx-ps-num">1,000+</div><div class="cx-ps-lab">&micro;S/cm: salinity at the downstream Wangcol Creek gauge often exceeded this in 2023 to 2025, in the operator's own monitoring<sup class="cx-src"><a href="#cx-src-13" aria-label="Source 13">[13]</a></sup></div></div>
-          <div class="cx-ps-stat"><div class="cx-ps-num">30 yrs</div><div class="cx-ps-lab">Dr Ian Wright has studied the catchment. He calls the Wangcol Creek discharge point &ldquo;the worst water pollution site in Sydney's drinking water catchment&rdquo; he has seen<sup class="cx-src"><a href="#cx-src-12" aria-label="Source 12">[12]</a></sup></div></div>
+                <div class="cx-scroll-cue"><a href="#cx-evidence">See how the water gets here &darr;</a></div>
+            </div>
         </div>
-      </div>
+    </section>
 
+    <div class="cx-wave-wrap cx-wave-a" aria-hidden="true">
+        <svg class="cx-wave cx-w1" viewBox="0 0 3600 96" preserveAspectRatio="none">
+            <path d="M0,38 C 100,12 200,64 300,38 C 400,12 500,64 600,38 C 700,12 800,64 900,38 C 1000,12 1100,64 1200,38 C 1300,12 1400,64 1500,38 C 1600,12 1700,64 1800,38 C 1900,12 2000,64 2100,38 C 2200,12 2300,64 2400,38 C 2500,12 2600,64 2700,38 C 2800,12 2900,64 3000,38 C 3100,12 3200,64 3300,38 C 3400,12 3500,64 3600,38 L3600,96 L0,96 Z"
+                  fill="rgba(46,82,102,.55)"/>
+            <path d="M0,38 C 100,12 200,64 300,38 C 400,12 500,64 600,38 C 700,12 800,64 900,38 C 1000,12 1100,64 1200,38 C 1300,12 1400,64 1500,38 C 1600,12 1700,64 1800,38 C 1900,12 2000,64 2100,38 C 2200,12 2300,64 2400,38 C 2500,12 2600,64 2700,38 C 2800,12 2900,64 3000,38 C 3100,12 3200,64 3300,38 C 3400,12 3500,64 3600,38"
+                  fill="none" stroke="#7FB0CC" stroke-opacity=".7" stroke-width="1.6"
+                  vector-effect="non-scaling-stroke"/>
+        </svg>
+        <svg class="cx-wave cx-w2" viewBox="0 0 3600 96" preserveAspectRatio="none">
+            <path d="M0,52 C 66,32 133,72 200,52 C 266,32 333,72 400,52 C 466,32 533,72 600,52 C 666,32 733,72 800,52 C 866,32 933,72 1000,52 C 1066,32 1133,72 1200,52 C 1266,32 1333,72 1400,52 C 1466,32 1533,72 1600,52 C 1666,32 1733,72 1800,52 C 1866,32 1933,72 2000,52 C 2066,32 2133,72 2200,52 C 2266,32 2333,72 2400,52 C 2466,32 2533,72 2600,52 C 2666,32 2733,72 2800,52 C 2866,32 2933,72 3000,52 C 3066,32 3133,72 3200,52 C 3266,32 3333,72 3400,52 C 3466,32 3533,72 3600,52 L3600,96 L0,96 Z"
+                  fill="rgba(91,147,181,.30)"/>
+            <path d="M0,52 C 66,32 133,72 200,52 C 266,32 333,72 400,52 C 466,32 533,72 600,52 C 666,32 733,72 800,52 C 866,32 933,72 1000,52 C 1066,32 1133,72 1200,52 C 1266,32 1333,72 1400,52 C 1466,32 1533,72 1600,52 C 1666,32 1733,72 1800,52 C 1866,32 1933,72 2000,52 C 2066,32 2133,72 2200,52 C 2266,32 2333,72 2400,52 C 2466,32 2533,72 2600,52 C 2666,32 2733,72 2800,52 C 2866,32 2933,72 3000,52 C 3066,32 3133,72 3200,52 C 3266,32 3333,72 3400,52 C 3466,32 3533,72 3600,52"
+                  fill="none" stroke="#7FB0CC" stroke-opacity=".7" stroke-width="1.6"
+                  vector-effect="non-scaling-stroke"/>
+        </svg>
+        <svg class="cx-wave cx-w3" viewBox="0 0 3600 96" preserveAspectRatio="none">
+            <path d="M0,68 C 100,52 200,84 300,68 C 400,52 500,84 600,68 C 700,52 800,84 900,68 C 1000,52 1100,84 1200,68 C 1300,52 1400,84 1500,68 C 1600,52 1700,84 1800,68 C 1900,52 2000,84 2100,68 C 2200,52 2300,84 2400,68 C 2500,52 2600,84 2700,68 C 2800,52 2900,84 3000,68 C 3100,52 3200,84 3300,68 C 3400,52 3500,84 3600,68 L3600,96 L0,96 Z"
+                  fill="#182A1F"/>
+        </svg>
     </div>
 
-    <details class="cx-evid-detail">
-      <summary>Read the full detail</summary>
-      <p class="cx-lede">Rain that falls on the Gardens of Stone soaks through sandstone into groundwater, which is why water from natural catchments like this one is normally clean enough to drink. Intensive underground mining breaks that cycle. Groundwater floods into the mine workings and is pumped out from deep underground, millions of litres every day. By the time it reaches the surface it has been through coal seams and mine workings, and it carries salt and heavy metals such as arsenic and selenium.</p>
-      <p class="cx-lede">During low flow periods, mine water discharge makes up an estimated 80 to 90 percent of the Coxs River's baseflow in the upper to mid-catchment, according to Lithgow Environment Group's own water monitoring. Much of what's actually flowing here isn't natural river water at all, it's mine water, flowing on toward Warragamba Dam. Local environmental groups have been monitoring this catchment for over twenty years, blowing the whistle on repeated discharges that have cost mining companies almost $1.9 million in fines and penalties.</p>
-      <p class="cx-lede">The mine water is sent to a treatment plant that is approved to take up to 42 million litres of mine water a day.<sup class="cx-src"><a href="#cx-src-16" aria-label="Source 16">[16]</a></sup> About 28.8 million litres a day goes through reverse osmosis. The other 13.2 million litres a day, nearly a third, is only filtered. The two are mixed, and about 18.5 million litres a day of that semi-treated water is released into the catchment. It still carries salt and heavy metals, and the Gardens of Stone Alliance says this release has neither planning consent nor an EPA licence. The concentrated brine left behind goes to the power station, and toxic groundwater contaminated by the brine leaches into Wangcol Creek and then the Coxs River.<sup class="cx-src"><a href="#cx-src-5" aria-label="Source 5">[5]</a></sup></p>
-      <p class="cx-lede">And the mines want to keep going. Three mines in this catchment plan to apply to extend their lives, one to 2040 and two to 2042.</p>
-    </details>
+    <section id="cx-evidence" class="cx-section-forest">
+        <div class="cx-wrap">
+            <h2 class="cx-title">What is really flowing into Sydney's drinking water</h2>
 
-    <div class="cx-eco-block">
-      <h3>The Platypus,<br>Biladurang in Wiradjuri, are gone.<br>So is what they eat.<sup class="cx-src"><a href="#cx-src-10" aria-label="Source 10">[10]</a></sup></h3>
-      <p>Independent university research has confirmed platypus have vanished entirely from stretches of the Coxs River near Lithgow, driven out by salinity and heavy metal pollution.<sup class="cx-src"><a href="#cx-src-6" aria-label="Source 6">[6]</a></sup> The reason is simple: without healthy populations of yabbies, mayflies and dragonflies, there's nothing left for a platypus to eat. Peer-reviewed studies of this catchment have found the same pollution significantly reduces the abundance and diversity of the small invertebrate life that the entire river food chain depends on.</p>
-    </div>
-  </div>
-</section>
+            <div class="cx-bignum-band">
+                <div class="cx-bignum">
+                    <div class="cx-bignum-pre">More than</div>
+                    <div class="cx-bignum-val"><span data-count="20">20</span><span class="cx-bignum-unit">billion litres</span>
+                    </div>
+                    <div class="cx-bignum-label">of polluted mine water per year are pumped out of mines in the Gardens
+                        of Stone area. A lot of this water ends up in the Coxs River catchment and is only semi-treated,
+                        still carrying salts and heavy metals.<sup class="cx-src"><a href="#cx-src-1"
+                                                                                     aria-label="Source 1">[1]</a></sup><sup
+                                class="cx-src"><a href="#cx-src-5" aria-label="Source 5">[5]</a></sup></div>
+                </div>
+                <div class="cx-bignum">
+                    <div class="cx-bignum-pre">An estimated</div>
+                    <div class="cx-bignum-val"><span data-count="80">80</span>&ndash;<span data-count="90">90</span>%
+                    </div>
+                    <div class="cx-bignum-label">of the dry-weather flow in the upper to mid Coxs River catchment is
+                        mine water, not river water<sup class="cx-src"><a href="#cx-src-2" aria-label="Source 2">[2]</a></sup>
+                    </div>
+                </div>
+                <div class="cx-bignum cx-bignum-alert">
+                    <div class="cx-bignum-pre">In 2023&ndash;24 alone</div>
+                    <div class="cx-bignum-val"><span data-count="5.7" data-decimals="1">5.7</span><span
+                                class="cx-bignum-unit">billion litres</span></div>
+                    <div class="cx-bignum-label">of polluted mine water discharged into local creeks.<sup
+                                class="cx-src"><a href="#cx-src-3" aria-label="Source 3">[3]</a></sup></div>
+                </div>
+                <div class="cx-bignum">
+                    <div class="cx-bignum-pre">Three mines plan to run until</div>
+                    <div class="cx-bignum-val">2040<span class="cx-bignum-unit">&amp; 2042</span></div>
+                    <div class="cx-bignum-label">one to 2040, two to 2042, and each needs only a modification to get
+                        there<sup class="cx-src"><a href="#cx-src-4" aria-label="Source 4">[4]</a></sup></div>
+                </div>
+            </div>
 
+            <div class="cx-flow-block">
+                <h3>From clean catchment to polluted river in four steps</h3>
+                <p class="cx-flow-intro">Rain that falls on the Gardens of Stone soaks through sandstone into
+                    groundwater, which is why water from natural catchments like this one is normally pristine. Here's
+                    what changes:</p>
+                <ol class="cx-flow-steps">
+                    <li class="cx-flow-step">
+                        <span class="cx-flow-badge">1</span>
+                        <h4>Pumped out</h4>
+                        <p>Groundwater floods the mine workings and is pumped up from deep underground and off the
+                            Newnes Plateau, more than 20 billion litres a year.<sup class="cx-src"><a href="#cx-src-1"
+                                                                                                      aria-label="Source 1">[1]</a></sup>
+                        </p>
+                    </li>
+                    <li class="cx-flow-step">
+                        <span class="cx-flow-badge">2</span>
+                        <h4>Semi-treated</h4>
+                        <p>Reverse osmosis is a process for cleaning water that strips out most of the salt and
+                            dissolved metals, but around a third of the water is only filtered, so the salt and heavy
+                            metals stay in. The two are mixed, and about 18.5 million litres a day of that semi-treated
+                            mix is released, still carrying salinity and metals.<sup class="cx-src"><a href="#cx-src-5"
+                                                                                                       aria-label="Source 5">[5]</a></sup>
+                        </p>
+                    </li>
+                    <li class="cx-flow-step">
+                        <span class="cx-flow-badge">3</span>
+                        <h4>Brine left behind</h4>
+                        <p>Evaporation leaves a toxic brine. Groundwater contaminated by it leaches into Wangcol Creek,
+                            then the Coxs River.<sup class="cx-src"><a href="#cx-src-5"
+                                                                       aria-label="Source 5">[5]</a></sup></p>
+                    </li>
+                    <li class="cx-flow-step cx-flow-step-alert">
+                        <span class="cx-flow-badge">4</span>
+                        <h4>Into the river</h4>
+                        <p>In 2023&ndash;24, 5.7 billion litres of polluted mine water was discharged into local creeks.<sup
+                                    class="cx-src"><a href="#cx-src-3" aria-label="Source 3">[3]</a></sup></p>
+                    </li>
+                </ol>
+                <div class="cx-ps-panel">
+                    <h4 class="cx-ps-title">The power station</h4>
+                    <p>The brine is mixed with fly ash and placed in ash repositories at Mt Piper power station. The
+                        older heap was built without a base liner, according to the operator's own consultants, and
+                        leachate from it is still being detected in groundwater.<sup class="cx-src"><a href="#cx-src-13"
+                                                                                                       aria-label="Source 13">[13]</a></sup>
+                        Since 2022, brine-mixed ash has gone into a newer, lined repository, and the old heap has now
+                        largely been capped.<sup class="cx-src"><a href="#cx-src-13"
+                                                                   aria-label="Source 13">[13]</a></sup> The operator
+                        also says the liners of two of its brine waste ponds may be compromised, with replacement
+                        scheduled for 2026/27.<sup class="cx-src"><a href="#cx-src-13"
+                                                                     aria-label="Source 13">[13]</a></sup> Community
+                        groups say toxic brine is being squeezed into the aquifer that feeds Wangcol Creek, and report
+                        years of complaints about illegal, unlicensed and excessive discharges from the power
+                        station.<sup class="cx-src"><a href="#cx-src-11" aria-label="Source 11">[11]</a></sup></p>
+                    <div class="cx-ps-stats">
+                        <div class="cx-ps-stat">
+                            <div class="cx-ps-num">9&times;</div>
+                            <div class="cx-ps-lab">the 350 &micro;S/cm guideline for upland streams: Wangcol Creek
+                                salinity reached 3,298 &micro;S/cm on 10 December 2025<sup class="cx-src"><a
+                                            href="#cx-src-11" aria-label="Source 11">[11]</a></sup></div>
+                        </div>
+                        <div class="cx-ps-stat">
+                            <div class="cx-ps-num">1,000+</div>
+                            <div class="cx-ps-lab">&micro;S/cm: salinity at the downstream Wangcol Creek gauge often
+                                exceeded this in 2023 to 2025, in the operator's own monitoring<sup class="cx-src"><a
+                                            href="#cx-src-13" aria-label="Source 13">[13]</a></sup></div>
+                        </div>
+                        <div class="cx-ps-stat">
+                            <div class="cx-ps-num">30 yrs</div>
+                            <div class="cx-ps-lab">Dr Ian Wright has studied the catchment. He calls the Wangcol Creek
+                                discharge point &ldquo;the worst water pollution site in Sydney's drinking water
+                                catchment&rdquo; he has seen<sup class="cx-src"><a href="#cx-src-12"
+                                                                                   aria-label="Source 12">[12]</a></sup>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-<section id="cx-loophole" class="cx-section-loophole">
-  <div class="cx-wrap">
-    <div class="cx-kicker">The loophole</div>
-    <h2 class="cx-title">The law meant to stop this has a hole in it</h2>
-    <p class="cx-standout-lede">In 2017, environmental groups won a court case that forced coal mine polluters to clean up their discharge into this catchment. The government's answer was to <span class="cx-lh-red">weaken the law</span>.<sup class="cx-src"><a href="#cx-src-7" aria-label="Source 7">[7]</a></sup></p>
-    <p class="cx-lede">The water quality test that protects Sydney's drinking water, NorBE, was watered down after that court case. When an expansion is put forward, the mining company only has to show its impact on our drinking water will be no worse than the pollution it was already allowed to cause.<sup class="cx-src"><a href="#cx-src-14" aria-label="Source 14">[14]</a></sup> And that is just one part of the problem. Under our planning laws, if a mining company is modifying an existing mine rather than proposing a new one, it <strong class="cx-lh-red">doesn't have to meet the water quality test at all.</strong> Almost every major mining project in this catchment has been modified a number of times,<sup class="cx-src"><a href="#cx-src-17" aria-label="Source 17">[17]</a></sup> so the one legal safeguard meant to stop this is being <span class="cx-lh-red">sidestepped by design</span>.</p>
+            </div>
 
-    <div class="cx-stat-row cx-loophole-stats">
-      <div class="cx-stat-card">
-        <div class="cx-stat-num">~$1.9M</div>
-        <div class="cx-stat-label">Fines and penalties for mining companies polluting this catchment since 2015<sup class="cx-src"><a href="#cx-src-8" aria-label="Source 8">[8]</a></sup></div>
-      </div>
-      <div class="cx-stat-card">
-        <div class="cx-stat-num">~$1B</div>
-        <div class="cx-stat-label">Roughly what the company behind these mines earns in a year, by industry estimates<sup class="cx-src"><a href="#cx-src-9" aria-label="Source 9">[9]</a></sup></div>
-      </div>
-      <div class="cx-stat-card cx-stat-card-red">
-        <div class="cx-stat-num">2040 &amp; 2042</div>
-        <div class="cx-stat-label">The years three mines in this catchment plan to apply to keep operating until<sup class="cx-src"><a href="#cx-src-4" aria-label="Source 4">[4]</a></sup></div>
-      </div>
-    </div>
+            <details class="cx-evid-detail">
+                <summary>Read the full detail</summary>
+                <p class="cx-lede">Rain that falls on the Gardens of Stone soaks through sandstone into groundwater,
+                    which is why water from natural catchments like this one is normally clean enough to drink.
+                    Intensive underground mining breaks that cycle. Groundwater floods into the mine workings and is
+                    pumped out from deep underground, millions of litres every day. By the time it reaches the surface
+                    it has been through coal seams and mine workings, and it carries salt and heavy metals such as
+                    arsenic and selenium.</p>
+                <p class="cx-lede">During low flow periods, mine water discharge makes up an estimated 80 to 90 percent
+                    of the Coxs River's baseflow in the upper to mid-catchment, according to Lithgow Environment Group's
+                    own water monitoring. Much of what's actually flowing here isn't natural river water at all, it's
+                    mine water, flowing on toward Warragamba Dam. Local environmental groups have been monitoring this
+                    catchment for over twenty years, blowing the whistle on repeated discharges that have cost mining
+                    companies almost $1.9 million in fines and penalties.</p>
+                <p class="cx-lede">The mine water is sent to a treatment plant that is approved to take up to 42 million
+                    litres of mine water a day.<sup class="cx-src"><a href="#cx-src-16" aria-label="Source 16">[16]</a></sup>
+                    About 28.8 million litres a day goes through reverse osmosis. The other 13.2 million litres a day,
+                    nearly a third, is only filtered. The two are mixed, and about 18.5 million litres a day of that
+                    semi-treated water is released into the catchment. It still carries salt and heavy metals, and the
+                    Gardens of Stone Alliance says this release has neither planning consent nor an EPA licence. The
+                    concentrated brine left behind goes to the power station, and toxic groundwater contaminated by the
+                    brine leaches into Wangcol Creek and then the Coxs River.<sup class="cx-src"><a href="#cx-src-5"
+                                                                                                    aria-label="Source 5">[5]</a></sup>
+                </p>
+                <p class="cx-lede">And the mines want to keep going. Three mines in this catchment plan to apply to
+                    extend their lives, one to 2040 and two to 2042.</p>
+            </details>
 
-    <p class="cx-loophole-close">Even the largest single fine amounted to about 0.1% of a year's revenue. That isn't a deterrent, it's a line item. And while local groups have spent two decades trying to hold this catchment together, the company responsible is asking the government for extensions for three of its mines. <span class="cx-lh-red">Let's keep the bastards honest.</span> Write a submission, make a difference.</p>
-  </div>
-</section>
-
-<section id="cx-asks" class="cx-section-asks">
-  <div class="cx-wrap">
-    <div class="cx-kicker">What you can do</div>
-    <h2 class="cx-title">Three people can change this.</h2>
-    <p class="cx-standout-lede">The Planning Minister and the Water Minister hold the power to strengthen the law and protect the catchment, and your local MP can raise it in Parliament. We have put together examples of statements you can raise, or use as inspiration to write your own. If you receive a response, forward it to <a href="mailto:campaigner@gardensofstone.org.au">campaigner@gardensofstone.org.au</a>. The Alliance can use responses to map political support, inform parliamentary advocacy and demonstrate the strength of community concern. Please remove any personal details you don't want shared.</p>
-
-    <div class="cx-asks-grid">
-      <div class="cx-ask-card cx-premier">
-        <div class="cx-ask-role">Planning ask</div>
-        <h3>Minister for Planning and Public Spaces, Paul Scully</h3>
-        <p>The NorBE test sits in planning law. Strengthen it, as your party promised in 2017.</p>
-        <p class="cx-sample-text" data-sample="1">"Minister, mine water now makes up an estimated 80 to 90 per cent of dry-weather flow in the upper to mid Coxs River catchment, on its way to Warragamba Dam and the taps of 5,000,000 Sydneysiders. The law meant to protect that water, the Neutral or Beneficial Effect test, was weakened in 2017, and at the time your party committed in Parliament to restore the proper protections if the rules deteriorated. They have deteriorated. Three mines in this catchment plan to apply to extend their lives to 2040 and 2042, and the weakened test, which lets expansions be judged against the pollution already permitted, along with the modification pathway that avoids the test altogether, would allow them to keep discharging polluted mine water for that long. As the Minister responsible for planning law, I'm asking you to keep that promise and strengthen the NorBE test, so it is measured against a clean baseline, requires real treatment of polluted discharge, and applies to expansions of existing mines too."</p>
-        <div class="cx-ask-actions">
-          <a class="cx-ask-btn" href="https://www.nsw.gov.au/nsw-government/ministers/minister-for-planning-and-public-spaces" target="_blank" rel="noopener">Contact the Minister</a>
-          <button class="cx-copy-btn" data-copy-target="1" type="button">Copy text</button>
+            <div class="cx-eco-block">
+                <h3>The Platypus,<br>Biladurang in Wiradjuri, are gone.<br>So is what they eat.<sup class="cx-src"><a
+                                href="#cx-src-10" aria-label="Source 10">[10]</a></sup></h3>
+                <p>Independent university research has confirmed platypus have vanished entirely from stretches of the
+                    Coxs River near Lithgow, driven out by salinity and heavy metal pollution.<sup class="cx-src"><a
+                                href="#cx-src-6" aria-label="Source 6">[6]</a></sup> The reason is simple: without
+                    healthy populations of yabbies, mayflies and dragonflies, there's nothing left for a platypus to
+                    eat. Peer-reviewed studies of this catchment have found the same pollution significantly reduces the
+                    abundance and diversity of the small invertebrate life that the entire river food chain depends on.
+                </p>
+            </div>
         </div>
-      </div>
-      <div class="cx-ask-card cx-political">
-        <div class="cx-ask-role">Water ask</div>
-        <h3>Minister for Water, Rose Jackson</h3>
-        <p>Argue for a strong NorBE test, and for independent monitoring of the water Sydney drinks.</p>
-        <p class="cx-sample-text" data-sample="2">"Minister, the mines in the Coxs River catchment pump more than 20 billion litres of polluted mine water a year, about 18.5 million litres a day of it is released only semi-treated, still carrying salt and heavy metals, and mine water now makes up an estimated 80 to 90 per cent of the river's dry-weather flow in the upper to mid catchment on its way to Warragamba Dam. Platypus have disappeared from stretches of the river, and mining companies have been fined and penalised almost $1.9 million for discharges into the catchment since 2015. The NorBE test is meant to protect Sydney's drinking water, but it was weakened in 2017. As the Minister for Water, I'm asking you to argue within Government for a strong NorBE test, measured against a clean baseline, with best-practice treatment required wherever polluted water is discharged, and to back independent, public monitoring of water quality in the catchment."</p>
-        <div class="cx-ask-actions">
-          <a class="cx-ask-btn" href="mailto:office@jackson.minister.nsw.gov.au?subject=Protect%20the%20Coxs%20River%20catchment">Email the Minister</a>
-          <button class="cx-copy-btn" data-copy-target="2" type="button">Copy text</button>
+    </section>
+
+
+    <section id="cx-loophole" class="cx-section-loophole">
+        <div class="cx-wrap">
+            <div class="cx-kicker">The loophole</div>
+            <h2 class="cx-title">The law meant to stop this has a hole in it</h2>
+            <p class="cx-standout-lede">In 2017, environmental groups won a court case that forced coal mine polluters
+                to clean up their discharge into this catchment. The government's answer was to <span class="cx-lh-red">weaken the law</span>.<sup
+                        class="cx-src"><a href="#cx-src-7" aria-label="Source 7">[7]</a></sup></p>
+            <p class="cx-lede">The water quality test that protects Sydney's drinking water, NorBE, was watered down
+                after that court case. When an expansion is put forward, the mining company only has to show its impact
+                on our drinking water will be no worse than the pollution it was already allowed to cause.<sup
+                        class="cx-src"><a href="#cx-src-14" aria-label="Source 14">[14]</a></sup> And that is just one
+                part of the problem. Under our planning laws, if a mining company is modifying an existing mine rather
+                than proposing a new one, it <strong class="cx-lh-red">doesn't have to meet the water quality test at
+                    all.</strong> Almost every major mining project in this catchment has been modified a number of
+                times,<sup class="cx-src"><a href="#cx-src-17" aria-label="Source 17">[17]</a></sup> so the one legal
+                safeguard meant to stop this is being <span class="cx-lh-red">sidestepped by design</span>.</p>
+
+            <div class="cx-stat-row cx-loophole-stats">
+                <div class="cx-stat-card">
+                    <div class="cx-stat-num">~$1.9M</div>
+                    <div class="cx-stat-label">Fines and penalties for mining companies polluting this catchment since
+                        2015<sup class="cx-src"><a href="#cx-src-8" aria-label="Source 8">[8]</a></sup></div>
+                </div>
+                <div class="cx-stat-card">
+                    <div class="cx-stat-num">~$1B</div>
+                    <div class="cx-stat-label">Roughly what the company behind these mines earns in a year, by industry
+                        estimates<sup class="cx-src"><a href="#cx-src-9" aria-label="Source 9">[9]</a></sup></div>
+                </div>
+                <div class="cx-stat-card cx-stat-card-red">
+                    <div class="cx-stat-num">2040 &amp; 2042</div>
+                    <div class="cx-stat-label">The years three mines in this catchment plan to apply to keep operating
+                        until<sup class="cx-src"><a href="#cx-src-4" aria-label="Source 4">[4]</a></sup></div>
+                </div>
+            </div>
+
+            <p class="cx-loophole-close">Even the largest single fine amounted to about 0.1% of a year's revenue. That
+                isn't a deterrent, it's a line item. And while local groups have spent two decades trying to hold this
+                catchment together, the company responsible is asking the government for extensions for three of its
+                mines. <span class="cx-lh-red">Let's keep the bastards honest.</span> Write a submission, make a
+                difference.</p>
         </div>
-      </div>
-      <div class="cx-ask-card cx-local">
-        <div class="cx-ask-role">Local ask</div>
-        <h3>Your local MP</h3>
-        <p>Whichever electorate you live in, Sydney's drinking water is your MP's business. First <a href="https://elections.nsw.gov.au/elections/find-my-electorate" target="_blank" rel="noopener" style="color:var(--water);font-weight:600;">find your electorate</a>, then get your MP's email from the <a href="https://www.parliament.nsw.gov.au/members-and-electorates/electorates-elections/electorate-office-contacts" target="_blank" rel="noopener" style="color:var(--water);font-weight:600;">electorate office list</a>.</p>
-        <p class="cx-sample-text" data-sample="3">"As a resident of [your electorate], I'm asking you to protect our drinking water by fixing NorBE, and to raise the state of the Coxs River catchment in Parliament. Mine water now dominates stretches of the Coxs River in dry weather, and three mines in the catchment plan to apply to keep operating until 2040 and 2042. The river runs on to Warragamba Dam, which supplies the drinking water of around 5,000,000 people, including your constituents. The test meant to protect that water, the NorBE test, was weakened in 2017. I'd like you to back a stronger test, and to tell me where you stand."</p>
-        <div class="cx-ask-actions">
-          <a class="cx-ask-btn" href="https://elections.nsw.gov.au/elections/find-my-electorate" target="_blank" rel="noopener">Find your electorate</a>
-          <button class="cx-copy-btn" data-copy-target="3" type="button">Copy text</button>
+    </section>
+
+    <section id="cx-asks" class="cx-section-asks">
+        <div class="cx-wrap">
+            <div class="cx-kicker">What you can do</div>
+            <h2 class="cx-title">Three people can change this.</h2>
+            <p class="cx-standout-lede">The Planning Minister and the Water Minister hold the power to strengthen the
+                law and protect the catchment, and your local MP can raise it in Parliament. We have put together
+                examples of statements you can raise, or use as inspiration to write your own. If you receive a
+                response, forward it to <a href="mailto:campaigner@gardensofstone.org.au">campaigner@gardensofstone.org.au</a>.
+                The Alliance can use responses to map political support, inform parliamentary advocacy and demonstrate
+                the strength of community concern. Please remove any personal details you don't want shared.</p>
+
+            <div class="cx-asks-grid">
+                <div class="cx-ask-card cx-premier">
+                    <div class="cx-ask-role">Planning ask</div>
+                    <h3>Minister for Planning and Public Spaces, Paul Scully</h3>
+                    <p>The NorBE test sits in planning law. Strengthen it, as your party promised in 2017.</p>
+                    <p class="cx-sample-text" data-sample="1">"Minister, mine water now makes up an estimated 80 to 90
+                        per cent of dry-weather flow in the upper to mid Coxs River catchment, on its way to Warragamba
+                        Dam and the taps of 5,000,000 Sydneysiders. The law meant to protect that water, the Neutral or
+                        Beneficial Effect test, was weakened in 2017, and at the time your party committed in Parliament
+                        to restore the proper protections if the rules deteriorated. They have deteriorated. Three mines
+                        in this catchment plan to apply to extend their lives to 2040 and 2042, and the weakened test,
+                        which lets expansions be judged against the pollution already permitted, along with the
+                        modification pathway that avoids the test altogether, would allow them to keep discharging
+                        polluted mine water for that long. As the Minister responsible for planning law, I'm asking you
+                        to keep that promise and strengthen the NorBE test, so it is measured against a clean baseline,
+                        requires real treatment of polluted discharge, and applies to expansions of existing mines
+                        too."</p>
+                    <div class="cx-ask-actions">
+                        <a class="cx-ask-btn"
+                           href="https://www.nsw.gov.au/nsw-government/ministers/minister-for-planning-and-public-spaces"
+                           target="_blank" rel="noopener">Contact the Minister</a>
+                        <button class="cx-copy-btn" data-copy-target="1" type="button">Copy text</button>
+                    </div>
+                </div>
+                <div class="cx-ask-card cx-political">
+                    <div class="cx-ask-role">Water ask</div>
+                    <h3>Minister for Water, Rose Jackson</h3>
+                    <p>Argue for a strong NorBE test, and for independent monitoring of the water Sydney drinks.</p>
+                    <p class="cx-sample-text" data-sample="2">"Minister, the mines in the Coxs River catchment pump more
+                        than 20 billion litres of polluted mine water a year, about 18.5 million litres a day of it is
+                        released only semi-treated, still carrying salt and heavy metals, and mine water now makes up an
+                        estimated 80 to 90 per cent of the river's dry-weather flow in the upper to mid catchment on its
+                        way to Warragamba Dam. Platypus have disappeared from stretches of the river, and mining
+                        companies have been fined and penalised almost $1.9 million for discharges into the catchment
+                        since 2015. The NorBE test is meant to protect Sydney's drinking water, but it was weakened in
+                        2017. As the Minister for Water, I'm asking you to argue within Government for a strong NorBE
+                        test, measured against a clean baseline, with best-practice treatment required wherever polluted
+                        water is discharged, and to back independent, public monitoring of water quality in the
+                        catchment."</p>
+                    <div class="cx-ask-actions">
+                        <a class="cx-ask-btn"
+                           href="mailto:office@jackson.minister.nsw.gov.au?subject=Protect%20the%20Coxs%20River%20catchment">Email
+                            the Minister</a>
+                        <button class="cx-copy-btn" data-copy-target="2" type="button">Copy text</button>
+                    </div>
+                </div>
+                <div class="cx-ask-card cx-local">
+                    <div class="cx-ask-role">Local ask</div>
+                    <h3>Your local MP</h3>
+                    <p>Whichever electorate you live in, Sydney's drinking water is your MP's business. First <a
+                                href="https://elections.nsw.gov.au/elections/find-my-electorate" target="_blank"
+                                rel="noopener" style="color:var(--water);font-weight:600;">find your electorate</a>,
+                        then get your MP's email from the <a
+                                href="https://www.parliament.nsw.gov.au/members-and-electorates/electorates-elections/electorate-office-contacts"
+                                target="_blank" rel="noopener" style="color:var(--water);font-weight:600;">electorate
+                            office list</a>.</p>
+                    <p class="cx-sample-text" data-sample="3">"As a resident of [your electorate], I'm asking you to
+                        protect our drinking water by fixing NorBE, and to raise the state of the Coxs River catchment
+                        in Parliament. Mine water now dominates stretches of the Coxs River in dry weather, and three
+                        mines in the catchment plan to apply to keep operating until 2040 and 2042. The river runs on to
+                        Warragamba Dam, which supplies the drinking water of around 5,000,000 people, including your
+                        constituents. The test meant to protect that water, the NorBE test, was weakened in 2017. I'd
+                        like you to back a stronger test, and to tell me where you stand."</p>
+                    <div class="cx-ask-actions">
+                        <a class="cx-ask-btn" href="https://elections.nsw.gov.au/elections/find-my-electorate"
+                           target="_blank" rel="noopener">Find your electorate</a>
+                        <button class="cx-copy-btn" data-copy-target="3" type="button">Copy text</button>
+                    </div>
+                </div>
+            </div>
+            <p class="cx-asks-contact">Have questions about what to say or how to make your email personal? Contact our
+                campaigner at <a href="mailto:campaigner@gardensofstone.org.au">campaigner@gardensofstone.org.au</a>.
+            </p>
         </div>
-      </div>
+    </section>
+
+    <div class="cx-wave-wrap cx-wave-b" style="background:#0F1D15" aria-hidden="true">
+        <svg class="cx-wave" viewBox="0 0 3600 44" preserveAspectRatio="none">
+            <path d="M0,22 C 200,0 400,44 600,22 C 800,0 1000,44 1200,22 C 1400,0 1600,44 1800,22 C 2000,0 2200,44 2400,22 C 2600,0 2800,44 3000,22 C 3200,0 3400,44 3600,22 L3600,44 L0,44 Z"
+                  fill="#182A1F"/>
+        </svg>
     </div>
-  <p class="cx-asks-contact">Have questions about what to say or how to make your email personal? Contact our campaigner at <a href="mailto:campaigner@gardensofstone.org.au">campaigner@gardensofstone.org.au</a>.</p>
-  </div>
-</section>
 
-<div class="cx-wave-wrap cx-wave-b" style="background:#0F1D15" aria-hidden="true"><svg class="cx-wave" viewBox="0 0 3600 44" preserveAspectRatio="none"><path d="M0,22 C 200,0 400,44 600,22 C 800,0 1000,44 1200,22 C 1400,0 1600,44 1800,22 C 2000,0 2200,44 2400,22 C 2600,0 2800,44 3000,22 C 3200,0 3400,44 3600,22 L3600,44 L0,44 Z" fill="#182A1F"/></svg></div>
+    <section id="cx-watershed" class="cx-section-forest" style="padding-top:56px;">
+        <div class="cx-wrap">
+            <div class="cx-watershed-wrap">
+                <div>
+                    <div class="cx-kicker">The documentary</div>
+                    <h2 class="cx-watershed-title">Watch Watershed</h2>
+                    <p class="cx-lede">Watershed is a short form documentary series following Sam, a fifth-generation
+                        Lithgow resident, as he discovers the current state of his beloved river.</p>
+                    <p class="cx-lede">Along the way he talks to landcare experts, scientists and environmental groups
+                        to uncover the horrifying truth about the condition of the Upper Coxs River catchment.</p>
+                    <p class="cx-lede" style="font-size:0.95rem;opacity:.85;">{{ cx_blurb }}</p>
+                </div>
+                <div class="cx-video-frame{% if not cx_thumb %} cx-poster{% endif %}" id="cx-watershed-player"
+                     role="button"
+                     tabindex="0"{% if cx_thumb %} style="background-image:url('{{ cx_thumb|e('html_attr') }}');"{% endif %}
+                     aria-label="Play {{ cx_title }}">
+                    <span class="cx-play-btn"><svg viewBox="0 0 24 24"><path d="M6 4 L20 12 L6 20 Z"/></svg></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="cx-watershed-episode1" class="cx-section-forest" style="padding-top:56px;">
+        <div class="cx-wrap">
+            <div class="cx-watershed-wrap">
+                <div>
+                    <div class="cx-kicker">Now showing</div>
+                    <h2 class="cx-watershed-title">Watershed, Episode 1: Land and Water</h2>
+                    <p class="cx-lede">Sam returns to his family's property on the Upper Coxs River to show the land
+                        that has been in his family for five generations.</p>
+                    <p class="cx-lede">In this opening episode, he introduces the river, the land, and the people who
+                        have lived here for generations.</p>
+                    <p class="cx-lede" style="font-size:0.95rem;opacity:.85;">Watch the first episode of the Watershed
+                        series.</p>
+                </div>
+                <div class="cx-video-frame cx-poster cx-playing" id="cx-watershed-player-1" role="button" tabindex="0"
+                     aria-label="Play Watershed, Episode 1: Land and Water">
+                    <span class="cx-play-btn"><svg viewBox="0 0 24 24"><path d="M6 4 L20 12 L6 20 Z"/></svg></span>
+                    <iframe src="https://player.vimeo.com/video/1237521400?h=65e1c5252b&amp;autoplay=1&amp;playsinline=1&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;dnt=1&amp;color=A8632F"
+                            title="Watershed, Episode 1: Land and Water"
+                            allow="autoplay; fullscreen; picture-in-picture" allowfullscreen=""></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section id="cx-watershed" class="cx-section-forest" style="padding-top:56px;">
-  <div class="cx-wrap">
-    <div class="cx-watershed-wrap">
-      <div>
-        <div class="cx-kicker">The documentary</div>
-        <h2 class="cx-watershed-title">Watch Watershed</h2>
-        <p class="cx-lede">Watershed is a short form documentary series following Sam, a fifth-generation Lithgow resident, as he discovers the current state of his beloved river.</p>
-        <p class="cx-lede">Along the way he talks to landcare experts, scientists and environmental groups to uncover the horrifying truth about the condition of the Upper Coxs River catchment.</p>
-        <p class="cx-lede" style="font-size:0.95rem;opacity:.85;">{{ cx_blurb }}</p>
-      </div>
-      <div class="cx-video-frame{% if not cx_thumb %} cx-poster{% endif %}" id="cx-watershed-player" role="button" tabindex="0"{% if cx_thumb %} style="background-image:url('{{ cx_thumb|e('html_attr') }}');"{% endif %} aria-label="Play {{ cx_title }}">
-        <span class="cx-play-btn"><svg viewBox="0 0 24 24"><path d="M6 4 L20 12 L6 20 Z"/></svg></span>
-      </div>
-    </div>
-  </div>
-</section>
+    <section id="cx-network" class="cx-network-strip">
+        <div class="cx-wrap cx-network-inner">
+            <div style="flex:1;min-width:260px;">
+                <div class="cx-network-stat">200+ groups</div>
+                <p class="cx-network-text">This campaign is carried by the Nature Conservation Council's network of
+                    environment groups across NSW. Add your voice and get updates as the campaign moves.</p>
+                <div class="cx-subscribe-row">
+                    <input type="email" placeholder="you@example.com"/>
+                    <a class="cx-ask-btn" style="background:var(--forest-deep);" href="#">Subscribe</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section id="cx-network" class="cx-network-strip">
-  <div class="cx-wrap cx-network-inner">
-    <div style="flex:1;min-width:260px;">
-      <div class="cx-network-stat">200+ groups</div>
-      <p class="cx-network-text">This campaign is carried by the Nature Conservation Council's network of environment groups across NSW. Add your voice and get updates as the campaign moves.</p>
-      <div class="cx-subscribe-row">
-        <input type="email" placeholder="you@example.com" />
-        <a class="cx-ask-btn" style="background:var(--forest-deep);" href="#">Subscribe</a>
-      </div>
-    </div>
-  </div>
-</section>
+    <section id="cx-sources" class="cx-section-sources">
+        <div class="cx-wrap">
+            <div class="cx-kicker">Check the facts</div>
+            <h2 class="cx-title">Where the numbers come from</h2>
+            <p class="cx-lede">Every figure on this page, with its source. If you spot something wrong, tell us and
+                we'll fix it.</p>
+            <ol class="cx-src-list">
+                <li id="cx-src-1"><span class="cx-src-num">1</span>
+                    <div><p>Mines in the Gardens of Stone region remove more than 20 billion litres of groundwater every
+                            year. Also stated by Chris Jonkers in Watershed, Episode 1.</p>
+                        <p class="cx-src-links"><a
+                                    href="https://assets.nationbuilder.com/natureorg/pages/4621/attachments/original/1738293846/Centennial_Coal_Report_FINAL.pdf"
+                                    target="_blank" rel="noopener">Nature Conservation Council of NSW, environmental
+                                scorecard (PDF, January 2025)</a></p></div>
+                </li>
+                <li id="cx-src-2"><span class="cx-src-num">2</span>
+                    <div><p>Mine water inflows currently represent 80 to 90 per cent of Coxs River baseflows. Lithgow
+                            Environment Group's own submission.</p>
+                        <p class="cx-src-links"><a
+                                    href="https://www.lithgowenvironment.au/docs/submissions/leg-project-officer-submission-lake-lyell-pumped-hydro.pdf"
+                                    target="_blank" rel="noopener">LEG submission, Lake Lyell pumped hydro project
+                                (PDF)</a></p></div>
+                </li>
+                <li id="cx-src-3"><span class="cx-src-num">3</span>
+                    <div><p>5,700 megalitres (5.7 billion litres) of polluted water from the treatment plant was
+                            discharged into local creeks via a holding dam in 2023&ndash;24.</p>
+                        <p class="cx-src-links"><a href="https://www.nature.org.au/water_minister_under_fire"
+                                                   target="_blank" rel="noopener">4nature media release, via Nature
+                                Conservation Council of NSW (14 October 2025)</a></p></div>
+                </li>
+                <li id="cx-src-4"><span class="cx-src-num">4</span>
+                    <div><p>A proposed mine extension would allow coal extraction until 31 December 2040.</p>
+                        <p class="cx-src-links"><a
+                                    href="https://www.centennialcoal.com.au/projects/clarence-consolidation"
+                                    target="_blank" rel="noopener">Mine owner's project page, extension proposal</a></p>
+                    </div>
+                </li>
+                <li id="cx-src-5"><span class="cx-src-num">5</span>
+                    <div><p>Reverse osmosis treats 28.8 million litres a day; a further 13.2 million litres a day is
+                            only filtered; about 18.5 million litres a day of the semi-treated mix is discharged.</p>
+                        <p class="cx-src-links"><a
+                                    href="https://www.gardensofstone.org.au/briefing-problems-springvales-water-treatment-plant"
+                                    target="_blank" rel="noopener">Gardens of Stone Alliance briefing, problems with the
+                                Springvale water treatment plant</a></p></div>
+                </li>
+                <li id="cx-src-6"><span class="cx-src-num">6</span>
+                    <div><p>Platypus found absent upstream of Lake Wallace, attributed to high salinity and metal
+                            pollutants, by Associate Professor Ian Wright, Western Sydney University.</p>
+                        <p class="cx-src-links"><a
+                                    href="https://www.abc.net.au/news/2025-10-12/platypus-vanish-from-charles-darwin-evolution-river/105752248"
+                                    target="_blank" rel="noopener">ABC News (October 2025)</a></p></div>
+                </li>
+                <li id="cx-src-7"><span class="cx-src-num">7</span>
+                    <div><p>The 2017 court case, the weakened NorBE test, and the loophole for changes to existing
+                            mines.</p>
+                        <p class="cx-src-links"><a
+                                    href="https://4nature.org/projects/damaging-lithgow-coal-mines/stop-the-pollution-petition/"
+                                    target="_blank" rel="noopener">4nature, Stop the Pollution Loophole</a></p></div>
+                </li>
+                <li id="cx-src-8"><span class="cx-src-num">8</span>
+                    <div><p>About $1.9 million in fines and penalties since 2015: a $1.05 million fine and $815,000 in
+                            fines and penalties (February 2026).</p>
+                        <p class="cx-src-links"><a
+                                    href="https://www.abc.net.au/news/2017-07-14/clarence-colliery-fined-one-million-for-blue-mountains-spill/8709834"
+                                    target="_blank" rel="noopener">ABC News (2017)</a> <a
+                                    href="https://www.epa.nsw.gov.au/news/epamedia/260223-clarence-coal-mine-ordered-to-pay-815-000-following-wollangambe-river-pollution"
+                                    target="_blank" rel="noopener">NSW EPA media release (February 2026)</a></p></div>
+                </li>
+                <li id="cx-src-9"><span class="cx-src-num">9</span>
+                    <div><p>Approximate annual revenue of the company behind these mines. Industry estimates range from
+                            about $900 million to $1.4 billion, so the page says roughly $1 billion.</p>
+                        <p class="cx-src-links"><a
+                                    href="https://www.ibisworld.com/australia/company/banpu-australia-co-pty-ltd/557610/"
+                                    target="_blank" rel="noopener">IBISWorld company profile</a> <a
+                                    href="https://rocketreach.co/centennial-profile_b5d2623af42e4452" target="_blank"
+                                    rel="noopener">RocketReach company profile</a></p></div>
+                </li>
+                <li id="cx-src-10"><span class="cx-src-num">10</span>
+                    <div><p>Biladurang is the Wiradjuri word for platypus.</p>
+                        <p class="cx-src-links"><a href="https://wwf.org.au/what-we-do/species/platypus" target="_blank"
+                                                   rel="noopener">WWF-Australia, platypus</a> <a
+                                    href="https://en.wikipedia.org/wiki/Wiradjuri_language" target="_blank"
+                                    rel="noopener">Wikipedia, Wiradjuri language</a></p></div>
+                </li>
+                <li id="cx-src-11"><span class="cx-src-num">11</span>
+                    <div><p>Wangcol Creek salinity of 3,298 &micro;S/cm on 10 December 2025, over nine times the 350
+                            guideline; years of community complaints and formal reports about illegal, unlicensed and
+                            excessive discharges from the power station.</p>
+                        <p class="cx-src-links"><a
+                                    href="https://4nature.org/media_release/toxic-pollution-in-sydneys-drinking-water-catchment-surges-far-beyond-approved-limits/"
+                                    target="_blank" rel="noopener">Gardens of Stone Alliance media release, via 4nature
+                                (11 December 2025)</a></p></div>
+                </li>
+                <li id="cx-src-12"><span class="cx-src-num">12</span>
+                    <div><p>Dr Ian Wright, Western Sydney University, on the Wangcol Creek discharge point: &ldquo;the
+                            worst water pollution site in Sydney's drinking water catchment that I've seen in 30 years
+                            in my science.&rdquo;</p>
+                        <p class="cx-src-links"><a
+                                    href="https://www.nature.org.au/spike_in_coal_pollution_in_drinking_water_catchment"
+                                    target="_blank" rel="noopener">Gardens of Stone Alliance media release, via Nature
+                                Conservation Council of NSW (17 November 2025)</a></p></div>
+                </li>
+                <li id="cx-src-13"><span class="cx-src-num">13</span>
+                    <div><p>The operator's own 2025&ndash;26 compliance and monitoring report for the Mt Piper ash
+                            repositories. It records the first stage of a leachate barrier system in the newer Lamberts
+                            North repository in April 2022; says the older Mt Piper ash repository &ldquo;historically
+                            operated as an unlined ash repository&rdquo; and that leachate from it continues to occur;
+                            records Wangcol Creek salinity often above 1,000 &micro;S/cm at the downstream gauge in 2023
+                            to 2025, against an upper guideline of 350; and says the liners of two brine waste ponds may
+                            be compromised, with replacement scheduled for 2026/27.</p>
+                        <p class="cx-src-links"><a
+                                    href="https://www.energyaustralia.com.au/sites/default/files/2026-10/260930%20LNAR%20AOCR%202025-2026_opt.pdf"
+                                    target="_blank" rel="noopener">EnergyAustralia NSW, Lamberts North Ash Placement
+                                Project, Annual Operations Compliance Report 2025&ndash;26 (PDF, September 2026)</a></p>
+                    </div>
+                </li>
+                <li id="cx-src-14"><span class="cx-src-num">14</span>
+                    <div><p>For extensions and expansions of &ldquo;continuing development&rdquo; such as mining, the
+                            NorBE test compares the proposal with the adverse impact the existing development would have
+                            under similar conditions to its current consent. This was inserted in 2017 and is now
+                            section 6.62 of the Biodiversity and Conservation SEPP 2021.</p>
+                        <p class="cx-src-links"><a
+                                    href="https://legislation.nsw.gov.au/view/whole/pdf/repealed/2024-12-27/act-2017-047"
+                                    target="_blank" rel="noopener">NSW legislation, Environmental Planning and
+                                Assessment Amendment (Sydney Drinking Water Catchment) Act 2017</a> <a
+                                    href="https://legislation.nsw.gov.au/view/pdf/asmade/epi-2022-629" target="_blank"
+                                    rel="noopener">NSW legislation, SEPP Amendment (Water Catchments) 2022 (section
+                                6.62)</a></p></div>
+                </li>
+                <li id="cx-src-15"><span class="cx-src-num">15</span>
+                    <div><p>Warragamba Dam supplies water to more than 5 million people living in Sydney and the lower
+                            Blue Mountains.</p>
+                        <p class="cx-src-links"><a
+                                    href="https://www.waternsw.com.au/nsw-dams/greater-sydney-dams/warragamba-dam"
+                                    target="_blank" rel="noopener">WaterNSW, Warragamba Dam</a></p></div>
+                </li>
+                <li id="cx-src-16"><span class="cx-src-num">16</span>
+                    <div><p>The Springvale Water Treatment Facility consent provides for the transfer and treatment of
+                            up to 42 million litres a day of mine water. A 2025 modification refers to &ldquo;partially
+                            treated mine water&rdquo; transferred to Thompsons Creek Reservoir through the Coxs River
+                            Water Supply Pipeline.</p>
+                        <p class="cx-src-links"><a
+                                    href="https://www.ipcn.nsw.gov.au/sites/default/files/2025-03/Applicant%20meeting%20transcript_0.pdf"
+                                    target="_blank" rel="noopener">Independent Planning Commission, applicant meeting
+                                transcript (2025)</a> <a
+                                    href="https://www.ipcn.nsw.gov.au/sites/default/files/2025-03/Recommended%20notice%20of%20modification.pdf"
+                                    target="_blank" rel="noopener">Independent Planning Commission, recommended notice
+                                of modification (SSD 7592 MOD 11)</a></p></div>
+                </li>
+                <li id="cx-src-17"><span class="cx-src-num">17</span>
+                    <div><p>Examples of repeated modifications to mine consents on the NSW Planning Portal: the
+                            Springvale Water Treatment Facility (Modification 11), Angus Place (Modification 9) and
+                            Clarence Colliery (Modification 11).</p>
+                        <p class="cx-src-links"><a
+                                    href="https://www.planningportal.nsw.gov.au/major-projects/projects/modification-11-time-extension"
+                                    target="_blank" rel="noopener">NSW Planning Portal, Clarence Colliery Modification
+                                11</a> <a
+                                    href="https://www.planningportal.nsw.gov.au/major-projects/projects/mod-9-approval-lapse-date"
+                                    target="_blank" rel="noopener">NSW Planning Portal, Angus Place Modification 9</a>
+                        </p></div>
+                </li>
+            </ol>
+        </div>
+    </section>
 
-<section id="cx-sources" class="cx-section-sources">
-  <div class="cx-wrap">
-    <div class="cx-kicker">Check the facts</div>
-    <h2 class="cx-title">Where the numbers come from</h2>
-    <p class="cx-lede">Every figure on this page, with its source. If you spot something wrong, tell us and we'll fix it.</p>
-    <ol class="cx-src-list">
-<li id="cx-src-1"><span class="cx-src-num">1</span><div><p>Mines in the Gardens of Stone region remove more than 20 billion litres of groundwater every year. Also stated by Chris Jonkers in Watershed, Episode 1.</p><p class="cx-src-links"><a href="https://assets.nationbuilder.com/natureorg/pages/4621/attachments/original/1738293846/Centennial_Coal_Report_FINAL.pdf" target="_blank" rel="noopener">Nature Conservation Council of NSW, environmental scorecard (PDF, January 2025)</a></p></div></li>
-<li id="cx-src-2"><span class="cx-src-num">2</span><div><p>Mine water inflows currently represent 80 to 90 per cent of Coxs River baseflows. Lithgow Environment Group's own submission.</p><p class="cx-src-links"><a href="https://www.lithgowenvironment.au/docs/submissions/leg-project-officer-submission-lake-lyell-pumped-hydro.pdf" target="_blank" rel="noopener">LEG submission, Lake Lyell pumped hydro project (PDF)</a></p></div></li>
-<li id="cx-src-3"><span class="cx-src-num">3</span><div><p>5,700 megalitres (5.7 billion litres) of polluted water from the treatment plant was discharged into local creeks via a holding dam in 2023&ndash;24.</p><p class="cx-src-links"><a href="https://www.nature.org.au/water_minister_under_fire" target="_blank" rel="noopener">4nature media release, via Nature Conservation Council of NSW (14 October 2025)</a></p></div></li>
-<li id="cx-src-4"><span class="cx-src-num">4</span><div><p>A proposed mine extension would allow coal extraction until 31 December 2040.</p><p class="cx-src-links"><a href="https://www.centennialcoal.com.au/projects/clarence-consolidation" target="_blank" rel="noopener">Mine owner's project page, extension proposal</a></p></div></li>
-<li id="cx-src-5"><span class="cx-src-num">5</span><div><p>Reverse osmosis treats 28.8 million litres a day; a further 13.2 million litres a day is only filtered; about 18.5 million litres a day of the semi-treated mix is discharged.</p><p class="cx-src-links"><a href="https://www.gardensofstone.org.au/briefing-problems-springvales-water-treatment-plant" target="_blank" rel="noopener">Gardens of Stone Alliance briefing, problems with the Springvale water treatment plant</a></p></div></li>
-<li id="cx-src-6"><span class="cx-src-num">6</span><div><p>Platypus found absent upstream of Lake Wallace, attributed to high salinity and metal pollutants, by Associate Professor Ian Wright, Western Sydney University.</p><p class="cx-src-links"><a href="https://www.abc.net.au/news/2025-10-12/platypus-vanish-from-charles-darwin-evolution-river/105752248" target="_blank" rel="noopener">ABC News (October 2025)</a></p></div></li>
-<li id="cx-src-7"><span class="cx-src-num">7</span><div><p>The 2017 court case, the weakened NorBE test, and the loophole for changes to existing mines.</p><p class="cx-src-links"><a href="https://4nature.org/projects/damaging-lithgow-coal-mines/stop-the-pollution-petition/" target="_blank" rel="noopener">4nature, Stop the Pollution Loophole</a></p></div></li>
-<li id="cx-src-8"><span class="cx-src-num">8</span><div><p>About $1.9 million in fines and penalties since 2015: a $1.05 million fine and $815,000 in fines and penalties (February 2026).</p><p class="cx-src-links"><a href="https://www.abc.net.au/news/2017-07-14/clarence-colliery-fined-one-million-for-blue-mountains-spill/8709834" target="_blank" rel="noopener">ABC News (2017)</a> <a href="https://www.epa.nsw.gov.au/news/epamedia/260223-clarence-coal-mine-ordered-to-pay-815-000-following-wollangambe-river-pollution" target="_blank" rel="noopener">NSW EPA media release (February 2026)</a></p></div></li>
-<li id="cx-src-9"><span class="cx-src-num">9</span><div><p>Approximate annual revenue of the company behind these mines. Industry estimates range from about $900 million to $1.4 billion, so the page says roughly $1 billion.</p><p class="cx-src-links"><a href="https://www.ibisworld.com/australia/company/banpu-australia-co-pty-ltd/557610/" target="_blank" rel="noopener">IBISWorld company profile</a> <a href="https://rocketreach.co/centennial-profile_b5d2623af42e4452" target="_blank" rel="noopener">RocketReach company profile</a></p></div></li>
-<li id="cx-src-10"><span class="cx-src-num">10</span><div><p>Biladurang is the Wiradjuri word for platypus.</p><p class="cx-src-links"><a href="https://wwf.org.au/what-we-do/species/platypus" target="_blank" rel="noopener">WWF-Australia, platypus</a> <a href="https://en.wikipedia.org/wiki/Wiradjuri_language" target="_blank" rel="noopener">Wikipedia, Wiradjuri language</a></p></div></li>
-<li id="cx-src-11"><span class="cx-src-num">11</span><div><p>Wangcol Creek salinity of 3,298 &micro;S/cm on 10 December 2025, over nine times the 350 guideline; years of community complaints and formal reports about illegal, unlicensed and excessive discharges from the power station.</p><p class="cx-src-links"><a href="https://4nature.org/media_release/toxic-pollution-in-sydneys-drinking-water-catchment-surges-far-beyond-approved-limits/" target="_blank" rel="noopener">Gardens of Stone Alliance media release, via 4nature (11 December 2025)</a></p></div></li>
-<li id="cx-src-12"><span class="cx-src-num">12</span><div><p>Dr Ian Wright, Western Sydney University, on the Wangcol Creek discharge point: &ldquo;the worst water pollution site in Sydney's drinking water catchment that I've seen in 30 years in my science.&rdquo;</p><p class="cx-src-links"><a href="https://www.nature.org.au/spike_in_coal_pollution_in_drinking_water_catchment" target="_blank" rel="noopener">Gardens of Stone Alliance media release, via Nature Conservation Council of NSW (17 November 2025)</a></p></div></li>
-<li id="cx-src-13"><span class="cx-src-num">13</span><div><p>The operator's own 2025&ndash;26 compliance and monitoring report for the Mt Piper ash repositories. It records the first stage of a leachate barrier system in the newer Lamberts North repository in April 2022; says the older Mt Piper ash repository &ldquo;historically operated as an unlined ash repository&rdquo; and that leachate from it continues to occur; records Wangcol Creek salinity often above 1,000 &micro;S/cm at the downstream gauge in 2023 to 2025, against an upper guideline of 350; and says the liners of two brine waste ponds may be compromised, with replacement scheduled for 2026/27.</p><p class="cx-src-links"><a href="https://www.energyaustralia.com.au/sites/default/files/2026-10/260930%20LNAR%20AOCR%202025-2026_opt.pdf" target="_blank" rel="noopener">EnergyAustralia NSW, Lamberts North Ash Placement Project, Annual Operations Compliance Report 2025&ndash;26 (PDF, September 2026)</a></p></div></li>
-<li id="cx-src-14"><span class="cx-src-num">14</span><div><p>For extensions and expansions of &ldquo;continuing development&rdquo; such as mining, the NorBE test compares the proposal with the adverse impact the existing development would have under similar conditions to its current consent. This was inserted in 2017 and is now section 6.62 of the Biodiversity and Conservation SEPP 2021.</p><p class="cx-src-links"><a href="https://legislation.nsw.gov.au/view/whole/pdf/repealed/2024-12-27/act-2017-047" target="_blank" rel="noopener">NSW legislation, Environmental Planning and Assessment Amendment (Sydney Drinking Water Catchment) Act 2017</a> <a href="https://legislation.nsw.gov.au/view/pdf/asmade/epi-2022-629" target="_blank" rel="noopener">NSW legislation, SEPP Amendment (Water Catchments) 2022 (section 6.62)</a></p></div></li>
-<li id="cx-src-15"><span class="cx-src-num">15</span><div><p>Warragamba Dam supplies water to more than 5 million people living in Sydney and the lower Blue Mountains.</p><p class="cx-src-links"><a href="https://www.waternsw.com.au/nsw-dams/greater-sydney-dams/warragamba-dam" target="_blank" rel="noopener">WaterNSW, Warragamba Dam</a></p></div></li>
-<li id="cx-src-16"><span class="cx-src-num">16</span><div><p>The Springvale Water Treatment Facility consent provides for the transfer and treatment of up to 42 million litres a day of mine water. A 2025 modification refers to &ldquo;partially treated mine water&rdquo; transferred to Thompsons Creek Reservoir through the Coxs River Water Supply Pipeline.</p><p class="cx-src-links"><a href="https://www.ipcn.nsw.gov.au/sites/default/files/2025-03/Applicant%20meeting%20transcript_0.pdf" target="_blank" rel="noopener">Independent Planning Commission, applicant meeting transcript (2025)</a> <a href="https://www.ipcn.nsw.gov.au/sites/default/files/2025-03/Recommended%20notice%20of%20modification.pdf" target="_blank" rel="noopener">Independent Planning Commission, recommended notice of modification (SSD 7592 MOD 11)</a></p></div></li>
-<li id="cx-src-17"><span class="cx-src-num">17</span><div><p>Examples of repeated modifications to mine consents on the NSW Planning Portal: the Springvale Water Treatment Facility (Modification 11), Angus Place (Modification 9) and Clarence Colliery (Modification 11).</p><p class="cx-src-links"><a href="https://www.planningportal.nsw.gov.au/major-projects/projects/modification-11-time-extension" target="_blank" rel="noopener">NSW Planning Portal, Clarence Colliery Modification 11</a> <a href="https://www.planningportal.nsw.gov.au/major-projects/projects/mod-9-approval-lapse-date" target="_blank" rel="noopener">NSW Planning Portal, Angus Place Modification 9</a></p></div></li>
-    </ol>
-  </div>
-</section>
 
-
-{% if cx_footer %}
-<footer>
-  <div class="cx-wrap">
-    <div class="cx-ack">
-      The Gardens of Stone region is and always has been Aboriginal land, especially of the Wiradjuri people. We pay respect to the Traditional Custodians, their elders past, present and future.
-      <em>"Look after the land and the rivers and the land and the rivers will look after you."</em>
-    </div>
-    <div class="cx-foot-row">
-      <div class="cx-foot-orgs">Gardens of Stone Alliance &nbsp;&middot;&nbsp; Lithgow Environment Group &nbsp;&middot;&nbsp; NCC NSW &nbsp;&middot;&nbsp; 4nature</div>
-      <div>&copy; 2026 Gardens of Stone Alliance</div>
-    </div>
-  </div>
-</footer>
-{% endif %}
+    {% if cx_footer %}
+        <footer>
+            <div class="cx-wrap">
+                <div class="cx-ack">
+                    The Gardens of Stone region is and always has been Aboriginal land, especially of the Wiradjuri
+                    people. We pay respect to the Traditional Custodians, their elders past, present and future.
+                    <em>"Look after the land and the rivers and the land and the rivers will look after you."</em>
+                </div>
+                <div class="cx-foot-row">
+                    <div class="cx-foot-orgs">Gardens of Stone Alliance &nbsp;&middot;&nbsp; Lithgow Environment Group
+                        &nbsp;&middot;&nbsp; NCC NSW &nbsp;&middot;&nbsp; 4nature
+                    </div>
+                    <div>&copy; 2026 Gardens of Stone Alliance</div>
+                </div>
+            </div>
+        </footer>
+    {% endif %}
 </div>
